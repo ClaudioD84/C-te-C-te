@@ -13,7 +13,8 @@ Assistant pédagogique pour les familles de la Fédération Wallonie-Bruxelles :
 |---|---|
 | `apps/mobile` | Application Expo (iPhone, Android, tablettes) |
 | `packages/shared` | Schémas, règles d'adaptation au profil, minuteur Pomodoro (code partagé et testé) |
-| `supabase` | Configuration, migrations SQL (schéma, sécurité RLS, stockage) |
+| `supabase` | Configuration, migrations SQL (schéma, sécurité RLS, stockage), fonctions serveur (`functions/`) |
+| `scripts/referentiels` | Structuration et import des référentiels officiels FWB |
 | `docs` | Cahier des charges et architecture |
 
 ## Démarrer en local
@@ -34,16 +35,41 @@ cp apps/mobile/.env.example apps/mobile/.env.local
 pnpm mobile
 ```
 
+La prise de photo avec masquage automatique des noms (ML Kit) et le dessin des masques (Skia) demandent un
+**build de développement** : `npx eas-cli@latest build --profile development` (ou `npx expo run:android` /
+`npx expo run:ios`). Dans Expo Go, le masquage se fait à la main.
+
+## Mettre en ligne le serveur
+
+1. Créer un projet sur [supabase.com](https://supabase.com) dans la région **Europe (Frankfurt)**.
+2. Relier le dépôt et appliquer les migrations : `pnpm exec supabase link --project-ref <ref>` puis `pnpm exec supabase db push`.
+3. Ajouter la clé de l'API Claude : `pnpm exec supabase secrets set ANTHROPIC_API_KEY=...`
+   (facultatif : `SCAN_MODEL`, `SCAN_EFFORT` pour régler le modèle et l'effort de lecture des photos).
+4. Déployer les fonctions : `pnpm exec supabase functions deploy scan-extract delete-account`.
+5. Renseigner l'adresse et la clé publique du projet dans `apps/mobile/.env.local`.
+
 ## Vérifications
 
 ```bash
 pnpm lint        # ESLint
 pnpm typecheck   # TypeScript
-pnpm test        # Tests unitaires (packages/shared)
+pnpm test               # Tests unitaires (packages/shared)
+pnpm test:functions     # Tests des fonctions serveur (Deno)
+pnpm check:functions    # Types des fonctions et des scripts
+pnpm format:check       # Mise en forme (Prettier)
 ```
 
 La CI GitHub Actions exécute ces vérifications et applique les migrations Supabase sur une base vierge.
 
 ## État du projet
 
-Étape 1 en cours. Déjà en place : comptes parents, profils enfants avec pseudonyme et besoins particuliers (avec consentement), console enfant avec minuteur Pomodoro adapté au profil, schéma de base de données sécurisé.
+Étape 1 presque terminée. En place :
+
+- comptes parents, profils enfants avec pseudonyme et besoins particuliers (avec consentement) ;
+- code parent et console enfant verrouillée ;
+- photo du journal de classe, masquage des noms sur l'appareil, lecture par Claude, validation par le parent ;
+- planning de la semaine avec alertes de surcharge, mission du jour, Pomodoro, lecture vocale ;
+- export et suppression du compte (RGPD) ;
+- outillage d'import des référentiels officiels et écran « Programme de l'année ».
+
+Reste pour l'étape 1 : l'abonnement (RevenueCat, App Store, Google Play) et l'import des premiers référentiels.

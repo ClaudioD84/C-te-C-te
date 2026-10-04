@@ -8,7 +8,7 @@
 ## 1. Principes
 
 1. **Un seul développeur** : privilégier les services gérés et une seule base de code. Pas de serveur à administrer.
-2. **Vie privée par conception** : alias, floutage sur l'appareil, hébergement UE, suppression des photos après traitement.
+2. **Vie privée par conception** : alias, masquage des noms sur l'appareil, hébergement UE, suppression des photos après traitement.
 3. **L'IA ne parle jamais directement à l'application** : tous les appels passent par le serveur, qui protège la clé API, applique les quotas et journalise les coûts.
 4. **Le parent valide** : chaque sortie de l'IA passe par un état « brouillon » avant d'être publiée.
 
@@ -18,7 +18,7 @@
 flowchart LR
     subgraph Appareil["Téléphone / tablette (Expo)"]
         UI[Cockpit parent<br/>Console enfant]
-        OCR[Détection de texte<br/>et floutage local]
+        OCR[Détection de texte<br/>et masquage local]
         DB[(Cache local<br/>hors connexion)]
     end
 
@@ -56,7 +56,8 @@ flowchart LR
 | Base de données, authentification, stockage | **Supabase** (région UE) | PostgreSQL géré, sécurité par lignes (RLS), stockage, fonctions serveur |
 | Logique serveur et IA | **Supabase Edge Functions** (Deno, TypeScript) + SDK officiel `@anthropic-ai/sdk` | Même langage que l'application, pas de serveur à gérer |
 | IA | **API Claude** | Lecture de l'écriture manuscrite, qualité du français, sorties structurées |
-| Détection de texte sur l'appareil | **ML Kit** (Android) / **Vision** (iOS) via un module Expo | Floutage des noms **avant** l'envoi, sans réseau |
+| Détection de texte sur l'appareil | **ML Kit** (`@react-native-ml-kit/text-recognition`, iOS et Android) | Masquage des noms **avant** l'envoi, sans réseau ; nécessite un build de développement (absent d'Expo Go) |
+| Masquage des photos | **Skia** (`@shopify/react-native-skia`) | Aplats noirs dessinés dans l'image : irréversibles, contrairement à un flou |
 | Abonnements | **RevenueCat** | Gère App Store et Google Play, webhooks vers Supabase |
 | Génération PDF | **expo-print** (HTML vers PDF) | Mise en page accessible en HTML/CSS, impression native |
 | Notifications | **Expo Notifications** | Rappels d'échéances, alertes de charge |
@@ -141,9 +142,9 @@ sequenceDiagram
     participant DB as PostgreSQL
 
     P->>L: Photo du journal de classe
-    L->>L: Détecte le texte, floute les noms connus<br/>(liste stockée uniquement sur l'appareil)
-    L->>P: Aperçu flouté, le parent ajoute des zones si besoin
-    P->>S: Envoi de l'image floutée et compressée
+    L->>L: Détecte le texte, masque les noms connus<br/>(liste stockée uniquement sur l'appareil)
+    L->>P: Aperçu masqué, le parent ajoute ou retire des zones
+    P->>S: Envoi de l'image masquée et compressée
     P->>F: Lancer le traitement (scan_id)
     F->>F: Vérifie l'abonnement et le quota
     F->>C: Image + profil (niveau, matières) + consigne d'extraction<br/>réponse au format JSON imposé
@@ -157,9 +158,10 @@ sequenceDiagram
 
 Points clés :
 
-- La **liste des noms à flouter** (vrai prénom de l'enfant, nom de l'école, enseignants) est saisie par le parent et **reste sur l'appareil**. Elle ne quitte jamais le téléphone.
+- La **liste des noms à masquer** (vrai prénom de l'enfant, nom de l'école, enseignants) est saisie par le parent et **reste sur l'appareil**. Elle ne quitte jamais le téléphone.
 - L'extraction utilise les **sorties structurées** de l'API Claude (`output_config.format` avec un schéma JSON) pour obtenir une liste de tâches toujours valide.
-- La photo est supprimée du stockage dès la fin du traitement, même en cas d'échec (tâche de nettoyage planifiée en secours).
+- La photo est supprimée du stockage dès la fin du traitement. En cas d'échec, elle est conservée pour permettre de réessayer, et supprimée si le parent abandonne (une tâche de nettoyage planifiée reste à mettre en place pour les photos oubliées).
+- La réservation de la photo (`claim_scan`) est atomique : deux analyses de la même photo ne peuvent pas tourner en même temps ; une analyse interrompue peut être relancée après 150 s.
 
 ## 7. Utilisation de l'IA
 
@@ -186,7 +188,7 @@ Le modèle est **configurable par fonction** (variable d'environnement), pour aj
 - **Mise en cache des consignes** : la partie fixe des requêtes (consignes, extrait du référentiel) est placée en tête et mise en cache, ce qui réduit fortement le coût des lectures répétées.
 - **Traitements groupés** : la génération des plannings hebdomadaires passe par l'API Message Batches (environ 50 % moins chère, résultat asynchrone).
 - **Réutilisation** : un exercice généré pour un point du programme et un profil type peut être réutilisé (cache par `curriculum_item` + niveau + adaptations).
-- **Quotas par formule** et journal `ai_usage` pour suivre le coût réel par famille.
+- **Quotas par formule** (photos analysables par mois : essai 40, Solo 80, Famille 200 — valeurs provisoires) et journal `ai_usage` pour suivre le coût réel par famille.
 
 ### 7.4 Qualité et sécurité des contenus
 
@@ -201,7 +203,7 @@ Les référentiels et programmes sont publiés en PDF ; il n'existe pas d'API.
 1. **Collecte** : téléchargement des documents officiels (tronc commun, programmes par réseau), avec la source et la version.
 2. **Structuration** : script `scripts/referentiels/` qui découpe les documents et produit, avec l'aide de l'IA, un JSON hiérarchique (niveau → matière → domaine → compétence → attendu).
 3. **Relecture** : vérification manuelle avant import (le contenu officiel ne doit pas être déformé).
-4. **Import** : migration de données vers `curriculum_item`, avec numéro de version pour suivre la réforme.
+4. **Import** : `scripts/referentiels/importer.ts` génère `supabase/seed/referentiels.sql` (idempotent), avec numéro de version pour suivre la réforme. Mode d'emploi : `scripts/referentiels/README.md`.
 
 Ordre de priorité : primaire → secondaire 1er degré → maternelle → 2e et 3e degrés.
 
@@ -209,12 +211,13 @@ Ordre de priorité : primaire → secondaire 1er degré → maternelle → 2e et
 
 ### 9.1 Planning hebdomadaire et régulation de la charge (F4, F8)
 
-Algorithme déterministe côté serveur ; l'IA ne fait que proposer le **contenu** des sessions.
+Algorithme déterministe (`packages/shared/src/planning.ts`), exécuté dans l'application ; l'IA ne fait que proposer le **contenu** des sessions (étape 2).
 
-1. Chaque tâche reçoit un **poids** (interrogation = 3, devoir = 1, examen = 5…) et une durée de préparation estimée, ajustée au profil (ex. TDAH → sessions plus courtes et plus nombreuses).
-2. Le temps de préparation est réparti **en remontant** depuis l'échéance, sur les jours disponibles de l'enfant.
-3. Si la charge d'un jour dépasse le plafond du profil, l'excédent est déplacé vers les jours précédents, puis le week-end.
-4. Si ce n'est pas possible, une **alerte** est envoyée au parent avec une proposition d'étalement.
+1. Chaque tâche reçoit une durée de préparation selon son type (devoir 20 min, leçon 15, interrogation 45, examen 120 pour un élève de fin de primaire), ajustée à l'âge.
+2. Cette durée est découpée en périodes de la taille du Pomodoro du profil (ex. TDAH → périodes plus courtes) et répartie sur les jours disponibles précédant l'échéance (2 jours pour un devoir, 5 pour une interrogation, 10 pour un examen), la dernière séance d'une évaluation étant un auto-test.
+3. Si un jour dépasse le temps quotidien prévu pour l'âge, des périodes sont avancées vers des jours plus légers.
+4. Le parent voit les **alertes** (surcharge, plusieurs évaluations le même jour) et peut ajouter le week-end en un geste.
+5. La publication (`publish_plan`) remplace les sessions à venir en une transaction et conserve ce que l'enfant a déjà fait.
 
 ### 9.2 Répétition espacée (F9)
 
@@ -240,7 +243,7 @@ Algorithme déterministe côté serveur ; l'IA ne fait que proposer le **contenu
 | Hébergement | Supabase région UE (Francfort) |
 | Accès aux données | RLS sur toutes les tables : un parent ne voit que sa famille |
 | Pseudonymisation | Alias pour les enfants ; liste des vrais noms uniquement sur l'appareil |
-| Photos | Floutées avant envoi, stockage privé, suppression après traitement |
+| Photos | Masquées avant envoi, stockage privé, suppression après traitement |
 | Données de santé | Consentement explicite et horodaté, chiffrement, minimisation dans les requêtes IA |
 | Sous-traitants | Supabase, Anthropic, RevenueCat, Sentry : accords de traitement (DPA) à signer ; vérifier la durée de conservation des données par Anthropic et les options disponibles |
 | Droits des utilisateurs | Export JSON et suppression complète du compte depuis l'application |
@@ -276,7 +279,7 @@ Algorithme déterministe côté serveur ; l'IA ne fait que proposer le **contenu
 | D2 | Expo + Supabase + RevenueCat | Un seul développeur, services gérés |
 | D3 | API Claude, appelée uniquement depuis le serveur | Qualité, protection de la clé, maîtrise des coûts |
 | D4 | Fédération Wallonie-Bruxelles, en français | Marché de départ |
-| D5 | Alias + floutage local + hébergement UE | Vie privée des mineurs, données de santé |
+| D5 | Alias + masquage local + hébergement UE | Vie privée des mineurs, données de santé |
 | D6 | Validation par le parent de toute sortie de l'IA | Fiabilité et confiance |
 | D7 | Abonnement Solo 9,99 €, Famille 14,99 €, Année scolaire | Positionnement face à la concurrence et coûts |
 | D8 | Livraison en trois étapes | Tester tôt avec de vraies familles |
