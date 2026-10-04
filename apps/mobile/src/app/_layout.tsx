@@ -5,12 +5,15 @@ import { useEffect, useState } from 'react';
 import { useColorScheme } from 'react-native';
 
 import { SessionProvider, useSession } from '@/features/auth/session-provider';
+import { ChildModeProvider, useChildMode } from '@/features/child-mode/child-mode-provider';
 import { isSupabaseConfigured } from '@/lib/supabase';
 
 SplashScreen.preventAutoHideAsync();
 
 function RootNavigator() {
-  const { session, loading } = useSession();
+  const { session, loading: sessionLoading } = useSession();
+  const { activeChildId, loading: childModeLoading } = useChildMode();
+  const loading = sessionLoading || childModeLoading;
 
   useEffect(() => {
     if (!loading) SplashScreen.hideAsync();
@@ -18,16 +21,19 @@ function RootNavigator() {
 
   if (loading) return null;
 
-  const signedIn = Boolean(session);
+  const signedIn = isSupabaseConfigured && Boolean(session);
+  const childMode = signedIn && activeChildId !== null;
 
   return (
     <Stack screenOptions={{ headerShown: false }}>
       <Stack.Protected guard={!isSupabaseConfigured}>
         <Stack.Screen name="configuration" />
       </Stack.Protected>
-      <Stack.Protected guard={isSupabaseConfigured && signedIn}>
+      <Stack.Protected guard={signedIn && !childMode}>
         <Stack.Screen name="(parent)" />
-        <Stack.Screen name="enfant/[childId]" options={{ gestureEnabled: false }} />
+      </Stack.Protected>
+      <Stack.Protected guard={childMode}>
+        <Stack.Screen name="enfant" options={{ gestureEnabled: false }} />
       </Stack.Protected>
       <Stack.Protected guard={isSupabaseConfigured && !signedIn}>
         <Stack.Screen name="(auth)" />
@@ -43,9 +49,11 @@ export default function RootLayout() {
   return (
     <QueryClientProvider client={queryClient}>
       <SessionProvider>
-        <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
-          <RootNavigator />
-        </ThemeProvider>
+        <ChildModeProvider>
+          <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
+            <RootNavigator />
+          </ThemeProvider>
+        </ChildModeProvider>
       </SessionProvider>
     </QueryClientProvider>
   );

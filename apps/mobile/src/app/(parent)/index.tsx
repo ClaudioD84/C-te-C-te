@@ -7,10 +7,23 @@ import { Screen } from '@/components/screen';
 import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
 import { Spacing } from '@/constants/theme';
+import { useChildMode } from '@/features/child-mode/child-mode-provider';
+import { hasParentCode } from '@/features/child-mode/parent-code-store';
 import { useChildProfiles, type StoredChildProfile } from '@/features/profiles/api';
 import { supabase } from '@/lib/supabase';
 
 function ChildCard({ child }: { child: StoredChildProfile }) {
+  const { enter } = useChildMode();
+
+  async function launchMission() {
+    // Le code parent est obligatoire avant de confier l'appareil à l'enfant.
+    if (await hasParentCode()) {
+      await enter(child.id);
+    } else {
+      router.push({ pathname: '/code-parent', params: { childId: child.id } });
+    }
+  }
+
   const needs = child.needs.map((n) => NEED_LABELS[n]).join(', ');
   return (
     <ThemedView type="backgroundElement" style={styles.card}>
@@ -19,7 +32,7 @@ function ChildCard({ child }: { child: StoredChildProfile }) {
         {GRADE_LABELS[child.grade]}
         {needs ? ` · ${needs}` : ''}
       </ThemedText>
-      <Button label="Lancer la mission du jour" onPress={() => router.push(`/enfant/${child.id}`)} />
+      <Button label="Lancer la mission du jour" onPress={launchMission} />
     </ThemedView>
   );
 }
@@ -50,6 +63,9 @@ export default function CockpitScreen() {
         <Button label="Ajouter un enfant" variant="secondary" />
       </Link>
 
+      <Link href="/code-parent" asChild>
+        <Button label="Modifier le code parent" variant="secondary" />
+      </Link>
       <Button variant="secondary" label="Se déconnecter" onPress={() => supabase.auth.signOut()} />
     </Screen>
   );
