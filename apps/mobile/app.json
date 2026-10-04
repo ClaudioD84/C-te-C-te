@@ -36,7 +36,15 @@
           "imageWidth": 76
         }
       ],
-      "expo-secure-store"
+      "expo-secure-store",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Côte à Côte a besoin d'accéder à vos photos pour importer le journal de classe ou les notes de cours.",
+          "cameraPermission": "Côte à Côte utilise l'appareil photo pour photographier le journal de classe et les notes de cours.",
+          "microphonePermission": false
+        }
+      ]
     ],
     "experiments": {
       "typedRoutes": true,

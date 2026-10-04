@@ -32,7 +32,11 @@ function ChildCard({ child }: { child: StoredChildProfile }) {
         {GRADE_LABELS[child.grade]}
         {needs ? ` · ${needs}` : ''}
       </ThemedText>
-      <Button label="Lancer la mission du jour" onPress={launchMission} />
+      <Button
+        label="Photographier le journal de classe"
+        onPress={() => router.push({ pathname: '/scan/nouveau', params: { childId: child.id } })}
+      />
+      <Button variant="secondary" label="Lancer la mission du jour" onPress={launchMission} />
     </ThemedView>
   );
 }
@@ -57,12 +61,17 @@ export default function CockpitScreen() {
           Ajoutez un premier profil pour commencer. Seul un pseudonyme est demandé.
         </ThemedText>
       ) : null}
-      {children?.map((child) => <ChildCard key={child.id} child={child} />)}
+      {children?.map((child) => (
+        <ChildCard key={child.id} child={child} />
+      ))}
 
       <Link href="/profils/nouveau" asChild>
         <Button label="Ajouter un enfant" variant="secondary" />
       </Link>
 
+      <Link href="/noms-a-masquer" asChild>
+        <Button label="Noms à masquer sur les photos" variant="secondary" />
+      </Link>
       <Link href="/code-parent" asChild>
         <Button label="Modifier le code parent" variant="secondary" />
       </Link>

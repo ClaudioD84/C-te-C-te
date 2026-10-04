@@ -17,7 +17,9 @@ export function Screen({ children, scroll = true }: PropsWithChildren<{ scroll?:
   );
 
   return (
-    <SafeAreaView style={[styles.safeArea, { backgroundColor: theme.background }]} edges={['bottom', 'left', 'right']}>
+    <SafeAreaView
+      style={[styles.safeArea, { backgroundColor: theme.background }]}
+      edges={['bottom', 'left', 'right']}>
       {content}
     </SafeAreaView>
   );

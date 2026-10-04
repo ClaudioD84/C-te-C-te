@@ -39,7 +39,12 @@ export default function ParentCodeScreen() {
     if (step === 'actuel') {
       const result = await verifyParentCode(value);
       if (result.ok) setStep('nouveau');
-      else setMessage(result.lockedSeconds > 0 ? `Trop d'essais. Réessayez dans ${result.lockedSeconds} s.` : 'Code incorrect.');
+      else
+        setMessage(
+          result.lockedSeconds > 0
+            ? `Trop d'essais. Réessayez dans ${result.lockedSeconds} s.`
+            : 'Code incorrect.',
+        );
       return;
     }
 

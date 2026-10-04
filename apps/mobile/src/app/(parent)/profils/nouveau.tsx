@@ -39,7 +39,9 @@ export default function NewChildProfileScreen() {
   }
 
   function toggleNeed(value: Need) {
-    setNeeds((current) => (current.includes(value) ? current.filter((n) => n !== value) : [...current, value]));
+    setNeeds((current) =>
+      current.includes(value) ? current.filter((n) => n !== value) : [...current, value],
+    );
   }
 
   async function save() {
@@ -60,7 +62,13 @@ export default function NewChildProfileScreen() {
         N&apos;indiquez pas son vrai prénom : le pseudonyme protège ses données.
       </ThemedText>
 
-      <ChoiceChips label="Année scolaire" options={GRADES} labels={GRADE_LABELS} selected={[grade]} onToggle={selectGrade} />
+      <ChoiceChips
+        label="Année scolaire"
+        options={GRADES}
+        labels={GRADE_LABELS}
+        selected={[grade]}
+        onToggle={selectGrade}
+      />
       <ChoiceChips
         label="Type d'enseignement"
         options={allowedTracks}

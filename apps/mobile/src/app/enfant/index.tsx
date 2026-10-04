@@ -77,6 +77,11 @@ const styles = StyleSheet.create({
   center: { flex: 1, alignItems: 'center', justifyContent: 'center', gap: Spacing.three },
   container: { flex: 1, padding: Spacing.four, paddingTop: Spacing.six, gap: Spacing.four },
   header: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' },
-  parentButton: { minHeight: MinTouchSize, minWidth: MinTouchSize, justifyContent: 'center', alignItems: 'center' },
+  parentButton: {
+    minHeight: MinTouchSize,
+    minWidth: MinTouchSize,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
   mission: { padding: Spacing.four, borderRadius: Spacing.four, gap: Spacing.two },
 });

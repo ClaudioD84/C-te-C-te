@@ -1,8 +1,4 @@
-import {
-  childProfileSchema,
-  type ChildProfile,
-  type ChildProfileInput,
-} from '@cote-a-cote/shared';
+import { childProfileSchema, type ChildProfile, type ChildProfileInput } from '@cote-a-cote/shared';
 import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query';
 
 import { supabase } from '@/lib/supabase';
@@ -22,10 +18,7 @@ export function useChildProfiles() {
   return useQuery({
     queryKey: profilesKey,
     queryFn: async () => {
-      const { data, error } = await supabase
-        .from('child_profile')
-        .select(COLUMNS)
-        .order('created_at');
+      const { data, error } = await supabase.from('child_profile').select(COLUMNS).order('created_at');
       if (error) throw error;
       return data.map(fromRow);
     },

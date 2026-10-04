@@ -5,9 +5,22 @@ import { z } from 'zod';
  * M = maternelle, P = primaire, S = secondaire (S7 : 7e année du qualifiant).
  */
 export const GRADES = [
-  'M1', 'M2', 'M3',
-  'P1', 'P2', 'P3', 'P4', 'P5', 'P6',
-  'S1', 'S2', 'S3', 'S4', 'S5', 'S6', 'S7',
+  'M1',
+  'M2',
+  'M3',
+  'P1',
+  'P2',
+  'P3',
+  'P4',
+  'P5',
+  'P6',
+  'S1',
+  'S2',
+  'S3',
+  'S4',
+  'S5',
+  'S6',
+  'S7',
 ] as const;
 export const gradeSchema = z.enum(GRADES);
 export type Grade = z.infer<typeof gradeSchema>;

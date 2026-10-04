@@ -40,7 +40,10 @@ export function PinPad({ value, onChange, onComplete, disabled }: PinPadProps) {
             key={i}
             style={[
               styles.dot,
-              { borderColor: theme.primary, backgroundColor: i < value.length ? theme.primary : 'transparent' },
+              {
+                borderColor: theme.primary,
+                backgroundColor: i < value.length ? theme.primary : 'transparent',
+              },
             ]}
           />
         ))}
@@ -58,9 +61,14 @@ export function PinPad({ value, onChange, onComplete, disabled }: PinPadProps) {
               accessibilityLabel={key === 'effacer' ? 'Effacer le dernier chiffre' : key}
               style={({ pressed }) => [
                 styles.key,
-                { backgroundColor: pressed ? theme.backgroundSelected : theme.backgroundElement, opacity: disabled ? 0.5 : 1 },
+                {
+                  backgroundColor: pressed ? theme.backgroundSelected : theme.backgroundElement,
+                  opacity: disabled ? 0.5 : 1,
+                },
               ]}>
-              <ThemedText type={key === 'effacer' ? 'small' : 'subtitle'}>{key === 'effacer' ? '⌫' : key}</ThemedText>
+              <ThemedText type={key === 'effacer' ? 'small' : 'subtitle'}>
+                {key === 'effacer' ? '⌫' : key}
+              </ThemedText>
             </Pressable>
           ),
         )}
@@ -75,6 +83,17 @@ const styles = StyleSheet.create({
   container: { alignItems: 'center', gap: Spacing.four },
   dots: { flexDirection: 'row', gap: Spacing.three },
   dot: { width: 18, height: 18, borderRadius: 9, borderWidth: 2 },
-  grid: { width: KEY_SIZE * 3 + Spacing.three * 2, flexDirection: 'row', flexWrap: 'wrap', gap: Spacing.three },
-  key: { width: KEY_SIZE, height: KEY_SIZE, borderRadius: KEY_SIZE / 2, alignItems: 'center', justifyContent: 'center' },
+  grid: {
+    width: KEY_SIZE * 3 + Spacing.three * 2,
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    gap: Spacing.three,
+  },
+  key: {
+    width: KEY_SIZE,
+    height: KEY_SIZE,
+    borderRadius: KEY_SIZE / 2,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
 });

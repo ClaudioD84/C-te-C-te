@@ -14,10 +14,20 @@ interface ChoiceChipsProps<T extends string> {
   multiple?: boolean;
 }
 
-export function ChoiceChips<T extends string>({ label, options, labels, selected, onToggle, multiple }: ChoiceChipsProps<T>) {
+export function ChoiceChips<T extends string>({
+  label,
+  options,
+  labels,
+  selected,
+  onToggle,
+  multiple,
+}: ChoiceChipsProps<T>) {
   const theme = useTheme();
   return (
-    <View style={styles.container} accessibilityRole={multiple ? undefined : 'radiogroup'} accessibilityLabel={label}>
+    <View
+      style={styles.container}
+      accessibilityRole={multiple ? undefined : 'radiogroup'}
+      accessibilityLabel={label}>
       <ThemedText type="smallBold">{label}</ThemedText>
       <View style={styles.row}>
         {options.map((option) => {

@@ -68,18 +68,33 @@ export default function ExitChildModeScreen() {
 
       {forgotten ? (
         <>
-          <ThemedText>Saisissez le mot de passe de votre compte pour réinitialiser le code parent.</ThemedText>
-          <TextField label="Mot de passe" value={password} onChangeText={setPassword} secureTextEntry autoFocus />
+          <ThemedText>
+            Saisissez le mot de passe de votre compte pour réinitialiser le code parent.
+          </ThemedText>
+          <TextField
+            label="Mot de passe"
+            value={password}
+            onChangeText={setPassword}
+            secureTextEntry
+            autoFocus
+          />
           {message ? <ThemedText themeColor="danger">{message}</ThemedText> : null}
           <Button label="Valider" onPress={submitPassword} loading={checking} disabled={!password} />
         </>
       ) : (
         <>
           <ThemedText>Saisissez le code parent.</ThemedText>
-          <PinPad value={code} onChange={setCode} onComplete={submitCode} disabled={checking || lockedSeconds > 0} />
+          <PinPad
+            value={code}
+            onChange={setCode}
+            onComplete={submitCode}
+            disabled={checking || lockedSeconds > 0}
+          />
           <View style={styles.feedback} accessibilityLiveRegion="polite">
             {lockedSeconds > 0 ? (
-              <ThemedText themeColor="danger">Trop d&apos;essais. Réessayez dans {lockedSeconds} s.</ThemedText>
+              <ThemedText themeColor="danger">
+                Trop d&apos;essais. Réessayez dans {lockedSeconds} s.
+              </ThemedText>
             ) : message ? (
               <ThemedText themeColor="danger">{message}</ThemedText>
             ) : null}

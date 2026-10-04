@@ -66,7 +66,9 @@ export function PomodoroTimer({ workMinutes, breakMinutes, cycles }: PomodoroCon
       </ThemedText>
       {state.phase !== 'termine' ? (
         <>
-          <ThemedText type="title" accessibilityLabel={`Temps restant ${formatDuration(state.remainingSeconds)}`}>
+          <ThemedText
+            type="title"
+            accessibilityLabel={`Temps restant ${formatDuration(state.remainingSeconds)}`}>
             {formatDuration(state.remainingSeconds)}
           </ThemedText>
           <View
