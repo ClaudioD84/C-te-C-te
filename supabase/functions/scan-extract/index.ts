@@ -6,6 +6,7 @@ import {
 } from '../_shared/access.ts';
 import { extractTasksFromImage, SCAN_MODEL } from '../_shared/claude.ts';
 import { z } from '../_shared/deps.ts';
+import type { DocumentType } from '../_shared/extraction.ts';
 import { corsHeaders, json, UserFacingError } from '../_shared/http.ts';
 import { estimateCostUsd } from '../_shared/pricing.ts';
 import { adminClient, authenticate } from '../_shared/supabase.ts';
@@ -17,8 +18,13 @@ import { adminClient, authenticate } from '../_shared/supabase.ts';
 
 const bodySchema = z.object({ scanId: z.uuid() });
 const BUCKET = 'scans';
-/** Au-delà, une analyse « en cours » est considérée comme interrompue (limite des fonctions : 150 s). */
-const STALE_PROCESSING_MS = 150_000;
+
+interface ClaimedScan {
+  id: string;
+  child_id: string;
+  document_type: DocumentType | null;
+  storage_path: string | null;
+}
 
 Deno.serve(async (request) => {
   if (request.method === 'OPTIONS') return new Response('ok', { headers: corsHeaders });
@@ -33,17 +39,13 @@ Deno.serve(async (request) => {
     if (!body.success) throw new UserFacingError('Requête invalide.');
     scanId = body.data.scanId;
 
-    // Passage en « processing » depuis « uploaded », « failed » ou une analyse bloquée :
-    // empêche deux analyses simultanées de la même photo.
-    const staleBefore = new Date(Date.now() - STALE_PROCESSING_MS).toISOString();
-    const { data: scan } = await admin
-      .from('scan')
-      .update({ status: 'processing', error: null, processing_started_at: new Date().toISOString() })
-      .eq('id', scanId)
-      .eq('family_id', familyId)
-      .or(`status.in.(uploaded,failed),and(status.eq.processing,processing_started_at.lt.${staleBefore})`)
-      .select('id, child_id, document_type, storage_path')
-      .maybeSingle();
+    // Réservation atomique de la photo : empêche deux analyses simultanées (voir claim_scan).
+    const { data: claimed, error: claimError } = await admin.rpc('claim_scan', {
+      p_scan_id: scanId,
+      p_family_id: familyId,
+    });
+    if (claimError) throw claimError;
+    const scan = (claimed as ClaimedScan[] | null)?.[0];
     if (!scan) {
       scanId = null; // rien à remettre en échec
       throw new UserFacingError('Cette photo est déjà en cours d’analyse ou a déjà été analysée.', 409);

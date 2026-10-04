@@ -44,7 +44,8 @@
           "cameraPermission": "Côte à Côte utilise l'appareil photo pour photographier le journal de classe et les notes de cours.",
           "microphonePermission": false
         }
-      ]
+      ],
+      "expo-sharing"
     ],
     "experiments": {
       "typedRoutes": true,

@@ -10,7 +10,6 @@ import { Spacing } from '@/constants/theme';
 import { useChildMode } from '@/features/child-mode/child-mode-provider';
 import { hasParentCode } from '@/features/child-mode/parent-code-store';
 import { useChildProfiles, type StoredChildProfile } from '@/features/profiles/api';
-import { supabase } from '@/lib/supabase';
 
 function ChildCard({ child }: { child: StoredChildProfile }) {
   const { enter } = useChildMode();
@@ -74,13 +73,9 @@ export default function CockpitScreen() {
         <Button label="Ajouter un enfant" variant="secondary" />
       </Link>
 
-      <Link href="/noms-a-masquer" asChild>
-        <Button label="Noms à masquer sur les photos" variant="secondary" />
+      <Link href="/compte" asChild>
+        <Button label="Mon compte et réglages" variant="secondary" />
       </Link>
-      <Link href="/code-parent" asChild>
-        <Button label="Modifier le code parent" variant="secondary" />
-      </Link>
-      <Button variant="secondary" label="Se déconnecter" onPress={() => supabase.auth.signOut()} />
     </Screen>
   );
 }

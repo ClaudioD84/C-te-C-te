@@ -418,3 +418,7 @@ enabled = true
 # Secret à définir : supabase secrets set ANTHROPIC_API_KEY=...
 [functions.scan-extract]
 verify_jwt = true
+
+# Suppression du compte et de toutes les données de la famille (RGPD).
+[functions.delete-account]
+verify_jwt = true
