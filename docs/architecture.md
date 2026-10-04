@@ -179,8 +179,9 @@ Points clés :
 
 Le modèle est **configurable par fonction** (variable d'environnement), pour ajuster le rapport qualité / coût sans nouvelle version de l'application.
 
-- Point de départ pour le budget : **Claude Sonnet 5.5** (2 $ / 10 $ par million de tokens en entrée / sortie) pour l'extraction et la génération courante.
-- **Claude Opus 5.5** (4 $ / 20 $) à évaluer pour les dossiers de révision, si la qualité le justifie.
+- **Bêta : Claude Opus 5.5** (4 $ / 20 $ par million de tokens en entrée / sortie) pour la lecture des photos, avec un effort de réflexion bas (`SCAN_MODEL`, `SCAN_EFFORT`).
+- **Claude Sonnet 5.5** (2 $ / 10 $), deux fois moins cher, sera comparé sur les photos réelles de la bêta : on basculera si la qualité de lecture est équivalente.
+- La vue `ai_cost_monthly` donne le coût réel par famille et par mois pour décider.
 - Le choix définitif se fera **sur mesures** pendant la bêta : un petit jeu de photos et d'exercices de référence servira à comparer qualité et coût.
 
 ### 7.3 Maîtrise des coûts
@@ -188,7 +189,7 @@ Le modèle est **configurable par fonction** (variable d'environnement), pour aj
 - **Mise en cache des consignes** : la partie fixe des requêtes (consignes, extrait du référentiel) est placée en tête et mise en cache, ce qui réduit fortement le coût des lectures répétées.
 - **Traitements groupés** : la génération des plannings hebdomadaires passe par l'API Message Batches (environ 50 % moins chère, résultat asynchrone).
 - **Réutilisation** : un exercice généré pour un point du programme et un profil type peut être réutilisé (cache par `curriculum_item` + niveau + adaptations).
-- **Quotas par formule** (photos analysables par mois : essai 40, Solo 80, Famille 200 — valeurs provisoires) et journal `ai_usage` pour suivre le coût réel par famille.
+- **Quotas par formule** (photos analysables par mois : essai 40, Solo 80, Famille 200) et journal `ai_usage` pour suivre le coût réel par famille.
 
 ### 7.4 Qualité et sécurité des contenus
 
