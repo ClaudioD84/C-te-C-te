@@ -1,0 +1,12 @@
+node_modules/
+.DS_Store
+*.tsbuildinfo
+coverage/
+
+# Variables d'environnement locales
+.env
+.env*.local
+
+# Supabase local
+supabase/.branches
+supabase/.temp

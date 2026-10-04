@@ -1,0 +1,43 @@
+import { describe, expect, it } from 'vitest';
+
+import { childProfileSchema } from './profile';
+import { isTrackAllowed, schoolLevel } from './school';
+
+describe('childProfileSchema', () => {
+  it('applique les valeurs par défaut', () => {
+    const p = childProfileSchema.parse({ alias: 'Petit Lion', grade: 'P4' });
+    expect(p.track).toBe('general');
+    expect(p.needs).toEqual([]);
+    expect(p.preferences.availableDays).toHaveLength(5);
+  });
+
+  it('refuse un alias trop court', () => {
+    expect(childProfileSchema.safeParse({ alias: 'A', grade: 'P4' }).success).toBe(false);
+  });
+
+  it("refuse l'enseignement professionnel en primaire", () => {
+    const r = childProfileSchema.safeParse({ alias: 'Zébu', grade: 'P6', track: 'professionnel' });
+    expect(r.success).toBe(false);
+  });
+
+  it('refuse un besoin en double', () => {
+    const r = childProfileSchema.safeParse({ alias: 'Zébu', grade: 'S2', needs: ['tdah', 'tdah'] });
+    expect(r.success).toBe(false);
+  });
+});
+
+describe('school', () => {
+  it('déduit le niveau scolaire', () => {
+    expect(schoolLevel('M3')).toBe('maternelle');
+    expect(schoolLevel('P1')).toBe('primaire');
+    expect(schoolLevel('S7')).toBe('secondaire');
+  });
+
+  it('réserve le qualifiant au secondaire à partir de S3', () => {
+    expect(isTrackAllowed('S2', 'technique')).toBe(false);
+    expect(isTrackAllowed('S3', 'technique')).toBe(true);
+    expect(isTrackAllowed('S7', 'professionnel')).toBe(true);
+    expect(isTrackAllowed('S7', 'general')).toBe(false);
+    expect(isTrackAllowed('P2', 'specialise')).toBe(true);
+  });
+});

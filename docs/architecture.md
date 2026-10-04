@@ -51,7 +51,7 @@ flowchart LR
 |---|---|---|
 | Application mobile et tablette | **Expo (React Native) + TypeScript** | Une base de code iOS/Android, builds dans le cloud (EAS), mises à jour sans passer par les stores pour le JavaScript |
 | Navigation | **Expo Router** | Navigation par fichiers, séparation simple parent / enfant |
-| Interface | **Tamagui** ou composants maison + thème accessible | Thèmes par profil (police, tailles, espacements) |
+| Interface | Composants maison + thème accessible | Thèmes par profil (police, tailles, espacements), sans dépendance lourde |
 | État serveur | **TanStack Query** | Cache, synchronisation, mode hors connexion |
 | Base de données, authentification, stockage | **Supabase** (région UE) | PostgreSQL géré, sécurité par lignes (RLS), stockage, fonctions serveur |
 | Logique serveur et IA | **Supabase Edge Functions** (Deno, TypeScript) + SDK officiel `@anthropic-ai/sdk` | Même langage que l'application, pas de serveur à gérer |

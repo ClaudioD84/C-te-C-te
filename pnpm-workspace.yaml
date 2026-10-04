@@ -1,0 +1,7 @@
+packages:
+  - apps/*
+  - packages/*
+
+# Paquets autorisés à exécuter un script d'installation (téléchargement du binaire Supabase CLI).
+onlyBuiltDependencies:
+  - supabase
