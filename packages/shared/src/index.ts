@@ -1,3 +1,4 @@
+export * from './curriculum';
 export * from './dates';
 export * from './learning-settings';
 export * from './masking';

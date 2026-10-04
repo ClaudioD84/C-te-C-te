@@ -1,0 +1,11 @@
+{
+  "nodeModulesDir": "none",
+  "lock": false,
+  "unstable": [
+    "sloppy-imports"
+  ],
+  "imports": {
+    "zod": "npm:zod@4.6.5",
+    "@anthropic-ai/sdk": "npm:@anthropic-ai/sdk@0.131.0"
+  }
+}

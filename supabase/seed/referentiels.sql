@@ -1,0 +1,2 @@
+-- Généré par scripts/referentiels/importer.ts : ne pas modifier à la main.
+-- Source : les fichiers de scripts/referentiels/donnees/, issus des référentiels officiels FWB.

@@ -23,6 +23,7 @@ jobs:
       - run: pnpm test
       - run: pnpm check:functions
       - run: pnpm test:functions
+      - run: pnpm test:scripts
 
   database:
     name: Migrations Supabase

@@ -8,7 +8,7 @@ import {
   type PlannedDay,
   type WeekPlan,
 } from '@cote-a-cote/shared';
-import { useLocalSearchParams } from 'expo-router';
+import { router, useLocalSearchParams } from 'expo-router';
 import { useState } from 'react';
 import { ActivityIndicator, StyleSheet, View } from 'react-native';
 
@@ -134,6 +134,11 @@ export default function PlanningScreen() {
         ))
       )}
 
+      <Button
+        variant="secondary"
+        label="Voir le programme de l'année"
+        onPress={() => router.push({ pathname: '/programme/[childId]', params: { childId } })}
+      />
       <Button
         label={sessions.data.length === 0 ? 'Calculer le planning' : 'Recalculer le planning'}
         disabled={tasks.data.length === 0}
