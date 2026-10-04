@@ -36,6 +36,11 @@ function ChildCard({ child }: { child: StoredChildProfile }) {
         label="Photographier le journal de classe"
         onPress={() => router.push({ pathname: '/scan/nouveau', params: { childId: child.id } })}
       />
+      <Button
+        variant="secondary"
+        label="Planning de la semaine"
+        onPress={() => router.push({ pathname: '/planning/[childId]', params: { childId: child.id } })}
+      />
       <Button variant="secondary" label="Lancer la mission du jour" onPress={launchMission} />
     </ThemedView>
   );

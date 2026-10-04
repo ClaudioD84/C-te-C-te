@@ -9,6 +9,7 @@ export default function ParentLayout() {
       <Stack.Screen name="noms-a-masquer" options={{ title: 'Noms à masquer' }} />
       <Stack.Screen name="scan/nouveau" options={{ title: 'Nouvelle photo' }} />
       <Stack.Screen name="scan/[scanId]" options={{ title: 'Vérification' }} />
+      <Stack.Screen name="planning/[childId]" options={{ title: 'Planning' }} />
     </Stack>
   );
 }
