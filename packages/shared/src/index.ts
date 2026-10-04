@@ -4,6 +4,7 @@ export * from './learning-settings';
 export * from './masking';
 export * from './parent-code';
 export * from './planning';
+export * from './print';
 export * from './pomodoro';
 export * from './profile';
 export * from './school';

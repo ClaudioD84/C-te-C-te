@@ -171,8 +171,8 @@ Points clés :
 |---|---|---|
 | `scan-extract` | Lire une photo et extraire les tâches | À la demande |
 | `plan-week` | Construire le planning de la semaine | Chaque semaine (traitement groupé le dimanche) + à la demande |
-| `generate-activity` | Exercices, quiz, fiches, flashcards | À la demande, puis mise en cache |
-| `revision-pack` | Dossier de révision | À la demande, quota mensuel |
+| `generate-pack` | Fiche, quiz, exercices et cartes d'une tâche (un seul appel) | À la publication du planning, puis réutilisé ; quota mensuel provisoire : essai 60, Solo 150, Famille 400 |
+| `revision-pack` | Dossier de révision (étape 3) | À la demande, quota mensuel |
 | `revenuecat-webhook` | Mettre à jour l'abonnement | Événements RevenueCat |
 
 ### 7.2 Choix des modèles
@@ -222,12 +222,12 @@ Algorithme déterministe (`packages/shared/src/planning.ts`), exécuté dans l'a
 
 ### 9.2 Répétition espacée (F9)
 
-- Algorithme **FSRS** (ou SM-2 en version simplifiée au départ), calculé sur l'appareil pour fonctionner hors connexion, puis synchronisé.
+- Variante simplifiée de **SM-2** (`packages/shared/src/spaced-repetition.ts`) : une carte facile revient de plus en plus tard, une carte oubliée revient le lendemain, et toute carte revient au plus tard la veille de l'évaluation.
 
 ## 10. Accessibilité dans l'application (F12)
 
 - Un **thème par profil** applique police, taille, interlignage, espacement des lettres et nombre d'éléments par écran.
-- Polices embarquées : une police adaptée à la dyslexie (à choisir après tests : OpenDyslexic, Lexend…) et une police standard très lisible.
+- Police **Lexend** pour les profils dyslexie (chargée au démarrage, embarquée en base64 dans les PDF), police système sinon.
 - Lecture vocale des consignes via **expo-speech**.
 - Les mêmes règles de mise en forme sont réutilisées pour les PDF (F10) : une seule source de vérité pour le style.
 

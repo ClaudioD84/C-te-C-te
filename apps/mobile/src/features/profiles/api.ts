@@ -28,6 +28,8 @@ export function useChildProfiles() {
 export function useChildProfile(id: string) {
   return useQuery({
     queryKey: [...profilesKey, id],
+    // Pas de requête tant que l'identifiant n'est pas connu (évite une erreur 400).
+    enabled: id.length > 0,
     queryFn: async () => {
       const { data, error } = await supabase.from('child_profile').select(COLUMNS).eq('id', id).single();
       if (error) throw error;

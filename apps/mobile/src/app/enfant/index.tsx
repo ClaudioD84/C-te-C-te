@@ -13,6 +13,7 @@ import { PomodoroTimer } from '@/features/mission/pomodoro-timer';
 import { useCompleteItem, useSessions, type SessionItem, type StudySession } from '@/features/planning/api';
 import { CHILD_ACTIVITY_PREFIX } from '@/features/planning/labels';
 import { useChildProfile } from '@/features/profiles/api';
+import { useDueFlashcards } from '@/features/study/api';
 
 /** Console enfant : uniquement la mission du jour, sans menu. */
 export default function ChildConsoleScreen() {
@@ -21,6 +22,7 @@ export default function ChildConsoleScreen() {
   const today = toIsoDate(new Date());
   const child = useChildProfile(childId);
   const sessions = useSessions(childId, today, 1);
+  const dueCards = useDueFlashcards(childId);
 
   const parentButton = (
     <Pressable
@@ -71,6 +73,13 @@ export default function ChildConsoleScreen() {
       </View>
 
       <ScrollView contentContainerStyle={styles.content}>
+        {dueCards.data && dueCards.data.length > 0 ? (
+          <Button
+            variant="secondary"
+            label={`Cartes à revoir (${dueCards.data.length})`}
+            onPress={() => router.push('/enfant/cartes')}
+          />
+        ) : null}
         <ThemedText type="smallBold" themeColor="textSecondary">
           Mission du jour
         </ThemedText>
@@ -141,6 +150,19 @@ function MissionCard({
             label="Écouter"
             style={styles.flex}
             onPress={() => Speech.speak(instruction, { language: 'fr-BE' })}
+          />
+        ) : null}
+        {item.activity !== 'faire' ? (
+          <Button
+            variant="secondary"
+            label="S'entraîner"
+            style={styles.flex}
+            onPress={() =>
+              router.push({
+                pathname: '/enfant/etude/[taskId]',
+                params: { taskId: item.task_id, mode: item.activity === 'etudier' ? 'fiche' : 'quiz' },
+              })
+            }
           />
         ) : null}
         <Button

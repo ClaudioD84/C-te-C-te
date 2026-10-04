@@ -44,8 +44,9 @@ La prise de photo avec masquage automatique des noms (ML Kit) et le dessin des m
 1. Créer un projet sur [supabase.com](https://supabase.com) dans la région **Europe (Frankfurt)**.
 2. Relier le dépôt et appliquer les migrations : `pnpm exec supabase link --project-ref <ref>` puis `pnpm exec supabase db push`.
 3. Ajouter la clé de l'API Claude : `pnpm exec supabase secrets set ANTHROPIC_API_KEY=...`
-   (facultatif : `SCAN_MODEL`, `SCAN_EFFORT` pour régler le modèle et l'effort de lecture des photos).
-4. Déployer les fonctions : `pnpm exec supabase functions deploy scan-extract delete-account`.
+   (facultatif : `SCAN_MODEL`, `SCAN_EFFORT`, `PACK_MODEL`, `PACK_EFFORT` pour régler le modèle et l'effort
+   de la lecture des photos et de la préparation des fiches).
+4. Déployer les fonctions : `pnpm exec supabase functions deploy scan-extract generate-pack delete-account`.
 5. Renseigner l'adresse et la clé publique du projet dans `apps/mobile/.env.local`.
 
 ## Vérifications
@@ -73,3 +74,11 @@ La CI GitHub Actions exécute ces vérifications et applique les migrations Supa
 - outillage d'import des référentiels officiels et écran « Programme de l'année ».
 
 Reste pour l'étape 1 : l'abonnement (RevenueCat, App Store, Google Play) et l'import des premiers référentiels.
+
+Étape 2 en cours. En place :
+
+- fiche de synthèse, quiz, exercices et cartes préparés par Claude pour chaque leçon ou évaluation,
+  dès la publication du planning ; signalement d'erreur et régénération par le parent ;
+- cartes de révision à répétition espacée, ramenées avant la date de l'évaluation ;
+- export « Print & Go » : PDF accessible (Lexend, grands espacements, réponses sur une page séparée) ;
+- police Lexend dans l'application pour les profils dyslexie.

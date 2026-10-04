@@ -5,6 +5,8 @@ export default function ChildLayout() {
     <Stack screenOptions={{ headerShown: false }}>
       <Stack.Screen name="index" />
       <Stack.Screen name="code" options={{ presentation: 'modal' }} />
+      <Stack.Screen name="etude/[taskId]" />
+      <Stack.Screen name="cartes" />
     </Stack>
   );
 }

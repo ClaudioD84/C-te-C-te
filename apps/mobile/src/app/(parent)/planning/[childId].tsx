@@ -20,6 +20,7 @@ import { Spacing } from '@/constants/theme';
 import { usePublishPlan, useSessions, useUpcomingTasks, type UpcomingTask } from '@/features/planning/api';
 import { ACTIVITY_LABELS, alertText, capitalize } from '@/features/planning/labels';
 import { useChildProfile } from '@/features/profiles/api';
+import { preparePacks } from '@/features/study/api';
 import { useTheme } from '@/hooks/use-theme';
 
 /** Planning de la semaine (F4) avec régulation de la charge (F8). Le parent valide avant publication. */
@@ -32,6 +33,7 @@ export default function PlanningScreen() {
   const publish = usePublishPlan(childId);
   const [extraDates, setExtraDates] = useState<IsoDate[]>([]);
   const [preview, setPreview] = useState<WeekPlan | null>(null);
+  const [preparing, setPreparing] = useState<{ done: number; total: number } | null>(null);
 
   if (child.isLoading || tasks.isLoading || sessions.isLoading) {
     return (
@@ -94,7 +96,28 @@ export default function PlanningScreen() {
           label="Publier sur la console de l'enfant"
           loading={publish.isPending}
           onPress={() =>
-            publish.mutate({ from: today, days: preview.days }, { onSuccess: () => setPreview(null) })
+            publish.mutate(
+              { from: today, days: preview.days },
+              {
+                onSuccess: () => {
+                  // Fiches et quiz préparés à l'avance pour les leçons et évaluations de la semaine.
+                  const toStudy = [
+                    ...new Set(
+                      preview.days.flatMap((d) =>
+                        d.items.filter((i) => i.activity !== 'faire').map((i) => i.taskId),
+                      ),
+                    ),
+                  ];
+                  setPreview(null);
+                  if (toStudy.length > 0) {
+                    setPreparing({ done: 0, total: toStudy.length });
+                    preparePacks(toStudy, (done) => setPreparing({ done, total: toStudy.length })).finally(
+                      () => setPreparing(null),
+                    );
+                  }
+                },
+              },
+            )
           }
         />
         <Button variant="secondary" label="Annuler" onPress={() => setPreview(null)} />
@@ -110,6 +133,12 @@ export default function PlanningScreen() {
           ? 'Aucune tâche validée à venir. Photographiez le journal de classe pour commencer.'
           : `${tasks.data.length} tâche${tasks.data.length > 1 ? 's' : ''} à venir.`}
       </ThemedText>
+
+      {preparing ? (
+        <ThemedText themeColor="accent" accessibilityLiveRegion="polite">
+          Préparation des fiches et quiz : {preparing.done} sur {preparing.total}…
+        </ThemedText>
+      ) : null}
 
       {sessions.data.length === 0 ? (
         <ThemedText>Aucun planning publié pour les prochains jours.</ThemedText>
@@ -133,6 +162,20 @@ export default function PlanningScreen() {
           />
         ))
       )}
+
+      {tasks.data.length > 0 ? (
+        <ThemedView type="backgroundElement" style={styles.card}>
+          <ThemedText type="smallBold">Fiches, quiz et impression</ThemedText>
+          {tasks.data.map((task) => (
+            <Button
+              key={task.id}
+              variant="secondary"
+              label={`${task.subject} · ${task.description}`}
+              onPress={() => router.push({ pathname: '/paquet/[taskId]', params: { taskId: task.id } })}
+            />
+          ))}
+        </ThemedView>
+      ) : null}
 
       <Button
         variant="secondary"
