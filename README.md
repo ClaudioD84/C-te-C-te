@@ -51,8 +51,8 @@ La prise de photo avec masquage automatique des noms (ML Kit) et le dessin des m
 ## Vérifications
 
 ```bash
-pnpm lint        # ESLint
-pnpm typecheck   # TypeScript
+pnpm lint               # ESLint
+pnpm typecheck          # TypeScript
 pnpm test               # Tests unitaires (packages/shared)
 pnpm test:functions     # Tests des fonctions serveur (Deno)
 pnpm check:functions    # Types des fonctions et des scripts
