@@ -19,18 +19,30 @@ export const MONTHLY_SCAN_QUOTA: Record<Plan, number> = {
   famille: 200,
 };
 
+/** Paquets d'étude générés par mois civil (valeurs provisoires, à ajuster après la bêta). */
+export const MONTHLY_PACK_QUOTA: Record<Plan, number> = {
+  essai: 60,
+  solo: 150,
+  famille: 400,
+};
+
 export type AccessProblem = 'abonnement_expire' | 'quota_atteint';
 
-export function checkScanAccess(
+export function checkAccess(
   subscription: Subscription | null,
-  scansThisMonth: number,
+  usedThisMonth: number,
+  quota: Record<Plan, number>,
   now: Date,
 ): AccessProblem | null {
   if (!subscription) return 'abonnement_expire';
   const active = subscription.status === 'trial' || subscription.status === 'active';
   if (!active || new Date(subscription.current_period_end) < now) return 'abonnement_expire';
-  if (scansThisMonth >= MONTHLY_SCAN_QUOTA[subscription.plan]) return 'quota_atteint';
+  if (usedThisMonth >= quota[subscription.plan]) return 'quota_atteint';
   return null;
+}
+
+export function checkScanAccess(subscription: Subscription | null, scansThisMonth: number, now: Date) {
+  return checkAccess(subscription, scansThisMonth, MONTHLY_SCAN_QUOTA, now);
 }
 
 export const ACCESS_MESSAGES: Record<AccessProblem, string> = {
@@ -38,6 +50,13 @@ export const ACCESS_MESSAGES: Record<AccessProblem, string> = {
     "Votre essai ou votre abonnement est terminé. Abonnez-vous pour continuer l'analyse des photos.",
   quota_atteint:
     'Vous avez atteint le nombre de photos analysables ce mois-ci. Le compteur repart à zéro le 1er du mois.',
+};
+
+export const PACK_ACCESS_MESSAGES: Record<AccessProblem, string> = {
+  abonnement_expire:
+    'Votre essai ou votre abonnement est terminé. Abonnez-vous pour continuer à préparer des fiches.',
+  quota_atteint:
+    'Le nombre de fiches et quiz préparés ce mois-ci est atteint. Le compteur repart à zéro le 1er du mois.',
 };
 
 /** Début du mois civil en cours, à Bruxelles, au format ISO. */

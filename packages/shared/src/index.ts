@@ -7,4 +7,6 @@ export * from './planning';
 export * from './pomodoro';
 export * from './profile';
 export * from './school';
+export * from './spaced-repetition';
+export * from './study-pack';
 export * from './task';

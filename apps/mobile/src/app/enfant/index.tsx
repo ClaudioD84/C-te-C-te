@@ -6,6 +6,7 @@ import { ActivityIndicator, Pressable, ScrollView, StyleSheet, View } from 'reac
 import { Button } from '@/components/button';
 import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
+import { learningTextStyle } from '@/constants/fonts';
 import { MinTouchSize, Spacing } from '@/constants/theme';
 import { useChildMode } from '@/features/child-mode/child-mode-provider';
 import { PomodoroTimer } from '@/features/mission/pomodoro-timer';
@@ -108,17 +109,7 @@ export default function ChildConsoleScreen() {
 }
 
 function MissionText({ settings, children }: { settings: LearningSettings; children: React.ReactNode }) {
-  const size = 20 * settings.fontScale;
-  return (
-    <ThemedText
-      style={{
-        fontSize: size,
-        lineHeight: size * settings.lineHeight,
-        letterSpacing: size * settings.letterSpacing,
-      }}>
-      {children}
-    </ThemedText>
-  );
+  return <ThemedText style={learningTextStyle(settings)}>{children}</ThemedText>;
 }
 
 function MissionCard({

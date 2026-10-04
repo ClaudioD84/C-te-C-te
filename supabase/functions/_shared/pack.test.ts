@@ -1,0 +1,49 @@
+import { assertEquals, assertStringIncludes, assertThrows } from 'jsr:@std/assert@1';
+
+import { buildPackRequest, parsePack } from './pack.ts';
+
+const valid = {
+  topicUnclear: false,
+  fiche: {
+    title: 'Les fleuves de Belgique',
+    sections: [{ heading: 'La Meuse', points: ['Traverse Liège'] }],
+    keyTerms: [],
+  },
+  quiz: [
+    {
+      question: 'Quel fleuve traverse Liège ?',
+      choices: ['La Meuse', "L'Escaut"],
+      answerIndex: 0,
+      explanation: 'Liège est sur la Meuse.',
+    },
+  ],
+  exercises: [],
+  flashcards: [{ front: 'Fleuve de Liège', back: 'La Meuse' }],
+};
+
+Deno.test('paquet valide accepté', () => {
+  assertEquals(parsePack(JSON.stringify(valid)).quiz.length, 1);
+});
+
+Deno.test('bonne réponse hors des choix refusée', () => {
+  assertThrows(() => parsePack(JSON.stringify({ ...valid, quiz: [{ ...valid.quiz[0], answerIndex: 3 }] })));
+});
+
+Deno.test('requête : niveau, tâche, adaptations et référentiel, sans données personnelles', () => {
+  const text = buildPackRequest({
+    grade: 'P5',
+    track: 'general',
+    needs: ['dyslexie'],
+    task: {
+      subject: 'Éveil',
+      kind: 'interro',
+      description: 'Revoir les fleuves de Belgique',
+      reference: 'p. 12',
+    },
+    curriculum: ['Situer les principaux cours d’eau'],
+  });
+  assertStringIncludes(text, '5e primaire');
+  assertStringIncludes(text, 'Revoir les fleuves de Belgique (p. 12)');
+  assertStringIncludes(text, 'Dyslexie');
+  assertStringIncludes(text, 'Situer les principaux cours');
+});

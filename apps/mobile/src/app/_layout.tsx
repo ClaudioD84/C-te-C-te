@@ -1,3 +1,4 @@
+import { Lexend_400Regular, Lexend_600SemiBold, useFonts } from '@expo-google-fonts/lexend';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { DarkTheme, DefaultTheme, Stack, ThemeProvider } from 'expo-router';
 import * as SplashScreen from 'expo-splash-screen';
@@ -14,7 +15,9 @@ SplashScreen.preventAutoHideAsync();
 function RootNavigator() {
   const { session, loading: sessionLoading } = useSession();
   const { activeChildId, loading: childModeLoading } = useChildMode();
-  const loading = sessionLoading || childModeLoading;
+  // En cas d'échec de chargement de la police, on continue avec la police système.
+  const [fontsLoaded, fontError] = useFonts({ Lexend_400Regular, Lexend_600SemiBold });
+  const loading = sessionLoading || childModeLoading || (!fontsLoaded && !fontError);
 
   useEffect(() => {
     if (!loading) SplashScreen.hideAsync();

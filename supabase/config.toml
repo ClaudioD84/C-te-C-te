@@ -422,3 +422,7 @@ verify_jwt = true
 # Suppression du compte et de toutes les données de la famille (RGPD).
 [functions.delete-account]
 verify_jwt = true
+
+# Paquets d'étude (fiche, quiz, exercices, cartes) générés par l'IA.
+[functions.generate-pack]
+verify_jwt = true

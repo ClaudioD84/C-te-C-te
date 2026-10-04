@@ -81,7 +81,7 @@ Règles :
 10. "documentType" : le type réel du document photographié.
 11. Si aucune tâche n'est lisible, renvoie une liste vide.`;
 
-const GRADE_LABELS: Record<string, string> = {
+export const GRADE_LABELS: Record<string, string> = {
   M1: '1re maternelle',
   M2: '2e maternelle',
   M3: '3e maternelle',
