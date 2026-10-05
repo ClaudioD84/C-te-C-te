@@ -1,4 +1,11 @@
-import { BADGES, deriveLearningSettings, toIsoDate, type LearningSettings } from '@cote-a-cote/shared';
+import {
+  ACTIVITY_PICTOGRAMS,
+  BADGES,
+  deriveLearningSettings,
+  subjectPictogram,
+  toIsoDate,
+  type LearningSettings,
+} from '@cote-a-cote/shared';
 import * as Speech from 'expo-speech';
 import { router } from 'expo-router';
 import { ActivityIndicator, Pressable, ScrollView, StyleSheet, View } from 'react-native';
@@ -173,6 +180,17 @@ function MissionCard({
 
   return (
     <ThemedView type="backgroundElement" style={styles.card}>
+      {settings.pictograms ? (
+        // Repères visuels pour les jeunes lecteurs ; décoratifs, le texte dit la même chose.
+        <View
+          style={styles.pictograms}
+          aria-hidden
+          accessibilityElementsHidden
+          importantForAccessibility="no-hide-descendants">
+          <ThemedText style={styles.pictogram}>{subjectPictogram(item.task.subject)}</ThemedText>
+          <ThemedText style={styles.pictogram}>{ACTIVITY_PICTOGRAMS[item.activity]}</ThemedText>
+        </View>
+      ) : null}
       <ThemedText type="smallBold" themeColor="primary">
         {item.task.subject} · {item.minutes} min
       </ThemedText>
@@ -194,7 +212,11 @@ function MissionCard({
             onPress={() =>
               router.push({
                 pathname: '/enfant/etude/[taskId]',
-                params: { taskId: item.task_id, mode: item.activity === 'etudier' ? 'fiche' : 'quiz' },
+                params: {
+                  taskId: item.task_id,
+                  mode: item.activity === 'etudier' ? 'fiche' : 'quiz',
+                  subject: item.task.subject,
+                },
               })
             }
           />
@@ -223,5 +245,7 @@ const styles = StyleSheet.create({
   },
   card: { padding: Spacing.four, borderRadius: Spacing.four, gap: Spacing.three },
   actions: { flexDirection: 'row', gap: Spacing.two },
+  pictograms: { flexDirection: 'row', gap: Spacing.three },
+  pictogram: { fontSize: 44, lineHeight: 56 },
   flex: { flex: 1 },
 });

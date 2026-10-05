@@ -1,4 +1,4 @@
-import { deriveLearningSettings } from '@cote-a-cote/shared';
+import { deriveLearningSettings, isMathSubject } from '@cote-a-cote/shared';
 import { router, useLocalSearchParams } from 'expo-router';
 import { useEffect, useRef, useState } from 'react';
 import { ActivityIndicator, ScrollView, StyleSheet } from 'react-native';
@@ -20,7 +20,11 @@ const SECTION_LABELS: Record<Section, string> = { fiche: 'Fiche', quiz: 'Quiz', 
 
 /** Entraînement de l'enfant sur une tâche : fiche, quiz et exercices. */
 export default function StudyScreen() {
-  const { taskId, mode } = useLocalSearchParams<{ taskId: string; mode?: Section }>();
+  const { taskId, mode, subject } = useLocalSearchParams<{
+    taskId: string;
+    mode?: Section;
+    subject?: string;
+  }>();
   const { activeChildId } = useChildMode();
   const child = useChildProfile(activeChildId ?? '');
   const pack = useStudyPack(taskId);
@@ -109,7 +113,13 @@ export default function StudyScreen() {
             onFinish={(score, total) => logQuiz(taskId, score, total)}
           />
         ) : null}
-        {current === 'exercices' ? <ExerciseList exercises={content.exercises} settings={settings} /> : null}
+        {current === 'exercices' ? (
+          <ExerciseList
+            exercises={content.exercises}
+            settings={settings}
+            mathSupport={settings.visualMath && isMathSubject(subject ?? '')}
+          />
+        ) : null}
         {back}
       </ScrollView>
     </ThemedView>

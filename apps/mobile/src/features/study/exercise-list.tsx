@@ -9,13 +9,30 @@ import { learningTextStyle } from '@/constants/fonts';
 import { Spacing } from '@/constants/theme';
 
 /** Exercices à faire sur papier ou de tête, avec indice et réponse à découvrir. */
-export function ExerciseList({ exercises, settings }: { exercises: Exercise[]; settings: LearningSettings }) {
+export function ExerciseList({
+  exercises,
+  settings,
+  mathSupport = false,
+}: {
+  exercises: Exercise[];
+  settings: LearningSettings;
+  /** Supports concrets pour le calcul (F12 : dyscalculie, maternelle). */
+  mathSupport?: boolean;
+}) {
   const pageSize = Math.max(1, settings.maxItemsPerScreen);
   const [offset, setOffset] = useState(0);
   const page = exercises.slice(offset, offset + pageSize);
 
   return (
     <View style={styles.container}>
+      {mathSupport ? (
+        <ThemedView type="backgroundElement" style={styles.support}>
+          <ThemedText style={learningTextStyle(settings)}>
+            🧮 Tu peux t&apos;aider : dessine, compte avec des objets (jetons, perles, doigts) et fais une
+            étape à la fois. Prends tout ton temps.
+          </ThemedText>
+        </ThemedView>
+      ) : null}
       {page.map((exercise, i) => (
         <ExerciseCard key={offset + i} exercise={exercise} number={offset + i + 1} settings={settings} />
       ))}
@@ -74,6 +91,7 @@ function ExerciseCard({
 
 const styles = StyleSheet.create({
   container: { gap: Spacing.three },
+  support: { padding: Spacing.three, borderRadius: Spacing.three },
   card: { padding: Spacing.four, borderRadius: Spacing.four, gap: Spacing.two },
   prompt: { fontWeight: 600 },
   answer: { fontStyle: 'italic' },

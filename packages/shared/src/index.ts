@@ -19,3 +19,4 @@ export * from './subscription';
 export * from './task';
 export * from './sha256';
 export * from './progress';
+export * from './pictograms';
