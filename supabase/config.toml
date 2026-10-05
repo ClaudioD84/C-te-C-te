@@ -430,3 +430,13 @@ verify_jwt = true
 # Dossiers de révision (thèmes proposés pour une épreuve).
 [functions.revision-plan]
 verify_jwt = true
+
+# Avis de RevenueCat (abonnements App Store et Google Play) : appelé par RevenueCat, protégé par un secret.
+# Secrets : REVENUECAT_WEBHOOK_SECRET, REVENUECAT_SECRET_API_KEY (recommandé), REVENUECAT_ALLOW_SANDBOX (bêta).
+[functions.revenuecat-webhook]
+verify_jwt = false
+
+# Achats simulés (développement uniquement) : refusés sauf si ALLOW_SIMULATED_PURCHASES=true.
+[functions.simulate-purchase]
+verify_jwt = true
+

@@ -254,9 +254,20 @@ Algorithme déterministe (`packages/shared/src/planning.ts`), exécuté dans l'a
 
 ## 11. Abonnements (F13)
 
-- Produits configurés dans App Store Connect et Google Play Console, regroupés dans RevenueCat (« entitlements » : `solo`, `famille`).
-- L'application lit les droits via le SDK RevenueCat ; le serveur reçoit les changements par **webhook** et met à jour `subscription`.
+- **RevenueCat** regroupe l'App Store et Google Play. L'acheteur RevenueCat est la **famille** (son identifiant) :
+  les achats suivent la famille d'un appareil à l'autre et d'un parent à l'autre.
+- Droits (« entitlements ») : `solo` et `famille`. Produits : `cac_solo_mois`, `cac_famille_mois`
+  (abonnements mensuels), `cac_solo_annee`, `cac_famille_annee` (année scolaire : achat non renouvelable,
+  accès jusqu'au 30 juin ; un achat à partir du 1er mai couvre aussi l'année suivante).
+- L'application affiche les formules au prix du store (`src/features/subscription`) ; elle ne décide jamais
+  de l'accès. Le serveur reçoit les changements par **webhook** (`revenuecat-webhook`) et met à jour
+  `subscription` : achat, renouvellement, résiliation (accès jusqu'à la fin de la période), paiement refusé
+  (délai de grâce), expiration, remboursement, transfert. Chaque événement n'est traité qu'une fois
+  (`subscription_event`) ; avec la clé d'API secrète, l'état est relu dans RevenueCat (source de vérité).
 - Les Edge Functions vérifient toujours l'abonnement **côté serveur** avant un appel à l'IA.
+- Nombre d'enfants : Solo 1, Famille et essai 4, vérifié en base (`check_child_limit`).
+- Sans store (web, Expo Go, pile locale), un **mode simulé** permet de tester le parcours
+  (`simulate-purchase`, refusée sauf `ALLOW_SIMULATED_PURCHASES=true` : jamais en production).
 
 ## 12. Sécurité et RGPD
 

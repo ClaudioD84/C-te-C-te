@@ -45,8 +45,12 @@ export default function NewChildProfileScreen() {
   }
 
   async function save() {
-    await createProfile.mutateAsync({ alias, grade, track, needs });
-    router.back();
+    try {
+      await createProfile.mutateAsync({ alias, grade, track, needs });
+      router.back();
+    } catch {
+      // Message affiché sous le formulaire.
+    }
   }
 
   return (
@@ -99,7 +103,11 @@ export default function NewChildProfileScreen() {
       ) : null}
 
       {createProfile.error ? (
-        <ThemedText themeColor="danger">L&apos;enregistrement a échoué. Vérifiez votre connexion.</ThemedText>
+        <ThemedText themeColor="danger" accessibilityRole="alert">
+          {createProfile.error.message.includes('formule')
+            ? createProfile.error.message
+            : 'L’enregistrement a échoué. Vérifiez votre connexion.'}
+        </ThemedText>
       ) : null}
 
       <Button

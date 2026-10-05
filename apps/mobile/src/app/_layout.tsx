@@ -8,6 +8,7 @@ import { GestureHandlerRootView } from 'react-native-gesture-handler';
 
 import { SessionProvider, useSession } from '@/features/auth/session-provider';
 import { ChildModeProvider, useChildMode } from '@/features/child-mode/child-mode-provider';
+import { logOutBilling } from '@/features/subscription/billing';
 import { clearOfflineCache, persistOptions, queryClient } from '@/lib/query-client';
 import { isSupabaseConfigured } from '@/lib/supabase';
 
@@ -18,7 +19,10 @@ function useClearCacheOnSignOut(signedIn: boolean, loading: boolean) {
   const wasSignedIn = useRef(false);
   useEffect(() => {
     if (loading) return;
-    if (wasSignedIn.current && !signedIn) clearOfflineCache();
+    if (wasSignedIn.current && !signedIn) {
+      clearOfflineCache();
+      logOutBilling();
+    }
     wasSignedIn.current = signedIn;
   }, [signedIn, loading]);
 }

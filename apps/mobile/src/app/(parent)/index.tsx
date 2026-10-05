@@ -10,6 +10,7 @@ import { Spacing } from '@/constants/theme';
 import { useChildMode } from '@/features/child-mode/child-mode-provider';
 import { hasParentCode } from '@/features/child-mode/parent-code-store';
 import { OfflineBanner } from '@/features/offline/offline-banner';
+import { SubscriptionBanner } from '@/features/subscription/subscription-banner';
 import { useChildProfiles, type StoredChildProfile } from '@/features/profiles/api';
 
 function ChildCard({ child }: { child: StoredChildProfile }) {
@@ -57,6 +58,7 @@ export default function CockpitScreen() {
   return (
     <Screen>
       <OfflineBanner audience="parent" />
+      <SubscriptionBanner />
       <ThemedText type="subtitle">Vos enfants</ThemedText>
 
       {isLoading ? <ActivityIndicator /> : null}

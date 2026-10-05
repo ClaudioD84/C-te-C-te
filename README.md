@@ -47,8 +47,18 @@ La prise de photo avec masquage automatique des noms (ML Kit) et le dessin des m
 3. Ajouter la clé de l'API Claude : `pnpm exec supabase secrets set ANTHROPIC_API_KEY=...`
    (facultatif : `SCAN_MODEL`, `SCAN_EFFORT`, `PACK_MODEL`, `PACK_EFFORT` pour régler le modèle et l'effort
    de la lecture des photos et de la préparation des fiches).
-4. Déployer les fonctions : `pnpm exec supabase functions deploy scan-extract generate-pack revision-plan delete-account`.
+4. Déployer les fonctions : `pnpm exec supabase functions deploy scan-extract generate-pack revision-plan delete-account revenuecat-webhook`.
 5. Renseigner l'adresse et la clé publique du projet dans `apps/mobile/.env.local`.
+6. Abonnements :
+   - créer les produits dans App Store Connect et Google Play Console (`cac_solo_mois`, `cac_famille_mois`,
+     `cac_solo_annee`, `cac_famille_annee`) ;
+   - dans RevenueCat : les droits `solo` et `famille`, une offre courante avec les quatre produits, puis un
+     webhook vers `https://<ref>.supabase.co/functions/v1/revenuecat-webhook` avec un en-tête
+     d'autorisation secret ;
+   - `pnpm exec supabase secrets set REVENUECAT_WEBHOOK_SECRET=... REVENUECAT_SECRET_API_KEY=...`
+     (et `REVENUECAT_ALLOW_SANDBOX=true` pendant la bêta) ;
+   - clés publiques RevenueCat et liens des conditions et de la politique de confidentialité dans
+     `apps/mobile/.env.local` (voir `.env.example`).
 
 ## Vérifications
 
@@ -75,7 +85,8 @@ La CI GitHub Actions exécute ces vérifications et applique les migrations Supa
 - console enfant utilisable hors connexion : mission, fiches et cartes gardées sur l'appareil, actions envoyées au retour du réseau ;
 - outillage d'import des référentiels officiels et écran « Programme de l'année ».
 
-Reste pour l'étape 1 : l'abonnement (RevenueCat, App Store, Google Play).
+Abonnement en place (écran des formules, achats App Store et Google Play via RevenueCat, mise à jour par webhook,
+mode simulé pour les tests) ; reste à créer les comptes et produits dans les stores et RevenueCat.
 
 Référentiels importés : tout le tronc commun, de M1 à S3 (10 998 entrées), et les compétences terminales du
 secondaire, S3/S4 à S6/S7, selon la filière (9 364 entrées) ; voir `scripts/referentiels/README.md`.

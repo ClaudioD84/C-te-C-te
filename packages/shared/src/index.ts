@@ -14,4 +14,5 @@ export * from './rewards';
 export * from './school';
 export * from './spaced-repetition';
 export * from './study-pack';
+export * from './subscription';
 export * from './task';

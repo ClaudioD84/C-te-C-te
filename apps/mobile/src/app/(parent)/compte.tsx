@@ -45,6 +45,11 @@ export default function AccountScreen() {
     <Screen>
       <ThemedText themeColor="textSecondary">Connecté avec {session?.user.email}</ThemedText>
 
+      <ThemedText type="smallBold">Abonnement</ThemedText>
+      <Link href="/abonnement" asChild>
+        <Button variant="secondary" label="Mon abonnement" />
+      </Link>
+
       <ThemedText type="smallBold">Réglages</ThemedText>
       <Link href="/noms-a-masquer" asChild>
         <Button variant="secondary" label="Noms à masquer sur les photos" />
@@ -67,8 +72,9 @@ export default function AccountScreen() {
           type="backgroundElement"
           style={{ padding: Spacing.three, borderRadius: Spacing.three, gap: Spacing.two }}>
           <ThemedText>
-            Tous les profils, tâches et plannings de la famille seront supprimés définitivement. Saisissez
-            votre mot de passe pour confirmer.
+            Tous les profils, tâches et plannings de la famille seront supprimés définitivement. Un abonnement
+            en cours n’est pas résilié automatiquement : résiliez-le dans les réglages de votre compte App
+            Store ou Google Play. Saisissez votre mot de passe pour confirmer.
           </ThemedText>
           <TextField label="Mot de passe" value={password} onChangeText={setPassword} secureTextEntry />
           <Button

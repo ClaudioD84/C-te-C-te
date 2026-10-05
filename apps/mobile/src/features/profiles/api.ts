@@ -54,6 +54,11 @@ export function useCreateChildProfile() {
         })
         .select(COLUMNS)
         .single();
+      if (error?.message.includes('limite_enfants')) {
+        throw new Error(
+          'Votre formule Solo concerne un seul enfant. Passez à la formule Famille (jusqu’à 4 enfants) pour en ajouter un autre.',
+        );
+      }
       if (error) throw error;
       return fromRow(data);
     },
