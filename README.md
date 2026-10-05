@@ -48,7 +48,7 @@ La prise de photo avec masquage automatique des noms (ML Kit) et le dessin des m
 3. Ajouter la clé de l'API Claude : `pnpm exec supabase secrets set ANTHROPIC_API_KEY=...`
    (facultatif : `SCAN_MODEL`, `SCAN_EFFORT`, `PACK_MODEL`, `PACK_EFFORT` pour régler le modèle et l'effort
    de la lecture des photos et de la préparation des fiches).
-4. Déployer les fonctions : `pnpm exec supabase functions deploy scan-extract generate-pack revision-plan delete-account revenuecat-webhook purge-photos`.
+4. Déployer les fonctions : `pnpm exec supabase functions deploy scan-extract generate-pack revision-plan delete-account revenuecat-webhook purge-photos purge-inactive`.
 5. Renseigner l'adresse et la clé publique du projet dans `apps/mobile/.env.local`.
 6. Abonnements :
    - créer les produits dans App Store Connect et Google Play Console (`cac_solo_mois`, `cac_famille_mois`,
