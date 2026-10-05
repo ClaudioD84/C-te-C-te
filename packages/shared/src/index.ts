@@ -23,3 +23,4 @@ export * from './pictograms';
 export * from './kindergarten';
 export * from './days-off';
 export * from './report';
+export * from './dictation';

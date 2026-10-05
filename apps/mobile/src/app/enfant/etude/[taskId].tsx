@@ -1,4 +1,4 @@
-import { deriveLearningSettings, isMathSubject } from '@cote-a-cote/shared';
+import { deriveLearningSettings, dictationWords, isMathSubject } from '@cote-a-cote/shared';
 import { router, useLocalSearchParams } from 'expo-router';
 import { useEffect, useRef, useState } from 'react';
 import { ActivityIndicator, ScrollView, StyleSheet } from 'react-native';
@@ -10,13 +10,19 @@ import { ThemedView } from '@/components/themed-view';
 import { Spacing } from '@/constants/theme';
 import { useChildMode } from '@/features/child-mode/child-mode-provider';
 import { useChildProfile } from '@/features/profiles/api';
+import { DictationPlayer } from '@/features/study/dictation-player';
 import { ExerciseList } from '@/features/study/exercise-list';
 import { FicheView } from '@/features/study/fiche-view';
 import { QuizPlayer } from '@/features/study/quiz-player';
 import { useGeneratePack, useLogQuiz, useStudyPack } from '@/features/study/api';
 
-type Section = 'fiche' | 'quiz' | 'exercices';
-const SECTION_LABELS: Record<Section, string> = { fiche: 'Fiche', quiz: 'Quiz', exercices: 'Exercices' };
+type Section = 'fiche' | 'quiz' | 'exercices' | 'ecoute';
+const SECTION_LABELS: Record<Section, string> = {
+  fiche: 'Fiche',
+  quiz: 'Quiz',
+  exercices: 'Exercices',
+  ecoute: 'Écoute et écris',
+};
 
 /** Entraînement de l'enfant sur une tâche : fiche, quiz et exercices. */
 export default function StudyScreen() {
@@ -84,12 +90,15 @@ export default function StudyScreen() {
     );
   }
 
-  const available = (['fiche', 'quiz', 'exercices'] as const).filter((s) =>
+  const words = dictationWords(subject ?? '', content.fiche?.keyTerms ?? []);
+  const available = (['fiche', 'quiz', 'exercices', 'ecoute'] as const).filter((s) =>
     s === 'fiche'
       ? content.fiche !== null
       : s === 'quiz'
         ? content.quiz.length > 0
-        : content.exercises.length > 0,
+        : s === 'exercices'
+          ? content.exercises.length > 0
+          : words.length >= 2,
   );
   const current = section && available.includes(section) ? section : available[0];
 
@@ -118,6 +127,14 @@ export default function StudyScreen() {
             exercises={content.exercises}
             settings={settings}
             mathSupport={settings.visualMath && isMathSubject(subject ?? '')}
+          />
+        ) : null}
+        {current === 'ecoute' ? (
+          <DictationPlayer
+            words={words}
+            subject={subject ?? ''}
+            settings={settings}
+            onFinish={(correct, total) => logQuiz(taskId, correct, total, 'ecoute')}
           />
         ) : null}
         {back}

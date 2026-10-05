@@ -202,12 +202,12 @@ export function useLogQuiz(childId: string) {
     mutationKey: OFFLINE_MUTATIONS.learningEvent,
     onSettled: () => queryClient.invalidateQueries({ queryKey: ['effort', childId] }),
   });
-  return (taskId: string, score: number, total: number) =>
+  return (taskId: string, score: number, total: number, mode?: 'ecoute') =>
     mutation.mutate({
       id: randomUUID(),
       childId,
       type: 'quiz',
-      meta: { task_id: taskId, score, total },
+      meta: { task_id: taskId, score, total, ...(mode ? { mode } : {}) },
       at: new Date().toISOString(),
     });
 }

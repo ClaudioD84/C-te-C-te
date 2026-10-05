@@ -38,7 +38,10 @@ const answers = {
         { heading: 'La Meuse', points: ['Elle traverse Namur et Liège.'] },
         { heading: "L'Escaut", points: ['Il traverse Tournai, Gand et Anvers.'] },
       ],
-      keyTerms: [{ term: 'Fleuve', definition: "Cours d'eau qui se jette dans la mer." }],
+      keyTerms: [
+        { term: 'Fleuve', definition: "Cours d'eau qui se jette dans la mer." },
+        { term: 'Affluent', definition: "Cours d'eau qui se jette dans un autre." },
+      ],
     },
     quiz: [
       {
