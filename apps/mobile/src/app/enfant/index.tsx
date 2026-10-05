@@ -156,6 +156,9 @@ export default function ChildConsoleScreen() {
             onPress={() => router.push('/enfant/dictee')}
           />
         ) : null}
+        {schoolLevel(child.data.grade) !== 'maternelle' ? (
+          <Button variant="secondary" label="📚 J’ai lu" onPress={() => router.push('/enfant/lecture')} />
+        ) : null}
         {schoolLevel(child.data.grade) === 'primaire' ? (
           <Button
             variant="secondary"
