@@ -12,6 +12,9 @@ test('accessoires de l’avatar : débloqués par l’effort, choisis par l’en
   await enterChildMode(page, 'Renardeau');
   await button(page, /Voir mes badges/).click();
   await expect(page.getByText(/^Mon avatar :/)).toBeVisible();
+  // Diplôme à imprimer pour un badge gagné, pas pour un badge à découvrir.
+  await expect(button(page, 'Imprimer le diplôme Premier pas')).toBeVisible();
+  await expect(button(page, 'Imprimer le diplôme Belle série')).toHaveCount(0);
   await expect(page.getByRole('button', { name: /^Couronne, à débloquer/ })).toBeDisabled();
   await page.getByRole('button', { name: 'Casquette', exact: true }).click();
   await expect(page.getByRole('button', { name: 'Casquette, porté' })).toBeVisible();

@@ -19,7 +19,7 @@ export interface PrintOptions {
   fontFamilyName: string;
 }
 
-const escapeHtml = (text: string) =>
+export const escapeHtml = (text: string) =>
   text.replaceAll('&', '&amp;').replaceAll('<', '&lt;').replaceAll('>', '&gt;').replaceAll('"', '&quot;');
 
 /** Contenu imprimable d'un paquet (sans l'enveloppe HTML). */

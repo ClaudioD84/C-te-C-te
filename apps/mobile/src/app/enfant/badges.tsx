@@ -1,4 +1,4 @@
-import { BADGES, formatShortDate, type BadgeCode } from '@cote-a-cote/shared';
+import { BADGES, buildCertificateHtml, formatShortDate, type BadgeCode } from '@cote-a-cote/shared';
 import { router } from 'expo-router';
 import { ActivityIndicator, ScrollView, StyleSheet, View } from 'react-native';
 
@@ -9,7 +9,8 @@ import { Spacing } from '@/constants/theme';
 import { useChildMode } from '@/features/child-mode/child-mode-provider';
 import { useChildProfile } from '@/features/profiles/api';
 import { useRewards } from '@/features/rewards/api';
-import { AccessoryPicker } from '@/features/rewards/accessory-picker';
+import { printCertificate } from '@/features/print/print-pack';
+import { AccessoryPicker, avatarWithAccessory } from '@/features/rewards/accessory-picker';
 import { AvatarProgress } from '@/features/rewards/avatar-progress';
 
 /** Badges de l'enfant : ceux gagnés, et ceux à découvrir (jamais perdus). */
@@ -46,10 +47,8 @@ export default function BadgesScreen() {
               key={code}
               type="backgroundElement"
               // Badge à découvrir : seul le pictogramme est estompé, le texte reste bien lisible.
-              style={styles.badge}
-              accessible
-              accessibilityLabel={`${badge.title}. ${badge.description} ${date ? 'Gagné.' : 'À découvrir.'}`}>
-              <ThemedText style={[styles.emoji, !date && styles.locked]}>
+              style={styles.badge}>
+              <ThemedText style={[styles.emoji, !date && styles.locked]} aria-hidden>
                 {date ? badge.emoji : '🔒'}
               </ThemedText>
               <View style={styles.text}>
@@ -58,6 +57,23 @@ export default function BadgesScreen() {
                   {badge.description}
                   {date ? ` Gagné le ${formatShortDate(date)}.` : ' À découvrir.'}
                 </ThemedText>
+                {date && child.data ? (
+                  <Button
+                    variant="secondary"
+                    label="🖨️ Imprimer mon diplôme"
+                    accessibilityLabel={`Imprimer le diplôme ${badge.title}`}
+                    onPress={() =>
+                      void printCertificate(
+                        buildCertificateHtml({
+                          alias: child.data!.alias,
+                          avatar: avatarWithAccessory(child.data!),
+                          badge: code,
+                          earnedOn: date,
+                        }),
+                      ).catch(() => undefined)
+                    }
+                  />
+                ) : null}
               </View>
             </ThemedView>
           );

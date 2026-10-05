@@ -65,3 +65,8 @@ export async function printPacks(
   });
   await Print.printAsync({ html });
 }
+
+/** Diplôme d'un badge, à imprimer. */
+export async function printCertificate(html: string): Promise<void> {
+  await Print.printAsync({ html });
+}

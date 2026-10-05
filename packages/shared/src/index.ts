@@ -28,3 +28,4 @@ export * from './breathing';
 export * from './holidays';
 export * from './accessories';
 export * from './table-talk';
+export * from './certificate';
