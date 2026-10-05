@@ -15,8 +15,10 @@ import { Screen } from '@/components/screen';
 import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
 import { Spacing } from '@/constants/theme';
+import { useCultureSuggestions } from '@/features/culture/api';
+import { CultureSuggestions } from '@/features/culture/culture-card';
 import { useDeleteExam, useExams } from '@/features/exams/api';
-import { useSessions } from '@/features/planning/api';
+import { useSessions, useUpcomingTasks } from '@/features/planning/api';
 import { useChildProfile } from '@/features/profiles/api';
 import { useRewards } from '@/features/rewards/api';
 import { AvatarProgress } from '@/features/rewards/avatar-progress';
@@ -31,6 +33,11 @@ export default function FollowUpScreen() {
   const exams = useExams(childId);
   const deleteExam = useDeleteExam(childId);
   const pastSessions = useSessions(childId, addDays(today, -7), 7);
+  const upcoming = useUpcomingTasks(childId);
+  const culture = useCultureSuggestions(
+    child.data?.grade,
+    (upcoming.data ?? []).map((t) => t.subject),
+  );
 
   if (!child.data || rewards.isLoading || !rewards.summary) {
     return (
@@ -99,6 +106,8 @@ export default function FollowUpScreen() {
           onPress={() => router.push({ pathname: '/examen/nouveau', params: { childId } })}
         />
       </ThemedView>
+
+      <CultureSuggestions suggestions={culture.data} />
 
       <ThemedView type="backgroundElement" style={styles.card}>
         <ThemedText type="smallBold">Pas encore fait (7 derniers jours)</ThemedText>

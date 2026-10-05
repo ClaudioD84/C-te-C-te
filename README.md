@@ -15,6 +15,7 @@ Assistant pédagogique pour les familles de la Fédération Wallonie-Bruxelles :
 | `packages/shared` | Schémas, règles d'adaptation au profil, minuteur Pomodoro (code partagé et testé) |
 | `supabase` | Configuration, migrations SQL (schéma, sécurité RLS, stockage), fonctions serveur (`functions/`) |
 | `scripts/referentiels` | Structuration et import des référentiels officiels FWB |
+| `scripts/culture` | Base de contenus culturels vérifiés (« pour aller plus loin ») |
 | `docs` | Cahier des charges et architecture |
 
 ## Démarrer en local
@@ -46,7 +47,7 @@ La prise de photo avec masquage automatique des noms (ML Kit) et le dessin des m
 3. Ajouter la clé de l'API Claude : `pnpm exec supabase secrets set ANTHROPIC_API_KEY=...`
    (facultatif : `SCAN_MODEL`, `SCAN_EFFORT`, `PACK_MODEL`, `PACK_EFFORT` pour régler le modèle et l'effort
    de la lecture des photos et de la préparation des fiches).
-4. Déployer les fonctions : `pnpm exec supabase functions deploy scan-extract generate-pack delete-account`.
+4. Déployer les fonctions : `pnpm exec supabase functions deploy scan-extract generate-pack revision-plan delete-account`.
 5. Renseigner l'adresse et la clé publique du projet dans `apps/mobile/.env.local`.
 
 ## Vérifications
@@ -82,3 +83,15 @@ Reste pour l'étape 1 : l'abonnement (RevenueCat, App Store, Google Play) et l'i
 - cartes de révision à répétition espacée, ramenées avant la date de l'évaluation ;
 - export « Print & Go » : PDF accessible (Lexend, grands espacements, réponses sur une page séparée) ;
 - police Lexend dans l'application pour les profils dyslexie.
+
+Reste pour l'étape 2 : le programme du secondaire et de la maternelle (référentiels à importer).
+
+Étape 3 en cours. En place :
+
+- gamification éthique : points d'effort, avatar qui grandit, badges de régularité et de persévérance ;
+- dossiers de révision (CEB, CE1D, CESS, bilans) : thèmes proposés par Claude, relus par le parent,
+  étalés jusqu'à l'épreuve ;
+- écran Suivi : indicateurs de la semaine, minutes par semaine, épreuves à venir, travail à rattraper ;
+- structure de l'enrichissement culturel (base de contenus vérifiés, suggestions selon l'année et les matières).
+
+Reste pour l'étape 3 : constituer la base de contenus culturels vérifiés.

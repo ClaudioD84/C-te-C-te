@@ -172,7 +172,7 @@ Points clés :
 | `scan-extract` | Lire une photo et extraire les tâches | À la demande |
 | `plan-week` | Construire le planning de la semaine | Chaque semaine (traitement groupé le dimanche) + à la demande |
 | `generate-pack` | Fiche, quiz, exercices et cartes d'une tâche (un seul appel) | À la publication du planning, puis réutilisé ; quota mensuel provisoire : essai 60, Solo 150, Famille 400 |
-| `revision-pack` | Dossier de révision (étape 3) | À la demande, quota mensuel |
+| `revision-plan` | Thèmes de révision d'une épreuve (CEB, CE1D, CESS, bilan), étalés ensuite par l'application | À la demande ; quota mensuel provisoire : essai 3, Solo 10, Famille 25 |
 | `revenuecat-webhook` | Mettre à jour l'abonnement | Événements RevenueCat |
 
 ### 7.2 Choix des modèles
