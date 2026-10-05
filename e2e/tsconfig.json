@@ -9,5 +9,5 @@
     "allowJs": true,
     "types": ["node"]
   },
-  "include": ["playwright.config.ts", "tests", "support"]
+  "include": ["playwright.config.ts", "playwright.captures.config.ts", "tests", "captures", "support"]
 }

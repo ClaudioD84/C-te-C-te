@@ -7,6 +7,7 @@ Assistant pédagogique pour les familles de la Fédération Wallonie-Bruxelles :
 - [Cahier des charges](docs/cahier-des-charges.md) — vision, fonctionnalités, étapes de livraison, modèle économique
 - [Architecture technique](docs/architecture.md) — choix techniques, modèle de données, circuit des photos, IA, RGPD
 - [Dossier RGPD](docs/rgpd/README.md) — registre, analyse d'impact, politique de confidentialité, déclarations des stores, plan d'action
+- [Publication sur les stores](docs/publication/README.md) — fiches, captures, notes de revue, étapes de soumission
 
 ## Organisation du dépôt
 

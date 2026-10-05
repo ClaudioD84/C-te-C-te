@@ -39,10 +39,9 @@ export default function NewScanScreen() {
 
   async function pick(source: 'camera' | 'galerie') {
     setMessage(null);
+    // La galerie passe par le sélecteur du système : aucun accès à toute la photothèque n'est demandé.
     const permission =
-      source === 'camera'
-        ? await ImagePicker.requestCameraPermissionsAsync()
-        : await ImagePicker.requestMediaLibraryPermissionsAsync();
+      source === 'camera' ? await ImagePicker.requestCameraPermissionsAsync() : { granted: true };
     if (!permission.granted) {
       setMessage("L'accès a été refusé. Vous pouvez l'autoriser dans les réglages du téléphone.");
       return;
