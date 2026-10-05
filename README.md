@@ -14,6 +14,7 @@ Assistant pédagogique pour les familles de la Fédération Wallonie-Bruxelles :
 | ---------------------- | ------------------------------------------------------------------------------------------------ |
 | `apps/mobile`          | Application Expo (iPhone, Android, tablettes)                                                    |
 | `packages/shared`      | Schémas, règles d'adaptation au profil, minuteur Pomodoro (code partagé et testé)                |
+| `e2e`                  | Tests de bout en bout (Playwright, pile Supabase locale)                                         |
 | `supabase`             | Configuration, migrations SQL (schéma, sécurité RLS, stockage), fonctions serveur (`functions/`) |
 | `scripts/referentiels` | Structuration et import des référentiels officiels FWB                                           |
 | `scripts/culture`      | Base de contenus culturels vérifiés (« pour aller plus loin »)                                   |
@@ -82,6 +83,7 @@ pnpm test               # Tests unitaires (packages/shared)
 pnpm test:functions     # Tests des fonctions serveur (Deno)
 pnpm check:functions    # Types des fonctions et des scripts
 pnpm format:check       # Mise en forme (Prettier)
+pnpm test:e2e           # Tests de bout en bout (voir e2e/README.md)
 ```
 
 La CI GitHub Actions exécute ces vérifications et applique les migrations Supabase sur une base vierge.

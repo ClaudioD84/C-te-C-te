@@ -13,3 +13,8 @@ supabase/.temp
 
 # Python
 __pycache__/
+
+# Tests de bout en bout
+e2e/.web/
+e2e/test-results/
+e2e/playwright-report/
