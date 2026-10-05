@@ -44,7 +44,9 @@ Deno.test('requête : niveau, tâche, adaptations et référentiel, sans donnée
   });
   assertStringIncludes(text, '5e primaire');
   assertStringIncludes(text, 'Revoir les fleuves de Belgique (p. 12)');
-  assertStringIncludes(text, 'Dyslexie');
+  assertStringIncludes(text, 'pas de pièges orthographiques');
+  // Minimisation : le trouble n'est pas nommé.
+  if (/dyslexie|tdah|dyscalculie/i.test(text)) throw new Error('Donnée de santé envoyée à l’IA');
   assertStringIncludes(text, 'Situer les principaux cours');
 });
 

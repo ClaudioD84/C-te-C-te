@@ -91,12 +91,16 @@ Règles :
 5. Respecte les adaptations demandées pour cet élève.
 6. Quantités : quiz 5 à 10 questions, cartes 6 à 15, exercices 4 à 8 (moins pour les petits niveaux).`;
 
+/**
+ * Besoins particuliers traduits en consignes de rédaction. Minimisation (RGPD) : le trouble lui-même
+ * (donnée de santé) n'est jamais nommé dans la demande envoyée à l'IA, seules les adaptations le sont.
+ */
 const NEED_ADAPTATIONS: Record<string, string> = {
-  tdah: 'TDAH : consignes très courtes, une seule idée par phrase, peu de questions par série, ton encourageant.',
+  tdah: 'Consignes très courtes, une seule idée par phrase, peu de questions par série, ton encourageant.',
   dyslexie:
-    'Dyslexie : mots simples et fréquents, phrases courtes, pas de pièges orthographiques dans les choix du quiz.',
+    'Mots simples et fréquents, phrases courtes, pas de pièges orthographiques dans les choix du quiz.',
   dyscalculie:
-    'Dyscalculie : étapes de calcul décomposées, petits nombres, appui sur des exemples concrets et visuels décrits en mots.',
+    'Étapes de calcul décomposées, petits nombres, appui sur des exemples concrets et visuels décrits en mots.',
 };
 
 export function buildPackRequest(input: {

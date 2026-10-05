@@ -6,6 +6,7 @@ Assistant pédagogique pour les familles de la Fédération Wallonie-Bruxelles :
 
 - [Cahier des charges](docs/cahier-des-charges.md) — vision, fonctionnalités, étapes de livraison, modèle économique
 - [Architecture technique](docs/architecture.md) — choix techniques, modèle de données, circuit des photos, IA, RGPD
+- [Dossier RGPD](docs/rgpd/README.md) — registre, analyse d'impact, politique de confidentialité, déclarations des stores, plan d'action
 
 ## Organisation du dépôt
 
@@ -47,7 +48,7 @@ La prise de photo avec masquage automatique des noms (ML Kit) et le dessin des m
 3. Ajouter la clé de l'API Claude : `pnpm exec supabase secrets set ANTHROPIC_API_KEY=...`
    (facultatif : `SCAN_MODEL`, `SCAN_EFFORT`, `PACK_MODEL`, `PACK_EFFORT` pour régler le modèle et l'effort
    de la lecture des photos et de la préparation des fiches).
-4. Déployer les fonctions : `pnpm exec supabase functions deploy scan-extract generate-pack revision-plan delete-account revenuecat-webhook`.
+4. Déployer les fonctions : `pnpm exec supabase functions deploy scan-extract generate-pack revision-plan delete-account revenuecat-webhook purge-photos`.
 5. Renseigner l'adresse et la clé publique du projet dans `apps/mobile/.env.local`.
 6. Abonnements :
    - créer les produits dans App Store Connect et Google Play Console (`cac_solo_mois`, `cac_famille_mois`,
@@ -59,6 +60,9 @@ La prise de photo avec masquage automatique des noms (ML Kit) et le dessin des m
      (et `REVENUECAT_ALLOW_SANDBOX=true` pendant la bêta) ;
    - clés publiques RevenueCat et liens des conditions et de la politique de confidentialité dans
      `apps/mobile/.env.local` (voir `.env.example`).
+7. Purge des photos : `pnpm exec supabase secrets set PURGE_SECRET=...`, puis une tâche quotidienne dans
+   Supabase > Integrations > Cron qui appelle `https://<ref>.supabase.co/functions/v1/purge-photos` (POST) avec
+   l'en-tête `Authorization: Bearer <PURGE_SECRET>`. Elle supprime les photos restées plus de 24 heures.
 
 ## Vérifications
 

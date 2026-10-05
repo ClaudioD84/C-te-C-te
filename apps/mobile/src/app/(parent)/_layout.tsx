@@ -5,6 +5,7 @@ export default function ParentLayout() {
     <Stack>
       <Stack.Screen name="index" options={{ title: 'Cockpit parent' }} />
       <Stack.Screen name="profils/nouveau" options={{ title: 'Nouvel enfant', presentation: 'modal' }} />
+      <Stack.Screen name="profils/[childId]" options={{ title: 'Modifier le profil' }} />
       <Stack.Screen name="code-parent" options={{ title: 'Code parent', presentation: 'modal' }} />
       <Stack.Screen name="noms-a-masquer" options={{ title: 'Noms à masquer' }} />
       <Stack.Screen name="scan/nouveau" options={{ title: 'Nouvelle photo' }} />

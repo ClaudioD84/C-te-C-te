@@ -16,6 +16,10 @@ const EXPORTED_TABLES = [
   'task',
   'study_session',
   'study_session_task',
+  'study_pack',
+  'flashcard',
+  'exam',
+  'learning_event',
   'ai_usage',
 ] as const;
 

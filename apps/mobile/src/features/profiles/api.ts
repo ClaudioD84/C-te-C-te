@@ -1,4 +1,9 @@
-import { childProfileSchema, type ChildProfile, type ChildProfileInput } from '@cote-a-cote/shared';
+import {
+  childProfileSchema,
+  nextNeedsConsentAt,
+  type ChildProfile,
+  type ChildProfileInput,
+} from '@cote-a-cote/shared';
 import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query';
 
 import { supabase } from '@/lib/supabase';
@@ -63,5 +68,55 @@ export function useCreateChildProfile() {
       return fromRow(data);
     },
     onSuccess: () => queryClient.invalidateQueries({ queryKey: profilesKey }),
+  });
+}
+
+export function useUpdateChildProfile(id: string) {
+  const queryClient = useQueryClient();
+  return useMutation({
+    mutationFn: async (input: Pick<ChildProfileInput, 'alias' | 'grade' | 'track' | 'needs'>) => {
+      const profile = childProfileSchema.parse(input);
+      const { data: current, error: readError } = await supabase
+        .from('child_profile')
+        .select('needs, needs_consent_at')
+        .eq('id', id)
+        .single();
+      if (readError) throw readError;
+      const { error } = await supabase
+        .from('child_profile')
+        .update({
+          alias: profile.alias,
+          grade: profile.grade,
+          track: profile.track,
+          needs: profile.needs,
+          needs_consent_at: nextNeedsConsentAt(
+            current.needs as string[],
+            profile.needs,
+            current.needs_consent_at as string | null,
+          ),
+        })
+        .eq('id', id);
+      if (error) throw error;
+    },
+    onSuccess: () => queryClient.invalidateQueries({ queryKey: profilesKey }),
+  });
+}
+
+export function useDeleteChildProfile(id: string) {
+  const queryClient = useQueryClient();
+  return useMutation({
+    mutationFn: async () => {
+      // Les photos encore présentes sont effacées du stockage ; le reste suit par cascade.
+      const { data: scans } = await supabase
+        .from('scan')
+        .select('storage_path')
+        .eq('child_id', id)
+        .not('storage_path', 'is', null);
+      const paths = (scans ?? []).map((s) => String(s.storage_path));
+      if (paths.length > 0) await supabase.storage.from('scans').remove(paths);
+      const { error } = await supabase.from('child_profile').delete().eq('id', id);
+      if (error) throw error;
+    },
+    onSuccess: () => queryClient.invalidateQueries(),
   });
 }

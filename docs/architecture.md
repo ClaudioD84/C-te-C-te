@@ -288,12 +288,12 @@ Algorithme déterministe (`packages/shared/src/planning.ts`), exécuté dans l'a
 | Hébergement | Supabase région UE (Francfort) |
 | Accès aux données | RLS sur toutes les tables : un parent ne voit que sa famille |
 | Pseudonymisation | Alias pour les enfants ; liste des vrais noms uniquement sur l'appareil |
-| Photos | Masquées avant envoi, stockage privé, suppression après traitement |
-| Données de santé | Consentement explicite et horodaté, chiffrement, minimisation dans les requêtes IA |
-| Sous-traitants | Supabase, Anthropic, RevenueCat, Sentry : accords de traitement (DPA) à signer ; vérifier la durée de conservation des données par Anthropic et les options disponibles |
-| Droits des utilisateurs | Export JSON et suppression complète du compte depuis l'application |
+| Photos | Masquées avant envoi, stockage privé, suppression après traitement ; fonction `purge-photos` (tâche quotidienne) pour celles restées plus de 24 h |
+| Données de santé | Consentement explicite et horodaté (renouvelé à chaque besoin ajouté, effacé au retrait) ; les requêtes IA ne contiennent que les consignes d'adaptation, jamais le trouble |
+| Sous-traitants | Supabase, Anthropic, RevenueCat (et Sentry s'il est ajouté) : accords de traitement (DPA) à signer ; vérifier la durée de conservation des données par Anthropic et les options disponibles |
+| Droits des utilisateurs | Export JSON, modification et suppression d'un profil enfant, suppression complète du compte depuis l'application |
 | Secrets | Clés API uniquement dans les variables d'environnement des Edge Functions, jamais dans l'application |
-| Avant le lancement public | AIPD, politique de confidentialité et conditions d'utilisation relues par un juriste |
+| Avant le lancement public | AIPD, politique de confidentialité et conditions d'utilisation relues par un juriste ; voir le [dossier RGPD](rgpd/README.md) |
 
 ## 13. Environnements
 

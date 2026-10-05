@@ -50,3 +50,19 @@ export const childProfileSchema = z
   });
 export type ChildProfileInput = z.input<typeof childProfileSchema>;
 export type ChildProfile = z.output<typeof childProfileSchema>;
+
+/**
+ * Date de consentement à enregistrer après modification des besoins particuliers :
+ * aucune si les besoins sont retirés (retrait du consentement), maintenant si un besoin est ajouté
+ * (le parent vient de reconfirmer son accord), inchangée sinon.
+ */
+export function nextNeedsConsentAt(
+  previous: readonly string[],
+  next: readonly string[],
+  previousConsentAt: string | null,
+  now = new Date(),
+): string | null {
+  if (next.length === 0) return null;
+  const added = next.some((need) => !previous.includes(need));
+  return added || !previousConsentAt ? now.toISOString() : previousConsentAt;
+}
