@@ -262,6 +262,16 @@ test('tablette : droits limités à la console de son enfant', async ({ request 
   expect((await note({ message: 'Modifié' })).ok()).toBeFalsy();
   expect((await note({ seen_at: new Date().toISOString() })).ok()).toBeTruthy();
 
+  // Accessoire de l'avatar : pour son enfant seulement.
+  const accessory = (childId: string, value: string) =>
+    request.post(`${GATEWAY_URL}/rest/v1/rpc/set_avatar_accessory`, {
+      headers: headers(token),
+      data: { p_child_id: childId, p_accessory: value },
+    });
+  expect((await accessory(family.childId, 'cape')).ok()).toBeTruthy();
+  expect((await accessory(siblingId, 'cape')).ok()).toBeFalsy();
+  expect((await accessory(family.childId, 'inconnu')).ok()).toBeFalsy();
+
   // Essais de codes au hasard : bloqués après 10 erreurs pour une même adresse.
   for (let i = 0; i < 9; i++) expect((await pair('ZZZZZZZZ')).status()).toBe(404);
   expect((await pair('ZZZZZZZZ')).status()).toBe(429);
