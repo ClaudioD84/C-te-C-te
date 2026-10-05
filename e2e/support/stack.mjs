@@ -7,7 +7,7 @@ import http from 'node:http';
 import { join } from 'node:path';
 
 import { startMocks } from './mocks.mjs';
-import { GATEWAY_URL, ROOT, supabaseStatus } from './supabase.mjs';
+import { GATEWAY_URL, LISTEN_HOST, ROOT, supabaseStatus } from './supabase.mjs';
 
 const status = supabaseStatus();
 const functionsDir = join(ROOT, 'supabase/functions');
@@ -115,4 +115,4 @@ http
     });
     req.pipe(upstream);
   })
-  .listen(Number(new URL(GATEWAY_URL).port), '127.0.0.1');
+  .listen(Number(new URL(GATEWAY_URL).port), LISTEN_HOST);

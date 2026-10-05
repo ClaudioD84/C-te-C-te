@@ -1,7 +1,7 @@
 import type { Box, DocumentType, TaskKind } from '@cote-a-cote/shared';
 import { FunctionsHttpError } from '@supabase/supabase-js';
 import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query';
-import * as Crypto from 'expo-crypto';
+import { randomUUID } from '@/lib/uuid';
 
 import { syncReminders } from '@/features/reminders/sync';
 import { supabase } from '@/lib/supabase';
@@ -62,7 +62,7 @@ export async function submitScan({
   image,
   boxes,
 }: SubmitScanInput): Promise<string> {
-  const scanId = Crypto.randomUUID();
+  const scanId = randomUUID();
   const path = `${familyId}/${scanId}.jpg`;
   const body = await renderMaskedJpeg(image, boxes);
 

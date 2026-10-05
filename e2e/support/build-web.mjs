@@ -2,17 +2,21 @@
 import { execFileSync } from 'node:child_process';
 import { join } from 'node:path';
 
-import { GATEWAY_URL, ROOT, supabaseStatus } from './supabase.mjs';
+import { GATEWAY_URL, ROOT, WEB_DIR, supabaseStatus } from './supabase.mjs';
 
-execFileSync('npx', ['expo', 'export', '--platform', 'web', '--output-dir', '../../e2e/.web', '--clear'], {
-  cwd: join(ROOT, 'apps/mobile'),
-  stdio: 'inherit',
-  shell: process.platform === 'win32',
-  env: {
-    ...process.env,
-    EXPO_PUBLIC_SUPABASE_URL: GATEWAY_URL,
-    EXPO_PUBLIC_SUPABASE_PUBLISHABLE_KEY: supabaseStatus().ANON_KEY,
-    EXPO_PUBLIC_PAYMENTS_SIMULATION: 'true',
-    EXPO_NO_TELEMETRY: '1',
+execFileSync(
+  'npx',
+  ['expo', 'export', '--platform', 'web', '--output-dir', `../../e2e/${WEB_DIR}`, '--clear'],
+  {
+    cwd: join(ROOT, 'apps/mobile'),
+    stdio: 'inherit',
+    shell: process.platform === 'win32',
+    env: {
+      ...process.env,
+      EXPO_PUBLIC_SUPABASE_URL: process.env.DEMO_API_URL ?? GATEWAY_URL,
+      EXPO_PUBLIC_SUPABASE_PUBLISHABLE_KEY: supabaseStatus().ANON_KEY,
+      EXPO_PUBLIC_PAYMENTS_SIMULATION: 'true',
+      EXPO_NO_TELEMETRY: '1',
+    },
   },
-});
+);

@@ -8,7 +8,7 @@ import {
   type TaskKind,
 } from '@cote-a-cote/shared';
 import { queryOptions, useMutation, useQuery, useQueryClient } from '@tanstack/react-query';
-import { randomUUID } from 'expo-crypto';
+import { randomUUID } from '@/lib/uuid';
 
 import { OFFLINE_MUTATIONS, type CompleteItemVariables } from '@/features/offline/mutations';
 import { syncReminders } from '@/features/reminders/sync';

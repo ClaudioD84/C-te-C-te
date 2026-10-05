@@ -2,8 +2,11 @@
 // Lance la pile Supabase locale (Docker), les fonctions serveur avec l'IA simulée et la version web, crée un
 // compte de démonstration puis ouvre le navigateur. Ctrl+C pour arrêter. Voir docs/demo.md.
 import { execFileSync, spawn } from 'node:child_process';
-import { existsSync } from 'node:fs';
+import { existsSync, readFileSync, writeFileSync } from 'node:fs';
+import { networkInterfaces } from 'node:os';
 import { join } from 'node:path';
+
+import qrcode from 'qrcode-terminal';
 
 import { GATEWAY_URL, ROOT, WEB_URL, supabaseStatus } from './supabase.mjs';
 
@@ -11,6 +14,30 @@ const isWindows = process.platform === 'win32';
 const DEMO_EMAIL = 'demo@coteacote.be';
 const DEMO_PASSWORD = 'demo-cote-a-cote';
 const here = (file) => join(ROOT, 'e2e/support', file);
+
+// Mode iPhone : l'application est ouverte depuis un téléphone sur le même Wi-Fi que l'ordinateur.
+const iphone = process.argv.includes('--iphone');
+const lanAddress = () =>
+  Object.entries(networkInterfaces())
+    .sort(([a], [b]) => (a === 'en0' ? -1 : b === 'en0' ? 1 : 0))
+    .flatMap(([, addresses]) => addresses ?? [])
+    .find((a) => a.family === 'IPv4' && !a.internal)?.address;
+const lanIp = iphone ? lanAddress() : null;
+if (iphone) {
+  if (!lanIp) {
+    console.error(
+      '\n✖ Aucun réseau Wi-Fi détecté : connectez le Mac au même Wi-Fi que l’iPhone, puis relancez.',
+    );
+    process.exit(1);
+  }
+  // Lus par les scripts lancés ensuite (serveurs et préparation de la version web).
+  process.env.DEMO_HOST = '0.0.0.0';
+  process.env.DEMO_WEB_DIR = '.web-reseau';
+  process.env.DEMO_API_URL = `http://${lanIp}:${new URL(GATEWAY_URL).port}`;
+}
+const webDir = join(ROOT, 'e2e', process.env.DEMO_WEB_DIR ?? '.web');
+const expectedApi = process.env.DEMO_API_URL ?? GATEWAY_URL;
+const phoneUrl = lanIp ? `http://${lanIp}:${new URL(WEB_URL).port}` : null;
 
 function run(command, args, options = {}) {
   return execFileSync(command, args, { cwd: ROOT, stdio: 'inherit', shell: isWindows, ...options });
@@ -72,17 +99,6 @@ for (let attempt = 1; !supabaseReady(); attempt++) {
 const status = supabaseStatus();
 
 // 2. Version web.
-if (process.argv.includes('--rebuild') || !existsSync(join(ROOT, 'e2e/.web/index.html'))) {
-  step('Préparation de la version web (1 à 3 minutes)');
-  try {
-    run(process.execPath, [here('build-web.mjs')]);
-  } catch {
-    fail('La préparation de la version web a échoué (voir les messages ci-dessus).');
-  }
-}
-
-// 3. Fonctions serveur, services simulés et serveur web.
-step('Démarrage des fonctions serveur et du site');
 async function responds(url) {
   try {
     return (await fetch(url)).ok;
@@ -91,9 +107,41 @@ async function responds(url) {
   }
 }
 // Une démonstration déjà lancée (autre fenêtre de terminal) est réutilisée plutôt que dupliquée.
+const apiRunning = await responds(`${GATEWAY_URL}/__ready`);
+const webRunning = await responds(WEB_URL);
+const servesPhoneVersion = async () =>
+  (await responds(`${expectedApi}/__ready`)) &&
+  (await fetch(`${phoneUrl}/__version-web`)
+    .then((r) => r.text())
+    .catch(() => '')) === '.web-reseau';
+if (iphone && (apiRunning || webRunning) && !(await servesPhoneVersion())) {
+  fail(
+    'Une démonstration est déjà lancée sans le mode iPhone. Arrêtez-la (Ctrl+C dans son Terminal), puis relancez `pnpm demo --iphone`.',
+  );
+}
+
+// La version iPhone contient l'adresse du Mac : elle est refaite si cette adresse change (autre Wi-Fi).
+const builtFor = join(webDir, '.adresse-api');
+const builtApi = existsSync(builtFor) ? readFileSync(builtFor, 'utf8') : null;
+if (
+  process.argv.includes('--rebuild') ||
+  !existsSync(join(webDir, 'index.html')) ||
+  (iphone && builtApi !== expectedApi)
+) {
+  step('Préparation de la version web (1 à 3 minutes)');
+  try {
+    run(process.execPath, [here('build-web.mjs')]);
+    writeFileSync(builtFor, expectedApi);
+  } catch {
+    fail('La préparation de la version web a échoué (voir les messages ci-dessus).');
+  }
+}
+
+// 3. Fonctions serveur, services simulés et serveur web.
+step('Démarrage des fonctions serveur et du site');
 const scripts = [];
-if (!(await responds(`${GATEWAY_URL}/__ready`))) scripts.push(here('stack.mjs'));
-if (!(await responds(WEB_URL))) scripts.push(here('static.mjs'));
+if (!apiRunning) scripts.push(here('stack.mjs'));
+if (!webRunning) scripts.push(here('static.mjs'));
 const children = scripts.map((script) =>
   spawn(process.execPath, [script], { cwd: join(ROOT, 'e2e'), stdio: ['ignore', 'ignore', 'inherit'] }),
 );
@@ -213,7 +261,7 @@ if (existing.length === 0) {
 
 console.log(`
 ──────────────────────────────────────────────────────────────
-  Côte à Côte est prêt : ${WEB_URL}
+  Côte à Côte est prêt : ${WEB_URL}${phoneUrl ? `\n  Sur l'iPhone (même Wi-Fi) : ${phoneUrl}` : ''}
 
   Adresse e-mail : ${DEMO_EMAIL}
   Mot de passe   : ${DEMO_PASSWORD}
@@ -223,6 +271,14 @@ console.log(`
   toujours les mêmes exemples. Les achats sont simulés.
   Ctrl+C pour arrêter.
 ──────────────────────────────────────────────────────────────`);
+
+if (phoneUrl) {
+  console.log('\nScannez ce code avec l’appareil photo de l’iPhone :\n');
+  qrcode.generate(phoneUrl, { small: true });
+  console.log(
+    'Si le Mac demande d’autoriser les connexions entrantes pour « node », cliquez sur « Autoriser ».',
+  );
+}
 
 const opener = isWindows
   ? ['cmd', ['/c', 'start', '', WEB_URL]]

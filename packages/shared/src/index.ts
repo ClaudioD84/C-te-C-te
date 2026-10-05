@@ -17,3 +17,4 @@ export * from './spaced-repetition';
 export * from './study-pack';
 export * from './subscription';
 export * from './task';
+export * from './sha256';

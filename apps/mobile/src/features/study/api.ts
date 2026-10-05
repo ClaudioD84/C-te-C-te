@@ -8,7 +8,7 @@ import {
 } from '@cote-a-cote/shared';
 import { FunctionsHttpError } from '@supabase/supabase-js';
 import { queryOptions, useMutation, useQuery, useQueryClient } from '@tanstack/react-query';
-import { randomUUID } from 'expo-crypto';
+import { randomUUID } from '@/lib/uuid';
 
 import {
   OFFLINE_MUTATIONS,

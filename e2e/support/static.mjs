@@ -4,9 +4,9 @@ import http from 'node:http';
 import { extname, join, normalize } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
-import { WEB_URL } from './supabase.mjs';
+import { LISTEN_HOST, WEB_DIR, WEB_URL } from './supabase.mjs';
 
-const dir = fileURLToPath(new URL('../.web', import.meta.url));
+const dir = fileURLToPath(new URL(`../${WEB_DIR}`, import.meta.url));
 const types = {
   '.html': 'text/html; charset=utf-8',
   '.js': 'text/javascript',
@@ -20,6 +20,12 @@ const types = {
 
 http
   .createServer((req, res) => {
+    // Indique au lanceur quelle version est servie (ordinateur ou iPhone).
+    if (req.url === '/__version-web') {
+      res.writeHead(200, { 'content-type': 'text/plain' });
+      res.end(WEB_DIR);
+      return;
+    }
     const path = normalize(decodeURIComponent(new URL(req.url, WEB_URL).pathname)).replace(
       /^(\.\.[/\\])+/,
       '',
@@ -31,4 +37,4 @@ http
     res.writeHead(200, { 'content-type': types[extname(file)] ?? 'application/octet-stream' });
     createReadStream(file).pipe(res);
   })
-  .listen(Number(new URL(WEB_URL).port), '127.0.0.1');
+  .listen(Number(new URL(WEB_URL).port), LISTEN_HOST);

@@ -100,11 +100,34 @@ semaines de suivi.
 - **Format téléphone** : dans Safari, menu Développement > Mode de conception adaptatif (à activer dans
   Réglages > Avancées) ; dans Chrome, clic droit > Inspecter, puis l'icône téléphone.
 
-## Ce qui ne peut pas être essayé sur Mac
+## 5. Essayer sur l'iPhone
 
-L'appareil photo, le masquage **automatique** des noms (reconnaissance de texte du téléphone), les
-notifications de rappel et les vrais achats ne fonctionnent que dans l'application installée sur un téléphone
-(bêta TestFlight ou test interne Google Play).
+L'iPhone ouvre la démonstration qui tourne sur le Mac, par le Wi-Fi (l'iPhone et le Mac doivent être sur le
+**même réseau**).
+
+1. Arrêter la démonstration si elle tourne (`Ctrl + C`), puis lancer :
+
+   ```bash
+   pnpm demo --iphone
+   ```
+
+   La première fois, la version pour l'iPhone est préparée (2 à 3 minutes). Si le Mac demande d'autoriser les
+   connexions entrantes pour « node », cliquer sur **Autoriser**.
+
+2. Un **code QR** s'affiche dans le Terminal : le scanner avec l'appareil photo de l'iPhone (ou taper dans
+   Safari l'adresse affichée, du type `http://192.168.1.23:8765`).
+3. Se connecter avec le compte de démonstration. Sur l'iPhone, « Prendre une photo » ouvre **le vrai appareil
+   photo** : photographiez une page du journal de classe (l'analyse reste simulée).
+4. Pour l'avoir comme une application : dans Safari, bouton Partager > **Sur l'écran d'accueil**.
+
+Si le Mac change de réseau Wi-Fi, relancer simplement `pnpm demo --iphone` : la version iPhone est refaite
+automatiquement avec la nouvelle adresse.
+
+## Ce qui ne peut pas être essayé sur Mac ni dans Safari
+
+Le masquage **automatique** des noms (reconnaissance de texte du téléphone), les notifications de rappel, le
+fonctionnement sans réseau en conditions réelles et les vrais achats (RevenueCat, en bac à sable) ne fonctionnent
+que dans l'application installée sur un téléphone : bêta TestFlight (iPhone) ou test interne Google Play.
 
 ## En cas de problème
 
@@ -114,4 +137,6 @@ notifications de rappel et les vrais achats ne fonctionnent que dans l'applicati
 | « command not found: pnpm » | Refaire l'étape 1.3, puis fermer et rouvrir le Terminal |
 | « Supabase n'a pas pu démarrer » | Quitter puis rouvrir Docker Desktop, relancer `pnpm demo` |
 | La page ne s'affiche plus après une mise à jour du code | `pnpm demo --rebuild` |
+| L'iPhone n'arrive pas à ouvrir la page | Vérifier le même Wi-Fi ; Réglages Système > Réseau > Coupe-feu : autoriser « node » ; certains Wi-Fi publics ou d'entreprise isolent les appareils |
+| « Une démonstration est déjà lancée sans le mode iPhone » | `Ctrl + C` dans le Terminal où elle tourne, puis `pnpm demo --iphone` |
 | Repartir de zéro (effacer tous les essais) | `pnpm exec supabase db reset` puis `pnpm demo` |

@@ -2,6 +2,7 @@ import { lockoutSeconds } from '@cote-a-cote/shared';
 import * as Crypto from 'expo-crypto';
 
 import { secureStorage } from './device-storage';
+import { sha256 } from './hash';
 
 const CODE_KEY = 'parent_code';
 const ATTEMPTS_KEY = 'parent_code_attempts';
@@ -21,7 +22,7 @@ function toHex(bytes: Uint8Array): string {
 }
 
 async function hashCode(salt: string, code: string): Promise<string> {
-  return Crypto.digestStringAsync(Crypto.CryptoDigestAlgorithm.SHA256, `${salt}:${code}`);
+  return sha256(`${salt}:${code}`);
 }
 
 async function readAttempts(): Promise<Attempts> {
