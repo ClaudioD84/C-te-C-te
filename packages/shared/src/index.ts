@@ -22,3 +22,4 @@ export * from './progress';
 export * from './pictograms';
 export * from './kindergarten';
 export * from './days-off';
+export * from './report';

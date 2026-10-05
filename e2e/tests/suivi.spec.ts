@@ -20,6 +20,15 @@ test('cockpit avancé : comparaison avec la semaine dernière, matières et hist
        where child_id = '${childId}' and meta ? 'ancien'`);
 
   await button(page, 'Suivi et épreuves').click();
+  // Bilan positif de la semaine, à lire à l'enfant ou à partager.
+  await expect(page.getByText('Bilan de la semaine')).toBeVisible();
+  await expect(page.getByText('• 1 jour de travail')).toBeVisible();
+  await expect(page.getByText('• 30 minutes au total')).toBeVisible();
+  await expect(page.getByText(/^• Matières travaillées : .*Mathématiques/)).toBeVisible();
+  await expect(page.getByText(/Bravo Loutre ! Chaque moment de travail compte/)).toBeVisible();
+  await expect(button(page, 'Lire à Loutre')).toBeVisible();
+  await expect(button(page, 'Partager le bilan')).toBeVisible();
+
   await expect(page.getByText('Par rapport à la semaine dernière')).toBeVisible();
   await expect(
     page.getByLabel('Minutes de travail : 30, +20 par rapport à la semaine dernière'),

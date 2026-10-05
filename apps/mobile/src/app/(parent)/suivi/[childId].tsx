@@ -24,6 +24,7 @@ import { useDeleteExam, useExams } from '@/features/exams/api';
 import { useSessions, useUpcomingTasks } from '@/features/planning/api';
 import { useSubjectProgress } from '@/features/progress/api';
 import { ComparisonCard, HistoryCard, SubjectsCard } from '@/features/progress/progress-cards';
+import { WeeklyReportCard } from '@/features/progress/weekly-report-card';
 import { useChildProfile } from '@/features/profiles/api';
 import { useRewards } from '@/features/rewards/api';
 import { AvatarProgress } from '@/features/rewards/avatar-progress';
@@ -41,6 +42,7 @@ export default function FollowUpScreen() {
   const upcoming = useUpcomingTasks(childId);
   const SUBJECT_WEEKS = 4;
   const subjects = useSubjectProgress(childId, addDays(mondayOfWeek(today), -7 * (SUBJECT_WEEKS - 1)));
+  const thisWeekSubjects = useSubjectProgress(childId, mondayOfWeek(today));
   const culture = useCultureSuggestions(
     child.data?.grade,
     (upcoming.data ?? []).map((t) => t.subject),
@@ -69,6 +71,16 @@ export default function FollowUpScreen() {
   return (
     <Screen>
       <ThemedText type="subtitle">Suivi de {child.data.alias}</ThemedText>
+
+      <WeeklyReportCard
+        alias={child.data.alias}
+        week={thisWeek}
+        subjects={(thisWeekSubjects.data ?? [])
+          .filter((s) => s.minutes + s.activities + s.cards + s.quizzes > 0)
+          .map((s) => s.subject)}
+        badges={rewards.summary.badges.filter((b) => b.earnedOn >= mondayOfWeek(today)).map((b) => b.code)}
+        kindergarten={kindergarten}
+      />
 
       <View style={styles.kpis}>
         <Kpi value={`${thisWeek.minutes} min`} label="de travail cette semaine" />
