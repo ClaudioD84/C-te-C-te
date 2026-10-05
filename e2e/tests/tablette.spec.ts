@@ -1,6 +1,15 @@
 import { expect, test, type APIRequestContext, type Page } from '@playwright/test';
 
-import { addChild, button, insertValidatedTasks, publishPlanning, signUp, sql, uniqueEmail } from './helpers';
+import {
+  addChild,
+  answerMood,
+  button,
+  insertValidatedTasks,
+  publishPlanning,
+  signUp,
+  sql,
+  uniqueEmail,
+} from './helpers';
 
 import { GATEWAY_URL, supabaseStatus } from '../support/supabase.mjs';
 
@@ -60,6 +69,7 @@ test('tablette de l’enfant : reliée par code, console seule, retirée par le 
   await tabletPage.getByLabel('Nom de cette tablette (facultatif)').fill('Tablette du salon');
   await button(tabletPage, 'Relier cette tablette').click();
   await expect(tabletPage.getByText('Bonjour Loutre')).toBeVisible();
+  await answerMood(tabletPage);
 
   // Le code ne sert qu'une fois ; le parent voit la tablette arriver.
   expect(sql(`select count(*) from device_pairing where child_id = '${childId}'`)).toBe('0');

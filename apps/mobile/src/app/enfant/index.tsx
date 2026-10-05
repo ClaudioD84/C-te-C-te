@@ -19,6 +19,7 @@ import { learningTextStyle } from '@/constants/fonts';
 import { MinTouchSize, Spacing } from '@/constants/theme';
 import { useChildMode } from '@/features/child-mode/child-mode-provider';
 import { KindergartenMission } from '@/features/kindergarten/kindergarten-mission';
+import { MOODS, MoodPicker, useTodayMood } from '@/features/mood/mood';
 import { NoteCard } from '@/features/notes/note-card';
 import { PomodoroTimer } from '@/features/mission/pomodoro-timer';
 import { OfflineBanner, useIsOnline } from '@/features/offline/offline-banner';
@@ -51,6 +52,7 @@ export default function ChildConsoleScreen() {
   );
   const online = useIsOnline();
   usePrepareOffline(childId);
+  const { mood, choose: chooseMood, loading: moodLoading } = useTodayMood(childId);
 
   // Sur la tablette de l'enfant, pas d'espace parent : seulement les réglages de l'appareil.
   const parentButton = (
@@ -65,7 +67,7 @@ export default function ChildConsoleScreen() {
     </Pressable>
   );
 
-  if (child.isLoading || sessions.isLoading) {
+  if (child.isLoading || sessions.isLoading || moodLoading) {
     return (
       <ThemedView style={styles.center}>
         <ActivityIndicator />
@@ -97,7 +99,17 @@ export default function ChildConsoleScreen() {
 
   const settings = deriveLearningSettings(child.data);
   const session = sessions.data?.[0];
-  const remaining = session?.study_session_task.filter((item) => item.done_at === null) ?? [];
+  const items = session?.study_session_task ?? [];
+  const allRemaining = items.filter((item) => item.done_at === null);
+  // Fatigué : l'essentiel, c'est la première activité de la séance pas encore faite au moment du choix…
+  // fixée pour la journée : une fois faite, la mission ne propose pas la suivante.
+  const moodLimit = mood ? MOODS[mood].items : null;
+  const firstOpen = items.findIndex((item) => item.done_at === null || item.done_at >= today);
+  const remaining = moodLimit
+    ? items
+        .slice(Math.max(0, firstOpen), Math.max(0, firstOpen) + moodLimit)
+        .filter((i) => i.done_at === null)
+    : allRemaining;
   const remainingMinutes = remaining.reduce((sum, item) => sum + item.minutes, 0);
 
   return (
@@ -140,12 +152,30 @@ export default function ChildConsoleScreen() {
               Mission du jour
             </ThemedText>
 
-            {!session ? (
+            {session && allRemaining.length > 0 && !mood ? (
+              <MoodPicker settings={settings} onChoose={chooseMood} />
+            ) : !session ? (
               <MissionText settings={settings}>Pas de mission aujourd&apos;hui. Profite bien !</MissionText>
+            ) : remaining.length === 0 && allRemaining.length > 0 ? (
+              <>
+                <MissionText settings={settings}>
+                  Bravo, l&apos;essentiel est fait ! Le reste peut attendre.
+                </MissionText>
+                <Button
+                  variant="secondary"
+                  label="J'ai encore de l'énergie : continuer"
+                  onPress={() => chooseMood('forme')}
+                />
+              </>
             ) : remaining.length === 0 ? (
               <MissionText settings={settings}>Mission accomplie, bravo !</MissionText>
             ) : (
               <>
+                {mood && mood !== 'forme' ? (
+                  <MissionText settings={settings}>
+                    {MOODS[mood].emoji} {MOODS[mood].message}
+                  </MissionText>
+                ) : null}
                 {remaining.slice(0, settings.maxItemsPerScreen).map((item) => (
                   <MissionCard
                     key={item.task_id}

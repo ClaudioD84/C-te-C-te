@@ -99,12 +99,19 @@ export async function publishPlanning(page: Page, alias: string, childId: string
 }
 
 /** Ouvre la console enfant en créant le code parent 2809. */
-export async function enterChildMode(page: Page, alias: string) {
+export async function enterChildMode(page: Page, alias: string, mood = '☀️ En forme') {
   await button(page, 'Lancer la mission du jour').click();
   for (const digit of '2809') await button(page, digit).click();
   await expect(page.getByText('Saisissez à nouveau')).toBeVisible();
   for (const digit of '2809') await button(page, digit).click();
   await expect(page.getByText(`Bonjour ${alias}`)).toBeVisible();
+  await answerMood(page, mood);
+}
+
+/** Météo du jour (demandée quand une mission attend) ; « En forme » affiche la mission complète. */
+export async function answerMood(page: Page, mood = '☀️ En forme') {
+  const choice = button(page, mood);
+  if (await choice.isVisible().catch(() => false)) await choice.click();
 }
 
 /**
