@@ -18,3 +18,4 @@ export * from './study-pack';
 export * from './subscription';
 export * from './task';
 export * from './sha256';
+export * from './progress';

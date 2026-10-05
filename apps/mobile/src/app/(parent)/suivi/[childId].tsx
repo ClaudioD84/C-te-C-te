@@ -5,6 +5,8 @@ import {
   formatShortDate,
   toIsoDate,
   addDays,
+  compareWithLastWeek,
+  mondayOfWeek,
   weeklyEffort,
 } from '@cote-a-cote/shared';
 import { router, useLocalSearchParams } from 'expo-router';
@@ -19,6 +21,8 @@ import { useCultureSuggestions } from '@/features/culture/api';
 import { CultureSuggestions } from '@/features/culture/culture-card';
 import { useDeleteExam, useExams } from '@/features/exams/api';
 import { useSessions, useUpcomingTasks } from '@/features/planning/api';
+import { useSubjectProgress } from '@/features/progress/api';
+import { ComparisonCard, HistoryCard, SubjectsCard } from '@/features/progress/progress-cards';
 import { useChildProfile } from '@/features/profiles/api';
 import { useRewards } from '@/features/rewards/api';
 import { AvatarProgress } from '@/features/rewards/avatar-progress';
@@ -34,6 +38,8 @@ export default function FollowUpScreen() {
   const deleteExam = useDeleteExam(childId);
   const pastSessions = useSessions(childId, addDays(today, -7), 7);
   const upcoming = useUpcomingTasks(childId);
+  const SUBJECT_WEEKS = 4;
+  const subjects = useSubjectProgress(childId, addDays(mondayOfWeek(today), -7 * (SUBJECT_WEEKS - 1)));
   const culture = useCultureSuggestions(
     child.data?.grade,
     (upcoming.data ?? []).map((t) => t.subject),
@@ -74,6 +80,10 @@ export default function FollowUpScreen() {
         <WeeklyChart weeks={weeks} />
       </ThemedView>
 
+      <ComparisonCard comparisons={compareWithLastWeek(rewards.data ?? [], today)} />
+
+      {subjects.data ? <SubjectsCard subjects={subjects.data} weeks={SUBJECT_WEEKS} /> : null}
+
       <AvatarProgress summary={rewards.summary} />
 
       <ThemedView type="backgroundElement" style={styles.card}>
@@ -108,6 +118,8 @@ export default function FollowUpScreen() {
       </ThemedView>
 
       <CultureSuggestions suggestions={culture.data} />
+
+      <HistoryCard weeks={weeks} />
 
       <ThemedView type="backgroundElement" style={styles.card}>
         <ThemedText type="smallBold">Pas encore fait (7 derniers jours)</ThemedText>
