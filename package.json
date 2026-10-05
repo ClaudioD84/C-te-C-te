@@ -14,7 +14,7 @@
     "format:check": "prettier --check \"apps/mobile/src/**/*.{ts,tsx}\" \"packages/*/src/**/*.ts\" \"supabase/functions/**/*.ts\"",
     "test:functions": "cd supabase/functions && deno test --allow-env",
     "check:functions": "cd supabase/functions && deno check **/*.ts && cd ../../scripts/referentiels && deno check --config deno.json *.ts ../culture/*.ts",
-    "test:scripts": "cd scripts/referentiels && deno test --config deno.json --allow-read && cd ../culture && deno test --config ../referentiels/deno.json --allow-read importer.test.ts"
+    "test:scripts": "cd scripts/referentiels && deno test --config deno.json --allow-read && cd ../culture && deno test --config ../referentiels/deno.json --allow-read importer.test.ts valider.test.ts"
   },
   "devDependencies": {
     "deno": "2.9.6",

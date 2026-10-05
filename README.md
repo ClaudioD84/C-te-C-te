@@ -96,4 +96,4 @@ Reste pour l'étape 2 : les compétences terminales des 2e et 3e degrés du seco
 - écran Suivi : indicateurs de la semaine, minutes par semaine, épreuves à venir, travail à rattraper ;
 - structure de l'enrichissement culturel (base de contenus vérifiés, suggestions selon l'année et les matières).
 
-Reste pour l'étape 3 : constituer la base de contenus culturels vérifiés.
+Reste pour l'étape 3 : relire les 145 contenus culturels proposés (`scripts/culture/a-relire.csv`).

@@ -7,7 +7,18 @@ import { gradeSchema } from './school';
  * jamais inventées par l'IA (pas de lien ou de lieu imaginaire).
  */
 
-export const CULTURE_KINDS = ['documentaire', 'musee', 'sortie', 'livre', 'jeu', 'site'] as const;
+export const CULTURE_KINDS = [
+  'documentaire',
+  'musee',
+  'sortie',
+  'livre',
+  'jeu',
+  'site',
+  'musique',
+  'oeuvre',
+  'spectacle',
+  'patrimoine',
+] as const;
 export type CultureKind = (typeof CULTURE_KINDS)[number];
 
 export const CULTURE_KIND_LABELS: Record<CultureKind, string> = {
@@ -17,6 +28,10 @@ export const CULTURE_KIND_LABELS: Record<CultureKind, string> = {
   livre: 'Livre',
   jeu: 'Jeu éducatif',
   site: 'Site web',
+  musique: 'Musique',
+  oeuvre: 'Art',
+  spectacle: 'Spectacle',
+  patrimoine: 'Patrimoine',
 };
 
 export const culturalResourceSchema = z.object({
