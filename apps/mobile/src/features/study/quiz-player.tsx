@@ -66,19 +66,24 @@ export function QuizPlayer({
               ? theme.danger
               : theme.background;
         const color = answered && (isAnswer || i === chosen) ? theme.onPrimary : theme.text;
+        const mark = !answered ? '' : isAnswer ? '✓ ' : i === chosen ? '✗ ' : '';
+        const status = !answered ? '' : isAnswer ? ', bonne réponse' : i === chosen ? ', ta réponse' : '';
         return (
           <Pressable
             key={choice}
             disabled={answered}
             accessibilityRole="button"
-            accessibilityLabel={choice}
+            accessibilityLabel={`${choice}${status}`}
             accessibilityState={{ disabled: answered, selected: i === chosen }}
             onPress={() => {
               setChosen(i);
               if (isAnswer) setScore((s) => s + 1);
             }}
             style={[styles.choice, { backgroundColor: background, borderColor: theme.border }]}>
-            <ThemedText style={[text, { color }]}>{choice}</ThemedText>
+            <ThemedText style={[text, { color }]}>
+              {mark}
+              {choice}
+            </ThemedText>
           </Pressable>
         );
       })}

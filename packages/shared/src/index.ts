@@ -1,5 +1,6 @@
 export * from './curriculum';
 export * from './culture';
+export * from './contrast';
 export * from './dates';
 export * from './learning-settings';
 export * from './masking';

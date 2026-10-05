@@ -43,15 +43,18 @@ export default function BadgesScreen() {
             <ThemedView
               key={code}
               type="backgroundElement"
-              style={[styles.badge, !date && styles.locked]}
+              // Badge à découvrir : seul le pictogramme est estompé, le texte reste bien lisible.
+              style={styles.badge}
               accessible
               accessibilityLabel={`${badge.title}. ${badge.description} ${date ? 'Gagné.' : 'À découvrir.'}`}>
-              <ThemedText style={styles.emoji}>{date ? badge.emoji : '🔒'}</ThemedText>
+              <ThemedText style={[styles.emoji, !date && styles.locked]}>
+                {date ? badge.emoji : '🔒'}
+              </ThemedText>
               <View style={styles.text}>
                 <ThemedText type="smallBold">{badge.title}</ThemedText>
                 <ThemedText type="small" themeColor="textSecondary">
                   {badge.description}
-                  {date ? ` Gagné le ${formatShortDate(date)}.` : ''}
+                  {date ? ` Gagné le ${formatShortDate(date)}.` : ' À découvrir.'}
                 </ThemedText>
               </View>
             </ThemedView>

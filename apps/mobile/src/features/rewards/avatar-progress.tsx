@@ -23,6 +23,11 @@ export function AvatarProgress({ summary, onPress }: { summary: RewardSummary; o
         <View
           style={[styles.track, { backgroundColor: theme.backgroundSelected }]}
           accessibilityRole="progressbar"
+          accessibilityLabel={
+            summary.nextStage
+              ? `Progression vers ${summary.nextStage.name.toLowerCase()}`
+              : 'Plus grand stade atteint'
+          }
           accessibilityValue={{ min: 0, max: 100, now: Math.round(summary.progress * 100) }}>
           <View
             style={[styles.bar, { width: `${summary.progress * 100}%`, backgroundColor: theme.primary }]}

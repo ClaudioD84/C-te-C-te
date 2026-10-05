@@ -10,9 +10,13 @@ export function TextField({ label, error, style, ...rest }: TextFieldProps) {
   const theme = useTheme();
   return (
     <View style={styles.container}>
-      <ThemedText type="smallBold">{label}</ThemedText>
+      <ThemedText type="smallBold" importantForAccessibility="no" accessibilityElementsHidden>
+        {label}
+      </ThemedText>
       <TextInput
         accessibilityLabel={label}
+        accessibilityHint={error}
+        aria-invalid={error ? true : undefined}
         placeholderTextColor={theme.textSecondary}
         style={[
           styles.input,
@@ -26,7 +30,11 @@ export function TextField({ label, error, style, ...rest }: TextFieldProps) {
         {...rest}
       />
       {error ? (
-        <ThemedText type="small" themeColor="danger">
+        <ThemedText
+          type="small"
+          themeColor="danger"
+          accessibilityRole="alert"
+          accessibilityLiveRegion="polite">
           {error}
         </ThemedText>
       ) : null}

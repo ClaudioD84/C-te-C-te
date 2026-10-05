@@ -244,6 +244,13 @@ Algorithme déterministe (`packages/shared/src/planning.ts`), exécuté dans l'a
 - Police **Lexend** pour les profils dyslexie (chargée au démarrage, embarquée en base64 dans les PDF), police système sinon.
 - Lecture vocale des consignes via **expo-speech**.
 - Les mêmes règles de mise en forme sont réutilisées pour les PDF (F10) : une seule source de vérité pour le style.
+- **WCAG 2.2 AA** (exigence 6.2) : palette vérifiée par un test (`packages/shared/src/contrast.test.ts` :
+  texte ≥ 4,5:1, bordures et éléments graphiques ≥ 3:1, thèmes clair et sombre) ; zones tactiles de 48 points ;
+  titres annoncés comme tels ; choix uniques et multiples avec leur état « coché » ; erreurs de saisie
+  annoncées ; bonne ou mauvaise réponse au quiz signalée autrement que par la couleur ; grands titres
+  plafonnés pour rester lisibles avec un texte très agrandi.
+- Audit automatique (axe-core) des écrans de la version web ; la vérification avec VoiceOver et TalkBack se
+  fait sur téléphone, avec la liste de `docs/accessibilite.md`.
 
 ## 11. Abonnements (F13)
 

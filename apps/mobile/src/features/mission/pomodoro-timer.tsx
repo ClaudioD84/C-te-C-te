@@ -68,12 +68,14 @@ export function PomodoroTimer({ workMinutes, breakMinutes, cycles }: PomodoroCon
         <>
           <ThemedText
             type="title"
+            heading={false}
             accessibilityLabel={`Temps restant ${formatDuration(state.remainingSeconds)}`}>
             {formatDuration(state.remainingSeconds)}
           </ThemedText>
           <View
             style={[styles.track, { backgroundColor: theme.backgroundSelected }]}
             accessibilityRole="progressbar"
+            accessibilityLabel="Avancement de l'étape"
             accessibilityValue={{ min: 0, max: 100, now: Math.round(progress * 100) }}>
             <View style={[styles.bar, { width: `${progress * 100}%`, backgroundColor: barColor }]} />
           </View>

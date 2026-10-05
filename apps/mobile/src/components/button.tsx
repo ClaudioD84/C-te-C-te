@@ -44,6 +44,7 @@ export function Button({
         <ActivityIndicator color={primary ? theme.onPrimary : theme.text} />
       ) : (
         <ThemedText
+          heading={false}
           type={size === 'large' ? 'subtitle' : 'smallBold'}
           style={{ color: primary ? theme.onPrimary : theme.text, textAlign: 'center' }}>
           {label}

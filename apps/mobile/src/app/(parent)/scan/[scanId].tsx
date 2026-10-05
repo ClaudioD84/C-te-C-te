@@ -145,7 +145,7 @@ function TaskCard({
         {task.reference ? ` · ${task.reference}` : ''}
       </ThemedText>
       {uncertain ? (
-        <ThemedText type="small" themeColor="accent">
+        <ThemedText type="small" themeColor="warning">
           Lecture incertaine : vérifiez cette tâche.
         </ThemedText>
       ) : null}

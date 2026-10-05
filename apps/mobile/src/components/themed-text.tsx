@@ -6,13 +6,19 @@ import { useTheme } from '@/hooks/use-theme';
 export type ThemedTextProps = TextProps & {
   type?: 'default' | 'title' | 'small' | 'smallBold' | 'subtitle' | 'link' | 'linkPrimary' | 'code';
   themeColor?: ThemeColor;
+  /** Les textes « title » et « subtitle » sont des titres pour les lecteurs d'écran, sauf `heading={false}`. */
+  heading?: boolean;
 };
 
-export function ThemedText({ style, type = 'default', themeColor, ...rest }: ThemedTextProps) {
+export function ThemedText({ style, type = 'default', themeColor, heading, ...rest }: ThemedTextProps) {
   const theme = useTheme();
+  const isHeading = heading ?? (type === 'title' || type === 'subtitle');
 
   return (
     <Text
+      accessibilityRole={isHeading ? 'header' : undefined}
+      // Les grands titres restent lisibles avec un texte très agrandi, sans déborder de l'écran.
+      maxFontSizeMultiplier={type === 'title' ? 1.6 : type === 'subtitle' ? 1.8 : undefined}
       style={[
         { color: theme[themeColor ?? 'text'] },
         type === 'default' && styles.default,

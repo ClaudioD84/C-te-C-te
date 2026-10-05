@@ -22,8 +22,10 @@ export function DayPicker({ label, value, onChange, days = 28 }: DayPickerProps)
   if (value && !options.includes(value)) options.splice(1, 0, value);
 
   return (
-    <View style={styles.container}>
-      <ThemedText type="smallBold">{label}</ThemedText>
+    <View style={styles.container} accessibilityRole="radiogroup" accessibilityLabel={label}>
+      <ThemedText type="smallBold" importantForAccessibility="no" accessibilityElementsHidden>
+        {label}
+      </ThemedText>
       <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={styles.row}>
         {options.map((option) => {
           const selected = option === value;
@@ -32,7 +34,7 @@ export function DayPicker({ label, value, onChange, days = 28 }: DayPickerProps)
               key={option ?? 'none'}
               onPress={() => onChange(option)}
               accessibilityRole="radio"
-              accessibilityState={{ selected }}
+              aria-checked={selected}
               style={[
                 styles.chip,
                 {

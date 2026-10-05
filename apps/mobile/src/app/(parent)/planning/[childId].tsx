@@ -135,7 +135,7 @@ export default function PlanningScreen() {
       </ThemedText>
 
       {preparing ? (
-        <ThemedText themeColor="accent" accessibilityLiveRegion="polite">
+        <ThemedText themeColor="warning" accessibilityLiveRegion="polite">
           Préparation des fiches et quiz : {preparing.done} sur {preparing.total}…
         </ThemedText>
       ) : null}

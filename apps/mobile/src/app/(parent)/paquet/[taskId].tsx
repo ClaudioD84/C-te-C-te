@@ -124,7 +124,7 @@ export default function PackScreen() {
       {pack.data ? (
         <>
           {pack.data.reported_at ? (
-            <ThemedText themeColor="accent">
+            <ThemedText themeColor="warning">
               Erreur signalée. Merci : cela nous aide à améliorer les fiches.
             </ThemedText>
           ) : reporting ? (

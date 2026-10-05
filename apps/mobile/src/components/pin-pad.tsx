@@ -34,7 +34,16 @@ export function PinPad({ value, onChange, onComplete, disabled }: PinPadProps) {
       <View
         style={styles.dots}
         accessible
-        accessibilityLabel={`${value.length} chiffres saisis sur ${PARENT_CODE_LENGTH}`}>
+        // Avancement de la saisie : annoncé sans jamais lire les chiffres eux-mêmes.
+        accessibilityRole="progressbar"
+        accessibilityLabel="Code saisi"
+        accessibilityValue={{
+          min: 0,
+          max: PARENT_CODE_LENGTH,
+          now: value.length,
+          text: `${value.length} chiffres sur ${PARENT_CODE_LENGTH}`,
+        }}
+        accessibilityLiveRegion="polite">
         {Array.from({ length: PARENT_CODE_LENGTH }, (_, i) => (
           <View
             key={i}
