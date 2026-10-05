@@ -11,6 +11,7 @@ import { corsHeaders, json, UserFacingError } from '../_shared/http.ts';
 import {
   buildPackRequest,
   curriculumSubjects,
+  interestLabels,
   PACK_JSON_SCHEMA,
   PACK_SYSTEM_PROMPT,
   parsePackResponse,
@@ -77,7 +78,7 @@ Deno.serve(async (request) => {
 
     const { data: child } = await admin
       .from('child_profile')
-      .select('grade, track, needs')
+      .select('grade, track, needs, preferences')
       .eq('id', task.child_id)
       .single();
     if (!child) throw new Error('Profil introuvable');
@@ -104,6 +105,7 @@ Deno.serve(async (request) => {
             grade: child.grade,
             track: child.track,
             needs: child.needs ?? [],
+            interests: interestLabels(child.preferences?.interests),
             task,
             curriculum: (curriculum ?? []).map((c) => c.label as string),
           }),

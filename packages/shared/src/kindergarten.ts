@@ -1,5 +1,6 @@
 import { addDays, daysBetween, type IsoDate } from './dates';
 import type { Grade } from './school';
+import type { Interest } from './profile';
 
 /**
  * Mode maternelle (voir docs/maternelle/proposition.md) : de courts jeux partagés avec le parent, sans devoirs ni
@@ -523,11 +524,36 @@ function hash(text: string): number {
  * Activités proposées pour une semaine : une par domaine (quatre domaines), en évitant celles faites récemment,
  * en préférant celles liées au thème de la classe ; ordre stable pour un enfant et une semaine donnés.
  */
+/** Thèmes d'activités proches de chaque centre d'intérêt de l'enfant. */
+const INTEREST_THEMES: Partial<Record<Interest, readonly string[]>> = {
+  animaux: ['animaux'],
+  chevaux: ['animaux'],
+  dinosaures: ['animaux', 'autrefois'],
+  cuisine: ['cuisine', 'repas', 'fruits'],
+  musique: ['musique', 'chansons', 'comptines', 'danse'],
+  nature: ['nature', 'plantes', 'jardin', 'arbres'],
+  mer: ['nature', 'environnement'],
+  dessin: ['bricolage', 'couleurs'],
+  bricolage: ['bricolage', 'formes'],
+  histoires: ['contes', 'histoires', 'livres'],
+  sport: ['corps', 'jeux', 'danse'],
+  football: ['corps', 'jeux'],
+  jeux_video: ['jeux'],
+  espace: ['espace', 'planete'],
+  vehicules: ['jouets'],
+};
+
+function matchesInterests(activity: KindergartenActivity, interests: readonly Interest[]): boolean {
+  return interests.some((i) => INTEREST_THEMES[i]?.some((t) => activity.themes.includes(t)));
+}
+
 export function suggestKindergartenWeek(input: {
   childId: string;
   grade: Grade;
   weekStart: IsoDate;
   theme: string | null;
+  /** Centres d'intérêt de l'enfant : à thème de classe égal, leurs activités passent devant. */
+  interests?: readonly Interest[];
   /** Activités faites, avec leur date. */
   done: readonly { code: string; date: IsoDate }[];
 }): KindergartenActivity[] {
@@ -542,6 +568,7 @@ export function suggestKindergartenWeek(input: {
   const seed = `${input.childId}|${input.weekStart}`;
   const score = (a: KindergartenActivity) =>
     (matchesTheme(a, input.theme) ? 0 : 2) +
+    (matchesInterests(a, input.interests ?? []) ? 0 : 1) +
     (recent.has(a.code) ? 4 : 0) +
     (hash(`${seed}|${a.code}`) % 1000) / 1000;
 

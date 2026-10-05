@@ -17,11 +17,74 @@ export const WEEKDAYS = ['lun', 'mar', 'mer', 'jeu', 'ven', 'sam', 'dim'] as con
 export const weekdaySchema = z.enum(WEEKDAYS);
 export type Weekday = z.infer<typeof weekdaySchema>;
 
+/**
+ * Centres d'intérêt de l'enfant : les exemples des fiches, quiz et exercices s'en inspirent.
+ * Liste fermée (jamais de texte libre envoyé à l'IA), 3 au plus.
+ */
+export const INTERESTS = [
+  'animaux',
+  'dinosaures',
+  'espace',
+  'football',
+  'sport',
+  'musique',
+  'dessin',
+  'cuisine',
+  'jeux_video',
+  'nature',
+  'chevaux',
+  'vehicules',
+  'histoires',
+  'bricolage',
+  'mer',
+] as const;
+export const interestSchema = z.enum(INTERESTS);
+export type Interest = z.infer<typeof interestSchema>;
+export const MAX_INTERESTS = 3;
+
+export const INTEREST_LABELS: Record<Interest, string> = {
+  animaux: '🐾 Animaux',
+  dinosaures: '🦕 Dinosaures',
+  espace: '🚀 Espace',
+  football: '⚽ Football',
+  sport: '🏅 Sport',
+  musique: '🎵 Musique',
+  dessin: '🎨 Dessin',
+  cuisine: '🧁 Cuisine',
+  jeux_video: '🎮 Jeux vidéo',
+  nature: '🌳 Nature',
+  chevaux: '🐴 Chevaux',
+  vehicules: '🚗 Voitures et trains',
+  histoires: '📚 Histoires et contes',
+  bricolage: '🔧 Bricolage',
+  mer: '🌊 Mer et océans',
+};
+
+/** Libellés envoyés à l'IA (sans pictogramme). */
+export const INTEREST_PROMPT_LABELS: Record<Interest, string> = {
+  animaux: 'les animaux',
+  dinosaures: 'les dinosaures',
+  espace: "l'espace et les planètes",
+  football: 'le football',
+  sport: 'le sport',
+  musique: 'la musique',
+  dessin: 'le dessin',
+  cuisine: 'la cuisine et la pâtisserie',
+  jeux_video: 'les jeux vidéo',
+  nature: 'la nature',
+  chevaux: 'les chevaux',
+  vehicules: 'les voitures et les trains',
+  histoires: 'les histoires et les contes',
+  bricolage: 'le bricolage',
+  mer: 'la mer et les océans',
+};
+
 export const childPreferencesSchema = z.object({
   /** Durée de travail choisie par le parent ; sinon elle est calculée selon le profil. */
   sessionMinutes: z.number().int().min(5).max(60).optional(),
   availableDays: z.array(weekdaySchema).min(1).default(['lun', 'mar', 'mer', 'jeu', 'ven']),
   prefersPaper: z.boolean().default(false),
+  interests: z.array(interestSchema).max(MAX_INTERESTS).optional(),
 });
 export type ChildPreferences = z.infer<typeof childPreferencesSchema>;
 

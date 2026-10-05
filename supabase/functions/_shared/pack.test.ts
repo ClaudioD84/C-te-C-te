@@ -1,6 +1,12 @@
 import { assertEquals, assertStringIncludes, assertThrows } from 'jsr:@std/assert@1';
 
-import { buildPackRequest, curriculumSubjects, parsePack, parsePackResponse } from './pack.ts';
+import {
+  buildPackRequest,
+  curriculumSubjects,
+  interestLabels,
+  parsePack,
+  parsePackResponse,
+} from './pack.ts';
 
 const valid = {
   topicUnclear: false,
@@ -100,4 +106,23 @@ Deno.test('examen blanc : consignes dédiées seulement pour ces tâches', () =>
     });
   assertStringIncludes(request('Examen blanc de Mathématiques : Les fractions, Les aires'), 'EXAMEN BLANC');
   assertEquals(request('Révision générale de Mathématiques').includes('EXAMEN BLANC'), false);
+});
+
+Deno.test('centres d’intérêt : liste fermée, 3 au plus, glissés dans la demande', () => {
+  assertEquals(interestLabels(['espace', 'inconnu', 'espace', 'football', 'mer', 'cuisine']), [
+    "l'espace et les planètes",
+    'le football',
+    'la mer et les océans',
+  ]);
+  assertEquals(interestLabels('espace'), []);
+  assertEquals(interestLabels(undefined), []);
+  const request = buildPackRequest({
+    grade: 'P4',
+    track: 'general',
+    needs: [],
+    task: { subject: 'Mathématiques', kind: 'lecon', description: 'Les fractions', reference: null },
+    curriculum: [],
+    interests: ['les dinosaures'],
+  });
+  assertStringIncludes(request, "Centres d'intérêt de l'élève : les dinosaures.");
 });

@@ -5,6 +5,7 @@ import {
   mondayOfWeek,
   suggestKindergartenWeek,
   toIsoDate,
+  type ChildPreferences,
   type Grade,
   type IsoDate,
   type KindergartenActivity,
@@ -38,7 +39,7 @@ export function useKindergartenWeek(childId: string, grade: Grade | undefined, d
     enabled: childId.length > 0 && Boolean(grade),
     queryFn: async (): Promise<KindergartenWeek> => {
       const since = addDays(weekStart, -HISTORY_DAYS);
-      const [row, events] = await Promise.all([
+      const [row, events, profile] = await Promise.all([
         supabase
           .from('kindergarten_week')
           .select('theme, activity_codes')
@@ -52,9 +53,12 @@ export function useKindergartenWeek(childId: string, grade: Grade | undefined, d
           .eq('type', 'activite')
           .gte('created_at', `${since}T00:00:00`)
           .not('meta->>kindergarten', 'is', null),
+        supabase.from('child_profile').select('preferences').eq('id', childId).single(),
       ]);
       if (row.error) throw row.error;
       if (events.error) throw events.error;
+      if (profile.error) throw profile.error;
+      const interests = (profile.data.preferences as ChildPreferences).interests ?? [];
 
       const done = events.data.map((e) => ({
         code: String((e.meta as { kindergarten: string }).kindergarten),
@@ -64,7 +68,7 @@ export function useKindergartenWeek(childId: string, grade: Grade | undefined, d
       const codes = row.data?.activity_codes as string[] | null | undefined;
       const activities = codes
         ? codes.map(kindergartenActivity).filter((a): a is KindergartenActivity => Boolean(a))
-        : suggestKindergartenWeek({ childId, grade: grade!, weekStart, theme, done });
+        : suggestKindergartenWeek({ childId, grade: grade!, weekStart, theme, interests, done });
       return {
         weekStart,
         theme,

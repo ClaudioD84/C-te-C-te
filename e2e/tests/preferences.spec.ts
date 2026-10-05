@@ -16,6 +16,12 @@ test('préférences du profil : jours, durée, papier, avatar, réseau ; impress
   await page.getByRole('checkbox', { name: 'Samedi' }).click();
   await page.getByRole('radio', { name: '25 min', exact: true }).click();
   await page.getByRole('radio', { name: 'Imprimés sur papier' }).click();
+  // Centres d'intérêt : 3 au plus, un 4e choix est ignoré.
+  for (const interest of ['🚀 Espace', '⚽ Football', '🎨 Dessin', '🐴 Chevaux']) {
+    await page.getByRole('checkbox', { name: interest }).click();
+  }
+  await expect(page.getByRole('checkbox', { name: '🐴 Chevaux' })).toHaveAttribute('aria-checked', 'false');
+  await page.getByRole('checkbox', { name: '⚽ Football' }).click();
   await page.getByRole('radio', { name: 'Libre confessionnel' }).click();
   await page.getByLabel('Options (facultatif, séparées par des virgules)').fill('Latin,  Sciences 5 h, ');
   await button(page, 'Enregistrer').click();
@@ -34,6 +40,7 @@ test('préférences du profil : jours, durée, papier, avatar, réseau ; impress
       availableDays: ['lun', 'mar', 'mer', 'jeu', 'sam'],
       sessionMinutes: 25,
       prefersPaper: true,
+      interests: ['espace', 'dessin'],
     },
   });
 

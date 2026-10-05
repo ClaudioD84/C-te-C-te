@@ -4,7 +4,10 @@ import {
   deriveLearningSettings,
   GRADE_LABELS,
   GRADES,
+  INTEREST_LABELS,
+  INTERESTS,
   isTrackAllowed,
+  MAX_INTERESTS,
   NEED_LABELS,
   NEEDS,
   NETWORK_LABELS,
@@ -18,6 +21,7 @@ import {
   type AvatarCode,
   type ChildPreferences,
   type Grade,
+  type Interest,
   type Need,
   type Network,
   type Track,
@@ -168,6 +172,15 @@ function PreferenceFields({ values, setValues }: Pick<Props, 'values' | 'setValu
     });
   }
 
+  const interests = values.preferences.interests ?? [];
+  function toggleInterest(interest: Interest) {
+    if (interests.includes(interest)) {
+      setPreferences({ interests: interests.filter((i) => i !== interest) });
+    } else if (interests.length < MAX_INTERESTS) {
+      setPreferences({ interests: [...interests, interest] });
+    }
+  }
+
   return (
     <>
       <ThemedText type="subtitle">Préférences</ThemedText>
@@ -201,6 +214,14 @@ function PreferenceFields({ values, setValues }: Pick<Props, 'values' | 'setValu
         )}
         selected={[values.preferences.sessionMinutes ? String(values.preferences.sessionMinutes) : AUTO]}
         onToggle={(d) => setPreferences({ sessionMinutes: d === AUTO ? undefined : Number(d) })}
+      />
+      <ChoiceChips
+        label={`Centres d'intérêt (${MAX_INTERESTS} au plus) : les exemples des fiches et exercices s'en inspirent`}
+        options={INTERESTS}
+        labels={INTEREST_LABELS}
+        selected={interests}
+        onToggle={toggleInterest}
+        multiple
       />
       <ChoiceChips
         label="Fiches et exercices de préférence"

@@ -62,3 +62,21 @@ describe('activités de la semaine', () => {
     expect(other?.code).not.toBe('arbre-rue');
   });
 });
+
+describe("centres d'intérêt en maternelle", () => {
+  it('à thème de classe égal, les activités proches des centres d’intérêt passent devant', () => {
+    const base = {
+      childId: 'enfant-1',
+      grade: 'M2' as const,
+      weekStart: '2026-10-05',
+      theme: null,
+      done: [],
+    };
+    const music = suggestKindergartenWeek({ ...base, interests: ['musique'] });
+    const corps = music.find((a) => a.domain === 'corps')!;
+    expect(corps.themes.some((t) => ['musique', 'chansons', 'comptines', 'danse'].includes(t))).toBe(true);
+    // Le thème de la classe reste prioritaire.
+    const theme = suggestKindergartenWeek({ ...base, theme: 'Les fêtes', interests: ['musique'] });
+    expect(theme.find((a) => a.domain === 'corps')!.themes).toContain('fete');
+  });
+});

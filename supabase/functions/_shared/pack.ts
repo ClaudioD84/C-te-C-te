@@ -106,6 +106,34 @@ const NEED_ADAPTATIONS: Record<string, string> = {
     'Étapes de calcul décomposées, petits nombres, appui sur des exemples concrets et visuels décrits en mots.',
 };
 
+/** Centres d'intérêt (même liste que INTEREST_PROMPT_LABELS de packages/shared/src/profile.ts). */
+const INTEREST_LABELS: Record<string, string> = {
+  animaux: 'les animaux',
+  dinosaures: 'les dinosaures',
+  espace: "l'espace et les planètes",
+  football: 'le football',
+  sport: 'le sport',
+  musique: 'la musique',
+  dessin: 'le dessin',
+  cuisine: 'la cuisine et la pâtisserie',
+  jeux_video: 'les jeux vidéo',
+  nature: 'la nature',
+  chevaux: 'les chevaux',
+  vehicules: 'les voitures et les trains',
+  histoires: 'les histoires et les contes',
+  bricolage: 'le bricolage',
+  mer: 'la mer et les océans',
+};
+
+/** Libellés des centres d'intérêt connus (3 au plus) ; toute autre valeur est ignorée. */
+export function interestLabels(interests: unknown): string[] {
+  if (!Array.isArray(interests)) return [];
+  return [...new Set(interests)]
+    .filter((i): i is string => typeof i === 'string' && i in INTEREST_LABELS)
+    .slice(0, 3)
+    .map((i) => INTEREST_LABELS[i]);
+}
+
 /** Même valeur que MOCK_EXAM_PREFIX (packages/shared/src/revision.ts) : tâche d'examen blanc d'un dossier de révision. */
 const MOCK_EXAM_PREFIX = 'Examen blanc ';
 
@@ -124,6 +152,8 @@ export function buildPackRequest(input: {
   needs: string[];
   task: { subject: string; kind: string; description: string; reference: string | null };
   curriculum: string[];
+  /** Centres d'intérêt de l'élève, déjà filtrés par interestLabels. */
+  interests?: string[];
 }): string {
   const lines = [
     `Élève en ${GRADE_LABELS[input.grade] ?? input.grade} (enseignement ${input.track}).`,
@@ -133,6 +163,13 @@ export function buildPackRequest(input: {
   ];
   const adaptations = input.needs.map((n) => NEED_ADAPTATIONS[n]).filter(Boolean);
   if (adaptations.length > 0) lines.push('Adaptations :', ...adaptations.map((a) => `- ${a}`));
+  if (input.interests && input.interests.length > 0) {
+    lines.push(
+      `Centres d'intérêt de l'élève : ${input.interests.join(', ')}. Quand c'est naturel, situe les exemples, ` +
+        "les énoncés d'exercices et les questions du quiz dans ces univers, sans changer la matière ni le niveau, " +
+        'et sans en mettre partout.',
+    );
+  }
   if (input.curriculum.length > 0) {
     lines.push(
       'Attendus du référentiel officiel pour cette année et cette matière (numérotés) :',

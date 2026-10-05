@@ -109,7 +109,11 @@ export function useUpdateChildProfile(id: string) {
         .eq('id', id);
       if (error) throw error;
     },
-    onSuccess: () => queryClient.invalidateQueries({ queryKey: profilesKey }),
+    onSuccess: () => {
+      void queryClient.invalidateQueries({ queryKey: profilesKey });
+      // Les centres d'intérêt orientent les activités de maternelle proposées.
+      void queryClient.invalidateQueries({ queryKey: ['kindergarten_week', id] });
+    },
   });
 }
 
