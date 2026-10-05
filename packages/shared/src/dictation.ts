@@ -59,3 +59,12 @@ export function ficheSegments(fiche: {
       : []),
   ];
 }
+
+/** Mots de la dictée saisis par le parent (un par ligne ou séparés par des virgules), sans doublon. */
+export function parseSpellingWords(text: string): string[] {
+  const words = text
+    .split(/[\n,;]+/)
+    .map((w) => w.trim().replace(/\s+/g, ' '))
+    .filter((w) => w.length > 0 && w.length <= 40);
+  return [...new Set(words)].slice(0, 40);
+}

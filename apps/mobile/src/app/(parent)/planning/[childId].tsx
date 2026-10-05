@@ -22,6 +22,7 @@ import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
 import { Spacing } from '@/constants/theme';
 import { DaysOffCard } from '@/features/days-off/days-off-card';
+import { SpellingCard } from '@/features/spelling/spelling-card';
 import { useDaysOff } from '@/features/days-off/api';
 import { usePublishPlan, useSessions, useUpcomingTasks, type UpcomingTask } from '@/features/planning/api';
 import { ACTIVITY_LABELS, alertText, capitalize } from '@/features/planning/labels';
@@ -236,6 +237,7 @@ export default function PlanningScreen() {
         </ThemedView>
       ) : null}
 
+      <SpellingCard childId={childId} alias={profile.alias} />
       <DaysOffCard childId={childId} />
 
       <Button

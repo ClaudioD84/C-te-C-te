@@ -24,6 +24,7 @@ import { MOODS, MoodPicker, useTodayMood } from '@/features/mood/mood';
 import { ExpressReviewCard } from '@/features/express/express-review-card';
 import { HolidayBanner } from '@/features/holidays/holiday-banner';
 import { NoteCard } from '@/features/notes/note-card';
+import { useSpellingList } from '@/features/spelling/api';
 import { BreathingExercise } from '@/features/mission/breathing-exercise';
 import { PomodoroTimer } from '@/features/mission/pomodoro-timer';
 import { OfflineBanner, useIsOnline } from '@/features/offline/offline-banner';
@@ -59,6 +60,7 @@ export default function ChildConsoleScreen() {
   usePrepareOffline(childId);
   const { mood, choose: chooseMood, loading: moodLoading } = useTodayMood(childId);
   const [breathing, setBreathing] = useState(false);
+  const spelling = useSpellingList(childId);
 
   // Sur la tablette de l'enfant, pas d'espace parent : seulement les réglages de l'appareil.
   const parentButton = (
@@ -146,6 +148,13 @@ export default function ChildConsoleScreen() {
           </ThemedView>
         ) : null}
         {summary ? <AvatarProgress summary={summary} onPress={() => router.push('/enfant/badges')} /> : null}
+        {spelling.data && spelling.data.length > 0 ? (
+          <Button
+            variant="secondary"
+            label={`✏️ Ma dictée (${spelling.data.length} mots)`}
+            onPress={() => router.push('/enfant/dictee')}
+          />
+        ) : null}
         {schoolLevel(child.data.grade) === 'primaire' ? (
           <Button
             variant="secondary"

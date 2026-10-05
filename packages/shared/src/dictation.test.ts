@@ -46,3 +46,14 @@ describe('lecture de la fiche', () => {
     ]);
   });
 });
+
+describe('mots de la dictée', () => {
+  it('un par ligne ou séparés par des virgules, sans doublon ni vide', async () => {
+    const { parseSpellingWords } = await import('./dictation');
+    expect(parseSpellingWords('le chat,  la maison\n\nun oiseau ; le chat')).toEqual([
+      'le chat',
+      'la maison',
+      'un oiseau',
+    ]);
+  });
+});
