@@ -9,6 +9,8 @@ const BUCKET = 'scans';
 /**
  * Purge quotidienne (RGPD, limitation de la conservation) : une photo est normalement supprimée dès son
  * analyse ; celles restées en stockage plus de 24 heures sont effacées ici.
+ * Efface aussi les codes de liaison d'appareil expirés et le journal des codes erronés (adresses IP
+ * hachées) de plus d'un jour.
  * Appelée par une tâche planifiée (Supabase > Integrations > Cron), protégée par le secret PURGE_SECRET.
  */
 Deno.serve(async (request) => {
@@ -51,5 +53,11 @@ Deno.serve(async (request) => {
         scans.map((s) => s.id),
       );
   }
+
+  // Même tâche quotidienne : codes de liaison expirés et essais erronés de plus d'un jour.
+  const yesterday = new Date(Date.now() - 24 * 3600 * 1000).toISOString();
+  await admin.from('device_pairing').delete().lt('expires_at', new Date().toISOString());
+  await admin.from('device_pairing_failure').delete().lt('created_at', yesterday);
+
   return json({ purged: paths.length });
 });

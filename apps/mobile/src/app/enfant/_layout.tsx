@@ -1,6 +1,11 @@
 import { Stack } from 'expo-router';
 
+import { useChildMode } from '@/features/child-mode/child-mode-provider';
+import { useDeviceLinkCheck } from '@/features/devices/api';
+
 export default function ChildLayout() {
+  const { isChildDevice } = useChildMode();
+  useDeviceLinkCheck(isChildDevice);
   return (
     <Stack screenOptions={{ headerShown: false }}>
       <Stack.Screen name="index" />
@@ -8,6 +13,7 @@ export default function ChildLayout() {
       <Stack.Screen name="etude/[taskId]" />
       <Stack.Screen name="cartes" />
       <Stack.Screen name="badges" />
+      <Stack.Screen name="appareil" options={{ presentation: 'modal' }} />
     </Stack>
   );
 }

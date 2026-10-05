@@ -10,12 +10,15 @@ import {
 } from 'react';
 
 import { useSession } from '@/features/auth/session-provider';
+import { deviceChildId } from '@/features/devices/api';
 
 const ACTIVE_CHILD_KEY = 'active_child_id';
 
 interface ChildModeState {
   /** Enfant dont la console est ouverte ; null quand le parent est dans son cockpit. */
   activeChildId: string | null;
+  /** Tablette reliée à un enfant : elle n'affiche que sa console, sans accès à l'espace parent. */
+  isChildDevice: boolean;
   loading: boolean;
   enter: (childId: string) => Promise<void>;
   exit: () => Promise<void>;
@@ -54,9 +57,16 @@ export function ChildModeProvider({ children }: PropsWithChildren) {
     if (signedOut) AsyncStorage.removeItem(ACTIVE_CHILD_KEY);
   }, [signedOut]);
 
+  const deviceChild = deviceChildId(session);
   const value = useMemo(
-    () => ({ activeChildId: signedOut ? null : activeChildId, loading, enter, exit }),
-    [activeChildId, loading, enter, exit, signedOut],
+    () => ({
+      activeChildId: signedOut ? null : (deviceChild ?? activeChildId),
+      isChildDevice: deviceChild !== null,
+      loading,
+      enter,
+      exit,
+    }),
+    [activeChildId, deviceChild, loading, enter, exit, signedOut],
   );
 
   return <ChildModeContext.Provider value={value}>{children}</ChildModeContext.Provider>;

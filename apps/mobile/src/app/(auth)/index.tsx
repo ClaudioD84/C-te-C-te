@@ -1,3 +1,4 @@
+import { router } from 'expo-router';
 import { useState } from 'react';
 import { StyleSheet, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
@@ -82,6 +83,11 @@ export default function AuthScreen() {
         <ThemedText type="small" themeColor="textSecondary">
           Mot de passe : 8 caractères minimum.
         </ThemedText>
+        <Button
+          variant="secondary"
+          label="Relier la tablette de mon enfant"
+          onPress={() => router.push('/appareil')}
+        />
       </Screen>
     </SafeAreaView>
   );

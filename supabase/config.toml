@@ -447,3 +447,7 @@ verify_jwt = false
 
 [functions.purge-inactive]
 verify_jwt = false
+
+# Liaison d'une tablette enfant : appelée sans être connecté, protégée par un code à usage unique.
+[functions.pair-device]
+verify_jwt = false

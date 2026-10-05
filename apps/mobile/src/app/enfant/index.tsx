@@ -37,7 +37,7 @@ import { useDueFlashcards } from '@/features/study/api';
 
 /** Console enfant : uniquement la mission du jour, sans menu. */
 export default function ChildConsoleScreen() {
-  const { activeChildId } = useChildMode();
+  const { activeChildId, isChildDevice } = useChildMode();
   const childId = activeChildId ?? '';
   const today = toIsoDate(new Date());
   const child = useChildProfile(childId);
@@ -51,14 +51,15 @@ export default function ChildConsoleScreen() {
   const online = useIsOnline();
   usePrepareOffline(childId);
 
+  // Sur la tablette de l'enfant, pas d'espace parent : seulement les réglages de l'appareil.
   const parentButton = (
     <Pressable
       accessibilityRole="button"
-      accessibilityLabel="Espace parent (code demandé)"
-      onPress={() => router.push('/enfant/code')}
+      accessibilityLabel={isChildDevice ? 'Réglages de la tablette' : 'Espace parent (code demandé)'}
+      onPress={() => router.push(isChildDevice ? '/enfant/appareil' : '/enfant/code')}
       style={styles.parentButton}>
       <ThemedText type="small" themeColor="textSecondary">
-        Parent
+        {isChildDevice ? 'Tablette' : 'Parent'}
       </ThemedText>
     </Pressable>
   );
@@ -75,9 +76,11 @@ export default function ChildConsoleScreen() {
     return (
       <ThemedView style={[styles.container, styles.center]}>
         <ThemedText style={styles.centerText}>
-          {online
-            ? 'Impossible de charger la mission.'
-            : 'Pas de connexion, et la mission n’est pas encore sur cet appareil. Elle s’affichera dès le retour du réseau.'}
+          {isChildDevice && child.error && 'code' in child.error && child.error.code === 'PGRST116'
+            ? 'Cette tablette n’est plus reliée. Demandez à votre parent de la relier à nouveau.'
+            : online
+              ? 'Impossible de charger la mission.'
+              : 'Pas de connexion, et la mission n’est pas encore sur cet appareil. Elle s’affichera dès le retour du réseau.'}
         </ThemedText>
         <Button
           label="Réessayer"

@@ -30,6 +30,14 @@ et les fonctions serveur ; les attaques corrigées sont rejouées par les tests 
 - **Application** : aucune clé secrète dans le code ni dans le paquet web (seule la clé publique Supabase) ;
   code parent haché et salé dans le stockage chiffré, blocage progressif après 5 erreurs, réinitialisation par
   le mot de passe du compte ; données hors connexion effacées à la déconnexion.
+- **Tablette de l'enfant** : compte distinct (créé par `pair-device`, adresse réservée
+  `@appareils.coteacote.invalid`, sans famille de parent). Règles RLS dédiées : lecture limitée au profil, aux
+  tâches, sessions, fiches, cartes, épreuves et événements de **son** enfant ; écriture limitée à cocher une
+  activité, réviser une carte et ajouter un événement (un déclencheur refuse toute autre modification de
+  session). Pas d'accès aux autres enfants, aux photos, à l'abonnement ni aux fonctions parent ; `generate-pack`
+  accepté pour ses tâches, sans régénération. Code de liaison à usage unique (empreinte SHA-256, 15 minutes,
+  5 en cours par famille). Retrait par le parent, par la tablette ou avec le profil : le compte est supprimé et
+  la tablette se déconnecte en effaçant ses données locales. Couvert par `e2e/tests/tablette.spec.ts`.
 - **Dépôt** : aucun secret versionné (`functions.env` des tests ne contient que des valeurs factices).
 
 ## Risques acceptés (à revoir)
@@ -41,8 +49,13 @@ et les fonctions serveur ; les attaques corrigées sont rejouées par les tests 
 - **Injection dans les instructions de l'IA** : un texte écrit sur une photo pourrait tenter de détourner
   l'extraction. Les réponses sont contraintes par un schéma, ne déclenchent aucune action et sont toujours
   validées par le parent.
-- **Console enfant** : elle utilise la session du parent sur son appareil ; l'interface ne donne accès à rien
-  d'autre, mais un appareil confié reste un appareil confié.
+- **Console enfant sur le téléphone du parent** : elle utilise la session du parent ; l'interface ne donne
+  accès à rien d'autre, mais un appareil confié reste un appareil confié. Pour une tablette laissée à
+  l'enfant, préférer la **tablette reliée** (ci-dessous).
+- **Essais de codes de liaison** : la limite de 10 erreurs par quart d'heure repose sur l'adresse IP transmise
+  (`x-forwarded-for`), qui peut être falsifiée ; le plafond global (500 erreurs par quart d'heure) reste
+  inviolable. Avec 31⁸ codes possibles valables 15 minutes, deviner un code reste hors de portée ; au pire,
+  un attaquant bloque temporairement les liaisons.
 
 ## Réglages de production à faire (Supabase)
 

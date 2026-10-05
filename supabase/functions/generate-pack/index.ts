@@ -16,7 +16,7 @@ import {
   parsePackResponse,
 } from '../_shared/pack.ts';
 import { estimateCostUsd } from '../_shared/pricing.ts';
-import { adminClient, authenticate } from '../_shared/supabase.ts';
+import { adminClient, authenticateMember } from '../_shared/supabase.ts';
 
 /**
  * Prépare le paquet d'étude d'une tâche (fiche, quiz, exercices, cartes) avec Claude.
@@ -32,7 +32,8 @@ Deno.serve(async (request) => {
 
   const admin = adminClient();
   try {
-    const { familyId } = await authenticate(request, admin);
+    // La tablette de l'enfant peut faire préparer une fiche manquante de sa mission, sans la régénérer.
+    const { familyId, deviceChildId } = await authenticateMember(request, admin);
     const body = bodySchema.safeParse(await request.json().catch(() => null));
     if (!body.success) throw new UserFacingError('Requête invalide.');
     const { taskId, regenerate } = body.data;
@@ -43,7 +44,10 @@ Deno.serve(async (request) => {
       .eq('id', taskId)
       .eq('family_id', familyId)
       .maybeSingle();
-    if (!task) throw new UserFacingError('Tâche introuvable.', 404);
+    if (!task || (deviceChildId !== null && task.child_id !== deviceChildId))
+      throw new UserFacingError('Tâche introuvable.', 404);
+    if (deviceChildId !== null && regenerate)
+      throw new UserFacingError('Seul le parent peut régénérer une fiche.', 403);
     if (task.status === 'draft') throw new UserFacingError("Validez d'abord la liste des tâches.", 409);
 
     const { data: existing } = await admin

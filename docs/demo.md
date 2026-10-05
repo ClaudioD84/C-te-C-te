@@ -97,6 +97,11 @@ semaines de suivi.
   il sera demandé pour revenir à l'espace parent.
 - **Suivi, dossier de révision, abonnement** (achat simulé, aucun paiement), **rappels**, **modifier le
   profil**, **export de mes données**.
+- **Mode maternelle** : ajoutez un enfant en « 2e maternelle » : « Activités de la semaine » remplace la photo
+  et le planning (jeux à faire ensemble, thème de la classe, « On l'a fait ! »).
+- **Tablette de l'enfant** : « Modifier le profil » > « Tablette de l'enfant » > « Relier une tablette ». Ouvrez
+  une **fenêtre de navigation privée** (ou l'iPad en mode iPhone, section 5) : « Relier la tablette de mon
+  enfant », recopiez le code. Elle n'affiche que la console de l'enfant ; « Retirer » la déconnecte.
 - **Format téléphone** : dans Safari, menu Développement > Mode de conception adaptatif (à activer dans
   Réglages > Avancées) ; dans Chrome, clic droit > Inspecter, puis l'icône téléphone.
 

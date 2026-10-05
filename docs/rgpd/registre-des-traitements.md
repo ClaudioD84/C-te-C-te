@@ -118,12 +118,24 @@ Aucune donnée n'est vendue, louée ni utilisée à des fins publicitaires. Aucu
 | Conservation | Effacées à la déconnexion et à la suppression du compte |
 | Remarque | Les rappels sont des notifications locales : aucun identifiant de notification n'est envoyé au serveur |
 
+### T10 — Tablette de l'enfant
+
+| | |
+|---|---|
+| Finalité | Relier une tablette au profil d'un enfant pour qu'elle n'affiche que sa console |
+| Base légale | Exécution du contrat (art. 6.1.b) ; protection contre les essais de codes : intérêt légitime (art. 6.1.f) |
+| Données | Nom donné à la tablette, dates de liaison et de dernière utilisation ; compte technique sans adresse réelle ; codes de liaison (empreinte seulement, 15 minutes) ; essais de codes erronés (empreinte de l'adresse IP, 1 jour) |
+| Conservation | Jusqu'au retrait de la tablette (par le parent ou la tablette), à la suppression du profil ou du compte ; le compte technique est alors supprimé |
+| Destinataires | Supabase |
+
 ## Mesures de sécurité
 
 - Chiffrement des échanges (HTTPS) et des données au repos (hébergeur).
 - Sécurité au niveau des lignes (RLS) sur toutes les tables : un parent n'accède qu'aux données de sa famille ;
   tests automatisés de cloisonnement.
 - Clés d'API uniquement côté serveur ; fonctions protégées par jeton de session ou secret partagé.
+- Tablette de l'enfant : compte distinct limité par RLS à la console de cet enfant, sans accès à l'espace
+  parent ; liaison par code à usage unique de 15 minutes, essais limités.
 - Code parent pour quitter la console enfant ; stockage chiffré sur l'appareil pour les données sensibles.
 - Sauvegardes de l'hébergeur [À COMPLÉTER : durée selon l'offre Supabase choisie].
 - Procédure de gestion des violations de données : [violation-de-donnees.md](violation-de-donnees.md).

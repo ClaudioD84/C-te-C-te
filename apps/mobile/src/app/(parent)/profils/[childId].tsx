@@ -94,6 +94,12 @@ function EditForm({ child }: { child: StoredChildProfile }) {
 
       <Button label="Enregistrer" onPress={save} loading={update.isPending} disabled={!form.valid} />
 
+      <Button
+        variant="secondary"
+        label="Tablette de l’enfant"
+        onPress={() => router.push({ pathname: '/appareils/[childId]', params: { childId: child.id } })}
+      />
+
       {confirming ? (
         <ThemedView
           type="backgroundElement"
