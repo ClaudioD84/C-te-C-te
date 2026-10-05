@@ -149,23 +149,6 @@ export default function ChildConsoleScreen() {
           </ThemedView>
         ) : null}
         {summary ? <AvatarProgress summary={summary} onPress={() => router.push('/enfant/badges')} /> : null}
-        {spelling.data && spelling.data.length > 0 ? (
-          <Button
-            variant="secondary"
-            label={`✏️ Ma dictée (${spelling.data.length} mots)`}
-            onPress={() => router.push('/enfant/dictee')}
-          />
-        ) : null}
-        {schoolLevel(child.data.grade) !== 'maternelle' ? (
-          <Button variant="secondary" label="📚 J’ai lu" onPress={() => router.push('/enfant/lecture')} />
-        ) : null}
-        {schoolLevel(child.data.grade) === 'primaire' ? (
-          <Button
-            variant="secondary"
-            label={gradeYear(child.data.grade) <= 2 ? '➕ Les additions' : '✖️ Les tables'}
-            onPress={() => router.push('/enfant/tables')}
-          />
-        ) : null}
         {dueCards.data && dueCards.data.length > 0 ? (
           <Button
             variant="secondary"
@@ -241,6 +224,31 @@ export default function ChildConsoleScreen() {
             )}
           </>
         )}
+        {/* Entraînements libres, après la mission ; avec le TDAH, seulement une fois la mission faite. */}
+        {settings.maxItemsPerScreen > 1 || remaining.length === 0 ? (
+          <View style={styles.extras}>
+            <ThemedText type="smallBold" themeColor="textSecondary">
+              Pour t’entraîner
+            </ThemedText>
+            {spelling.data && spelling.data.length > 0 ? (
+              <Button
+                variant="secondary"
+                label={`✏️ Ma dictée (${spelling.data.length} mots)`}
+                onPress={() => router.push('/enfant/dictee')}
+              />
+            ) : null}
+            {schoolLevel(child.data.grade) !== 'maternelle' ? (
+              <Button variant="secondary" label="📚 J’ai lu" onPress={() => router.push('/enfant/lecture')} />
+            ) : null}
+            {schoolLevel(child.data.grade) === 'primaire' ? (
+              <Button
+                variant="secondary"
+                label={gradeYear(child.data.grade) <= 2 ? '➕ Les additions' : '✖️ Les tables'}
+                onPress={() => router.push('/enfant/tables')}
+              />
+            ) : null}
+          </View>
+        ) : null}
       </ScrollView>
     </ThemedView>
   );
@@ -351,4 +359,5 @@ const styles = StyleSheet.create({
   pictograms: { flexDirection: 'row', gap: Spacing.three },
   pictogram: { fontSize: 44, lineHeight: 56 },
   flex: { flex: 1 },
+  extras: { gap: Spacing.two, marginTop: Spacing.three },
 });
