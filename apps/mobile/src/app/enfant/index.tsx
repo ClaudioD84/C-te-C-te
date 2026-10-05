@@ -3,6 +3,7 @@ import {
   avatarOf,
   BADGES,
   deriveLearningSettings,
+  schoolLevel,
   subjectPictogram,
   toIsoDate,
   type LearningSettings,
@@ -17,6 +18,7 @@ import { ThemedView } from '@/components/themed-view';
 import { learningTextStyle } from '@/constants/fonts';
 import { MinTouchSize, Spacing } from '@/constants/theme';
 import { useChildMode } from '@/features/child-mode/child-mode-provider';
+import { KindergartenMission } from '@/features/kindergarten/kindergarten-mission';
 import { PomodoroTimer } from '@/features/mission/pomodoro-timer';
 import { OfflineBanner, useIsOnline } from '@/features/offline/offline-banner';
 import { usePrepareOffline } from '@/features/offline/use-prepare-offline';
@@ -124,36 +126,43 @@ export default function ChildConsoleScreen() {
             onPress={() => router.push('/enfant/cartes')}
           />
         ) : null}
-        <ThemedText type="smallBold" themeColor="textSecondary">
-          Mission du jour
-        </ThemedText>
-
-        {!session ? (
-          <MissionText settings={settings}>Pas de mission aujourd&apos;hui. Profite bien !</MissionText>
-        ) : remaining.length === 0 ? (
-          <MissionText settings={settings}>Mission accomplie, bravo !</MissionText>
+        {schoolLevel(child.data.grade) === 'maternelle' ? (
+          // Maternelle : pas de devoirs, des activités de la semaine à faire avec le parent.
+          <KindergartenMission childId={childId} grade={child.data.grade} settings={settings} />
         ) : (
           <>
-            {remaining.slice(0, settings.maxItemsPerScreen).map((item) => (
-              <MissionCard
-                key={item.task_id}
-                item={item}
-                session={session}
-                settings={settings}
-                childId={childId}
-              />
-            ))}
-            {remaining.length > settings.maxItemsPerScreen ? (
-              <ThemedText themeColor="textSecondary">
-                Ensuite : encore {remaining.length - settings.maxItemsPerScreen} activité
-                {remaining.length - settings.maxItemsPerScreen > 1 ? 's' : ''}.
-              </ThemedText>
-            ) : null}
-            <PomodoroTimer
-              workMinutes={settings.workMinutes}
-              breakMinutes={settings.breakMinutes}
-              cycles={Math.min(4, Math.max(1, Math.ceil(remainingMinutes / settings.workMinutes)))}
-            />
+            <ThemedText type="smallBold" themeColor="textSecondary">
+              Mission du jour
+            </ThemedText>
+
+            {!session ? (
+              <MissionText settings={settings}>Pas de mission aujourd&apos;hui. Profite bien !</MissionText>
+            ) : remaining.length === 0 ? (
+              <MissionText settings={settings}>Mission accomplie, bravo !</MissionText>
+            ) : (
+              <>
+                {remaining.slice(0, settings.maxItemsPerScreen).map((item) => (
+                  <MissionCard
+                    key={item.task_id}
+                    item={item}
+                    session={session}
+                    settings={settings}
+                    childId={childId}
+                  />
+                ))}
+                {remaining.length > settings.maxItemsPerScreen ? (
+                  <ThemedText themeColor="textSecondary">
+                    Ensuite : encore {remaining.length - settings.maxItemsPerScreen} activité
+                    {remaining.length - settings.maxItemsPerScreen > 1 ? 's' : ''}.
+                  </ThemedText>
+                ) : null}
+                <PomodoroTimer
+                  workMinutes={settings.workMinutes}
+                  breakMinutes={settings.breakMinutes}
+                  cycles={Math.min(4, Math.max(1, Math.ceil(remainingMinutes / settings.workMinutes)))}
+                />
+              </>
+            )}
           </>
         )}
       </ScrollView>

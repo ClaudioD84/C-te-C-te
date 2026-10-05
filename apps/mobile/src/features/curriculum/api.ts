@@ -70,7 +70,7 @@ export function useSetTaskCurriculum(taskId: string) {
   });
 }
 
-/** Attendus déjà travaillés par l'enfant (tâches rattachées), pour la vue « Programme de l'année ». */
+/** Attendus déjà travaillés par l'enfant (tâches rattachées, activités de maternelle), pour la vue « Programme de l'année ». */
 export function useSeenExpectations(childId: string) {
   return useQuery({
     queryKey: ['curriculum_seen', childId],
@@ -82,7 +82,28 @@ export function useSeenExpectations(childId: string) {
         .eq('child_id', childId)
         .not('curriculum_item_id', 'is', null);
       if (error) throw error;
-      return new Set(data.map((row) => String(row.curriculum_item_id)));
+      const seen = new Set(data.map((row) => String(row.curriculum_item_id)));
+
+      // Maternelle : les activités faites portent le code de l'attendu travaillé.
+      const events = await supabase
+        .from('learning_event')
+        .select('meta')
+        .eq('child_id', childId)
+        .eq('type', 'activite')
+        .not('meta->>curriculum_code', 'is', null)
+        .limit(1000);
+      if (events.error) throw events.error;
+      const codes = [
+        ...new Set(
+          events.data.map((row) => String((row.meta as { curriculum_code: string }).curriculum_code)),
+        ),
+      ];
+      if (codes.length > 0) {
+        const items = await supabase.from('curriculum_item').select('id').in('code', codes);
+        if (items.error) throw items.error;
+        for (const item of items.data) seen.add(String(item.id));
+      }
+      return seen;
     },
   });
 }

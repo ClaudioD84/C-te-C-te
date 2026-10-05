@@ -1,4 +1,4 @@
-import { avatarOf, GRADE_LABELS, NEED_LABELS } from '@cote-a-cote/shared';
+import { avatarOf, GRADE_LABELS, NEED_LABELS, schoolLevel } from '@cote-a-cote/shared';
 import { Link, router } from 'expo-router';
 import { ActivityIndicator, StyleSheet, View } from 'react-native';
 
@@ -26,6 +26,7 @@ function ChildCard({ child }: { child: StoredChildProfile }) {
   }
 
   const needs = child.needs.map((n) => NEED_LABELS[n]).join(', ');
+  const kindergarten = schoolLevel(child.grade) === 'maternelle';
   return (
     <ThemedView type="backgroundElement" style={styles.card}>
       <ThemedText type="subtitle">
@@ -35,20 +36,30 @@ function ChildCard({ child }: { child: StoredChildProfile }) {
         {GRADE_LABELS[child.grade]}
         {needs ? ` · ${needs}` : ''}
       </ThemedText>
-      <Button
-        label="Photographier le journal de classe"
-        onPress={() => router.push({ pathname: '/scan/nouveau', params: { childId: child.id } })}
-      />
+      {kindergarten ? (
+        // Maternelle : pas de devoirs ni de journal de classe, des jeux à faire ensemble.
+        <Button
+          label="Activités de la semaine"
+          onPress={() => router.push({ pathname: '/maternelle/[childId]', params: { childId: child.id } })}
+        />
+      ) : (
+        <Button
+          label="Photographier le journal de classe"
+          onPress={() => router.push({ pathname: '/scan/nouveau', params: { childId: child.id } })}
+        />
+      )}
       <Button
         variant="secondary"
-        label="Suivi et épreuves"
+        label={kindergarten ? 'Suivi' : 'Suivi et épreuves'}
         onPress={() => router.push({ pathname: '/suivi/[childId]', params: { childId: child.id } })}
       />
-      <Button
-        variant="secondary"
-        label="Planning de la semaine"
-        onPress={() => router.push({ pathname: '/planning/[childId]', params: { childId: child.id } })}
-      />
+      {!kindergarten ? (
+        <Button
+          variant="secondary"
+          label="Planning de la semaine"
+          onPress={() => router.push({ pathname: '/planning/[childId]', params: { childId: child.id } })}
+        />
+      ) : null}
       <Button variant="secondary" label="Lancer la mission du jour" onPress={launchMission} />
       <Button
         variant="secondary"

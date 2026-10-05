@@ -1,7 +1,9 @@
 # Mode maternelle : proposition à valider
 
-> Proposition du 5 octobre 2026, à relire et corriger. Rien n'est encore développé : vos réponses aux
-> questions de la fin décident de ce qui le sera.
+> Proposition du 5 octobre 2026, à relire et corriger. **Une première version est développée** avec les choix
+> par défaut ci-dessous (jeux partagés sans évaluation, 4 activités par semaine, thème saisi par le parent,
+> console enfant facultative, même abonnement) ; vos réponses aux questions de la fin pourront la modifier.
+> Le découpage du référentiel de maternelle (section 5) a été corrigé.
 
 ## 1. Le constat
 

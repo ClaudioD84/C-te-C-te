@@ -100,7 +100,7 @@ export default function ProgrammeScreen() {
         onToggle={setSelected}
       />
       <ThemedText type="small" themeColor="textSecondary">
-        ✓ : attendu déjà travaillé (leçons et devoirs rattachés au programme).
+        ✓ : attendu déjà travaillé (leçons, devoirs ou activités rattachés au programme).
       </ThemedText>
       {items.isLoading ? <ActivityIndicator /> : null}
       {!items.isLoading && rows.length === 0 ? (

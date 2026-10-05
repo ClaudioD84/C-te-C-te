@@ -7,6 +7,7 @@ import {
   addDays,
   compareWithLastWeek,
   mondayOfWeek,
+  schoolLevel,
   weeklyEffort,
 } from '@cote-a-cote/shared';
 import { router, useLocalSearchParams } from 'expo-router';
@@ -54,6 +55,7 @@ export default function FollowUpScreen() {
   }
 
   const weeks = weeklyEffort(rewards.data ?? [], today, 8);
+  const kindergarten = schoolLevel(child.data.grade) === 'maternelle';
   const thisWeek = weeks.at(-1)!;
   const missed = (pastSessions.data ?? []).flatMap((session) =>
     session.study_session_task
@@ -86,60 +88,69 @@ export default function FollowUpScreen() {
 
       <AvatarProgress summary={rewards.summary} />
 
-      <ThemedView type="backgroundElement" style={styles.card}>
-        <ThemedText type="smallBold">Épreuves à venir</ThemedText>
-        {exams.data?.length === 0 ? (
-          <ThemedText type="small" themeColor="textSecondary">
-            Aucune épreuve. Créez un dossier de révision pour préparer un CEB, un CE1D ou un bilan.
-          </ThemedText>
-        ) : null}
-        {exams.data?.map((exam) => (
-          <View key={exam.id} style={styles.row}>
-            <View style={styles.flex}>
-              <ThemedText>
-                {EXAM_LABELS[exam.type]} · {formatShortDate(exam.exam_date)}
-              </ThemedText>
+      {!kindergarten ? (
+        <>
+          <ThemedView type="backgroundElement" style={styles.card}>
+            <ThemedText type="smallBold">Épreuves à venir</ThemedText>
+            {exams.data?.length === 0 ? (
               <ThemedText type="small" themeColor="textSecondary">
-                Dans {daysBetween(today, exam.exam_date)} jours · {exam.subjects.join(', ')}
+                Aucune épreuve. Créez un dossier de révision pour préparer un CEB, un CE1D ou un bilan.
               </ThemedText>
-            </View>
+            ) : null}
+            {exams.data?.map((exam) => (
+              <View key={exam.id} style={styles.row}>
+                <View style={styles.flex}>
+                  <ThemedText>
+                    {EXAM_LABELS[exam.type]} · {formatShortDate(exam.exam_date)}
+                  </ThemedText>
+                  <ThemedText type="small" themeColor="textSecondary">
+                    Dans {daysBetween(today, exam.exam_date)} jours · {exam.subjects.join(', ')}
+                  </ThemedText>
+                </View>
+                <Button
+                  variant="secondary"
+                  label="Supprimer"
+                  accessibilityLabel={`Supprimer le dossier ${EXAM_LABELS[exam.type]}`}
+                  onPress={() => deleteExam.mutate(exam.id)}
+                />
+              </View>
+            ))}
             <Button
-              variant="secondary"
-              label="Supprimer"
-              accessibilityLabel={`Supprimer le dossier ${EXAM_LABELS[exam.type]}`}
-              onPress={() => deleteExam.mutate(exam.id)}
+              label="Nouveau dossier de révision"
+              onPress={() => router.push({ pathname: '/examen/nouveau', params: { childId } })}
             />
-          </View>
-        ))}
-        <Button
-          label="Nouveau dossier de révision"
-          onPress={() => router.push({ pathname: '/examen/nouveau', params: { childId } })}
-        />
-      </ThemedView>
+          </ThemedView>
+        </>
+      ) : null}
 
       <CultureSuggestions suggestions={culture.data} />
 
       <HistoryCard weeks={weeks} />
 
-      <ThemedView type="backgroundElement" style={styles.card}>
-        <ThemedText type="smallBold">Pas encore fait (7 derniers jours)</ThemedText>
-        {missed.length === 0 ? (
-          <ThemedText type="small" themeColor="textSecondary">
-            Tout ce qui était prévu a été fait.
-          </ThemedText>
-        ) : (
-          <>
-            {missed.map((m, i) => (
-              <ThemedText key={i} type="small">
-                {formatRelativeDate(m.date, today)} : {m.label}
+      {/* En maternelle, rien ne se rattrape : pas de liste « pas encore fait ». */}
+      {!kindergarten ? (
+        <>
+          <ThemedView type="backgroundElement" style={styles.card}>
+            <ThemedText type="smallBold">Pas encore fait (7 derniers jours)</ThemedText>
+            {missed.length === 0 ? (
+              <ThemedText type="small" themeColor="textSecondary">
+                Tout ce qui était prévu a été fait.
               </ThemedText>
-            ))}
-            <ThemedText type="small" themeColor="textSecondary">
-              Recalculez le planning pour répartir ce travail sur les prochains jours.
-            </ThemedText>
-          </>
-        )}
-      </ThemedView>
+            ) : (
+              <>
+                {missed.map((m, i) => (
+                  <ThemedText key={i} type="small">
+                    {formatRelativeDate(m.date, today)} : {m.label}
+                  </ThemedText>
+                ))}
+                <ThemedText type="small" themeColor="textSecondary">
+                  Recalculez le planning pour répartir ce travail sur les prochains jours.
+                </ThemedText>
+              </>
+            )}
+          </ThemedView>
+        </>
+      ) : null}
     </Screen>
   );
 }

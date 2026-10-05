@@ -20,3 +20,4 @@ export * from './task';
 export * from './sha256';
 export * from './progress';
 export * from './pictograms';
+export * from './kindergarten';
