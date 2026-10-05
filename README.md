@@ -69,6 +69,9 @@ La prise de photo avec masquage automatique des noms (ML Kit) et le dessin des m
    abonnement payé en cours). Les e-mails passent par Brevo (prestataire européen) :
    `pnpm exec supabase secrets set BREVO_API_KEY=... EMAIL_FROM=...` (adresse d'expéditeur validée chez Brevo).
    Tant que ces secrets manquent, aucun compte n'est averti ni supprimé.
+9. E-mails de connexion (confirmation, mot de passe oublié) : Supabase > Authentication > Emails > SMTP Settings,
+   avec les identifiants SMTP de Brevo (serveur `smtp-relay.brevo.com`, port 587, identifiant et clé SMTP
+   indiqués dans Brevo > SMTP & API), la même adresse d'expéditeur, et relever la limite d'envoi par heure.
 
 ## Vérifications
 

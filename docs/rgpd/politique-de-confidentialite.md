@@ -63,7 +63,7 @@ propre compte :
 - **Anthropic** : intelligence artificielle (lecture des photos masquées, préparation des fiches). Les demandes ne
   contiennent ni nom, ni pseudonyme, ni adresse e-mail, ni trouble nommé ;
 - **RevenueCat** : gestion des abonnements de l'App Store et de Google Play, avec un identifiant technique ;
-- **[À CONFIRMER : Brevo, France]** : envoi des e-mails liés au compte.
+- **Brevo** (France, données dans l'Union européenne) : envoi des e-mails liés au compte.
 
 Anthropic et RevenueCat sont situés aux **États-Unis**. Ces transferts sont encadrés par [À COMPLÉTER : le cadre
 de protection des données UE–États-Unis ou les clauses contractuelles types de la Commission européenne].
