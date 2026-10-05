@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest';
 
 import { addDays } from './dates';
-import { computeRewards, type EffortDay } from './rewards';
+import { computeRewards, weeklyEffort, type EffortDay } from './rewards';
 
 const WEEKDAYS = ['lun', 'mar', 'mer', 'jeu', 'ven'] as const;
 const day = (date: string, patch: Partial<EffortDay> = {}): EffortDay => ({
@@ -73,5 +73,22 @@ describe('récompenses', () => {
     expect(r.points).toBe(75);
     expect(r.stage.name).toBe('Pousse');
     expect(r.progress).toBeCloseTo(25 / 150);
+  });
+});
+
+describe('effort par semaine', () => {
+  it('regroupe par semaine du lundi au dimanche, la plus récente en dernier', () => {
+    const weeks = weeklyEffort(
+      [
+        { ...day('2026-09-28'), minutes: 20 },
+        { ...day('2026-10-04', { cards: 5 }), minutes: 10 },
+        { ...day('2026-10-05'), minutes: 15 },
+      ],
+      '2026-10-07',
+      3,
+    );
+    expect(weeks.map((w) => w.weekStart)).toEqual(['2026-09-21', '2026-09-28', '2026-10-05']);
+    expect(weeks.map((w) => w.minutes)).toEqual([0, 30, 15]);
+    expect(weeks[1]).toMatchObject({ activities: 2, cards: 5, effortDays: 2 });
   });
 });

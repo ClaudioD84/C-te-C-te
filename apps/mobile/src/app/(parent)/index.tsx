@@ -37,6 +37,11 @@ function ChildCard({ child }: { child: StoredChildProfile }) {
       />
       <Button
         variant="secondary"
+        label="Suivi et épreuves"
+        onPress={() => router.push({ pathname: '/suivi/[childId]', params: { childId: child.id } })}
+      />
+      <Button
+        variant="secondary"
         label="Planning de la semaine"
         onPress={() => router.push({ pathname: '/planning/[childId]', params: { childId: child.id } })}
       />

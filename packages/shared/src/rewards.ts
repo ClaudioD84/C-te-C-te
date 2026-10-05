@@ -185,3 +185,37 @@ export function computeRewards(
 
   return { points, stage, nextStage, progress, badges, effortDaysThisWeek, currentStreak };
 }
+
+export interface WeekEffort {
+  /** Lundi de la semaine. */
+  weekStart: IsoDate;
+  minutes: number;
+  activities: number;
+  cards: number;
+  quizzes: number;
+  effortDays: number;
+}
+
+/** Effort par semaine (lundi → dimanche) sur les `weeks` dernières semaines, la plus récente en dernier. */
+export function weeklyEffort(
+  days: readonly (EffortDay & { minutes?: number })[],
+  today: IsoDate,
+  weeks = 8,
+): WeekEffort[] {
+  const currentMonday = mondayOf(today);
+  const result: WeekEffort[] = [];
+  for (let i = weeks - 1; i >= 0; i--) {
+    const weekStart = addDays(currentMonday, -7 * i);
+    const weekEnd = addDays(weekStart, 6);
+    const inWeek = days.filter((d) => d.date >= weekStart && d.date <= weekEnd);
+    result.push({
+      weekStart,
+      minutes: inWeek.reduce((sum, d) => sum + (d.minutes ?? 0), 0),
+      activities: inWeek.reduce((sum, d) => sum + d.activities, 0),
+      cards: inWeek.reduce((sum, d) => sum + d.cards, 0),
+      quizzes: inWeek.reduce((sum, d) => sum + d.quizzes, 0),
+      effortDays: inWeek.filter(hasEffort).length,
+    });
+  }
+  return result;
+}

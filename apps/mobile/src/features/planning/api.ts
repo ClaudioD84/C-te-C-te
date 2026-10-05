@@ -126,12 +126,16 @@ export function useCompleteItem(childId: string) {
         .eq('task_id', taskId);
       if (error) throw error;
 
+      const done = session.study_session_task.find((item) => item.task_id === taskId);
+      await logLearningEvent(childId, 'activite', { task_id: taskId, minutes: done?.minutes ?? 0 });
+
       const allDone = session.study_session_task.every(
         (item) => item.task_id === taskId || item.done_at !== null,
       );
       if (allDone) {
         const update = await supabase.from('study_session').update({ status: 'done' }).eq('id', session.id);
         if (update.error) throw update.error;
+        await logLearningEvent(childId, 'session', { session_id: session.id });
       }
     },
     onSuccess: () => {

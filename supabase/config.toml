@@ -426,3 +426,7 @@ verify_jwt = true
 # Paquets d'étude (fiche, quiz, exercices, cartes) générés par l'IA.
 [functions.generate-pack]
 verify_jwt = true
+
+# Dossiers de révision (thèmes proposés pour une épreuve).
+[functions.revision-plan]
+verify_jwt = true

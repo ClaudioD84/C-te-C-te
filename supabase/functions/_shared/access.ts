@@ -19,11 +19,18 @@ export const MONTHLY_SCAN_QUOTA: Record<Plan, number> = {
   famille: 200,
 };
 
-/** Paquets d'étude générés par mois civil (valeurs provisoires, à ajuster après la bêta). */
+/** Paquets d'étude générés par mois civil. */
 export const MONTHLY_PACK_QUOTA: Record<Plan, number> = {
   essai: 60,
   solo: 150,
   famille: 400,
+};
+
+/** Dossiers de révision créés par mois civil (valeurs provisoires). */
+export const MONTHLY_REVISION_QUOTA: Record<Plan, number> = {
+  essai: 3,
+  solo: 10,
+  famille: 25,
 };
 
 export type AccessProblem = 'abonnement_expire' | 'quota_atteint';
@@ -57,6 +64,12 @@ export const PACK_ACCESS_MESSAGES: Record<AccessProblem, string> = {
     'Votre essai ou votre abonnement est terminé. Abonnez-vous pour continuer à préparer des fiches.',
   quota_atteint:
     'Le nombre de fiches et quiz préparés ce mois-ci est atteint. Le compteur repart à zéro le 1er du mois.',
+};
+
+export const REVISION_ACCESS_MESSAGES: Record<AccessProblem, string> = {
+  abonnement_expire: PACK_ACCESS_MESSAGES.abonnement_expire,
+  quota_atteint:
+    'Le nombre de dossiers de révision créés ce mois-ci est atteint. Le compteur repart à zéro le 1er du mois.',
 };
 
 /** Début du mois civil en cours, à Bruxelles, au format ISO. */
