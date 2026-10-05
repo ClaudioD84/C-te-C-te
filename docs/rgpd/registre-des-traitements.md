@@ -36,7 +36,7 @@ Aucune donnée n'est vendue, louée ni utilisée à des fins publicitaires. Aucu
 |---|---|
 | Finalité | Créer et sécuriser le compte, permettre la connexion |
 | Base légale | Exécution du contrat (art. 6.1.b) |
-| Données | Adresse e-mail, mot de passe (haché par Supabase Auth), date de création, date de dernière utilisation, journaux de connexion |
+| Données | Adresse e-mail, mot de passe (haché par Supabase Auth), date de création, date de dernière utilisation, journaux de connexion ; rattachement à la famille (les autres parents de la famille voient l'adresse e-mail) ; invitations (empreinte du code, 7 jours) et essais de codes erronés (15 minutes utiles, effacés avec le compte) |
 | Conservation | Durée du compte ; suppression immédiate à la demande (depuis l'application). Compte inactif depuis 24 mois (aucune ouverture de l'application) : e-mail d'avertissement, puis suppression 30 jours plus tard sans reconnexion ; jamais pendant un abonnement payé en cours |
 | Destinataires | Supabase ; prestataire d'e-mails |
 
