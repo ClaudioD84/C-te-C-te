@@ -15,6 +15,8 @@ import { ThemedView } from '@/components/themed-view';
 import { Spacing } from '@/constants/theme';
 import { useTheme } from '@/hooks/use-theme';
 
+import { BreathingExercise } from './breathing-exercise';
+
 const PHASE_LABELS = {
   travail: 'Au travail !',
   pause: 'Pause : bouge, bois un verre d’eau',
@@ -26,6 +28,7 @@ export function PomodoroTimer({ workMinutes, breakMinutes, cycles }: PomodoroCon
   const config = useMemo(() => ({ workMinutes, breakMinutes, cycles }), [workMinutes, breakMinutes, cycles]);
   const [state, setState] = useState<PomodoroState | null>(null);
   const [running, setRunning] = useState(false);
+  const [breathing, setBreathing] = useState(false);
   const lastTick = useRef(0);
   const active = running && state !== null && state.phase !== 'termine';
 
@@ -82,6 +85,13 @@ export function PomodoroTimer({ workMinutes, breakMinutes, cycles }: PomodoroCon
           <ThemedText themeColor="textSecondary">
             Étape {state.cycle} sur {config.cycles}
           </ThemedText>
+          {state.phase === 'pause' ? (
+            breathing ? (
+              <BreathingExercise onClose={() => setBreathing(false)} />
+            ) : (
+              <Button variant="secondary" label="Respirer avec moi" onPress={() => setBreathing(true)} />
+            )
+          ) : null}
           <Button
             variant="secondary"
             label={running ? 'Mettre en pause' : 'Reprendre'}

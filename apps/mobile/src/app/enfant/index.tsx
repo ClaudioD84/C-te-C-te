@@ -9,6 +9,7 @@ import {
   type LearningSettings,
 } from '@cote-a-cote/shared';
 import * as Speech from 'expo-speech';
+import { useState } from 'react';
 import { router } from 'expo-router';
 import { ActivityIndicator, Pressable, ScrollView, StyleSheet, View } from 'react-native';
 
@@ -21,6 +22,7 @@ import { useChildMode } from '@/features/child-mode/child-mode-provider';
 import { KindergartenMission } from '@/features/kindergarten/kindergarten-mission';
 import { MOODS, MoodPicker, useTodayMood } from '@/features/mood/mood';
 import { NoteCard } from '@/features/notes/note-card';
+import { BreathingExercise } from '@/features/mission/breathing-exercise';
 import { PomodoroTimer } from '@/features/mission/pomodoro-timer';
 import { OfflineBanner, useIsOnline } from '@/features/offline/offline-banner';
 import { usePrepareOffline } from '@/features/offline/use-prepare-offline';
@@ -53,6 +55,7 @@ export default function ChildConsoleScreen() {
   const online = useIsOnline();
   usePrepareOffline(childId);
   const { mood, choose: chooseMood, loading: moodLoading } = useTodayMood(childId);
+  const [breathing, setBreathing] = useState(false);
 
   // Sur la tablette de l'enfant, pas d'espace parent : seulement les réglages de l'appareil.
   const parentButton = (
@@ -175,6 +178,17 @@ export default function ChildConsoleScreen() {
                   <MissionText settings={settings}>
                     {MOODS[mood].emoji} {MOODS[mood].message}
                   </MissionText>
+                ) : null}
+                {mood && mood !== 'forme' ? (
+                  breathing ? (
+                    <BreathingExercise onClose={() => setBreathing(false)} />
+                  ) : (
+                    <Button
+                      variant="secondary"
+                      label="Respirer un moment avant"
+                      onPress={() => setBreathing(true)}
+                    />
+                  )
                 ) : null}
                 {remaining.slice(0, settings.maxItemsPerScreen).map((item) => (
                   <MissionCard
