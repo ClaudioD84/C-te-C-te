@@ -1,19 +1,31 @@
 import { Lexend_400Regular, Lexend_600SemiBold, useFonts } from '@expo-google-fonts/lexend';
-import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import { PersistQueryClientProvider } from '@tanstack/react-query-persist-client';
 import { DarkTheme, DefaultTheme, Stack, ThemeProvider } from 'expo-router';
 import * as SplashScreen from 'expo-splash-screen';
-import { useEffect, useState } from 'react';
+import { useEffect, useRef } from 'react';
 import { StyleSheet, useColorScheme } from 'react-native';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 
 import { SessionProvider, useSession } from '@/features/auth/session-provider';
 import { ChildModeProvider, useChildMode } from '@/features/child-mode/child-mode-provider';
+import { clearOfflineCache, persistOptions, queryClient } from '@/lib/query-client';
 import { isSupabaseConfigured } from '@/lib/supabase';
 
 SplashScreen.preventAutoHideAsync();
 
+/** À la déconnexion, les données gardées sur l'appareil et les actions en attente sont effacées. */
+function useClearCacheOnSignOut(signedIn: boolean, loading: boolean) {
+  const wasSignedIn = useRef(false);
+  useEffect(() => {
+    if (loading) return;
+    if (wasSignedIn.current && !signedIn) clearOfflineCache();
+    wasSignedIn.current = signedIn;
+  }, [signedIn, loading]);
+}
+
 function RootNavigator() {
   const { session, loading: sessionLoading } = useSession();
+  useClearCacheOnSignOut(Boolean(session), sessionLoading);
   const { activeChildId, loading: childModeLoading } = useChildMode();
   // En cas d'échec de chargement de la police, on continue avec la police système.
   const [fontsLoaded, fontError] = useFonts({ Lexend_400Regular, Lexend_600SemiBold });
@@ -48,11 +60,13 @@ function RootNavigator() {
 
 export default function RootLayout() {
   const colorScheme = useColorScheme();
-  const [queryClient] = useState(() => new QueryClient());
-
   return (
     <GestureHandlerRootView style={styles.root}>
-      <QueryClientProvider client={queryClient}>
+      <PersistQueryClientProvider
+        client={queryClient}
+        persistOptions={persistOptions}
+        // Actions faites hors connexion lors d'une utilisation précédente : on les envoie.
+        onSuccess={() => queryClient.resumePausedMutations()}>
         <SessionProvider>
           <ChildModeProvider>
             <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
@@ -60,7 +74,7 @@ export default function RootLayout() {
             </ThemeProvider>
           </ChildModeProvider>
         </SessionProvider>
-      </QueryClientProvider>
+      </PersistQueryClientProvider>
     </GestureHandlerRootView>
   );
 }

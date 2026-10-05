@@ -13,8 +13,7 @@ import { useChildProfile } from '@/features/profiles/api';
 import { ExerciseList } from '@/features/study/exercise-list';
 import { FicheView } from '@/features/study/fiche-view';
 import { QuizPlayer } from '@/features/study/quiz-player';
-import { logLearningEvent, useInvalidateRewards } from '@/features/rewards/api';
-import { useGeneratePack, useStudyPack } from '@/features/study/api';
+import { useGeneratePack, useLogQuiz, useStudyPack } from '@/features/study/api';
 
 type Section = 'fiche' | 'quiz' | 'exercices';
 const SECTION_LABELS: Record<Section, string> = { fiche: 'Fiche', quiz: 'Quiz', exercices: 'Exercices' };
@@ -28,7 +27,7 @@ export default function StudyScreen() {
   const generate = useGeneratePack(taskId);
   const requested = useRef(false);
   const [section, setSection] = useState<Section | null>(mode ?? null);
-  const invalidateRewards = useInvalidateRewards(activeChildId ?? '');
+  const logQuiz = useLogQuiz(activeChildId ?? '');
 
   // Paquet absent : on le prépare à l'arrivée sur l'écran.
   const missing = pack.isSuccess && pack.data === null;
@@ -40,6 +39,19 @@ export default function StudyScreen() {
   }, [missing, generate]);
 
   const back = <Button variant="secondary" label="Retour à la mission" onPress={() => router.back()} />;
+
+  // Hors connexion, sans fiche gardée sur l'appareil : elle arrivera avec le réseau.
+  if (!pack.data && pack.fetchStatus === 'paused') {
+    return (
+      <ThemedView style={[styles.container, styles.center]}>
+        <ThemedText style={styles.centerText}>
+          Pas de connexion : cette fiche n&apos;est pas encore sur l&apos;appareil. Elle sera là dès le retour
+          du réseau.
+        </ThemedText>
+        {back}
+      </ThemedView>
+    );
+  }
 
   if (!child.data || pack.isLoading || generate.isPending || (missing && !generate.isError)) {
     return (
@@ -94,11 +106,7 @@ export default function StudyScreen() {
           <QuizPlayer
             questions={content.quiz}
             settings={settings}
-            onFinish={(score, total) =>
-              logLearningEvent(activeChildId ?? '', 'quiz', { task_id: taskId, score, total }).then(
-                invalidateRewards,
-              )
-            }
+            onFinish={(score, total) => logQuiz(taskId, score, total)}
           />
         ) : null}
         {current === 'exercices' ? <ExerciseList exercises={content.exercises} settings={settings} /> : null}

@@ -1,29 +1,11 @@
 import { computeRewards, toIsoDate, type BadgeCode, type EffortDay, type Weekday } from '@cote-a-cote/shared';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import { useQuery, useQueryClient } from '@tanstack/react-query';
+import { useQuery } from '@tanstack/react-query';
 import { useCallback, useEffect, useState } from 'react';
 
 import { supabase } from '@/lib/supabase';
 
 export type LearningEventType = 'activite' | 'carte' | 'quiz' | 'session';
-
-/**
- * Enregistre un effort de l'enfant. Un échec n'empêche jamais l'enfant de continuer :
- * l'événement est simplement perdu (il ne sert qu'aux récompenses et aux statistiques).
- */
-export async function logLearningEvent(
-  childId: string,
-  type: LearningEventType,
-  meta: Record<string, unknown> = {},
-) {
-  await supabase
-    .from('learning_event')
-    .insert({ child_id: childId, type, meta })
-    .then(
-      () => undefined,
-      () => undefined,
-    );
-}
 
 export interface EffortDayWithMinutes extends EffortDay {
   minutes: number;
@@ -46,15 +28,6 @@ export function useRewards(childId: string, availableDays: readonly Weekday[] | 
   const summary =
     effort.data && availableDays ? computeRewards(effort.data, availableDays, toIsoDate(new Date())) : null;
   return { ...effort, summary };
-}
-
-/** Rafraîchit les récompenses après un effort. */
-export function useInvalidateRewards(childId: string) {
-  const queryClient = useQueryClient();
-  return useCallback(
-    () => queryClient.invalidateQueries({ queryKey: ['effort', childId] }),
-    [queryClient, childId],
-  );
 }
 
 const seenKey = (childId: string) => `badges_vus_${childId}`;

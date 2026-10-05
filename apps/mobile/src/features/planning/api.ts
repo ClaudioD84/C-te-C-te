@@ -7,9 +7,10 @@ import {
   type PlannedDay,
   type TaskKind,
 } from '@cote-a-cote/shared';
-import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query';
+import { queryOptions, useMutation, useQuery, useQueryClient } from '@tanstack/react-query';
+import { randomUUID } from 'expo-crypto';
 
-import { logLearningEvent } from '@/features/rewards/api';
+import { OFFLINE_MUTATIONS, type CompleteItemVariables } from '@/features/offline/mutations';
 import { supabase } from '@/lib/supabase';
 
 export interface UpcomingTask extends PlannableTask {
@@ -82,8 +83,8 @@ const SESSION_COLUMNS =
   'id, scheduled_on, duration_minutes, status, study_session_task(task_id, minutes, activity, done_at, task(subject, kind, description, reference, due_date))';
 
 /** Sessions planifiées de `from` à `from + days - 1`. */
-export function useSessions(childId: string, from: IsoDate, days = 7) {
-  return useQuery({
+export function sessionsQuery(childId: string, from: IsoDate, days = 7) {
+  return queryOptions({
     queryKey: ['sessions', childId, from, days],
     queryFn: async (): Promise<StudySession[]> => {
       const { data, error } = await supabase
@@ -97,6 +98,10 @@ export function useSessions(childId: string, from: IsoDate, days = 7) {
       return data as unknown as StudySession[];
     },
   });
+}
+
+export function useSessions(childId: string, from: IsoDate, days = 7) {
+  return useQuery(sessionsQuery(childId, from, days));
 }
 
 export function usePublishPlan(childId: string) {
@@ -114,31 +119,54 @@ export function usePublishPlan(childId: string) {
   });
 }
 
-/** L'enfant coche une activité ; la session est terminée quand tout est fait. */
+/** Variables d'une activité cochée : tout ce qu'il faut pour l'envoyer plus tard, hors connexion. */
+export function completeItemVariables(
+  childId: string,
+  session: StudySession,
+  taskId: string,
+): CompleteItemVariables {
+  const item = session.study_session_task.find((i) => i.task_id === taskId);
+  const closesSession = session.study_session_task.every((i) => i.task_id === taskId || i.done_at !== null);
+  return {
+    childId,
+    sessionId: session.id,
+    taskId,
+    doneAt: new Date().toISOString(),
+    closesSession,
+    events: [
+      { id: randomUUID(), type: 'activite', meta: { task_id: taskId, minutes: item?.minutes ?? 0 } },
+      ...(closesSession
+        ? [{ id: randomUUID(), type: 'session' as const, meta: { session_id: session.id } }]
+        : []),
+    ],
+  };
+}
+
+/**
+ * L'enfant coche une activité ; la session est terminée quand tout est fait.
+ * L'écran est mis à jour tout de suite ; l'envoi attend le réseau si nécessaire.
+ */
 export function useCompleteItem(childId: string) {
   const queryClient = useQueryClient();
-  return useMutation({
-    mutationFn: async ({ session, taskId }: { session: StudySession; taskId: string }) => {
-      const { error } = await supabase
-        .from('study_session_task')
-        .update({ done_at: new Date().toISOString() })
-        .eq('session_id', session.id)
-        .eq('task_id', taskId);
-      if (error) throw error;
-
-      const done = session.study_session_task.find((item) => item.task_id === taskId);
-      await logLearningEvent(childId, 'activite', { task_id: taskId, minutes: done?.minutes ?? 0 });
-
-      const allDone = session.study_session_task.every(
-        (item) => item.task_id === taskId || item.done_at !== null,
+  return useMutation<void, Error, CompleteItemVariables>({
+    mutationKey: OFFLINE_MUTATIONS.completeItem,
+    onMutate: async (v) => {
+      await queryClient.cancelQueries({ queryKey: ['sessions', childId] });
+      queryClient.setQueriesData<StudySession[]>({ queryKey: ['sessions', childId] }, (sessions) =>
+        sessions?.map((s) =>
+          s.id !== v.sessionId
+            ? s
+            : {
+                ...s,
+                status: v.closesSession ? 'done' : s.status,
+                study_session_task: s.study_session_task.map((i) =>
+                  i.task_id === v.taskId ? { ...i, done_at: v.doneAt } : i,
+                ),
+              },
+        ),
       );
-      if (allDone) {
-        const update = await supabase.from('study_session').update({ status: 'done' }).eq('id', session.id);
-        if (update.error) throw update.error;
-        await logLearningEvent(childId, 'session', { session_id: session.id });
-      }
     },
-    onSuccess: () => {
+    onSettled: () => {
       queryClient.invalidateQueries({ queryKey: ['sessions', childId] });
       queryClient.invalidateQueries({ queryKey: ['tasks', childId] });
       queryClient.invalidateQueries({ queryKey: ['effort', childId] });

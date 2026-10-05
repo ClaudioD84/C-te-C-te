@@ -72,6 +72,7 @@ La CI GitHub Actions exécute ces vérifications et applique les migrations Supa
 - photo du journal de classe, masquage des noms sur l'appareil, lecture par Claude, validation par le parent ;
 - planning de la semaine avec alertes de surcharge, mission du jour, Pomodoro, lecture vocale ;
 - export et suppression du compte (RGPD) ;
+- console enfant utilisable hors connexion : mission, fiches et cartes gardées sur l'appareil, actions envoyées au retour du réseau ;
 - outillage d'import des référentiels officiels et écran « Programme de l'année ».
 
 Reste pour l'étape 1 : l'abonnement (RevenueCat, App Store, Google Play).

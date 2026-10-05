@@ -224,6 +224,20 @@ Algorithme déterministe (`packages/shared/src/planning.ts`), exécuté dans l'a
 
 - Variante simplifiée de **SM-2** (`packages/shared/src/spaced-repetition.ts`) : une carte facile revient de plus en plus tard, une carte oubliée revient le lendemain, et toute carte revient au plus tard la veille de l'évaluation.
 
+### 9.3 Hors connexion (exigence 6.3)
+
+- **Données gardées sur l'appareil** : le cache TanStack Query est enregistré dans AsyncStorage
+  (`src/lib/query-client.ts`) pour la console enfant uniquement : profil, mission, tâches, fiches, cartes,
+  récompenses. Durée : 7 jours. Quand le réseau est là, la console prépare la mission des 3 jours suivants
+  et les fiches correspondantes.
+- **Actions en file d'attente** : cocher une activité, réviser une carte, terminer un quiz
+  (`src/features/offline/mutations.ts`). L'écran se met à jour tout de suite ; l'envoi attend le réseau
+  (détecté par `expo-network`) et reprend même après un redémarrage de l'application.
+- **Idempotence** : chaque événement d'effort porte un identifiant créé sur l'appareil (`client_id` unique) ;
+  l'heure réelle de l'effort est envoyée et bornée côté serveur (14 jours au plus en arrière).
+- **Déconnexion** : le cache et la file d'attente sont effacés.
+- Les fonctions du parent (photos, planning, fiches à préparer, épreuves) demandent le réseau.
+
 ## 10. Accessibilité dans l'application (F12)
 
 - Un **thème par profil** applique police, taille, interlignage, espacement des lettres et nombre d'éléments par écran.

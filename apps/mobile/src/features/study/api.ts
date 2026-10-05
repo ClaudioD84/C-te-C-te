@@ -1,4 +1,5 @@
 import {
+  addDays,
   reviewCard,
   studyPackSchema,
   toIsoDate,
@@ -6,9 +7,14 @@ import {
   type StudyPack,
 } from '@cote-a-cote/shared';
 import { FunctionsHttpError } from '@supabase/supabase-js';
-import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query';
+import { queryOptions, useMutation, useQuery, useQueryClient } from '@tanstack/react-query';
+import { randomUUID } from 'expo-crypto';
 
-import { logLearningEvent } from '@/features/rewards/api';
+import {
+  OFFLINE_MUTATIONS,
+  type LearningEventVariables,
+  type ReviewCardVariables,
+} from '@/features/offline/mutations';
 import { supabase } from '@/lib/supabase';
 
 export interface StoredPack {
@@ -31,8 +37,8 @@ async function invokeGenerate(taskId: string, regenerate = false): Promise<Store
 }
 
 /** Paquet d'étude d'une tâche ; null s'il n'a pas encore été préparé. */
-export function useStudyPack(taskId: string) {
-  return useQuery({
+export function studyPackQuery(taskId: string) {
+  return queryOptions({
     queryKey: ['study_pack', taskId],
     queryFn: async (): Promise<StoredPack | null> => {
       const { data, error } = await supabase
@@ -44,6 +50,10 @@ export function useStudyPack(taskId: string) {
       return data ? { ...data, content: studyPackSchema.parse(data.content) } : null;
     },
   });
+}
+
+export function useStudyPack(taskId: string) {
+  return useQuery(studyPackQuery(taskId));
 }
 
 export function useGeneratePack(taskId: string) {
@@ -101,8 +111,12 @@ export interface DueCard {
   study_pack: { task: { subject: string; due_date: string | null } };
 }
 
+/** Jours d'avance chargés : les cartes restent disponibles hors connexion les jours suivants. */
+const CARD_DAYS_AHEAD = 3;
+
 /** Cartes à revoir aujourd'hui (ou en retard) pour un enfant. */
 export function useDueFlashcards(childId: string) {
+  const today = toIsoDate(new Date());
   return useQuery({
     queryKey: ['flashcards', childId, 'due'],
     queryFn: async (): Promise<DueCard[]> => {
@@ -112,48 +126,96 @@ export function useDueFlashcards(childId: string) {
           'id, front, back, interval_days, ease, repetitions, due_on, study_pack(task(subject, due_date))',
         )
         .eq('child_id', childId)
-        .lte('due_on', toIsoDate(new Date()))
+        .lte('due_on', addDays(toIsoDate(new Date()), CARD_DAYS_AHEAD))
         .order('due_on')
-        .limit(30);
+        .limit(60);
       if (error) throw error;
       return data as unknown as DueCard[];
     },
+    select: (cards) => cards.filter((card) => card.due_on <= today).slice(0, 30),
   });
 }
 
+export function reviewCardVariables(
+  childId: string,
+  card: DueCard,
+  rating: ReviewRating,
+): ReviewCardVariables {
+  const today = toIsoDate(new Date());
+  const deadline = card.study_pack.task.due_date ?? undefined;
+  const next = reviewCard(
+    {
+      intervalDays: card.interval_days,
+      ease: Number(card.ease),
+      repetitions: card.repetitions,
+      dueOn: card.due_on,
+    },
+    rating,
+    today,
+    deadline && deadline > today ? deadline : undefined,
+  );
+  return {
+    childId,
+    cardId: card.id,
+    next,
+    reviewedAt: new Date().toISOString(),
+    event: { id: randomUUID(), type: 'carte', meta: { card_id: card.id, rating } },
+  };
+}
+
+/** Révision d'une carte : la carte quitte la pile tout de suite, l'envoi attend le réseau si nécessaire. */
 export function useReviewFlashcard(childId: string) {
   const queryClient = useQueryClient();
-  return useMutation({
-    mutationFn: async ({ card, rating }: { card: DueCard; rating: ReviewRating }) => {
-      const today = toIsoDate(new Date());
-      const deadline = card.study_pack.task.due_date ?? undefined;
-      const next = reviewCard(
-        {
-          intervalDays: card.interval_days,
-          ease: Number(card.ease),
-          repetitions: card.repetitions,
-          dueOn: card.due_on,
-        },
-        rating,
-        today,
-        deadline && deadline > today ? deadline : undefined,
+  return useMutation<void, Error, ReviewCardVariables>({
+    mutationKey: OFFLINE_MUTATIONS.reviewCard,
+    onMutate: async (v) => {
+      await queryClient.cancelQueries({ queryKey: ['flashcards', childId] });
+      queryClient.setQueriesData<DueCard[]>({ queryKey: ['flashcards', childId] }, (cards) =>
+        cards?.map((card) =>
+          card.id === v.cardId
+            ? {
+                ...card,
+                interval_days: v.next.intervalDays,
+                ease: v.next.ease,
+                repetitions: v.next.repetitions,
+                due_on: v.next.dueOn,
+              }
+            : card,
+        ),
       );
-      const { error } = await supabase
-        .from('flashcard')
-        .update({
-          interval_days: next.intervalDays,
-          ease: next.ease,
-          repetitions: next.repetitions,
-          due_on: next.dueOn,
-          last_reviewed_at: new Date().toISOString(),
-        })
-        .eq('id', card.id);
-      if (error) throw error;
-      await logLearningEvent(childId, 'carte', { card_id: card.id, rating });
     },
-    onSuccess: () => {
+    onSettled: () => {
       queryClient.invalidateQueries({ queryKey: ['flashcards', childId] });
       queryClient.invalidateQueries({ queryKey: ['effort', childId] });
     },
   });
+}
+
+/** Résultat d'un quiz, envoyé au retour du réseau si nécessaire. */
+export function useLogQuiz(childId: string) {
+  const queryClient = useQueryClient();
+  const mutation = useMutation<void, Error, LearningEventVariables>({
+    mutationKey: OFFLINE_MUTATIONS.learningEvent,
+    onSettled: () => queryClient.invalidateQueries({ queryKey: ['effort', childId] }),
+  });
+  return (taskId: string, score: number, total: number) =>
+    mutation.mutate({
+      id: randomUUID(),
+      childId,
+      type: 'quiz',
+      meta: { task_id: taskId, score, total },
+      at: new Date().toISOString(),
+    });
+}
+
+/**
+ * Garde sur l'appareil la mission des prochains jours et les fiches de ses tâches,
+ * pour que l'enfant puisse travailler hors connexion.
+ */
+export async function prefetchForOffline(
+  queryClient: ReturnType<typeof useQueryClient>,
+  sessions: { study_session_task: { task_id: string }[] }[],
+) {
+  const taskIds = [...new Set(sessions.flatMap((s) => s.study_session_task.map((i) => i.task_id)))];
+  await Promise.all(taskIds.map((id) => queryClient.prefetchQuery(studyPackQuery(id))));
 }

@@ -10,7 +10,7 @@ import { learningTextStyle } from '@/constants/fonts';
 import { Spacing } from '@/constants/theme';
 import { useChildMode } from '@/features/child-mode/child-mode-provider';
 import { useChildProfile } from '@/features/profiles/api';
-import { useDueFlashcards, useReviewFlashcard } from '@/features/study/api';
+import { reviewCardVariables, useDueFlashcards, useReviewFlashcard } from '@/features/study/api';
 import { useTheme } from '@/hooks/use-theme';
 
 const RATINGS: { rating: ReviewRating; label: string }[] = [
@@ -87,18 +87,12 @@ export default function FlashcardsScreen() {
               key={rating}
               variant={rating === 'facile' ? 'primary' : 'secondary'}
               label={label}
-              disabled={review.isPending}
-              onPress={() =>
-                review.mutate(
-                  { card, rating },
-                  {
-                    onSuccess: () => {
-                      setFlipped(false);
-                      setReviewed((n) => n + 1);
-                    },
-                  },
-                )
-              }
+              onPress={() => {
+                // La carte quitte la pile tout de suite ; l'envoi suit, ou attend le réseau.
+                review.mutate(reviewCardVariables(childId, card, rating));
+                setFlipped(false);
+                setReviewed((n) => n + 1);
+              }}
             />
           ))}
         </View>

@@ -10,7 +10,15 @@ import { learningTextStyle } from '@/constants/fonts';
 import { MinTouchSize, Spacing } from '@/constants/theme';
 import { useChildMode } from '@/features/child-mode/child-mode-provider';
 import { PomodoroTimer } from '@/features/mission/pomodoro-timer';
-import { useCompleteItem, useSessions, type SessionItem, type StudySession } from '@/features/planning/api';
+import { OfflineBanner, useIsOnline } from '@/features/offline/offline-banner';
+import { usePrepareOffline } from '@/features/offline/use-prepare-offline';
+import {
+  completeItemVariables,
+  useCompleteItem,
+  useSessions,
+  type SessionItem,
+  type StudySession,
+} from '@/features/planning/api';
 import { CHILD_ACTIVITY_PREFIX } from '@/features/planning/labels';
 import { useChildProfile } from '@/features/profiles/api';
 import { useNewBadges, useRewards } from '@/features/rewards/api';
@@ -30,6 +38,8 @@ export default function ChildConsoleScreen() {
     childId,
     summary?.badges.map((b) => b.code),
   );
+  const online = useIsOnline();
+  usePrepareOffline(childId);
 
   const parentButton = (
     <Pressable
@@ -51,10 +61,14 @@ export default function ChildConsoleScreen() {
     );
   }
 
-  if (!child.data || sessions.error) {
+  if (!child.data || sessions.error || (!sessions.data && sessions.fetchStatus === 'paused')) {
     return (
       <ThemedView style={[styles.container, styles.center]}>
-        <ThemedText>Impossible de charger la mission.</ThemedText>
+        <ThemedText style={styles.centerText}>
+          {online
+            ? 'Impossible de charger la mission.'
+            : 'Pas de connexion, et la mission n’est pas encore sur cet appareil. Elle s’affichera dès le retour du réseau.'}
+        </ThemedText>
         <Button
           label="Réessayer"
           onPress={() => {
@@ -80,6 +94,7 @@ export default function ChildConsoleScreen() {
       </View>
 
       <ScrollView contentContainerStyle={styles.content}>
+        <OfflineBanner audience="enfant" />
         {fresh.length > 0 ? (
           <ThemedView type="backgroundSelected" style={styles.card} accessibilityLiveRegion="polite">
             <ThemedText type="subtitle">Nouveau badge !</ThemedText>
@@ -187,8 +202,7 @@ function MissionCard({
         <Button
           label="C'est fait !"
           style={styles.flex}
-          loading={complete.isPending}
-          onPress={() => complete.mutate({ session, taskId: item.task_id })}
+          onPress={() => complete.mutate(completeItemVariables(childId, session, item.task_id))}
         />
       </View>
     </ThemedView>
@@ -197,6 +211,7 @@ function MissionCard({
 
 const styles = StyleSheet.create({
   center: { flex: 1, alignItems: 'center', justifyContent: 'center', gap: Spacing.three },
+  centerText: { textAlign: 'center' },
   container: { flex: 1, padding: Spacing.four, paddingTop: Spacing.six, gap: Spacing.three },
   content: { gap: Spacing.three, paddingBottom: Spacing.five },
   header: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' },
