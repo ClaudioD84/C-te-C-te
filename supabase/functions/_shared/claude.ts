@@ -88,5 +88,5 @@ export async function extractTasksFromImage(input: {
       { type: 'text', text: buildContext(input.grade, input.documentType, input.now) },
     ],
   });
-  return { extraction: parseExtraction(result.text), model: result.model, usage: result.usage };
+  return { extraction: parseExtraction(result.text, input.now), model: result.model, usage: result.usage };
 }

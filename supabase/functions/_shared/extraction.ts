@@ -22,6 +22,8 @@ export const extractionSchema = z.object({
         .nullable(),
       reference: z.string().nullable(),
       confidence: z.number().min(0).max(1),
+      /** Notion à retravailler, relevée sur une interrogation corrigée. */
+      remediation: z.boolean().default(false),
     }),
   ),
 });
@@ -39,7 +41,7 @@ export const EXTRACTION_JSON_SCHEMA = {
       items: {
         type: 'object',
         additionalProperties: false,
-        required: ['subject', 'kind', 'description', 'dueDate', 'reference', 'confidence'],
+        required: ['subject', 'kind', 'description', 'dueDate', 'reference', 'confidence', 'remediation'],
         properties: {
           subject: { type: 'string' },
           kind: { type: 'string', enum: [...TASK_KINDS] },
@@ -47,6 +49,7 @@ export const EXTRACTION_JSON_SCHEMA = {
           dueDate: { anyOf: [{ type: 'string', format: 'date' }, { type: 'null' }] },
           reference: { anyOf: [{ type: 'string' }, { type: 'null' }] },
           confidence: { type: 'number' },
+          remediation: { type: 'boolean' },
         },
       },
     },
@@ -76,7 +79,9 @@ Règles :
    - résous les jours de la semaine et les dates sans année par rapport à la date du document si elle est visible, sinon par rapport à la date d'aujourd'hui fournie, en choisissant la prochaine occurrence ;
    - mets null si aucune date n'est déductible.
 7. Notes de cours : ne relève que les consignes de travail explicites ; la matière du cours elle-même n'est pas une tâche.
-8. Interrogation corrigée : ne relève que les travaux demandés (correction à faire, matière à revoir) ; « faire signer » n'est pas une tâche.
+8. Interrogation corrigée : relève les travaux demandés (correction à faire, matière à revoir) ; « faire signer » n'est pas une tâche.
+   Relève aussi, au plus 3, les notions où l'élève s'est trompé (réponses barrées, corrigées, points retirés) : une tâche "lecon" par notion, "description" commençant par « Retravailler : » (ex. « Retravailler : l'accord du participe passé »), "remediation" à true, "dueDate" à null sauf date écrite. Ne recopie jamais la note, les points ni une appréciation.
+   Pour toutes les autres tâches, "remediation" vaut false.
 9. Les rectangles noirs cachent des informations personnelles : ignore-les. Ne recopie jamais le nom d'une personne.
 10. "documentType" : le type réel du document photographié.
 11. Si aucune tâche n'est lisible, renvoie une liste vide.`;
@@ -127,17 +132,36 @@ export function buildContext(grade: string, documentType: DocumentType | null, n
   return lines.join('\n');
 }
 
-/** Valide la réponse du modèle et écarte les tâches vides ou les dates impossibles. */
-export function parseExtraction(text: string): Extraction {
+/** Au plus 3 notions à retravailler par interrogation, à revoir dans la semaine si aucune date n'est écrite. */
+export const MAX_REMEDIATIONS = 3;
+export const REMEDIATION_DAYS = 7;
+
+/**
+ * Valide la réponse du modèle et écarte les tâches vides ou les dates impossibles. Les notions à retravailler
+ * reçoivent une échéance par défaut (sinon elles ne seraient jamais planifiées) ; le parent peut la changer.
+ */
+export function parseExtraction(text: string, now: Date = new Date()): Extraction {
   const parsed = extractionSchema.parse(JSON.parse(text));
+  const defaultDue = addDaysIso(todayInBrussels(now).iso, REMEDIATION_DAYS);
+  let remediations = 0;
   return {
     ...parsed,
-    tasks: parsed.tasks.map((task) => ({
-      ...task,
-      dueDate: task.dueDate && isRealDate(task.dueDate) ? task.dueDate : null,
-      confidence: Math.round(task.confidence * 100) / 100,
-    })),
+    tasks: parsed.tasks
+      .filter((task) => !task.remediation || ++remediations <= MAX_REMEDIATIONS)
+      .map((task) => {
+        const dueDate = task.dueDate && isRealDate(task.dueDate) ? task.dueDate : null;
+        return {
+          ...task,
+          dueDate: dueDate ?? (task.remediation ? defaultDue : null),
+          confidence: Math.round(task.confidence * 100) / 100,
+        };
+      }),
   };
+}
+
+function addDaysIso(iso: string, days: number): string {
+  const [y, m, d] = iso.split('-').map(Number);
+  return new Date(Date.UTC(y, m - 1, d + days)).toISOString().slice(0, 10);
 }
 
 function isRealDate(iso: string): boolean {

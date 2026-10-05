@@ -31,6 +31,40 @@ Deno.test('réponse valide : dates impossibles retirées, confiance arrondie', (
   assertEquals(result.tasks[1].dueDate, null);
 });
 
+Deno.test('interrogation corrigée : notions à retravailler, 3 au plus, échéance par défaut à 7 jours', () => {
+  const notion = (n: number, dueDate: string | null = null) => ({
+    subject: 'Français',
+    kind: 'lecon',
+    description: `Retravailler : notion ${n}`,
+    dueDate,
+    reference: null,
+    confidence: 0.8,
+    remediation: true,
+  });
+  const result = parseExtraction(
+    JSON.stringify({
+      documentType: 'interrogation',
+      tasks: [
+        { ...valid.tasks[1], dueDate: null, remediation: false },
+        notion(1),
+        notion(2, '2026-10-12'),
+        notion(3),
+        notion(4),
+      ],
+    }),
+    new Date('2026-10-08T10:00:00Z'),
+  );
+  assertEquals(
+    result.tasks.map((t) => [t.description, t.dueDate]),
+    [
+      ['Exercices', null],
+      ['Retravailler : notion 1', '2026-10-15'],
+      ['Retravailler : notion 2', '2026-10-12'],
+      ['Retravailler : notion 3', '2026-10-15'],
+    ],
+  );
+});
+
 Deno.test('réponse invalide : erreur', () => {
   assertThrows(() => parseExtraction('{"documentType":"journal_de_classe","tasks":[{"kind":"autre"}]}'));
   assertThrows(() => parseExtraction('pas du json'));
