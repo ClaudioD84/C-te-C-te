@@ -108,8 +108,10 @@ L'iPhone ouvre la démonstration qui tourne sur le Mac, par le Wi-Fi (l'iPhone e
 1. Arrêter la démonstration si elle tourne (`Ctrl + C`), puis lancer :
 
    ```bash
-   pnpm demo --iphone
+   pnpm demo:iphone
    ```
+
+   (équivalent : `pnpm demo --iphone`). Le même mode sert pour l'**iPad**.
 
    La première fois, la version pour l'iPhone est préparée (2 à 3 minutes). Si le Mac demande d'autoriser les
    connexions entrantes pour « node », cliquer sur **Autoriser**.
