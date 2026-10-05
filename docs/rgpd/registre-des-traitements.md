@@ -118,13 +118,14 @@ Aucune donnée n'est vendue, louée ni utilisée à des fins publicitaires. Aucu
 | Conservation | Effacées à la déconnexion et à la suppression du compte |
 | Remarque | Les rappels sont des notifications locales : aucun identifiant de notification n'est envoyé au serveur |
 
-### T11 — Petits mots du parent
+### T11 — Échanges parent-enfant dans l'application
 
 | | |
 |---|---|
-| Finalité | Encourager l'enfant par un court message affiché sur sa console |
+| Finalité | Encourager l'enfant (petit mot du parent), l'entraîner à la dictée préparée, prévenir le parent quand l'enfant bloque (« J'ai besoin d'aide ») |
 | Base légale | Exécution du contrat (art. 6.1.b) |
-| Données | Texte du message (200 caractères), dates d'envoi et de lecture ; jamais envoyé à l'IA |
+| Données | Texte du petit mot (200 caractères), dates d'envoi et de lecture ; mots de la dictée de la semaine ; demandes d'aide (activité concernée, dates). Jamais envoyés à l'IA |
+| Remarque | La « météo » de l'enfant (comment il se sent) et sa couleur préférée restent sur l'appareil, pour la journée pour la météo : ni envoyées au serveur ni montrées au parent |
 | Conservation | Durée du profil ; supprimés avec le profil ou le compte |
 | Destinataires | Supabase |
 
