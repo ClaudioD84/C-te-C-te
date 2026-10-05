@@ -1,5 +1,7 @@
 import {
   childProfileSchema,
+  isAccessory,
+  type AccessoryCode,
   nextNeedsConsentAt,
   schoolLevel,
   type ChildProfile,
@@ -9,13 +11,32 @@ import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query';
 
 import { supabase } from '@/lib/supabase';
 
-export type StoredChildProfile = ChildProfile & { id: string };
+export type StoredChildProfile = ChildProfile & {
+  id: string;
+  /** Accessoire de l'avatar choisi par l'enfant (absent des données gardées avant son ajout). */
+  accessory?: AccessoryCode | null;
+};
 
-const COLUMNS = 'id, alias, avatar, grade, track, network, options, needs, preferences';
+const COLUMNS = 'id, alias, avatar, grade, track, network, options, needs, preferences, accessory';
 
 function fromRow(row: Record<string, unknown>): StoredChildProfile {
   const profile = childProfileSchema.parse({ ...row, network: row.network ?? undefined });
-  return { id: String(row.id), ...profile };
+  return { id: String(row.id), ...profile, accessory: isAccessory(row.accessory) ? row.accessory : null };
+}
+
+/** L'enfant choisit l'accessoire de son avatar (aussi depuis sa tablette). */
+export function useSetAccessory(childId: string) {
+  const queryClient = useQueryClient();
+  return useMutation({
+    mutationFn: async (accessory: AccessoryCode | null) => {
+      const { error } = await supabase.rpc('set_avatar_accessory', {
+        p_child_id: childId,
+        p_accessory: accessory,
+      });
+      if (error) throw error;
+    },
+    onSuccess: () => queryClient.invalidateQueries({ queryKey: profilesKey }),
+  });
 }
 
 const profilesKey = ['child_profiles'] as const;

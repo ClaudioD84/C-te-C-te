@@ -38,11 +38,14 @@ test('deuxième parent : invité par code, voit les enfants, peut être retiré'
   await button(page, 'Confirmer').click();
   await expect(page.getByText(otherEmail)).toHaveCount(0);
   expect(familyOf(otherEmail)).not.toBe(familyOf(email));
-  // Sa nouvelle famille est vide (son affichage se met à jour au prochain rafraîchissement des données).
+  // Sa nouvelle famille est vide, et son écran le montre dès le rechargement.
   expect(sql(`select count(*) from child_profile where family_id = '${familyOf(otherEmail)}'`)).toBe('0');
   await otherPage.goto('/compte');
   await expect(otherPage.getByText(`${otherEmail} (vous)`)).toBeVisible();
   await expect(otherPage.getByText(email, { exact: true })).toHaveCount(0);
+  await otherPage.goto('/');
+  await expect(otherPage.getByText('Vos enfants')).toBeVisible();
+  await expect(childTitle(otherPage, 'Koala')).toHaveCount(0);
   await other.close();
 });
 

@@ -75,8 +75,11 @@ export default function RootLayout() {
       <PersistQueryClientProvider
         client={queryClient}
         persistOptions={persistOptions}
-        // Actions faites hors connexion lors d'une utilisation précédente : on les envoie.
-        onSuccess={() => queryClient.resumePausedMutations()}>
+        // Actions faites hors connexion lors d'une utilisation précédente : on les envoie, puis les données
+        // gardées sur l'appareil (affichées tout de suite) sont rafraîchies dès que le réseau le permet.
+        onSuccess={() => {
+          void queryClient.resumePausedMutations().then(() => queryClient.invalidateQueries());
+        }}>
         <SessionProvider>
           <ChildModeProvider>
             <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>

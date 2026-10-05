@@ -1,11 +1,4 @@
-import {
-  avatarOf,
-  currentHoliday,
-  GRADE_LABELS,
-  NEED_LABELS,
-  schoolLevel,
-  toIsoDate,
-} from '@cote-a-cote/shared';
+import { currentHoliday, GRADE_LABELS, NEED_LABELS, schoolLevel, toIsoDate } from '@cote-a-cote/shared';
 import { Link, router } from 'expo-router';
 import { ActivityIndicator, StyleSheet, View } from 'react-native';
 
@@ -17,6 +10,7 @@ import { Spacing } from '@/constants/theme';
 import { useChildMode } from '@/features/child-mode/child-mode-provider';
 import { hasParentCode } from '@/features/child-mode/parent-code-store';
 import { useDaysOff } from '@/features/days-off/api';
+import { avatarWithAccessory } from '@/features/rewards/accessory-picker';
 import { OfflineBanner } from '@/features/offline/offline-banner';
 import { FirstSteps } from '@/features/onboarding/first-steps';
 import { SubscriptionBanner } from '@/features/subscription/subscription-banner';
@@ -41,7 +35,7 @@ function ChildCard({ child }: { child: StoredChildProfile }) {
   return (
     <ThemedView type="backgroundElement" style={styles.card}>
       <ThemedText type="subtitle">
-        {avatarOf(child.avatar).emoji} {child.alias}
+        {avatarWithAccessory(child)} {child.alias}
       </ThemedText>
       <ThemedText themeColor="textSecondary">
         {GRADE_LABELS[child.grade]}

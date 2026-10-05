@@ -9,6 +9,7 @@ import { Spacing } from '@/constants/theme';
 import { useChildMode } from '@/features/child-mode/child-mode-provider';
 import { useChildProfile } from '@/features/profiles/api';
 import { useRewards } from '@/features/rewards/api';
+import { AccessoryPicker } from '@/features/rewards/accessory-picker';
 import { AvatarProgress } from '@/features/rewards/avatar-progress';
 
 /** Badges de l'enfant : ceux gagnés, et ceux à découvrir (jamais perdus). */
@@ -36,6 +37,7 @@ export default function BadgesScreen() {
           semaine
           {summary.currentStreak > 1 ? ` · série de ${summary.currentStreak} jours` : ''}
         </ThemedText>
+        {child.data ? <AccessoryPicker child={child.data} summary={summary} /> : null}
         {(Object.keys(BADGES) as BadgeCode[]).map((code) => {
           const badge = BADGES[code];
           const date = earned.get(code);

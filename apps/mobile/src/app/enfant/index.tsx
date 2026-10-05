@@ -1,6 +1,5 @@
 import {
   ACTIVITY_PICTOGRAMS,
-  avatarOf,
   BADGES,
   deriveLearningSettings,
   schoolLevel,
@@ -37,6 +36,7 @@ import {
 import { CHILD_ACTIVITY_PREFIX } from '@/features/planning/labels';
 import { useChildProfile } from '@/features/profiles/api';
 import { useNewBadges, useRewards } from '@/features/rewards/api';
+import { avatarWithAccessory } from '@/features/rewards/accessory-picker';
 import { AvatarProgress } from '@/features/rewards/avatar-progress';
 import { useDueFlashcards } from '@/features/study/api';
 
@@ -120,7 +120,7 @@ export default function ChildConsoleScreen() {
     <ThemedView style={styles.container}>
       <View style={styles.header}>
         <ThemedText type="subtitle">
-          {avatarOf(child.data.avatar).emoji} Bonjour {child.data.alias} !
+          {avatarWithAccessory(child.data)} Bonjour {child.data.alias} !
         </ThemedText>
         {parentButton}
       </View>
