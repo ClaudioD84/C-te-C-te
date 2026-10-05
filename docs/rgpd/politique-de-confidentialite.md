@@ -63,7 +63,7 @@ propre compte :
 - **Anthropic** : intelligence artificielle (lecture des photos masquées, préparation des fiches). Les demandes ne
   contiennent ni nom, ni pseudonyme, ni adresse e-mail, ni trouble nommé ;
 - **RevenueCat** : gestion des abonnements de l'App Store et de Google Play, avec un identifiant technique ;
-- **[À COMPLÉTER]** : envoi des e-mails liés au compte.
+- **[À CONFIRMER : Brevo, France]** : envoi des e-mails liés au compte.
 
 Anthropic et RevenueCat sont situés aux **États-Unis**. Ces transferts sont encadrés par [À COMPLÉTER : le cadre
 de protection des données UE–États-Unis ou les clauses contractuelles types de la Commission européenne].
@@ -72,7 +72,10 @@ de protection des données UE–États-Unis ou les clauses contractuelles types 
 
 - Photos : supprimées dès leur lecture, au plus tard après 24 heures.
 - Les autres données : tant que votre compte existe. Elles sont supprimées définitivement quand vous supprimez
-  votre compte. [À COMPLÉTER : comptes inactifs depuis 24 mois supprimés après un e-mail d'avertissement.]
+  votre compte.
+- Le suivi du travail (activités, cartes, quiz) : 2 ans.
+- Si vous n'ouvrez pas l'application pendant 24 mois, nous vous prévenons par e-mail ; sans reconnexion dans les
+  30 jours, votre compte et toutes ses données sont supprimés (jamais pendant un abonnement payé en cours).
 - Les copies de sauvegarde de l'hébergeur sont effacées après [À COMPLÉTER] jours.
 
 ## Vos droits

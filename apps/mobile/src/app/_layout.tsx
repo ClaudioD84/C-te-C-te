@@ -6,6 +6,7 @@ import { useEffect, useRef } from 'react';
 import { StyleSheet, useColorScheme } from 'react-native';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 
+import { useActivityPing } from '@/features/account/use-activity-ping';
 import { SessionProvider, useSession } from '@/features/auth/session-provider';
 import { ChildModeProvider, useChildMode } from '@/features/child-mode/child-mode-provider';
 import { cancelAllReminders } from '@/features/reminders/notifications';
@@ -34,6 +35,7 @@ function RootNavigator() {
   const { session, loading: sessionLoading } = useSession();
   useClearCacheOnSignOut(Boolean(session), sessionLoading);
   useReminderSync(Boolean(session));
+  useActivityPing(Boolean(session));
   const { activeChildId, loading: childModeLoading } = useChildMode();
   // En cas d'échec de chargement de la police, on continue avec la police système.
   const [fontsLoaded, fontError] = useFonts({ Lexend_400Regular, Lexend_600SemiBold });

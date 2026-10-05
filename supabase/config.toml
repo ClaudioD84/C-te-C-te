@@ -444,3 +444,6 @@ verify_jwt = true
 # Purge quotidienne des photos non analysées (plus de 24 h) : tâche planifiée, protégée par PURGE_SECRET.
 [functions.purge-photos]
 verify_jwt = false
+
+[functions.purge-inactive]
+verify_jwt = false

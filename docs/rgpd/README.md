@@ -29,6 +29,8 @@ Version du 5 octobre 2026.
 - **Modification** d'un profil enfant et **retrait du consentement** (en décochant les besoins), **suppression**
   d'un profil et de toutes ses données.
 - Aucune publicité, aucun outil de mesure d'audience, aucun traceur tiers.
+- **Durées de conservation appliquées automatiquement** : journal de l'effort effacé après 2 ans ; compte
+  inactif depuis 24 mois averti par e-mail puis supprimé 30 jours plus tard s'il ne se reconnecte pas.
 - Rappels : notifications locales, sans serveur d'envoi ni identifiant publicitaire.
 
 ## Plan d'action avant le lancement public
@@ -41,8 +43,8 @@ Version du 5 octobre 2026.
 | 4 | Anthropic : vérifier la durée de conservation des requêtes de l'API et demander, si possible, la conservation zéro (*zero data retention*) ; s'assurer que les données ne servent pas à l'entraînement | Éditeur | À faire |
 | 5 | Programmer la purge quotidienne des photos (fonction `purge-photos`, secret `PURGE_SECRET`, tâche planifiée Supabase) | Développement | Code prêt |
 | 6 | Écran de modification du profil enfant (rectification, retrait du consentement aux besoins particuliers) | Développement | Fait |
-| 7 | Conservation : supprimer les comptes inactifs depuis 24 mois (après avertissement par e-mail) et les événements d'effort de plus de 2 ans | Développement | À décider puis faire |
-| 8 | Configurer l'envoi des e-mails de compte (SMTP) chez un prestataire européen | Éditeur | À faire |
+| 7 | Conservation : supprimer les comptes inactifs depuis 24 mois (après avertissement par e-mail) et les événements d'effort de plus de 2 ans (fonction `purge-inactive`, tâche quotidienne) | Développement | Fait (à programmer) |
+| 8 | Ouvrir un compte chez un prestataire d'e-mails européen (proposé : Brevo) : SMTP pour les e-mails de connexion (Supabase Auth) et clé d'API pour l'avertissement des comptes inactifs | Éditeur | À faire |
 | 9 | Faire relire l'AIPD, la politique de confidentialité et les conditions d'utilisation par un juriste | Éditeur | À faire |
 | 10 | Publier la politique de confidentialité et les conditions (liens exigés par Apple et Google) | Éditeur | À faire |
 | 11 | Délégué à la protection des données : évaluer l'obligation (données de santé « à grande échelle » ?) avec le juriste | Éditeur + juriste | À faire |

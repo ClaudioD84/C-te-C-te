@@ -36,7 +36,7 @@ Flux principaux :
 | Finalités déterminées | Organisation du travail scolaire et préparation de supports d'étude ; aucune publicité, aucune revente |
 | Minimisation | Pseudonyme au lieu du nom ; aucune date de naissance, adresse ni école demandée ; besoins particuliers facultatifs ; trouble jamais transmis à l'IA ; photo masquée avant envoi |
 | Exactitude | Le parent valide chaque tâche extraite et peut signaler une erreur dans un contenu généré |
-| Limitation de la conservation | Photo supprimée dès l'analyse (24 h au plus) ; données supprimées avec le compte ; durées pour les comptes inactifs à fixer (plan d'action) |
+| Limitation de la conservation | Photo supprimée dès l'analyse (24 h au plus) ; journal de l'effort effacé après 2 ans ; comptes inactifs depuis 24 mois supprimés après avertissement |
 | Base légale | Contrat pour le service ; consentement explicite, horodaté et facultatif pour les besoins particuliers |
 | Information | Politique de confidentialité en langage simple ; explications au moment du consentement |
 | Droits des personnes | Export et suppression depuis l'application ; modification et suppression d'un profil, retrait du consentement ; contact vie privée |
@@ -55,15 +55,15 @@ Flux principaux :
 | Accès de l'enfant à l'espace parent (et aux données de santé) | Usage partagé de l'appareil | Code parent pour quitter la console enfant ; la console n'affiche ni les besoins ni les réglages | 2 | 1 |
 | Perte de l'appareil | Vol, oubli | Données sensibles en stockage chiffré ; cache limité (7 jours) ; déconnexion à distance possible en changeant le mot de passe [à vérifier] | 2 | 2 |
 | Effet néfaste des contenus ou de la gamification (pression, comparaison) | Conception | Récompenses fondées sur l'effort et non la note ; pas de classement ; contenus ancrés sur le programme ; signalement des erreurs ; validation du parent | 2 | 1 |
-| Conservation excessive | Absence de purge | Purge des photos ; suppression avec le compte ; purge des comptes inactifs et des anciens événements (plan d'action) | 2 | 2 (avant mise en place) |
+| Conservation excessive | Absence de purge | Purges quotidiennes automatiques : photos (24 h), journal de l'effort (2 ans), comptes inactifs (24 mois + 30 jours d'avertissement) ; suppression avec le compte | 2 | 1 |
 | Indisponibilité ou perte de données | Panne, erreur | Sauvegardes de l'hébergeur ; console utilisable hors connexion | 1 | 2 |
 
 ## 5. Conclusion provisoire
 
 Avec les mesures déjà en place et celles du **plan d'action** ([README](README.md)), le risque résiduel paraît
 **acceptable**. Points à valider avant le lancement public : DPA et encadrement des transferts (Anthropic,
-RevenueCat, Supabase), conditions de conservation chez Anthropic, durées de
-conservation des comptes inactifs.
+RevenueCat, Supabase), conditions de conservation chez Anthropic,
+programmation des tâches de purge.
 
 Avis du délégué à la protection des données ou du juriste : [À COMPLÉTER]
 

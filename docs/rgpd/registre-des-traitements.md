@@ -24,7 +24,7 @@
 | Anthropic PBC | IA : lecture des photos, préparation des fiches et quiz, dossiers de révision | Photo masquée, texte des tâches, année et type d'enseignement, consignes d'adaptation, attendus du programme. **Ni nom, ni pseudonyme, ni e-mail, ni trouble nommé.** | États-Unis [transfert à encadrer] |
 | RevenueCat Inc. | Gestion des abonnements App Store et Google Play | Identifiant technique de la famille, achats et dates | États-Unis [transfert à encadrer] |
 | Apple, Google | Paiement des abonnements, distribution de l'application | Données de paiement (traitées par eux, en tant que responsables distincts) | Selon leurs conditions |
-| Prestataire d'e-mails [À COMPLÉTER] | E-mails de compte (confirmation, mot de passe oublié) | Adresse e-mail du parent | [À COMPLÉTER, de préférence UE] |
+| Prestataire d'e-mails (proposé : Brevo) [À CONFIRMER] | E-mails de compte (confirmation, mot de passe oublié, avertissement d'inactivité) | Adresse e-mail du parent | Union européenne |
 
 Aucune donnée n'est vendue, louée ni utilisée à des fins publicitaires. Aucun outil d'analyse d'audience.
 
@@ -36,8 +36,8 @@ Aucune donnée n'est vendue, louée ni utilisée à des fins publicitaires. Aucu
 |---|---|
 | Finalité | Créer et sécuriser le compte, permettre la connexion |
 | Base légale | Exécution du contrat (art. 6.1.b) |
-| Données | Adresse e-mail, mot de passe (haché par Supabase Auth), date de création, journaux de connexion |
-| Conservation | Durée du compte ; suppression immédiate à la demande (depuis l'application). Comptes inactifs : [À DÉCIDER : 24 mois, après avertissement] |
+| Données | Adresse e-mail, mot de passe (haché par Supabase Auth), date de création, date de dernière utilisation, journaux de connexion |
+| Conservation | Durée du compte ; suppression immédiate à la demande (depuis l'application). Compte inactif depuis 24 mois (aucune ouverture de l'application) : e-mail d'avertissement, puis suppression 30 jours plus tard sans reconnexion ; jamais pendant un abonnement payé en cours |
 | Destinataires | Supabase ; prestataire d'e-mails |
 
 ### T2 — Profils enfants
@@ -87,7 +87,7 @@ Aucune donnée n'est vendue, louée ni utilisée à des fins publicitaires. Aucu
 | Finalité | Afficher au parent le travail accompli, faire grandir l'avatar, attribuer les badges |
 | Base légale | Exécution du contrat (art. 6.1.b) |
 | Données | Activités cochées, cartes revues, résultats des quiz, sessions terminées, avec leur date |
-| Conservation | Durée du compte ; [À DÉCIDER : suppression après 2 ans] |
+| Conservation | 2 ans, puis effacement automatique quotidien ; au plus tard à la suppression du compte |
 | Remarque | Pas de classement entre enfants, pas de comparaison avec d'autres familles |
 
 ### T7 — Abonnement

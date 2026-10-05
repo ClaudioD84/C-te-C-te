@@ -63,6 +63,12 @@ La prise de photo avec masquage automatique des noms (ML Kit) et le dessin des m
 7. Purge des photos : `pnpm exec supabase secrets set PURGE_SECRET=...`, puis une tâche quotidienne dans
    Supabase > Integrations > Cron qui appelle `https://<ref>.supabase.co/functions/v1/purge-photos` (POST) avec
    l'en-tête `Authorization: Bearer <PURGE_SECRET>`. Elle supprime les photos restées plus de 24 heures.
+8. Conservation des données : une seconde tâche quotidienne, identique, vers `.../functions/v1/purge-inactive`.
+   Elle efface le journal de l'effort de plus de 2 ans et, pour les comptes inactifs depuis 24 mois, envoie un
+   e-mail d'avertissement puis supprime le compte 30 jours plus tard sans reconnexion (jamais pendant un
+   abonnement payé en cours). Les e-mails passent par Brevo (prestataire européen) :
+   `pnpm exec supabase secrets set BREVO_API_KEY=... EMAIL_FROM=...` (adresse d'expéditeur validée chez Brevo).
+   Tant que ces secrets manquent, aucun compte n'est averti ni supprimé.
 
 ## Vérifications
 

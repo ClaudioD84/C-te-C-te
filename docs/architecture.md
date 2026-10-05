@@ -288,6 +288,7 @@ Algorithme déterministe (`packages/shared/src/planning.ts`), exécuté dans l'a
 | Hébergement | Supabase région UE (Francfort) |
 | Accès aux données | RLS sur toutes les tables : un parent ne voit que sa famille |
 | Pseudonymisation | Alias pour les enfants ; liste des vrais noms uniquement sur l'appareil |
+| Conservation | Fonction `purge-inactive` (tâche quotidienne) : journal de l'effort de plus de 2 ans, comptes inactifs depuis 24 mois (dernière ouverture enregistrée par `touch_family_activity`) avertis par e-mail puis supprimés 30 jours plus tard |
 | Photos | Masquées avant envoi, stockage privé, suppression après traitement ; fonction `purge-photos` (tâche quotidienne) pour celles restées plus de 24 h |
 | Données de santé | Consentement explicite et horodaté (renouvelé à chaque besoin ajouté, effacé au retrait) ; les requêtes IA ne contiennent que les consignes d'adaptation, jamais le trouble |
 | Sous-traitants | Supabase, Anthropic, RevenueCat (et Sentry s'il est ajouté) : accords de traitement (DPA) à signer ; vérifier la durée de conservation des données par Anthropic et les options disponibles |
