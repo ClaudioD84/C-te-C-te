@@ -27,3 +27,4 @@ export * from './dictation';
 export * from './breathing';
 export * from './holidays';
 export * from './accessories';
+export * from './table-talk';
