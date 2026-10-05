@@ -8,7 +8,13 @@ import {
 import { PACK_EFFORT, PACK_MODEL, structuredCall } from '../_shared/claude.ts';
 import { z } from '../_shared/deps.ts';
 import { corsHeaders, json, UserFacingError } from '../_shared/http.ts';
-import { buildPackRequest, PACK_JSON_SCHEMA, PACK_SYSTEM_PROMPT, parsePack } from '../_shared/pack.ts';
+import {
+  buildPackRequest,
+  curriculumSubjects,
+  PACK_JSON_SCHEMA,
+  PACK_SYSTEM_PROMPT,
+  parsePack,
+} from '../_shared/pack.ts';
 import { estimateCostUsd } from '../_shared/pricing.ts';
 import { adminClient, authenticate } from '../_shared/supabase.ts';
 
@@ -74,9 +80,9 @@ Deno.serve(async (request) => {
       .from('curriculum_item')
       .select('label')
       .contains('grades', [child.grade])
-      .ilike('subject', task.subject)
+      .in('subject', curriculumSubjects(task.subject))
       .eq('kind', 'attendu')
-      .limit(40);
+      .limit(60);
 
     const result = await structuredCall({
       model: PACK_MODEL,

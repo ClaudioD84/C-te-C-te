@@ -127,3 +127,21 @@ export function buildPackRequest(input: {
 export function parsePack(text: string): StudyPack {
   return studyPackSchema.parse(JSON.parse(text));
 }
+
+/**
+ * Matières du référentiel correspondant à une matière notée au journal de classe
+ * (« Éveil » → Sciences, « Néerlandais » → Langue moderne…).
+ */
+const SUBJECT_ALIASES: [RegExp, string[]][] = [
+  [/fran[cç]ais|lecture|orthographe|grammaire|conjugaison|dict[ée]e|r[ée]daction|latin|grec/i, ['Français']],
+  [/math|calcul|g[ée]om[ée]trie|alg[èe]bre/i, ['Mathématiques']],
+  [/sciences?|biologie|chimie|physique|[ée]veil/i, ['Sciences']],
+  [/n[ée]erlandais|anglais|allemand|langues? modernes?/i, ['Langue moderne']],
+];
+
+export function curriculumSubjects(taskSubject: string): string[] {
+  const found = SUBJECT_ALIASES.filter(([pattern]) => pattern.test(taskSubject)).flatMap(
+    ([, subjects]) => subjects,
+  );
+  return found.length > 0 ? [...new Set(found)] : [taskSubject];
+}

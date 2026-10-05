@@ -74,7 +74,10 @@ La CI GitHub Actions exécute ces vérifications et applique les migrations Supa
 - export et suppression du compte (RGPD) ;
 - outillage d'import des référentiels officiels et écran « Programme de l'année ».
 
-Reste pour l'étape 1 : l'abonnement (RevenueCat, App Store, Google Play) et l'import des premiers référentiels.
+Reste pour l'étape 1 : l'abonnement (RevenueCat, App Store, Google Play).
+
+Référentiels importés : mathématiques, français, sciences et langues modernes (tronc commun, P1 → S3) ;
+voir `scripts/referentiels/README.md`.
 
 Étape 2 en cours. En place :
 
@@ -84,7 +87,8 @@ Reste pour l'étape 1 : l'abonnement (RevenueCat, App Store, Google Play) et l'i
 - export « Print & Go » : PDF accessible (Lexend, grands espacements, réponses sur une page séparée) ;
 - police Lexend dans l'application pour les profils dyslexie.
 
-Reste pour l'étape 2 : le programme du secondaire et de la maternelle (référentiels à importer).
+Reste pour l'étape 2 : la maternelle, la formation historique et géographique et les autres disciplines du
+tronc commun ; les compétences terminales des 2e et 3e degrés du secondaire.
 
 Étape 3 en cours. En place :
 

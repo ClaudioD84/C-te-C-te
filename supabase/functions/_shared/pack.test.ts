@@ -1,6 +1,6 @@
 import { assertEquals, assertStringIncludes, assertThrows } from 'jsr:@std/assert@1';
 
-import { buildPackRequest, parsePack } from './pack.ts';
+import { buildPackRequest, curriculumSubjects, parsePack } from './pack.ts';
 
 const valid = {
   topicUnclear: false,
@@ -46,4 +46,12 @@ Deno.test('requête : niveau, tâche, adaptations et référentiel, sans donnée
   assertStringIncludes(text, 'Revoir les fleuves de Belgique (p. 12)');
   assertStringIncludes(text, 'Dyslexie');
   assertStringIncludes(text, 'Situer les principaux cours');
+});
+
+Deno.test('correspondance des matières avec le référentiel', () => {
+  assertEquals(curriculumSubjects('Éveil'), ['Sciences']);
+  assertEquals(curriculumSubjects('Néerlandais'), ['Langue moderne']);
+  assertEquals(curriculumSubjects('Mathématiques'), ['Mathématiques']);
+  assertEquals(curriculumSubjects('Conjugaison'), ['Français']);
+  assertEquals(curriculumSubjects('Religion'), ['Religion']);
 });

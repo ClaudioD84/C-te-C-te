@@ -17,6 +17,7 @@ import {
   REVISION_SYSTEM_PROMPT,
   THEMES_JSON_SCHEMA,
 } from '../_shared/revision.ts';
+import { curriculumSubjects } from '../_shared/pack.ts';
 import { adminClient, authenticate } from '../_shared/supabase.ts';
 
 /**
@@ -75,7 +76,7 @@ Deno.serve(async (request) => {
       .from('curriculum_item')
       .select('subject, label')
       .contains('grades', [child.grade])
-      .in('subject', input.subjects)
+      .in('subject', [...new Set(input.subjects.flatMap(curriculumSubjects))])
       .eq('kind', 'attendu')
       .limit(80);
 

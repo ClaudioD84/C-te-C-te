@@ -1,7 +1,10 @@
 import { GRADE_LABELS } from '@cote-a-cote/shared';
 import { useQuery } from '@tanstack/react-query';
 import { useLocalSearchParams } from 'expo-router';
-import { ActivityIndicator, StyleSheet } from 'react-native';
+import { useState } from 'react';
+import { ActivityIndicator, StyleSheet, View } from 'react-native';
+
+import { ChoiceChips } from '@/components/choice-chips';
 
 import { Screen } from '@/components/screen';
 import { ThemedText } from '@/components/themed-text';
@@ -24,6 +27,7 @@ export default function ProgrammeScreen() {
   const { childId } = useLocalSearchParams<{ childId: string }>();
   const child = useChildProfile(childId);
   const grade = child.data?.grade;
+  const [selected, setSelected] = useState<string | null>(null);
 
   const items = useQuery({
     queryKey: ['curriculum', grade],
@@ -35,7 +39,7 @@ export default function ProgrammeScreen() {
         .select('id, parent_id, subject, kind, code, label')
         .contains('grades', [grade])
         .order('subject')
-        .order('code');
+        .order('created_at');
       if (error) throw error;
       return data as CurriculumRow[];
     },
@@ -51,6 +55,7 @@ export default function ProgrammeScreen() {
 
   const rows = items.data ?? [];
   const subjects = [...new Set(rows.map((r) => r.subject))];
+  const current = selected && subjects.includes(selected) ? selected : subjects[0];
 
   return (
     <Screen>
@@ -60,23 +65,40 @@ export default function ProgrammeScreen() {
           Le programme de cette année n&apos;est pas encore disponible dans l&apos;application.
         </ThemedText>
       ) : null}
-      {subjects.map((subject) => (
-        <ThemedView key={subject} type="backgroundElement" style={styles.card}>
-          <ThemedText type="smallBold">{subject}</ThemedText>
-          {rows
-            .filter((r) => r.subject === subject)
-            .map((row) => (
-              <ThemedText
-                key={row.id}
-                type={row.kind === 'attendu' ? 'small' : 'default'}
-                themeColor={row.kind === 'attendu' ? 'textSecondary' : 'text'}
-                style={row.kind === 'attendu' ? styles.indent : undefined}>
-                {row.kind === 'attendu' ? '• ' : ''}
-                {row.label}
-              </ThemedText>
-            ))}
-        </ThemedView>
-      ))}
+      {subjects.length > 1 ? (
+        <ChoiceChips
+          label="Matière"
+          options={subjects}
+          labels={Object.fromEntries(subjects.map((x) => [x, x]))}
+          selected={current ? [current] : []}
+          onToggle={setSelected}
+        />
+      ) : null}
+      {subjects
+        .filter((subject) => subject === current)
+        .map((subject) => (
+          <ThemedView key={subject} type="backgroundElement" style={styles.card}>
+            <ThemedText type="smallBold">{subject}</ThemedText>
+            {rows
+              .filter((r) => r.subject === subject && r.kind === 'competence')
+              .map((competence) => (
+                <View key={competence.id} style={styles.group}>
+                  <ThemedText type="smallBold">{competence.label}</ThemedText>
+                  {rows
+                    .filter((r) => r.parent_id === competence.id)
+                    .map((attendu) => (
+                      <ThemedText
+                        key={attendu.id}
+                        type="small"
+                        themeColor="textSecondary"
+                        style={styles.indent}>
+                        • {attendu.label}
+                      </ThemedText>
+                    ))}
+                </View>
+              ))}
+          </ThemedView>
+        ))}
     </Screen>
   );
 }
@@ -84,4 +106,5 @@ export default function ProgrammeScreen() {
 const styles = StyleSheet.create({
   card: { padding: Spacing.three, borderRadius: Spacing.three, gap: Spacing.two },
   indent: { paddingLeft: Spacing.three },
+  group: { gap: Spacing.one, marginBottom: Spacing.two },
 });
