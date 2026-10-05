@@ -7,6 +7,27 @@ Comptez 20 à 30 minutes la première fois (installations et téléchargements),
 
 ## 1. Installer les outils (une seule fois)
 
+**Le plus simple : trois commandes dans le Terminal** (Applications > Utilitaires > Terminal), à coller une par
+une. Le mot de passe de session du Mac est demandé (rien ne s'affiche pendant la frappe, c'est normal).
+
+```bash
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+
+```bash
+eval "$([ -x /opt/homebrew/bin/brew ] && /opt/homebrew/bin/brew shellenv || /usr/local/bin/brew shellenv)" && grep -q "brew shellenv" ~/.zprofile 2>/dev/null || echo 'eval "$([ -x /opt/homebrew/bin/brew ] && /opt/homebrew/bin/brew shellenv || /usr/local/bin/brew shellenv)"' >> ~/.zprofile
+```
+
+```bash
+brew install --cask docker && brew install node pnpm && open -a Docker
+```
+
+La première installe Homebrew (le gestionnaire d'applications du Mac, quelques minutes), la deuxième le rend
+disponible dans le Terminal, la troisième installe Docker Desktop, Node.js et pnpm, puis ouvre Docker (accepter
+ses autorisations, « Skip » pour le compte). Passer ensuite directement à l'étape 2.
+
+**Ou à la main**, sans Homebrew :
+
 1. **Docker Desktop** : sur [docker.com](https://www.docker.com/products/docker-desktop/), télécharger la version
    pour Mac (puce « Apple » ou « Intel » : menu  > À propos de ce Mac). Ouvrir le fichier, glisser Docker dans
    Applications, puis lancer Docker et accepter les autorisations. Inutile de créer un compte Docker
