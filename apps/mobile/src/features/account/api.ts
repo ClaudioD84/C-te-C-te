@@ -2,6 +2,7 @@ import { FunctionsHttpError } from '@supabase/supabase-js';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { File, Paths } from 'expo-file-system';
 import * as Sharing from 'expo-sharing';
+import { Platform } from 'react-native';
 
 import { clearParentCode } from '@/features/child-mode/parent-code-store';
 import { setSensitiveNames } from '@/features/scan/sensitive-names';
@@ -23,7 +24,7 @@ const EXPORTED_TABLES = [
   'ai_usage',
 ] as const;
 
-/** Export RGPD : un fichier JSON partagé via la feuille de partage du téléphone. */
+/** Export RGPD : un fichier JSON partagé via la feuille de partage du téléphone (téléchargé sur le web). */
 export async function exportMyData(): Promise<void> {
   const { data: user } = await supabase.auth.getUser();
   const result: Record<string, unknown> = {
@@ -36,10 +37,24 @@ export async function exportMyData(): Promise<void> {
     result[table] = data;
   }
 
-  const file = new File(Paths.cache, `cote-a-cote-export-${new Date().toISOString().slice(0, 10)}.json`);
+  const name = `cote-a-cote-export-${new Date().toISOString().slice(0, 10)}.json`;
+  const json = JSON.stringify(result, null, 2);
+
+  if (Platform.OS === 'web') {
+    // Navigateur (démonstration sur ordinateur) : téléchargement classique du fichier.
+    const url = URL.createObjectURL(new Blob([json], { type: 'application/json' }));
+    const link = document.createElement('a');
+    link.href = url;
+    link.download = name;
+    link.click();
+    setTimeout(() => URL.revokeObjectURL(url), 1000);
+    return;
+  }
+
+  const file = new File(Paths.cache, name);
   if (file.exists) file.delete();
   file.create();
-  file.write(JSON.stringify(result, null, 2));
+  file.write(json);
   await Sharing.shareAsync(file.uri, { mimeType: 'application/json', dialogTitle: 'Exporter mes données' });
 }
 

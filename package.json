@@ -16,7 +16,8 @@
     "check:functions": "cd supabase/functions && deno check **/*.ts && cd ../../scripts/referentiels && deno check --config deno.json *.ts ../culture/*.ts",
     "test:scripts": "cd scripts/referentiels && deno test --config deno.json --allow-read && cd ../culture && deno test --config ../referentiels/deno.json --allow-read importer.test.ts valider.test.ts",
     "e2e:build": "pnpm --filter e2e build:web",
-    "test:e2e": "pnpm --filter e2e test:e2e"
+    "test:e2e": "pnpm --filter e2e test:e2e",
+    "demo": "node e2e/support/demo.mjs"
   },
   "devDependencies": {
     "deno": "2.9.6",

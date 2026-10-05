@@ -81,7 +81,15 @@ export function MaskEditor({ image, boxes, onChange }: MaskEditorProps) {
         onLayout={onLayout}
         style={{ width: '100%', aspectRatio: image.width / image.height }}
         accessibilityLabel={`Photo avec ${boxes.length} zone${boxes.length > 1 ? 's' : ''} masquée${boxes.length > 1 ? 's' : ''}`}>
-        <Image source={{ uri: image.uri }} style={StyleSheet.absoluteFill} contentFit="fill" />
+        {/* Sans interaction propre : sur ordinateur, le navigateur ferait glisser l'image au lieu de tracer la zone. */}
+        <View pointerEvents="none" style={StyleSheet.absoluteFill}>
+          <Image
+            source={{ uri: image.uri }}
+            style={StyleSheet.absoluteFill}
+            contentFit="fill"
+            draggable={false}
+          />
+        </View>
         {boxes.map((box, i) => renderBox(box, i))}
         {draft ? renderBox(draft, 'draft', true) : null}
       </View>

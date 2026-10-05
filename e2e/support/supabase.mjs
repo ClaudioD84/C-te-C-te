@@ -12,6 +12,7 @@ export function supabaseStatus() {
   cached ??= JSON.parse(
     execFileSync('pnpm', ['exec', 'supabase', 'status', '-o', 'json'], {
       cwd: ROOT,
+      shell: process.platform === 'win32',
       encoding: 'utf8',
       stdio: ['ignore', 'pipe', 'ignore'],
     }),

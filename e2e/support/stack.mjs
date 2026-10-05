@@ -26,9 +26,19 @@ startMocks();
 
 const ports = new Map(names.map((name, i) => [name, 8300 + i]));
 const children = names.map((name) =>
+  // Lanceur JavaScript du paquet deno : fonctionne aussi sous Windows.
   spawn(
-    join(ROOT, 'node_modules/.bin/deno'),
-    ['run', '--allow-net', '--allow-env', '--allow-read', '--config', 'deno.json', `${name}/index.ts`],
+    process.execPath,
+    [
+      join(ROOT, 'node_modules/deno/bin.cjs'),
+      'run',
+      '--allow-net',
+      '--allow-env',
+      '--allow-read',
+      '--config',
+      'deno.json',
+      `${name}/index.ts`,
+    ],
     {
       cwd: functionsDir,
       stdio: ['ignore', 'inherit', 'inherit'],
@@ -43,8 +53,12 @@ const children = names.map((name) =>
     },
   ),
 );
-const stop = () => {
+const stopChildren = () => {
   for (const child of children) child.kill();
+};
+process.on('exit', stopChildren);
+const stop = () => {
+  stopChildren();
   process.exit(0);
 };
 process.on('SIGINT', stop);
