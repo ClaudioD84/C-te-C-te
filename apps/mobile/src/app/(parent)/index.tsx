@@ -12,6 +12,7 @@ import { hasParentCode } from '@/features/child-mode/parent-code-store';
 import { useDaysOff } from '@/features/days-off/api';
 import { avatarWithAccessory } from '@/features/rewards/accessory-picker';
 import { TableTalkCard } from '@/features/table/table-talk-card';
+import { HelpRequestsCard } from '@/features/help/help-requests-card';
 import { OfflineBanner } from '@/features/offline/offline-banner';
 import { FirstSteps } from '@/features/onboarding/first-steps';
 import { SubscriptionBanner } from '@/features/subscription/subscription-banner';
@@ -42,6 +43,7 @@ function ChildCard({ child }: { child: StoredChildProfile }) {
         {GRADE_LABELS[child.grade]}
         {needs ? ` · ${needs}` : ''}
       </ThemedText>
+      <HelpRequestsCard childId={child.id} alias={child.alias} />
       {!kindergarten ? <TableTalkCard childId={child.id} alias={child.alias} /> : null}
       {holiday ? (
         <Button

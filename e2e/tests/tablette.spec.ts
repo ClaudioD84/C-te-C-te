@@ -272,6 +272,18 @@ test('tablette : droits limités à la console de son enfant', async ({ request 
   expect((await accessory(siblingId, 'cape')).ok()).toBeFalsy();
   expect((await accessory(family.childId, 'inconnu')).ok()).toBeFalsy();
 
+  // Demande d'aide : pour une tâche de son enfant, famille déduite ; pas pour un autre enfant.
+  const ownTask = sql(`select id from task where child_id = '${family.childId}' limit 1`);
+  const ask = (childId: string, taskId: string) =>
+    request.post(`${GATEWAY_URL}/rest/v1/help_request`, {
+      headers: headers(token),
+      data: { child_id: childId, task_id: taskId },
+    });
+  expect((await ask(family.childId, ownTask)).status()).toBe(201);
+  expect(
+    (await ask(other.childId, sql(`select id from task where child_id = '${other.childId}' limit 1`))).ok(),
+  ).toBeFalsy();
+
   // Essais de codes au hasard : bloqués après 10 erreurs pour une même adresse.
   for (let i = 0; i < 9; i++) expect((await pair('ZZZZZZZZ')).status()).toBe(404);
   expect((await pair('ZZZZZZZZ')).status()).toBe(429);

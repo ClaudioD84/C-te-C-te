@@ -23,6 +23,7 @@ import { KindergartenMission } from '@/features/kindergarten/kindergarten-missio
 import { MOODS, MoodPicker, useTodayMood } from '@/features/mood/mood';
 import { ExpressReviewCard } from '@/features/express/express-review-card';
 import { HolidayBanner } from '@/features/holidays/holiday-banner';
+import { useAskHelp, useOpenHelpRequests } from '@/features/help/api';
 import { NoteCard } from '@/features/notes/note-card';
 import { useSpellingList } from '@/features/spelling/api';
 import { BreathingExercise } from '@/features/mission/breathing-exercise';
@@ -258,6 +259,9 @@ function MissionCard({
   childId: string;
 }) {
   const complete = useCompleteItem(childId);
+  const help = useOpenHelpRequests(childId);
+  const askHelp = useAskHelp(childId);
+  const asked = help.data?.some((r) => r.task_id === item.task_id) ?? false;
   const prefix = CHILD_ACTIVITY_PREFIX[item.activity];
   const reference = item.task.reference ? ` (${item.task.reference})` : '';
   const instruction = `${prefix ? `${prefix} : ` : ''}${item.task.description}${reference}`;
@@ -279,6 +283,18 @@ function MissionCard({
         {item.task.subject} · {item.minutes} min
       </ThemedText>
       <MissionText settings={settings}>{instruction}</MissionText>
+      {asked ? (
+        <ThemedText themeColor="textSecondary" accessibilityLiveRegion="polite">
+          🙋 Ton parent est prévenu : vous regarderez ensemble.
+        </ThemedText>
+      ) : (
+        <Button
+          variant="secondary"
+          label="🙋 J’ai besoin d’aide"
+          loading={askHelp.isPending}
+          onPress={() => askHelp.mutate(item.task_id)}
+        />
+      )}
       <View style={styles.actions}>
         {settings.readAloud ? (
           <Button
