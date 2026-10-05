@@ -9,8 +9,8 @@ import { supabase } from '@/lib/supabase';
  *
  * Configuration dans RevenueCat :
  * - droits (« entitlements ») `solo` et `famille` ;
- * - produits `cac_solo_mois`, `cac_famille_mois` (abonnements mensuels) et `cac_solo_annee`,
- *   `cac_famille_annee` (année scolaire, achat non renouvelable) ;
+ * - abonnements renouvelables `cac_solo_mois`, `cac_famille_mois` (mensuels) et `cac_solo_annee`,
+ *   `cac_famille_annee` (annuels) ;
  * - une offre courante (« current offering ») qui contient ces quatre produits.
  *
  * L'acheteur RevenueCat est la famille (son identifiant) : les achats suivent la famille d'un appareil à l'autre.
@@ -75,7 +75,7 @@ export async function loadOffers(familyId: string): Promise<Offer[]> {
   return PLAN_OFFERS.flatMap((o) => {
     const pkg = packages.find((p) => p.product.identifier.includes(`${o.plan}_${o.period}`));
     if (!pkg) return [];
-    const suffix = o.period === 'mois' ? ' par mois' : ' jusqu’au 30 juin';
+    const suffix = o.period === 'mois' ? ' par mois' : ' par an';
     return [{ ...o, key: offerKey(o), priceLabel: `${pkg.product.priceString}${suffix}`, pkg }];
   });
 }

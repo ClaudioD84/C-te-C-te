@@ -256,9 +256,8 @@ Algorithme déterministe (`packages/shared/src/planning.ts`), exécuté dans l'a
 
 - **RevenueCat** regroupe l'App Store et Google Play. L'acheteur RevenueCat est la **famille** (son identifiant) :
   les achats suivent la famille d'un appareil à l'autre et d'un parent à l'autre.
-- Droits (« entitlements ») : `solo` et `famille`. Produits : `cac_solo_mois`, `cac_famille_mois`
-  (abonnements mensuels), `cac_solo_annee`, `cac_famille_annee` (année scolaire : achat non renouvelable,
-  accès jusqu'au 30 juin ; un achat à partir du 1er mai couvre aussi l'année suivante).
+- Droits (« entitlements ») : `solo` et `famille`. Produits, tous des abonnements renouvelables :
+  `cac_solo_mois`, `cac_famille_mois` (mensuels), `cac_solo_annee`, `cac_famille_annee` (annuels).
 - L'application affiche les formules au prix du store (`src/features/subscription`) ; elle ne décide jamais
   de l'accès. Le serveur reçoit les changements par **webhook** (`revenuecat-webhook`) et met à jour
   `subscription` : achat, renouvellement, résiliation (accès jusqu'à la fin de la période), paiement refusé
@@ -314,5 +313,5 @@ Algorithme déterministe (`packages/shared/src/planning.ts`), exécuté dans l'a
 | D4 | Fédération Wallonie-Bruxelles, en français | Marché de départ |
 | D5 | Alias + masquage local + hébergement UE | Vie privée des mineurs, données de santé |
 | D6 | Validation par le parent de toute sortie de l'IA | Fiabilité et confiance |
-| D7 | Abonnement Solo 9,99 €, Famille 14,99 €, Année scolaire | Positionnement face à la concurrence et coûts |
+| D7 | Abonnement Solo 9,99 €, Famille 14,99 € par mois ; 79 € et 119 € par an, renouvelés automatiquement | Positionnement face à la concurrence et coûts |
 | D8 | Livraison en trois étapes | Tester tôt avec de vraies familles |

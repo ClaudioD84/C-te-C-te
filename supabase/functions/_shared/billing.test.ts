@@ -1,6 +1,6 @@
 import { assertEquals } from 'jsr:@std/assert@1';
 
-import { decideFromEvent, schoolYearEnd, stateFromSubscriber, type RevenueCatEvent } from './billing.ts';
+import { decideFromEvent, stateFromSubscriber, type RevenueCatEvent } from './billing.ts';
 
 const family = '2b5e8a5e-7c1a-4b51-9a40-1f7c2e0d9a11';
 const now = new Date('2026-10-05T10:00:00Z');
@@ -84,22 +84,25 @@ Deno.test('acheteur identifié après coup : la famille est trouvée dans les al
   assertEquals(d.action === 'apply' && d.familyId, family);
 });
 
-Deno.test('Année scolaire : achat non renouvelable jusqu’au 30 juin', () => {
+Deno.test('formule annuelle : abonnement renouvelable comme les autres', () => {
   const d = decideFromEvent(
     event({
-      type: 'NON_RENEWING_PURCHASE',
       product_id: 'cac_famille_annee',
       entitlement_ids: ['famille'],
-      expiration_at_ms: null,
+      expiration_at_ms: now.getTime() + 365 * day,
     }),
     now,
     options,
   );
   if (d.action !== 'apply') throw new Error();
-  assertEquals(d.state.currentPeriodEnd, '2027-06-30T21:59:00.000Z');
-  assertEquals(d.state.willRenew, false);
-  assertEquals(schoolYearEnd(new Date('2027-03-01T00:00:00Z')), '2027-06-30T21:59:00.000Z');
-  assertEquals(schoolYearEnd(new Date('2027-05-15T00:00:00Z')), '2028-06-30T21:59:00.000Z');
+  assertEquals(
+    [d.state.plan, d.state.willRenew, d.state.currentPeriodEnd.slice(0, 10)],
+    ['famille', true, '2027-10-05'],
+  );
+});
+
+Deno.test('achat sans date de fin : ignoré', () => {
+  assertEquals(decideFromEvent(event({ expiration_at_ms: null }), now, options).action, 'ignore');
 });
 
 Deno.test('transfert : les familles concernées sont relues dans RevenueCat', () => {

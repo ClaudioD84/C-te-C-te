@@ -4,7 +4,6 @@
  *
  * - L'acheteur RevenueCat (« app_user_id ») est l'identifiant de la famille.
  * - Droits (« entitlements ») : `solo` et `famille` ; Famille l'emporte si les deux sont actifs.
- * - Formule « Année scolaire » vendue en achat non renouvelable : accès jusqu'au 30 juin qui suit.
  */
 
 export type PaidPlan = 'solo' | 'famille';
@@ -46,22 +45,6 @@ export function storeFrom(value: unknown): Store | null {
     default:
       return null;
   }
-}
-
-/**
- * Fin de l'année scolaire (30 juin, 23 h 59 à Bruxelles) couverte par un achat « Année scolaire ».
- * Un achat à partir du 1er mai couvre aussi l'année suivante (sinon il ne durerait que quelques semaines).
- */
-export function schoolYearEnd(purchasedAt: Date): string {
-  const year =
-    purchasedAt.getUTCMonth() >= 4 ? purchasedAt.getUTCFullYear() + 1 : purchasedAt.getUTCFullYear();
-  // 30 juin 23:59 à Bruxelles = 21:59 UTC (heure d'été).
-  return new Date(Date.UTC(year, 5, 30, 21, 59, 0)).toISOString();
-}
-
-/** Les produits « Année scolaire » portent « annee » dans leur identifiant (ex. cac_famille_annee). */
-export function isSchoolYearProduct(productId: string | null | undefined): boolean {
-  return Boolean(productId && /annee|school_year/i.test(productId));
 }
 
 // ---------------------------------------------------------------------------
@@ -132,10 +115,7 @@ export function decideFromEvent(
   const plan = planFromEntitlements(event.entitlement_ids);
   if (!plan) return { action: 'ignore', reason: 'aucun droit Solo ou Famille' };
 
-  let expiration = event.expiration_at_ms != null ? new Date(event.expiration_at_ms).toISOString() : null;
-  if (!expiration && isSchoolYearProduct(event.product_id)) {
-    expiration = schoolYearEnd(new Date(event.purchased_at_ms ?? event.event_timestamp_ms ?? now.getTime()));
-  }
+  const expiration = event.expiration_at_ms != null ? new Date(event.expiration_at_ms).toISOString() : null;
   if (!expiration) return { action: 'ignore', reason: 'date de fin inconnue' };
 
   const base = {
@@ -216,11 +196,8 @@ export function stateFromSubscriber(body: RcSubscriber, now: Date): Subscription
     .filter((e): e is { plan: PaidPlan; entitlement: RcEntitlement } => Boolean(e.entitlement));
   if (entries.length === 0) return null;
 
-  const endOf = (e: RcEntitlement) =>
-    e.expires_date ??
-    (isSchoolYearProduct(e.product_identifier)
-      ? schoolYearEnd(new Date(e.purchase_date ?? now.toISOString()))
-      : '9999-12-31T23:59:59.000Z');
+  // Sans date de fin : droit accordé à vie (ex. promotion accordée depuis RevenueCat).
+  const endOf = (e: RcEntitlement) => e.expires_date ?? '9999-12-31T23:59:59.000Z';
   const isActive = (e: RcEntitlement) => new Date(endOf(e)) > now;
 
   // Droit actif le plus élevé ; sinon le plus récemment expiré.

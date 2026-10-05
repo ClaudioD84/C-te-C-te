@@ -19,15 +19,15 @@ export const PLAN_OFFERS: readonly PlanOffer[] = [
   {
     plan: 'solo',
     period: 'annee',
-    title: 'Solo — année scolaire',
-    price: '79 € jusqu’au 30 juin',
+    title: 'Solo annuel',
+    price: '79 € par an',
     children: 1,
   },
   {
     plan: 'famille',
     period: 'annee',
-    title: 'Famille — année scolaire',
-    price: '119 € jusqu’au 30 juin',
+    title: 'Famille annuel',
+    price: '119 € par an',
     children: 4,
   },
 ];

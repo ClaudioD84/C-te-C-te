@@ -147,7 +147,7 @@ Chaque fonctionnalité porte un identifiant et une **étape de livraison** (voir
 ### F13 — Abonnement *(étape 1)*
 
 - Essai gratuit de 14 jours.
-- Formules Solo, Famille et Année scolaire (voir section 7).
+- Formules Solo et Famille, au mois ou à l'année, renouvelées automatiquement (voir section 7).
 - Paiement via l'App Store et Google Play.
 - Limites d'usage raisonnables pour maîtriser les coûts de l'IA.
 
@@ -186,7 +186,7 @@ Chaque fonctionnalité porte un identifiant et une **étape de livraison** (voir
 | Essai gratuit | 14 jours |
 | Solo (1 enfant) | 9,99 € / mois |
 | Famille (jusqu'à 4 enfants) | 14,99 € / mois |
-| Année scolaire (septembre à juin) | 79 € Solo — 119 € Famille |
+| Annuel (renouvelé automatiquement) | 79 € Solo — 119 € Famille par an |
 
 - Coût IA estimé : 2 à 3 € par enfant actif et par mois (à mesurer sur prototype).
 - Marge estimée : 4 à 5 € par abonné Solo après TVA (21 %), commission des stores (15 %) et IA.

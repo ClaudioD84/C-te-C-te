@@ -97,7 +97,6 @@ export default function SubscriptionScreen() {
             <ThemedText type="small" themeColor="textSecondary">
               {offer.children === 1 ? '1 enfant' : `Jusqu’à ${offer.children} enfants`} · photos du journal de
               classe, fiches, quiz et dossiers de révision
-              {offer.period === 'annee' ? ' · paiement unique, sans renouvellement automatique' : ''}
             </ThemedText>
             {billingMode !== 'indisponible' ? (
               <Button
@@ -131,11 +130,10 @@ export default function SubscriptionScreen() {
 
       <View style={styles.legal}>
         <ThemedText type="small" themeColor="textSecondary">
-          Les abonnements mensuels se renouvellent automatiquement, sauf résiliation au moins 24 heures avant
-          la fin de la période, depuis les réglages de votre compte App Store ou Google Play. Le paiement est
-          débité sur ce compte. La formule Année scolaire est payée une fois et donne accès jusqu’au 30 juin.
-          La formule Solo concerne {CHILD_LIMITS.solo} enfant, la formule Famille jusqu’à{' '}
-          {CHILD_LIMITS.famille} enfants.
+          Les abonnements (mensuels ou annuels) se renouvellent automatiquement, sauf résiliation au moins 24
+          heures avant la fin de la période, depuis les réglages de votre compte App Store ou Google Play. Le
+          paiement est débité sur ce compte. La formule Solo concerne {CHILD_LIMITS.solo} enfant, la formule
+          Famille jusqu’à {CHILD_LIMITS.famille} enfants.
         </ThemedText>
         {TERMS_URL ? (
           <Button
