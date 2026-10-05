@@ -140,6 +140,26 @@ export function useDueFlashcards(childId: string) {
   });
 }
 
+/** Toutes les cartes d'une tâche, pour la révision express la veille d'une évaluation. */
+export function useTaskFlashcards(childId: string, taskId: string | undefined) {
+  return useQuery({
+    queryKey: ['flashcards', childId, 'tache', taskId],
+    enabled: Boolean(taskId),
+    queryFn: async (): Promise<DueCard[]> => {
+      const { data, error } = await supabase
+        .from('flashcard')
+        .select(
+          'id, front, back, interval_days, ease, repetitions, due_on, study_pack!inner(task_id, task(subject, due_date))',
+        )
+        .eq('child_id', childId)
+        .eq('study_pack.task_id', taskId!)
+        .limit(30);
+      if (error) throw error;
+      return data as unknown as DueCard[];
+    },
+  });
+}
+
 export function reviewCardVariables(
   childId: string,
   card: DueCard,

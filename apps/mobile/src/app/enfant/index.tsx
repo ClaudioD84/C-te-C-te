@@ -20,6 +20,7 @@ import { MinTouchSize, Spacing } from '@/constants/theme';
 import { useChildMode } from '@/features/child-mode/child-mode-provider';
 import { KindergartenMission } from '@/features/kindergarten/kindergarten-mission';
 import { MOODS, MoodPicker, useTodayMood } from '@/features/mood/mood';
+import { ExpressReviewCard } from '@/features/express/express-review-card';
 import { HolidayBanner } from '@/features/holidays/holiday-banner';
 import { NoteCard } from '@/features/notes/note-card';
 import { BreathingExercise } from '@/features/mission/breathing-exercise';
@@ -129,6 +130,9 @@ export default function ChildConsoleScreen() {
         <OfflineBanner audience="enfant" />
         <NoteCard childId={childId} settings={settings} />
         <HolidayBanner childId={childId} settings={settings} />
+        {schoolLevel(child.data.grade) !== 'maternelle' ? (
+          <ExpressReviewCard childId={childId} settings={settings} />
+        ) : null}
         {fresh.length > 0 ? (
           <ThemedView type="backgroundSelected" style={styles.card} accessibilityLiveRegion="polite">
             <ThemedText type="subtitle">Nouveau badge !</ThemedText>

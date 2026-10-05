@@ -1,5 +1,5 @@
 import { deriveLearningSettings, type ReviewRating } from '@cote-a-cote/shared';
-import { router } from 'expo-router';
+import { router, useLocalSearchParams } from 'expo-router';
 import { useState } from 'react';
 import { ActivityIndicator, Pressable, StyleSheet, View } from 'react-native';
 
@@ -10,7 +10,12 @@ import { learningTextStyle } from '@/constants/fonts';
 import { Spacing } from '@/constants/theme';
 import { useChildMode } from '@/features/child-mode/child-mode-provider';
 import { useChildProfile } from '@/features/profiles/api';
-import { reviewCardVariables, useDueFlashcards, useReviewFlashcard } from '@/features/study/api';
+import {
+  reviewCardVariables,
+  useDueFlashcards,
+  useReviewFlashcard,
+  useTaskFlashcards,
+} from '@/features/study/api';
 import { useTheme } from '@/hooks/use-theme';
 
 const RATINGS: { rating: ReviewRating; label: string }[] = [
@@ -25,10 +30,15 @@ export default function FlashcardsScreen() {
   const { activeChildId } = useChildMode();
   const childId = activeChildId ?? '';
   const child = useChildProfile(childId);
-  const cards = useDueFlashcards(childId);
+  // Révision express (veille d'une évaluation) : toutes les cartes de la tâche, une fois chacune.
+  const { taskId } = useLocalSearchParams<{ taskId?: string }>();
+  const due = useDueFlashcards(childId);
+  const express = useTaskFlashcards(childId, taskId);
   const review = useReviewFlashcard(childId);
   const [flipped, setFlipped] = useState(false);
   const [reviewed, setReviewed] = useState(0);
+  const [seen, setSeen] = useState<string[]>([]);
+  const cards = taskId ? { ...express, data: express.data?.filter((c) => !seen.includes(c.id)) } : due;
 
   if (!child.data || cards.isLoading) {
     return (
@@ -48,7 +58,9 @@ export default function FlashcardsScreen() {
         <ThemedText type="subtitle" style={styles.centerText}>
           {reviewed > 0
             ? `Bravo, ${reviewed} carte${reviewed > 1 ? 's' : ''} revue${reviewed > 1 ? 's' : ''} !`
-            : 'Aucune carte à revoir aujourd’hui.'}
+            : taskId
+              ? 'Pas de cartes pour cette évaluation.'
+              : 'Aucune carte à revoir aujourd’hui.'}
         </ThemedText>
         <Button label="Retour à la mission" onPress={() => router.back()} />
       </ThemedView>
@@ -92,6 +104,7 @@ export default function FlashcardsScreen() {
                 review.mutate(reviewCardVariables(childId, card, rating));
                 setFlipped(false);
                 setReviewed((n) => n + 1);
+                setSeen((ids) => [...ids, card.id]);
               }}
             />
           ))}
