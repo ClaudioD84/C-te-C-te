@@ -235,7 +235,8 @@ if (existing.length === 0) {
     method: 'POST',
     body: JSON.stringify([
       task('Mathématiques', 'devoir', 'Faire les exercices de division', 1, { reference: 'p. 34' }),
-      task('Éveil', 'interro', 'Les fleuves de Belgique', 4),
+      // Demain : la console propose la révision express (après « Publier » le planning).
+      task('Éveil', 'interro', 'Les fleuves de Belgique', 1),
       task('Éveil', 'lecon', "Étudier la Meuse et l'Escaut", 2),
       task('Néerlandais', 'interro', 'Vocabulaire : les animaux', 3),
       task('Français', 'devoir', 'Lire le chapitre 3 du roman', 2),
@@ -257,6 +258,49 @@ if (existing.length === 0) {
 } else {
   console.log('  Compte déjà présent : vos essais précédents sont conservés.');
   if (!signup.ok) console.log('  (Pour repartir de zéro : `pnpm exec supabase db reset`, puis `pnpm demo`.)');
+}
+
+// Nouveautés montrées dans la démonstration, ajoutées aussi à un compte déjà créé (sans rien écraser).
+const lion = (
+  await rest(`child_profile?family_id=eq.${familyId}&alias=eq.Petit%20Lion&select=id,preferences`)
+)[0];
+if (lion) {
+  if (!lion.preferences?.interests) {
+    await rest(`child_profile?id=eq.${lion.id}`, {
+      method: 'PATCH',
+      body: JSON.stringify({ preferences: { ...lion.preferences, interests: ['football', 'espace'] } }),
+    });
+  }
+  const notes = await rest(`child_note?child_id=eq.${lion.id}&select=id`);
+  if (notes.length === 0) {
+    await rest('child_note', {
+      method: 'POST',
+      body: JSON.stringify({
+        family_id: familyId,
+        child_id: lion.id,
+        message: 'Bravo pour ta belle semaine, je suis fier·e de toi !',
+      }),
+    });
+  }
+}
+const chouette = await rest(`child_profile?family_id=eq.${familyId}&alias=eq.Petite%20Chouette&select=id`);
+const allChildren = await rest(`child_profile?family_id=eq.${familyId}&select=id`);
+if (chouette.length === 0 && allChildren.length < 4) {
+  await rest('child_profile', {
+    method: 'POST',
+    body: JSON.stringify({
+      family_id: familyId,
+      alias: 'Petite Chouette',
+      avatar: 'hibou',
+      grade: 'M2',
+      preferences: {
+        availableDays: ['lun', 'mar', 'mer', 'jeu', 'ven'],
+        prefersPaper: false,
+        interests: ['animaux', 'musique'],
+      },
+    }),
+  }).catch(() => undefined);
+  console.log('  Ajout de « Petite Chouette » (2e maternelle) pour essayer le mode maternelle.');
 }
 
 console.log(`

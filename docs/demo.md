@@ -84,24 +84,41 @@ Docker Desktop).
 
 ## 4. Ce que vous pouvez essayer
 
-Le compte de démonstration contient l'enfant « Petit Lion » (5e primaire, dyslexie), cinq devoirs et deux
-semaines de suivi.
+Le compte de démonstration contient « Petit Lion » (5e primaire, dyslexie, fan de foot et d'espace) avec cinq
+devoirs et deux semaines de suivi, et « Petite Chouette » (2e maternelle).
 
-- **Photo du journal de classe** : « Photographier le journal de classe » > « Choisir dans la galerie »,
-  choisir une image sur le Mac. Masquez un nom en glissant la souris sur la photo (rectangle noir), puis
-  « Envoyer pour analyse ». *L'IA est simulée : elle propose toujours les deux mêmes tâches (fractions, fleuves
-  de Belgique).*
+**Le parcours de base**
+
+- **Premiers pas** : la liste en haut du cockpit guide les 4 étapes ; « Voir le planning » pour la suivante.
+- **Photo du journal de classe** : « Photographier le journal de classe » > « Choisir dans la galerie », choisir
+  une image. Masquez un nom en glissant la souris (rectangle noir), puis « Envoyer pour analyse ». *L'IA est
+  simulée : elle propose toujours les deux mêmes tâches.*
 - **Planning** : « Planning de la semaine » > « Calculer le planning » > « Publier sur la console de l'enfant ».
-  Les fiches et quiz apparaissent dans la liste (contenu d'exemple sur les fleuves de Belgique).
-- **Console enfant** : « Lancer la mission du jour ». Choisissez un code parent de 4 chiffres (évitez 1234) ;
-  il sera demandé pour revenir à l'espace parent.
-- **Suivi, dossier de révision, abonnement** (achat simulé, aucun paiement), **rappels**, **modifier le
-  profil**, **export de mes données**.
-- **Mode maternelle** : ajoutez un enfant en « 2e maternelle » : « Activités de la semaine » remplace la photo
-  et le planning (jeux à faire ensemble, thème de la classe, « On l'a fait ! »).
-- **Tablette de l'enfant** : « Modifier le profil » > « Tablette de l'enfant » > « Relier une tablette ». Ouvrez
-  une **fenêtre de navigation privée** (ou l'iPad en mode iPhone, section 5) : « Relier la tablette de mon
-  enfant », recopiez le code. Elle n'affiche que la console de l'enfant ; « Retirer » la déconnecte.
+  Les fiches et quiz se préparent (contenu d'exemple sur les fleuves de Belgique). Dans le même écran :
+  **Congés et absences** (ajoutez un congé : le planning l'évite, puis « Idées pour les vacances »).
+- **Console enfant** : « Lancer la mission du jour ». Choisissez un code parent de 4 chiffres (évitez 1234).
+
+**Dans la console de Petit Lion**
+
+- Un **petit mot** du parent l'attend (« Écouter le mot », « Merci ! »).
+- **Comment tu te sens ?** : essayez « Un peu fatigué » : la mission se réduit à l'essentiel, avec une **pause
+  respiration** guidée.
+- **Révision express** : l'interro de demain propose de revoir ses cartes (après avoir publié le planning).
+- **S'entraîner** sur une leçon : « Écouter la fiche » (lecture surlignée), quiz, exercices, **Écoute et
+  écris** (mini-dictée des mots clés).
+- **Avatar** (touchez la graine) : badges, **accessoires** débloqués par l'effort, **couleur préférée**,
+  **diplômes** à imprimer.
+
+**Côté parent**
+
+- **Ce soir à table** apparaît dans le cockpit quand l'enfant a étudié aujourd'hui : questions pour en parler.
+- **Écrire un petit mot**, **Suivi** (bilan positif de la semaine à lire ou partager), **Modifier le profil**
+  (centres d'intérêt, jours, durée, papier) > **Tablette de l'enfant**.
+- **Petite Chouette** : « Activités de la semaine » (jeux à faire ensemble, thème de la classe).
+- **Mon compte** : inviter un **autre parent** (code à partager), rappels, abonnement (achat simulé), export
+  des données.
+- **Tablette de l'enfant** : ouvrez une **fenêtre de navigation privée**, « Relier la tablette de mon enfant »,
+  recopiez le code affiché par le parent : elle n'affiche que la console de l'enfant.
 - **Format téléphone** : dans Safari, menu Développement > Mode de conception adaptatif (à activer dans
   Réglages > Avancées) ; dans Chrome, clic droit > Inspecter, puis l'icône téléphone.
 
