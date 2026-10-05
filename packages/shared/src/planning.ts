@@ -16,6 +16,8 @@ export interface PlannableTask {
   dueDate: IsoDate;
   /** Minutes déjà travaillées sur cette tâche lors de sessions précédentes. */
   doneMinutes?: number;
+  /** Examen blanc d'un dossier de révision (F5) : passé en une fois, le jour prévu. */
+  mockExam?: boolean;
 }
 
 export type Activity = 'faire' | 'etudier' | 'reviser' | 'se_tester';
@@ -86,6 +88,9 @@ export function estimateTaskMinutes(kind: TaskKind, grade: Grade): number {
   return roundTo5(BASE_MINUTES[kind] * levelFactor(grade));
 }
 
+/** Durée d'un examen blanc : une séance d'entraînement, pas une préparation de plusieurs jours. */
+const MOCK_EXAM_MINUTES = 40;
+
 const isEvaluation = (kind: TaskKind) => kind === 'interro' || kind === 'examen';
 
 function activityFor(kind: TaskKind, isLastDay: boolean): Activity {
@@ -134,6 +139,14 @@ export function planWeek(input: PlanningInput): WeekPlan {
     .sort((a, b) => a.dueDate.localeCompare(b.dueDate) || BASE_MINUTES[b.kind] - BASE_MINUTES[a.kind]);
 
   for (const task of tasks) {
+    if (task.mockExam) {
+      // Examen blanc : une seule séance « se tester », le jour prévu (sans lissage vers d'autres jours).
+      const minutes = roundTo5(MOCK_EXAM_MINUTES * levelFactor(input.grade)) - (task.doneMinutes ?? 0);
+      if (minutes > 0 && task.dueDate <= lastDay) {
+        chunks.push({ task, minutes, window: [task.dueDate], day: task.dueDate });
+      }
+      continue;
+    }
     const remaining = estimateTaskMinutes(task.kind, input.grade) - (task.doneMinutes ?? 0);
     if (remaining <= 0) continue;
 
@@ -195,7 +208,7 @@ export function planWeek(input: PlanningInput): WeekPlan {
         items.set(chunk.task.id, {
           taskId: chunk.task.id,
           minutes: chunk.minutes,
-          activity: activityFor(chunk.task.kind, latest),
+          activity: chunk.task.mockExam ? 'se_tester' : activityFor(chunk.task.kind, latest),
         });
     }
     const list = [...items.values()];
@@ -221,7 +234,7 @@ function buildAlerts(
   // Plusieurs évaluations le même jour.
   const evaluationsByDay = new Map<IsoDate, number>();
   for (const task of input.tasks) {
-    if (isEvaluation(task.kind))
+    if (isEvaluation(task.kind) && !task.mockExam)
       evaluationsByDay.set(task.dueDate, (evaluationsByDay.get(task.dueDate) ?? 0) + 1);
   }
   for (const [date, count] of [...evaluationsByDay].sort(([a], [b]) => a.localeCompare(b))) {

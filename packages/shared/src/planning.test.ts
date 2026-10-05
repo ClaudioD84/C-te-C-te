@@ -120,3 +120,24 @@ describe('planWeek', () => {
     expect(estimateTaskMinutes('interro', 'P1')).toBeLessThan(estimateTaskMinutes('interro', 'S5'));
   });
 });
+
+describe('examen blanc (F5)', () => {
+  it('une seule séance « se tester » le jour prévu, sans alerte d’évaluations rapprochées', () => {
+    const plan = planWeek({
+      tasks: [
+        { id: 'blanc-fr', subject: 'Français', kind: 'examen', dueDate: '2026-06-12', mockExam: true },
+        { id: 'blanc-ma', subject: 'Mathématiques', kind: 'examen', dueDate: '2026-06-12', mockExam: true },
+      ],
+      today: '2026-06-08',
+      grade: 'P6',
+      availableDays: ['lun', 'mar', 'mer', 'jeu', 'ven'],
+      workMinutes: 20,
+    });
+    expect(plan.days.map((d) => d.date)).toEqual(['2026-06-12']);
+    expect(plan.days[0]!.items).toEqual([
+      { taskId: 'blanc-fr', minutes: 40, activity: 'se_tester' },
+      { taskId: 'blanc-ma', minutes: 40, activity: 'se_tester' },
+    ]);
+    expect(plan.alerts.some((a) => a.type === 'evaluations_rapprochees')).toBe(false);
+  });
+});

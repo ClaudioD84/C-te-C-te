@@ -1,4 +1,5 @@
 import {
+  isMockExam,
   addDays,
   toIsoDate,
   type Activity,
@@ -50,6 +51,7 @@ export function useUpcomingTasks(childId: string) {
         description: task.description,
         reference: task.reference,
         dueDate: task.due_date,
+        mockExam: task.kind === 'examen' && isMockExam(task.description),
         doneMinutes: task.study_session_task
           .filter((item) => item.done_at !== null)
           .reduce((sum, item) => sum + item.minutes, 0),

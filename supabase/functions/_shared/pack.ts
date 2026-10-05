@@ -106,6 +106,18 @@ const NEED_ADAPTATIONS: Record<string, string> = {
     'Étapes de calcul décomposées, petits nombres, appui sur des exemples concrets et visuels décrits en mots.',
 };
 
+/** Même valeur que MOCK_EXAM_PREFIX (packages/shared/src/revision.ts) : tâche d'examen blanc d'un dossier de révision. */
+const MOCK_EXAM_PREFIX = 'Examen blanc ';
+
+const MOCK_EXAM_INSTRUCTIONS = [
+  'Cette tâche est un EXAMEN BLANC : une épreuve d’entraînement sur l’ensemble des thèmes listés.',
+  '- "fiche" : un court rappel des points essentiels de chaque thème (une section par thème, 2 à 3 points).',
+  '- "quiz" : 12 à 15 questions mêlant tous les thèmes, de difficulté progressive.',
+  '- "exercises" : 6 à 10 exercices progressifs couvrant les thèmes, avec la réponse attendue.',
+  '- "flashcards" : 8 à 15 cartes sur les notions à retenir absolument.',
+  'Dans l’esprit de l’épreuve visée, sans prétendre reproduire une épreuve officielle.',
+];
+
 export function buildPackRequest(input: {
   grade: string;
   track: string;
@@ -127,6 +139,7 @@ export function buildPackRequest(input: {
       ...input.curriculum.map((c, i) => `${i + 1}. ${c}`),
     );
   }
+  if (input.task.description.startsWith(MOCK_EXAM_PREFIX)) lines.push(...MOCK_EXAM_INSTRUCTIONS);
   lines.push('Prépare le paquet d’étude.');
   return lines.join('\n');
 }

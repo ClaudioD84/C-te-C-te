@@ -129,6 +129,12 @@ test('parcours complet : profil, planning, fiches, console enfant, suivi, dossie
     expect(
       Number(sql(`select count(*) from task where child_id = '${childId}' and exam_id is not null`)),
     ).toBeGreaterThan(0);
+    // Un examen blanc par matière (F5), chacun un jour différent.
+    const mocks = sql(
+      `select string_agg(subject || '|' || due_date, ',' order by subject) from task where child_id = '${childId}' and description like 'Examen blanc de %'`,
+    ).split(',');
+    expect(mocks).toHaveLength(2);
+    expect(new Set(mocks.map((m) => m.split('|')[1])).size).toBe(2);
   });
 
   expect(errors).toEqual([]);

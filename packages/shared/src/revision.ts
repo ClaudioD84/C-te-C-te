@@ -49,6 +49,27 @@ export interface PlannedRevisionTask {
   dueDate: IsoDate;
 }
 
+/**
+ * Début de la description d'une tâche d'examen blanc (F5). La fonction de préparation des fiches s'en sert pour
+ * produire une épreuve d'entraînement plutôt qu'une fiche de leçon : garder la même valeur côté serveur.
+ */
+export const MOCK_EXAM_PREFIX = 'Examen blanc';
+const MOCK_EXAM_MAX_LENGTH = 400;
+
+/** Description d'un examen blanc : la matière et les thèmes à couvrir. */
+export function mockExamDescription(subject: string, titles: readonly string[]): string {
+  const base = `${MOCK_EXAM_PREFIX} de ${subject} : `;
+  let list = titles.join(', ');
+  if (base.length + list.length > MOCK_EXAM_MAX_LENGTH) {
+    list = `${list.slice(0, MOCK_EXAM_MAX_LENGTH - base.length - 1).replace(/,[^,]*$/, '')}…`;
+  }
+  return base + list;
+}
+
+export function isMockExam(description: string): boolean {
+  return description.startsWith(`${MOCK_EXAM_PREFIX} `);
+}
+
 /** Alterne les matières : Français, Maths, Éveil, Français, Maths… */
 export function interleaveBySubject(themes: readonly RevisionTheme[]): RevisionTheme[] {
   const bySubject = new Map<string, RevisionTheme[]>();
@@ -98,6 +119,32 @@ export function spreadRevisionThemes(input: {
   }));
 
   const subjects = [...new Set(input.themes.map((t) => t.subject))];
+
+  // Examen blanc par matière, en remontant à partir de deux jours avant l'épreuve : une matière par jour
+  // disponible (pas plusieurs examens blancs le même jour). Rien si l'épreuve est demain.
+  const mockDays: IsoDate[] = [];
+  for (
+    let d = addDays(input.examDate, -2);
+    d > input.today && mockDays.length < subjects.length;
+    d = addDays(d, -1)
+  ) {
+    if (available.has(weekdayKey(d))) mockDays.push(d);
+  }
+  if (mockDays.length === 0 && addDays(input.examDate, -1) > input.today)
+    mockDays.push(addDays(input.examDate, -1));
+  if (mockDays.length > 0) {
+    subjects.forEach((subject, i) => {
+      const titles = input.themes.filter((t) => t.subject === subject).map((t) => t.title);
+      tasks.push({
+        subject,
+        kind: 'examen',
+        description: mockExamDescription(subject, titles),
+        // Plus de matières que de jours : on recommence au premier jour.
+        dueDate: mockDays[i % mockDays.length]!,
+      });
+    });
+  }
+
   for (const subject of subjects) {
     tasks.push({
       subject,

@@ -88,3 +88,16 @@ Deno.test('les attendus sont numérotés dans la demande', () => {
   assertStringIncludes(text, '1. Situer les principaux cours d’eau');
   assertStringIncludes(text, '2. Lire une carte');
 });
+
+Deno.test('examen blanc : consignes dédiées seulement pour ces tâches', () => {
+  const request = (description: string) =>
+    buildPackRequest({
+      grade: 'P6',
+      track: 'general',
+      needs: [],
+      task: { subject: 'Mathématiques', kind: 'examen', description, reference: null },
+      curriculum: [],
+    });
+  assertStringIncludes(request('Examen blanc de Mathématiques : Les fractions, Les aires'), 'EXAMEN BLANC');
+  assertEquals(request('Révision générale de Mathématiques').includes('EXAMEN BLANC'), false);
+});
