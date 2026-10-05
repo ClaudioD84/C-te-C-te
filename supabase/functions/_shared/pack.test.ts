@@ -57,4 +57,8 @@ Deno.test('correspondance des matières avec le référentiel', () => {
   assertEquals(curriculumSubjects('Mathématiques'), ['Mathématiques']);
   assertEquals(curriculumSubjects('Conjugaison'), ['Français']);
   assertEquals(curriculumSubjects('Religion'), ['Religion']);
+  assertEquals(curriculumSubjects('Sciences économiques'), ['Formation historique et géographique']);
+  assertEquals(curriculumSubjects('Sciences générales'), ['Sciences']);
+  assertEquals(curriculumSubjects('Informatique'), ['Formation manuelle et technique']);
+  assertEquals(curriculumSubjects('Latin'), ['Français']);
 });

@@ -1,0 +1,5624 @@
+{
+ "source": {
+  "title": "Compétences terminales de l'éducation à la philosophie et à la citoyenneté (humanités générales, technologiques, professionnelles et techniques)",
+  "url": "https://www.enseignement.be/fileadmin/portail_age/uploads/parcours_apprentissage/secondaire_ordinaire/Organisation/Contenus_apprentissages_Secondaire/competences_terminales/FORM_COM_2et3_degres_TRANSITION/CT_HGT_Edu-Philo-Citoyen.pdf",
+  "version": "2017"
+ },
+ "level": "secondaire",
+ "tracks": [
+  "general",
+  "technique",
+  "professionnel",
+  "specialise"
+ ],
+ "entries": [
+  {
+   "code": "CTEPC",
+   "parentCode": null,
+   "kind": "domaine",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Compétences terminales de l'éducation à la philosophie et à la citoyenneté (humanités générales, technologiques, professionnelles et techniques)"
+  },
+  {
+   "code": "CTEPC-2.1.1",
+   "parentCode": "CTEPC",
+   "kind": "competence",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "UAA 2.1.1 Discours et pièges du discours"
+  },
+  {
+   "code": "CTEPC-2.1.1-C1",
+   "parentCode": "CTEPC-2.1.1",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Compétence : Évaluer la validité d’un raisonnement et la cohérence d’un discours"
+  },
+  {
+   "code": "CTEPC-2.1.1-C2",
+   "parentCode": "CTEPC-2.1.1",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Compétence : Repérer les tentatives de manipulation dans les discours"
+  },
+  {
+   "code": "CTEPC-2.1.1-A1",
+   "parentCode": "CTEPC-2.1.1",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Questionner les stratégies de persuasion d’un discours (textes, images, mise en scène…)"
+  },
+  {
+   "code": "CTEPC-2.1.1-A2",
+   "parentCode": "CTEPC-2.1.1",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Repérer les présupposés, les préjugés, les sophismes et paralogismes, la langue de bois, les mots mystificateurs ou source d’ambigüités, toute tentative de manipulation ou d’endoctrinement notamment dans les discours politiques, militants, religieux, idéologiques, sectaires… ainsi que dans les discours véhiculés par les médias (presse écrite, parlée, réseaux sociaux, publicité…)"
+  },
+  {
+   "code": "CTEPC-2.1.1-A3",
+   "parentCode": "CTEPC-2.1.1",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Identifier et expliciter les présupposés et les enjeux dans la formulation d’une question ; être capable de reformuler la question d’une autre manière"
+  },
+  {
+   "code": "CTEPC-2.1.1-A4",
+   "parentCode": "CTEPC-2.1.1",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Identifier les émotions que mobilisent ou que veulent/peuvent susciter des slogans, des publicités, des discours de propagande, des discours politiques ou médiatiques, etc."
+  },
+  {
+   "code": "CTEPC-2.1.1-T1",
+   "parentCode": "CTEPC-2.1.1",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Transférer : Décrypter le message que tentent de délivrer une image, une caricature, une vidéo, une chanson, y repérer les éventuelles tentatives de manipulation"
+  },
+  {
+   "code": "CTEPC-2.1.1-K1",
+   "parentCode": "CTEPC-2.1.1",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Connaître : Expliciter les concepts et les notions et les illustrer à partir d'un exemple"
+  },
+  {
+   "code": "CTEPC-2.1.1-K2",
+   "parentCode": "CTEPC-2.1.1",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Connaître : Distinguer discours énonciatif et discours performatif, être attentif aux situations dans lesquelles « dire c’est faire »"
+  },
+  {
+   "code": "CTEPC-2.1.1-K3",
+   "parentCode": "CTEPC-2.1.1",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Connaître : Distinguer les discours qui énoncent ce qui est et ceux qui énoncent ce qui doit être et être attentif au passage illégitime de l’un à l’autre"
+  },
+  {
+   "code": "CTEPC-2.1.1-R1",
+   "parentCode": "CTEPC-2.1.1",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Règles de logique de base"
+  },
+  {
+   "code": "CTEPC-2.1.1-R2",
+   "parentCode": "CTEPC-2.1.1",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Validité d’un raisonnement et vérité d’une proposition"
+  },
+  {
+   "code": "CTEPC-2.1.1-R3",
+   "parentCode": "CTEPC-2.1.1",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Sophismes et paralogismes"
+  },
+  {
+   "code": "CTEPC-2.1.1-R4",
+   "parentCode": "CTEPC-2.1.1",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Discours sectaires, complotistes, manipulateurs"
+  },
+  {
+   "code": "CTEPC-2.1.1-R5",
+   "parentCode": "CTEPC-2.1.1",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Énoncé/énonciation"
+  },
+  {
+   "code": "CTEPC-2.1.1-R6",
+   "parentCode": "CTEPC-2.1.1",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Discours énonciatif et discours performatif"
+  },
+  {
+   "code": "CTEPC-2.1.1-R7",
+   "parentCode": "CTEPC-2.1.1",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Jugement descriptif, jugement évaluatif, jugement normatif"
+  },
+  {
+   "code": "CTEPC-2.1.1-R8",
+   "parentCode": "CTEPC-2.1.1",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Questionner"
+  },
+  {
+   "code": "CTEPC-2.1.2",
+   "parentCode": "CTEPC",
+   "kind": "competence",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "UAA 2.1.2 Éthique et technique"
+  },
+  {
+   "code": "CTEPC-2.1.2-C1",
+   "parentCode": "CTEPC-2.1.2",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Compétence : Expliciter l’impact des NTIC sur nos libertés et notre responsabilité"
+  },
+  {
+   "code": "CTEPC-2.1.2-C2",
+   "parentCode": "CTEPC-2.1.2",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Compétence : Justifier un comportement responsable par rapport aux NTIC"
+  },
+  {
+   "code": "CTEPC-2.1.2-A1",
+   "parentCode": "CTEPC-2.1.2",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Identifier l’impact des nouvelles technologies de l’information et de la communication (NTIC) sur nos comportements"
+  },
+  {
+   "code": "CTEPC-2.1.2-A2",
+   "parentCode": "CTEPC-2.1.2",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Identifier l’impact des NTIC sur nos libertés"
+  },
+  {
+   "code": "CTEPC-2.1.2-A3",
+   "parentCode": "CTEPC-2.1.2",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Conceptualiser la notion d’identité numérique"
+  },
+  {
+   "code": "CTEPC-2.1.2-A4",
+   "parentCode": "CTEPC-2.1.2",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Questionner la frontière entre vie privée et vie publique sur les réseaux sociaux"
+  },
+  {
+   "code": "CTEPC-2.1.2-A5",
+   "parentCode": "CTEPC-2.1.2",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Problématiser les notions d’aliénation et de libération"
+  },
+  {
+   "code": "CTEPC-2.1.2-A6",
+   "parentCode": "CTEPC-2.1.2",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Identifier l’impact des nouvelles technologies de l’information et de la communication sur notre responsabilité"
+  },
+  {
+   "code": "CTEPC-2.1.2-T1",
+   "parentCode": "CTEPC-2.1.2",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Transférer : Expliciter l’impact des NTIC sur nos libertés et notre responsabilité"
+  },
+  {
+   "code": "CTEPC-2.1.2-T2",
+   "parentCode": "CTEPC-2.1.2",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Transférer : Justifier un comportement responsable par rapport aux NTIC"
+  },
+  {
+   "code": "CTEPC-2.1.2-K1",
+   "parentCode": "CTEPC-2.1.2",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Connaître : Expliciter les concepts et les notions et les illustrer par un exemple"
+  },
+  {
+   "code": "CTEPC-2.1.2-R1",
+   "parentCode": "CTEPC-2.1.2",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Socles de compétences EPC : 4"
+  },
+  {
+   "code": "CTEPC-2.1.2-R2",
+   "parentCode": "CTEPC-2.1.2",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Réel/virtuel, image, identité numérique (réalité et identité)"
+  },
+  {
+   "code": "CTEPC-2.1.2-R3",
+   "parentCode": "CTEPC-2.1.2",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Machine, technique"
+  },
+  {
+   "code": "CTEPC-2.1.2-R4",
+   "parentCode": "CTEPC-2.1.2",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Aliénation, libération"
+  },
+  {
+   "code": "CTEPC-2.1.2-R5",
+   "parentCode": "CTEPC-2.1.2",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Responsabilité (notamment responsabilité des propos), liberté"
+  },
+  {
+   "code": "CTEPC-2.1.2-R6",
+   "parentCode": "CTEPC-2.1.2",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : NTIC"
+  },
+  {
+   "code": "CTEPC-2.1.2-R7",
+   "parentCode": "CTEPC-2.1.2",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Droit à l’information, droit à la liberté d’expression, droit d’auteur"
+  },
+  {
+   "code": "CTEPC-2.1.2-R8",
+   "parentCode": "CTEPC-2.1.2",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Questionner"
+  },
+  {
+   "code": "CTEPC-2.1.2-R9",
+   "parentCode": "CTEPC-2.1.2",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Conceptualiser"
+  },
+  {
+   "code": "CTEPC-2.1.2-R10",
+   "parentCode": "CTEPC-2.1.2",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Problématiser"
+  },
+  {
+   "code": "CTEPC-2.1.2-R11",
+   "parentCode": "CTEPC-2.1.2",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Prendre position de manière argumentée"
+  },
+  {
+   "code": "CTEPC-2.1.3",
+   "parentCode": "CTEPC",
+   "kind": "competence",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "UAA 2.1.3 Stéréotypes, préjugés et discriminations"
+  },
+  {
+   "code": "CTEPC-2.1.3-C1",
+   "parentCode": "CTEPC-2.1.3",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Compétence : Questionner les stéréotypes et préjugés qui orientent nos modes de vie et nos choix de vie"
+  },
+  {
+   "code": "CTEPC-2.1.3-C2",
+   "parentCode": "CTEPC-2.1.3",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Compétence : Justifier une prise de position éthique relative à une question de discrimination"
+  },
+  {
+   "code": "CTEPC-2.1.3-A1",
+   "parentCode": "CTEPC-2.1.3",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Repérer dans les discours les stéréotypes, préjugés et discriminations implicites"
+  },
+  {
+   "code": "CTEPC-2.1.3-A2",
+   "parentCode": "CTEPC-2.1.3",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Conceptualiser les notions de stéréotypes, préjugés et discriminations"
+  },
+  {
+   "code": "CTEPC-2.1.3-A3",
+   "parentCode": "CTEPC-2.1.3",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Problématiser le concept d’égalité en distinguant égalité des droits, des chances et en dignité"
+  },
+  {
+   "code": "CTEPC-2.1.3-A4",
+   "parentCode": "CTEPC-2.1.3",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Identifier les stéréotypes et préjugés qui orientent nos modes de vie et nos choix de vie"
+  },
+  {
+   "code": "CTEPC-2.1.3-T1",
+   "parentCode": "CTEPC-2.1.3",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Transférer : Questionner en quoi les stéréotypes et préjugés orientent nos modes de vie et nos choix de vie"
+  },
+  {
+   "code": "CTEPC-2.1.3-T2",
+   "parentCode": "CTEPC-2.1.3",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Transférer : Justifier une prise de position éthique relative à une question de discrimination"
+  },
+  {
+   "code": "CTEPC-2.1.3-K1",
+   "parentCode": "CTEPC-2.1.3",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Connaître : Expliciter les concepts et les notions et les illustrer par un exemple"
+  },
+  {
+   "code": "CTEPC-2.1.3-K2",
+   "parentCode": "CTEPC-2.1.3",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Connaître : Sur une question liée au genre, connaitre la thèse et le principal argument d’au moins un auteur favorable et un auteur défavorable à un changement de paradigme moral, légal ou politique"
+  },
+  {
+   "code": "CTEPC-2.1.3-R1",
+   "parentCode": "CTEPC-2.1.3",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Socles de compétences EPC : 2.2 ; 7.2"
+  },
+  {
+   "code": "CTEPC-2.1.3-R2",
+   "parentCode": "CTEPC-2.1.3",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Stéréotype, préjugé, discrimination, nondiscrimination, discrimination positive, « plafond de verre »"
+  },
+  {
+   "code": "CTEPC-2.1.3-R3",
+   "parentCode": "CTEPC-2.1.3",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Égalité des droits, des chances, en dignité"
+  },
+  {
+   "code": "CTEPC-2.1.3-R4",
+   "parentCode": "CTEPC-2.1.3",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Identité de genre, orientation sexuelle (hétérosexualité, LGBTQI)"
+  },
+  {
+   "code": "CTEPC-2.1.3-R5",
+   "parentCode": "CTEPC-2.1.3",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Questionner"
+  },
+  {
+   "code": "CTEPC-2.1.3-R6",
+   "parentCode": "CTEPC-2.1.3",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Conceptualiser"
+  },
+  {
+   "code": "CTEPC-2.1.3-R7",
+   "parentCode": "CTEPC-2.1.3",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Problématiser"
+  },
+  {
+   "code": "CTEPC-2.1.3-R8",
+   "parentCode": "CTEPC-2.1.3",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Prendre position de manière argumentée"
+  },
+  {
+   "code": "CTEPC-2.1.4",
+   "parentCode": "CTEPC",
+   "kind": "competence",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "UAA 2.1.4 Participer au processus démocratique"
+  },
+  {
+   "code": "CTEPC-2.1.4-C1",
+   "parentCode": "CTEPC-2.1.4",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Compétence : Participer à la vie de la classe dans le respect de l’égalité de droit"
+  },
+  {
+   "code": "CTEPC-2.1.4-A1",
+   "parentCode": "CTEPC-2.1.4",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Organiser l’espace de la discussion"
+  },
+  {
+   "code": "CTEPC-2.1.4-A2",
+   "parentCode": "CTEPC-2.1.4",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Problématiser l’objet de la discussion"
+  },
+  {
+   "code": "CTEPC-2.1.4-A3",
+   "parentCode": "CTEPC-2.1.4",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Identifier des problèmes liés à la vie de classe"
+  },
+  {
+   "code": "CTEPC-2.1.4-A4",
+   "parentCode": "CTEPC-2.1.4",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Rechercher ensemble des solutions à ces problèmes et en débattre"
+  },
+  {
+   "code": "CTEPC-2.1.4-A5",
+   "parentCode": "CTEPC-2.1.4",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Élaborer un processus de décision"
+  },
+  {
+   "code": "CTEPC-2.1.4-A6",
+   "parentCode": "CTEPC-2.1.4",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Se mettre d’accord sur une solution et établir des règles d’action"
+  },
+  {
+   "code": "CTEPC-2.1.4-A7",
+   "parentCode": "CTEPC-2.1.4",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Évaluer la manière dont la discussion s’est déroulée"
+  },
+  {
+   "code": "CTEPC-2.1.4-K1",
+   "parentCode": "CTEPC-2.1.4",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Connaître : Expliciter les concepts et les notions et les illustrer par un exemple"
+  },
+  {
+   "code": "CTEPC-2.1.4-K2",
+   "parentCode": "CTEPC-2.1.4",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Connaître : Expliciter les conditions d’un espace de discussion"
+  },
+  {
+   "code": "CTEPC-2.1.4-K3",
+   "parentCode": "CTEPC-2.1.4",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Connaître : Expliciter les règles de la participation au débat"
+  },
+  {
+   "code": "CTEPC-2.1.4-K4",
+   "parentCode": "CTEPC-2.1.4",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Connaître : Expliciter les méthodes de décision collective"
+  },
+  {
+   "code": "CTEPC-2.1.4-R1",
+   "parentCode": "CTEPC-2.1.4",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Socles de compétences EPC : 2 ; 3 ; 5 ; 7.2 ; 8 ; 9"
+  },
+  {
+   "code": "CTEPC-2.1.4-R2",
+   "parentCode": "CTEPC-2.1.4",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Égalité de droit"
+  },
+  {
+   "code": "CTEPC-2.1.4-R3",
+   "parentCode": "CTEPC-2.1.4",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Participation politique"
+  },
+  {
+   "code": "CTEPC-2.1.4-R4",
+   "parentCode": "CTEPC-2.1.4",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Devoir de participation, Droit à la non participation"
+  },
+  {
+   "code": "CTEPC-2.1.4-R5",
+   "parentCode": "CTEPC-2.1.4",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Délibération"
+  },
+  {
+   "code": "CTEPC-2.1.4-R6",
+   "parentCode": "CTEPC-2.1.4",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Liberté"
+  },
+  {
+   "code": "CTEPC-2.1.4-R7",
+   "parentCode": "CTEPC-2.1.4",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Établir un espace de discussion"
+  },
+  {
+   "code": "CTEPC-2.1.4-R8",
+   "parentCode": "CTEPC-2.1.4",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Participer à un débat"
+  },
+  {
+   "code": "CTEPC-2.1.4-R9",
+   "parentCode": "CTEPC-2.1.4",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Décider collectivement"
+  },
+  {
+   "code": "CTEPC-2.1.4-R10",
+   "parentCode": "CTEPC-2.1.4",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Prendre position de manière argumentée"
+  },
+  {
+   "code": "CTEPC-2.1.4-R11",
+   "parentCode": "CTEPC-2.1.4",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Se décentrer par la discussion"
+  },
+  {
+   "code": "CTEPC-2.1.5",
+   "parentCode": "CTEPC",
+   "kind": "competence",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "UAA 2.1.5 Légitimité et légalité de la norme"
+  },
+  {
+   "code": "CTEPC-2.1.5-C1",
+   "parentCode": "CTEPC-2.1.5",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Compétence : Expliquer les raisons d’un choix face à un dilemme opposant légalité et légitimité"
+  },
+  {
+   "code": "CTEPC-2.1.5-A1",
+   "parentCode": "CTEPC-2.1.5",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Conceptualiser la notion de norme"
+  },
+  {
+   "code": "CTEPC-2.1.5-A2",
+   "parentCode": "CTEPC-2.1.5",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Questionner le fondement des normes, et ainsi de différentes sources de légitimité"
+  },
+  {
+   "code": "CTEPC-2.1.5-A3",
+   "parentCode": "CTEPC-2.1.5",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Identifier des conflits entre différentes sources de légitimité"
+  },
+  {
+   "code": "CTEPC-2.1.5-A4",
+   "parentCode": "CTEPC-2.1.5",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Distinguer légitimité et légalité"
+  },
+  {
+   "code": "CTEPC-2.1.5-A5",
+   "parentCode": "CTEPC-2.1.5",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Justifier une prise de position en rapport avec la légalité ou la légitimité d’une norme"
+  },
+  {
+   "code": "CTEPC-2.1.5-K1",
+   "parentCode": "CTEPC-2.1.5",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Connaître : Expliciter les concepts et les notions et les illustrer par un exemple"
+  },
+  {
+   "code": "CTEPC-2.1.5-R1",
+   "parentCode": "CTEPC-2.1.5",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Socles de compétences EPC : 6.2 ; 6.3 ; 7.1 ; 8.2"
+  },
+  {
+   "code": "CTEPC-2.1.5-R2",
+   "parentCode": "CTEPC-2.1.5",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Légalité et légitimité"
+  },
+  {
+   "code": "CTEPC-2.1.5-R3",
+   "parentCode": "CTEPC-2.1.5",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Typologie(s) et hiérarchie(s) des normes"
+  },
+  {
+   "code": "CTEPC-2.1.5-R4",
+   "parentCode": "CTEPC-2.1.5",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Norme et normalité"
+  },
+  {
+   "code": "CTEPC-2.1.5-R5",
+   "parentCode": "CTEPC-2.1.5",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Autorité et pouvoir"
+  },
+  {
+   "code": "CTEPC-2.1.5-R6",
+   "parentCode": "CTEPC-2.1.5",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Désobéissance civile"
+  },
+  {
+   "code": "CTEPC-2.1.5-R7",
+   "parentCode": "CTEPC-2.1.5",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Conflit de loyauté"
+  },
+  {
+   "code": "CTEPC-2.1.5-R8",
+   "parentCode": "CTEPC-2.1.5",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Questionner"
+  },
+  {
+   "code": "CTEPC-2.1.5-R9",
+   "parentCode": "CTEPC-2.1.5",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Conceptualiser"
+  },
+  {
+   "code": "CTEPC-2.1.5-R10",
+   "parentCode": "CTEPC-2.1.5",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Problématiser"
+  },
+  {
+   "code": "CTEPC-2.1.5-R11",
+   "parentCode": "CTEPC-2.1.5",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Prendre position de manière argumentée"
+  },
+  {
+   "code": "CTEPC-2.1.6",
+   "parentCode": "CTEPC",
+   "kind": "competence",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "UAA 2.1.6 Relation sociale et politique à l’environnement"
+  },
+  {
+   "code": "CTEPC-2.1.6-C1",
+   "parentCode": "CTEPC-2.1.6",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Compétence : Identifier et expliciter les relations de l’humain avec son environnement naturel et culturel"
+  },
+  {
+   "code": "CTEPC-2.1.6-C2",
+   "parentCode": "CTEPC-2.1.6",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Compétence : Justifier une prise de position dans la relation sociale et politique à l’environnement"
+  },
+  {
+   "code": "CTEPC-2.1.6-A1",
+   "parentCode": "CTEPC-2.1.6",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Conceptualiser les notions d’environnement, de nature et de culture"
+  },
+  {
+   "code": "CTEPC-2.1.6-A2",
+   "parentCode": "CTEPC-2.1.6",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Identifier et expliciter les relations de l’humain avec son environnement naturel et culturel"
+  },
+  {
+   "code": "CTEPC-2.1.6-A3",
+   "parentCode": "CTEPC-2.1.6",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Repérer des tensions entre les dimensions politiques, environnementales, sociales et économiques"
+  },
+  {
+   "code": "CTEPC-2.1.6-K1",
+   "parentCode": "CTEPC-2.1.6",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Connaître : Expliciter les concepts et les notions et les illustrer par un exemple"
+  },
+  {
+   "code": "CTEPC-2.1.6-K2",
+   "parentCode": "CTEPC-2.1.6",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Connaître : Articuler les concepts de nature, culture et environnement"
+  },
+  {
+   "code": "CTEPC-2.1.6-R1",
+   "parentCode": "CTEPC-2.1.6",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Socles de compétences EPC : 10.1"
+  },
+  {
+   "code": "CTEPC-2.1.6-R2",
+   "parentCode": "CTEPC-2.1.6",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Environnement"
+  },
+  {
+   "code": "CTEPC-2.1.6-R3",
+   "parentCode": "CTEPC-2.1.6",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Nature"
+  },
+  {
+   "code": "CTEPC-2.1.6-R4",
+   "parentCode": "CTEPC-2.1.6",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Culture"
+  },
+  {
+   "code": "CTEPC-2.1.6-R5",
+   "parentCode": "CTEPC-2.1.6",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Transformation de la nature par l’être humain"
+  },
+  {
+   "code": "CTEPC-2.1.6-R6",
+   "parentCode": "CTEPC-2.1.6",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Écologie politique"
+  },
+  {
+   "code": "CTEPC-2.1.6-R7",
+   "parentCode": "CTEPC-2.1.6",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Principe de précaution"
+  },
+  {
+   "code": "CTEPC-2.1.6-R8",
+   "parentCode": "CTEPC-2.1.6",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Responsabilité"
+  },
+  {
+   "code": "CTEPC-2.1.6-R9",
+   "parentCode": "CTEPC-2.1.6",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Interdépendance"
+  },
+  {
+   "code": "CTEPC-2.1.6-R10",
+   "parentCode": "CTEPC-2.1.6",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Conceptualiser"
+  },
+  {
+   "code": "CTEPC-2.1.6-R11",
+   "parentCode": "CTEPC-2.1.6",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Prendre position de manière argumentée"
+  },
+  {
+   "code": "CTEPC-2.2.1",
+   "parentCode": "CTEPC",
+   "kind": "competence",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "UAA 2.2.1 Diversité des discours sur le monde"
+  },
+  {
+   "code": "CTEPC-2.2.1-C1",
+   "parentCode": "CTEPC-2.2.1",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Compétence : Distinguer différents discours sur le monde et les types de vérité qui peuvent leur être associés"
+  },
+  {
+   "code": "CTEPC-2.2.1-C2",
+   "parentCode": "CTEPC-2.2.1",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Compétence : Questionner les possibilités d’articuler différents discours sur le monde"
+  },
+  {
+   "code": "CTEPC-2.2.1-C3",
+   "parentCode": "CTEPC-2.2.1",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Compétence : Distinguer savoir et croire"
+  },
+  {
+   "code": "CTEPC-2.2.1-A1",
+   "parentCode": "CTEPC-2.2.1",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Distinguer ce qui relève de la subjectivité de ce qui peut prétendre à l’objectivité"
+  },
+  {
+   "code": "CTEPC-2.2.1-A2",
+   "parentCode": "CTEPC-2.2.1",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Devant un discours sur le monde (théories scientifiques, textes religieux, décisions judiciaires, témoignages…) déterminer s’il peut prétendre à la vérité et, le cas échéant, préciser de quel type de vérité il s’agit"
+  },
+  {
+   "code": "CTEPC-2.2.1-A3",
+   "parentCode": "CTEPC-2.2.1",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Sélectionner différentes ressources pertinentes pour éclairer une question de sens et/ou de société"
+  },
+  {
+   "code": "CTEPC-2.2.1-A4",
+   "parentCode": "CTEPC-2.2.1",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Questionner les possibilités d’articuler différents discours sur le monde"
+  },
+  {
+   "code": "CTEPC-2.2.1-T1",
+   "parentCode": "CTEPC-2.2.1",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Transférer : Repérer les confusions entre types de discours (par exemple dans le créationnisme)"
+  },
+  {
+   "code": "CTEPC-2.2.1-T2",
+   "parentCode": "CTEPC-2.2.1",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Transférer : Justifier les raisons de recourir à tel ou tel type de discours pour éclairer une question de sens et/ou de société"
+  },
+  {
+   "code": "CTEPC-2.2.1-K1",
+   "parentCode": "CTEPC-2.2.1",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Connaître : Expliciter les concepts et les notions et les illustrer par un exemple"
+  },
+  {
+   "code": "CTEPC-2.2.1-K2",
+   "parentCode": "CTEPC-2.2.1",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Connaître : Expliciter les caractéristiques de différents discours sur le monde : scientifique, religieux, judiciaire, esthétique, symbolique, éthique"
+  },
+  {
+   "code": "CTEPC-2.2.1-K3",
+   "parentCode": "CTEPC-2.2.1",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Connaître : Distinguer savoir et croire"
+  },
+  {
+   "code": "CTEPC-2.2.1-R1",
+   "parentCode": "CTEPC-2.2.1",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Objectivité/subjectivité"
+  },
+  {
+   "code": "CTEPC-2.2.1-R2",
+   "parentCode": "CTEPC-2.2.1",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Croire/savoir"
+  },
+  {
+   "code": "CTEPC-2.2.1-R3",
+   "parentCode": "CTEPC-2.2.1",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Discours scientifique, religieux, judiciaire, esthétique, symbolique, éthique."
+  },
+  {
+   "code": "CTEPC-2.2.1-R4",
+   "parentCode": "CTEPC-2.2.1",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Types de vérité"
+  },
+  {
+   "code": "CTEPC-2.2.1-R5",
+   "parentCode": "CTEPC-2.2.1",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Questionner"
+  },
+  {
+   "code": "CTEPC-2.2.1-R6",
+   "parentCode": "CTEPC-2.2.1",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Conceptualiser"
+  },
+  {
+   "code": "CTEPC-2.2.1-R7",
+   "parentCode": "CTEPC-2.2.1",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Prendre position de manière argumentée"
+  },
+  {
+   "code": "CTEPC-2.2.2",
+   "parentCode": "CTEPC",
+   "kind": "competence",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "UAA 2.2.2 Médias et information"
+  },
+  {
+   "code": "CTEPC-2.2.2-C1",
+   "parentCode": "CTEPC-2.2.2",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Compétence : Questionner ce qui semble évident, ce qui se présente comme vrai dans les médias et sur les réseaux sociaux"
+  },
+  {
+   "code": "CTEPC-2.2.2-C2",
+   "parentCode": "CTEPC-2.2.2",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Compétence : Questionner la manière dont les médias et les réseaux sociaux transmettent l’information et construisent la réalité"
+  },
+  {
+   "code": "CTEPC-2.2.2-A1",
+   "parentCode": "CTEPC-2.2.2",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Distinguer différents genres médiatiques."
+  },
+  {
+   "code": "CTEPC-2.2.2-A2",
+   "parentCode": "CTEPC-2.2.2",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Identifier les déterminants de l’information"
+  },
+  {
+   "code": "CTEPC-2.2.2-A3",
+   "parentCode": "CTEPC-2.2.2",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Apprécier le degré de fiabilité du contenu transmis en questionnant les contextes de production, de diffusion et de réception du/des médias"
+  },
+  {
+   "code": "CTEPC-2.2.2-A4",
+   "parentCode": "CTEPC-2.2.2",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Évaluer les intérêts et finalités des différents diffuseurs"
+  },
+  {
+   "code": "CTEPC-2.2.2-A5",
+   "parentCode": "CTEPC-2.2.2",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Problématiser la construction de l’opinion publique dans les médias et sur les réseaux sociaux"
+  },
+  {
+   "code": "CTEPC-2.2.2-T1",
+   "parentCode": "CTEPC-2.2.2",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Transférer : Formuler un avis critique à propos d’une information traitée par les médias en repérant les déterminants qui en façonnent la forme et le contenu"
+  },
+  {
+   "code": "CTEPC-2.2.2-T2",
+   "parentCode": "CTEPC-2.2.2",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Transférer : Comparer le traitement de l’information à partir de différentes sources"
+  },
+  {
+   "code": "CTEPC-2.2.2-K1",
+   "parentCode": "CTEPC-2.2.2",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Connaître : Expliciter les concepts et les notions et les illustrer par un exemple"
+  },
+  {
+   "code": "CTEPC-2.2.2-R1",
+   "parentCode": "CTEPC-2.2.2",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Genres médiatiques : billet d’humeur, carte blanche, brève, dépêche, article de fond, tweet, interview…"
+  },
+  {
+   "code": "CTEPC-2.2.2-R2",
+   "parentCode": "CTEPC-2.2.2",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Déterminants de l’information qui en façonnent le contenu et la forme : auteur, intention de l’auteur, public-cible, support, source, contexte de production, de diffusion et de réception"
+  },
+  {
+   "code": "CTEPC-2.2.2-R3",
+   "parentCode": "CTEPC-2.2.2",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Opinion publique"
+  },
+  {
+   "code": "CTEPC-2.2.2-R4",
+   "parentCode": "CTEPC-2.2.2",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Infotainment"
+  },
+  {
+   "code": "CTEPC-2.2.2-R5",
+   "parentCode": "CTEPC-2.2.2",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Massification de l’information"
+  },
+  {
+   "code": "CTEPC-2.2.2-R6",
+   "parentCode": "CTEPC-2.2.2",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Rumeur, théories du complot, hoax"
+  },
+  {
+   "code": "CTEPC-2.2.2-R7",
+   "parentCode": "CTEPC-2.2.2",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Objectivité/subjectivité"
+  },
+  {
+   "code": "CTEPC-2.2.2-R8",
+   "parentCode": "CTEPC-2.2.2",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Questionner"
+  },
+  {
+   "code": "CTEPC-2.2.2-R9",
+   "parentCode": "CTEPC-2.2.2",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Conceptualiser"
+  },
+  {
+   "code": "CTEPC-2.2.2-R10",
+   "parentCode": "CTEPC-2.2.2",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Problématiser"
+  },
+  {
+   "code": "CTEPC-2.2.3",
+   "parentCode": "CTEPC",
+   "kind": "competence",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "UAA 2.2.3 Violence et humanisation"
+  },
+  {
+   "code": "CTEPC-2.2.3-C1",
+   "parentCode": "CTEPC-2.2.3",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Compétence : Problématiser la relation entre violence et processus d’humanisation"
+  },
+  {
+   "code": "CTEPC-2.2.3-C2",
+   "parentCode": "CTEPC-2.2.3",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Compétence : Distinguer des situations où l'humain est envisagé en tant que sujet (fin en soi) et des situations où il est traité en tant qu’objet (moyen)"
+  },
+  {
+   "code": "CTEPC-2.2.3-A1",
+   "parentCode": "CTEPC-2.2.3",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Problématiser la relation entre violence et processus d’humanisation"
+  },
+  {
+   "code": "CTEPC-2.2.3-A2",
+   "parentCode": "CTEPC-2.2.3",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Identifier différentes formes de violence"
+  },
+  {
+   "code": "CTEPC-2.2.3-A3",
+   "parentCode": "CTEPC-2.2.3",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Repérer des situations où l'humain est envisagé en tant que sujet (fin en soi) et des situations où il est traité comme un objet (moyen)"
+  },
+  {
+   "code": "CTEPC-2.2.3-A4",
+   "parentCode": "CTEPC-2.2.3",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Repérer les tensions entre la violence inhérente au processus d'humanisation et la violence empêchant ce"
+  },
+  {
+   "code": "CTEPC-2.2.3-T1",
+   "parentCode": "CTEPC-2.2.3",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Transférer : Identifier le processus d’humanisation à l’œuvre dans une institution et en expliciter la violence éventuelle"
+  },
+  {
+   "code": "CTEPC-2.2.3-T2",
+   "parentCode": "CTEPC-2.2.3",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Transférer : Comparer des situations où l’être humain est pris comme sujet ou comme objet dans un processus d’humanisation et les relier avec la DUDH"
+  },
+  {
+   "code": "CTEPC-2.2.3-K1",
+   "parentCode": "CTEPC-2.2.3",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Connaître : Expliciter les concepts et les notions et les illustrer par un exemple"
+  },
+  {
+   "code": "CTEPC-2.2.3-R1",
+   "parentCode": "CTEPC-2.2.3",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Violence, humanisation, déshumanisation, humanisme"
+  },
+  {
+   "code": "CTEPC-2.2.3-R2",
+   "parentCode": "CTEPC-2.2.3",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Sujet/objet"
+  },
+  {
+   "code": "CTEPC-2.2.3-R3",
+   "parentCode": "CTEPC-2.2.3",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Déclaration Universelle des Droits de l’Homme (DUDH)"
+  },
+  {
+   "code": "CTEPC-2.2.3-R4",
+   "parentCode": "CTEPC-2.2.3",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Socialisation, éducation, justice, santé"
+  },
+  {
+   "code": "CTEPC-2.2.3-R5",
+   "parentCode": "CTEPC-2.2.3",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Institution (famille, école, tribunal, prison, hôpital, institution religieuse…)"
+  },
+  {
+   "code": "CTEPC-2.2.3-R6",
+   "parentCode": "CTEPC-2.2.3",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Violence physique, violence morale, violence symbolique"
+  },
+  {
+   "code": "CTEPC-2.2.3-R7",
+   "parentCode": "CTEPC-2.2.3",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Conceptualiser"
+  },
+  {
+   "code": "CTEPC-2.2.3-R8",
+   "parentCode": "CTEPC-2.2.3",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Problématiser"
+  },
+  {
+   "code": "CTEPC-2.2.3-R9",
+   "parentCode": "CTEPC-2.2.3",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Prendre position de manière argumentée"
+  },
+  {
+   "code": "CTEPC-2.2.4",
+   "parentCode": "CTEPC",
+   "kind": "competence",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "UAA 2.2.4 Rapport éthique à soi et à autrui"
+  },
+  {
+   "code": "CTEPC-2.2.4-C1",
+   "parentCode": "CTEPC-2.2.4",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Compétence : Problématiser la notion d’autonomie affective dans le rapport à soi et à autrui"
+  },
+  {
+   "code": "CTEPC-2.2.4-C2",
+   "parentCode": "CTEPC-2.2.4",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Compétence : Questionner le rôle et la fonction du dialogue dans la construction du rapport à soi et à autrui"
+  },
+  {
+   "code": "CTEPC-2.2.4-A1",
+   "parentCode": "CTEPC-2.2.4",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Problématiser la notion d’identité"
+  },
+  {
+   "code": "CTEPC-2.2.4-A2",
+   "parentCode": "CTEPC-2.2.4",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Identifier différents types de rapport à soi et à autrui"
+  },
+  {
+   "code": "CTEPC-2.2.4-A3",
+   "parentCode": "CTEPC-2.2.4",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Problématiser la notion d’autonomie affective"
+  },
+  {
+   "code": "CTEPC-2.2.4-A4",
+   "parentCode": "CTEPC-2.2.4",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Questionner l’autonomie affective en rapport avec l’intégrité physique et morale"
+  },
+  {
+   "code": "CTEPC-2.2.4-A5",
+   "parentCode": "CTEPC-2.2.4",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Identifier le rôle et la fonction du dialogue dans le rapport à soi et à autrui"
+  },
+  {
+   "code": "CTEPC-2.2.4-T1",
+   "parentCode": "CTEPC-2.2.4",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Transférer : Repérer des comportements qui nuisent à l’intégrité physique ou morale de soi ou d’autrui"
+  },
+  {
+   "code": "CTEPC-2.2.4-T2",
+   "parentCode": "CTEPC-2.2.4",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Transférer : Questionner le rôle et la fonction du dialogue dans le rapport à soi et à autrui"
+  },
+  {
+   "code": "CTEPC-2.2.4-K1",
+   "parentCode": "CTEPC-2.2.4",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Connaître : Expliciter les concepts et les notions et les illustrer par un exemple"
+  },
+  {
+   "code": "CTEPC-2.2.4-R1",
+   "parentCode": "CTEPC-2.2.4",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Sujet, autonomie affective, intégrité physique et morale, identité, altérité"
+  },
+  {
+   "code": "CTEPC-2.2.4-R2",
+   "parentCode": "CTEPC-2.2.4",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Corps, émotions"
+  },
+  {
+   "code": "CTEPC-2.2.4-R3",
+   "parentCode": "CTEPC-2.2.4",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Rapport à soi : souci de soi, estime de soi, authenticité, intelligence des émotions, être/avoir un corps, inconscient, désir"
+  },
+  {
+   "code": "CTEPC-2.2.4-R4",
+   "parentCode": "CTEPC-2.2.4",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Rapport à autrui : rapports de force, de ruse, d’instrumentation, d’entente, de sollicitude, de solidarité, de coopération, de fraternité"
+  },
+  {
+   "code": "CTEPC-2.2.4-R5",
+   "parentCode": "CTEPC-2.2.4",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Dialectique du maitre et de l’esclave"
+  },
+  {
+   "code": "CTEPC-2.2.4-R6",
+   "parentCode": "CTEPC-2.2.4",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Évaluer les conséquences de ses actes"
+  },
+  {
+   "code": "CTEPC-2.2.5-2.2.6",
+   "parentCode": "CTEPC",
+   "kind": "competence",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "UAA 2.2.5. -2.2.6 Individu, société et engagement citoyen"
+  },
+  {
+   "code": "CTEPC-2.2.5-2.2.6-C1",
+   "parentCode": "CTEPC-2.2.5-2.2.6",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Compétence : Problématiser l’engagement citoyen"
+  },
+  {
+   "code": "CTEPC-2.2.5-2.2.6-A1",
+   "parentCode": "CTEPC-2.2.5-2.2.6",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Conceptualiser la notion d’engagement"
+  },
+  {
+   "code": "CTEPC-2.2.5-2.2.6-A2",
+   "parentCode": "CTEPC-2.2.5-2.2.6",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Problématiser la notion de citoyenneté"
+  },
+  {
+   "code": "CTEPC-2.2.5-2.2.6-A3",
+   "parentCode": "CTEPC-2.2.5-2.2.6",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Identifier les raisons et les finalités de l’engagement citoyen"
+  },
+  {
+   "code": "CTEPC-2.2.5-2.2.6-A4",
+   "parentCode": "CTEPC-2.2.5-2.2.6",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Questionner les conditions de possibilité de l’engagement citoyen (sentiment de responsabilité, opportunité d’engagement, conscience d’une forme de compétence…)"
+  },
+  {
+   "code": "CTEPC-2.2.5-2.2.6-A5",
+   "parentCode": "CTEPC-2.2.5-2.2.6",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Identifier les freins à l’engagement citoyen"
+  },
+  {
+   "code": "CTEPC-2.2.5-2.2.6-A6",
+   "parentCode": "CTEPC-2.2.5-2.2.6",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Identifier les espaces et les formes de l’engagement citoyen"
+  },
+  {
+   "code": "CTEPC-2.2.5-2.2.6-A7",
+   "parentCode": "CTEPC-2.2.5-2.2.6",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Expliciter l’articulation entre l’engagement individuel et l’engagement politique de l’État"
+  },
+  {
+   "code": "CTEPC-2.2.5-2.2.6-K1",
+   "parentCode": "CTEPC-2.2.5-2.2.6",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Connaître : Expliciter les concepts et les notions et les illustrer par un exemple"
+  },
+  {
+   "code": "CTEPC-2.2.5-2.2.6-K2",
+   "parentCode": "CTEPC-2.2.5-2.2.6",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Connaître : Énoncer les facteurs qui favorisent, entravent ou empêchent un engagement"
+  },
+  {
+   "code": "CTEPC-2.2.5-2.2.6-K3",
+   "parentCode": "CTEPC-2.2.5-2.2.6",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Connaître : Articuler les concepts d’engagement et de citoyenneté"
+  },
+  {
+   "code": "CTEPC-2.2.5-2.2.6-R1",
+   "parentCode": "CTEPC-2.2.5-2.2.6",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Socles de compétences EPC : 4.2 ; 8 ; 10"
+  },
+  {
+   "code": "CTEPC-2.2.5-2.2.6-R2",
+   "parentCode": "CTEPC-2.2.5-2.2.6",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Engagement, engagement individuel et engagement citoyen, désengagement"
+  },
+  {
+   "code": "CTEPC-2.2.5-2.2.6-R3",
+   "parentCode": "CTEPC-2.2.5-2.2.6",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Participation politique, citoyen, citoyenneté"
+  },
+  {
+   "code": "CTEPC-2.2.5-2.2.6-R4",
+   "parentCode": "CTEPC-2.2.5-2.2.6",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Citoyenneté mondiale, migrant, nomade, apatride"
+  },
+  {
+   "code": "CTEPC-2.2.5-2.2.6-R5",
+   "parentCode": "CTEPC-2.2.5-2.2.6",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Justice"
+  },
+  {
+   "code": "CTEPC-2.2.5-2.2.6-R6",
+   "parentCode": "CTEPC-2.2.5-2.2.6",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Société"
+  },
+  {
+   "code": "CTEPC-2.2.5-2.2.6-R7",
+   "parentCode": "CTEPC-2.2.5-2.2.6",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Mondialisation"
+  },
+  {
+   "code": "CTEPC-2.2.5-2.2.6-R8",
+   "parentCode": "CTEPC-2.2.5-2.2.6",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Multiculturalisme"
+  },
+  {
+   "code": "CTEPC-2.2.5-2.2.6-R9",
+   "parentCode": "CTEPC-2.2.5-2.2.6",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Espace public, espace privé, espace commun"
+  },
+  {
+   "code": "CTEPC-2.2.5-2.2.6-R10",
+   "parentCode": "CTEPC-2.2.5-2.2.6",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Coopération au développement, développement durable"
+  },
+  {
+   "code": "CTEPC-2.2.5-2.2.6-R11",
+   "parentCode": "CTEPC-2.2.5-2.2.6",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Questionner"
+  },
+  {
+   "code": "CTEPC-2.2.5-2.2.6-R12",
+   "parentCode": "CTEPC-2.2.5-2.2.6",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Conceptualiser"
+  },
+  {
+   "code": "CTEPC-2.2.5-2.2.6-R13",
+   "parentCode": "CTEPC-2.2.5-2.2.6",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Problématiser"
+  },
+  {
+   "code": "CTEPC-2.2.5-2.2.6-R14",
+   "parentCode": "CTEPC-2.2.5-2.2.6",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Prendre position de manière argumentée"
+  },
+  {
+   "code": "CTEPC-3.1.1",
+   "parentCode": "CTEPC",
+   "kind": "competence",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "UAA 3.1.1 Vérité et pouvoir"
+  },
+  {
+   "code": "CTEPC-3.1.1-C1",
+   "parentCode": "CTEPC-3.1.1",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Compétence : Problématiser le concept de vérité"
+  },
+  {
+   "code": "CTEPC-3.1.1-C2",
+   "parentCode": "CTEPC-3.1.1",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Compétence : Questionner les rapports entre la vérité et le pouvoir"
+  },
+  {
+   "code": "CTEPC-3.1.1-A1",
+   "parentCode": "CTEPC-3.1.1",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Comparer différents documents qui présentent des conceptions différentes de la vérité"
+  },
+  {
+   "code": "CTEPC-3.1.1-A2",
+   "parentCode": "CTEPC-3.1.1",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Questionner le caractère définitif vs provisoire, absolu, universel vs relatif, local, de la vérité"
+  },
+  {
+   "code": "CTEPC-3.1.1-A3",
+   "parentCode": "CTEPC-3.1.1",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Repérer les tentatives pour imposer une « vérité » de manière dogmatique"
+  },
+  {
+   "code": "CTEPC-3.1.1-A4",
+   "parentCode": "CTEPC-3.1.1",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Questionner les distinctions entre vérité et opinion unanime, vérité et opinion du plus grand nombre, vérité et avis des plus compétents, vérité et position de l’autorité"
+  },
+  {
+   "code": "CTEPC-3.1.1-T1",
+   "parentCode": "CTEPC-3.1.1",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Transférer : Problématiser le concept de vérité en confrontant les différentes conceptions proposées"
+  },
+  {
+   "code": "CTEPC-3.1.1-T2",
+   "parentCode": "CTEPC-3.1.1",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Transférer : Questionner les rapports entre vérité et autorité ou pouvoir, la possibilité d’opposer la vérité au pouvoir et l’utilisation de la notion de vérité comme instrument de pouvoir"
+  },
+  {
+   "code": "CTEPC-3.1.1-K1",
+   "parentCode": "CTEPC-3.1.1",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : Expliciter les concepts et les notions et les illustrer par un exemple"
+  },
+  {
+   "code": "CTEPC-3.1.1-K2",
+   "parentCode": "CTEPC-3.1.1",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : Expliciter et questionner les oppositions qui fondent nos conceptions spontanées de la vérité : vrai/faux, certitude/doute, réalité/illusion, connaissance/opinion, universalisme/relativisme"
+  },
+  {
+   "code": "CTEPC-3.1.1-R1",
+   "parentCode": "CTEPC-3.1.1",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Vérité-adéquation à la réalité, véritécohérence, vérité-utilité (pragmatisme), véritéauthenticité, vérité comme prétention à la validité"
+  },
+  {
+   "code": "CTEPC-3.1.1-R2",
+   "parentCode": "CTEPC-3.1.1",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Vérités révélées"
+  },
+  {
+   "code": "CTEPC-3.1.1-R3",
+   "parentCode": "CTEPC-3.1.1",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Dogmatisme/scepticisme"
+  },
+  {
+   "code": "CTEPC-3.1.1-R4",
+   "parentCode": "CTEPC-3.1.1",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Connaissance/opinion"
+  },
+  {
+   "code": "CTEPC-3.1.1-R5",
+   "parentCode": "CTEPC-3.1.1",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Caractère absolu vs relatif de la vérité"
+  },
+  {
+   "code": "CTEPC-3.1.1-R6",
+   "parentCode": "CTEPC-3.1.1",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Caractère définitif vs provisoire de la vérité"
+  },
+  {
+   "code": "CTEPC-3.1.1-R7",
+   "parentCode": "CTEPC-3.1.1",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Lire, comprendre et analyser un texte philosophique"
+  },
+  {
+   "code": "CTEPC-3.1.1-R8",
+   "parentCode": "CTEPC-3.1.1",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Questionner"
+  },
+  {
+   "code": "CTEPC-3.1.1-R9",
+   "parentCode": "CTEPC-3.1.1",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Conceptualiser"
+  },
+  {
+   "code": "CTEPC-3.1.1-R10",
+   "parentCode": "CTEPC-3.1.1",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Problématiser"
+  },
+  {
+   "code": "CTEPC-3.1.2",
+   "parentCode": "CTEPC",
+   "kind": "competence",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "UAA 3.1.2 Science et expertise"
+  },
+  {
+   "code": "CTEPC-3.1.2-C1",
+   "parentCode": "CTEPC-3.1.2",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Compétence : Problématiser le concept de science"
+  },
+  {
+   "code": "CTEPC-3.1.2-C2",
+   "parentCode": "CTEPC-3.1.2",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Compétence : Distinguer ce qui relève du débat démocratique de ce qui relève de l’expertise scientifique"
+  },
+  {
+   "code": "CTEPC-3.1.2-C3",
+   "parentCode": "CTEPC-3.1.2",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Compétence : Identifier les tentatives d’instrumentalisation de la science"
+  },
+  {
+   "code": "CTEPC-3.1.2-A1",
+   "parentCode": "CTEPC-3.1.2",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : À partir d’exemples*, amener les élèves à"
+  },
+  {
+   "code": "CTEPC-3.1.2-A2",
+   "parentCode": "CTEPC-3.1.2",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Mettre en évidence la pluralité des figures de la science et de la connaissance au cours de l’histoire"
+  },
+  {
+   "code": "CTEPC-3.1.2-A3",
+   "parentCode": "CTEPC-3.1.2",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Questionner le caractère définitif vs provisoire des théories scientifiques"
+  },
+  {
+   "code": "CTEPC-3.1.2-A4",
+   "parentCode": "CTEPC-3.1.2",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Questionner les fondements de l’autorité de la science"
+  },
+  {
+   "code": "CTEPC-3.1.2-A5",
+   "parentCode": "CTEPC-3.1.2",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Repérer les tentatives d’instrumentalisation de la science et les abus de l’autorité scientifique"
+  },
+  {
+   "code": "CTEPC-3.1.2-A6",
+   "parentCode": "CTEPC-3.1.2",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Identifier les différents aspects (sociaux, économiques, politiques, éthiques) d’une controverse scientifique particulière."
+  },
+  {
+   "code": "CTEPC-3.1.2-A7",
+   "parentCode": "CTEPC-3.1.2",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Distinguer, à propos d’une question d’actualité, ce qui relève de l’expertise scientifique et ce qui relève du débat et du choix démocratique"
+  },
+  {
+   "code": "CTEPC-3.1.2-T1",
+   "parentCode": "CTEPC-3.1.2",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Transférer : Questionner les rapports entre débat démocratique et expertise scientifique et repérer les tentatives pour opposer la science au pouvoir ou à l’ « opinion », les tentatives pour instrumentaliser la science, les tentatives des experts pour disqualifier les profanes…"
+  },
+  {
+   "code": "CTEPC-3.1.2-K1",
+   "parentCode": "CTEPC-3.1.2",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : Connaitre les principaux critères de scientificité formulés par les philosophes et les scientifiques, ainsi que les critiques dont ces critères ont fait l’objet"
+  },
+  {
+   "code": "CTEPC-3.1.2-K2",
+   "parentCode": "CTEPC-3.1.2",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : Expliciter les concepts et notions et les illustrer par un exemple"
+  },
+  {
+   "code": "CTEPC-3.1.2-R1",
+   "parentCode": "CTEPC-3.1.2",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Epistémologie"
+  },
+  {
+   "code": "CTEPC-3.1.2-R2",
+   "parentCode": "CTEPC-3.1.2",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Critères de scientificité"
+  },
+  {
+   "code": "CTEPC-3.1.2-R3",
+   "parentCode": "CTEPC-3.1.2",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Science/opinion"
+  },
+  {
+   "code": "CTEPC-3.1.2-R4",
+   "parentCode": "CTEPC-3.1.2",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Technocratie"
+  },
+  {
+   "code": "CTEPC-3.1.2-R5",
+   "parentCode": "CTEPC-3.1.2",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Scientisme"
+  },
+  {
+   "code": "CTEPC-3.1.2-R6",
+   "parentCode": "CTEPC-3.1.2",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Positivisme"
+  },
+  {
+   "code": "CTEPC-3.1.2-R7",
+   "parentCode": "CTEPC-3.1.2",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Empirisme"
+  },
+  {
+   "code": "CTEPC-3.1.2-R8",
+   "parentCode": "CTEPC-3.1.2",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Falsificationnisme"
+  },
+  {
+   "code": "CTEPC-3.1.2-R9",
+   "parentCode": "CTEPC-3.1.2",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Paradigmes scientifiques"
+  },
+  {
+   "code": "CTEPC-3.1.2-R10",
+   "parentCode": "CTEPC-3.1.2",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Relativisme en épistémologie"
+  },
+  {
+   "code": "CTEPC-3.1.2-R11",
+   "parentCode": "CTEPC-3.1.2",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Lire, comprendre et analyser un texte philosophique"
+  },
+  {
+   "code": "CTEPC-3.1.2-R12",
+   "parentCode": "CTEPC-3.1.2",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Questionner"
+  },
+  {
+   "code": "CTEPC-3.1.2-R13",
+   "parentCode": "CTEPC-3.1.2",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Conceptualiser"
+  },
+  {
+   "code": "CTEPC-3.1.2-R14",
+   "parentCode": "CTEPC-3.1.2",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Problématiser"
+  },
+  {
+   "code": "CTEPC-3.1.3",
+   "parentCode": "CTEPC",
+   "kind": "competence",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "UAA 3.1.3 Bioéthique"
+  },
+  {
+   "code": "CTEPC-3.1.3-C1",
+   "parentCode": "CTEPC-3.1.3",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Compétence : Analyser un problème bioéthique"
+  },
+  {
+   "code": "CTEPC-3.1.3-C2",
+   "parentCode": "CTEPC-3.1.3",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Compétence : Justifier une prise de position sur un problème bioéthique"
+  },
+  {
+   "code": "CTEPC-3.1.3-A1",
+   "parentCode": "CTEPC-3.1.3",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Identifier les caractéristiques pluralistes et pluridisciplinaires d’un problème bioéthique"
+  },
+  {
+   "code": "CTEPC-3.1.3-A2",
+   "parentCode": "CTEPC-3.1.3",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Problématiser un enjeu bioéthique"
+  },
+  {
+   "code": "CTEPC-3.1.3-A3",
+   "parentCode": "CTEPC-3.1.3",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Problématiser la question du consentement"
+  },
+  {
+   "code": "CTEPC-3.1.3-A4",
+   "parentCode": "CTEPC-3.1.3",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Identifier les justifications éthiques qui fondent un comportement responsable à l’égard des êtres vivants"
+  },
+  {
+   "code": "CTEPC-3.1.3-T1",
+   "parentCode": "CTEPC-3.1.3",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Transférer : Analyser un problème bioéthique"
+  },
+  {
+   "code": "CTEPC-3.1.3-T2",
+   "parentCode": "CTEPC-3.1.3",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Transférer : Justifier une prise de position sur un problème bioéthique"
+  },
+  {
+   "code": "CTEPC-3.1.3-K1",
+   "parentCode": "CTEPC-3.1.3",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : Expliciter les concepts et les notions et les illustrer par un exemple"
+  },
+  {
+   "code": "CTEPC-3.1.3-R1",
+   "parentCode": "CTEPC-3.1.3",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Bioéthique"
+  },
+  {
+   "code": "CTEPC-3.1.3-R2",
+   "parentCode": "CTEPC-3.1.3",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Consentement éclairé"
+  },
+  {
+   "code": "CTEPC-3.1.3-R3",
+   "parentCode": "CTEPC-3.1.3",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Liberté thérapeutique"
+  },
+  {
+   "code": "CTEPC-3.1.3-R4",
+   "parentCode": "CTEPC-3.1.3",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Liberté de conscience"
+  },
+  {
+   "code": "CTEPC-3.1.3-R5",
+   "parentCode": "CTEPC-3.1.3",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Laïcité de l’hôpital ou de l’institution de soins"
+  },
+  {
+   "code": "CTEPC-3.1.3-R6",
+   "parentCode": "CTEPC-3.1.3",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Plaisir/souffrance"
+  },
+  {
+   "code": "CTEPC-3.1.3-R7",
+   "parentCode": "CTEPC-3.1.3",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Anthropocentrisme, biocentrisme, écocentrisme"
+  },
+  {
+   "code": "CTEPC-3.1.3-R8",
+   "parentCode": "CTEPC-3.1.3",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Théories"
+  },
+  {
+   "code": "CTEPC-3.1.3-R9",
+   "parentCode": "CTEPC-3.1.3",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Éthique déontologique"
+  },
+  {
+   "code": "CTEPC-3.1.3-R10",
+   "parentCode": "CTEPC-3.1.3",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Éthique utilitariste"
+  },
+  {
+   "code": "CTEPC-3.1.3-R11",
+   "parentCode": "CTEPC-3.1.3",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Éthique principliste"
+  },
+  {
+   "code": "CTEPC-3.1.3-R12",
+   "parentCode": "CTEPC-3.1.3",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Lire, comprendre et analyser un texte philosophique"
+  },
+  {
+   "code": "CTEPC-3.1.3-R13",
+   "parentCode": "CTEPC-3.1.3",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Problématiser"
+  },
+  {
+   "code": "CTEPC-3.1.3-R14",
+   "parentCode": "CTEPC-3.1.3",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Prendre position de manière argumentée"
+  },
+  {
+   "code": "CTEPC-3.1.4",
+   "parentCode": "CTEPC",
+   "kind": "competence",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "UAA 3.1.4 Liberté et responsabilité"
+  },
+  {
+   "code": "CTEPC-3.1.4-C1",
+   "parentCode": "CTEPC-3.1.4",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Compétence : Problématiser les concepts de responsabilité et de liberté comme conditions de possibilité de l’engagement individuel et collectif"
+  },
+  {
+   "code": "CTEPC-3.1.4-A1",
+   "parentCode": "CTEPC-3.1.4",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Conceptualiser liberté et responsabilité"
+  },
+  {
+   "code": "CTEPC-3.1.4-A2",
+   "parentCode": "CTEPC-3.1.4",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Identifier les types de responsabilité"
+  },
+  {
+   "code": "CTEPC-3.1.4-A3",
+   "parentCode": "CTEPC-3.1.4",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Distinguer et mettre en relation responsabilité individuelle, responsabilité locale et responsabilité globale"
+  },
+  {
+   "code": "CTEPC-3.1.4-A4",
+   "parentCode": "CTEPC-3.1.4",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Conceptualiser la notion d’engagement"
+  },
+  {
+   "code": "CTEPC-3.1.4-A5",
+   "parentCode": "CTEPC-3.1.4",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Problématiser la liberté comme condition de possibilité de la responsabilité"
+  },
+  {
+   "code": "CTEPC-3.1.4-A6",
+   "parentCode": "CTEPC-3.1.4",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Problématiser la responsabilité comme condition de réalisation de la liberté"
+  },
+  {
+   "code": "CTEPC-3.1.4-A7",
+   "parentCode": "CTEPC-3.1.4",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Identifier des raisons de l’engagement ou du nonengagement"
+  },
+  {
+   "code": "CTEPC-3.1.4-A8",
+   "parentCode": "CTEPC-3.1.4",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Identifier des dérives possibles de l’engagement"
+  },
+  {
+   "code": "CTEPC-3.1.4-T1",
+   "parentCode": "CTEPC-3.1.4",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Transférer : Problématiser la responsabilité, ainsi que la liberté, comme corrélatives de l’engagement individuel et collectif"
+  },
+  {
+   "code": "CTEPC-3.1.4-T2",
+   "parentCode": "CTEPC-3.1.4",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Transférer : Argumenter sur les raisons de l’engagement ou du non-engagement"
+  },
+  {
+   "code": "CTEPC-3.1.4-K1",
+   "parentCode": "CTEPC-3.1.4",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : Expliciter les concepts et les notions et les illustrer par un exemple"
+  },
+  {
+   "code": "CTEPC-3.1.4-R1",
+   "parentCode": "CTEPC-3.1.4",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Liberté et déterminisme (notamment déterminisme socioculturel)"
+  },
+  {
+   "code": "CTEPC-3.1.4-R2",
+   "parentCode": "CTEPC-3.1.4",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Responsabilité morale et responsabilité juridique, responsabilité individuelle et responsabilité collective, responsabilité locale et responsabilité globale"
+  },
+  {
+   "code": "CTEPC-3.1.4-R3",
+   "parentCode": "CTEPC-3.1.4",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Principe responsabilité"
+  },
+  {
+   "code": "CTEPC-3.1.4-R4",
+   "parentCode": "CTEPC-3.1.4",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Engagement (résistance, indignation, solidarité)"
+  },
+  {
+   "code": "CTEPC-3.1.4-R5",
+   "parentCode": "CTEPC-3.1.4",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Lire, comprendre et analyser un texte philosophique"
+  },
+  {
+   "code": "CTEPC-3.1.4-R6",
+   "parentCode": "CTEPC-3.1.4",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Conceptualiser"
+  },
+  {
+   "code": "CTEPC-3.1.4-R7",
+   "parentCode": "CTEPC-3.1.4",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Problématiser"
+  },
+  {
+   "code": "CTEPC-3.1.4-R8",
+   "parentCode": "CTEPC-3.1.4",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Prendre position de manière argumentée"
+  },
+  {
+   "code": "CTEPC-3.1.5",
+   "parentCode": "CTEPC",
+   "kind": "competence",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "UAA 3.1.5 Participer au processus démocratique"
+  },
+  {
+   "code": "CTEPC-3.1.5-C1",
+   "parentCode": "CTEPC-3.1.5",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Compétence : Participer à la vie de la classe/de l’école dans le respect de l’égalité de droit"
+  },
+  {
+   "code": "CTEPC-3.1.5-C2",
+   "parentCode": "CTEPC-3.1.5",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Compétence : Problématiser le processus de discussion démocratique"
+  },
+  {
+   "code": "CTEPC-3.1.5-A1",
+   "parentCode": "CTEPC-3.1.5",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Identifier des problèmes liés à la vie de la classe/de l’école"
+  },
+  {
+   "code": "CTEPC-3.1.5-A2",
+   "parentCode": "CTEPC-3.1.5",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Rechercher ensemble des solutions à ces problèmes et en débattre"
+  },
+  {
+   "code": "CTEPC-3.1.5-A3",
+   "parentCode": "CTEPC-3.1.5",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Élaborer un processus de décision"
+  },
+  {
+   "code": "CTEPC-3.1.5-A4",
+   "parentCode": "CTEPC-3.1.5",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Se mettre d’accord sur une solution et établir ou proposer des règles d’action"
+  },
+  {
+   "code": "CTEPC-3.1.5-A5",
+   "parentCode": "CTEPC-3.1.5",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Amener les élèves, lorsque le problème dépasse leurs compétences à établir des règles, à porter leur projet au niveau de décision concerné"
+  },
+  {
+   "code": "CTEPC-3.1.5-A6",
+   "parentCode": "CTEPC-3.1.5",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Évaluer la manière dont la discussion s’est déroulée"
+  },
+  {
+   "code": "CTEPC-3.1.5-K1",
+   "parentCode": "CTEPC-3.1.5",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : Expliciter les concepts et les notions et les illustrer par un exemple"
+  },
+  {
+   "code": "CTEPC-3.1.5-R1",
+   "parentCode": "CTEPC-3.1.5",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Socles de compétences EPC : 2 ; 3 ; 5 ; 7.2 ; 8 ; 9"
+  },
+  {
+   "code": "CTEPC-3.1.5-R2",
+   "parentCode": "CTEPC-3.1.5",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : UAA 2.1.4"
+  },
+  {
+   "code": "CTEPC-3.1.5-R3",
+   "parentCode": "CTEPC-3.1.5",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Égalité de droit"
+  },
+  {
+   "code": "CTEPC-3.1.5-R4",
+   "parentCode": "CTEPC-3.1.5",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Participation politique"
+  },
+  {
+   "code": "CTEPC-3.1.5-R5",
+   "parentCode": "CTEPC-3.1.5",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Devoir de participation, Droit à la non participation"
+  },
+  {
+   "code": "CTEPC-3.1.5-R6",
+   "parentCode": "CTEPC-3.1.5",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Démocratie directe, démocratie représentative, démocratie participative"
+  },
+  {
+   "code": "CTEPC-3.1.5-R7",
+   "parentCode": "CTEPC-3.1.5",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Consensus, compromis, dissensus"
+  },
+  {
+   "code": "CTEPC-3.1.5-R8",
+   "parentCode": "CTEPC-3.1.5",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Éthique de la discussion"
+  },
+  {
+   "code": "CTEPC-3.1.5-R9",
+   "parentCode": "CTEPC-3.1.5",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Leadership"
+  },
+  {
+   "code": "CTEPC-3.1.5-R10",
+   "parentCode": "CTEPC-3.1.5",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Suffrage"
+  },
+  {
+   "code": "CTEPC-3.1.5-R11",
+   "parentCode": "CTEPC-3.1.5",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Établir un espace de discussion"
+  },
+  {
+   "code": "CTEPC-3.1.5-R12",
+   "parentCode": "CTEPC-3.1.5",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Participer à un débat"
+  },
+  {
+   "code": "CTEPC-3.1.5-R13",
+   "parentCode": "CTEPC-3.1.5",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Décider collectivement"
+  },
+  {
+   "code": "CTEPC-3.1.5-R14",
+   "parentCode": "CTEPC-3.1.5",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Prendre position de manière argumentée"
+  },
+  {
+   "code": "CTEPC-3.1.5-R15",
+   "parentCode": "CTEPC-3.1.5",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Exercer un retour réflexif sur une pratique"
+  },
+  {
+   "code": "CTEPC-3.1.5-R16",
+   "parentCode": "CTEPC-3.1.5",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Se décentrer par la discussion"
+  },
+  {
+   "code": "CTEPC-3.1.6",
+   "parentCode": "CTEPC",
+   "kind": "competence",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "UAA 3.1.6 L’État: pourquoi, jusqu’où?"
+  },
+  {
+   "code": "CTEPC-3.1.6-C1",
+   "parentCode": "CTEPC-3.1.6",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Compétence : Problématiser le concept d’État"
+  },
+  {
+   "code": "CTEPC-3.1.6-C2",
+   "parentCode": "CTEPC-3.1.6",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Compétence : Opter hypothétiquement pour un système politique et justifier cette prise de position"
+  },
+  {
+   "code": "CTEPC-3.1.6-A1",
+   "parentCode": "CTEPC-3.1.6",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Conceptualiser la notion d’État"
+  },
+  {
+   "code": "CTEPC-3.1.6-A2",
+   "parentCode": "CTEPC-3.1.6",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Identifier différentes conceptions de l’État"
+  },
+  {
+   "code": "CTEPC-3.1.6-A3",
+   "parentCode": "CTEPC-3.1.6",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Identifier des conceptions opposées au principe de l’État"
+  },
+  {
+   "code": "CTEPC-3.1.6-A4",
+   "parentCode": "CTEPC-3.1.6",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Identifier et questionner les différents domaines d’intervention de l’État"
+  },
+  {
+   "code": "CTEPC-3.1.6-K1",
+   "parentCode": "CTEPC-3.1.6",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : Expliciter les concepts et les notions et les illustrer par un exemple"
+  },
+  {
+   "code": "CTEPC-3.1.6-K2",
+   "parentCode": "CTEPC-3.1.6",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : Expliciter les raisons pour lesquelles un État est (ou non) nécessaire"
+  },
+  {
+   "code": "CTEPC-3.1.6-R1",
+   "parentCode": "CTEPC-3.1.6",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : État"
+  },
+  {
+   "code": "CTEPC-3.1.6-R2",
+   "parentCode": "CTEPC-3.1.6",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Liberté négative et liberté positive"
+  },
+  {
+   "code": "CTEPC-3.1.6-R3",
+   "parentCode": "CTEPC-3.1.6",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Loi liberticide"
+  },
+  {
+   "code": "CTEPC-3.1.6-R4",
+   "parentCode": "CTEPC-3.1.6",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Idéologie"
+  },
+  {
+   "code": "CTEPC-3.1.6-R5",
+   "parentCode": "CTEPC-3.1.6",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : État de nature, état de société"
+  },
+  {
+   "code": "CTEPC-3.1.6-R6",
+   "parentCode": "CTEPC-3.1.6",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Volonté générale"
+  },
+  {
+   "code": "CTEPC-3.1.6-R7",
+   "parentCode": "CTEPC-3.1.6",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : État de droit"
+  },
+  {
+   "code": "CTEPC-3.1.6-R8",
+   "parentCode": "CTEPC-3.1.6",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Anarchisme, Communisme, Libertarisme"
+  },
+  {
+   "code": "CTEPC-3.1.6-R9",
+   "parentCode": "CTEPC-3.1.6",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : État gendarme, État-providence, État social actif"
+  },
+  {
+   "code": "CTEPC-3.1.6-R10",
+   "parentCode": "CTEPC-3.1.6",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Libéralisme"
+  },
+  {
+   "code": "CTEPC-3.1.6-R11",
+   "parentCode": "CTEPC-3.1.6",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Socialisme(s)"
+  },
+  {
+   "code": "CTEPC-3.1.6-R12",
+   "parentCode": "CTEPC-3.1.6",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Lire, comprendre et analyser un texte philosophique"
+  },
+  {
+   "code": "CTEPC-3.1.6-R13",
+   "parentCode": "CTEPC-3.1.6",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Questionner"
+  },
+  {
+   "code": "CTEPC-3.1.6-R14",
+   "parentCode": "CTEPC-3.1.6",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Conceptualiser"
+  },
+  {
+   "code": "CTEPC-3.1.6-R15",
+   "parentCode": "CTEPC-3.1.6",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Problématiser"
+  },
+  {
+   "code": "CTEPC-3.1.6-R16",
+   "parentCode": "CTEPC-3.1.6",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Distinguer le sens technique et le sens commun d’un terme"
+  },
+  {
+   "code": "CTEPC-3.2.1",
+   "parentCode": "CTEPC",
+   "kind": "competence",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "UAA 3.2.1 Sens et interprétation"
+  },
+  {
+   "code": "CTEPC-3.2.1-C1",
+   "parentCode": "CTEPC-3.2.1",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Compétence : Problématiser le concept d’interprétation"
+  },
+  {
+   "code": "CTEPC-3.2.1-C2",
+   "parentCode": "CTEPC-3.2.1",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Compétence : Questionner la fonction des mythes, des rites et des symboles comme pratiques structurant une collectivité"
+  },
+  {
+   "code": "CTEPC-3.2.1-C3",
+   "parentCode": "CTEPC-3.2.1",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Compétence : Explorer et questionner le sens et les interprétations des mythes, des rites et des symboles"
+  },
+  {
+   "code": "CTEPC-3.2.1-A1",
+   "parentCode": "CTEPC-3.2.1",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Problématiser le concept d’interprétation"
+  },
+  {
+   "code": "CTEPC-3.2.1-A2",
+   "parentCode": "CTEPC-3.2.1",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Distinguer ce qui peut/doit faire l’objet d’une interprétation de ce qui ne relève pas de l’activité herméneutique et justifier les choix opérés"
+  },
+  {
+   "code": "CTEPC-3.2.1-A3",
+   "parentCode": "CTEPC-3.2.1",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Identifier diverses interprétations d’un même objet, les contextualiser et questionner leur pertinence"
+  },
+  {
+   "code": "CTEPC-3.2.1-A4",
+   "parentCode": "CTEPC-3.2.1",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Identifier différentes fonctions des mythes, des rites et des symboles"
+  },
+  {
+   "code": "CTEPC-3.2.1-A5",
+   "parentCode": "CTEPC-3.2.1",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Expliciter et questionner les oppositions : fait/interprétation, explication/interprétation, factuel/symbolique, univoque/plurivoque"
+  },
+  {
+   "code": "CTEPC-3.2.1-T1",
+   "parentCode": "CTEPC-3.2.1",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Transférer : Dégager des interprétations de mythes, rites ou symboles, questionner leur pertinence et justifier le choix de telle ou telle interprétation"
+  },
+  {
+   "code": "CTEPC-3.2.1-T2",
+   "parentCode": "CTEPC-3.2.1",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Transférer : Repérer les fonctions des mythes, des rites et des symboles comme pratiques structurant une collectivité"
+  },
+  {
+   "code": "CTEPC-3.2.1-K1",
+   "parentCode": "CTEPC-3.2.1",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : Expliciter les concepts et notions et les illustrer par un exemple"
+  },
+  {
+   "code": "CTEPC-3.2.1-R1",
+   "parentCode": "CTEPC-3.2.1",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Fait/interprétation"
+  },
+  {
+   "code": "CTEPC-3.2.1-R2",
+   "parentCode": "CTEPC-3.2.1",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Mythe, rite, symbole, notamment dans différentes traditions religieuses"
+  },
+  {
+   "code": "CTEPC-3.2.1-R3",
+   "parentCode": "CTEPC-3.2.1",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Factuel/symbolique"
+  },
+  {
+   "code": "CTEPC-3.2.1-R4",
+   "parentCode": "CTEPC-3.2.1",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Sens littéral/sens symbolique"
+  },
+  {
+   "code": "CTEPC-3.2.1-R5",
+   "parentCode": "CTEPC-3.2.1",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Univoque/plurivoque"
+  },
+  {
+   "code": "CTEPC-3.2.1-R6",
+   "parentCode": "CTEPC-3.2.1",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Expliquer/comprendre"
+  },
+  {
+   "code": "CTEPC-3.2.1-R7",
+   "parentCode": "CTEPC-3.2.1",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Socialisation"
+  },
+  {
+   "code": "CTEPC-3.2.1-R8",
+   "parentCode": "CTEPC-3.2.1",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Lire, comprendre et analyser un texte philosophique"
+  },
+  {
+   "code": "CTEPC-3.2.1-R9",
+   "parentCode": "CTEPC-3.2.1",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Contextualiser notamment en référence au cadre historique"
+  },
+  {
+   "code": "CTEPC-3.2.1-R10",
+   "parentCode": "CTEPC-3.2.1",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Questionner"
+  },
+  {
+   "code": "CTEPC-3.2.1-R11",
+   "parentCode": "CTEPC-3.2.1",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Problématiser"
+  },
+  {
+   "code": "CTEPC-3.2.2-3.2.3",
+   "parentCode": "CTEPC",
+   "kind": "competence",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "UAA 3.2.2.-3.2.3 Culture(s) et liberté(s)"
+  },
+  {
+   "code": "CTEPC-3.2.2-3.2.3-C1",
+   "parentCode": "CTEPC-3.2.2-3.2.3",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Compétence : Problématiser la construction de l’identité singulière entre déterminisme socioculturel et liberté individuelle"
+  },
+  {
+   "code": "CTEPC-3.2.2-3.2.3-C2",
+   "parentCode": "CTEPC-3.2.2-3.2.3",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Compétence : Problématiser les éventuels dilemmes entre identité culturelle et participation à la vie de la cité"
+  },
+  {
+   "code": "CTEPC-3.2.2-3.2.3-C3",
+   "parentCode": "CTEPC-3.2.2-3.2.3",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Compétence : Problématiser l’idéal d’universalité"
+  },
+  {
+   "code": "CTEPC-3.2.2-3.2.3-A1",
+   "parentCode": "CTEPC-3.2.2-3.2.3",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Conceptualiser universalité et singularité"
+  },
+  {
+   "code": "CTEPC-3.2.2-3.2.3-A2",
+   "parentCode": "CTEPC-3.2.2-3.2.3",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Conceptualiser culture et liberté"
+  },
+  {
+   "code": "CTEPC-3.2.2-3.2.3-A3",
+   "parentCode": "CTEPC-3.2.2-3.2.3",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Identifier la présence d’un idéal d’universalité dans différentes cultures"
+  },
+  {
+   "code": "CTEPC-3.2.2-3.2.3-A4",
+   "parentCode": "CTEPC-3.2.2-3.2.3",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Identifier les formes de liberté individuelle et collective au sein de différentes cultures"
+  },
+  {
+   "code": "CTEPC-3.2.2-3.2.3-A5",
+   "parentCode": "CTEPC-3.2.2-3.2.3",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Identifier la pluralité des normes au sein d’un champ social"
+  },
+  {
+   "code": "CTEPC-3.2.2-3.2.3-A6",
+   "parentCode": "CTEPC-3.2.2-3.2.3",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Problématiser le déterminisme socioculturel"
+  },
+  {
+   "code": "CTEPC-3.2.2-3.2.3-A7",
+   "parentCode": "CTEPC-3.2.2-3.2.3",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Identifier les enjeux éthiques des tensions entre déterminismes socioculturels et liberté humaine"
+  },
+  {
+   "code": "CTEPC-3.2.2-3.2.3-T1",
+   "parentCode": "CTEPC-3.2.2-3.2.3",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Transférer : Problématiser la construction de l’identité singulière entre déterminismes socioculturels et liberté individuelle"
+  },
+  {
+   "code": "CTEPC-3.2.2-3.2.3-T2",
+   "parentCode": "CTEPC-3.2.2-3.2.3",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Transférer : Justifier l’issue d’un dilemme entre identité culturelle et participation à la vie de la cité"
+  },
+  {
+   "code": "CTEPC-3.2.2-3.2.3-T3",
+   "parentCode": "CTEPC-3.2.2-3.2.3",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Transférer : Problématiser l’idéal d’universalité"
+  },
+  {
+   "code": "CTEPC-3.2.2-3.2.3-K1",
+   "parentCode": "CTEPC-3.2.2-3.2.3",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : Expliciter les concepts et les notions et les illustrer par un exemple"
+  },
+  {
+   "code": "CTEPC-3.2.2-3.2.3-R1",
+   "parentCode": "CTEPC-3.2.2-3.2.3",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Socles de compétences EPC : 6"
+  },
+  {
+   "code": "CTEPC-3.2.2-3.2.3-R2",
+   "parentCode": "CTEPC-3.2.2-3.2.3",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Concept : discrimination (UAA 2.1.3)"
+  },
+  {
+   "code": "CTEPC-3.2.2-3.2.3-R3",
+   "parentCode": "CTEPC-3.2.2-3.2.3",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Universalité, singularité, principes, normes, valeurs, règles communes, déterminisme socioculturel, culture, liberté, identité, société"
+  },
+  {
+   "code": "CTEPC-3.2.2-3.2.3-R4",
+   "parentCode": "CTEPC-3.2.2-3.2.3",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Acculturation, déculturation, transculturation, enculturation, ethnocentrisme, relativisme culturel, intégration, assimilation, rejet communautaire, repli communautaire, discrimination religieuse"
+  },
+  {
+   "code": "CTEPC-3.2.2-3.2.3-R5",
+   "parentCode": "CTEPC-3.2.2-3.2.3",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Lire, comprendre et analyser un texte philosophique"
+  },
+  {
+   "code": "CTEPC-3.2.2-3.2.3-R6",
+   "parentCode": "CTEPC-3.2.2-3.2.3",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Conceptualiser"
+  },
+  {
+   "code": "CTEPC-3.2.2-3.2.3-R7",
+   "parentCode": "CTEPC-3.2.2-3.2.3",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Problématiser"
+  },
+  {
+   "code": "CTEPC-3.2.2-3.2.3-R8",
+   "parentCode": "CTEPC-3.2.2-3.2.3",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Prendre position de manière argumentée"
+  },
+  {
+   "code": "CTEPC-3.2.4",
+   "parentCode": "CTEPC",
+   "kind": "competence",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "UAA 3.2.4 La justice"
+  },
+  {
+   "code": "CTEPC-3.2.4-C1",
+   "parentCode": "CTEPC-3.2.4",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Compétence : Problématiser le concept de justice."
+  },
+  {
+   "code": "CTEPC-3.2.4-C2",
+   "parentCode": "CTEPC-3.2.4",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Compétence : Identifier différentes conceptions de la justice et justifier les raisons qui peuvent amener à privilégier l’une ou l’autre d’entre elles"
+  },
+  {
+   "code": "CTEPC-3.2.4-A1",
+   "parentCode": "CTEPC-3.2.4",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Questionner l’universalité de l’exigence de justice"
+  },
+  {
+   "code": "CTEPC-3.2.4-A2",
+   "parentCode": "CTEPC-3.2.4",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Repérer les cas dans lesquels la question de la justice se pose"
+  },
+  {
+   "code": "CTEPC-3.2.4-A3",
+   "parentCode": "CTEPC-3.2.4",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Identifier et questionner différentes conceptions de la justice"
+  },
+  {
+   "code": "CTEPC-3.2.4-A4",
+   "parentCode": "CTEPC-3.2.4",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Problématiser la relation entre le Juste et le Bien"
+  },
+  {
+   "code": "CTEPC-3.2.4-K1",
+   "parentCode": "CTEPC-3.2.4",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : Expliciter les concepts et les notions et les illustrer par un exemple"
+  },
+  {
+   "code": "CTEPC-3.2.4-R1",
+   "parentCode": "CTEPC-3.2.4",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Socles de compétences EPC : 3"
+  },
+  {
+   "code": "CTEPC-3.2.4-R2",
+   "parentCode": "CTEPC-3.2.4",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Justice"
+  },
+  {
+   "code": "CTEPC-3.2.4-R3",
+   "parentCode": "CTEPC-3.2.4",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Légitimité"
+  },
+  {
+   "code": "CTEPC-3.2.4-R4",
+   "parentCode": "CTEPC-3.2.4",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Équité, égalité"
+  },
+  {
+   "code": "CTEPC-3.2.4-R5",
+   "parentCode": "CTEPC-3.2.4",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Justice distributive, justice commutative"
+  },
+  {
+   "code": "CTEPC-3.2.4-R6",
+   "parentCode": "CTEPC-3.2.4",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Justice sociale"
+  },
+  {
+   "code": "CTEPC-3.2.4-R7",
+   "parentCode": "CTEPC-3.2.4",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : État"
+  },
+  {
+   "code": "CTEPC-3.2.4-R8",
+   "parentCode": "CTEPC-3.2.4",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Droit naturel/droit positif"
+  },
+  {
+   "code": "CTEPC-3.2.4-R9",
+   "parentCode": "CTEPC-3.2.4",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Justice internationale"
+  },
+  {
+   "code": "CTEPC-3.2.4-R10",
+   "parentCode": "CTEPC-3.2.4",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Vérité judiciaire, rendre justice/se faire justice soi-même (vengeance)"
+  },
+  {
+   "code": "CTEPC-3.2.4-R11",
+   "parentCode": "CTEPC-3.2.4",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Discrimination positive"
+  },
+  {
+   "code": "CTEPC-3.2.4-R12",
+   "parentCode": "CTEPC-3.2.4",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Le Bien, le Juste"
+  },
+  {
+   "code": "CTEPC-3.2.4-R13",
+   "parentCode": "CTEPC-3.2.4",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Théorie(s)"
+  },
+  {
+   "code": "CTEPC-3.2.4-R14",
+   "parentCode": "CTEPC-3.2.4",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Théories de la justice (Aristote; Utilitarisme; J. Rawls)"
+  },
+  {
+   "code": "CTEPC-3.2.4-R15",
+   "parentCode": "CTEPC-3.2.4",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Lire, comprendre et analyser un texte philosophique"
+  },
+  {
+   "code": "CTEPC-3.2.4-R16",
+   "parentCode": "CTEPC-3.2.4",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Questionner"
+  },
+  {
+   "code": "CTEPC-3.2.4-R17",
+   "parentCode": "CTEPC-3.2.4",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Conceptualiser"
+  },
+  {
+   "code": "CTEPC-3.2.4-R18",
+   "parentCode": "CTEPC-3.2.4",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Problématiser"
+  },
+  {
+   "code": "CTEPC-3.2.4-R19",
+   "parentCode": "CTEPC-3.2.4",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Prendre position de manière argumentée"
+  },
+  {
+   "code": "CTEPC-3.2.5",
+   "parentCode": "CTEPC",
+   "kind": "competence",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "UAA 3.2.5 L’État: pouvoir(s) et contre-pouvoirs"
+  },
+  {
+   "code": "CTEPC-3.2.5-C1",
+   "parentCode": "CTEPC-3.2.5",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Compétence : Problématiser le concept de pouvoir politique et les moyens d’action du citoyen en démocratie"
+  },
+  {
+   "code": "CTEPC-3.2.5-A1",
+   "parentCode": "CTEPC-3.2.5",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Conceptualiser la notion de pouvoir"
+  },
+  {
+   "code": "CTEPC-3.2.5-A2",
+   "parentCode": "CTEPC-3.2.5",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Identifier différentes formes de pouvoir en démocratie"
+  },
+  {
+   "code": "CTEPC-3.2.5-A3",
+   "parentCode": "CTEPC-3.2.5",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Identifier le rôle des acteurs institutionnalisés ou non institutionnalisés en démocratie"
+  },
+  {
+   "code": "CTEPC-3.2.5-A4",
+   "parentCode": "CTEPC-3.2.5",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Problématiser la notion d’opinion publique"
+  },
+  {
+   "code": "CTEPC-3.2.5-A5",
+   "parentCode": "CTEPC-3.2.5",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Identifier les moyens d’action légaux des citoyens en démocratie"
+  },
+  {
+   "code": "CTEPC-3.2.5-K1",
+   "parentCode": "CTEPC-3.2.5",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : Expliciter les concepts et les notions et les illustrer par un exemple"
+  },
+  {
+   "code": "CTEPC-3.2.5-K2",
+   "parentCode": "CTEPC-3.2.5",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : Énoncer quelques contre-pouvoirs et procédures de recours du citoyen"
+  },
+  {
+   "code": "CTEPC-3.2.5-R1",
+   "parentCode": "CTEPC-3.2.5",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Socles de compétences EPC : 7 ; 8"
+  },
+  {
+   "code": "CTEPC-3.2.5-R2",
+   "parentCode": "CTEPC-3.2.5",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : État, société civile, citoyen"
+  },
+  {
+   "code": "CTEPC-3.2.5-R3",
+   "parentCode": "CTEPC-3.2.5",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Séparation des pouvoirs (législatif, exécutif, judiciaire)"
+  },
+  {
+   "code": "CTEPC-3.2.5-R4",
+   "parentCode": "CTEPC-3.2.5",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Régimes politiques: démocratie, autoritarisme, totalitarisme"
+  },
+  {
+   "code": "CTEPC-3.2.5-R5",
+   "parentCode": "CTEPC-3.2.5",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Démocratie directe, représentative, participative"
+  },
+  {
+   "code": "CTEPC-3.2.5-R6",
+   "parentCode": "CTEPC-3.2.5",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Pouvoir, influence, domination"
+  },
+  {
+   "code": "CTEPC-3.2.5-R7",
+   "parentCode": "CTEPC-3.2.5",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Monopole de la violence légitime"
+  },
+  {
+   "code": "CTEPC-3.2.5-R8",
+   "parentCode": "CTEPC-3.2.5",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Lutte, conflit, résistance, indifférence"
+  },
+  {
+   "code": "CTEPC-3.2.5-R9",
+   "parentCode": "CTEPC-3.2.5",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Opinion publique"
+  },
+  {
+   "code": "CTEPC-3.2.5-R10",
+   "parentCode": "CTEPC-3.2.5",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Acteurs institutionnalisés et non institutionnalisés en Belgique et au niveau international"
+  },
+  {
+   "code": "CTEPC-3.2.5-R11",
+   "parentCode": "CTEPC-3.2.5",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Lire, comprendre et analyser un texte philosophique"
+  },
+  {
+   "code": "CTEPC-3.2.5-R12",
+   "parentCode": "CTEPC-3.2.5",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Conceptualiser"
+  },
+  {
+   "code": "CTEPC-3.2.5-R13",
+   "parentCode": "CTEPC-3.2.5",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Problématiser"
+  },
+  {
+   "code": "CTEPC-3.2.5-R14",
+   "parentCode": "CTEPC-3.2.5",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Prendre position de manière argumentée"
+  },
+  {
+   "code": "CTEPC-3.2.6",
+   "parentCode": "CTEPC",
+   "kind": "competence",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "UAA 3.2.6 Conviction, religion, politique"
+  },
+  {
+   "code": "CTEPC-3.2.6-C1",
+   "parentCode": "CTEPC-3.2.6",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Compétence : Problématiser la manière dont les convictions (religieuses ou non) s’articulent au cadre démocratique"
+  },
+  {
+   "code": "CTEPC-3.2.6-A1",
+   "parentCode": "CTEPC-3.2.6",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Conceptualiser le fait religieux"
+  },
+  {
+   "code": "CTEPC-3.2.6-A2",
+   "parentCode": "CTEPC-3.2.6",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Problématiser la manière dont les convictions (religieuses ou non) s’articulent au cadre démocratique"
+  },
+  {
+   "code": "CTEPC-3.2.6-A3",
+   "parentCode": "CTEPC-3.2.6",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Comparer les manières dont les États démocratiques organisent la laïcité politique"
+  },
+  {
+   "code": "CTEPC-3.2.6-K1",
+   "parentCode": "CTEPC-3.2.6",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : Expliciter les concepts et les notions et les illustrer par un exemple"
+  },
+  {
+   "code": "CTEPC-3.2.6-R1",
+   "parentCode": "CTEPC-3.2.6",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Socles de compétences EPC : 6 ; 8.1"
+  },
+  {
+   "code": "CTEPC-3.2.6-R2",
+   "parentCode": "CTEPC-3.2.6",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Fait religieux, spiritualité, convictions"
+  },
+  {
+   "code": "CTEPC-3.2.6-R3",
+   "parentCode": "CTEPC-3.2.6",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Religions théistes et non théistes"
+  },
+  {
+   "code": "CTEPC-3.2.6-R4",
+   "parentCode": "CTEPC-3.2.6",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Sacré/profane"
+  },
+  {
+   "code": "CTEPC-3.2.6-R5",
+   "parentCode": "CTEPC-3.2.6",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Laïcité politique"
+  },
+  {
+   "code": "CTEPC-3.2.6-R6",
+   "parentCode": "CTEPC-3.2.6",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Sécularisation"
+  },
+  {
+   "code": "CTEPC-3.2.6-R7",
+   "parentCode": "CTEPC-3.2.6",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Agnosticisme, athéisme"
+  },
+  {
+   "code": "CTEPC-3.2.6-R8",
+   "parentCode": "CTEPC-3.2.6",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Espace public, espace commun, espace privé"
+  },
+  {
+   "code": "CTEPC-3.2.6-R9",
+   "parentCode": "CTEPC-3.2.6",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Lire, comprendre et analyser un texte philosophique"
+  },
+  {
+   "code": "CTEPC-3.2.6-R10",
+   "parentCode": "CTEPC-3.2.6",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Conceptualiser"
+  },
+  {
+   "code": "CTEPC-3.2.6-R11",
+   "parentCode": "CTEPC-3.2.6",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Problématiser"
+  },
+  {
+   "code": "CTEPC-3.2.6-R12",
+   "parentCode": "CTEPC-3.2.6",
+   "kind": "attendu",
+   "subject": "Éducation à la philosophie et à la citoyenneté",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Prendre position de manière argumentée"
+  }
+ ]
+}

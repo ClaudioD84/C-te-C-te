@@ -1,0 +1,7507 @@
+{
+ "source": {
+  "title": "Compétences terminales et savoirs requis en sciences de base (humanités générales et technologiques)",
+  "url": "https://www.enseignement.be/fileadmin/portail_age/uploads/parcours_apprentissage/secondaire_ordinaire/Organisation/Contenus_apprentissages_Secondaire/competences_terminales/FORM_COM_2et3_degres_TRANSITION/2014_CT_HGT_Sciences-base.pdf",
+  "version": "2014"
+ },
+ "level": "secondaire",
+ "tracks": [
+  "general",
+  "technique",
+  "specialise"
+ ],
+ "entries": [
+  {
+   "code": "CTSB",
+   "parentCode": null,
+   "kind": "domaine",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Compétences terminales et savoirs requis en sciences de base (humanités générales et technologiques)"
+  },
+  {
+   "code": "CTSB-BIO1",
+   "parentCode": "CTSB",
+   "kind": "competence",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Biologie – Nutrition et transferts d’énergie chez les êtres vivants"
+  },
+  {
+   "code": "CTSB-BIO1-C1",
+   "parentCode": "CTSB-BIO1",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Compétence : Expliquer les rôles fondamentaux de la photosynthèse à partir d’un écosystème concret."
+  },
+  {
+   "code": "CTSB-BIO1-C2",
+   "parentCode": "CTSB-BIO1",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Compétence : Expliquer les mécanismes de digestion des aliments et de production d’énergie chez les hétérotrophes."
+  },
+  {
+   "code": "CTSB-BIO1-C3",
+   "parentCode": "CTSB-BIO1",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Compétence : Expliquer les bases qualitative et quantitative d’une alimentation équilibrée."
+  },
+  {
+   "code": "CTSB-BIO1-A1",
+   "parentCode": "CTSB-BIO1",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Appliquer : Identifier sur base d’une expérience les facteurs principaux (lumière, gaz carbonique, eau) qui favorisent la photosynthèse."
+  },
+  {
+   "code": "CTSB-BIO1-A2",
+   "parentCode": "CTSB-BIO1",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Appliquer : Mettre en évidence l’équivalence de la fonction de respiration chez les végétaux verts et chez les animaux."
+  },
+  {
+   "code": "CTSB-BIO1-A3",
+   "parentCode": "CTSB-BIO1",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Appliquer : Interpréter une expérience de digestion d’un aliment (par exemple : du pain, du blanc d’œuf,…) à l’aide d’un test d’identification."
+  },
+  {
+   "code": "CTSB-BIO1-A4",
+   "parentCode": "CTSB-BIO1",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Appliquer : Utiliser des tables pour calculer une ration alimentaire."
+  },
+  {
+   "code": "CTSB-BIO1-T1",
+   "parentCode": "CTSB-BIO1",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Transférer : Expliquer (modéliser) le rôle indispensable des végétaux pour le développement et le maintien d’un écosystème."
+  },
+  {
+   "code": "CTSB-BIO1-T2",
+   "parentCode": "CTSB-BIO1",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Transférer : Analyser et critiquer les menus d’une journée en se référant à des tables diététiques, aux règles des diététiciens et en tenant compte des activités réalisées au cours de la journée (par exemple : personne sédentaire, sportif de haut niveau, …)."
+  },
+  {
+   "code": "CTSB-BIO1-T3",
+   "parentCode": "CTSB-BIO1",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Transférer : A partir de documents, relier le déséquilibre entre apports et dépenses énergétiques à des problèmes de santé."
+  },
+  {
+   "code": "CTSB-BIO1-K1",
+   "parentCode": "CTSB-BIO1",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Connaître : La photosynthèse"
+  },
+  {
+   "code": "CTSB-BIO1-K2",
+   "parentCode": "CTSB-BIO1",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Connaître : Citer et décrire les rôles des principaux facteurs intervenant dans la photosynthèse."
+  },
+  {
+   "code": "CTSB-BIO1-K3",
+   "parentCode": "CTSB-BIO1",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Connaître : Décrire la transformation chimique qui traduit la respiration cellulaire photosynthèse chez les autotrophes."
+  },
+  {
+   "code": "CTSB-BIO1-K4",
+   "parentCode": "CTSB-BIO1",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Connaître : Respiration"
+  },
+  {
+   "code": "CTSB-BIO1-K5",
+   "parentCode": "CTSB-BIO1",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Connaître : Décrire la transformation chimique qui traduit la respiration cellulaire chez les autotrophes et les hétérotrophes."
+  },
+  {
+   "code": "CTSB-BIO1-K6",
+   "parentCode": "CTSB-BIO1",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Connaître : Alimentation humaine"
+  },
+  {
+   "code": "CTSB-BIO1-K7",
+   "parentCode": "CTSB-BIO1",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Connaître : Caractériser les trois rôles essentiels et complémentaires des nutriments."
+  },
+  {
+   "code": "CTSB-BIO1-K8",
+   "parentCode": "CTSB-BIO1",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Connaître : Expliquer à partir de documents, l’action des enzymes et des sucs digestifs sur la digestion des glucides, des protéines et des lipides au cours de la digestion."
+  },
+  {
+   "code": "CTSB-BIO1-K9",
+   "parentCode": "CTSB-BIO1",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Connaître : Expliquer l’absorption des nutriments, à partir de documents."
+  },
+  {
+   "code": "CTSB-BIO1-K10",
+   "parentCode": "CTSB-BIO1",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Connaître : Définir les règles de base d’une alimentation équilibrée."
+  },
+  {
+   "code": "CTSB-BIO1-R1",
+   "parentCode": "CTSB-BIO1",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Ressource : Autotrophes"
+  },
+  {
+   "code": "CTSB-BIO1-R2",
+   "parentCode": "CTSB-BIO1",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Ressource : Hétérotrophes"
+  },
+  {
+   "code": "CTSB-BIO1-R3",
+   "parentCode": "CTSB-BIO1",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Ressource : Rôles des nutriments (plastique, énergétique et fonctionnel)"
+  },
+  {
+   "code": "CTSB-BIO1-R4",
+   "parentCode": "CTSB-BIO1",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Ressource : Photosynthèse"
+  },
+  {
+   "code": "CTSB-BIO1-R5",
+   "parentCode": "CTSB-BIO1",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Ressource : Respirationcellulaire"
+  },
+  {
+   "code": "CTSB-BIO1-R6",
+   "parentCode": "CTSB-BIO1",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Ressource : Transformations chimiques des aliments en nutriments"
+  },
+  {
+   "code": "CTSB-BIO1-R7",
+   "parentCode": "CTSB-BIO1",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Ressource : Règles simples de diététique"
+  },
+  {
+   "code": "CTSB-BIO1-R8",
+   "parentCode": "CTSB-BIO1",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Ressource : Ration alimentaire"
+  },
+  {
+   "code": "CTSB-BIO1-R9",
+   "parentCode": "CTSB-BIO1",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Ressource : Sucs digestifs"
+  },
+  {
+   "code": "CTSB-BIO1-R10",
+   "parentCode": "CTSB-BIO1",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Ressource : Enzymes digestives"
+  },
+  {
+   "code": "CTSB-BIO1-R11",
+   "parentCode": "CTSB-BIO1",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Ressource : Extraire des informations à partir d’une table de valeurs énergétiques des aliments."
+  },
+  {
+   "code": "CTSB-BIO2",
+   "parentCode": "CTSB",
+   "kind": "competence",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Biologie – L’écosystème en équilibre ?"
+  },
+  {
+   "code": "CTSB-BIO2-C1",
+   "parentCode": "CTSB-BIO2",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Compétence : Retrouver la multiplicité des facteurs et expliquer les relations qui interviennent dans un écosystème en état d’équilibre dynamique."
+  },
+  {
+   "code": "CTSB-BIO2-A1",
+   "parentCode": "CTSB-BIO2",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Appliquer : A partir de documents (photographies, vidéos,…), retrouver et caractériser, dans un écosystème donné : des relations inter-spécifiques entre les êtres vivants"
+  },
+  {
+   "code": "CTSB-BIO2-A2",
+   "parentCode": "CTSB-BIO2",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Appliquer : A partir de documents (photographies, vidéos,…), retrouver et caractériser, dans un écosystème donné : des relations intra-spécifiques entre les êtres vivants"
+  },
+  {
+   "code": "CTSB-BIO2-A3",
+   "parentCode": "CTSB-BIO2",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Appliquer : A partir de documents (photographies, vidéos,…), retrouver et caractériser, dans un écosystème donné : des relations entre les êtres vivants et leur biotope."
+  },
+  {
+   "code": "CTSB-BIO2-A4",
+   "parentCode": "CTSB-BIO2",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Appliquer : Montrer à l’aide de différents réseaux trophiques le lien entre la diversité des espèces et la stabilité d’un écosystème."
+  },
+  {
+   "code": "CTSB-BIO2-T1",
+   "parentCode": "CTSB-BIO2",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Transférer : Par le biais d’une approche expérimentale, analyser un écosystème simple (par exemple : la haie, la mare, le chêne, l’aquarium,...) et expliquer comment l’écosystème tend vers un état d’équilibre."
+  },
+  {
+   "code": "CTSB-BIO2-K1",
+   "parentCode": "CTSB-BIO2",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Connaître : Distinguer à partir de l’observation d’un milieu de vie, les notions de biotope, de biocénose et d’écosystème."
+  },
+  {
+   "code": "CTSB-BIO2-K2",
+   "parentCode": "CTSB-BIO2",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Connaître : Distinguer les facteurs biotiques et les facteurs abiotiques."
+  },
+  {
+   "code": "CTSB-BIO2-K3",
+   "parentCode": "CTSB-BIO2",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Connaître : Représenter le cycle bio-géo-chimique du carbone."
+  },
+  {
+   "code": "CTSB-BIO2-K4",
+   "parentCode": "CTSB-BIO2",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Connaître : Schématiser les transferts d’énergie et de matière de matière et les flux d'énergie dans un réseau trophique simple."
+  },
+  {
+   "code": "CTSB-BIO2-R1",
+   "parentCode": "CTSB-BIO2",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Ressource : Espèce"
+  },
+  {
+   "code": "CTSB-BIO2-R2",
+   "parentCode": "CTSB-BIO2",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Ressource : Biotope"
+  },
+  {
+   "code": "CTSB-BIO2-R3",
+   "parentCode": "CTSB-BIO2",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Ressource : Biocénose"
+  },
+  {
+   "code": "CTSB-BIO2-R4",
+   "parentCode": "CTSB-BIO2",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Ressource : Ecosystème"
+  },
+  {
+   "code": "CTSB-BIO2-R5",
+   "parentCode": "CTSB-BIO2",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Ressource : Facteurs biotiques et abiotiques"
+  },
+  {
+   "code": "CTSB-BIO2-R6",
+   "parentCode": "CTSB-BIO2",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Ressource : Relations inter-spécifiques entre les vivants (par exemple : parasitisme, commensalisme, symbiose, mutualisme, prédation)"
+  },
+  {
+   "code": "CTSB-BIO2-R7",
+   "parentCode": "CTSB-BIO2",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Ressource : Relations intra-spécifiques entre les vivants (par exemple : compétition, coopération)"
+  },
+  {
+   "code": "CTSB-BIO2-R8",
+   "parentCode": "CTSB-BIO2",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Ressource : Transferts de matière et flux d’énergie"
+  },
+  {
+   "code": "CTSB-BIO2-R9",
+   "parentCode": "CTSB-BIO2",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Ressource : Cycle du carbone"
+  },
+  {
+   "code": "CTSB-BIO2-R10",
+   "parentCode": "CTSB-BIO2",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Ressource : Réaliser un bilan fonctionnel."
+  },
+  {
+   "code": "CTSB-BIO3",
+   "parentCode": "CTSB",
+   "kind": "competence",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Biologie – Unité et diversité des êtres vivants"
+  },
+  {
+   "code": "CTSB-BIO3-C1",
+   "parentCode": "CTSB-BIO3",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Compétence : Malgré leur extraordinaire diversité, mettre en évidence les ressemblances (moléculaires, cellulaires) entre les êtres vivants et induire que ces êtres vivants ont une origine commune."
+  },
+  {
+   "code": "CTSB-BIO3-C2",
+   "parentCode": "CTSB-BIO3",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Compétence : Expliquer que la molécule d’ADN contient l’information génétique."
+  },
+  {
+   "code": "CTSB-BIO3-C3",
+   "parentCode": "CTSB-BIO3",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Compétence : Expliquer l’universalité et la variabilité de l’ADN."
+  },
+  {
+   "code": "CTSB-BIO3-C4",
+   "parentCode": "CTSB-BIO3",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Compétence : A partir de l’observation des modifications de la biodiversité au cours du temps, émettre une première explication sur la manière dont les espèces évoluent (sélection naturelle)."
+  },
+  {
+   "code": "CTSB-BIO3-A1",
+   "parentCode": "CTSB-BIO3",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Appliquer : Comparer les tailles relatives (par exemple : d’une cellule animale, d’une cellule végétale, d’une bactérie et d’une molécule d’eau)."
+  },
+  {
+   "code": "CTSB-BIO3-A2",
+   "parentCode": "CTSB-BIO3",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Appliquer : Identifier les chromosomes au cours de la mitose sur des images de coupe de microscope optique."
+  },
+  {
+   "code": "CTSB-BIO3-A3",
+   "parentCode": "CTSB-BIO3",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Appliquer : Comparer des photographies de caryotypes provenant de cellules différentes"
+  },
+  {
+   "code": "CTSB-BIO3-A4",
+   "parentCode": "CTSB-BIO3",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Appliquer : Résoudre un problème simple de monohybridisme."
+  },
+  {
+   "code": "CTSB-BIO3-T1",
+   "parentCode": "CTSB-BIO3",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Transférer : Comparer l’organisation de membres antérieurs de vertébrés et décrire les caractéristiques probables du membre antérieur de leur ancêtre commun."
+  },
+  {
+   "code": "CTSB-BIO3-T2",
+   "parentCode": "CTSB-BIO3",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Transférer : Sur base de l’analyse de documents, expliquer comment évoluent les espèces (par exemple : les pinsons des îles Galápagos, les moustiques du métro de Londres, ….)."
+  },
+  {
+   "code": "CTSB-BIO3-T3",
+   "parentCode": "CTSB-BIO3",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Transférer : A partir de l’analyse de résultats expérimentaux montrant les variations de la quantité d’ADN au cours du cycle cellulaire, interpréter un graphique de l’évolution de la quantité d’ADN au cours du temps."
+  },
+  {
+   "code": "CTSB-BIO3-K1",
+   "parentCode": "CTSB-BIO3",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Connaître : Sur base de l’observation au microscope optique, modéliser et comparer des cellules végétale, animale et bactérienne."
+  },
+  {
+   "code": "CTSB-BIO3-K2",
+   "parentCode": "CTSB-BIO3",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Connaître : A partir de documents, identifier les éléments chimiques caractéristiques (C, H, O, N) des molécules qui constituent les êtres vivants (eau et macromolécules organiques (protéines, glucides, ADN, lipides))."
+  },
+  {
+   "code": "CTSB-BIO3-K3",
+   "parentCode": "CTSB-BIO3",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Connaître : Suite aux similitudes cellulaires et moléculaires observées chez les êtres vivants, émettre l’hypothèse qu’ils sont issus d’un ancêtre commun."
+  },
+  {
+   "code": "CTSB-BIO3-K4",
+   "parentCode": "CTSB-BIO3",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Connaître : Réaliser une représentation schématique de la molécule d’ADN (échelle torsadée) à partir de documents."
+  },
+  {
+   "code": "CTSB-BIO3-K5",
+   "parentCode": "CTSB-BIO3",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Connaître : Décrire une expérience de transgénèse qui montre que l’ADN est une molécule contenant une information universelle."
+  },
+  {
+   "code": "CTSB-BIO3-K6",
+   "parentCode": "CTSB-BIO3",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Connaître : Etablir le lien entre chromosomes, ADN et information génétique."
+  },
+  {
+   "code": "CTSB-BIO3-K7",
+   "parentCode": "CTSB-BIO3",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Connaître : Identifier les origines des mutations."
+  },
+  {
+   "code": "CTSB-BIO3-K8",
+   "parentCode": "CTSB-BIO3",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Connaître : Décrire les phases du cycle cellulaire et expliquer le rôle de la mitose."
+  },
+  {
+   "code": "CTSB-BIO3-K9",
+   "parentCode": "CTSB-BIO3",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Connaître : Expliquer les rôles de la méiose et de la fécondation quant à la diversité génétique."
+  },
+  {
+   "code": "CTSB-BIO3-K10",
+   "parentCode": "CTSB-BIO3",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Connaître : Expliquer comment on caractérise une espèce."
+  },
+  {
+   "code": "CTSB-BIO3-K11",
+   "parentCode": "CTSB-BIO3",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Connaître : Mettre en parallèle les observations de Mendel (expérience de monohybridisme) et la formation des gamètes lors de la méiose."
+  },
+  {
+   "code": "CTSB-BIO3-K12",
+   "parentCode": "CTSB-BIO3",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Connaître : Décrire les trois niveaux de biodiversité (niveaux de la génétique, des espèces et des écosystèmes, à partir de différentes observations)."
+  },
+  {
+   "code": "CTSB-BIO3-K13",
+   "parentCode": "CTSB-BIO3",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Connaître : Montrer, sur une ligne du temps, les grandes crises subies par la biodiversité et rechercher pour une crise en particulier les causes supposées."
+  },
+  {
+   "code": "CTSB-BIO3-K14",
+   "parentCode": "CTSB-BIO3",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Connaître : Expliquer comment la sélection naturelle influence l’évolution d’une espèce."
+  },
+  {
+   "code": "CTSB-BIO3-R1",
+   "parentCode": "CTSB-BIO3",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Ressource : Cellule végétale"
+  },
+  {
+   "code": "CTSB-BIO3-R2",
+   "parentCode": "CTSB-BIO3",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Ressource : Cellule animale"
+  },
+  {
+   "code": "CTSB-BIO3-R3",
+   "parentCode": "CTSB-BIO3",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Ressource : Cellule bactérienne"
+  },
+  {
+   "code": "CTSB-BIO3-R4",
+   "parentCode": "CTSB-BIO3",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Ressource : Structure cellulaire (paroi cellulosique, membrane cytoplasmique, vacuole, noyau, chloroplastes)"
+  },
+  {
+   "code": "CTSB-BIO3-R5",
+   "parentCode": "CTSB-BIO3",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Ressource : Macromolécules organiques (glucides, protéines, lipides, ADN)"
+  },
+  {
+   "code": "CTSB-BIO3-R6",
+   "parentCode": "CTSB-BIO3",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Ressource : Information génétique (ADN – chromosomeschromatine)"
+  },
+  {
+   "code": "CTSB-BIO3-R7",
+   "parentCode": "CTSB-BIO3",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Ressource : Gène (unité d’information) et allèles"
+  },
+  {
+   "code": "CTSB-BIO3-R8",
+   "parentCode": "CTSB-BIO3",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Ressource : Nucléotide"
+  },
+  {
+   "code": "CTSB-BIO3-R9",
+   "parentCode": "CTSB-BIO3",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Ressource : Mutation"
+  },
+  {
+   "code": "CTSB-BIO3-R10",
+   "parentCode": "CTSB-BIO3",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Ressource : Cycle cellulaire (réplication de l’ADN, mitose)"
+  },
+  {
+   "code": "CTSB-BIO3-R11",
+   "parentCode": "CTSB-BIO3",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Ressource : Caryotype"
+  },
+  {
+   "code": "CTSB-BIO3-R12",
+   "parentCode": "CTSB-BIO3",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Ressource : Méiose"
+  },
+  {
+   "code": "CTSB-BIO3-R13",
+   "parentCode": "CTSB-BIO3",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Ressource : Espèce"
+  },
+  {
+   "code": "CTSB-BIO3-R14",
+   "parentCode": "CTSB-BIO3",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Ressource : Monohybridisme"
+  },
+  {
+   "code": "CTSB-BIO3-R15",
+   "parentCode": "CTSB-BIO3",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Ressource : Biodiversité"
+  },
+  {
+   "code": "CTSB-BIO3-R16",
+   "parentCode": "CTSB-BIO3",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Ressource : Chronologie de l’évolution"
+  },
+  {
+   "code": "CTSB-BIO3-R17",
+   "parentCode": "CTSB-BIO3",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Ressource : Ancêtre commun hypothétique"
+  },
+  {
+   "code": "CTSB-BIO3-R18",
+   "parentCode": "CTSB-BIO3",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Ressource : Sélection naturelle"
+  },
+  {
+   "code": "CTSB-BIO3-R19",
+   "parentCode": "CTSB-BIO3",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Ressource : Utiliser un microscope optique."
+  },
+  {
+   "code": "CTSB-BIO3-R20",
+   "parentCode": "CTSB-BIO3",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Ressource : Calculer le grossissement."
+  },
+  {
+   "code": "CTSB-BIO3-R21",
+   "parentCode": "CTSB-BIO3",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Ressource : Réaliser un croquis d’observation et l’annoter."
+  },
+  {
+   "code": "CTSB-BIO3-R22",
+   "parentCode": "CTSB-BIO3",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Ressource : Evaluer l’ordre de grandeur d’une cellule."
+  },
+  {
+   "code": "CTSB-BIO3-R23",
+   "parentCode": "CTSB-BIO3",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Ressource : Extraire des informations de photographies réalisées au microscope optique."
+  },
+  {
+   "code": "CTSB-BIO3-R24",
+   "parentCode": "CTSB-BIO3",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Ressource : Comparer des schémas. de cellule"
+  },
+  {
+   "code": "CTSB-CHI1",
+   "parentCode": "CTSB",
+   "kind": "competence",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Chimie – Constitution et classification de la matière"
+  },
+  {
+   "code": "CTSB-CHI1-C1",
+   "parentCode": "CTSB-CHI1",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Compétence : Décrire et modéliser les différents niveaux d’organisation de la matière."
+  },
+  {
+   "code": "CTSB-CHI1-C2",
+   "parentCode": "CTSB-CHI1",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Compétence : Analyser le tableau périodique des éléments pour en extraire des informations pertinentes."
+  },
+  {
+   "code": "CTSB-CHI1-A1",
+   "parentCode": "CTSB-CHI1",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Appliquer : Schématiser un atome selon un modèle atomique déterminé."
+  },
+  {
+   "code": "CTSB-CHI1-A2",
+   "parentCode": "CTSB-CHI1",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Appliquer : Extraire du tableau périodique des éléments les informations utiles pour : estimer la masse atomique relative d’un élément"
+  },
+  {
+   "code": "CTSB-CHI1-A3",
+   "parentCode": "CTSB-CHI1",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Appliquer : Extraire du tableau périodique des éléments les informations utiles pour : modéliser la répartition des particules subatomiques selon le modèle de Bohr."
+  },
+  {
+   "code": "CTSB-CHI1-A4",
+   "parentCode": "CTSB-CHI1",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Appliquer : Préparer une solution de concentration massique donnée."
+  },
+  {
+   "code": "CTSB-CHI1-T1",
+   "parentCode": "CTSB-CHI1",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Transférer : A partir des propriétés macroscopiques d’un corps pur simple, analyser la localisation de l’élément correspondant dans le tableau périodique des éléments."
+  },
+  {
+   "code": "CTSB-CHI1-K1",
+   "parentCode": "CTSB-CHI1",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Connaître : Modéliser un objet ou un matériau comme un ensemble de molécules ou d’atomes (lien macroscopique – microscopique)."
+  },
+  {
+   "code": "CTSB-CHI1-K2",
+   "parentCode": "CTSB-CHI1",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Connaître : Expliciter la composition d’une molécule, d’un atome, d’un ion."
+  },
+  {
+   "code": "CTSB-CHI1-K3",
+   "parentCode": "CTSB-CHI1",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Connaître : Décrire le concept de modèle à partir de l’histoire du modèle atomique."
+  },
+  {
+   "code": "CTSB-CHI1-K4",
+   "parentCode": "CTSB-CHI1",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Connaître : Décrire les qualités, les limites et le caractère évolutif d’une théorie scientifique à partir de l’histoire de la théorie atomique."
+  },
+  {
+   "code": "CTSB-CHI1-K5",
+   "parentCode": "CTSB-CHI1",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Connaître : Connaître les symboles des 20 premiers éléments du tableau périodique des éléments plus ceux des métaux usuels (pas d’étude exhaustive)."
+  },
+  {
+   "code": "CTSB-CHI1-K6",
+   "parentCode": "CTSB-CHI1",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Connaître : Décrire des corps purs simples et des corps purs composés. Fournir des exemples d’utilisation de ceux-ci dans la vie courante."
+  },
+  {
+   "code": "CTSB-CHI1-K7",
+   "parentCode": "CTSB-CHI1",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Connaître : Repérer des propriétés chimiques analogues (par exemple : réactions avec l’eau, avec un acide, avec l’oxygène,…) au sein d’une famille."
+  },
+  {
+   "code": "CTSB-CHI1-K8",
+   "parentCode": "CTSB-CHI1",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Connaître : Illustrer le concept d’ion au travers d’une situation expérimentale ou quotidienne."
+  },
+  {
+   "code": "CTSB-CHI1-K9",
+   "parentCode": "CTSB-CHI1",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Connaître : Relier l’électronégativité d’un ensemble d’éléments et leur caractère métallique."
+  },
+  {
+   "code": "CTSB-CHI1-K10",
+   "parentCode": "CTSB-CHI1",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Connaître : Percevoir les limites d’un modèle (sur base de l’histoire de la théorie atomique)."
+  },
+  {
+   "code": "CTSB-CHI1-K11",
+   "parentCode": "CTSB-CHI1",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Connaître : Stratégie transversale"
+  },
+  {
+   "code": "CTSB-CHI1-R1",
+   "parentCode": "CTSB-CHI1",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Ressource : Objets macroscopiques"
+  },
+  {
+   "code": "CTSB-CHI1-R2",
+   "parentCode": "CTSB-CHI1",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Ressource : Corps pur simple, composé"
+  },
+  {
+   "code": "CTSB-CHI1-R3",
+   "parentCode": "CTSB-CHI1",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Ressource : Mélange"
+  },
+  {
+   "code": "CTSB-CHI1-R4",
+   "parentCode": "CTSB-CHI1",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Ressource : Solvant, solution, soluté"
+  },
+  {
+   "code": "CTSB-CHI1-R5",
+   "parentCode": "CTSB-CHI1",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Ressource : Métaux, non-métaux"
+  },
+  {
+   "code": "CTSB-CHI1-R6",
+   "parentCode": "CTSB-CHI1",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Ressource : Elément"
+  },
+  {
+   "code": "CTSB-CHI1-R7",
+   "parentCode": "CTSB-CHI1",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Ressource : Objets microscopiques"
+  },
+  {
+   "code": "CTSB-CHI1-R8",
+   "parentCode": "CTSB-CHI1",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Ressource : Espèce chimique"
+  },
+  {
+   "code": "CTSB-CHI1-R9",
+   "parentCode": "CTSB-CHI1",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Ressource : Molécule"
+  },
+  {
+   "code": "CTSB-CHI1-R10",
+   "parentCode": "CTSB-CHI1",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Ressource : Atome (modèles de Dalton, Thomson, Rutherford, Rutherford-Chadwick, Bohr)"
+  },
+  {
+   "code": "CTSB-CHI1-R11",
+   "parentCode": "CTSB-CHI1",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Ressource : Ion"
+  },
+  {
+   "code": "CTSB-CHI1-R12",
+   "parentCode": "CTSB-CHI1",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Ressource : Charge, proton, neutron, électron"
+  },
+  {
+   "code": "CTSB-CHI1-R13",
+   "parentCode": "CTSB-CHI1",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Ressource : Atomes, éléments, familles"
+  },
+  {
+   "code": "CTSB-CHI1-R14",
+   "parentCode": "CTSB-CHI1",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Ressource : Masse atomique relative"
+  },
+  {
+   "code": "CTSB-CHI1-R15",
+   "parentCode": "CTSB-CHI1",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Ressource : Nombre atomique"
+  },
+  {
+   "code": "CTSB-CHI1-R16",
+   "parentCode": "CTSB-CHI1",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Ressource : Symbolisme"
+  },
+  {
+   "code": "CTSB-CHI1-R17",
+   "parentCode": "CTSB-CHI1",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Ressource : Nomenclature atomique"
+  },
+  {
+   "code": "CTSB-CHI1-R18",
+   "parentCode": "CTSB-CHI1",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Ressource : Electronégativité"
+  },
+  {
+   "code": "CTSB-CHI1-R19",
+   "parentCode": "CTSB-CHI1",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Ressource : Phénomène chimique"
+  },
+  {
+   "code": "CTSB-CHI1-R20",
+   "parentCode": "CTSB-CHI1",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Ressource : Concentration massique"
+  },
+  {
+   "code": "CTSB-CHI1-R21",
+   "parentCode": "CTSB-CHI1",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Ressource : Calculer la concentration massique d’une solution."
+  },
+  {
+   "code": "CTSB-CHI1-R22",
+   "parentCode": "CTSB-CHI1",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Ressource : Distinguer un métal d’un non-métal à l’aide du tableau périodique des éléments."
+  },
+  {
+   "code": "CTSB-CHI1-R23",
+   "parentCode": "CTSB-CHI1",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Ressource : Extraire les informations (nombre de protons, de neutrons et d’électrons, électronégativité, masse atomique relative) du tableau périodique des éléments."
+  },
+  {
+   "code": "CTSB-CHI2",
+   "parentCode": "CTSB",
+   "kind": "competence",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Chimie – La réaction chimique : approche qualitative"
+  },
+  {
+   "code": "CTSB-CHI2-C1",
+   "parentCode": "CTSB-CHI2",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Compétence : Réaction chimique : A partir de l’observation d’un phénomène chimique, décrire le réarrangement moléculaire et traduire la réaction chimique par une équation pondérée."
+  },
+  {
+   "code": "CTSB-CHI2-C2",
+   "parentCode": "CTSB-CHI2",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Compétence : Fonction chimique : A partir d’expériences et de propriétés observables, classer les espèces moléculaires selon leur fonction chimique."
+  },
+  {
+   "code": "CTSB-CHI2-C3",
+   "parentCode": "CTSB-CHI2",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Compétence : Fonction chimique : Expliquer des propriétés de substances usuelles en lien avec leur fonction chimique."
+  },
+  {
+   "code": "CTSB-CHI2-A1",
+   "parentCode": "CTSB-CHI2",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Appliquer : A partir d’informations du tableau périodique des éléments, construire une formule moléculaire sans nommer la molécule."
+  },
+  {
+   "code": "CTSB-CHI2-A2",
+   "parentCode": "CTSB-CHI2",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Appliquer : Identifier une réaction et pondérer l’équation correspondante : de combustion des métaux, des non-métaux"
+  },
+  {
+   "code": "CTSB-CHI2-A3",
+   "parentCode": "CTSB-CHI2",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Appliquer : Identifier une réaction et pondérer l’équation correspondante : de neutralisation"
+  },
+  {
+   "code": "CTSB-CHI2-A4",
+   "parentCode": "CTSB-CHI2",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Appliquer : Identifier une réaction et pondérer l’équation correspondante : entre un acide et un métal"
+  },
+  {
+   "code": "CTSB-CHI2-A5",
+   "parentCode": "CTSB-CHI2",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Appliquer : Identifier une réaction et pondérer l’équation correspondante : entre un oxyde et l’eau."
+  },
+  {
+   "code": "CTSB-CHI2-A6",
+   "parentCode": "CTSB-CHI2",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Appliquer : Associer une formule chimique à une fonction chimique."
+  },
+  {
+   "code": "CTSB-CHI2-T1",
+   "parentCode": "CTSB-CHI2",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Transférer : Traduire en une équation chimique un phénomène chimique montré ou décrit."
+  },
+  {
+   "code": "CTSB-CHI2-T2",
+   "parentCode": "CTSB-CHI2",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Transférer : Expliquer la présence de pictogrammes de danger en lien avec la fonction chimique du réactif."
+  },
+  {
+   "code": "CTSB-CHI2-K1",
+   "parentCode": "CTSB-CHI2",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Connaître : Distinguer l’action de mélanger aboutissant à : un mélange"
+  },
+  {
+   "code": "CTSB-CHI2-K2",
+   "parentCode": "CTSB-CHI2",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Connaître : Distinguer l’action de mélanger aboutissant à : une transformation chimique."
+  },
+  {
+   "code": "CTSB-CHI2-K3",
+   "parentCode": "CTSB-CHI2",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Connaître : Décrire une transformation chimique sous forme d’une équation moléculaire."
+  },
+  {
+   "code": "CTSB-CHI2-K4",
+   "parentCode": "CTSB-CHI2",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Connaître : Décrire à l’aide d’une équation chimique pondérée la respiration cellulaire."
+  },
+  {
+   "code": "CTSB-CHI2-K5",
+   "parentCode": "CTSB-CHI2",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Connaître : Décrire à l’aide d’une équation chimique pondérée la photosynthèse."
+  },
+  {
+   "code": "CTSB-CHI2-K6",
+   "parentCode": "CTSB-CHI2",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Connaître : Décrire le phénomène d’ionisation de dissociation ionique (par exemple la dissociation ionique d’un sel) sous forme d’une équation de dissociation ionique."
+  },
+  {
+   "code": "CTSB-CHI2-K7",
+   "parentCode": "CTSB-CHI2",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Connaître : Identifier les pictogrammes de danger liés à des substances usuelles."
+  },
+  {
+   "code": "CTSB-CHI2-R1",
+   "parentCode": "CTSB-CHI2",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Ressource : Phénomène chimique : Transformation chimique (observation empirique d’un phénomène chimique)"
+  },
+  {
+   "code": "CTSB-CHI2-R2",
+   "parentCode": "CTSB-CHI2",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Ressource : Phénomène chimique : Réaction chimique (interprétation moléculaire, ionique,… d’un phénomène chimique."
+  },
+  {
+   "code": "CTSB-CHI2-R3",
+   "parentCode": "CTSB-CHI2",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Ressource : Phénomène chimique : Equation chimique"
+  },
+  {
+   "code": "CTSB-CHI2-R4",
+   "parentCode": "CTSB-CHI2",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Ressource : Réactifs, produits"
+  },
+  {
+   "code": "CTSB-CHI2-R5",
+   "parentCode": "CTSB-CHI2",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Ressource : Coefficients stœchiométriques"
+  },
+  {
+   "code": "CTSB-CHI2-R6",
+   "parentCode": "CTSB-CHI2",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Ressource : Indices"
+  },
+  {
+   "code": "CTSB-CHI2-R7",
+   "parentCode": "CTSB-CHI2",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Ressource : Fonction chimique (acide, base, sel, oxyde)"
+  },
+  {
+   "code": "CTSB-CHI2-R8",
+   "parentCode": "CTSB-CHI2",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Ressource : Valence et/ou état d’oxydation"
+  },
+  {
+   "code": "CTSB-CHI2-R9",
+   "parentCode": "CTSB-CHI2",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Ressource : Pictogrammes de danger"
+  },
+  {
+   "code": "CTSB-CHI2-R10",
+   "parentCode": "CTSB-CHI2",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Ressource : Ecrire une équation chimique."
+  },
+  {
+   "code": "CTSB-CHI2-R11",
+   "parentCode": "CTSB-CHI2",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Ressource : Pondérer une équation chimique."
+  },
+  {
+   "code": "CTSB-CHI2-R12",
+   "parentCode": "CTSB-CHI2",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Ressource : Extraire les informations (valence, état d’oxydation) du tableau périodique des éléments."
+  },
+  {
+   "code": "CTSB-CHI3",
+   "parentCode": "CTSB",
+   "kind": "competence",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Chimie – La réaction chimique : approche quantitative"
+  },
+  {
+   "code": "CTSB-CHI3-C1",
+   "parentCode": "CTSB-CHI3",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Compétence : Résoudre des problèmes de stœchiométrie dans le cas de réactions complètes avec les réactifs en quantités stœchiométriques."
+  },
+  {
+   "code": "CTSB-CHI3-A1",
+   "parentCode": "CTSB-CHI3",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Appliquer : Préparer une solution de concentration molaire déterminée."
+  },
+  {
+   "code": "CTSB-CHI3-A2",
+   "parentCode": "CTSB-CHI3",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Appliquer : Calculer une concentration molaire à partir d’une concentration massique."
+  },
+  {
+   "code": "CTSB-CHI3-A3",
+   "parentCode": "CTSB-CHI3",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Appliquer : A partir d’informations du tableau périodique des éléments, construire une formule moléculaire et nommer la substance correspondante."
+  },
+  {
+   "code": "CTSB-CHI3-T1",
+   "parentCode": "CTSB-CHI3",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Transférer : Résoudre en exploitant le concept de mole des problèmes de stœchiométrie dans le cas de réactions complètes avec les réactifs en quantités stœchiométriques."
+  },
+  {
+   "code": "CTSB-CHI3-T2",
+   "parentCode": "CTSB-CHI3",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Transférer : Déterminer expérimentalement le nombre de molécules d’eau associées à un composé hydraté (par exemple : sulfate de cuivre, alun, …)."
+  },
+  {
+   "code": "CTSB-CHI3-K1",
+   "parentCode": "CTSB-CHI3",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Connaître : Décrire le nombre d’Avogadro comme interface entre la réaction chimique (dimension microscopique) et la transformation chimique (dimension macroscopique)."
+  },
+  {
+   "code": "CTSB-CHI3-K2",
+   "parentCode": "CTSB-CHI3",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Connaître : Décrire la mole comme un outil permettant au chimiste de lier les champs macroscopique et microscopique."
+  },
+  {
+   "code": "CTSB-CHI3-R1",
+   "parentCode": "CTSB-CHI3",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Ressource : Loi de Lavoisier"
+  },
+  {
+   "code": "CTSB-CHI3-R2",
+   "parentCode": "CTSB-CHI3",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Ressource : Masse moléculaire relative"
+  },
+  {
+   "code": "CTSB-CHI3-R3",
+   "parentCode": "CTSB-CHI3",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Ressource : Mole, nombre d’Avogadro, masse molaire"
+  },
+  {
+   "code": "CTSB-CHI3-R4",
+   "parentCode": "CTSB-CHI3",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Ressource : Unités de masse et de volume"
+  },
+  {
+   "code": "CTSB-CHI3-R5",
+   "parentCode": "CTSB-CHI3",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Ressource : Volume molaire d’un gaz (CNTP)"
+  },
+  {
+   "code": "CTSB-CHI3-R6",
+   "parentCode": "CTSB-CHI3",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Ressource : Concentration molaire"
+  },
+  {
+   "code": "CTSB-CHI3-R7",
+   "parentCode": "CTSB-CHI3",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Ressource : Nomenclature IUPAC des acides, des hydroxydes, des sels, des oxydes"
+  },
+  {
+   "code": "CTSB-CHI3-R8",
+   "parentCode": "CTSB-CHI3",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Ressource : Mesurer des masses et des volumes."
+  },
+  {
+   "code": "CTSB-CHI3-R9",
+   "parentCode": "CTSB-CHI3",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Ressource : Utiliser les unités SI des grandeurs (masse, volume, quantité de matière)."
+  },
+  {
+   "code": "CTSB-CHI3-R10",
+   "parentCode": "CTSB-CHI3",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Ressource : Vérifier la cohérence des unités (masse, volume, quantité de matière) et le cas échéant les transformer."
+  },
+  {
+   "code": "CTSB-CHI3-R11",
+   "parentCode": "CTSB-CHI3",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Ressource : Calculer une masse molaire."
+  },
+  {
+   "code": "CTSB-CHI3-R12",
+   "parentCode": "CTSB-CHI3",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Ressource : Extraire les informations (valence, état d’oxydation, masse atomique relative) du tableau périodique des éléments."
+  },
+  {
+   "code": "CTSB-CHI3-R13",
+   "parentCode": "CTSB-CHI3",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Ressource : Identifier la fonction chimique d’une substance usuelle sur base de son nom."
+  },
+  {
+   "code": "CTSB-CHI3-R14",
+   "parentCode": "CTSB-CHI3",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Ressource : Associer une formule chimique à une fonction chimique et à un nom."
+  },
+  {
+   "code": "CTSB-CHI3-R15",
+   "parentCode": "CTSB-CHI3",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Ressource : Appliquer les règles conventionnelles (IUPAC) de nomenclature."
+  },
+  {
+   "code": "CTSB-CHI3-R16",
+   "parentCode": "CTSB-CHI3",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Ressource : Nommer une molécule sur base de sa formule chimique."
+  },
+  {
+   "code": "CTSB-CHI3-R17",
+   "parentCode": "CTSB-CHI3",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Ressource : Utiliser la règle de trois dans le cadre de problèmes de stœchiométrie."
+  },
+  {
+   "code": "CTSB-CHI4",
+   "parentCode": "CTSB",
+   "kind": "competence",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Chimie – Caractériser un phénomène chimique"
+  },
+  {
+   "code": "CTSB-CHI4-C1",
+   "parentCode": "CTSB-CHI4",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Compétence : Classer les phénomènes selon l’effet thermique associé (exothermique, endothermique, athermique)."
+  },
+  {
+   "code": "CTSB-CHI4-C2",
+   "parentCode": "CTSB-CHI4",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Compétence : Caractériser la vitesse de réaction sur base de critères qualitatifs."
+  },
+  {
+   "code": "CTSB-CHI4-C3",
+   "parentCode": "CTSB-CHI4",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Compétence : Distinguer sur base de critères empiriques un phénomène chimique réversible d’un phénomène irréversible."
+  },
+  {
+   "code": "CTSB-CHI4-A1",
+   "parentCode": "CTSB-CHI4",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Appliquer : Caractériser les réactions chimiques selon l’effet thermique associé, à partir d’un graphique (énergie = f(temps)) diagramme faisant appel à l'énergie des réactifs et à l'énergie des produits"
+  },
+  {
+   "code": "CTSB-CHI4-A2",
+   "parentCode": "CTSB-CHI4",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Appliquer : Représenter sous forme d’un graphique une réaction chimique exothermique, endothermique ou athermique, les réactifs et"
+  },
+  {
+   "code": "CTSB-CHI4-T1",
+   "parentCode": "CTSB-CHI4",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Transférer : Analyser une situation de la vie courante sous l’angle thermodynamique (par exemple, choisir un combustible selon sa capacité ou son pouvoir calorifique)."
+  },
+  {
+   "code": "CTSB-CHI4-T2",
+   "parentCode": "CTSB-CHI4",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Transférer : Analyser une situation de la vie courante sous l’angle cinétique par exemple : expliquer pourquoi le frigo permet une meilleure conservation des aliments"
+  },
+  {
+   "code": "CTSB-CHI4-T3",
+   "parentCode": "CTSB-CHI4",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Transférer : Analyser une situation de la vie courante sous l’angle cinétique par exemple : expliquer pourquoi une bûche brûle moins vite que la même quantité de bois sous forme de brindilles."
+  },
+  {
+   "code": "CTSB-CHI4-K1",
+   "parentCode": "CTSB-CHI4",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Connaître : Distinguer chaleur et température."
+  },
+  {
+   "code": "CTSB-CHI4-K2",
+   "parentCode": "CTSB-CHI4",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Connaître : Sur base de critères observables, distinguer une transformation chimique endothermique, exothermique ou athermique."
+  },
+  {
+   "code": "CTSB-CHI4-K3",
+   "parentCode": "CTSB-CHI4",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Connaître : Distinguer un phénomène chimique réversible d’un phénomène chimique irréversible sur base de critères observables (sans utiliser Guldberg et Waage ou le Chatelier)."
+  },
+  {
+   "code": "CTSB-CHI4-K4",
+   "parentCode": "CTSB-CHI4",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Connaître : Classer des phénomènes de la vie courante, des applications industrielles, des phénomènes biochimiques ou écologiques selon leur vitesse de réaction."
+  },
+  {
+   "code": "CTSB-CHI4-K5",
+   "parentCode": "CTSB-CHI4",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Connaître : Expliquer le rôle d’un catalyseur au travers de phénomènes de la vie courante (par exemple : pot catalytique, enzyme)."
+  },
+  {
+   "code": "CTSB-CHI4-K6",
+   "parentCode": "CTSB-CHI4",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Connaître : Décrire les facteurs influençant la vitesse d’une réaction."
+  },
+  {
+   "code": "CTSB-CHI4-R1",
+   "parentCode": "CTSB-CHI4",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Ressource : Chaleur"
+  },
+  {
+   "code": "CTSB-CHI4-R2",
+   "parentCode": "CTSB-CHI4",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Ressource : Réactions exothermique, endothermique ou athermique."
+  },
+  {
+   "code": "CTSB-CHI4-R3",
+   "parentCode": "CTSB-CHI4",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Ressource : Réactions réversibles et réactions irréversibles"
+  },
+  {
+   "code": "CTSB-CHI4-R4",
+   "parentCode": "CTSB-CHI4",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Ressource : Capacité calorifique et pouvoir calorifique d’une substance"
+  },
+  {
+   "code": "CTSB-CHI4-R5",
+   "parentCode": "CTSB-CHI4",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Ressource : Facteurs influençant la vitesse d’une réaction"
+  },
+  {
+   "code": "CTSB-CHI4-R6",
+   "parentCode": "CTSB-CHI4",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Ressource : Catalyseur"
+  },
+  {
+   "code": "CTSB-CHI4-R7",
+   "parentCode": "CTSB-CHI4",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Ressource : Mesurer une température."
+  },
+  {
+   "code": "CTSB-CHI4-R8",
+   "parentCode": "CTSB-CHI4",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Ressource : Tracer un graphique énergie = f(temps)."
+  },
+  {
+   "code": "CTSB-PHY1",
+   "parentCode": "CTSB",
+   "kind": "competence",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Physique – Electricité"
+  },
+  {
+   "code": "CTSB-PHY1-C1",
+   "parentCode": "CTSB-PHY1",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Compétence : Estimer l’efficacité énergétique de différents appareils électriques."
+  },
+  {
+   "code": "CTSB-PHY1-C2",
+   "parentCode": "CTSB-PHY1",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Compétence : Préciser les conditions de la sécurité électrique."
+  },
+  {
+   "code": "CTSB-PHY1-A1",
+   "parentCode": "CTSB-PHY1",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Appliquer : Mesurer une puissance ou une tension et une intensité de courant dans un circuit."
+  },
+  {
+   "code": "CTSB-PHY1-A2",
+   "parentCode": "CTSB-PHY1",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Appliquer : Mesurer une résistance (par exemple celle du corps humain)."
+  },
+  {
+   "code": "CTSB-PHY1-A3",
+   "parentCode": "CTSB-PHY1",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Appliquer : Vérifier qu’un élément de plus grande résistance réduit l’intensité de courant pour une tension donnée."
+  },
+  {
+   "code": "CTSB-PHY1-A4",
+   "parentCode": "CTSB-PHY1",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Appliquer : Dans le cadre d’une expérience, régler l’alimentation d’un électroaimant (afin de contrôler par exemple l’ouverture d’une porte ou de lever une charge avec une grue magnétique)."
+  },
+  {
+   "code": "CTSB-PHY1-T1",
+   "parentCode": "CTSB-PHY1",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Transférer : Réaliser une tâche qui implique un montage à l’aide d’un ou de commutateur(s) (par exemple : l’allumage d’une seule lampe à partir de 2 points différents)."
+  },
+  {
+   "code": "CTSB-PHY1-T2",
+   "parentCode": "CTSB-PHY1",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Transférer : Dans une perspective de consommation responsable, proposer des solutions pour diminuer la consommation électrique de différents récepteurs."
+  },
+  {
+   "code": "CTSB-PHY1-K1",
+   "parentCode": "CTSB-PHY1",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Connaître : Décrire une expérience (de contact, et pas d’influence) mettant en évidence l’existence de deux types de charge électrique et les attractions/répulsions qui en résultent."
+  },
+  {
+   "code": "CTSB-PHY1-K2",
+   "parentCode": "CTSB-PHY1",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Connaître : Citer différents types de générateurs électriques (par exemple : turbine d’un barrage hydraulique, panneau photovoltaïque, éolienne, piézoélectrique) et indiquer leur source d’énergie première."
+  },
+  {
+   "code": "CTSB-PHY1-K3",
+   "parentCode": "CTSB-PHY1",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Connaître : Citer différents types de récepteurs, citer la catégorie énergétique dans laquelle ils se trouvent (par exemple : radiateur électrique, chargeur de pile, moteur électrique, lampe LED, réfrigérateur) et indiquer la transformation d’énergie correspondante (électricité en chaleur, en énergie chimique, en énergie mécanique, …)."
+  },
+  {
+   "code": "CTSB-PHY1-K4",
+   "parentCode": "CTSB-PHY1",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Connaître : Décrire le rôle d’un dispositif de sécurité (fusible, disjoncteur, différentiel, prise de terre)."
+  },
+  {
+   "code": "CTSB-PHY1-K5",
+   "parentCode": "CTSB-PHY1",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Connaître : Expliquer que 1 kWh correspond à une énergie."
+  },
+  {
+   "code": "CTSB-PHY1-K6",
+   "parentCode": "CTSB-PHY1",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Connaître : Reconnaître les différents symboles en usage pour représenter les composants des circuits."
+  },
+  {
+   "code": "CTSB-PHY1-R1",
+   "parentCode": "CTSB-PHY1",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Ressource : Charges électriques"
+  },
+  {
+   "code": "CTSB-PHY1-R2",
+   "parentCode": "CTSB-PHY1",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Ressource : Attraction et répulsion électriques (sans formule)"
+  },
+  {
+   "code": "CTSB-PHY1-R3",
+   "parentCode": "CTSB-PHY1",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Ressource : Tension, intensité de courant : mesure, unité SI."
+  },
+  {
+   "code": "CTSB-PHY1-R4",
+   "parentCode": "CTSB-PHY1",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Ressource : Circuit électrique : générateur, récepteur, câbles de connexion"
+  },
+  {
+   "code": "CTSB-PHY1-R5",
+   "parentCode": "CTSB-PHY1",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Ressource : Sens conventionnel du courant"
+  },
+  {
+   "code": "CTSB-PHY1-R6",
+   "parentCode": "CTSB-PHY1",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Ressource : Loi des nœuds"
+  },
+  {
+   "code": "CTSB-PHY1-R7",
+   "parentCode": "CTSB-PHY1",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Ressource : Effets du courant (chaleur, lumière, magnétisme, moteurs) (sans la description détaillée de ces effets)"
+  },
+  {
+   "code": "CTSB-PHY1-R8",
+   "parentCode": "CTSB-PHY1",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Ressource : Le prix approximatif du kWh"
+  },
+  {
+   "code": "CTSB-PHY1-R9",
+   "parentCode": "CTSB-PHY1",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Ressource : Symboles des composants usuels du circuit."
+  },
+  {
+   "code": "CTSB-PHY1-R10",
+   "parentCode": "CTSB-PHY1",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Ressource : Résistance électrique (unité SI)"
+  },
+  {
+   "code": "CTSB-PHY1-R11",
+   "parentCode": "CTSB-PHY1",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Ressource : Fusible, disjoncteur, différentiel, prise de terre (rôle fonctionnel, sans détail)"
+  },
+  {
+   "code": "CTSB-PHY1-R12",
+   "parentCode": "CTSB-PHY1",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Ressource : Puissance électrique"
+  },
+  {
+   "code": "CTSB-PHY1-R13",
+   "parentCode": "CTSB-PHY1",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Ressource : Efficacité énergétique d’un appareil électrique (point de vue qualitatif)"
+  },
+  {
+   "code": "CTSB-PHY1-R14",
+   "parentCode": "CTSB-PHY1",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Ressource : Elaborer un schéma électrique."
+  },
+  {
+   "code": "CTSB-PHY1-R15",
+   "parentCode": "CTSB-PHY1",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Ressource : Utiliser un appareil de mesure (wattmètre, multimètre)."
+  },
+  {
+   "code": "CTSB-PHY1-R16",
+   "parentCode": "CTSB-PHY1",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Ressource : Construire un circuit électrique."
+  },
+  {
+   "code": "CTSB-PHY1-R17",
+   "parentCode": "CTSB-PHY1",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Ressource : Respecter les consignes de sécurité électrique."
+  },
+  {
+   "code": "CTSB-PHY1-R18",
+   "parentCode": "CTSB-PHY1",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Ressource : Utiliser les unités SI des grandeurs (énergie, puissance, intensité, tension,…)."
+  },
+  {
+   "code": "CTSB-PHY1-R19",
+   "parentCode": "CTSB-PHY1",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Ressource : Vérifier la cohérence des unités et le cas échéant, les transformer (énergie, puissance, intensité, tension,…)."
+  },
+  {
+   "code": "CTSB-PHY2",
+   "parentCode": "CTSB",
+   "kind": "competence",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Physique – Flotte, coule, vole !"
+  },
+  {
+   "code": "CTSB-PHY2-C1",
+   "parentCode": "CTSB-PHY2",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Compétence : Décrire et expliquer une situation donnée mettant en jeu la pression et ses variations."
+  },
+  {
+   "code": "CTSB-PHY2-A1",
+   "parentCode": "CTSB-PHY2",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Appliquer : Expliquer une situation quotidienne qui met en œuvre la pression atmosphérique (par exemple : l’aspiration par une paille, un aspirateur, une soufflerie)."
+  },
+  {
+   "code": "CTSB-PHY2-A2",
+   "parentCode": "CTSB-PHY2",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Appliquer : Expliquer le fonctionnement de la partie hydraulique d’une machine (par exemple : pont, bulldozer, freins) à l’aide du principe de Pascal."
+  },
+  {
+   "code": "CTSB-PHY2-A3",
+   "parentCode": "CTSB-PHY2",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Appliquer : Mener une recherche expérimentale pour identifier et quantifier les paramètres qui font varier la pression dans un fluide au repos."
+  },
+  {
+   "code": "CTSB-PHY2-A4",
+   "parentCode": "CTSB-PHY2",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Appliquer : Comparer les forces agissantes dans la situation d’un objet ou d’un être vivant qui coule ou qui flotte."
+  },
+  {
+   "code": "CTSB-PHY2-T1",
+   "parentCode": "CTSB-PHY2",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Transférer : Réaliser une expérience impliquant la poussée d’Archimède et en proposer une explication (par exemple : tri de déchets plongés dans des bains différents, vol d’une montgolfière,…)."
+  },
+  {
+   "code": "CTSB-PHY2-K1",
+   "parentCode": "CTSB-PHY2",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Connaître : Illustrer la notion de résultante par un exemple dans le cas de forces de même ligne d’action."
+  },
+  {
+   "code": "CTSB-PHY2-K2",
+   "parentCode": "CTSB-PHY2",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Connaître : Déterminer les caractéristiques de la résultante de forces de même ligne d’action agissant sur un objet."
+  },
+  {
+   "code": "CTSB-PHY2-K3",
+   "parentCode": "CTSB-PHY2",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Connaître : Décrire un exemple de la vie quotidienne dans lequel la notion de pression d’une force intervient."
+  },
+  {
+   "code": "CTSB-PHY2-K4",
+   "parentCode": "CTSB-PHY2",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Connaître : Décrire une expérience qui met en évidence la mesure de la pression atmosphérique."
+  },
+  {
+   "code": "CTSB-PHY2-K5",
+   "parentCode": "CTSB-PHY2",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Connaître : Décrire le lien entre la diminution de la pression et la croissance de la vitesse à partir d’une expérience (par exemple : une feuille devant un ventilateur, un vaporisateur de parfum, une balle en équilibre dans une soufflerie)."
+  },
+  {
+   "code": "CTSB-PHY2-K6",
+   "parentCode": "CTSB-PHY2",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Connaître : Indiquer l’ordre de grandeur d’une pression par rapport à la pression atmosphérique."
+  },
+  {
+   "code": "CTSB-PHY2-K7",
+   "parentCode": "CTSB-PHY2",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Connaître : Décrire les caractéristiques de la poussée d’Archimède."
+  },
+  {
+   "code": "CTSB-PHY2-R1",
+   "parentCode": "CTSB-PHY2",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Ressource : Force (représentation, caractéristiques)"
+  },
+  {
+   "code": "CTSB-PHY2-R2",
+   "parentCode": "CTSB-PHY2",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Ressource : Résultante de force de même ligne d’action"
+  },
+  {
+   "code": "CTSB-PHY2-R3",
+   "parentCode": "CTSB-PHY2",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Ressource : Notion de fluide"
+  },
+  {
+   "code": "CTSB-PHY2-R4",
+   "parentCode": "CTSB-PHY2",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Ressource : Pression dans un fluide"
+  },
+  {
+   "code": "CTSB-PHY2-R5",
+   "parentCode": "CTSB-PHY2",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Ressource : Relation masse-poids : P = m.g"
+  },
+  {
+   "code": "CTSB-PHY2-R6",
+   "parentCode": "CTSB-PHY2",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Ressource : Pression hydrostatique"
+  },
+  {
+   "code": "CTSB-PHY2-R7",
+   "parentCode": "CTSB-PHY2",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Ressource : Principe d’Archimède (pas d’exercices numériques sur le sujet)"
+  },
+  {
+   "code": "CTSB-PHY2-R8",
+   "parentCode": "CTSB-PHY2",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Ressource : Transmission des pressions (principe de Pascal)"
+  },
+  {
+   "code": "CTSB-PHY2-R9",
+   "parentCode": "CTSB-PHY2",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Ressource : Eléments d’hydrodynamique (variation qualitative de la pression avec la vitesse du fluide)"
+  },
+  {
+   "code": "CTSB-PHY2-R10",
+   "parentCode": "CTSB-PHY2",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Ressource : Représenter une force."
+  },
+  {
+   "code": "CTSB-PHY2-R11",
+   "parentCode": "CTSB-PHY2",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Ressource : Estimer un ordre de grandeur de pression."
+  },
+  {
+   "code": "CTSB-PHY2-R12",
+   "parentCode": "CTSB-PHY2",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Ressource : Utiliser les unités SI des grandeurs (force et pression)."
+  },
+  {
+   "code": "CTSB-PHY2-R13",
+   "parentCode": "CTSB-PHY2",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3"
+   ],
+   "label": "Ressource : Vérifier la cohérence des unités et le cas échéant, les transformer (force et pression)."
+  },
+  {
+   "code": "CTSB-PHY3",
+   "parentCode": "CTSB",
+   "kind": "competence",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Physique – Travail, énergie, puissance"
+  },
+  {
+   "code": "CTSB-PHY3-C1",
+   "parentCode": "CTSB-PHY3",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Compétence : Analyser une situation pour en déduire la répartition d’énergie ou les échanges énergétiques."
+  },
+  {
+   "code": "CTSB-PHY3-C2",
+   "parentCode": "CTSB-PHY3",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Compétence : Analyser une situation pour en déduire la puissance associée ou le bilan d’énergie."
+  },
+  {
+   "code": "CTSB-PHY3-A1",
+   "parentCode": "CTSB-PHY3",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Appliquer : Estimer ou mesurer la puissance d’une machine ou d’un athlète."
+  },
+  {
+   "code": "CTSB-PHY3-A2",
+   "parentCode": "CTSB-PHY3",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Appliquer : Estimer les pertes d’énergie dans une transformation énergétique correspondant à une situation donnée."
+  },
+  {
+   "code": "CTSB-PHY3-A3",
+   "parentCode": "CTSB-PHY3",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Appliquer : Appliquer la \"conservation\" du travail à une machine simple."
+  },
+  {
+   "code": "CTSB-PHY3-A4",
+   "parentCode": "CTSB-PHY3",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Appliquer : Dans une situation pratique, appliquer la conservation de l’énergie mécanique pour estimer la hauteur ou la vitesse liée à une position extrême."
+  },
+  {
+   "code": "CTSB-PHY3-T1",
+   "parentCode": "CTSB-PHY3",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Transférer : Pour une machine simple non vue en classe (par exemple : le pédalier du vélo, la grue hollandaise), identifier les principales caractéristiques des forces en présence et déterminer l’avantage mécanique."
+  },
+  {
+   "code": "CTSB-PHY3-T2",
+   "parentCode": "CTSB-PHY3",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Transférer : Dans une situation donnée, estimer (via l’énergie cinétique) le lien entre une variation de vitesse et la sécurité d’un déplacement."
+  },
+  {
+   "code": "CTSB-PHY3-K1",
+   "parentCode": "CTSB-PHY3",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Connaître : Enoncer les formes d’énergie qui sont impliquées dans une situation de la vie courante."
+  },
+  {
+   "code": "CTSB-PHY3-K2",
+   "parentCode": "CTSB-PHY3",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Connaître : Pour un processus donné, décrire les différentes formes d’énergie présentes et les transformations en cours."
+  },
+  {
+   "code": "CTSB-PHY3-K3",
+   "parentCode": "CTSB-PHY3",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Connaître : Relier le travail à la variation d’énergie mécanique dans une situation courante."
+  },
+  {
+   "code": "CTSB-PHY3-K4",
+   "parentCode": "CTSB-PHY3",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Connaître : Pour une machine simple donnée, préciser la position du point d’appui et du point d’application des forces ainsi que les bras de levier correspondants."
+  },
+  {
+   "code": "CTSB-PHY3-K5",
+   "parentCode": "CTSB-PHY3",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Connaître : Identifier, dans un processus, les positions où les valeurs des énergies cinétique et potentielle sont minimales et maximales."
+  },
+  {
+   "code": "CTSB-PHY3-K6",
+   "parentCode": "CTSB-PHY3",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Connaître : Utiliser le modèle microscopique de la constitution de la matière et l’agitation thermique pour donner une interprétation mécanique de la chaleur, de la pression d’un gaz et de la température."
+  },
+  {
+   "code": "CTSB-PHY3-K7",
+   "parentCode": "CTSB-PHY3",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Connaître : Associer des ordres de grandeur d’énergie et de puissance à quelques situations concrètes."
+  },
+  {
+   "code": "CTSB-PHY3-R1",
+   "parentCode": "CTSB-PHY3",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Ressource : Travail d’une force colinéaire au déplacement"
+  },
+  {
+   "code": "CTSB-PHY3-R2",
+   "parentCode": "CTSB-PHY3",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Ressource : Composante d’une force qui travaille (approche qualitative, sans calculs)"
+  },
+  {
+   "code": "CTSB-PHY3-R3",
+   "parentCode": "CTSB-PHY3",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Ressource : Grandeurs et unités spécifiques (travail, puissance)"
+  },
+  {
+   "code": "CTSB-PHY3-R4",
+   "parentCode": "CTSB-PHY3",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Ressource : Energie et puissance"
+  },
+  {
+   "code": "CTSB-PHY3-R5",
+   "parentCode": "CTSB-PHY3",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Ressource : Frottement (qualitatif, sans formule)"
+  },
+  {
+   "code": "CTSB-PHY3-R6",
+   "parentCode": "CTSB-PHY3",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Ressource : Vitesse"
+  },
+  {
+   "code": "CTSB-PHY3-R7",
+   "parentCode": "CTSB-PHY3",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Ressource : Energie potentielle de gravitation"
+  },
+  {
+   "code": "CTSB-PHY3-R8",
+   "parentCode": "CTSB-PHY3",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Ressource : Energie cinétique (sans démonstration)"
+  },
+  {
+   "code": "CTSB-PHY3-R9",
+   "parentCode": "CTSB-PHY3",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Ressource : Conservation de l’énergie mécanique"
+  },
+  {
+   "code": "CTSB-PHY3-R10",
+   "parentCode": "CTSB-PHY3",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Ressource : Machine simple"
+  },
+  {
+   "code": "CTSB-PHY3-R11",
+   "parentCode": "CTSB-PHY3",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Ressource : Bras de levier (force dans l’axe du déplacement)"
+  },
+  {
+   "code": "CTSB-PHY3-R12",
+   "parentCode": "CTSB-PHY3",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Ressource : Chaleur comme forme d’énergie transférée"
+  },
+  {
+   "code": "CTSB-PHY3-R13",
+   "parentCode": "CTSB-PHY3",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Ressource : Température comme mesure de l’agitation thermique"
+  },
+  {
+   "code": "CTSB-PHY3-R14",
+   "parentCode": "CTSB-PHY3",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Ressource : Changement d’état dû à l’apport énergétique"
+  },
+  {
+   "code": "CTSB-PHY3-R15",
+   "parentCode": "CTSB-PHY3",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Ressource : Représenter une force à l’échelle."
+  },
+  {
+   "code": "CTSB-PHY3-R16",
+   "parentCode": "CTSB-PHY3",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Ressource : Calculer le travail d’une force colinéaire au déplacement."
+  },
+  {
+   "code": "CTSB-PHY3-R17",
+   "parentCode": "CTSB-PHY3",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Ressource : Calculer l’énergie cinétique, l’énergie potentielle et l’énergie totale dans une situation donnée."
+  },
+  {
+   "code": "CTSB-PHY3-R18",
+   "parentCode": "CTSB-PHY3",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Ressource : Déterminer l’avantage mécanique d’une machine."
+  },
+  {
+   "code": "CTSB-PHY3-R19",
+   "parentCode": "CTSB-PHY3",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Ressource : Estimer l’ordre de grandeur d’un travail, d’une énergie et d’une puissance."
+  },
+  {
+   "code": "CTSB-PHY3-R20",
+   "parentCode": "CTSB-PHY3",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Ressource : Utiliser les unités SI des grandeurs (force, travail, énergie, puissance)."
+  },
+  {
+   "code": "CTSB-PHY3-R21",
+   "parentCode": "CTSB-PHY3",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Ressource : Vérifier la cohérence des unités et le cas échéant, les transformer (force, travail, énergie, puissance)."
+  },
+  {
+   "code": "CTSB-PHY4",
+   "parentCode": "CTSB",
+   "kind": "competence",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Physique – La magie de l’image"
+  },
+  {
+   "code": "CTSB-PHY4-C1",
+   "parentCode": "CTSB-PHY4",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Compétence : Mener une expérience pour vérifier des propriétés de la lumière."
+  },
+  {
+   "code": "CTSB-PHY4-C2",
+   "parentCode": "CTSB-PHY4",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Compétence : Décrire et expliquer une situation impliquant les propriétés de la lumière."
+  },
+  {
+   "code": "CTSB-PHY4-A1",
+   "parentCode": "CTSB-PHY4",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Appliquer : Vérifier expérimentalement la loi de la réflexion sur un miroir plan."
+  },
+  {
+   "code": "CTSB-PHY4-A2",
+   "parentCode": "CTSB-PHY4",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Appliquer : Utiliser des éléments d’optique pour obtenir une image plus grande ou plus petite."
+  },
+  {
+   "code": "CTSB-PHY4-A3",
+   "parentCode": "CTSB-PHY4",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Appliquer : Déterminer expérimentalement la distance focale d’une lentille convergente (par exemple : une loupe, un verre de lunettes,…)."
+  },
+  {
+   "code": "CTSB-PHY4-T1",
+   "parentCode": "CTSB-PHY4",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Transférer : Expliquer le phénomène d’éclipse de soleil ou de lune à partir d’un texte simple ou d’une expérience montrée."
+  },
+  {
+   "code": "CTSB-PHY4-T2",
+   "parentCode": "CTSB-PHY4",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Transférer : Expliquer le sens d’une prescription pour un verre de lunettes : (se limiter à un cas simple : myopie, hypermétropie, presbytie)."
+  },
+  {
+   "code": "CTSB-PHY4-K1",
+   "parentCode": "CTSB-PHY4",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Connaître : Comparer différentes sources lumineuses, notamment sur le plan énergétique et de la luminosité."
+  },
+  {
+   "code": "CTSB-PHY4-K2",
+   "parentCode": "CTSB-PHY4",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Connaître : Décrire la composition de la lumière blanche (couleurs)."
+  },
+  {
+   "code": "CTSB-PHY4-K3",
+   "parentCode": "CTSB-PHY4",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Connaître : Décrire comment la lumière se réfléchit sur un miroir."
+  },
+  {
+   "code": "CTSB-PHY4-K4",
+   "parentCode": "CTSB-PHY4",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Connaître : Identifier le processus de réflexion spéculaire dans une situation de la vie quotidienne."
+  },
+  {
+   "code": "CTSB-PHY4-K5",
+   "parentCode": "CTSB-PHY4",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Connaître : Identifier la réfraction de la lumière (sans formule ni calcul) dans une situation de la vie quotidienne."
+  },
+  {
+   "code": "CTSB-PHY4-K6",
+   "parentCode": "CTSB-PHY4",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Connaître : Identifier la réflexion totale dans une situation de la vie quotidienne."
+  },
+  {
+   "code": "CTSB-PHY4-K7",
+   "parentCode": "CTSB-PHY4",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Connaître : Décrire les utilisations et le fonctionnement d’une fibre optique."
+  },
+  {
+   "code": "CTSB-PHY4-K8",
+   "parentCode": "CTSB-PHY4",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Connaître : Schématiser un œil et son fonctionnement du point de vue de l‘optique."
+  },
+  {
+   "code": "CTSB-PHY4-R1",
+   "parentCode": "CTSB-PHY4",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Ressource : Sources de lumière (notamment une LED)"
+  },
+  {
+   "code": "CTSB-PHY4-R2",
+   "parentCode": "CTSB-PHY4",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Ressource : Propriétés de la lumière : forme d’énergie, sens de propagation, propagation en ligne droite, vitesse de propagation (facultatif), formation d’ombres"
+  },
+  {
+   "code": "CTSB-PHY4-R3",
+   "parentCode": "CTSB-PHY4",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Ressource : Pinceau et faisceau lumineux"
+  },
+  {
+   "code": "CTSB-PHY4-R4",
+   "parentCode": "CTSB-PHY4",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Ressource : Image"
+  },
+  {
+   "code": "CTSB-PHY4-R5",
+   "parentCode": "CTSB-PHY4",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Ressource : Loi de la réflexion dans un miroir (pas de construction d’image)"
+  },
+  {
+   "code": "CTSB-PHY4-R6",
+   "parentCode": "CTSB-PHY4",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Ressource : Réfraction (uniquement l’identification du phénomène)"
+  },
+  {
+   "code": "CTSB-PHY4-R7",
+   "parentCode": "CTSB-PHY4",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Ressource : Lentille convergente et lentille divergente, distance focale (pas de calcul)"
+  },
+  {
+   "code": "CTSB-PHY4-R8",
+   "parentCode": "CTSB-PHY4",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Ressource : L’œil : description et fonctionnement"
+  },
+  {
+   "code": "CTSB-PHY4-R9",
+   "parentCode": "CTSB-PHY4",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Ressource : Concept de dioptrie"
+  },
+  {
+   "code": "CTSB-PHY4-R10",
+   "parentCode": "CTSB-PHY4",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Ressource : Réflexion totale"
+  },
+  {
+   "code": "CTSB-PHY4-R11",
+   "parentCode": "CTSB-PHY4",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Ressource : Couleurs, composition de la lumière blanche"
+  },
+  {
+   "code": "CTSB-PHY4-R12",
+   "parentCode": "CTSB-PHY4",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Ressource : Principe de retour inverse de la lumière"
+  },
+  {
+   "code": "CTSB-PHY4-R13",
+   "parentCode": "CTSB-PHY4",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Ressource : Schématiser un dispositif optique."
+  },
+  {
+   "code": "CTSB-PHY4-R14",
+   "parentCode": "CTSB-PHY4",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S4"
+   ],
+   "label": "Ressource : Utiliser le matériel d’optique (source de lumière, lentilles, miroir)."
+  },
+  {
+   "code": "CTSB-BIO4",
+   "parentCode": "CTSB",
+   "kind": "competence",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Biologie – Santé : mieux se connaitre"
+  },
+  {
+   "code": "CTSB-BIO4-C1",
+   "parentCode": "CTSB-BIO4",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Compétence : Expliquer comment l’organisme réagit et se protège suite à une infection à partir de l’analyse de situations de la vie courante"
+  },
+  {
+   "code": "CTSB-BIO4-C2",
+   "parentCode": "CTSB-BIO4",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Compétence : Expliquer l’influence que des substances ou des habitudes de vie peuvent avoir sur le fonctionnement du système nerveux."
+  },
+  {
+   "code": "CTSB-BIO4-C3",
+   "parentCode": "CTSB-BIO4",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Compétence : Décrire les mécanismes principaux qui permettent la transmission de la vie chez l’être humain"
+  },
+  {
+   "code": "CTSB-BIO4-C4",
+   "parentCode": "CTSB-BIO4",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Compétence : Expliquer les principaux moyens qui permettent de maîtriser la procréation"
+  },
+  {
+   "code": "CTSB-BIO4-A1",
+   "parentCode": "CTSB-BIO4",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Appliquer : Notre corps face aux risques d’infection"
+  },
+  {
+   "code": "CTSB-BIO4-A2",
+   "parentCode": "CTSB-BIO4",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Appliquer : Hygiène du système nerveux"
+  },
+  {
+   "code": "CTSB-BIO4-A3",
+   "parentCode": "CTSB-BIO4",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Appliquer : Vivre sa sexualité de façon responsable"
+  },
+  {
+   "code": "CTSB-BIO4-T1",
+   "parentCode": "CTSB-BIO4",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Transférer : Expliquer, en développant quelques aspects du système immunitaire, comment l’organisme se protège suite à une agression du milieu extérieur (par exemple : virus de la grippe, bactérie tétanique,…)."
+  },
+  {
+   "code": "CTSB-BIO4-T2",
+   "parentCode": "CTSB-BIO4",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Transférer : Dans une situation donnée, décrire et justifier un comportement à adopter pour se protéger d’un risque infectieux pour l’organisme."
+  },
+  {
+   "code": "CTSB-BIO4-T3",
+   "parentCode": "CTSB-BIO4",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Transférer : A partir de documents, expliquer l’impact de certaines substances (par exemple : alcool, drogues, médicaments,…) sur la transmission synaptique."
+  },
+  {
+   "code": "CTSB-BIO4-T4",
+   "parentCode": "CTSB-BIO4",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Transférer : Lors d’un débat éthique ou à partir d’un document sur un sujet lié à l’usage des méthodes de procréation médicalement assistée (exemples de sujet : statut de l’embryon, clonage reproductif, recherche sur les embryons congelés,…), distinguer les considérations scientifiques des autres."
+  },
+  {
+   "code": "CTSB-BIO4-K1",
+   "parentCode": "CTSB-BIO4",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Connaître : Notre corps face aux risques d’infection"
+  },
+  {
+   "code": "CTSB-BIO4-K2",
+   "parentCode": "CTSB-BIO4",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Connaître : Hygiène du système nerveux"
+  },
+  {
+   "code": "CTSB-BIO4-K3",
+   "parentCode": "CTSB-BIO4",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Connaître : Vivre sa sexualité de façon responsable"
+  },
+  {
+   "code": "CTSB-BIO4-K4",
+   "parentCode": "CTSB-BIO4",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Connaître : Développé de l’hypertexte Appliquer"
+  },
+  {
+   "code": "CTSB-BIO4-K5",
+   "parentCode": "CTSB-BIO4",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Connaître : Comparer des données physiologiques d’une personne saine et d’une personne souffrant d’une maladie infectieuse (par exemple : prises de sang, photos de culture de prélèvements, observations microscopiques (sang, pus,…))."
+  },
+  {
+   "code": "CTSB-BIO4-K6",
+   "parentCode": "CTSB-BIO4",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Connaître : Identifier, à partir de documents, les modes de transmission de quelques pathogènes courants à partir de cas concrets (par exemple : Sida, grippe, tétanos, tuberculose, MST,…)."
+  },
+  {
+   "code": "CTSB-BIO4-K7",
+   "parentCode": "CTSB-BIO4",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Connaître : Justifier l’importance des rappels de vaccination, sur base d’analyse de graphiques ou de tableaux."
+  },
+  {
+   "code": "CTSB-BIO4-K8",
+   "parentCode": "CTSB-BIO4",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Connaître : Expliquer, sur base d’une analyse d’un document, le rejet de greffe."
+  },
+  {
+   "code": "CTSB-BIO4-K9",
+   "parentCode": "CTSB-BIO4",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Connaître : Sur base de documents, identifier quelques facteurs qui peuvent perturber le sommeil (par exemple : stress, absence ou surplus d’activité physique, alimentation, bruit, lumière,…)."
+  },
+  {
+   "code": "CTSB-BIO4-K10",
+   "parentCode": "CTSB-BIO4",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Connaître : A partir de documents, comparer le mécanisme d’action de quelques méthodes contraceptives (pilule, pilule du lendemain, préservatif,…)."
+  },
+  {
+   "code": "CTSB-BIO4-K11",
+   "parentCode": "CTSB-BIO4",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Connaître : Développé de l’hypertexte Connaître"
+  },
+  {
+   "code": "CTSB-BIO4-K12",
+   "parentCode": "CTSB-BIO4",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Connaître : Décrire de manière simple comment l’organisme est constamment confronté à la possibilité de pénétration de micro-organismes."
+  },
+  {
+   "code": "CTSB-BIO4-K13",
+   "parentCode": "CTSB-BIO4",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Connaître : Décrire les principales barrières naturelles extérieures contre la contamination (peau, muqueuses,…)."
+  },
+  {
+   "code": "CTSB-BIO4-K14",
+   "parentCode": "CTSB-BIO4",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Connaître : Décrire de manière simple, à partir de documents, le mécanisme de la réaction inflammatoire, une défense innée de l’organisme"
+  },
+  {
+   "code": "CTSB-BIO4-K15",
+   "parentCode": "CTSB-BIO4",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Connaître : Décrire de manière simple, à partir de documents, les mécanismes de défenses acquises (rôles des lymphocytes B et T)."
+  },
+  {
+   "code": "CTSB-BIO4-K16",
+   "parentCode": "CTSB-BIO4",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Connaître : Expliquer le rôle actif de la fièvre contre l’infection."
+  },
+  {
+   "code": "CTSB-BIO4-K17",
+   "parentCode": "CTSB-BIO4",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Connaître : Décrire l’organisation générale du système nerveux."
+  },
+  {
+   "code": "CTSB-BIO4-K18",
+   "parentCode": "CTSB-BIO4",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Connaître : A partir de l’analyse d’un exemple (renvoyer une balle de tennis lors d’un échange, rouler à vélo en respectant le code de la route, …), décrire les principales fonctions du système nerveux."
+  },
+  {
+   "code": "CTSB-BIO4-K19",
+   "parentCode": "CTSB-BIO4",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Connaître : Réaliser le schéma d’un neurone et en déduire les caractéristiques particulières à partir de documents (photographies de coupes de tissus nerveux)."
+  },
+  {
+   "code": "CTSB-BIO4-K20",
+   "parentCode": "CTSB-BIO4",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Connaître : A l’aide d’un logiciel d’animation et/ou de documents présentant des résultats expérimentaux, expliquer le mécanisme de propagation de l’influx nerveux au travers de la synapse."
+  },
+  {
+   "code": "CTSB-BIO4-K21",
+   "parentCode": "CTSB-BIO4",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Connaître : Sur base de documents, identifier un facteur qui peut influencer le fonctionnement du système nerveux (par exemple : manque de sommeil, stress, absence ou surplus d’activité physique, manque de lumière…)."
+  },
+  {
+   "code": "CTSB-BIO4-K22",
+   "parentCode": "CTSB-BIO4",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Connaître : Décrire de manière simple le fonctionnement du testicule et sa régulation hormonale."
+  },
+  {
+   "code": "CTSB-BIO4-K23",
+   "parentCode": "CTSB-BIO4",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Connaître : Mettre en parallèle les cycles utérin et ovarien au cours du temps, et expliquer le mécanisme de leur régulation hormonale."
+  },
+  {
+   "code": "CTSB-BIO4-K24",
+   "parentCode": "CTSB-BIO4",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Connaître : Décrire de manière simple les différentes étapes d’une grossesse et son suivi (test de grossesse, échographie, choriocentèse, amniocentèse)."
+  },
+  {
+   "code": "CTSB-BIO4-R1",
+   "parentCode": "CTSB-BIO4",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Notre corps face aux risques d’infection"
+  },
+  {
+   "code": "CTSB-BIO4-R2",
+   "parentCode": "CTSB-BIO4",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Microorganismes pathogènes et non pathogènes"
+  },
+  {
+   "code": "CTSB-BIO4-R3",
+   "parentCode": "CTSB-BIO4",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Globules blancs (macrophages, lymphocytes B et lymphocytes T)."
+  },
+  {
+   "code": "CTSB-BIO4-R4",
+   "parentCode": "CTSB-BIO4",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Réactions immunitaires (innée, acquise)"
+  },
+  {
+   "code": "CTSB-BIO4-R5",
+   "parentCode": "CTSB-BIO4",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Phagocytose"
+  },
+  {
+   "code": "CTSB-BIO4-R6",
+   "parentCode": "CTSB-BIO4",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Antigène et anticorps"
+  },
+  {
+   "code": "CTSB-BIO4-R7",
+   "parentCode": "CTSB-BIO4",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Vaccins"
+  },
+  {
+   "code": "CTSB-BIO4-R8",
+   "parentCode": "CTSB-BIO4",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Greffe"
+  },
+  {
+   "code": "CTSB-BIO4-R9",
+   "parentCode": "CTSB-BIO4",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Hygiène du système nerveux"
+  },
+  {
+   "code": "CTSB-BIO4-R10",
+   "parentCode": "CTSB-BIO4",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Système nerveux central (encéphale et moelle épinière) et sa protection (crâne, colonne vertébrale, liquide céphalo-rachidien et méninges)"
+  },
+  {
+   "code": "CTSB-BIO4-R11",
+   "parentCode": "CTSB-BIO4",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Système nerveux périphérique (nerfs crâniens et rachidiens)"
+  },
+  {
+   "code": "CTSB-BIO4-R12",
+   "parentCode": "CTSB-BIO4",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Rôles du système nerveux : établir des relations entre l’individu et le monde extérieur (organes des sens)"
+  },
+  {
+   "code": "CTSB-BIO4-R13",
+   "parentCode": "CTSB-BIO4",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Rôles du système nerveux : relier et coordonner l’activité des différents organes (homéostasie)"
+  },
+  {
+   "code": "CTSB-BIO4-R14",
+   "parentCode": "CTSB-BIO4",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Rôles du système nerveux : permettre un certain nombre d’activités supérieures (langage, imagination, pensée, créativité,…)"
+  },
+  {
+   "code": "CTSB-BIO4-R15",
+   "parentCode": "CTSB-BIO4",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Récepteur sensoriel,"
+  },
+  {
+   "code": "CTSB-BIO4-R16",
+   "parentCode": "CTSB-BIO4",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Nerf"
+  },
+  {
+   "code": "CTSB-BIO4-R17",
+   "parentCode": "CTSB-BIO4",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Neurone"
+  },
+  {
+   "code": "CTSB-BIO4-R18",
+   "parentCode": "CTSB-BIO4",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Substances psychotropes"
+  },
+  {
+   "code": "CTSB-BIO4-R19",
+   "parentCode": "CTSB-BIO4",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Influx nerveux"
+  },
+  {
+   "code": "CTSB-BIO4-R20",
+   "parentCode": "CTSB-BIO4",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Synapse, neurotransmetteurs"
+  },
+  {
+   "code": "CTSB-BIO4-R21",
+   "parentCode": "CTSB-BIO4",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Vivre sa sexualité de façon responsable"
+  },
+  {
+   "code": "CTSB-BIO4-R22",
+   "parentCode": "CTSB-BIO4",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Etapes d’une grossesse : fécondation"
+  },
+  {
+   "code": "CTSB-BIO4-R23",
+   "parentCode": "CTSB-BIO4",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Etapes d’une grossesse : nidation"
+  },
+  {
+   "code": "CTSB-BIO4-R24",
+   "parentCode": "CTSB-BIO4",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Etapes d’une grossesse : passage de l’état d’embryon à celui de fœtus"
+  },
+  {
+   "code": "CTSB-BIO4-R25",
+   "parentCode": "CTSB-BIO4",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Etapes d’une grossesse : accouchement"
+  },
+  {
+   "code": "CTSB-BIO4-R26",
+   "parentCode": "CTSB-BIO4",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Puberté (caractères sexuels secondaires)"
+  },
+  {
+   "code": "CTSB-BIO4-R27",
+   "parentCode": "CTSB-BIO4",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Cycles sexuels chez la femme"
+  },
+  {
+   "code": "CTSB-BIO4-R28",
+   "parentCode": "CTSB-BIO4",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Ménopause"
+  },
+  {
+   "code": "CTSB-BIO4-R29",
+   "parentCode": "CTSB-BIO4",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Hormones et régulation hormonale"
+  },
+  {
+   "code": "CTSB-BIO4-R30",
+   "parentCode": "CTSB-BIO4",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Contraception, contragestion"
+  },
+  {
+   "code": "CTSB-BIO4-R31",
+   "parentCode": "CTSB-BIO4",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : IVG"
+  },
+  {
+   "code": "CTSB-BIO4-R32",
+   "parentCode": "CTSB-BIO4",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : PMA"
+  },
+  {
+   "code": "CTSB-BIO4-R33",
+   "parentCode": "CTSB-BIO4",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Interpréter des graphiques et des tableaux obtenus à partir de dosages analytiques (hormones, anticorps, …)."
+  },
+  {
+   "code": "CTSB-BIO4-R34",
+   "parentCode": "CTSB-BIO4",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Distinguer une argumentation scientifique d’une croyance (contraception,…)."
+  },
+  {
+   "code": "CTSB-BIO4-R35",
+   "parentCode": "CTSB-BIO4",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Réaliser un schéma fonctionnel (régulation hormonale, …)."
+  },
+  {
+   "code": "CTSB-BIO4-R36",
+   "parentCode": "CTSB-BIO4",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Réaliser des observations au microscope optique."
+  },
+  {
+   "code": "CTSB-BIO5",
+   "parentCode": "CTSB",
+   "kind": "competence",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Biologie – De la génétique à l’évolution"
+  },
+  {
+   "code": "CTSB-BIO5-C1",
+   "parentCode": "CTSB-BIO5",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Compétence : Expliquer la relation entre phénotypes, structure des protéines et séquence d’ADN"
+  },
+  {
+   "code": "CTSB-BIO5-C2",
+   "parentCode": "CTSB-BIO5",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Compétence : Mettre en évidence quelques avantages et inconvénients liés aux champs d’application des biotechnologies"
+  },
+  {
+   "code": "CTSB-BIO5-C3",
+   "parentCode": "CTSB-BIO5",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Compétence : Distinguer un modèle (issu de faits scientifiques) d’une croyance pour expliquer l’apparition de la vie, l’évolution de la vie sur Terre et de la biodiversité."
+  },
+  {
+   "code": "CTSB-BIO5-C4",
+   "parentCode": "CTSB-BIO5",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Compétence : Expliquer que la classification moderne du vivant se fonde sur la théorie de l’évolution."
+  },
+  {
+   "code": "CTSB-BIO5-A1",
+   "parentCode": "CTSB-BIO5",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Appliquer : Génétique"
+  },
+  {
+   "code": "CTSB-BIO5-A2",
+   "parentCode": "CTSB-BIO5",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Appliquer : Interpréter la transmission d’un caractère à partir d’un arbre généalogique humain (par exemple : groupes sanguins, maladies génétiques,…)."
+  },
+  {
+   "code": "CTSB-BIO5-A3",
+   "parentCode": "CTSB-BIO5",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Appliquer : Dans le cas d’une maladie génétique, établir une relation entre les phénotypes et la séquence d’ADN."
+  },
+  {
+   "code": "CTSB-BIO5-A4",
+   "parentCode": "CTSB-BIO5",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Appliquer : Evolution"
+  },
+  {
+   "code": "CTSB-BIO5-A5",
+   "parentCode": "CTSB-BIO5",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Appliquer : Retrouver des liens de parenté entre êtres vivants à partir de données anatomiques, embryologiques, moléculaires ou paléontologiques."
+  },
+  {
+   "code": "CTSB-BIO5-T1",
+   "parentCode": "CTSB-BIO5",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Transférer : Génétique"
+  },
+  {
+   "code": "CTSB-BIO5-T2",
+   "parentCode": "CTSB-BIO5",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Transférer : A partir de documents relatifs à une application biotechnologique (par exemple : production d’insuline, d’hormone de croissance, OGM,…), décrire l’impact de cette application sur notre quotidien ou sur l’environnement."
+  },
+  {
+   "code": "CTSB-BIO5-T3",
+   "parentCode": "CTSB-BIO5",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Transférer : A partir de la lecture de différents documents, participer à un débat contradictoire argumenté scientifiquement (ou faire réaliser par les élèves un argumentaire scientifique), sur les avantages et les inconvénients liés à l’utilisation des OGM."
+  },
+  {
+   "code": "CTSB-BIO5-T4",
+   "parentCode": "CTSB-BIO5",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Transférer : Evolution"
+  },
+  {
+   "code": "CTSB-BIO5-T5",
+   "parentCode": "CTSB-BIO5",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Transférer : A partir de l’analyse de documents décrivant un cas concret d’apparition d’une nouvelle espèce (par exemple : les pinsons de Darwin, les moustiques du métro de Londres, les souris de Madère, le lézard des ruines,…), mettre en évidence les mécanismes particuliers qui permettent d’expliquer l’apparition de ces nouvelles espèces."
+  },
+  {
+   "code": "CTSB-BIO5-T6",
+   "parentCode": "CTSB-BIO5",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Transférer : A la lumière de la théorie néodarwinienne, critiquer les arguments développés dans des théories (par exemple : le fixisme, le créationnisme, le lamarckisme,…) qui tentent d’expliquer l’origine et l’évolution de la vie à la surface de la Terre."
+  },
+  {
+   "code": "CTSB-BIO5-K1",
+   "parentCode": "CTSB-BIO5",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Connaître : Génétique"
+  },
+  {
+   "code": "CTSB-BIO5-K2",
+   "parentCode": "CTSB-BIO5",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Connaître : Distinguer une maladie chromosomique d’une maladie génétique."
+  },
+  {
+   "code": "CTSB-BIO5-K3",
+   "parentCode": "CTSB-BIO5",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Connaître : Expliquer la relation entre gène et structure primaire de la protéine."
+  },
+  {
+   "code": "CTSB-BIO5-K4",
+   "parentCode": "CTSB-BIO5",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Connaître : Décrire de manière simple le processus de synthèse des protéines (transcription et traduction)."
+  },
+  {
+   "code": "CTSB-BIO5-K5",
+   "parentCode": "CTSB-BIO5",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Connaître : Expliquer les possibles conséquences des mutations au niveau des cellules germinales ou somatiques."
+  },
+  {
+   "code": "CTSB-BIO5-K6",
+   "parentCode": "CTSB-BIO5",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Connaître : A partir d’un document, décrire de manière simple une application concrète des biotechnologies (exemple : production d’OGM, thérapie génique,…)."
+  },
+  {
+   "code": "CTSB-BIO5-K7",
+   "parentCode": "CTSB-BIO5",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Connaître : Illustrer à partir d’un exemple que l’environnement peut modifier l’expression de certains gènes phénotypes."
+  },
+  {
+   "code": "CTSB-BIO5-K8",
+   "parentCode": "CTSB-BIO5",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Connaître : Evolution"
+  },
+  {
+   "code": "CTSB-BIO5-K9",
+   "parentCode": "CTSB-BIO5",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Connaître : Interpréter la structure d’un arbre phylogénétique."
+  },
+  {
+   "code": "CTSB-BIO5-K10",
+   "parentCode": "CTSB-BIO5",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Connaître : A partir de l’analyse d’un document ou d’une visite au musée, décrire l’aspect buissonnant de la lignée humaine."
+  },
+  {
+   "code": "CTSB-BIO5-K11",
+   "parentCode": "CTSB-BIO5",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Connaître : Décrire de manière simple, les mécanismes importants (variabilité génétique, sélection naturelle) impliqués dans la théorie de l’évolution."
+  },
+  {
+   "code": "CTSB-BIO5-K12",
+   "parentCode": "CTSB-BIO5",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Connaître : Identifier (à partir de documents, de visites de musées,…) des critères anatomiques d’appartenance à la lignée humaine."
+  },
+  {
+   "code": "CTSB-BIO5-K13",
+   "parentCode": "CTSB-BIO5",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Connaître : Situer et dater l’origine de la lignée humaine."
+  },
+  {
+   "code": "CTSB-BIO5-K14",
+   "parentCode": "CTSB-BIO5",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Connaître : Percevoir les limites d’un modèle (sur base de l’histoire des théories de l’évolution)."
+  },
+  {
+   "code": "CTSB-BIO5-K15",
+   "parentCode": "CTSB-BIO5",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Connaître : Stratégie transversale"
+  },
+  {
+   "code": "CTSB-BIO5-R1",
+   "parentCode": "CTSB-BIO5",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Génétique"
+  },
+  {
+   "code": "CTSB-BIO5-R2",
+   "parentCode": "CTSB-BIO5",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Phénotype (macroscopique, cellulaire et moléculaire)"
+  },
+  {
+   "code": "CTSB-BIO5-R3",
+   "parentCode": "CTSB-BIO5",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Génotype"
+  },
+  {
+   "code": "CTSB-BIO5-R4",
+   "parentCode": "CTSB-BIO5",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Code génétique : propriétés"
+  },
+  {
+   "code": "CTSB-BIO5-R5",
+   "parentCode": "CTSB-BIO5",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Maladie génétique"
+  },
+  {
+   "code": "CTSB-BIO5-R6",
+   "parentCode": "CTSB-BIO5",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Maladie chromosomique"
+  },
+  {
+   "code": "CTSB-BIO5-R7",
+   "parentCode": "CTSB-BIO5",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Ultrastructure cellulaire (noyau, ribosomes, ADN, ARNm, ARNt, protéines)"
+  },
+  {
+   "code": "CTSB-BIO5-R8",
+   "parentCode": "CTSB-BIO5",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Evolution"
+  },
+  {
+   "code": "CTSB-BIO5-R9",
+   "parentCode": "CTSB-BIO5",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Espèce"
+  },
+  {
+   "code": "CTSB-BIO5-R10",
+   "parentCode": "CTSB-BIO5",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Spéciation"
+  },
+  {
+   "code": "CTSB-BIO5-R11",
+   "parentCode": "CTSB-BIO5",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Brassage génétique et mutation"
+  },
+  {
+   "code": "CTSB-BIO5-R12",
+   "parentCode": "CTSB-BIO5",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Sélection naturelle et dérive génétique"
+  },
+  {
+   "code": "CTSB-BIO5-R13",
+   "parentCode": "CTSB-BIO5",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Origine de la vie et chronologie de l’évolution"
+  },
+  {
+   "code": "CTSB-BIO5-R14",
+   "parentCode": "CTSB-BIO5",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Le néodarwinisme"
+  },
+  {
+   "code": "CTSB-BIO5-R15",
+   "parentCode": "CTSB-BIO5",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Lien de parenté entre les vivants"
+  },
+  {
+   "code": "CTSB-BIO5-R16",
+   "parentCode": "CTSB-BIO5",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Arbre phylogénétique (ancêtre commun hypothétique, innovation évolutive)"
+  },
+  {
+   "code": "CTSB-BIO5-R17",
+   "parentCode": "CTSB-BIO5",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Observer, recenser, organiser des informations relatives à la génétique et à l’évolution, et formuler des hypothèses."
+  },
+  {
+   "code": "CTSB-BIO5-R18",
+   "parentCode": "CTSB-BIO5",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Réaliser un schéma fonctionnel (synthèse des protéines, …)."
+  },
+  {
+   "code": "CTSB-BIO6",
+   "parentCode": "CTSB",
+   "kind": "competence",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Biologie – Les impacts de l’Homme sur les écosystèmes"
+  },
+  {
+   "code": "CTSB-BIO6-C1",
+   "parentCode": "CTSB-BIO6",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Compétence : Identifier et expliquer l’impact significatif d’activités humaines sur un écosystème."
+  },
+  {
+   "code": "CTSB-BIO6-C2",
+   "parentCode": "CTSB-BIO6",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Compétence : Développer une argumentation scientifique pour critiquer une action de l’être humain sur un écosystème, puis proposer des solutions préventives et curatives."
+  },
+  {
+   "code": "CTSB-BIO6-A1",
+   "parentCode": "CTSB-BIO6",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Appliquer : Par l’observation d’écosystèmes, montrer la nécessité de les préserver en mettant en évidence les services qu’ils rendent."
+  },
+  {
+   "code": "CTSB-BIO6-A2",
+   "parentCode": "CTSB-BIO6",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Appliquer : Expliquer que certaines activités humaines peuvent modifier le fonctionnement d’un écosystème :(par exemple : le déversement de lisier, l’introduction d’une espèce invasive, la surpêche,…)."
+  },
+  {
+   "code": "CTSB-BIO6-A3",
+   "parentCode": "CTSB-BIO6",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Appliquer : Calculer son empreinte écologique (en fonction de son alimentation, de ses déplacements, de sa consommation, …)."
+  },
+  {
+   "code": "CTSB-BIO6-T1",
+   "parentCode": "CTSB-BIO6",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Transférer : Participer à un débat scientifiquement argumenté pour proposer, en tant que citoyen responsable, des pistes de solutions, afin de protéger les écosystèmes (par exemple : changement des habitudes de consommation, lutte contre la surconsommation d’eau douce, choix énergétique, valorisation des déchets,…)."
+  },
+  {
+   "code": "CTSB-BIO6-T2",
+   "parentCode": "CTSB-BIO6",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Transférer : Expliquer comment certaines activités humaines favorisent le développement, le maintien ou la restauration de la biodiversité (par exemple : maillages vert et bleu, transhumance du mouton sur les pelouses calcaires, protection de sites et d’espèces (hotspots et projets « life »), sylviculture diversifiée, …)."
+  },
+  {
+   "code": "CTSB-BIO6-K1",
+   "parentCode": "CTSB-BIO6",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Connaître : A partir de documents, identifier quelques causes pouvant être à l’origine d’une diminution de la biodiversité dans un écosystème."
+  },
+  {
+   "code": "CTSB-BIO6-K2",
+   "parentCode": "CTSB-BIO6",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Connaître : Décrire à partir d’un exemple (tétras-lyre, cigognes noires,…), les caractéristiques biologiques qui font qu’une espèce est menacée."
+  },
+  {
+   "code": "CTSB-BIO6-K3",
+   "parentCode": "CTSB-BIO6",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Connaître : Décrire à partir d’un exemple (balsamine de l’Himalaya, berce du Caucase, coccinelle asiatique, Caulerpa taxifolia, …), les caractéristiques biologiques d’une espèce invasive."
+  },
+  {
+   "code": "CTSB-BIO6-K4",
+   "parentCode": "CTSB-BIO6",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Connaître : Expliquer les notions d’empreinte écologique."
+  },
+  {
+   "code": "CTSB-BIO6-R1",
+   "parentCode": "CTSB-BIO6",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Les 5 causes principales de la diminution de la biodiversité (la surexploitation des ressources, la fragmentation des habitats, la pollution, les invasions biologiques, les changements climatiques)"
+  },
+  {
+   "code": "CTSB-BIO6-R2",
+   "parentCode": "CTSB-BIO6",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Empreinte écologique"
+  },
+  {
+   "code": "CTSB-BIO6-R3",
+   "parentCode": "CTSB-BIO6",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Services rendus par les écosystèmes (au niveau production, régulation, bien-être)"
+  },
+  {
+   "code": "CTSB-BIO6-R4",
+   "parentCode": "CTSB-BIO6",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Construire une argumentation scientifique dans le contexte du développement durable."
+  },
+  {
+   "code": "CTSB-CHI5",
+   "parentCode": "CTSB",
+   "kind": "competence",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Chimie – Les liaisons chimiques"
+  },
+  {
+   "code": "CTSB-CHI5-C1",
+   "parentCode": "CTSB-CHI5",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Compétence : A partir du modèle de Lewis et d’informations du tableau périodique des éléments, représenter une molécule avec ses liaisons."
+  },
+  {
+   "code": "CTSB-CHI5-C2",
+   "parentCode": "CTSB-CHI5",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Compétence : Représenter la configuration spatiale d’espèces chimiques et prévoir leur comportement dans l’eau."
+  },
+  {
+   "code": "CTSB-CHI5-A1",
+   "parentCode": "CTSB-CHI5",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Appliquer : Construire une représentation d’une molécule à partir du modèle de Lewis des atomes constitutifs sur base des informations extraites du tableau périodique des éléments."
+  },
+  {
+   "code": "CTSB-CHI5-A2",
+   "parentCode": "CTSB-CHI5",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Appliquer : Caractériser une liaison à partir de l’électronégativité des atomes constitutifs."
+  },
+  {
+   "code": "CTSB-CHI5-A3",
+   "parentCode": "CTSB-CHI5",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Appliquer : Ecrire l’équation de dissociation d’un sel."
+  },
+  {
+   "code": "CTSB-CHI5-T1",
+   "parentCode": "CTSB-CHI5",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Transférer : Représenter la configuration spatiale des espèces chimiques d’HO, CH, NaCl, CO, O et prévoir leur comportement dans l’eau."
+  },
+  {
+   "code": "CTSB-CHI5-T2",
+   "parentCode": "CTSB-CHI5",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Transférer : Expliquer un comportement de la matière à partir de sa modélisation atomique/ionique/moléculaire (par exemple : la déviation d’un filet d’eau par une charge électrique, la conductivité, le caractère soluble,…)."
+  },
+  {
+   "code": "CTSB-CHI5-K1",
+   "parentCode": "CTSB-CHI5",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Connaître : Décrire la structure électronique externe d’un atome à partir de sa position dans le tableau périodique des éléments et en déduire la valence."
+  },
+  {
+   "code": "CTSB-CHI5-R1",
+   "parentCode": "CTSB-CHI5",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Modèle de Lewis"
+  },
+  {
+   "code": "CTSB-CHI5-R2",
+   "parentCode": "CTSB-CHI5",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Electron de valence"
+  },
+  {
+   "code": "CTSB-CHI5-R3",
+   "parentCode": "CTSB-CHI5",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Liaison ionique"
+  },
+  {
+   "code": "CTSB-CHI5-R4",
+   "parentCode": "CTSB-CHI5",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Liaison covalente pure et liaison covalente polarisée"
+  },
+  {
+   "code": "CTSB-CHI5-R5",
+   "parentCode": "CTSB-CHI5",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Représenter une molécule en 3D."
+  },
+  {
+   "code": "CTSB-CHI5-R6",
+   "parentCode": "CTSB-CHI5",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Représenter la structure de Lewis d’un atome à l’aide du tableau périodique des éléments."
+  },
+  {
+   "code": "CTSB-CHI5-R7",
+   "parentCode": "CTSB-CHI5",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Extraire les informations (valence, nombre d’oxydation, électronégativité) du tableau périodique des éléments."
+  },
+  {
+   "code": "CTSB-CHI6",
+   "parentCode": "CTSB",
+   "kind": "competence",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Chimie – Les équilibres chimiques"
+  },
+  {
+   "code": "CTSB-CHI6-C1",
+   "parentCode": "CTSB-CHI6",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Compétence : Prévoir le sens d’évolution d’une réaction réversible."
+  },
+  {
+   "code": "CTSB-CHI6-A1",
+   "parentCode": "CTSB-CHI6",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Appliquer : Utiliser une table des constantes d’équilibre pour distinguer une réaction complète d’une réaction limitée à un équilibre."
+  },
+  {
+   "code": "CTSB-CHI6-A2",
+   "parentCode": "CTSB-CHI6",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Appliquer : Calculer la constante d’équilibre Kc associée à une transformation chimique."
+  },
+  {
+   "code": "CTSB-CHI6-A3",
+   "parentCode": "CTSB-CHI6",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Appliquer : Calculer une concentration molaire."
+  },
+  {
+   "code": "CTSB-CHI6-A4",
+   "parentCode": "CTSB-CHI6",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Appliquer : Prévoir la concentration d’une espèce chimique présente dans un milieu réactionnel en équilibre en utilisant la valeur de la constante d’équilibre Kc associée."
+  },
+  {
+   "code": "CTSB-CHI6-A5",
+   "parentCode": "CTSB-CHI6",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Appliquer : Prévoir le sens spontané d’évolution suite à une perturbation (incluant des variations de pression, de concentration ou de température) d’une réaction initialement en équilibre."
+  },
+  {
+   "code": "CTSB-CHI6-T1",
+   "parentCode": "CTSB-CHI6",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Transférer : Expliquer l’évolution d’une situation concrète sur base du principe de Le Châtelier (par exemple : caisson hyperbare, stages en altitude,…)."
+  },
+  {
+   "code": "CTSB-CHI6-K1",
+   "parentCode": "CTSB-CHI6",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Connaître : A partir d’exemples, induire la Loi de Le Châtelier."
+  },
+  {
+   "code": "CTSB-CHI6-R1",
+   "parentCode": "CTSB-CHI6",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Ca et [A]"
+  },
+  {
+   "code": "CTSB-CHI6-R2",
+   "parentCode": "CTSB-CHI6",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Loi de Guldberg et Waage"
+  },
+  {
+   "code": "CTSB-CHI6-R3",
+   "parentCode": "CTSB-CHI6",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Loi de Le Châtelier"
+  },
+  {
+   "code": "CTSB-CHI6-R4",
+   "parentCode": "CTSB-CHI6",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Réactions complète et limitée à un équilibre"
+  },
+  {
+   "code": "CTSB-CHI6-R5",
+   "parentCode": "CTSB-CHI6",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Extraire des informations dans une table de données thermodynamiques."
+  },
+  {
+   "code": "CTSB-CHI6-R6",
+   "parentCode": "CTSB-CHI6",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Utiliser une équation du 1er degré ou du 2ème degré pour résoudre un exercice d’équilibre chimique."
+  },
+  {
+   "code": "CTSB-CHI7",
+   "parentCode": "CTSB",
+   "kind": "competence",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Chimie – Notions de base de chimie organique (alcanes, polymères, alcènes)"
+  },
+  {
+   "code": "CTSB-CHI7-C1",
+   "parentCode": "CTSB-CHI7",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Compétence : Evaluer l’importance des substances organiques dans l’environnement quotidien du consommateur responsable."
+  },
+  {
+   "code": "CTSB-CHI7-A1",
+   "parentCode": "CTSB-CHI7",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Appliquer : A l’aide des pouvoirs calorifiques de différents combustibles (en se référant à une unité commune comme la TEP), estimer ceux qui sont les plus économiques d’une part et ceux qui rejettent le moins de dioxyde de carbone d’autre part."
+  },
+  {
+   "code": "CTSB-CHI7-T1",
+   "parentCode": "CTSB-CHI7",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Transférer : Mettre en évidence l’impact positif des polymères synthétiques sur notre société."
+  },
+  {
+   "code": "CTSB-CHI7-T2",
+   "parentCode": "CTSB-CHI7",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Transférer : Expliquer un processus de recyclage des matières plastiques."
+  },
+  {
+   "code": "CTSB-CHI7-K1",
+   "parentCode": "CTSB-CHI7",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Connaître : Distinguer un composé organique d’un composé inorganique."
+  },
+  {
+   "code": "CTSB-CHI7-K2",
+   "parentCode": "CTSB-CHI7",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Connaître : Combustion"
+  },
+  {
+   "code": "CTSB-CHI7-K3",
+   "parentCode": "CTSB-CHI7",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Connaître : Décrire un phénomène de combustion."
+  },
+  {
+   "code": "CTSB-CHI7-K4",
+   "parentCode": "CTSB-CHI7",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Connaître : Retracer les étapes du processus industriel qui permet de produire des carburants automobiles."
+  },
+  {
+   "code": "CTSB-CHI7-K5",
+   "parentCode": "CTSB-CHI7",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Connaître : Polymérisation"
+  },
+  {
+   "code": "CTSB-CHI7-K6",
+   "parentCode": "CTSB-CHI7",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Connaître : Décrire le principe d’une réaction de polymérisation sans spécifier le mécanisme."
+  },
+  {
+   "code": "CTSB-CHI7-K7",
+   "parentCode": "CTSB-CHI7",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Connaître : Décrire des macromolécules (synthétiques et naturelles) comme le résultat d’une polymérisation."
+  },
+  {
+   "code": "CTSB-CHI7-K8",
+   "parentCode": "CTSB-CHI7",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Connaître : Décrire la diversité des polymères synthétiques à partir des pictogrammes d’identification."
+  },
+  {
+   "code": "CTSB-CHI7-R1",
+   "parentCode": "CTSB-CHI7",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Composé organique"
+  },
+  {
+   "code": "CTSB-CHI7-R2",
+   "parentCode": "CTSB-CHI7",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Alcane, alcène"
+  },
+  {
+   "code": "CTSB-CHI7-R3",
+   "parentCode": "CTSB-CHI7",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Combustible, comburant, combustion"
+  },
+  {
+   "code": "CTSB-CHI7-R4",
+   "parentCode": "CTSB-CHI7",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Pouvoir calorifique"
+  },
+  {
+   "code": "CTSB-CHI7-R5",
+   "parentCode": "CTSB-CHI7",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Monomère, polymère"
+  },
+  {
+   "code": "CTSB-CHI7-R6",
+   "parentCode": "CTSB-CHI7",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Pictogrammes d’identification de polymères"
+  },
+  {
+   "code": "CTSB-CHI7-R7",
+   "parentCode": "CTSB-CHI7",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Extraire des informations dans une table de pouvoirs calorifiques."
+  },
+  {
+   "code": "CTSB-CHI8",
+   "parentCode": "CTSB",
+   "kind": "competence",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Chimie – Grandes classes de réactions chimiques (acide-base, oxydoréduction, précipitation)"
+  },
+  {
+   "code": "CTSB-CHI8-C1",
+   "parentCode": "CTSB-CHI8",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Compétence : Décrire une réaction de précipitation comme une réaction de recombinaison d’ions, une réaction acide base comme un transfert de protons, une oxydoréduction comme un transfert d’électrons."
+  },
+  {
+   "code": "CTSB-CHI8-A1",
+   "parentCode": "CTSB-CHI8",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Appliquer : Prévoir (sans calculer) une précipitation à partir d’un tableau de solubilité."
+  },
+  {
+   "code": "CTSB-CHI8-A2",
+   "parentCode": "CTSB-CHI8",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Appliquer : Déterminer les espèces chimiques présentes dans une solution à partir des espèces introduites."
+  },
+  {
+   "code": "CTSB-CHI8-A3",
+   "parentCode": "CTSB-CHI8",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Appliquer : Utiliser une table de potentiels d’oxydoréduction afin de prédire le sens d’évolution d’une réaction chimique."
+  },
+  {
+   "code": "CTSB-CHI8-A4",
+   "parentCode": "CTSB-CHI8",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Appliquer : Utiliser le principe de neutralisation pour interpréter une situation de la vie courante."
+  },
+  {
+   "code": "CTSB-CHI8-T1",
+   "parentCode": "CTSB-CHI8",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Transférer : Associer le pH d’un milieu aqueux présent dans l’environnement de l’élève (par exemple : boissons, engrais, piscines, milieux biologiques, …) à certains comportements et à certaines propriétés de ce milieu."
+  },
+  {
+   "code": "CTSB-CHI8-T2",
+   "parentCode": "CTSB-CHI8",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Transférer : Interpréter et prévoir un phénomène de la vie courante, un processus industriel en utilisant sans calcul une table de potentiels d’oxydoréduction."
+  },
+  {
+   "code": "CTSB-CHI8-T3",
+   "parentCode": "CTSB-CHI8",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Transférer : Expliquer sur base de phénomènes de précipitation une situation telle que l’épuration des eaux, l’entartrage, …"
+  },
+  {
+   "code": "CTSB-CHI8-K1",
+   "parentCode": "CTSB-CHI8",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Connaître : Expliquer le fonctionnement d’une pile à partir de la réaction d’oxydoréduction."
+  },
+  {
+   "code": "CTSB-CHI8-K2",
+   "parentCode": "CTSB-CHI8",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Connaître : Décrire une réaction acide-base."
+  },
+  {
+   "code": "CTSB-CHI8-K3",
+   "parentCode": "CTSB-CHI8",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Connaître : Décrire un phénomène de corrosion comme une oxydoréduction."
+  },
+  {
+   "code": "CTSB-CHI8-K4",
+   "parentCode": "CTSB-CHI8",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Connaître : Décrire et illustrer les caractéristiques de l’échelle de pH."
+  },
+  {
+   "code": "CTSB-CHI8-K5",
+   "parentCode": "CTSB-CHI8",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Connaître : Décrire une réaction de précipitation."
+  },
+  {
+   "code": "CTSB-CHI8-R1",
+   "parentCode": "CTSB-CHI8",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Réactions acide-base"
+  },
+  {
+   "code": "CTSB-CHI8-R2",
+   "parentCode": "CTSB-CHI8",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Acide et base de Brönsted"
+  },
+  {
+   "code": "CTSB-CHI8-R3",
+   "parentCode": "CTSB-CHI8",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Neutralisation selon Arrhenius"
+  },
+  {
+   "code": "CTSB-CHI8-R4",
+   "parentCode": "CTSB-CHI8",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Autoprotolyse de l’eau"
+  },
+  {
+   "code": "CTSB-CHI8-R5",
+   "parentCode": "CTSB-CHI8",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Couple acide/base"
+  },
+  {
+   "code": "CTSB-CHI8-R6",
+   "parentCode": "CTSB-CHI8",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Neutralisation"
+  },
+  {
+   "code": "CTSB-CHI8-R7",
+   "parentCode": "CTSB-CHI8",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : pH (définition)"
+  },
+  {
+   "code": "CTSB-CHI8-R8",
+   "parentCode": "CTSB-CHI8",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Réactions d’oxydo-réduction"
+  },
+  {
+   "code": "CTSB-CHI8-R9",
+   "parentCode": "CTSB-CHI8",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Oxydant, réducteur"
+  },
+  {
+   "code": "CTSB-CHI8-R10",
+   "parentCode": "CTSB-CHI8",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Oxydation, réduction"
+  },
+  {
+   "code": "CTSB-CHI8-R11",
+   "parentCode": "CTSB-CHI8",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Couple oxydant/réducteur"
+  },
+  {
+   "code": "CTSB-CHI8-R12",
+   "parentCode": "CTSB-CHI8",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Table de potentiels"
+  },
+  {
+   "code": "CTSB-CHI8-R13",
+   "parentCode": "CTSB-CHI8",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Pile"
+  },
+  {
+   "code": "CTSB-CHI8-R14",
+   "parentCode": "CTSB-CHI8",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Réactions de précipitation"
+  },
+  {
+   "code": "CTSB-CHI8-R15",
+   "parentCode": "CTSB-CHI8",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Précipitation"
+  },
+  {
+   "code": "CTSB-CHI8-R16",
+   "parentCode": "CTSB-CHI8",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Tableau de solubilité"
+  },
+  {
+   "code": "CTSB-CHI8-R17",
+   "parentCode": "CTSB-CHI8",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Espèces soluble, peu soluble, insoluble"
+  },
+  {
+   "code": "CTSB-CHI8-R18",
+   "parentCode": "CTSB-CHI8",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Extraire des informations dans une table (potentiels redox, couples acides-base, solubilité (aspect qualitatif))."
+  },
+  {
+   "code": "CTSB-CHI8-R19",
+   "parentCode": "CTSB-CHI8",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Extraire des informations (valence, état d’oxydation, masse atomique relative, électronégativité) à l’aide du tableau périodique des éléments."
+  },
+  {
+   "code": "CTSB-CHI8-R20",
+   "parentCode": "CTSB-CHI8",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Déterminer la charge d’un ion à partir d’informations du tableau périodique des éléments."
+  },
+  {
+   "code": "CTSB-PHY5",
+   "parentCode": "CTSB",
+   "kind": "competence",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Physique – Forces et mouvements"
+  },
+  {
+   "code": "CTSB-PHY5-C1",
+   "parentCode": "CTSB-PHY5",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Compétence : Convertir et interpréter des graphiques de mouvements."
+  },
+  {
+   "code": "CTSB-PHY5-C2",
+   "parentCode": "CTSB-PHY5",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Compétence : Mener une recherche expérimentale décrivant un mouvement et ses causes (notamment la chute des corps)."
+  },
+  {
+   "code": "CTSB-PHY5-C3",
+   "parentCode": "CTSB-PHY5",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Compétence : Utiliser des lois de la physique dans le cadre de la sécurité routière."
+  },
+  {
+   "code": "CTSB-PHY5-A1",
+   "parentCode": "CTSB-PHY5",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Appliquer : Estimer l’ordre de grandeur d’une vitesse à partir d’une situation concrète (par exemple : film, suite de photos, chronophotographie, capteurs, expérience)."
+  },
+  {
+   "code": "CTSB-PHY5-A2",
+   "parentCode": "CTSB-PHY5",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Appliquer : A partir d’une situation donnée et d’un référentiel (choisi par l’élève), relever des positions successives d’un objet en mouvement."
+  },
+  {
+   "code": "CTSB-PHY5-A3",
+   "parentCode": "CTSB-PHY5",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Appliquer : Construire les graphiques horaires de position et d'accélération correspondant à un graphique horaire de vitesse donné (sans utilisation de formule) et justifier la forme des courbes."
+  },
+  {
+   "code": "CTSB-PHY5-A4",
+   "parentCode": "CTSB-PHY5",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Appliquer : A partir d’une situation concrète (par exemple : film, suite de photos chronophotographie, capteurs, expérience), décrire l’évolution de la vitesse de chute d’un objet : dans un fluide (vitesse limite)"
+  },
+  {
+   "code": "CTSB-PHY5-A5",
+   "parentCode": "CTSB-PHY5",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Appliquer : A partir d’une situation concrète (par exemple : film, suite de photos chronophotographie, capteurs, expérience), décrire l’évolution de la vitesse de chute d’un objet : en l’absence d’air."
+  },
+  {
+   "code": "CTSB-PHY5-A6",
+   "parentCode": "CTSB-PHY5",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Appliquer : Mener une recherche expérimentale pour identifier et quantifier les paramètres qui font varier l'accélération d'un mobile (loi fondamentale de la dynamique)."
+  },
+  {
+   "code": "CTSB-PHY5-T1",
+   "parentCode": "CTSB-PHY5",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Transférer : Justifier une affirmation de la sécurité routière du type: « une collision d’une voiture à 90 km/h contre un mur correspond à la chute de cette même voiture d’une hauteur de 11 étages »."
+  },
+  {
+   "code": "CTSB-PHY5-T2",
+   "parentCode": "CTSB-PHY5",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Transférer : En utilisant les lois de Newton, expliquer qualitativement un élément de sécurité routière (par exemple : position debout dans un bus, ceinture de sécurité, éléments d'amortissement des chocs, limitation de vitesse dans les virages, distance de freinage,…)."
+  },
+  {
+   "code": "CTSB-PHY5-T3",
+   "parentCode": "CTSB-PHY5",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Transférer : Détailler en termes de vitesse et de forces le mouvement d’une voiture qui s’engage, par exemple, sur une autoroute jusqu’à rouler à une vitesse constante."
+  },
+  {
+   "code": "CTSB-PHY5-K1",
+   "parentCode": "CTSB-PHY5",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Connaître : A partir d’une situation concrète (par exemple : chronophotographie, série de photos, film), décrire succinctement l’évolution de la vitesse ou de l’accélération d’un objet en mouvement rectiligne (ou l’inverse : proposer un évènement compatible avec des données de vitesse et/ou d’accélération)."
+  },
+  {
+   "code": "CTSB-PHY5-K2",
+   "parentCode": "CTSB-PHY5",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Connaître : Mettre en évidence la relativité du mouvement et de la trajectoire dans deux référentiels différents."
+  },
+  {
+   "code": "CTSB-PHY5-K3",
+   "parentCode": "CTSB-PHY5",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Connaître : Estimer l'ordre de grandeur de quelques vitesses et accélérations de phénomènes courants."
+  },
+  {
+   "code": "CTSB-PHY5-K4",
+   "parentCode": "CTSB-PHY5",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Connaître : Décrire un mouvement circulaire uniforme à l'aide des concepts de vitesse, d'accélération et de force centripète."
+  },
+  {
+   "code": "CTSB-PHY5-R1",
+   "parentCode": "CTSB-PHY5",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Mouvements rectilignes"
+  },
+  {
+   "code": "CTSB-PHY5-R2",
+   "parentCode": "CTSB-PHY5",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Pente d’une droite tangente à une courbe (approche qualitative)"
+  },
+  {
+   "code": "CTSB-PHY5-R3",
+   "parentCode": "CTSB-PHY5",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Repérage de la position d’un mobile (notion de référentiel)"
+  },
+  {
+   "code": "CTSB-PHY5-R4",
+   "parentCode": "CTSB-PHY5",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Vitesse moyenne et vitesse instantanée (unité SI). Passage d’une unité à une autre (m/s en km/h et inversement)"
+  },
+  {
+   "code": "CTSB-PHY5-R5",
+   "parentCode": "CTSB-PHY5",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Accélération moyenne et accélération instantanée (unité SI)"
+  },
+  {
+   "code": "CTSB-PHY5-R6",
+   "parentCode": "CTSB-PHY5",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Mouvement rectiligne uniforme et mouvement rectiligne uniformément accéléré. Graphiques horaires (sans application des formules)"
+  },
+  {
+   "code": "CTSB-PHY5-R7",
+   "parentCode": "CTSB-PHY5",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Calcul des distances en utilisant la vitesse moyenne (pour un seul mouvement)"
+  },
+  {
+   "code": "CTSB-PHY5-R8",
+   "parentCode": "CTSB-PHY5",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Lois de Newton"
+  },
+  {
+   "code": "CTSB-PHY5-R9",
+   "parentCode": "CTSB-PHY5",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Vitesse limite de chute dans un fluide"
+  },
+  {
+   "code": "CTSB-PHY5-R10",
+   "parentCode": "CTSB-PHY5",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Mouvement circulaire uniforme (approche qualitative)"
+  },
+  {
+   "code": "CTSB-PHY5-R11",
+   "parentCode": "CTSB-PHY5",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Vecteur vitesse"
+  },
+  {
+   "code": "CTSB-PHY5-R12",
+   "parentCode": "CTSB-PHY5",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Vitesse angulaire"
+  },
+  {
+   "code": "CTSB-PHY5-R13",
+   "parentCode": "CTSB-PHY5",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Accélération et force centripètes (sans formule)"
+  },
+  {
+   "code": "CTSB-PHY5-R14",
+   "parentCode": "CTSB-PHY5",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Identifier une vitesse dans un graphique (positiontemps)."
+  },
+  {
+   "code": "CTSB-PHY5-R15",
+   "parentCode": "CTSB-PHY5",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Identifier une accélération dans un graphique (vitesse-temps)."
+  },
+  {
+   "code": "CTSB-PHY5-R16",
+   "parentCode": "CTSB-PHY5",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Calculer une vitesse moyenne."
+  },
+  {
+   "code": "CTSB-PHY5-R17",
+   "parentCode": "CTSB-PHY5",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Calculer une accélération moyenne."
+  },
+  {
+   "code": "CTSB-PHY5-R18",
+   "parentCode": "CTSB-PHY5",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Déterminer la position d’un mobile dans un référentiel."
+  },
+  {
+   "code": "CTSB-PHY5-R19",
+   "parentCode": "CTSB-PHY5",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Indiquer les forces agissant sur un objet en lien avec son mouvement."
+  },
+  {
+   "code": "CTSB-PHY5-R20",
+   "parentCode": "CTSB-PHY5",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Estimer un ordre de grandeur (d’une vitesse et d’une accélération)."
+  },
+  {
+   "code": "CTSB-PHY5-R21",
+   "parentCode": "CTSB-PHY5",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Utiliser les unités SI des grandeurs (masse, durée, vitesse, accélération, force,...)."
+  },
+  {
+   "code": "CTSB-PHY5-R22",
+   "parentCode": "CTSB-PHY5",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Vérifier la cohérence des unités et le cas échéant, les transformer (masse, durée, vitesse, accélération, force,...)."
+  },
+  {
+   "code": "CTSB-PHY6",
+   "parentCode": "CTSB",
+   "kind": "competence",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Physique – Oscillations et ondes"
+  },
+  {
+   "code": "CTSB-PHY6-C1",
+   "parentCode": "CTSB-PHY6",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Compétence : Décrire et expliquer une application, un phénomène ou une expérience impliquant la transmission d’une information via une onde."
+  },
+  {
+   "code": "CTSB-PHY6-A1",
+   "parentCode": "CTSB-PHY6",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Appliquer : Déterminer expérimentalement la période et la fréquence d’un mouvement périodique."
+  },
+  {
+   "code": "CTSB-PHY6-A2",
+   "parentCode": "CTSB-PHY6",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Appliquer : En se basant sur les vitesses du son et de la lumière, estimer la distance d’un impact de foudre."
+  },
+  {
+   "code": "CTSB-PHY6-A3",
+   "parentCode": "CTSB-PHY6",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Appliquer : Dans le cadre d’un phénomène montré par une expérience ou des documents, mettre en évidence une des propriétés des ondes (par exemple : propagation rectiligne, réflexion, réfraction, diffraction, résonance, interférences, effet Doppler, superposition)."
+  },
+  {
+   "code": "CTSB-PHY6-A4",
+   "parentCode": "CTSB-PHY6",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Appliquer : Comparer les plages d’audibilité de quelques volontaires."
+  },
+  {
+   "code": "CTSB-PHY6-A5",
+   "parentCode": "CTSB-PHY6",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Appliquer : A partir d’une expérience réalisée en classe faisant intervenir l’induction magnétique entre bobines, décrire comment produire et capter une onde électromagnétique."
+  },
+  {
+   "code": "CTSB-PHY6-T1",
+   "parentCode": "CTSB-PHY6",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Transférer : A partir d’un ou de plusieurs documents, de mesures ou d’une réalisation expérimentale, expliquer comment utiliser les propriétés des ondes dans le cadre : soit d’une application technologique (par exemple : le « Doppler » médical, l’échographie par ultrasons)"
+  },
+  {
+   "code": "CTSB-PHY6-T2",
+   "parentCode": "CTSB-PHY6",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Transférer : A partir d’un ou de plusieurs documents, de mesures ou d’une réalisation expérimentale, expliquer comment utiliser les propriétés des ondes dans le cadre : soit d’un instrument de musique"
+  },
+  {
+   "code": "CTSB-PHY6-T3",
+   "parentCode": "CTSB-PHY6",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Transférer : A partir d’un ou de plusieurs documents, de mesures ou d’une réalisation expérimentale, expliquer comment utiliser les propriétés des ondes dans le cadre : soit d’un phénomène naturel (par exemple : l’écholocation, le tsunami, la propagation des ondes sismiques)."
+  },
+  {
+   "code": "CTSB-PHY6-T4",
+   "parentCode": "CTSB-PHY6",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Transférer : Mener une recherche critique sur les effets d’un type d’onde particulier (par exemple : son, infrarouge, ultraviolet, micro-ondes, ondes GSM, rayons X)."
+  },
+  {
+   "code": "CTSB-PHY6-K1",
+   "parentCode": "CTSB-PHY6",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Connaître : Construire la relation entre la fréquence, la vitesse de propagation et la longueur d’onde."
+  },
+  {
+   "code": "CTSB-PHY6-K2",
+   "parentCode": "CTSB-PHY6",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Connaître : Citer des exemples de phénomènes périodiques."
+  },
+  {
+   "code": "CTSB-PHY6-K3",
+   "parentCode": "CTSB-PHY6",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Connaître : Citer des exemples de phénomènes ondulatoires. Estimer l’ordre de grandeur des longueurs d’ondes ou fréquences correspondantes."
+  },
+  {
+   "code": "CTSB-PHY6-K4",
+   "parentCode": "CTSB-PHY6",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Connaître : Sur base de situation expérimentale, un graphique ou une photo, identifier si deux points situés sur le trajet d’une onde oscillent en concordance ou en opposition de phase."
+  },
+  {
+   "code": "CTSB-PHY6-K5",
+   "parentCode": "CTSB-PHY6",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Connaître : Montrer par un exemple qu’une onde transporte de l’énergie et que celle-ci est liée à l’amplitude de l’onde."
+  },
+  {
+   "code": "CTSB-PHY6-K6",
+   "parentCode": "CTSB-PHY6",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Connaître : Identifier une propriété des ondes à partir d’un document ou d’une expérience réalisée en classe (par exemple : propagation rectiligne, réflexion, réfraction, diffraction, résonance, interférences, effet Doppler, superposition)."
+  },
+  {
+   "code": "CTSB-PHY6-R1",
+   "parentCode": "CTSB-PHY6",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Période, fréquence, longueur d’onde, élongation, amplitude"
+  },
+  {
+   "code": "CTSB-PHY6-R2",
+   "parentCode": "CTSB-PHY6",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Vitesse de propagation et milieu de propagation"
+  },
+  {
+   "code": "CTSB-PHY6-R3",
+   "parentCode": "CTSB-PHY6",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Concordance de phase et opposition de phase"
+  },
+  {
+   "code": "CTSB-PHY6-R4",
+   "parentCode": "CTSB-PHY6",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Transmission d’énergie, réflexion, réfraction, diffraction, résonance (aspects qualitatifs)"
+  },
+  {
+   "code": "CTSB-PHY6-R5",
+   "parentCode": "CTSB-PHY6",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Interférences, effet Doppler/Fizeau (aspect qualitatif)"
+  },
+  {
+   "code": "CTSB-PHY6-R6",
+   "parentCode": "CTSB-PHY6",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Ondes sonores (intensité sonore, niveau sonore, plage d’audibilité). Oscillogramme d’un son pur et timbre d’une voix de fréquence voisine"
+  },
+  {
+   "code": "CTSB-PHY6-R7",
+   "parentCode": "CTSB-PHY6",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Ondes électromagnétiques (spectre électromagnétique)"
+  },
+  {
+   "code": "CTSB-PHY6-R8",
+   "parentCode": "CTSB-PHY6",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Induction magnétique (limitée à la transmission d’énergie d’une bobine à une autre)"
+  },
+  {
+   "code": "CTSB-PHY6-R9",
+   "parentCode": "CTSB-PHY6",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Calculer une fréquence à partir d’une période et vice-versa."
+  },
+  {
+   "code": "CTSB-PHY6-R10",
+   "parentCode": "CTSB-PHY6",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Appliquer la relation v = /T."
+  },
+  {
+   "code": "CTSB-PHY6-R11",
+   "parentCode": "CTSB-PHY6",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Estimer un ordre de grandeur (longueur d’onde, période, fréquence)."
+  },
+  {
+   "code": "CTSB-PHY6-R12",
+   "parentCode": "CTSB-PHY6",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Utiliser les unités SI des grandeurs (longueur d’onde, période, fréquence, élongation, amplitude,...)."
+  },
+  {
+   "code": "CTSB-PHY6-R13",
+   "parentCode": "CTSB-PHY6",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Vérifier la cohérence des unités et le cas échéant, les transformer (longueur d’onde, période, fréquence, élongation, amplitude,...)."
+  },
+  {
+   "code": "CTSB-PHY7",
+   "parentCode": "CTSB",
+   "kind": "competence",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Physique – Sources d’énergie – De l’atome à l’éolienne"
+  },
+  {
+   "code": "CTSB-PHY7-C1",
+   "parentCode": "CTSB-PHY7",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Compétence : Expliquer comment produire et transporter de l’énergie électrique."
+  },
+  {
+   "code": "CTSB-PHY7-C2",
+   "parentCode": "CTSB-PHY7",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Compétence : Développer des arguments scientifiques en faveur et contre l’utilisation de ressources ou de technologies énergétiques."
+  },
+  {
+   "code": "CTSB-PHY7-A1",
+   "parentCode": "CTSB-PHY7",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Appliquer : Déterminer la demi-vie d’un échantillon radioactif à partir d’un graphique présentant la décroissance radioactive en fonction du temps."
+  },
+  {
+   "code": "CTSB-PHY7-A2",
+   "parentCode": "CTSB-PHY7",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Appliquer : A partir de documents, estimer la surface de panneaux photovoltaïques ou le nombre d’éoliennes pour produire un pourcentage donné de l’énergie électrique consommée en Belgique."
+  },
+  {
+   "code": "CTSB-PHY7-A3",
+   "parentCode": "CTSB-PHY7",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Appliquer : Sur base de documents, calculer le rendement théorique et effectif d’une machine thermique."
+  },
+  {
+   "code": "CTSB-PHY7-T1",
+   "parentCode": "CTSB-PHY7",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Transférer : Présenter les avantages et les inconvénients de différentes sources d’énergie renouvelables et non renouvelables sur base de différents critères donnés (par exemple : disponibilité, coût, répercussions environnementales, déchets)."
+  },
+  {
+   "code": "CTSB-PHY7-T2",
+   "parentCode": "CTSB-PHY7",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Transférer : A partir du schéma d’une machine thermique (par exemple : pompe à chaleur, frigo), expliquer les transferts énergétiques qu’implique son usage."
+  },
+  {
+   "code": "CTSB-PHY7-K1",
+   "parentCode": "CTSB-PHY7",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Connaître : Préciser les conditions d’apparition du courant induit produit par une génératrice."
+  },
+  {
+   "code": "CTSB-PHY7-K2",
+   "parentCode": "CTSB-PHY7",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Connaître : Expliquer le principe de fonctionnement d’un réacteur nucléaire et décrire la production d’énergie électrique associée."
+  },
+  {
+   "code": "CTSB-PHY7-K3",
+   "parentCode": "CTSB-PHY7",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Connaître : Décrire le fonctionnement d’une machine thermique et expliquer en quoi son rendement est toujours inférieur à 100 %."
+  },
+  {
+   "code": "CTSB-PHY7-K4",
+   "parentCode": "CTSB-PHY7",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Connaître : A l’aide d’un schéma, décrire les éléments d’un dispositif permettant de minimiser les pertes dans le transport d’électricité à grande distance."
+  },
+  {
+   "code": "CTSB-PHY7-R1",
+   "parentCode": "CTSB-PHY7",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Radioactivité et énergie nucléaire"
+  },
+  {
+   "code": "CTSB-PHY7-R2",
+   "parentCode": "CTSB-PHY7",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Rayonnement: origine nucléaire, types, activité, demi-vie d’un échantillon radioactif (approche graphique uniquement)"
+  },
+  {
+   "code": "CTSB-PHY7-R3",
+   "parentCode": "CTSB-PHY7",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Unité d’activité : Bq"
+  },
+  {
+   "code": "CTSB-PHY7-R4",
+   "parentCode": "CTSB-PHY7",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Notion de défaut de masse en lien avec la libération d’énergie (aspects qualitatifs)"
+  },
+  {
+   "code": "CTSB-PHY7-R5",
+   "parentCode": "CTSB-PHY7",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Fission nucléaire, produits de fission"
+  },
+  {
+   "code": "CTSB-PHY7-R6",
+   "parentCode": "CTSB-PHY7",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Appliquer le premier principe de thermodynamique."
+  },
+  {
+   "code": "CTSB-PHY7-R7",
+   "parentCode": "CTSB-PHY7",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Calculer le rendement d’une machine (cas simple)."
+  },
+  {
+   "code": "CTSB-PHY7-R8",
+   "parentCode": "CTSB-PHY7",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Réaliser un schéma intégrant les énergies entrantes et sortantes d’une machine."
+  },
+  {
+   "code": "CTSB-PHY7-R9",
+   "parentCode": "CTSB-PHY7",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Estimer un ordre de grandeur (énergie, rendement)."
+  },
+  {
+   "code": "CTSB-PHY7-R10",
+   "parentCode": "CTSB-PHY7",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Réaliser un schéma électrique."
+  },
+  {
+   "code": "CTSB-PHY7-R11",
+   "parentCode": "CTSB-PHY7",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Utiliser les unités SI des grandeurs (énergie, température, durée, activité)."
+  },
+  {
+   "code": "CTSB-PHY7-R12",
+   "parentCode": "CTSB-PHY7",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Vérifier la cohérence des unités et le cas échéant, les transformer (énergie, température, durée, activité)."
+  },
+  {
+   "code": "CTSB-PHY8",
+   "parentCode": "CTSB",
+   "kind": "competence",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Physique – La Terre et le cosmos"
+  },
+  {
+   "code": "CTSB-PHY8-C1",
+   "parentCode": "CTSB-PHY8",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Compétence : Décrire la place de la Terre dans l’univers."
+  },
+  {
+   "code": "CTSB-PHY8-C2",
+   "parentCode": "CTSB-PHY8",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Compétence : Identifier quelques propriétés de la Terre qui la rendent habitable."
+  },
+  {
+   "code": "CTSB-PHY8-A1",
+   "parentCode": "CTSB-PHY8",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Appliquer : Calculer la variation de l’accélération de la pesanteur terrestre en fonction de l’altitude."
+  },
+  {
+   "code": "CTSB-PHY8-A2",
+   "parentCode": "CTSB-PHY8",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Appliquer : Estimer la valeur de la vitesse de la lumière à travers différentes pratiques expérimentales ou historiques."
+  },
+  {
+   "code": "CTSB-PHY8-T1",
+   "parentCode": "CTSB-PHY8",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Transférer : A partir d’une recherche documentaire, estimer l’influence de l’évolution de la composition de l’atmosphère sur l’effet de serre."
+  },
+  {
+   "code": "CTSB-PHY8-T2",
+   "parentCode": "CTSB-PHY8",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Transférer : A partir d’une recherche documentaire, décrire les caractéristiques physiques (par exemple : température d’équilibre, composition atmosphérique, distance au Soleil, présence d’eau liquide) qui ont permis le développement de la vie sur Terre."
+  },
+  {
+   "code": "CTSB-PHY8-K1",
+   "parentCode": "CTSB-PHY8",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Connaître : Décrire les grandes étapes de l’évolution de modèles relatifs aux mouvements des astres."
+  },
+  {
+   "code": "CTSB-PHY8-K2",
+   "parentCode": "CTSB-PHY8",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Connaître : Décrire la structure du système solaire et les orbites des planètes (sans aborder les lois de Kepler)."
+  },
+  {
+   "code": "CTSB-PHY8-K3",
+   "parentCode": "CTSB-PHY8",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Connaître : A partir d’une table de données astronomiques, décrire qualitativement le lien entre la force de gravitation, le rayon moyen de l’orbite des planètes et leur vitesse orbitale."
+  },
+  {
+   "code": "CTSB-PHY8-K4",
+   "parentCode": "CTSB-PHY8",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Connaître : Expliquer comment on mesure une distance astronomique (par exemple : distance Terre-Lune, distance Terre-Soleil)."
+  },
+  {
+   "code": "CTSB-PHY8-K5",
+   "parentCode": "CTSB-PHY8",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Connaître : Décrire brièvement l’histoire de l’univers et l’évolution des étoiles."
+  },
+  {
+   "code": "CTSB-PHY8-K6",
+   "parentCode": "CTSB-PHY8",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Connaître : Percevoir les limites d’un modèle (sur base de l’histoire des modèles de l’Univers)."
+  },
+  {
+   "code": "CTSB-PHY8-K7",
+   "parentCode": "CTSB-PHY8",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Connaître : HUMANITES GENERALES ET TECHNOLOGIQUES"
+  },
+  {
+   "code": "CTSB-PHY8-K8",
+   "parentCode": "CTSB-PHY8",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Connaître : En application de l’arrêté du Gouvernement de la Communauté française du 16 janvier 2014 déterminant les compétences terminales et savoirs requis à l'issue de la section de transition des humanités générales et technologiques en mathématiques, en sciences de base et en sciences générales et déterminant les compétences terminales et savoirs communs à l’issue de la section de qualification des humanités techniques et professionnelles en éducation scientifique, en français, en sciences économiques et sociales ainsi qu’en sciences humaines, il peut être dérogé aux compétences visées dans la présente annexe, conformément aux articles 3 à 7 dudit arrêté."
+  },
+  {
+   "code": "CTSB-PHY8-K9",
+   "parentCode": "CTSB-PHY8",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Connaître : Fait à Bruxelles, le 4 décembre 2014."
+  },
+  {
+   "code": "CTSB-PHY8-K10",
+   "parentCode": "CTSB-PHY8",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Connaître : Vu pour être annexé au décret du 4 décembre 2014."
+  },
+  {
+   "code": "CTSB-PHY8-K11",
+   "parentCode": "CTSB-PHY8",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Connaître : Le Ministre-Président,"
+  },
+  {
+   "code": "CTSB-PHY8-K12",
+   "parentCode": "CTSB-PHY8",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Connaître : Rudy DEMOTTE"
+  },
+  {
+   "code": "CTSB-PHY8-K13",
+   "parentCode": "CTSB-PHY8",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Connaître : La Vice-Présidente et Ministre de l'Education, de la Culture et de l’Enfance"
+  },
+  {
+   "code": "CTSB-PHY8-K14",
+   "parentCode": "CTSB-PHY8",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Connaître : Joëlle MILQUET"
+  },
+  {
+   "code": "CTSB-PHY8-K15",
+   "parentCode": "CTSB-PHY8",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Connaître : La Ministre de l’Enseignement de Promotion sociale, de la Jeunesse, des Droits des femmes : et de l’Egalité des chances"
+  },
+  {
+   "code": "CTSB-PHY8-K16",
+   "parentCode": "CTSB-PHY8",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Connaître : Isabelle SIMONIS"
+  },
+  {
+   "code": "CTSB-PHY8-K17",
+   "parentCode": "CTSB-PHY8",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Connaître : Stratégie transversale"
+  },
+  {
+   "code": "CTSB-PHY8-K18",
+   "parentCode": "CTSB-PHY8",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Connaître : Annexe II"
+  },
+  {
+   "code": "CTSB-PHY8-R1",
+   "parentCode": "CTSB-PHY8",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Description de l‘univers"
+  },
+  {
+   "code": "CTSB-PHY8-R2",
+   "parentCode": "CTSB-PHY8",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Géocentrisme – héliocentrisme"
+  },
+  {
+   "code": "CTSB-PHY8-R3",
+   "parentCode": "CTSB-PHY8",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Force de gravitation universelle"
+  },
+  {
+   "code": "CTSB-PHY8-R4",
+   "parentCode": "CTSB-PHY8",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Vitesse de la lumière"
+  },
+  {
+   "code": "CTSB-PHY8-R5",
+   "parentCode": "CTSB-PHY8",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : La Terre et la Lune"
+  },
+  {
+   "code": "CTSB-PHY8-R6",
+   "parentCode": "CTSB-PHY8",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Le Soleil et le système solaire"
+  },
+  {
+   "code": "CTSB-PHY8-R7",
+   "parentCode": "CTSB-PHY8",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Les étoiles et les galaxies"
+  },
+  {
+   "code": "CTSB-PHY8-R8",
+   "parentCode": "CTSB-PHY8",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Evolution de l’univers"
+  },
+  {
+   "code": "CTSB-PHY8-R9",
+   "parentCode": "CTSB-PHY8",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Hypothèse du Big Bang"
+  },
+  {
+   "code": "CTSB-PHY8-R10",
+   "parentCode": "CTSB-PHY8",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Notion de fusion nucléaire"
+  },
+  {
+   "code": "CTSB-PHY8-R11",
+   "parentCode": "CTSB-PHY8",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Naissance et évolution d’une étoile"
+  },
+  {
+   "code": "CTSB-PHY8-R12",
+   "parentCode": "CTSB-PHY8",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : La Terre"
+  },
+  {
+   "code": "CTSB-PHY8-R13",
+   "parentCode": "CTSB-PHY8",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Dimensions, température, structure, atmosphère"
+  },
+  {
+   "code": "CTSB-PHY8-R14",
+   "parentCode": "CTSB-PHY8",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Effet de serre"
+  },
+  {
+   "code": "CTSB-PHY8-R15",
+   "parentCode": "CTSB-PHY8",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Bilan radiatif moyen de la Terre"
+  },
+  {
+   "code": "CTSB-PHY8-R16",
+   "parentCode": "CTSB-PHY8",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Appliquer la loi de gravitation universelle dans un cas simple."
+  },
+  {
+   "code": "CTSB-PHY8-R17",
+   "parentCode": "CTSB-PHY8",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Estimer un ordre de grandeur (vitesse, force, accélération, énergie)."
+  },
+  {
+   "code": "CTSB-PHY8-R18",
+   "parentCode": "CTSB-PHY8",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Utiliser les unités SI des grandeurs (accélération, vitesse, force, énergie)."
+  },
+  {
+   "code": "CTSB-PHY8-R19",
+   "parentCode": "CTSB-PHY8",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Vérifier la cohérence des unités et le cas échéant, les transformer (accélération, vitesse, force, énergie)."
+  }
+ ]
+}

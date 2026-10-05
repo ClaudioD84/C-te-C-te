@@ -1,0 +1,2107 @@
+{
+ "source": {
+  "title": "Compétences terminales et savoirs communs en géographie (humanités générales et technologiques)",
+  "url": "https://www.enseignement.be/fileadmin/portail_age/uploads/parcours_apprentissage/secondaire_ordinaire/Organisation/Contenus_apprentissages_Secondaire/competences_terminales/FORM_COM_2et3_degres_TRANSITION/CT_HGT_Geographie.pdf",
+  "version": "2018"
+ },
+ "level": "secondaire",
+ "tracks": [
+  "general",
+  "technique",
+  "specialise"
+ ],
+ "entries": [
+  {
+   "code": "CTGEO",
+   "parentCode": null,
+   "kind": "domaine",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Compétences terminales et savoirs communs en géographie (humanités générales et technologiques)"
+  },
+  {
+   "code": "CTGEO-D2-RESSOU",
+   "parentCode": "CTGEO",
+   "kind": "competence",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Questions spatiales à propos de l’inégale répartition des populations et des ressources"
+  },
+  {
+   "code": "CTGEO-D2-RESSOU-C1",
+   "parentCode": "CTGEO-D2-RESSOU",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Compétence : mettre en œuvre la démarche géographique pour éclairer les enjeux"
+  },
+  {
+   "code": "CTGEO-D2-RESSOU-C2",
+   "parentCode": "CTGEO-D2-RESSOU",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Compétence : liés à l’accès à la nourriture, à l’eau"
+  },
+  {
+   "code": "CTGEO-D2-RESSOU-A1",
+   "parentCode": "CTGEO-D2-RESSOU",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Étude de cas pour un territoire donné."
+  },
+  {
+   "code": "CTGEO-D2-RESSOU-A2",
+   "parentCode": "CTGEO-D2-RESSOU",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : décrire une répartition spatiale/dynamique spatiale pour identifier des continuités/ discontinuités spatiales"
+  },
+  {
+   "code": "CTGEO-D2-RESSOU-A3",
+   "parentCode": "CTGEO-D2-RESSOU",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : comparer la répartition spatiale d’une ressource et celle d’une composante orohydrographique ou bioclimatique pour identifier l’existence de liens entre elles"
+  },
+  {
+   "code": "CTGEO-D2-RESSOU-A4",
+   "parentCode": "CTGEO-D2-RESSOU",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : comparer la répartition spatiale de la population et celle d’une ressource pour classer des atouts et/ou des contraintes pour les activités humaines."
+  },
+  {
+   "code": "CTGEO-D2-RESSOU-A5",
+   "parentCode": "CTGEO-D2-RESSOU",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : annoter une représentation de l’espace"
+  },
+  {
+   "code": "CTGEO-D2-RESSOU-A6",
+   "parentCode": "CTGEO-D2-RESSOU",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : réaliser une carte schématique/ croquis cartographique"
+  },
+  {
+   "code": "CTGEO-D2-RESSOU-A7",
+   "parentCode": "CTGEO-D2-RESSOU",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : commenter en quelques phrases une représentation de l’espace"
+  },
+  {
+   "code": "CTGEO-D2-RESSOU-A8",
+   "parentCode": "CTGEO-D2-RESSOU",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : organiser les atouts et/ou les contraintes dans un tableau."
+  },
+  {
+   "code": "CTGEO-D2-RESSOU-K1",
+   "parentCode": "CTGEO-D2-RESSOU",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Connaître : La répartition spatiale des principaux foyers de peuplement et des principaux vides à l’échelle mondiale et continentale."
+  },
+  {
+   "code": "CTGEO-D2-RESSOU-K2",
+   "parentCode": "CTGEO-D2-RESSOU",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Connaître : La répartition spatiale des composantes orohydrographiques et bioclimatiques à l’échelle mondiale et continentale."
+  },
+  {
+   "code": "CTGEO-D2-RESSOU-K3",
+   "parentCode": "CTGEO-D2-RESSOU",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Connaître : Un(des) exemple(s) qui illustre(nt) : des liens entre des composantes naturelles"
+  },
+  {
+   "code": "CTGEO-D2-RESSOU-K4",
+   "parentCode": "CTGEO-D2-RESSOU",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Connaître : des liens entre des composantes orohydrographiques et bioclimatiques et des catégories de ressources pour expliciter le concept d’atouts/contraintes"
+  },
+  {
+   "code": "CTGEO-D2-RESSOU-K5",
+   "parentCode": "CTGEO-D2-RESSOU",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Connaître : les modèles spatiaux."
+  },
+  {
+   "code": "CTGEO-D2-RESSOU-R1",
+   "parentCode": "CTGEO-D2-RESSOU",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : l’élève a besoin…"
+  },
+  {
+   "code": "CTGEO-D2-RESSOU-R2",
+   "parentCode": "CTGEO-D2-RESSOU",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : …pour caractériser une répartition spatiale aux échelles mondiale et continentale"
+  },
+  {
+   "code": "CTGEO-D2-RESSOU-R3",
+   "parentCode": "CTGEO-D2-RESSOU",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Les continents, les océans, les hémisphères Nord et Sud, l’équateur, les tropiques, les cercles polaires, le méridien de Greenwich"
+  },
+  {
+   "code": "CTGEO-D2-RESSOU-R4",
+   "parentCode": "CTGEO-D2-RESSOU",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Population Les espaces peuplés : Asie de l’Est (Chine), Asie du Sud (Inde, Pakistan), Indonésie, Golfe de Guinée (Nigéria), Région des Grands Lacs africains, Est de l’Amérique du Nord, Europe. Les 15 aires urbaines les plus peuplées du Monde. Les espaces vides : Amazonie, cuvette du Congo, Bornéo, Sahara, centre de l’Australie, péninsule arabique, Gobi, Nord du 60e parallèle Nord, Antarctique, Himalaya, Rocheuses, Andes."
+  },
+  {
+   "code": "CTGEO-D2-RESSOU-R5",
+   "parentCode": "CTGEO-D2-RESSOU",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Bioclimat Les paysages naturels et les spécificités des climats associés aux espaces peuplés et vides : forêt tropicale humide, savane, désert, forêt tempérée, forêt boréale, steppe et toundra."
+  },
+  {
+   "code": "CTGEO-D2-RESSOU-R6",
+   "parentCode": "CTGEO-D2-RESSOU",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Orohydrographie Principaux reliefs : Himalaya, Rocheuses, Andes, Rift africain. Principaux fleuves : Amazone, Mississippi, Gange, Huang He, Yangzi Jiang, Congo, Nil, Mékong, Indus, Brahmapoutre."
+  },
+  {
+   "code": "CTGEO-D2-RESSOU-R7",
+   "parentCode": "CTGEO-D2-RESSOU",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : …pour caractériser des liens spatiaux entre différentes composantes naturelles à l’aide de connaissances théoriques"
+  },
+  {
+   "code": "CTGEO-D2-RESSOU-R8",
+   "parentCode": "CTGEO-D2-RESSOU",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Liens température avec latitude/altitude/exposition."
+  },
+  {
+   "code": "CTGEO-D2-RESSOU-R9",
+   "parentCode": "CTGEO-D2-RESSOU",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Liens précipitations avec latitude/altitude/exposition."
+  },
+  {
+   "code": "CTGEO-D2-RESSOU-R10",
+   "parentCode": "CTGEO-D2-RESSOU",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Liens entre température-précipitations-continentalité."
+  },
+  {
+   "code": "CTGEO-D2-RESSOU-R11",
+   "parentCode": "CTGEO-D2-RESSOU",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Liens entre végétation-sols-climat."
+  },
+  {
+   "code": "CTGEO-D2-RESSOU-R12",
+   "parentCode": "CTGEO-D2-RESSOU",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : …pour analyser des répartitions à l’aide d’un modèle spatial"
+  },
+  {
+   "code": "CTGEO-D2-RESSOU-R13",
+   "parentCode": "CTGEO-D2-RESSOU",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Circulation atmosphérique."
+  },
+  {
+   "code": "CTGEO-D2-RESSOU-R14",
+   "parentCode": "CTGEO-D2-RESSOU",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Courants marins."
+  },
+  {
+   "code": "CTGEO-D2-RESSOU-R15",
+   "parentCode": "CTGEO-D2-RESSOU",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Zonage climatique et bioclimatique."
+  },
+  {
+   "code": "CTGEO-D2-RESSOU-R16",
+   "parentCode": "CTGEO-D2-RESSOU",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Système des moussons."
+  },
+  {
+   "code": "CTGEO-D2-RESSOU-R17",
+   "parentCode": "CTGEO-D2-RESSOU",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Bilan radiatif."
+  },
+  {
+   "code": "CTGEO-D2-RESSOU-R18",
+   "parentCode": "CTGEO-D2-RESSOU",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : La rotation de la Terre."
+  },
+  {
+   "code": "CTGEO-D2-RESSOU-R19",
+   "parentCode": "CTGEO-D2-RESSOU",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : La révolution de la Terre."
+  },
+  {
+   "code": "CTGEO-D2-RESSOU-R20",
+   "parentCode": "CTGEO-D2-RESSOU",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : …pour traiter des informations spécifiques relatives aux catégories de ressources"
+  },
+  {
+   "code": "CTGEO-D2-RESSOU-R21",
+   "parentCode": "CTGEO-D2-RESSOU",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Ressources alimentaires : monoculture, polyculture, agriculture vivrière/irriguée/intensive/extensive, familiale/industrialisée, aquaculture, halieutiques."
+  },
+  {
+   "code": "CTGEO-D2-RESSOU-R22",
+   "parentCode": "CTGEO-D2-RESSOU",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Ressources en eau : bassin hydrographique, plaine alluviale, nappe aquifère (phréatique et fossile), désertification, lessivage, eau potable."
+  },
+  {
+   "code": "CTGEO-D3-RESSOU",
+   "parentCode": "CTGEO",
+   "kind": "competence",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Questions spatiales à propos de l’inégale répartition des populations et des ressources"
+  },
+  {
+   "code": "CTGEO-D3-RESSOU-C1",
+   "parentCode": "CTGEO-D3-RESSOU",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Compétence : mettre en œuvre la démarche géographique pour éclairer les enjeux : liés à l’accès à la nourriture, à l’eau, à l’énergie et autres matières premières"
+  },
+  {
+   "code": "CTGEO-D3-RESSOU-A1",
+   "parentCode": "CTGEO-D3-RESSOU",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Appliquer : Étude de cas pour un territoire donné."
+  },
+  {
+   "code": "CTGEO-D3-RESSOU-A2",
+   "parentCode": "CTGEO-D3-RESSOU",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Appliquer : décrire une répartition spatiale/dynamique spatiale pour identifier des continuités/ discontinuités spatiales"
+  },
+  {
+   "code": "CTGEO-D3-RESSOU-A3",
+   "parentCode": "CTGEO-D3-RESSOU",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Appliquer : comparer la répartition spatiale d’une ressource et celle d’une composante orohydrographique ou bioclimatique pour identifier l’existence de liens entre elles"
+  },
+  {
+   "code": "CTGEO-D3-RESSOU-A4",
+   "parentCode": "CTGEO-D3-RESSOU",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Appliquer : comparer la répartition spatiale de la population et celle d’une ressource pour classer des atouts et/ou des contraintes pour les activités humaines."
+  },
+  {
+   "code": "CTGEO-D3-RESSOU-A5",
+   "parentCode": "CTGEO-D3-RESSOU",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Appliquer : sélectionner la/les échelle(s) adéquates"
+  },
+  {
+   "code": "CTGEO-D3-RESSOU-A6",
+   "parentCode": "CTGEO-D3-RESSOU",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Appliquer : annoter une représentation de l’espace"
+  },
+  {
+   "code": "CTGEO-D3-RESSOU-A7",
+   "parentCode": "CTGEO-D3-RESSOU",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Appliquer : réaliser une carte thématique sur un fond de carte donné"
+  },
+  {
+   "code": "CTGEO-D3-RESSOU-A8",
+   "parentCode": "CTGEO-D3-RESSOU",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Appliquer : réaliser une carte schématique/ croquis cartographique"
+  },
+  {
+   "code": "CTGEO-D3-RESSOU-A9",
+   "parentCode": "CTGEO-D3-RESSOU",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Appliquer : commenter en quelques phrases une représentation de l’espace"
+  },
+  {
+   "code": "CTGEO-D3-RESSOU-A10",
+   "parentCode": "CTGEO-D3-RESSOU",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Appliquer : organiser les atouts et/ou les contraintes dans un tableau."
+  },
+  {
+   "code": "CTGEO-D3-RESSOU-T1",
+   "parentCode": "CTGEO-D3-RESSOU",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Transférer : Étude de cas pour un territoire donné."
+  },
+  {
+   "code": "CTGEO-D3-RESSOU-T2",
+   "parentCode": "CTGEO-D3-RESSOU",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Transférer : caractériser des flux de population (direction et intensité) en lien avec l’inégale répartition des populations et des ressources pour illustrer le concept de migration"
+  },
+  {
+   "code": "CTGEO-D3-RESSOU-T3",
+   "parentCode": "CTGEO-D3-RESSOU",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Transférer : caractériser des flux de"
+  },
+  {
+   "code": "CTGEO-D3-RESSOU-T4",
+   "parentCode": "CTGEO-D3-RESSOU",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Transférer : (direction et intensité) en lien avec l’inégale répartition des populations et des ressources pour illustrer le concept de mondialisation."
+  },
+  {
+   "code": "CTGEO-D3-RESSOU-K1",
+   "parentCode": "CTGEO-D3-RESSOU",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Connaître : La répartition spatiale des principaux foyers de peuplement et des principaux vides à l’échelle mondiale et continentale."
+  },
+  {
+   "code": "CTGEO-D3-RESSOU-K2",
+   "parentCode": "CTGEO-D3-RESSOU",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Connaître : La répartition spatiale des composantes orohydrographiques et bioclimatiques à l’échelle mondiale et continentale."
+  },
+  {
+   "code": "CTGEO-D3-RESSOU-K3",
+   "parentCode": "CTGEO-D3-RESSOU",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Connaître : Des exemples qui illustrent : des liens entre des composantes naturelles"
+  },
+  {
+   "code": "CTGEO-D3-RESSOU-K4",
+   "parentCode": "CTGEO-D3-RESSOU",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Connaître : Des exemples qui illustrent : des liens entre des composantes orohydrographiques et bioclimatiques et des catégories de ressources pour expliciter le concept d’atouts/contraintes"
+  },
+  {
+   "code": "CTGEO-D3-RESSOU-K5",
+   "parentCode": "CTGEO-D3-RESSOU",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Connaître : Des exemples qui illustrent : des flux comme conséquences de disparités entre des espaces pour expliciter les concepts de mondialisation et de migration"
+  },
+  {
+   "code": "CTGEO-D3-RESSOU-K6",
+   "parentCode": "CTGEO-D3-RESSOU",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Connaître : Des exemples qui illustrent : les modèles spatiaux."
+  },
+  {
+   "code": "CTGEO-D3-RESSOU-R1",
+   "parentCode": "CTGEO-D3-RESSOU",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : l’élève a besoin…"
+  },
+  {
+   "code": "CTGEO-D3-RESSOU-R2",
+   "parentCode": "CTGEO-D3-RESSOU",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : …pour caractériser une répartition spatiale aux échelles mondiale et continentale"
+  },
+  {
+   "code": "CTGEO-D3-RESSOU-R3",
+   "parentCode": "CTGEO-D3-RESSOU",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Les continents, les océans, les hémisphères Nord et Sud, l’équateur, les tropiques, les cercles polaires, le méridien de Greenwich."
+  },
+  {
+   "code": "CTGEO-D3-RESSOU-R4",
+   "parentCode": "CTGEO-D3-RESSOU",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Population Les espaces peuplés : Asie de l’Est (Chine), Asie du Sud (Inde, Pakistan), Indonésie, Golfe de Guinée (Nigéria), Région des Grands Lacs africains, Est de l’Amérique du Nord, Europe. Les 15 aires urbaines les plus peuplées du Monde. Les espaces vides : Amazonie, cuvette du Congo, Bornéo, Sahara, centre de l’Australie, péninsule arabique, Gobi, Nord du 60e parallèle Nord, Antarctique, Himalaya, Rocheuses, Andes."
+  },
+  {
+   "code": "CTGEO-D3-RESSOU-R5",
+   "parentCode": "CTGEO-D3-RESSOU",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Bioclimat Les paysages naturels et les spécificités des climats associés aux espaces peuplés et vides : forêt tropicale humide, savane, désert, forêt tempérée, forêt boréale, steppe et toundra."
+  },
+  {
+   "code": "CTGEO-D3-RESSOU-R6",
+   "parentCode": "CTGEO-D3-RESSOU",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Orohydrographie Principaux reliefs : Himalaya, Rocheuses, Andes, Rift africain."
+  },
+  {
+   "code": "CTGEO-D3-RESSOU-R7",
+   "parentCode": "CTGEO-D3-RESSOU",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Principaux fleuves : Amazone, Mississippi, Gange, Huang He, Yangzi Jiang, Congo, Nil, Mékong, Indus, Brahmapoutre."
+  },
+  {
+   "code": "CTGEO-D3-RESSOU-R8",
+   "parentCode": "CTGEO-D3-RESSOU",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : …pour caractériser des liens spatiaux entre différentes composantes naturelles à l’aide de connaissances théoriques"
+  },
+  {
+   "code": "CTGEO-D3-RESSOU-R9",
+   "parentCode": "CTGEO-D3-RESSOU",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Liens température avec latitude/altitude/exposition."
+  },
+  {
+   "code": "CTGEO-D3-RESSOU-R10",
+   "parentCode": "CTGEO-D3-RESSOU",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Liens précipitations avec latitude/altitude/exposition."
+  },
+  {
+   "code": "CTGEO-D3-RESSOU-R11",
+   "parentCode": "CTGEO-D3-RESSOU",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Liens entre température-précipitations-continentalité."
+  },
+  {
+   "code": "CTGEO-D3-RESSOU-R12",
+   "parentCode": "CTGEO-D3-RESSOU",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Liens entre végétation-sols-climat."
+  },
+  {
+   "code": "CTGEO-D3-RESSOU-R13",
+   "parentCode": "CTGEO-D3-RESSOU",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : …pour analyser des répartitions à l’aide d’un modèle spatial"
+  },
+  {
+   "code": "CTGEO-D3-RESSOU-R14",
+   "parentCode": "CTGEO-D3-RESSOU",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Circulation atmosphérique."
+  },
+  {
+   "code": "CTGEO-D3-RESSOU-R15",
+   "parentCode": "CTGEO-D3-RESSOU",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Courants marins."
+  },
+  {
+   "code": "CTGEO-D3-RESSOU-R16",
+   "parentCode": "CTGEO-D3-RESSOU",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Zonage climatique et bioclimatique."
+  },
+  {
+   "code": "CTGEO-D3-RESSOU-R17",
+   "parentCode": "CTGEO-D3-RESSOU",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Système des moussons."
+  },
+  {
+   "code": "CTGEO-D3-RESSOU-R18",
+   "parentCode": "CTGEO-D3-RESSOU",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Bilan radiatif."
+  },
+  {
+   "code": "CTGEO-D3-RESSOU-R19",
+   "parentCode": "CTGEO-D3-RESSOU",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : La rotation de la Terre."
+  },
+  {
+   "code": "CTGEO-D3-RESSOU-R20",
+   "parentCode": "CTGEO-D3-RESSOU",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : La révolution de la Terre."
+  },
+  {
+   "code": "CTGEO-D3-RESSOU-R21",
+   "parentCode": "CTGEO-D3-RESSOU",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : …pour traiter des informations spécifiques relatives aux catégories de ressources"
+  },
+  {
+   "code": "CTGEO-D3-RESSOU-R22",
+   "parentCode": "CTGEO-D3-RESSOU",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Ressources alimentaires : monoculture, polyculture, agriculture vivrière/irriguée/intensive/extensive, familiale/industrialisée, aquaculture, halieutiques."
+  },
+  {
+   "code": "CTGEO-D3-RESSOU-R23",
+   "parentCode": "CTGEO-D3-RESSOU",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Ressources en eau : bassin hydrographique, plaine alluviale, nappe aquifère (phréatique et fossile), désertification, lessivage, eau potable."
+  },
+  {
+   "code": "CTGEO-D3-RESSOU-R24",
+   "parentCode": "CTGEO-D3-RESSOU",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Ressources énergétiques et autres matières premières: soussol, mines, énergie renouvelable / non renouvelable, énergie primaire / secondaire."
+  },
+  {
+   "code": "CTGEO-D2-TECHNO",
+   "parentCode": "CTGEO",
+   "kind": "competence",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Questions spatiales à propos de la gestion des risques naturels et technologiques"
+  },
+  {
+   "code": "CTGEO-D2-TECHNO-C1",
+   "parentCode": "CTGEO-D2-TECHNO",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Compétence : mettre en œuvre la démarche géographique pour éclairer des enjeux : liés aux risques naturels et technologiques"
+  },
+  {
+   "code": "CTGEO-D2-TECHNO-A1",
+   "parentCode": "CTGEO-D2-TECHNO",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Étude de cas pour un territoire donné."
+  },
+  {
+   "code": "CTGEO-D2-TECHNO-A2",
+   "parentCode": "CTGEO-D2-TECHNO",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : décrire la répartition spatiale d’un aléa pour identifier des continuités/discontinuités spatiales"
+  },
+  {
+   "code": "CTGEO-D2-TECHNO-A3",
+   "parentCode": "CTGEO-D2-TECHNO",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : comparer la répartition spatiale d’un aléa et celle d’une composante orohydrographique ou bioclimatique pour identifier l’existence de liens entre eux"
+  },
+  {
+   "code": "CTGEO-D2-TECHNO-A4",
+   "parentCode": "CTGEO-D2-TECHNO",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : comparer la répartition spatiale d’un aléa et celle d’une population pour identifier des espaces à risque."
+  },
+  {
+   "code": "CTGEO-D2-TECHNO-A5",
+   "parentCode": "CTGEO-D2-TECHNO",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : annoter une représentation de l’espace"
+  },
+  {
+   "code": "CTGEO-D2-TECHNO-A6",
+   "parentCode": "CTGEO-D2-TECHNO",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : réaliser une carte schématique - un croquis cartographique"
+  },
+  {
+   "code": "CTGEO-D2-TECHNO-A7",
+   "parentCode": "CTGEO-D2-TECHNO",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : commenter en quelques phrases une représentation de l’espace."
+  },
+  {
+   "code": "CTGEO-D2-TECHNO-K1",
+   "parentCode": "CTGEO-D2-TECHNO",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Connaître : La répartition spatiale des principaux foyers de population à l’échelle mondiale."
+  },
+  {
+   "code": "CTGEO-D2-TECHNO-K2",
+   "parentCode": "CTGEO-D2-TECHNO",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Connaître : La répartition spatiale des composantes orohydrographiques et bioclimatiques à l’échelle mondiale."
+  },
+  {
+   "code": "CTGEO-D2-TECHNO-K3",
+   "parentCode": "CTGEO-D2-TECHNO",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Connaître : Un exemple qui illustre les modèles spatiaux."
+  },
+  {
+   "code": "CTGEO-D2-TECHNO-R1",
+   "parentCode": "CTGEO-D2-TECHNO",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : l’élève a besoin…"
+  },
+  {
+   "code": "CTGEO-D2-TECHNO-R2",
+   "parentCode": "CTGEO-D2-TECHNO",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : …pour caractériser une répartition spatiale aux échelles mondiale et continentale"
+  },
+  {
+   "code": "CTGEO-D2-TECHNO-R3",
+   "parentCode": "CTGEO-D2-TECHNO",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Les continents, les océans, les hémisphères Nord et Sud, l’équateur, les tropiques, les cercles polaires, le méridien de Greenwich."
+  },
+  {
+   "code": "CTGEO-D2-TECHNO-R4",
+   "parentCode": "CTGEO-D2-TECHNO",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Population Les espaces peuplés : Asie de l’Est (Chine), Asie du Sud (Inde, Pakistan), Indonésie, Golfe de Guinée (Nigéria), Région des Grands Lacs africains, Est de l’Amérique du Nord, Europe. Les espaces vides : Amazonie, cuvette du Congo, Bornéo, Sahara, centre de l’Australie, péninsule arabique, Gobi, Nord du 60e parallèle Nord, Antarctique, Himalaya, Rocheuses, Andes. Les 15 aires urbaines les plus peuplées du Monde."
+  },
+  {
+   "code": "CTGEO-D2-TECHNO-R5",
+   "parentCode": "CTGEO-D2-TECHNO",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Bioclimat Pour les espaces peuplés et vides, les principales caractéristiques des climats associés aux paysages naturels : forêt tropicale humide, savane, désert, forêt tempérée, forêt boréale, steppe et toundra."
+  },
+  {
+   "code": "CTGEO-D2-TECHNO-R6",
+   "parentCode": "CTGEO-D2-TECHNO",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Orohydrographie Principaux reliefs : Himalaya, Rocheuses, Andes, Rift africain. Principaux fleuves : Amazone, Mississippi, Gange, Niger, Huang He, Yangzi Jiang, Congo, Nil, Mékong, Indus, Brahmapoutre."
+  },
+  {
+   "code": "CTGEO-D2-TECHNO-R7",
+   "parentCode": "CTGEO-D2-TECHNO",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : … pour analyser la répartition d’aléas à l’aide d’un modèle spatial y compris son vocabulaire spécifique"
+  },
+  {
+   "code": "CTGEO-D2-TECHNO-R8",
+   "parentCode": "CTGEO-D2-TECHNO",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Tectonique des plaques : séismes, épicentre, magnitude, volcans, éruption effusive, explosive, nuées ardentes, coulées de lave, tsunami."
+  },
+  {
+   "code": "CTGEO-D2-TECHNO-R9",
+   "parentCode": "CTGEO-D2-TECHNO",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Circulation atmosphérique : sècheresse, cyclones tropicaux, tornades."
+  },
+  {
+   "code": "CTGEO-D2-TECHNO-R10",
+   "parentCode": "CTGEO-D2-TECHNO",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : …pour traiter des informations en lien avec les aléas à l’aide de connaissances théoriques"
+  },
+  {
+   "code": "CTGEO-D2-TECHNO-R11",
+   "parentCode": "CTGEO-D2-TECHNO",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Fonte des glaces, élévation du niveau des mers, désertification, changements du régime des pluies et des températures comme effets des changements du climat."
+  },
+  {
+   "code": "CTGEO-D2-TECHNO-R12",
+   "parentCode": "CTGEO-D2-TECHNO",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Glissement de terrain, coulées de boue, érosion littorale, plaine alluviale, lit majeur, lit mineur, delta, estuaire, marée."
+  },
+  {
+   "code": "CTGEO-D3-TECHNO",
+   "parentCode": "CTGEO",
+   "kind": "competence",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Questions spatiales à propos de la gestion des risques naturels et technologiques"
+  },
+  {
+   "code": "CTGEO-D3-TECHNO-C1",
+   "parentCode": "CTGEO-D3-TECHNO",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Compétence : mettre en œuvre la démarche géographique pour éclairer des enjeux : liés aux risques naturels et technologiques et à leur gestion"
+  },
+  {
+   "code": "CTGEO-D3-TECHNO-A1",
+   "parentCode": "CTGEO-D3-TECHNO",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Appliquer : Étude de cas pour un territoire donné."
+  },
+  {
+   "code": "CTGEO-D3-TECHNO-A2",
+   "parentCode": "CTGEO-D3-TECHNO",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Appliquer : décrire la répartition spatiale d’un aléa pour identifier des continuités/discontinuités spatiales"
+  },
+  {
+   "code": "CTGEO-D3-TECHNO-A3",
+   "parentCode": "CTGEO-D3-TECHNO",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Appliquer : comparer la répartition spatiale d’un aléa et celle d’une composante orohydrographique ou bioclimatique pour identifier l’existence de liens entre eux"
+  },
+  {
+   "code": "CTGEO-D3-TECHNO-A4",
+   "parentCode": "CTGEO-D3-TECHNO",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Appliquer : comparer la répartition spatiale d’un aléa et celle d’une population pour identifier des espaces à risque."
+  },
+  {
+   "code": "CTGEO-D3-TECHNO-A5",
+   "parentCode": "CTGEO-D3-TECHNO",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Appliquer : sélectionner la/les échelle(s) adéquates"
+  },
+  {
+   "code": "CTGEO-D3-TECHNO-A6",
+   "parentCode": "CTGEO-D3-TECHNO",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Appliquer : annoter une représentation de l’espace"
+  },
+  {
+   "code": "CTGEO-D3-TECHNO-A7",
+   "parentCode": "CTGEO-D3-TECHNO",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Appliquer : réaliser une carte thématique sur un fonds de carte donné"
+  },
+  {
+   "code": "CTGEO-D3-TECHNO-A8",
+   "parentCode": "CTGEO-D3-TECHNO",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Appliquer : réaliser une carte schématique - un croquis cartographique"
+  },
+  {
+   "code": "CTGEO-D3-TECHNO-A9",
+   "parentCode": "CTGEO-D3-TECHNO",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Appliquer : commenter en quelques phrases une représentation de l’espace."
+  },
+  {
+   "code": "CTGEO-D3-TECHNO-T1",
+   "parentCode": "CTGEO-D3-TECHNO",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Transférer : Étude de cas pour un territoire donné."
+  },
+  {
+   "code": "CTGEO-D3-TECHNO-T2",
+   "parentCode": "CTGEO-D3-TECHNO",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Transférer : caractériser des aménagements en lien avec la vulnérabilité d’un territoire face à un aléa pour illustrer les concepts de développement et/ou de développement durable"
+  },
+  {
+   "code": "CTGEO-D3-TECHNO-T3",
+   "parentCode": "CTGEO-D3-TECHNO",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Transférer : caractériser l’évolution d’une composante de l’espace pour illustrer le concept de vulnérabilité/ potentialité et/o u le concept de migration"
+  },
+  {
+   "code": "CTGEO-D3-TECHNO-T4",
+   "parentCode": "CTGEO-D3-TECHNO",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Transférer : identifier des espaces potentiellement à risque en se référant à un modèle spatial."
+  },
+  {
+   "code": "CTGEO-D3-TECHNO-K1",
+   "parentCode": "CTGEO-D3-TECHNO",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Connaître : La répartition spatiale des principaux foyers de population aux échelles mondiale, européenne et belge."
+  },
+  {
+   "code": "CTGEO-D3-TECHNO-K2",
+   "parentCode": "CTGEO-D3-TECHNO",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Connaître : La répartition spatiale des composantes orohydrographiques et bioclimatiques aux échelles mondiale, européenne et belge."
+  },
+  {
+   "code": "CTGEO-D3-TECHNO-K3",
+   "parentCode": "CTGEO-D3-TECHNO",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Connaître : Des exemples qui illustrent : des liens spatiaux entre les activités humaines et des aléas pour expliciter le concept de vulnérabilité/potentialité"
+  },
+  {
+   "code": "CTGEO-D3-TECHNO-K4",
+   "parentCode": "CTGEO-D3-TECHNO",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Connaître : Des exemples qui illustrent : l’aménagement en lien avec la vulnérabilité d’un territoire face aux risques pour expliciter les concepts de développement et de développement durable"
+  },
+  {
+   "code": "CTGEO-D3-TECHNO-K5",
+   "parentCode": "CTGEO-D3-TECHNO",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Connaître : Des exemples qui illustrent : les modèles spatiaux."
+  },
+  {
+   "code": "CTGEO-D3-TECHNO-R1",
+   "parentCode": "CTGEO-D3-TECHNO",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : l’élève a besoin…"
+  },
+  {
+   "code": "CTGEO-D3-TECHNO-R2",
+   "parentCode": "CTGEO-D3-TECHNO",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : …pour caractériser une répartition spatiale aux échelles mondiale et continentale"
+  },
+  {
+   "code": "CTGEO-D3-TECHNO-R3",
+   "parentCode": "CTGEO-D3-TECHNO",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Les continents, les océans, les hémisphères Nord et Sud, l’équateur, les tropiques, les cercles polaires, le méridien de Greenwich."
+  },
+  {
+   "code": "CTGEO-D3-TECHNO-R4",
+   "parentCode": "CTGEO-D3-TECHNO",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Population Les espaces peuplés : Asie de l’Est (Chine), Asie du Sud (Inde, Pakistan), Indonésie, Golfe de Guinée (Nigéria), Région des Grands Lacs africains, Est de l’Amérique du Nord, Europe. Les espaces vides : Amazonie, cuvette du Congo, Bornéo, Sahara, centre de l’Australie, péninsule arabique, Gobi, Nord du 60e parallèle Nord, Antarctique, Himalaya, Rocheuses, Andes. Les 15 aires urbaines les plus peuplées du Monde."
+  },
+  {
+   "code": "CTGEO-D3-TECHNO-R5",
+   "parentCode": "CTGEO-D3-TECHNO",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Bioclimat Pour les espaces peuplés et vides, les principales caractéristiques des climats associés aux paysages naturels : forêt tropicale humide, savane, désert, forêt tempérée, forêt boréale, steppe et toundra."
+  },
+  {
+   "code": "CTGEO-D3-TECHNO-R6",
+   "parentCode": "CTGEO-D3-TECHNO",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Orohydrographie Principaux reliefs : Himalaya, Rocheuses, Andes, Rift africain. Principaux fleuves : Amazone, Mississippi, Gange, Niger, Huang He, Yangzi Jiang, Congo, Nil, Mékong, Indus, Brahmapoutre."
+  },
+  {
+   "code": "CTGEO-D3-TECHNO-R7",
+   "parentCode": "CTGEO-D3-TECHNO",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : …pour caractériser une répartition spatiale aux échelles européenne et belge"
+  },
+  {
+   "code": "CTGEO-D3-TECHNO-R8",
+   "parentCode": "CTGEO-D3-TECHNO",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Population Espaces peu/très peuplés."
+  },
+  {
+   "code": "CTGEO-D3-TECHNO-R9",
+   "parentCode": "CTGEO-D3-TECHNO",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Bioclimat Paysages naturels clés et climats associés : garrigue/maquis, forêt de feuillus, taïga, toundra. Régions européennes: bassin méditerranéen, Europe tempérée, Europe continentale, Europe septentrionale."
+  },
+  {
+   "code": "CTGEO-D3-TECHNO-R10",
+   "parentCode": "CTGEO-D3-TECHNO",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Orohydrographie Principaux reliefs : Alpes, Pyrénées, plaines de l’Ouest et du Nord, Oural. Principaux cours d’eau européens : Rhin, Rhône, Danube. Principaux cours d’eau belges : Meuse, Escaut, Yser, Sambre. Océans/Mers : Mer du Nord et Manche, Mer Méditerranée, Mer Noire, Mer Baltique."
+  },
+  {
+   "code": "CTGEO-D3-TECHNO-R11",
+   "parentCode": "CTGEO-D3-TECHNO",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Tectonique des plaques : séismes, épicentre, magnitude, volcans, éruption effusive, explosive, nuées ardentes, coulées de lave, tsunami."
+  },
+  {
+   "code": "CTGEO-D3-TECHNO-R12",
+   "parentCode": "CTGEO-D3-TECHNO",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Circulation atmosphérique : sècheresse, cyclones tropicaux, tornades."
+  },
+  {
+   "code": "CTGEO-D3-TECHNO-R13",
+   "parentCode": "CTGEO-D3-TECHNO",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Fonte des glaces, élévation du niveau des mers, désertification, changements du régime des pluies et des températures comme effets des changements du climat."
+  },
+  {
+   "code": "CTGEO-D3-TECHNO-R14",
+   "parentCode": "CTGEO-D3-TECHNO",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Glissement de terrain, coulées de boue, érosion littorale, plaine alluviale, lit majeur, lit mineur, delta, estuaire, marée."
+  },
+  {
+   "code": "CTGEO-D2-TERRIT",
+   "parentCode": "CTGEO",
+   "kind": "competence",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Questions spatiales à propos de l’aménagement du territoire"
+  },
+  {
+   "code": "CTGEO-D2-TERRIT-C1",
+   "parentCode": "CTGEO-D2-TERRIT",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Compétence : mettre en œuvre la démarche géographique pour éclairer des enjeux : liés à l’accès des populations aux fonctions d’un territoire"
+  },
+  {
+   "code": "CTGEO-D2-TERRIT-A1",
+   "parentCode": "CTGEO-D2-TERRIT",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Étude de cas pour un territoire donné."
+  },
+  {
+   "code": "CTGEO-D2-TERRIT-A2",
+   "parentCode": "CTGEO-D2-TERRIT",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : décrire la répartition spatiale/dynamique spatiale d’une fonction pour identifier des continuités ou des discontinuités spatiales"
+  },
+  {
+   "code": "CTGEO-D2-TERRIT-A3",
+   "parentCode": "CTGEO-D2-TERRIT",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : comparer la répartition spatiale de composantes de l’espace pour classer des atouts et/ou des contraintes à la localisation d’une fonction et/ou à l’accès à une fonction."
+  },
+  {
+   "code": "CTGEO-D2-TERRIT-A4",
+   "parentCode": "CTGEO-D2-TERRIT",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : annoter une représentation de l’espace"
+  },
+  {
+   "code": "CTGEO-D2-TERRIT-A5",
+   "parentCode": "CTGEO-D2-TERRIT",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : réaliser une carte schématique - un croquis cartographique"
+  },
+  {
+   "code": "CTGEO-D2-TERRIT-A6",
+   "parentCode": "CTGEO-D2-TERRIT",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : commenter en quelques phrases une représentation de l’espace."
+  },
+  {
+   "code": "CTGEO-D2-TERRIT-A7",
+   "parentCode": "CTGEO-D2-TERRIT",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : organiser les atouts et/ou les contraintes dans un tableau"
+  },
+  {
+   "code": "CTGEO-D2-TERRIT-K1",
+   "parentCode": "CTGEO-D2-TERRIT",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Connaître : Les principales fonctions d’un territoire et des facteurs de localisation."
+  },
+  {
+   "code": "CTGEO-D2-TERRIT-K2",
+   "parentCode": "CTGEO-D2-TERRIT",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Connaître : Un exemple qui illustre des liens spatiaux entre des composantes de l’espace et les activités humaines pour expliciter le concept d’atouts/contraintes."
+  },
+  {
+   "code": "CTGEO-D2-TERRIT-R1",
+   "parentCode": "CTGEO-D2-TERRIT",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : et modèles dont l’élève a besoin…"
+  },
+  {
+   "code": "CTGEO-D2-TERRIT-R2",
+   "parentCode": "CTGEO-D2-TERRIT",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : …pour traiter des informations spécifiques en lien avec l’organisation de l’espace"
+  },
+  {
+   "code": "CTGEO-D2-TERRIT-R3",
+   "parentCode": "CTGEO-D2-TERRIT",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Les principales fonctions d’un territoire donné."
+  },
+  {
+   "code": "CTGEO-D2-TERRIT-R4",
+   "parentCode": "CTGEO-D2-TERRIT",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Termes spécifiques à certaines fonctions : étalement urbain, migration pendulaire, aire urbaine, zone d’influence, réseaux de communication, distance-temps, distance-cout, affectation du sol, utilisation du sol, facteur de localisation, délocalisation."
+  },
+  {
+   "code": "CTGEO-D3-TERRIT",
+   "parentCode": "CTGEO",
+   "kind": "competence",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Questions spatiales à propos de l’aménagement du territoire"
+  },
+  {
+   "code": "CTGEO-D3-TERRIT-C1",
+   "parentCode": "CTGEO-D3-TERRIT",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Compétence : mettre en œuvre la démarche géographique pour éclairer des enjeux : liés à l’accès des populations aux fonctions d’un territoire et à sa gestion"
+  },
+  {
+   "code": "CTGEO-D3-TERRIT-A1",
+   "parentCode": "CTGEO-D3-TERRIT",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Appliquer : Étude de cas pour un territoire donné."
+  },
+  {
+   "code": "CTGEO-D3-TERRIT-A2",
+   "parentCode": "CTGEO-D3-TERRIT",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Appliquer : décrire la répartition spatiale/dynamique spatiale d’une fonction pour identifier des continuités ou des discontinuités spatiales"
+  },
+  {
+   "code": "CTGEO-D3-TERRIT-A3",
+   "parentCode": "CTGEO-D3-TERRIT",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Appliquer : comparer la répartition spatiale de composantes de l’espace pour classer des atouts et/ou des contraintes à la localisation d’une fonction et/ou à l’accès à une fonction"
+  },
+  {
+   "code": "CTGEO-D3-TERRIT-A4",
+   "parentCode": "CTGEO-D3-TERRIT",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Appliquer : sélectionner la/les échelle(s) adéquates"
+  },
+  {
+   "code": "CTGEO-D3-TERRIT-A5",
+   "parentCode": "CTGEO-D3-TERRIT",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Appliquer : annoter une représentation de l’espace"
+  },
+  {
+   "code": "CTGEO-D3-TERRIT-A6",
+   "parentCode": "CTGEO-D3-TERRIT",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Appliquer : réaliser une carte thématique sur un fonds de carte donné"
+  },
+  {
+   "code": "CTGEO-D3-TERRIT-A7",
+   "parentCode": "CTGEO-D3-TERRIT",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Appliquer : réaliser une carte schématique - un croquis cartographique"
+  },
+  {
+   "code": "CTGEO-D3-TERRIT-A8",
+   "parentCode": "CTGEO-D3-TERRIT",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Appliquer : commenter en quelques phrases une représentation de l’espace."
+  },
+  {
+   "code": "CTGEO-D3-TERRIT-A9",
+   "parentCode": "CTGEO-D3-TERRIT",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Appliquer : organiser les atouts et/ou les contraintes dans un tableau"
+  },
+  {
+   "code": "CTGEO-D3-TERRIT-T1",
+   "parentCode": "CTGEO-D3-TERRIT",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Transférer : Étude de cas pour un territoire donné."
+  },
+  {
+   "code": "CTGEO-D3-TERRIT-T2",
+   "parentCode": "CTGEO-D3-TERRIT",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Transférer : caractériser l’accès à une fonction pour identifier des besoins ou des actions en termes d’aménagement du territoire"
+  },
+  {
+   "code": "CTGEO-D3-TERRIT-T3",
+   "parentCode": "CTGEO-D3-TERRIT",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Transférer : identifier des atouts et/ou des contraintes spatiales pour justifier un aménagement du territoire"
+  },
+  {
+   "code": "CTGEO-D3-TERRIT-T4",
+   "parentCode": "CTGEO-D3-TERRIT",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Transférer : identifier des vulnérabilités et/ou des potentialités spatiales pour justifier un choix d’aménagement du territoire"
+  },
+  {
+   "code": "CTGEO-D3-TERRIT-T5",
+   "parentCode": "CTGEO-D3-TERRIT",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Transférer : mettre en évidence des effets d’un aménagement du territoire sur l’environnement pour expliciter le concept de développement et/ou développement durable"
+  },
+  {
+   "code": "CTGEO-D3-TERRIT-T6",
+   "parentCode": "CTGEO-D3-TERRIT",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Transférer : identifier les fonctions d’un territoire et/ou les intentions des acteurs concernées par un aménagement du territoire pour expliciter la notion de conflit d’usage"
+  },
+  {
+   "code": "CTGEO-D3-TERRIT-T7",
+   "parentCode": "CTGEO-D3-TERRIT",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Transférer : comparer un cas donné à un modèle spatial pour en évaluer l’appartenance"
+  },
+  {
+   "code": "CTGEO-D3-TERRIT-T8",
+   "parentCode": "CTGEO-D3-TERRIT",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Transférer : comparer la répartition spatiale d’une fonction du territoire et celle d’une population pour identifier des espaces de vulnérabilité et/ou de potentialité."
+  },
+  {
+   "code": "CTGEO-D3-TERRIT-K1",
+   "parentCode": "CTGEO-D3-TERRIT",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Connaître : Les principales fonctions d’un territoire et des facteurs de localisation"
+  },
+  {
+   "code": "CTGEO-D3-TERRIT-K2",
+   "parentCode": "CTGEO-D3-TERRIT",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Connaître : Des exemples qui illustrent : des liens spatiaux entre des composantes de l’espace et les activités humaines pour expliciter le concept d’atouts/contraintes"
+  },
+  {
+   "code": "CTGEO-D3-TERRIT-K3",
+   "parentCode": "CTGEO-D3-TERRIT",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Connaître : Des exemples qui illustrent : pour les échelles belges et européennes, des liens entre les foyers de population et les principales infrastructures de communication"
+  },
+  {
+   "code": "CTGEO-D3-TERRIT-K4",
+   "parentCode": "CTGEO-D3-TERRIT",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Connaître : Des exemples qui illustrent : des liens spatiaux entre des composantes de l’espace et des activités humaines pour expliciter le concept de potentialité/vulnérabilité"
+  },
+  {
+   "code": "CTGEO-D3-TERRIT-K5",
+   "parentCode": "CTGEO-D3-TERRIT",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Connaître : Des exemples qui illustrent : l’évolution d’une composante naturelle comme conséquence des activités humaines pour expliciter le concept de développement et de développement durable"
+  },
+  {
+   "code": "CTGEO-D3-TERRIT-K6",
+   "parentCode": "CTGEO-D3-TERRIT",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Connaître : Des exemples qui illustrent : le concept d’aménagement du territoire."
+  },
+  {
+   "code": "CTGEO-D3-TERRIT-R1",
+   "parentCode": "CTGEO-D3-TERRIT",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : et modèles dont l’élève a besoin… …pour traiter des informations spécifiques en lien avec l’organisation de l’espace"
+  },
+  {
+   "code": "CTGEO-D3-TERRIT-R2",
+   "parentCode": "CTGEO-D3-TERRIT",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Population Espaces peu/très peuplés. Les 15 aires urbaines les plus peuplées d’Europe, les sept principales aires urbaines belges et les axes autoroutiers qui les relient, les aires urbaines périphériques des pays limitrophes de la Belgique."
+  },
+  {
+   "code": "CTGEO-D3-TERRIT-R3",
+   "parentCode": "CTGEO-D3-TERRIT",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Divisions administratives Europe : pays d’Europe et de l’UE. Belgique : État fédéral, Régions, Communautés, frontière linguistique."
+  },
+  {
+   "code": "CTGEO-D3-TERRIT-R4",
+   "parentCode": "CTGEO-D3-TERRIT",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Sillon Sambre-Meuse."
+  },
+  {
+   "code": "CTGEO-D3-TERRIT-R5",
+   "parentCode": "CTGEO-D3-TERRIT",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Les principales fonctions d’un territoire donné."
+  },
+  {
+   "code": "CTGEO-D3-TERRIT-R6",
+   "parentCode": "CTGEO-D3-TERRIT",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Termes spécifiques à certaines fonctions : étalement urbain, migration pendulaire, aire urbaine, zone d’influence, bassin d’emploi, réseaux de communication, distance-temps, distance-cout, affectation du sol, utilisation du sol, conflit d’usage, facteur de localisation, délocalisation."
+  },
+  {
+   "code": "CTGEO-D3-TERRIT-R7",
+   "parentCode": "CTGEO-D3-TERRIT",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Termes spécifiques à la gestion du territoire : plan d’affectation du sol, schéma d’aménagement."
+  }
+ ]
+}

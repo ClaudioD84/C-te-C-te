@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 # Régénère les fichiers donnees/*.json à partir des PDF officiels (enseignement.be), puis le SQL d'import.
 # Usage : scripts/referentiels/regenerer.sh <dossier des PDF>
-# Les PDF se téléchargent depuis la page « Contenus d'apprentissage » d'enseignement.be (voir README).
+# Les PDF se téléchargent depuis les pages « Contenus d'apprentissage » d'enseignement.be (voir README) ;
+# un seul dossier pour le tronc commun et les compétences terminales du secondaire (pip install pymupdf).
 set -euo pipefail
 
 PDF_DIR="${1:?Indiquez le dossier contenant les PDF des référentiels}"
@@ -40,6 +41,8 @@ run 2022_REF_Manu-techn-FMTTN.pdf mt-2022.json --mode generique --sans-intertitr
   --titre "Référentiel de Formation manuelle, technique, technologique et numérique (tronc commun)"
 run 2020_REF_Comp-initia-M1M3.pdf mat-2020.json --mode maternelle --ignorer "$TAGS" --matiere "Maternelle" \
   --niveau maternelle --prefixe MAT --version 2020 --titre "Référentiel des compétences initiales (maternelle, tronc commun)"
+
+python3 "$HERE/decouper_ct.py" "$PDF_DIR"
 
 cd "$HERE/../.."
 deno run --config scripts/referentiels/deno.json --allow-read --allow-write scripts/referentiels/importer.ts

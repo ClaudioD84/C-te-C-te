@@ -80,6 +80,7 @@ Deno.serve(async (request) => {
       .from('curriculum_item')
       .select('label')
       .contains('grades', [child.grade])
+      .contains('tracks', [child.track])
       .in('subject', curriculumSubjects(task.subject))
       .eq('kind', 'attendu')
       .limit(60);

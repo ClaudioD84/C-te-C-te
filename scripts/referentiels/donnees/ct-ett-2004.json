@@ -1,0 +1,834 @@
+{
+ "source": {
+  "title": "Compétences terminales et savoirs requis en éducation technique et technologique (humanités générales et technologiques)",
+  "url": "https://www.enseignement.be/fileadmin/portail_age/uploads/parcours_apprentissage/secondaire_ordinaire/Organisation/Contenus_apprentissages_Secondaire/competences_terminales/HUM_GEN_et_TECH_2et3_degres/2004_CT_HGT_Edu-Tech-Tech.pdf",
+  "version": "2004"
+ },
+ "level": "secondaire",
+ "tracks": [
+  "general",
+  "technique",
+  "specialise"
+ ],
+ "entries": [
+  {
+   "code": "CTETT",
+   "parentCode": null,
+   "kind": "domaine",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Compétences terminales et savoirs requis en éducation technique et technologique (humanités générales et technologiques)"
+  },
+  {
+   "code": "CTETT-1",
+   "parentCode": "CTETT",
+   "kind": "competence",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "2.1.1. Produire personnellement un document écrit en langue française, présenté avec un traitement de texte, d'une manière structurée, compréhensible et lisible pour un lecteur non initié dans le but de l'éclairer sur une question, un problème ou une thématique"
+  },
+  {
+   "code": "CTETT-1-1",
+   "parentCode": "CTETT-1",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "rédiger le compte rendu d'une visite"
+  },
+  {
+   "code": "CTETT-1-2",
+   "parentCode": "CTETT-1",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "écrire un article"
+  },
+  {
+   "code": "CTETT-1-3",
+   "parentCode": "CTETT-1",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "élaborer un poster"
+  },
+  {
+   "code": "CTETT-1-4",
+   "parentCode": "CTETT-1",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "rédiger un curriculum vitae"
+  },
+  {
+   "code": "CTETT-1-5",
+   "parentCode": "CTETT-1",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "produire un travail de synthèse"
+  },
+  {
+   "code": "CTETT-1-6",
+   "parentCode": "CTETT-1",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "élaborer une production destinée à être envoyée par courrier électronique"
+  },
+  {
+   "code": "CTETT-2",
+   "parentCode": "CTETT",
+   "kind": "competence",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "2.1.2 Communiquer oralement en langue française avec une personne et/ou un groupe de personnes en utilisant, si nécessaire, divers supports dans le but d'informer sur une question, un problème ou une thématique"
+  },
+  {
+   "code": "CTETT-2-1",
+   "parentCode": "CTETT-2",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "répondre à une interpellation"
+  },
+  {
+   "code": "CTETT-2-2",
+   "parentCode": "CTETT-2",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "réaliser une démarche auprès de personnes ressources (direction, PMS, titulaire, bibliothécaire, employeurs...) en tête-à-tête, par téléphone et sur répondeur"
+  },
+  {
+   "code": "CTETT-2-3",
+   "parentCode": "CTETT-2",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "échanger dans le cadre d'une évaluation interactive à propos d'une activité et sur base d'un support écrit (note, document, grille, carnet de bord...)"
+  },
+  {
+   "code": "CTETT-2-4",
+   "parentCode": "CTETT-2",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "informer le groupe classe dans le cadre d'un projet en utilisant un support écrit, un transparent, un tableau, un logiciel, un support auditif, un montage vidéo..."
+  },
+  {
+   "code": "CTETT-2-5",
+   "parentCode": "CTETT-2",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "présenter oralement un travail de synthèse en utilisant un support didactique, une réalisation personnelle, des transparents, le tableau, un support informatique, un support auditif, un support vidéo"
+  },
+  {
+   "code": "CTETT-3",
+   "parentCode": "CTETT",
+   "kind": "competence",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "2.1.3. A partir d'un ensemble d'observations qui pourront être confrontées à des sources théoriques parfois divergentes et en s'appuyant si nécessaire sur des outils scientifiques et mathématiques (validité et adéquation) établir, personnellement ou en groupe, un plan de recherche et décrire les modalités de traitement des informations afin de résoudre une situation problème significative pour l'élève"
+  },
+  {
+   "code": "CTETT-3-1",
+   "parentCode": "CTETT-3",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "présenter un graphique synthétisant un ensemble d'observations réalisées..."
+  },
+  {
+   "code": "CTETT-3-2",
+   "parentCode": "CTETT-3",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "définir un maître achat"
+  },
+  {
+   "code": "CTETT-3-3",
+   "parentCode": "CTETT-3",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "rédiger un rapport de laboratoire et le défendre devant une classe, un professeur, un jury"
+  },
+  {
+   "code": "CTETT-3-4",
+   "parentCode": "CTETT-3",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "établir un poster support d'une catégorisation d'observations en..."
+  },
+  {
+   "code": "CTETT-3-5",
+   "parentCode": "CTETT-3",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "rechercher de l'information relative à une thématique"
+  },
+  {
+   "code": "CTETT-3-6",
+   "parentCode": "CTETT-3",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "préparer un argumentaire pour défendre un projet sur..."
+  },
+  {
+   "code": "CTETT-3-7",
+   "parentCode": "CTETT-3",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "alimenter un débat sur un sujet d'actualité"
+  },
+  {
+   "code": "CTETT-3-8",
+   "parentCode": "CTETT-3",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "réaliser un travail de synthèse qui requiert des observations, une expérimentation et des résultats qui ont été croisés avec des apports théoriques..."
+  },
+  {
+   "code": "CTETT-3-9",
+   "parentCode": "CTETT-3",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "se construire une opinion (passage d'une réception passive à une démarche active)"
+  },
+  {
+   "code": "CTETT-3-10",
+   "parentCode": "CTETT-3",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "présenter un essai de représentation d'un phénomène qui a nécessité la prise de mesures et des recherches..."
+  },
+  {
+   "code": "CTETT-4",
+   "parentCode": "CTETT",
+   "kind": "competence",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "2.1.4. Formuler des questions ou des hypothèses, par écrit ou oralement, dans un langage précis et adéquat à l'adresse d'une personne ressource dans le but de se forger une opinion et d'émettre un avis nuancé, en son propre nom et/ou au nom d'un groupe, sur des sujets en rapport avec son environnement"
+  },
+  {
+   "code": "CTETT-4-1",
+   "parentCode": "CTETT-4",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "préparer une intervention au Conseil de participation"
+  },
+  {
+   "code": "CTETT-4-2",
+   "parentCode": "CTETT-4",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "préparer la rencontre avec une personne invitée en classe et y participer interactivement"
+  },
+  {
+   "code": "CTETT-4-3",
+   "parentCode": "CTETT-4",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "préparer et réaliser une intervention dans un débat public"
+  },
+  {
+   "code": "CTETT-4-4",
+   "parentCode": "CTETT-4",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "préparer et réaliser des démarches d'intervention extérieure"
+  },
+  {
+   "code": "CTETT-4-5",
+   "parentCode": "CTETT-4",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "intervenir dans un forum sur un site"
+  },
+  {
+   "code": "CTETT-5",
+   "parentCode": "CTETT",
+   "kind": "competence",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "2.2.1. Effectuer personnellement ou en groupe l'analyse et la modélisation d'un système en réponse à une situation problème"
+  },
+  {
+   "code": "CTETT-5-1",
+   "parentCode": "CTETT-5",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "analyser un problème technique et le traduire en schémas logiques et/ou électriques"
+  },
+  {
+   "code": "CTETT-5-2",
+   "parentCode": "CTETT-5",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "réaliser un montage à partir d'un schéma analysé"
+  },
+  {
+   "code": "CTETT-5-3",
+   "parentCode": "CTETT-5",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "évaluer la réalisation en développant une argumentation sur les choix opérés en cours de réalisation"
+  },
+  {
+   "code": "CTETT-6",
+   "parentCode": "CTETT",
+   "kind": "competence",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "2.2.2. Evaluer l'impact de découvertes scientifiques et d'innovations technologiques sur notre civilisation actuelle"
+  },
+  {
+   "code": "CTETT-6-1",
+   "parentCode": "CTETT-6",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "établir un lien entre un contexte sociopolitique et le développement technologique (et réciproquement)"
+  },
+  {
+   "code": "CTETT-6-2",
+   "parentCode": "CTETT-6",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "établir un lien entre un moment historique et l'apparition d'une technologie"
+  },
+  {
+   "code": "CTETT-7",
+   "parentCode": "CTETT",
+   "kind": "competence",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "2.2.3. Choisir l'outil en adéquation avec la situation et concevoir la tâche en tenant compte des possibilités d'automatisation de celle-ci"
+  },
+  {
+   "code": "CTETT-7-1",
+   "parentCode": "CTETT-7",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "face à une situation problème, choisir l'outil adéquat en vue de l'automatisation de la tâche à réaliser"
+  },
+  {
+   "code": "CTETT-7-2",
+   "parentCode": "CTETT-7",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "réaliser la tâche avec l'outil choisi"
+  },
+  {
+   "code": "CTETT-7-3",
+   "parentCode": "CTETT-7",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "exploiter les caractéristiques de l'outil à bon escient"
+  },
+  {
+   "code": "CTETT-7-4",
+   "parentCode": "CTETT-7",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "gérer des stocks"
+  },
+  {
+   "code": "CTETT-7-5",
+   "parentCode": "CTETT-7",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "établir un devis automatiquement et la facturation ultérieure"
+  },
+  {
+   "code": "CTETT-7-6",
+   "parentCode": "CTETT-7",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "réaliser automatiquement des tables des matières en traitement de texte"
+  },
+  {
+   "code": "CTETT-7-7",
+   "parentCode": "CTETT-7",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "représenter graphiquement des données expérimentales, des évolutions temporelles"
+  },
+  {
+   "code": "CTETT-8",
+   "parentCode": "CTETT",
+   "kind": "competence",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "2.2.4. Produire personnellement ou en groupe une présentation multimédia structurée, compréhensible et ergonomique pour un utilisateur non initié dans le but d'éclairer une question, un problème ou une thématique prise dans l'environnement"
+  },
+  {
+   "code": "CTETT-8-1",
+   "parentCode": "CTETT-8",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "présenter un moyen de télécommunication : téléphone, télégraphe, radio, télévision..."
+  },
+  {
+   "code": "CTETT-8-2",
+   "parentCode": "CTETT-8",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "réaliser un logiciel qui permet à l'utilisateur d'être en situation interactive d'apprentissage ou de remédiation"
+  },
+  {
+   "code": "CTETT-9",
+   "parentCode": "CTETT",
+   "kind": "competence",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "2.2.5. Effectuer personnellement l'analyse, la réalisation, l'exécution et la validation complètes et correctes d'un programme informatique en réponse à une situation problème"
+  },
+  {
+   "code": "CTETT-9-1",
+   "parentCode": "CTETT-9",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "analyser un problème, l'exprimer dans un langage personnel puis le traduire dans un algorithme correct"
+  },
+  {
+   "code": "CTETT-9-2",
+   "parentCode": "CTETT-9",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "concevoir un programme dans un langage informatique structuré à partir d'un algorithme validé"
+  },
+  {
+   "code": "CTETT-9-3",
+   "parentCode": "CTETT-9",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "construire une argumentation qui explicite la validation du programme"
+  },
+  {
+   "code": "CTETT-10",
+   "parentCode": "CTETT",
+   "kind": "competence",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Thématiques et savoirs associés"
+  },
+  {
+   "code": "CTETT-10-1",
+   "parentCode": "CTETT-10",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Biotechnologie : cultures in vitro, manipulations génétiques (O.G.M.; culture de microorganismes pour les productions de l'industrie pharmaceutique...), génie enzymatique, fermentation..."
+  },
+  {
+   "code": "CTETT-10-2",
+   "parentCode": "CTETT-10",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Energie : renouvelable : éolienne, solaire (calorifique, voltaïque), hydraulique"
+  },
+  {
+   "code": "CTETT-10-3",
+   "parentCode": "CTETT-10",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "non-renouvelable : fossile, nucléaire."
+  },
+  {
+   "code": "CTETT-10-4",
+   "parentCode": "CTETT-10",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Pollution :"
+  },
+  {
+   "code": "CTETT-10-5",
+   "parentCode": "CTETT-10",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "de l'air (combustion, aérosol, particules en suspension)"
+  },
+  {
+   "code": "CTETT-10-6",
+   "parentCode": "CTETT-10",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "du sol, de l'eau, des êtres vivants"
+  },
+  {
+   "code": "CTETT-10-7",
+   "parentCode": "CTETT-10",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "pollutions sonores, alimentaires, radiations, substances, stress..."
+  },
+  {
+   "code": "CTETT-10-8",
+   "parentCode": "CTETT-10",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "transfert d'information : supports de communication, enregistrements, reproduction de données (cassettes, CD, DVD, microsillons, imprimé, informatique...), télécommunications, réseaux informatiques..."
+  },
+  {
+   "code": "CTETT-10-9",
+   "parentCode": "CTETT-10",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Mobilité : transport (eau, air, terre)."
+  }
+ ]
+}

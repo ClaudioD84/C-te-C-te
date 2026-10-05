@@ -1,6 +1,6 @@
 import { z } from 'zod';
 
-import { gradeSchema } from './school';
+import { gradeSchema, TRACKS, trackSchema } from './school';
 
 /**
  * Référentiels de la Fédération Wallonie-Bruxelles, structurés pour l'application (F2).
@@ -30,6 +30,11 @@ export const curriculumFileSchema = z
       version: z.string().min(1),
     }),
     level: z.enum(['maternelle', 'primaire', 'secondaire']),
+    /**
+     * Types d'enseignement concernés. Absent : tous (tronc commun). Les compétences terminales du secondaire
+     * distinguent la transition (général, technique de transition) et la qualification (technique, professionnel).
+     */
+    tracks: z.array(trackSchema).min(1).optional(),
     entries: z.array(curriculumEntrySchema).min(1),
   })
   .superRefine((file, ctx) => {
@@ -62,6 +67,11 @@ export const curriculumFileSchema = z
     }
   });
 export type CurriculumFile = z.infer<typeof curriculumFileSchema>;
+
+/** Types d'enseignement d'un fichier de référentiel (tous par défaut). */
+export function curriculumTracks(file: Pick<CurriculumFile, 'tracks'>): readonly string[] {
+  return file.tracks ?? TRACKS;
+}
 
 /** Ordonne les entrées pour que chaque parent précède ses enfants (import en une passe). */
 export function sortParentsFirst(entries: readonly CurriculumEntry[]): CurriculumEntry[] {

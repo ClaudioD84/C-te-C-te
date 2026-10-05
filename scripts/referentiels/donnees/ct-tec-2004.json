@@ -1,0 +1,2080 @@
+{
+ "source": {
+  "title": "Compétences terminales et savoirs requis en technologie (options de base groupées, technique de transition)",
+  "url": "https://www.enseignement.be/fileadmin/portail_age/uploads/parcours_apprentissage/secondaire_ordinaire/Organisation/Contenus_apprentissages_Secondaire/competences_terminales/HUM_GEN_et_TECH_2et3_degres/2004_CT_HGT_Edu-Technolo.pdf",
+  "version": "2004"
+ },
+ "level": "secondaire",
+ "tracks": [
+  "technique"
+ ],
+ "entries": [
+  {
+   "code": "CTTEC",
+   "parentCode": null,
+   "kind": "domaine",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Compétences terminales et savoirs requis en technologie (options de base groupées, technique de transition)"
+  },
+  {
+   "code": "CTTEC-1",
+   "parentCode": "CTTEC",
+   "kind": "competence",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Agronomie, industrie, construction, sciences-informatique – compétences terminales"
+  },
+  {
+   "code": "CTTEC-1-1",
+   "parentCode": "CTTEC-1",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Analyser et résoudre les applications et problèmes liés aux lois fondamentales."
+  },
+  {
+   "code": "CTTEC-1-2",
+   "parentCode": "CTTEC-1",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Analyser les schémas fonctionnels, structurels d'un système ou d'un objet technique."
+  },
+  {
+   "code": "CTTEC-1-3",
+   "parentCode": "CTTEC-1",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Retenir, parmi l'ensemble des compétences instrumentales mises en œuvre, celles qui visent la maîtrise de l'usage des instruments de contrôle et de mesure, de la mise en œuvre des équipements et de l'utilisation des outils de représentation (tableaux et planning)."
+  },
+  {
+   "code": "CTTEC-1-4",
+   "parentCode": "CTTEC-1",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Choisir une méthode et un appareillage permettant de contrôler les caractéristiques techniques des matériaux, d'un élément d'un système, d'un système."
+  },
+  {
+   "code": "CTTEC-1-5",
+   "parentCode": "CTTEC-1",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Décrire à partir des spécifications du cahier des charges, le comportement d'une fonction principale ou d'un ensemble de fonctions, vérifier par simulation et/ou par des essais et des mesures, la conformité de ses caractéristiques fonctionnelles."
+  },
+  {
+   "code": "CTTEC-1-6",
+   "parentCode": "CTTEC-1",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Analyser les solutions technologiques existantes, en référence aux spécifications du cahier des charges."
+  },
+  {
+   "code": "CTTEC-1-7",
+   "parentCode": "CTTEC-1",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Produire des supports techniques cohérents relatifs à une étude, à un projet, à un ou à des systèmes techniques et les communiquer en respectant la terminologie, les normes et les défendre."
+  },
+  {
+   "code": "CTTEC-1-8",
+   "parentCode": "CTTEC-1",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Interpréter et modéliser des systèmes techniques intégrant des sous-systèmes conformément aux exigences d'un cahier des charges. L'utilisation d'un vocabulaire précis, l'analyse des schémas, des représentations graphiques, des modèles permettent de diriger l'analyse, d'organiser l'espace et le temps, ou d'orienter les choix d'action."
+  },
+  {
+   "code": "CTTEC-1-9",
+   "parentCode": "CTTEC-1",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Produire des documents comprenant textes, tables, figures et répondant aux critères de qualité éditoriale, ce, à l'aide de différents logiciels de traitement de textes, de D.A.O., de C.F.A.O., des logiciels de simulation."
+  },
+  {
+   "code": "CTTEC-1-10",
+   "parentCode": "CTTEC-1",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Rédiger et présenter un rapport technique en respectant la terminologie et les normes du système international."
+  },
+  {
+   "code": "CTTEC-1-11",
+   "parentCode": "CTTEC-1",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Prendre conscience des effets des choix technologiques sur l'environnement, de leurs incidences sur le mode de vie. Présenter et argumenter les conséquences d'un choix technologique en fonction de ses impacts sociaux, économiques, environnementaux, éthiques et culturels, analyser ceux-ci."
+  },
+  {
+   "code": "CTTEC-2",
+   "parentCode": "CTTEC",
+   "kind": "competence",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Sciences appliquées, biotechnique, chimie industrielle – Rechercher, traiter et relater l'information de manière critique"
+  },
+  {
+   "code": "CTTEC-2-1",
+   "parentCode": "CTTEC-2",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "rechercher les sources d'information, les sélectionner en fonction de critères définis (fiabilité, date de parution...)"
+  },
+  {
+   "code": "CTTEC-2-2",
+   "parentCode": "CTTEC-2",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "rassembler de la documentation sur un problème, la structurer et en faire la synthèse critique"
+  },
+  {
+   "code": "CTTEC-2-3",
+   "parentCode": "CTTEC-2",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "lire, interpréter et communiquer des données sous forme de schémas, graphiques, tableaux, formulations mathématiques en faisant appel, si nécessaire, à l'outil informatique"
+  },
+  {
+   "code": "CTTEC-2-4",
+   "parentCode": "CTTEC-2",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "rédiger, en utilisant le langage scientifique adéquat."
+  },
+  {
+   "code": "CTTEC-3",
+   "parentCode": "CTTEC",
+   "kind": "competence",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Sciences appliquées, biotechnique, chimie industrielle – Pratiquer des démarches scientifiques, utiliser des modèles, construire un raisonnement logique"
+  },
+  {
+   "code": "CTTEC-3-1",
+   "parentCode": "CTTEC-3",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "identifier un problème"
+  },
+  {
+   "code": "CTTEC-3-2",
+   "parentCode": "CTTEC-3",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "formuler des questions, émettre des hypothèses et les confronter à des théories ou à l'expérimentation"
+  },
+  {
+   "code": "CTTEC-3-3",
+   "parentCode": "CTTEC-3",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "argumenter et défendre un point de vue de manière logique et structurée"
+  },
+  {
+   "code": "CTTEC-3-4",
+   "parentCode": "CTTEC-3",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "démêler une situation-problème"
+  },
+  {
+   "code": "CTTEC-3-5",
+   "parentCode": "CTTEC-3",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "rendre compte (en utilisant les langages standardisés propres à la biologie, à la chimie et à la physique) des phénomènes observés"
+  },
+  {
+   "code": "CTTEC-3-6",
+   "parentCode": "CTTEC-3",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "utiliser des modèles, les comprendre et en apprécier la limite de validité"
+  },
+  {
+   "code": "CTTEC-3-7",
+   "parentCode": "CTTEC-3",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "réaliser un calcul aux dimensions"
+  },
+  {
+   "code": "CTTEC-3-8",
+   "parentCode": "CTTEC-3",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "résoudre des applications numériques, exprimer le résultat avec le nombre approprié de chiffres significatifs"
+  },
+  {
+   "code": "CTTEC-3-9",
+   "parentCode": "CTTEC-3",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "estimer l'incertitude sur un résultat calculé à partir de mesures."
+  },
+  {
+   "code": "CTTEC-4",
+   "parentCode": "CTTEC",
+   "kind": "competence",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Sciences appliquées, biotechnique, chimie industrielle – Synthétiser, organiser, dépasser la fragmentation des savoirs"
+  },
+  {
+   "code": "CTTEC-4-1",
+   "parentCode": "CTTEC-4",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "synthétiser, organiser des données expérimentales ou des notions théoriques en vue de les exploiter de manière intégrée"
+  },
+  {
+   "code": "CTTEC-4-2",
+   "parentCode": "CTTEC-4",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "transférer et adapter un modèle dans un contexte nouveau"
+  },
+  {
+   "code": "CTTEC-4-3",
+   "parentCode": "CTTEC-4",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "extrapoler en appréciant les risques de la généralisation."
+  },
+  {
+   "code": "CTTEC-5",
+   "parentCode": "CTTEC",
+   "kind": "competence",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Sciences appliquées, biotechnique, chimie industrielle – Expérimenter"
+  },
+  {
+   "code": "CTTEC-5-1",
+   "parentCode": "CTTEC-5",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "concevoir une expérience simple, choisir le matériel et les techniques appropriées"
+  },
+  {
+   "code": "CTTEC-5-2",
+   "parentCode": "CTTEC-5",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "réaliser un projet qui répond à un cahier des charges"
+  },
+  {
+   "code": "CTTEC-5-3",
+   "parentCode": "CTTEC-5",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "lire et appliquer un mode opératoire, une notice en français ou en anglais"
+  },
+  {
+   "code": "CTTEC-5-4",
+   "parentCode": "CTTEC-5",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "décrire les procédures suivies sans omettre d'étapes pour que d'autres puissent refaire l'expérience"
+  },
+  {
+   "code": "CTTEC-5-5",
+   "parentCode": "CTTEC-5",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "utiliser les appareils courants"
+  },
+  {
+   "code": "CTTEC-5-6",
+   "parentCode": "CTTEC-5",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "manipuler les produits en respectant les consignes de sécurité"
+  },
+  {
+   "code": "CTTEC-5-7",
+   "parentCode": "CTTEC-5",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "expérimenter seul ou au sein d'une équipe en respectant les procédures"
+  },
+  {
+   "code": "CTTEC-5-8",
+   "parentCode": "CTTEC-5",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "effectuer des mesures en tenant compte des incertitudes et des conventions du Système International"
+  },
+  {
+   "code": "CTTEC-5-9",
+   "parentCode": "CTTEC-5",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "gérer son temps de travail de manière efficace."
+  },
+  {
+   "code": "CTTEC-5-10",
+   "parentCode": "CTTEC-5",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "interpréter les résultats et en vérifier la pertinence"
+  },
+  {
+   "code": "CTTEC-5-11",
+   "parentCode": "CTTEC-5",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "identifier un dysfonctionnement"
+  },
+  {
+   "code": "CTTEC-5-12",
+   "parentCode": "CTTEC-5",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "faire une analyse critique de la procédure et proposer une amélioration"
+  },
+  {
+   "code": "CTTEC-5-13",
+   "parentCode": "CTTEC-5",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "rédiger un rapport."
+  },
+  {
+   "code": "CTTEC-6",
+   "parentCode": "CTTEC",
+   "kind": "competence",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Sciences appliquées, biotechnique, chimie industrielle – Travailler en équipe"
+  },
+  {
+   "code": "CTTEC-6-1",
+   "parentCode": "CTTEC-6",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "s'intégrer dans un travail de groupe"
+  },
+  {
+   "code": "CTTEC-6-2",
+   "parentCode": "CTTEC-6",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "prendre conscience de la part que chacun apporte dans la réalisation du travail"
+  },
+  {
+   "code": "CTTEC-6-3",
+   "parentCode": "CTTEC-6",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "écouter l'autre et être prêt à envisager d'autres idées que les siennes."
+  },
+  {
+   "code": "CTTEC-7",
+   "parentCode": "CTTEC",
+   "kind": "competence",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Sciences appliquées, biotechnique, chimie industrielle – Intégrer les sciences dans la vie quotidienne"
+  },
+  {
+   "code": "CTTEC-7-1",
+   "parentCode": "CTTEC-7",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "évaluer l'impact des découvertes des sciences et des innovations technologiques sur l'environnement et le mode de vie"
+  },
+  {
+   "code": "CTTEC-7-2",
+   "parentCode": "CTTEC-7",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "percevoir l'enjeu des grands débats sur les questions posées à la société : énergie, radioactivité, environnement, santé."
+  },
+  {
+   "code": "CTTEC-8",
+   "parentCode": "CTTEC",
+   "kind": "competence",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Sciences appliquées, biotechnique, chimie industrielle – Concevoir et réaliser un projet technologique"
+  },
+  {
+   "code": "CTTEC-8-1",
+   "parentCode": "CTTEC-8",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "mettre au point un procédé qui va permettre d'obtenir un résultat attendu"
+  },
+  {
+   "code": "CTTEC-8-2",
+   "parentCode": "CTTEC-8",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "concevoir un objet technique qui va répondre à un cahier des charges"
+  },
+  {
+   "code": "CTTEC-8-3",
+   "parentCode": "CTTEC-8",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "mettre en évidence l'intégration de la technologie dans la culture de notre société en prenant en compte des aspects économiques, sociaux, culturels..."
+  },
+  {
+   "code": "CTTEC-9",
+   "parentCode": "CTTEC",
+   "kind": "competence",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Sciences paramédicales – Rechercher, traiter et relater l'information de manière critique"
+  },
+  {
+   "code": "CTTEC-9-1",
+   "parentCode": "CTTEC-9",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "rechercher les sources d'information, les diversifier, les confronter et les sélectionner en fonction de critères définis"
+  },
+  {
+   "code": "CTTEC-9-2",
+   "parentCode": "CTTEC-9",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "argumenter et défendre un point de vue d'une manière logique et structurée"
+  },
+  {
+   "code": "CTTEC-9-3",
+   "parentCode": "CTTEC-9",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "lire, interpréter et communiquer des données sous forme de textes, de schémas, graphiques, tableaux, formulations mathématiques en faisant appel, si possible, à l'outil informatique"
+  },
+  {
+   "code": "CTTEC-9-4",
+   "parentCode": "CTTEC-9",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "rédiger, en utilisant le langage scientifique adéquat"
+  },
+  {
+   "code": "CTTEC-9-5",
+   "parentCode": "CTTEC-9",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "réunir et analyser une documentation en vue de proposer une solution en rapport avec les aspects socio-économiques, politiques et culturels de la santé"
+  },
+  {
+   "code": "CTTEC-9-6",
+   "parentCode": "CTTEC-9",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "mettre en évidence les aspects sociaux - culturels - économiques et politiques qui influencent la santé, leurs interactions et l'évolution du système"
+  },
+  {
+   "code": "CTTEC-9-7",
+   "parentCode": "CTTEC-9",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "rassembler de la documentation sur un problème, la structurer et en faire la synthèse critique."
+  },
+  {
+   "code": "CTTEC-10",
+   "parentCode": "CTTEC",
+   "kind": "competence",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Sciences paramédicales – Démêler une situation-problème de la vie quotidienne"
+  },
+  {
+   "code": "CTTEC-10-1",
+   "parentCode": "CTTEC-10",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "rendre compte des phénomènes observés en utilisant les langages standardisés propres à la biologie, à la chimie, à la physique et à la psychologie"
+  },
+  {
+   "code": "CTTEC-10-2",
+   "parentCode": "CTTEC-10",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "identifier et déceler dans une situation significative ce qui relève de la personne et de l'environnement, mettre en évidence leur(s) interaction(s) et illustrer par des exemples"
+  },
+  {
+   "code": "CTTEC-10-3",
+   "parentCode": "CTTEC-10",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "identifier, expliquer et illustrer par des exemples des causes de situations-problèmes et énoncer, expliquer, illustrer et identifier les principales réactions possibles"
+  },
+  {
+   "code": "CTTEC-10-4",
+   "parentCode": "CTTEC-10",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "mettre en évidence les principaux facteurs qui influencent la formation de la personnalité, préciser leurs rôles respectifs et démonter leur interaction, en dégager les implications possibles"
+  },
+  {
+   "code": "CTTEC-10-5",
+   "parentCode": "CTTEC-10",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "décrire le comportement d'un individu, envisager les liens entre les différentes étapes de son développement, les interactions entre les différents aspects, pouvoir les comparer et expliquer les comportements"
+  },
+  {
+   "code": "CTTEC-10-6",
+   "parentCode": "CTTEC-10",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "utiliser des modèles, les comprendre, en apprécier la pertinence et la limite de validité"
+  },
+  {
+   "code": "CTTEC-10-7",
+   "parentCode": "CTTEC-10",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "résoudre des applications numériques."
+  },
+  {
+   "code": "CTTEC-11",
+   "parentCode": "CTTEC",
+   "kind": "competence",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Sciences paramédicales – Synthétiser, organiser, dépasser la fragmentation des savoirs"
+  },
+  {
+   "code": "CTTEC-11-1",
+   "parentCode": "CTTEC-11",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "synthétiser, organiser des données expérimentales ou des notions théoriques en vue de les exploiter de manière intégrée"
+  },
+  {
+   "code": "CTTEC-11-2",
+   "parentCode": "CTTEC-11",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "transférer et adapter un modèle dans un contexte nouveau"
+  },
+  {
+   "code": "CTTEC-11-3",
+   "parentCode": "CTTEC-11",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "extrapoler en appréciant les risques de la généralisation."
+  },
+  {
+   "code": "CTTEC-12",
+   "parentCode": "CTTEC",
+   "kind": "competence",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Sciences paramédicales – Expérimenter, travailler en équipe"
+  },
+  {
+   "code": "CTTEC-12-1",
+   "parentCode": "CTTEC-12",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "étalonner et utiliser les appareils courants"
+  },
+  {
+   "code": "CTTEC-12-2",
+   "parentCode": "CTTEC-12",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "lire et appliquer un mode opératoire, une notice technique, le schéma d'un montage simple"
+  },
+  {
+   "code": "CTTEC-12-3",
+   "parentCode": "CTTEC-12",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "lire et interpréter les résultats d'une analyse en utilisant, si possible l'outil informatique"
+  },
+  {
+   "code": "CTTEC-12-4",
+   "parentCode": "CTTEC-12",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "décrire les procédures suivies sans omettre d'étapes pour que d'autres puissent refaire l'expérience"
+  },
+  {
+   "code": "CTTEC-12-5",
+   "parentCode": "CTTEC-12",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "expérimenter seul ou au sein d'une équipe"
+  },
+  {
+   "code": "CTTEC-12-6",
+   "parentCode": "CTTEC-12",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "gérer son temps de travail de manière efficace."
+  },
+  {
+   "code": "CTTEC-12-7",
+   "parentCode": "CTTEC-12",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "effectuer des mesures en tenant compte des incertitudes et des conventions du Système International"
+  },
+  {
+   "code": "CTTEC-12-8",
+   "parentCode": "CTTEC-12",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "gérer le matériel commun, manipuler les produits en respectant des consignes de sécurité"
+  },
+  {
+   "code": "CTTEC-12-9",
+   "parentCode": "CTTEC-12",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "identifier des résultats anormaux et les interpréter"
+  },
+  {
+   "code": "CTTEC-12-10",
+   "parentCode": "CTTEC-12",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "rédiger un rapport"
+  },
+  {
+   "code": "CTTEC-12-11",
+   "parentCode": "CTTEC-12",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "déceler, reconnaître et expliquer, dans des situations pratiques, des attitudes qui favorisent la communication (la disponibilité, l'écoute, l'acceptation des différences...) et celles qui constituent des obstacles à la communication"
+  },
+  {
+   "code": "CTTEC-12-12",
+   "parentCode": "CTTEC-12",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "utiliser les techniques adéquates de communication"
+  },
+  {
+   "code": "CTTEC-12-13",
+   "parentCode": "CTTEC-12",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "appréhender la dynamique des groupes."
+  },
+  {
+   "code": "CTTEC-13",
+   "parentCode": "CTTEC",
+   "kind": "competence",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Sciences paramédicales – Intégrer les sciences dans la vie quotidienne"
+  },
+  {
+   "code": "CTTEC-13-1",
+   "parentCode": "CTTEC-13",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "évaluer l'impact des courants de pensée, des découvertes scientifiques et des innovations technologiques sur l'individu, son environnement et son mode de vie"
+  },
+  {
+   "code": "CTTEC-13-2",
+   "parentCode": "CTTEC-13",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "percevoir l'enjeu des grands débats sur les questions posées à la société : environnement, domaine de la santé..."
+  },
+  {
+   "code": "CTTEC-14",
+   "parentCode": "CTTEC",
+   "kind": "competence",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Sciences paramédicales – Concevoir un projet technologique"
+  },
+  {
+   "code": "CTTEC-14-1",
+   "parentCode": "CTTEC-14",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "mettre au point un procédé qui va permettre d'obtenir un résultat attendu"
+  },
+  {
+   "code": "CTTEC-14-2",
+   "parentCode": "CTTEC-14",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "concevoir un cahier des charges répondant à un projet technologique"
+  },
+  {
+   "code": "CTTEC-14-3",
+   "parentCode": "CTTEC-14",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "mettre en évidence l'intégration d'une technologie dans la culture de notre société en prenant en compte les aspects scientifiques, économiques, sociaux, culturels, psychologiques, éthiques de la santé."
+  },
+  {
+   "code": "CTTEC-15",
+   "parentCode": "CTTEC",
+   "kind": "competence",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Compétences transversales – Définir et formuler une difficulté technique à résoudre, pour la rendre compréhensible à soi-même et aux autres, afin d'y apporter une solution"
+  },
+  {
+   "code": "CTTEC-15-1",
+   "parentCode": "CTTEC-15",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Utiliser, de façon adéquate, les termes et les concepts dans une reformulation de la situationproblème à résoudre"
+  },
+  {
+   "code": "CTTEC-15-2",
+   "parentCode": "CTTEC-15",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Schématiser les données, les relations, les inconnues."
+  },
+  {
+   "code": "CTTEC-16",
+   "parentCode": "CTTEC",
+   "kind": "competence",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Compétences transversales – Recueillir et traiter les informations en fonction du problème à résoudre"
+  },
+  {
+   "code": "CTTEC-16-1",
+   "parentCode": "CTTEC-16",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Trouver les informations dans différentes sources courantes"
+  },
+  {
+   "code": "CTTEC-16-2",
+   "parentCode": "CTTEC-16",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Noter les informations utiles sous une forme utilisable dans le traitement des données"
+  },
+  {
+   "code": "CTTEC-16-3",
+   "parentCode": "CTTEC-16",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Extraire des données d'un texte, d'un schéma, d'un graphique, d'un tableau, d'un document"
+  },
+  {
+   "code": "CTTEC-16-4",
+   "parentCode": "CTTEC-16",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Retrouver des mécanismes, des lois, des relations, dans un texte, un schéma, un graphique, un tableau, un document"
+  },
+  {
+   "code": "CTTEC-16-5",
+   "parentCode": "CTTEC-16",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Repérer les notions plus complexes ou inconnues (termes techniques, principes théoriques,...) et décider de rechercher une explication."
+  },
+  {
+   "code": "CTTEC-17",
+   "parentCode": "CTTEC",
+   "kind": "competence",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Compétences transversales – Analyser des informations"
+  },
+  {
+   "code": "CTTEC-17-1",
+   "parentCode": "CTTEC-17",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Identifier les éléments de base d'un raisonnement"
+  },
+  {
+   "code": "CTTEC-17-2",
+   "parentCode": "CTTEC-17",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Structurer et dégager des liens entre ces éléments"
+  },
+  {
+   "code": "CTTEC-17-3",
+   "parentCode": "CTTEC-17",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Distinguer entre ce qui est hypothétique et ce qui est démontré"
+  },
+  {
+   "code": "CTTEC-17-4",
+   "parentCode": "CTTEC-17",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Identifier une structure, un principe d'organisation."
+  },
+  {
+   "code": "CTTEC-18",
+   "parentCode": "CTTEC",
+   "kind": "competence",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Compétences transversales – Synthétiser des informations"
+  },
+  {
+   "code": "CTTEC-18-1",
+   "parentCode": "CTTEC-18",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Dégager les informations clés communes à plusieurs sources"
+  },
+  {
+   "code": "CTTEC-18-2",
+   "parentCode": "CTTEC-18",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Organiser et présenter les relations entre ces informations clés sous forme de texte, de plan, de schéma, de graphique, de tableau."
+  },
+  {
+   "code": "CTTEC-19",
+   "parentCode": "CTTEC",
+   "kind": "competence",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Compétences transversales – Utiliser les concepts, les modèles, les procédures et les instruments qui s'imposent pour une tâche technique donnée en les maîtrisant, en comprenant leur emploi, en étant conscient de leurs possibilités et de leurs limitations ainsi que des consignes de sécurité"
+  },
+  {
+   "code": "CTTEC-19-1",
+   "parentCode": "CTTEC-19",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Choisir la méthodologie la plus adéquate pour résoudre l'application"
+  },
+  {
+   "code": "CTTEC-19-2",
+   "parentCode": "CTTEC-19",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Choisir et utiliser l'outil adéquat dans le respect des normes de sécurité"
+  },
+  {
+   "code": "CTTEC-19-3",
+   "parentCode": "CTTEC-19",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Savoir gérer le temps : respecter un plan de travail imposé ou auto-imposé et savoir gérer le temps des autres par des consignes claires et précises"
+  },
+  {
+   "code": "CTTEC-19-4",
+   "parentCode": "CTTEC-19",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Traiter les données avec le concept, le modèle, la procédure qui ont été choisies avec ordre et méthode"
+  },
+  {
+   "code": "CTTEC-19-5",
+   "parentCode": "CTTEC-19",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Evaluer le résultat en fonction de critères."
+  },
+  {
+   "code": "CTTEC-20",
+   "parentCode": "CTTEC",
+   "kind": "competence",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Compétences transversales – Choisir parmi des concepts, des modèles, des procédures et des instruments, le plus adéquat pour une tâche technique à effectuer et pouvoir justifier ce choix"
+  },
+  {
+   "code": "CTTEC-20-1",
+   "parentCode": "CTTEC-20",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Poser le problème et déterminer le résultat attendu"
+  },
+  {
+   "code": "CTTEC-20-2",
+   "parentCode": "CTTEC-20",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Déterminer les démarches nécessaires à la résolution du problème"
+  },
+  {
+   "code": "CTTEC-20-3",
+   "parentCode": "CTTEC-20",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Choisir et utiliser l'outil adéquat dans le respect des normes de sécurité"
+  },
+  {
+   "code": "CTTEC-20-4",
+   "parentCode": "CTTEC-20",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Mobiliser des savoirs existants, éventuellement par tâtonnement"
+  },
+  {
+   "code": "CTTEC-20-5",
+   "parentCode": "CTTEC-20",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Etablir un timing et le respecter"
+  },
+  {
+   "code": "CTTEC-20-6",
+   "parentCode": "CTTEC-20",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Traiter des données avec le concept, le modèle, la procédure qui ont été choisies, avec ordre et méthode"
+  },
+  {
+   "code": "CTTEC-20-7",
+   "parentCode": "CTTEC-20",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Produire une présentation claire de la procédure de solution"
+  },
+  {
+   "code": "CTTEC-20-8",
+   "parentCode": "CTTEC-20",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Déterminer les limites de la pertinence de la solution et ses implications sur les plans économique, social, culturel, éthique et environnemental."
+  },
+  {
+   "code": "CTTEC-21",
+   "parentCode": "CTTEC",
+   "kind": "competence",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Compétences transversales – Elaborer les concepts, les modèles, les procédures et les instruments pour une tâche technique à effectuer"
+  },
+  {
+   "code": "CTTEC-21-1",
+   "parentCode": "CTTEC-21",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Poser le problème et déterminer le résultat attendu"
+  },
+  {
+   "code": "CTTEC-21-2",
+   "parentCode": "CTTEC-21",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Déterminer les démarches nécessaires à la résolution des problèmes"
+  },
+  {
+   "code": "CTTEC-21-3",
+   "parentCode": "CTTEC-21",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Construire des concepts, des schémas explicatifs, des modèles"
+  },
+  {
+   "code": "CTTEC-21-4",
+   "parentCode": "CTTEC-21",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Produire des hypothèses"
+  },
+  {
+   "code": "CTTEC-21-5",
+   "parentCode": "CTTEC-21",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Tester la pertinence de ces hypothèses"
+  },
+  {
+   "code": "CTTEC-21-6",
+   "parentCode": "CTTEC-21",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Améliorer la production par ajustement"
+  },
+  {
+   "code": "CTTEC-21-7",
+   "parentCode": "CTTEC-21",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Elaborer des procédures, un plan d'action"
+  },
+  {
+   "code": "CTTEC-21-8",
+   "parentCode": "CTTEC-21",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Choisir un degré de précision, de rigueur en fonction du contexte"
+  },
+  {
+   "code": "CTTEC-21-9",
+   "parentCode": "CTTEC-21",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Produire une présentation claire de la procédure de solution"
+  },
+  {
+   "code": "CTTEC-21-10",
+   "parentCode": "CTTEC-21",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Déterminer les limites de la pertinence de la solution et ses implications sur les plans économique, social, culturel, éthique et environnemental."
+  },
+  {
+   "code": "CTTEC-22",
+   "parentCode": "CTTEC",
+   "kind": "competence",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Compétences transversales – S'intégrer dans une équipe en vue de réaliser un objectif commun, en collaborant, organisant, négociant, structurant, planifiant, déléguant, partageant le travail et prenant ses responsabilités"
+  },
+  {
+   "code": "CTTEC-22-1",
+   "parentCode": "CTTEC-22",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Construire un message cohérent et rigoureux"
+  },
+  {
+   "code": "CTTEC-22-2",
+   "parentCode": "CTTEC-22",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Pouvoir donner, si nécessaire, une définition des termes techniques utilisés"
+  },
+  {
+   "code": "CTTEC-22-3",
+   "parentCode": "CTTEC-22",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Utiliser correctement les unités, les symboles graphiques et littéraux en relation avec le champ technologique abordé"
+  },
+  {
+   "code": "CTTEC-22-4",
+   "parentCode": "CTTEC-22",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Maîtriser le vocabulaire spécifique au champ technologique abordé"
+  },
+  {
+   "code": "CTTEC-22-5",
+   "parentCode": "CTTEC-22",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Construire une représentation d'une situation en fonction du contexte et des destinataires"
+  },
+  {
+   "code": "CTTEC-22-6",
+   "parentCode": "CTTEC-22",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Négocier un degré de précision, de rigueur ou de détail en fonction du besoin"
+  },
+  {
+   "code": "CTTEC-22-7",
+   "parentCode": "CTTEC-22",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Utiliser un ordinateur pour communiquer : production de documents, analyses graphiques, production de tableaux..."
+  },
+  {
+   "code": "CTTEC-22-8",
+   "parentCode": "CTTEC-22",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Rédiger un texte personnel sur un sujet technologique"
+  },
+  {
+   "code": "CTTEC-22-9",
+   "parentCode": "CTTEC-22",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Présenter un problème sous forme graphique (dessin technique, croquis) et pouvoir utiliser les outils informatiques adaptés"
+  },
+  {
+   "code": "CTTEC-22-10",
+   "parentCode": "CTTEC-22",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Représenter un ensemble technologique sous la forme d'un schéma fonctionnel"
+  },
+  {
+   "code": "CTTEC-22-11",
+   "parentCode": "CTTEC-22",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Représenter un ensemble technologique sous la forme d'un croquis de structure"
+  },
+  {
+   "code": "CTTEC-22-12",
+   "parentCode": "CTTEC-22",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Présenter un problème ou des résultats sous forme tabulaire ou graphique."
+  },
+  {
+   "code": "CTTEC-23",
+   "parentCode": "CTTEC",
+   "kind": "competence",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Compétences transversales – Exploiter et s'approprier un message"
+  },
+  {
+   "code": "CTTEC-23-1",
+   "parentCode": "CTTEC-23",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Produire un rapport technique relatif à un exposé entendu, à une expérimentation menée, à une analyse faite"
+  },
+  {
+   "code": "CTTEC-23-2",
+   "parentCode": "CTTEC-23",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Présenter une synthèse orale structurée"
+  },
+  {
+   "code": "CTTEC-23-3",
+   "parentCode": "CTTEC-23",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Lire un dessin dans ses dimensions structurelle et fonctionnelle"
+  },
+  {
+   "code": "CTTEC-23-4",
+   "parentCode": "CTTEC-23",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Lire et interpréter des graphiques, des tableaux, des courbes, des diagrammes, des abaques."
+  }
+ ]
+}

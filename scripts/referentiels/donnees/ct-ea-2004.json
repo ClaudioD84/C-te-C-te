@@ -1,0 +1,2797 @@
+{
+ "source": {
+  "title": "Compétences terminales et savoirs requis en éducation artistique (humanités générales et technologiques)",
+  "url": "https://www.enseignement.be/fileadmin/portail_age/uploads/parcours_apprentissage/secondaire_ordinaire/Organisation/Contenus_apprentissages_Secondaire/competences_terminales/HUM_GEN_et_TECH_2et3_degres/2004_CT_HGT_Edu-Artistiqu.pdf",
+  "version": "2004"
+ },
+ "level": "secondaire",
+ "tracks": [
+  "general",
+  "technique",
+  "specialise"
+ ],
+ "entries": [
+  {
+   "code": "CTEA",
+   "parentCode": null,
+   "kind": "domaine",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Compétences terminales et savoirs requis en éducation artistique (humanités générales et technologiques)"
+  },
+  {
+   "code": "CTEA-1",
+   "parentCode": "CTEA",
+   "kind": "competence",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Arts plastiques – objectif : faire"
+  },
+  {
+   "code": "CTEA-1-1",
+   "parentCode": "CTEA-1",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Exprimer des formes simples ou des combinaisons de formes simples selon les conventions d'un système de représentation logique et adéquat."
+  },
+  {
+   "code": "CTEA-1-2",
+   "parentCode": "CTEA-1",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Comme un musicien fait ses gammes, assurer une relative aisance Graphique au travers des pratiques classiques du croquis, de la mise en page et de la mise au net."
+  },
+  {
+   "code": "CTEA-1-3",
+   "parentCode": "CTEA-1",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Etablir des rapports plastiques de texture, de proportions, de formes, de volumes, de couleurs, de sons, d'intensité, de mouvement, de lumière... et articuler une production -visuelle autour d'une intention formelle structurante."
+  },
+  {
+   "code": "CTEA-1-4",
+   "parentCode": "CTEA-1",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Nuancer ses partis pris formels ou expressifs."
+  },
+  {
+   "code": "CTEA-1-5",
+   "parentCode": "CTEA-1",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Connaître, pour les avoir expérimentées, les possibilités, les limites et la diversité des supports (divers papiers, par exemple), des outils (plumes, calames, crayons, pastels...) et des techniques (non seulement la peinture, mais le collage, les procédés d'impression et de communication...) en les considérant comme des lieux de recherche et d'affirmation de soi."
+  },
+  {
+   "code": "CTEA-1-6",
+   "parentCode": "CTEA-1",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Mettre en corrélation penser, dire, écrire et faire (dans le sens de produire dans un champ d'application artistique), articuler ainsi la forme et le contenu, le geste et le sens, l'outil et la pensée, l’œuvre et le soi."
+  },
+  {
+   "code": "CTEA-1-7",
+   "parentCode": "CTEA-1",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Etre capable de détourner un objet ou une image du sens convenu pour lequel il a été fait et se l'approprier en lui donnant un sens nouveau, inattendu et signifiant."
+  },
+  {
+   "code": "CTEA-1-8",
+   "parentCode": "CTEA-1",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Prendre en compte des contraintes externes (cadre, économie des moyens, conventions, consignes, impératifs d'illustration, délais...) ou internes (logique des techniques, volonté personnelle de style ou d'expression) dans la structuration du travail plastique."
+  },
+  {
+   "code": "CTEA-1-9",
+   "parentCode": "CTEA-1",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Participer à un projet collectif ou multidisciplinaire en y apportant son savoirfaire et en se pliant à la discipline qu'impose l'unité globale d'expression ou d'intention qui la justifie."
+  },
+  {
+   "code": "CTEA-1-10",
+   "parentCode": "CTEA-1",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Développer curiosité et appétence pour les moyens contemporains d'expression."
+  },
+  {
+   "code": "CTEA-2",
+   "parentCode": "CTEA",
+   "kind": "competence",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Arts plastiques – objectif : regarder"
+  },
+  {
+   "code": "CTEA-2-1",
+   "parentCode": "CTEA-2",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Etablir des rapports de grandeur, de position, de correspondance, de rythme, de proportions, de caractère, de couleurs... entre les éléments observés de manière à : soit les restituer, si telle est l'intention"
+  },
+  {
+   "code": "CTEA-2-2",
+   "parentCode": "CTEA-2",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "soit à mesurer l'écart pris avec la réalité, si la volonté d'expression prend le pas."
+  },
+  {
+   "code": "CTEA-2-3",
+   "parentCode": "CTEA-2",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Porter attention à la structure qui sousentend la forme naturelle."
+  },
+  {
+   "code": "CTEA-2-4",
+   "parentCode": "CTEA-2",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Interpréter l'œuvre plastique comme système de signes dont il convient d'objectiver les relations."
+  },
+  {
+   "code": "CTEA-2-5",
+   "parentCode": "CTEA-2",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Observer dans la perspective de mettre formes et rapports de formes en mémoire afin de pouvoir les restituer en leur absence ou de pouvoir les visualiser intérieurement."
+  },
+  {
+   "code": "CTEA-2-6",
+   "parentCode": "CTEA-2",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Accéder à et exprimer la dimension sensible autre qu'oculaire (le doux, le flasque, le gluant, le velu, le piquant, l'agressif, le massif, le dur, le résistant...)."
+  },
+  {
+   "code": "CTEA-2-7",
+   "parentCode": "CTEA-2",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Distinguer ce qui relève de la dénotation et de la connotation dans l'approche d'une image ou d'un document pour asseoir l'analyse sur des éléments aussi objectivement reconnus que possible."
+  },
+  {
+   "code": "CTEA-2-8",
+   "parentCode": "CTEA-2",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Percevoir les récurrences formelles qui caractérisent le style d'un artiste ou d'une époque."
+  },
+  {
+   "code": "CTEA-3",
+   "parentCode": "CTEA",
+   "kind": "competence",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Arts plastiques – objectif : s’exprimer"
+  },
+  {
+   "code": "CTEA-3-1",
+   "parentCode": "CTEA-3",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Conférer à l'activité plastique le statut de lieu d'écart par rapport à la norme, marquant ainsi la puissance créatrice de l'individu responsable s’identifiant à une création personnelle et « s'écrivant » à travers elle."
+  },
+  {
+   "code": "CTEA-3-2",
+   "parentCode": "CTEA-3",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Dégager des clés pratiques constituant autant d'outils favorisant la créativité (transformer, associer, modifier, transférer...) et développant l'imagination."
+  },
+  {
+   "code": "CTEA-3-3",
+   "parentCode": "CTEA-3",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Transposer dans un autre registre ou dans une autre technique, déplacer dans un autre domaine de l'expression une première expérience formelle."
+  },
+  {
+   "code": "CTEA-3-4",
+   "parentCode": "CTEA-3",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Tirer profit des hasards, convertir les erreurs, subvertir les logiques, utiliser l'inattendu et détourner les choses de leurs fonctions habituelles."
+  },
+  {
+   "code": "CTEA-3-5",
+   "parentCode": "CTEA-3",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Exprimer son appréciation sur une œuvre, justifier ses goûts et dégager l'intérêt relatif d'une démarche plastique."
+  },
+  {
+   "code": "CTEA-4",
+   "parentCode": "CTEA",
+   "kind": "competence",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Arts plastiques – objectif : connaître"
+  },
+  {
+   "code": "CTEA-4-1",
+   "parentCode": "CTEA-4",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Dégager les caractères stylistiques d'une écriture, d'une époque ou d'un style."
+  },
+  {
+   "code": "CTEA-4-2",
+   "parentCode": "CTEA-4",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Relier l'apparition ou la résurgence des formes à leur contexte historique, sociologique, psychologique, philosophique. Montrer comment elles s'y inscrivent, où et en quoi elles sont en rupture. Analyser l'interaction dynamique entre ces différentes composantes et montrer en quoi l’artiste forge, définit, voire remet en question les valeurs et la sensibilité de la culture de telle ou telle société."
+  },
+  {
+   "code": "CTEA-4-3",
+   "parentCode": "CTEA-4",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Décrire l'enchaînement de la vie des formes."
+  },
+  {
+   "code": "CTEA-4-4",
+   "parentCode": "CTEA-4",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Comparer les œuvres du présent et du passé, dégager des correspondances et les convergences fortuites, déceler les influences, apprécier l'impact d'une œuvre à court et à long terme, prendre conscience des ruptures, donner du sens."
+  },
+  {
+   "code": "CTEA-4-5",
+   "parentCode": "CTEA-4",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Tout en proscrivant le jargon, user d'un vocabulaire précis, nuancé et spécifique à l'égard des techniques employées. Préciser de cette façon la richesse de l'œuvre analysée."
+  },
+  {
+   "code": "CTEA-4-6",
+   "parentCode": "CTEA-4",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Apprendre à apprendre l'histoire de l'art (usage des encyclopédies, des bibliothèques, des tables des matières, des corrélats, des CD-ROM, d'Internet...)."
+  },
+  {
+   "code": "CTEA-4-7",
+   "parentCode": "CTEA-4",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Favoriser la fréquentation directe des œuvres en galerie et au musée afin de les connaître dans leurs vraies dimensions spatiales et sensibles."
+  },
+  {
+   "code": "CTEA-5",
+   "parentCode": "CTEA",
+   "kind": "competence",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Arts plastiques – objectif : apprécier"
+  },
+  {
+   "code": "CTEA-5-1",
+   "parentCode": "CTEA-5",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Construire le jugement éclairé en structurant la pensée critique (tant vis-à-vis de ses propres. réalisations que de celles des autres) et permettre d'échanger ses raisons d'aimer en argumentant au regard de :"
+  },
+  {
+   "code": "CTEA-5-2",
+   "parentCode": "CTEA-5",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "la représentation elle-même (logique représentative, conformité relative au modèle, réalité perçue ou vécue)"
+  },
+  {
+   "code": "CTEA-5-3",
+   "parentCode": "CTEA-5",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "le «quotient créateur » (puissance transformatrice ou créatrice, originalité de l'apport...)"
+  },
+  {
+   "code": "CTEA-5-4",
+   "parentCode": "CTEA-5",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "la clarté de la communication et/ou des possibilités connotatives (ouverture ou fermeture du sens)"
+  },
+  {
+   "code": "CTEA-5-5",
+   "parentCode": "CTEA-5",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "l'existence plastique de l'œuvre (espace, composition, mise en page, rythme, tension, formes, valeurs, couleurs, textures, proportions, lumière, échelle...), mais aussi dans le rapport de la forme et du contenu"
+  },
+  {
+   "code": "CTEA-5-6",
+   "parentCode": "CTEA-5",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "sa lisibilité et son intelligibilité"
+  },
+  {
+   "code": "CTEA-5-7",
+   "parentCode": "CTEA-5",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "la norme et le hors-norme des codes esthétiques."
+  },
+  {
+   "code": "CTEA-5-8",
+   "parentCode": "CTEA-5",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Enrichir son jugement esthétique par l'éclairage de connaissances pertinentes du contexte d'émergence de l'œuvre."
+  },
+  {
+   "code": "CTEA-5-9",
+   "parentCode": "CTEA-5",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Apprécier la richesse de ses racines et de son identité culturelle. Imposer le respect naturel et la valorisation du patrimoine."
+  },
+  {
+   "code": "CTEA-5-10",
+   "parentCode": "CTEA-5",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Reconnaître l'autre dans la spécificité de son langage et de ce qu'il est en lisant les productions plastiques comme projections de l'imaginaire et rencontres de l'inconscient, du fonds culturel, des pulsions, des souvenirs, de la créativité, du savoir-faire et des connaissances."
+  },
+  {
+   "code": "CTEA-5-11",
+   "parentCode": "CTEA-5",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Approcher les arts 'issus d'autres cultures et milieux sociaux ou religieux. Dégager des relations avec les différentes valeurs, traditions et idéologies."
+  },
+  {
+   "code": "CTEA-5-12",
+   "parentCode": "CTEA-5",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "S'ouvrir aux expériences esthétiques contemporaines de manière à les intégrer dans sa culture et ses intérêts."
+  },
+  {
+   "code": "CTEA-5-13",
+   "parentCode": "CTEA-5",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Gérer ses choix culturels par confrontation et décodage des moyens de communication actuels (affiche, T.V., radio, cinéma, expositions, spots publicitaires, Internet) en les considérant comme formes."
+  },
+  {
+   "code": "CTEA-6",
+   "parentCode": "CTEA",
+   "kind": "competence",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Arts d’expression – objectif : faire"
+  },
+  {
+   "code": "CTEA-6-1",
+   "parentCode": "CTEA-6",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Lire et utiliser des langages propres aux domaines de l'expression."
+  },
+  {
+   "code": "CTEA-6-2",
+   "parentCode": "CTEA-6",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Intégrer le rythme dans des enchaînements (mouvements, déplacements, images, séquences sonores...)."
+  },
+  {
+   "code": "CTEA-6-3",
+   "parentCode": "CTEA-6",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Associer différents modes d'expression."
+  },
+  {
+   "code": "CTEA-6-4",
+   "parentCode": "CTEA-6",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Réaliser une production globale en respectant des contraintes."
+  },
+  {
+   "code": "CTEA-6-5",
+   "parentCode": "CTEA-6",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "S'engager dans un projet collectif et le mener à terme."
+  },
+  {
+   "code": "CTEA-6-6",
+   "parentCode": "CTEA-6",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Moduler sa voix dans toutes ses formes (hauteur, timbre, intensité)."
+  },
+  {
+   "code": "CTEA-6-7",
+   "parentCode": "CTEA-6",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Utiliser les relations entre le langage corporel et le langage verbal."
+  },
+  {
+   "code": "CTEA-6-8",
+   "parentCode": "CTEA-6",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Ajuster les réactions corporelles aux contraintes de l'espace, de son occupation et des incidences sur la communication."
+  },
+  {
+   "code": "CTEA-6-9",
+   "parentCode": "CTEA-6",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Mettre en jeu des représentations au travers d'un rôle d'une manière crédible."
+  },
+  {
+   "code": "CTEA-7",
+   "parentCode": "CTEA",
+   "kind": "competence",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Arts d’expression – objectif : regarder/écouter"
+  },
+  {
+   "code": "CTEA-7-1",
+   "parentCode": "CTEA-7",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Comprendre les langages dans les domaines visuel, sonore et kinesthésique."
+  },
+  {
+   "code": "CTEA-7-2",
+   "parentCode": "CTEA-7",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Décrypter les relations entre le langage corporel et le langage verbal."
+  },
+  {
+   "code": "CTEA-7-3",
+   "parentCode": "CTEA-7",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Décoder dans une oeuvre déterminée les systèmes de signes artistiques mis en œuvre pour atteindre un effet esthétique."
+  },
+  {
+   "code": "CTEA-7-4",
+   "parentCode": "CTEA-7",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Etablir des liens entre des modes d'expression artistique envisagés dans leur évolution artistique et spatiale."
+  },
+  {
+   "code": "CTEA-7-5",
+   "parentCode": "CTEA-7",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Identifier un événement culturel ponctuel et le relier à un ensemble d'activités d'expression."
+  },
+  {
+   "code": "CTEA-7-6",
+   "parentCode": "CTEA-7",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Se poser des questions à propos des supports techniques de l'expression."
+  },
+  {
+   "code": "CTEA-8",
+   "parentCode": "CTEA",
+   "kind": "competence",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Arts d’expression – objectif : s’exprimer"
+  },
+  {
+   "code": "CTEA-8-1",
+   "parentCode": "CTEA-8",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "S'exprimer dans une démarche corporelle, sonore et plastique."
+  },
+  {
+   "code": "CTEA-8-2",
+   "parentCode": "CTEA-8",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Choisir des supports techniques de l'expression adaptés à une situation de communication et au sens d'un message."
+  },
+  {
+   "code": "CTEA-8-3",
+   "parentCode": "CTEA-8",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Mettre enjeu des représentations pour s'exprimer au travers d'un rôle de manière crédible et s'exprimer en prenant distance sur sa propre pratique et celle des autres dans le respect mutuel."
+  },
+  {
+   "code": "CTEA-8-4",
+   "parentCode": "CTEA-8",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Mettre ses compétences individuelles au service de la création collégiale."
+  },
+  {
+   "code": "CTEA-9",
+   "parentCode": "CTEA",
+   "kind": "competence",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Arts d’expression – objectif : connaître"
+  },
+  {
+   "code": "CTEA-9-1",
+   "parentCode": "CTEA-9",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Etablir des liens entre des modes d'expression artistique envisagés dans leur évolution temporelle et spatiale, les relier aux grands courants."
+  },
+  {
+   "code": "CTEA-9-2",
+   "parentCode": "CTEA-9",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Connaître pour une œuvre déterminée des systèmes de signes artistiques utilisés pour atteindre un effet esthétique."
+  },
+  {
+   "code": "CTEA-9-3",
+   "parentCode": "CTEA-9",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Relier l'apparition ou la résurgence des formes à leur contexte historique, sociologique, psychologique, philosophique. Montrer comment elles s'y inscrivent, où et en quoi elles sont en rupture. Analyser l'interaction dynamique entre ces différentes composantes et montrer en quoi l'artiste forge, définit, voire remet en question les valeurs et la sensibilité de la culture de telle ou telle société."
+  },
+  {
+   "code": "CTEA-9-4",
+   "parentCode": "CTEA-9",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Identifier un évènement culturel ponctuel et le relier à un ensemble d'activités d'expression."
+  },
+  {
+   "code": "CTEA-9-5",
+   "parentCode": "CTEA-9",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Connaître des supports techniques de l'expression."
+  },
+  {
+   "code": "CTEA-10",
+   "parentCode": "CTEA",
+   "kind": "competence",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Arts d’expression – objectif : apprécier"
+  },
+  {
+   "code": "CTEA-10-1",
+   "parentCode": "CTEA-10",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Exprimer son appréciation sur une œuvre, affirmer et défendre ses goûts."
+  },
+  {
+   "code": "CTEA-10-2",
+   "parentCode": "CTEA-10",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Donner un avis argumenté sur l'emploi combiné de différents modes d'expression en fonction de l'intention du créateur."
+  },
+  {
+   "code": "CTEA-10-3",
+   "parentCode": "CTEA-10",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "S'interroger sur l'intérêt, le sens d'une réactualisation."
+  },
+  {
+   "code": "CTEA-10-4",
+   "parentCode": "CTEA-10",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Formuler une appréciation critique sur l'utilisation de nouvelles technologies."
+  },
+  {
+   "code": "CTEA-11",
+   "parentCode": "CTEA",
+   "kind": "competence",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Arts graphiques – objectif : faire et s’exprimer"
+  },
+  {
+   "code": "CTEA-11-1",
+   "parentCode": "CTEA-11",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Exprimer des formes simples ou des combinaisons de formes simples selon les conventions d'un système de représentation logique et adéquat."
+  },
+  {
+   "code": "CTEA-11-2",
+   "parentCode": "CTEA-11",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Comme un musicien fait ses gammes, assurer une relative aisance graphique au travers des pratiques classiques du croquis (lay-out, croquis typographique, maquette...), de la mise en page et de la mise au net."
+  },
+  {
+   "code": "CTEA-11-3",
+   "parentCode": "CTEA-11",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Etablir des rapports plastiques de proportions, de lignes, de formes, de volumes, de couleurs, de texture, d'intensité, de lumière... et articuler une production graphique autour d'une intention formelle structurante et cohérente."
+  },
+  {
+   "code": "CTEA-11-4",
+   "parentCode": "CTEA-11",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Nuancer ses partis pris formels ou expressifs."
+  },
+  {
+   "code": "CTEA-11-5",
+   "parentCode": "CTEA-11",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Connaître, pour les avoir expérimentées, les possibilités, les limites, les caractéristiques, les emplois et la diversité des supports (divers papiers et cartons, par exemple), des outils (graphiques et numériques) et des techniques (non seulement le dessin, mais le collage, les procédés d'impression et de communication, le conditionnement...) en les considérant comme des lieux de recherche et de communication."
+  },
+  {
+   "code": "CTEA-11-6",
+   "parentCode": "CTEA-11",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Mettre en corrélation penser, dire, écrire et faire (dans le sens de produire dans un champ d'application artistique), articuler ainsi la forme et le contenu, le geste et le sens, l'outil et la pensée, l'œuvre et le soi."
+  },
+  {
+   "code": "CTEA-12",
+   "parentCode": "CTEA",
+   "kind": "competence",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Arts graphiques – objectif : faire et s’exprimer"
+  },
+  {
+   "code": "CTEA-12-1",
+   "parentCode": "CTEA-12",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Apporter une réponse diversifiée et personnelle à des problèmes d'ordre Graphique, technique et plastique."
+  },
+  {
+   "code": "CTEA-12-2",
+   "parentCode": "CTEA-12",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Respecter (et donc connaître) les règles déontologiques élémentaires des métiers graphiques (droits d'auteur, par exemple)."
+  },
+  {
+   "code": "CTEA-12-3",
+   "parentCode": "CTEA-12",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Comprendre et appliquer des relations pertinentes entre texte, typographie et image en fonction de l'effet recherché et de la nature du message."
+  },
+  {
+   "code": "CTEA-12-4",
+   "parentCode": "CTEA-12",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Etre capable de détourner une image ou des signes du sens convenu pour lequel il a été fait et de se l'approprier en lui donnant un sens nouveau, inattendu et signifiant."
+  },
+  {
+   "code": "CTEA-12-5",
+   "parentCode": "CTEA-12",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Transposer dans un autre registre ou dans une autre technique, déplacer dans un autre domaine de l'expression une première expérience formelle."
+  },
+  {
+   "code": "CTEA-12-6",
+   "parentCode": "CTEA-12",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Tirer profit des hasards, convertir les erreurs, subvertir les logiques et utiliser l'inattendu."
+  },
+  {
+   "code": "CTEA-12-7",
+   "parentCode": "CTEA-12",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Organiser en la classifiant rationnellement une documentation graphique personnelle (chartes et images diverses...) de manière à accroître le champ d'information et d'autonomie créatrice."
+  },
+  {
+   "code": "CTEA-12-8",
+   "parentCode": "CTEA-12",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Dans la structuration du travail plastique et face à des situations-problèmes, prendre en compte des contraintes externes (cadre, économie des moyens, conventions, consignes, impératifs d'illustration, délais...) ou internes (logique des techniques, volonté personnelle de style ou d'expression)."
+  },
+  {
+   "code": "CTEA-12-9",
+   "parentCode": "CTEA-12",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Organiser son travail en fonction d'un projet en y développant des capacités d'initiative."
+  },
+  {
+   "code": "CTEA-12-10",
+   "parentCode": "CTEA-12",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Dans le cadre de projets multidisciplinaires, pouvoir défendre ses idées, accepter la discussion, confronter les arguments et, finalement, mener correctement en équipe le projet retenu."
+  },
+  {
+   "code": "CTEA-12-11",
+   "parentCode": "CTEA-12",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Développer une curiosité pour l'évolution des nouvelles techniques et pratiques, graphiques, être disponible à se les approprier, s'y adapter et à en transférer les acquis potentiels dans l'acte de conception Graphique lui-même"
+  },
+  {
+   "code": "CTEA-13",
+   "parentCode": "CTEA",
+   "kind": "competence",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Arts graphiques – objectif : regarder"
+  },
+  {
+   "code": "CTEA-13-1",
+   "parentCode": "CTEA-13",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Etablir des rapports de grandeur, de position, de correspondance, de rythme, de proportions, de caractère, de couleurs …entre les éléments observés de manière à : soit les restituer, si telle est l'intention"
+  },
+  {
+   "code": "CTEA-13-2",
+   "parentCode": "CTEA-13",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "soit à mesurer l'écart pris avec la réalité si la volonté d'expression prend le pas."
+  },
+  {
+   "code": "CTEA-13-3",
+   "parentCode": "CTEA-13",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Porter attention à la structure qui sous-tend la forme naturelle."
+  },
+  {
+   "code": "CTEA-13-4",
+   "parentCode": "CTEA-13",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Interpréter l'œuvre graphique comme système de signes dont il convient d'objectiver les relations."
+  },
+  {
+   "code": "CTEA-13-5",
+   "parentCode": "CTEA-13",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Observer dans la perspective de mettre formes et rapports de formes en mémoire afin de pouvoir les restituer en leur absence ou de pouvoir les visualiser intérieurement."
+  },
+  {
+   "code": "CTEA-13-6",
+   "parentCode": "CTEA-13",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Distinguer ce qui relève de la dénotation et de la connotation dans l'approche d'une image ou d'un document pour asseoir l'analyse sur des éléments aussi objectivement reconnus que possible."
+  },
+  {
+   "code": "CTEA-13-7",
+   "parentCode": "CTEA-13",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Percevoir les récurrences formelles qui caractérisent le style d'un artiste ou d'une époque."
+  },
+  {
+   "code": "CTEA-13-8",
+   "parentCode": "CTEA-13",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Dégager autour d'images existantes ou créées par le graphiste des clés pratiques constituant autant d'outils favorisant la créativité (transformer, associer, modifier, transférer, …), développant l'imagination et permettant la communication."
+  },
+  {
+   "code": "CTEA-13-9",
+   "parentCode": "CTEA-13",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Exprimer son appréciation sur une œuvre graphique, justifier ses goûts et dégager l'intérêt relatif d'une démarche de communication visuelle."
+  },
+  {
+   "code": "CTEA-14",
+   "parentCode": "CTEA",
+   "kind": "competence",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Arts graphiques – objectif : connaître"
+  },
+  {
+   "code": "CTEA-14-1",
+   "parentCode": "CTEA-14",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Percevoir les récurrences formelles qui caractérisent le style d'un graphiste ou d'une époque."
+  },
+  {
+   "code": "CTEA-14-2",
+   "parentCode": "CTEA-14",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Décrire l'enchaînement et relier l'apparition ou la résurgence des formes graphiques à leur contexte historique, sociologique, psychologique, philosophique. Montrer comment elles sont en rupture. Analyser l'interaction dynamique entre ces différentes composantes et montrer en quoi l'artiste forge, définit, voire remet en question les valeurs et la sensibilité de la culture de telle ou telle société."
+  },
+  {
+   "code": "CTEA-14-3",
+   "parentCode": "CTEA-14",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Décrire l'enchaînement et l'évolution de la vie des formes, appliquée en particulier à l'histoire des arts graphiques."
+  },
+  {
+   "code": "CTEA-14-4",
+   "parentCode": "CTEA-14",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Comparer les œuvres du présent et du passé, dégager des correspondances et les convergences fortuites, déceler les influences, apprécier l'impact d'une œuvre à court et à long terme, prendre conscience des ruptures, donner du sens."
+  },
+  {
+   "code": "CTEA-14-5",
+   "parentCode": "CTEA-14",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Connaître les méthodes d'approche sémiologique et linguistique appliquées à la communication graphique (figures et procédés stylistiques, tropes, injonction, redondance, …)."
+  },
+  {
+   "code": "CTEA-14-6",
+   "parentCode": "CTEA-14",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Tout en proscrivant le jargon, user d'un vocabulaire précis, nuancé et spécifique à l'égard des techniques employées. Assumer de cette façon la richesse du langage professionnel."
+  },
+  {
+   "code": "CTEA-14-7",
+   "parentCode": "CTEA-14",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Situer les diverses interventions des acteurs de la chaîne graphique l'une par rapport à l'autre (chronologie, procédés, rôles et interférences)."
+  },
+  {
+   "code": "CTEA-14-8",
+   "parentCode": "CTEA-14",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Comprendre l'esprit et la logique des différents outils, supports et médias en usage dans le domaine de la communication visuelle."
+  },
+  {
+   "code": "CTEA-14-9",
+   "parentCode": "CTEA-14",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Connaître les règles typographiques essentielles, les impératifs de lisibilité et savoir faire les liaisons entre la typographie et le sens qu'elle véhicule."
+  },
+  {
+   "code": "CTEA-14-10",
+   "parentCode": "CTEA-14",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Connaître de manière critique les principaux ressorts psychologiques agissant à l'intérieur des manifestes publicitaires."
+  },
+  {
+   "code": "CTEA-14-11",
+   "parentCode": "CTEA-14",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Apprendre à se documenter et à s'informer, en particulier sur l'évolution des arts graphiques (usage des encyclopédies, des bibliothèques, des tables des matières, des corrélats, des CD-ROM, d'Internet, …)"
+  },
+  {
+   "code": "CTEA-14-12",
+   "parentCode": "CTEA-14",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Favoriser la fréquentation directe des œuvres en galerie et au musée afin de les connaître dans leurs vraies dimensions spatiales et sensibles"
+  },
+  {
+   "code": "CTEA-15",
+   "parentCode": "CTEA",
+   "kind": "competence",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Arts graphiques – objectif : apprécier"
+  },
+  {
+   "code": "CTEA-15-1",
+   "parentCode": "CTEA-15",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Construire le jugement éclairé en structurant la pensée critique (tant vis-à-vis de ses propres réalisations que de celle des autres) et permettre d’échanger ses raisons d’aimer en argumentant. au regard de la représentation ellemême (logique représentative, conformité relative au modèle, réalité perçue ou vécue) ; au regard du « quotient créateur » (puissance transformatrice ou créatrice, originalité de l’apport…), au regard de la clarté de la communication et/ou des possibilités connotatives (ouverture ou fermeture du sens) ; au regard de l’existence plastique de l’œuvre (espace, composition, mise en page, rythme, tension, formes, valeurs, couleurs, textures, proportions, lumière, échelle…), mais aussi dans le rapport de la forme du contenu ; au regard de sa lisibilité et son intelligibilité ; au regard de la norme et du hors norme des codes esthétiques."
+  },
+  {
+   "code": "CTEA-15-2",
+   "parentCode": "CTEA-15",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Percevoir l’intérêt des démarches mentales et des articulations productrices de sens via les signes graphiques et les images utilisés dans le domaine de la communication visuelle."
+  },
+  {
+   "code": "CTEA-15-3",
+   "parentCode": "CTEA-15",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Lire et comprendre le fonctionnement des manifestes visuels existants (aspects sociologiques, sémiologiques, psychologiques…) de manière à en assurer la compréhension et la critique."
+  },
+  {
+   "code": "CTEA-15-4",
+   "parentCode": "CTEA-15",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Apprécier la richesse de ses racines et de son identité culturelle. Imposer le respect naturel et la valorisation du patrimoine. graphique, justifier ses goûts et dégager l'intérêt relatif d'une démarche de communication visuelle."
+  },
+  {
+   "code": "CTEA-15-5",
+   "parentCode": "CTEA-15",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Reconnaître l’autre dans la spécificité de son langage et de ce qu’il est en lisant les production plastiques comme des projections de l’imaginaire et rencontre de l’inconscient, du fonds culturel, des pulsions, des souvenirs, de la créativité, du savoirfaire et des connaissances"
+  },
+  {
+   "code": "CTEA-15-6",
+   "parentCode": "CTEA-15",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Approcher les arts issus d’autres cultures et milieux sociaux ou religieux. Dégager des relations avec les différentes valeurs, traditions et idéologies."
+  },
+  {
+   "code": "CTEA-15-7",
+   "parentCode": "CTEA-15",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "S’ouvrir aux expériences esthétiques contemporaines de manières à les intégrer dans sa culture et ses intérêts."
+  },
+  {
+   "code": "CTEA-15-8",
+   "parentCode": "CTEA-15",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Gérer ses choix culturels par confrontations et décodage des moyens de communication actuels (affiche, T.V., radio, cinéma, expositions, spots publicitaires, Internet) en les considérant comme formes."
+  },
+  {
+   "code": "CTEA-16",
+   "parentCode": "CTEA",
+   "kind": "competence",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Audiovisuel – objectif : faire"
+  },
+  {
+   "code": "CTEA-16-1",
+   "parentCode": "CTEA-16",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Construire le jugement éclairé en structurant la pensée critique (tant vis-à-vis de ses propres réalisations que de celle des autres) et permettre d’échanger ses raisons d’aimer en argumentant."
+  },
+  {
+   "code": "CTEA-16-2",
+   "parentCode": "CTEA-16",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Assurer une relative aisance dans la manipulation de matériel audiovisuel de manière à préparer le travail créatif."
+  },
+  {
+   "code": "CTEA-16-3",
+   "parentCode": "CTEA-16",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Etablir des rapports visuels (cadrage, lumières, couleurs, contrastes, raccords, profondeur de champ, mouvements du sujet et de la caméra…), temporels (rythmes, longueur et succession de séquences…), sonores (intensité, timbre, coloration, fréquences, mixage…), parlés (dialogue, timbre, respiration…) et narratifs de manière cohérente en les articulant sur une intention formelle ou expressive structurante."
+  },
+  {
+   "code": "CTEA-16-4",
+   "parentCode": "CTEA-16",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Etablir et pouvoir nuancer ses partis pris formels ou expressifs."
+  },
+  {
+   "code": "CTEA-16-5",
+   "parentCode": "CTEA-16",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Manipuler et expérimenter les techniques argentines, analogiques et numériques ainsi que la diversité des émulsions et des outils (tout support de traitement de l’image) en les considérants comme des éléments de production et de recherche."
+  },
+  {
+   "code": "CTEA-16-6",
+   "parentCode": "CTEA-16",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Mettre en corrélation observer, écouter, penser et produire (dans le sens de produire dans un champ d’application audiovisuel), articuler ainsi la forme et le contenu, le geste et le sens, l’outil et la pensée, l’œuvre et le soi."
+  },
+  {
+   "code": "CTEA-16-7",
+   "parentCode": "CTEA-16",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Prendre en compte des contraintes externes (cadre scolaire et/ou autre, économie des moyens, conventions, consignes, délais…) ou internes (logique des techniques) dans la structuration du travail audiovisuel."
+  },
+  {
+   "code": "CTEA-16-8",
+   "parentCode": "CTEA-16",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Participer à des projets collectifs ou multidisciplinaires en y apportant son savoir-faire et en se pliant à la discipline qu’impose l’unité globale d’expression ou d’intention qui les justifie."
+  },
+  {
+   "code": "CTEA-16-9",
+   "parentCode": "CTEA-16",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Organiser son travail en fonction d’un projet choisi ou imposé en y développant ses capacités d’initiative."
+  },
+  {
+   "code": "CTEA-16-10",
+   "parentCode": "CTEA-16",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Pouvoir utiliser les fonctions de base des logiciels les plus courant dans les domaines de la photographie et de l’audiovisuel."
+  },
+  {
+   "code": "CTEA-16-11",
+   "parentCode": "CTEA-16",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Développer une curiosité pour l’évolution des nouvelles techniques audiovisuelles, être disponible à se les approprier, s’y adapter et à transférer les acquis potentiels dans l’acte de conception lui-même."
+  },
+  {
+   "code": "CTEA-17",
+   "parentCode": "CTEA",
+   "kind": "competence",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Audiovisuel – objectif : regarder et écouter"
+  },
+  {
+   "code": "CTEA-17-1",
+   "parentCode": "CTEA-17",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Etablir des rapports de grandeur, de position, de correspondance, de rythme, de proportions, de caractère, de couleurs... au sein de documents visuels et audiovisuels."
+  },
+  {
+   "code": "CTEA-17-2",
+   "parentCode": "CTEA-17",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Pouvoir justifier le choix d’un cadrage ou d’une composition relativement à la scène, au document, au thème ou à l’objet observé. Interpréter l’œuvre audiovisuelle comme système de signes dont il convient d’objectiver les relations (forme et expression)."
+  },
+  {
+   "code": "CTEA-17-3",
+   "parentCode": "CTEA-17",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Distinguer ce qui relève de la dénotation et de la connotation dans l’approche d’une image ou d’un document pour pouvoir établir une analyse aussi objective que possible."
+  },
+  {
+   "code": "CTEA-17-4",
+   "parentCode": "CTEA-17",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Percevoir à travers quelques œuvres majeures du cinéma, de la photographie et des productions musicales et audiovisuelles les récurrences formelles qui caractérisent le style d’un metteur en scène, d’un artiste ou d’une époque."
+  },
+  {
+   "code": "CTEA-18",
+   "parentCode": "CTEA",
+   "kind": "competence",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Audiovisuel – objectif : s’exprimer"
+  },
+  {
+   "code": "CTEA-18-1",
+   "parentCode": "CTEA-18",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Positionner ses ambitions expressives soit comme tentative de restitution objective de la réalité, soit comme écart entre cette réalité et une manière personnelle de regarder le monde."
+  },
+  {
+   "code": "CTEA-18-2",
+   "parentCode": "CTEA-18",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Regarder activement le monde extérieur pour donner à voir et/ou à entendre ce qui échappe à la perception commune."
+  },
+  {
+   "code": "CTEA-18-3",
+   "parentCode": "CTEA-18",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Conférer à l’activité audiovisuelle le statut de lieu de critique et d’écart par rapport à la norme, marquant ainsi la puissance créatrice de l’individu responsable s’identifiant à une création personnelle et « s’écrivant » à travers elle."
+  },
+  {
+   "code": "CTEA-18-4",
+   "parentCode": "CTEA-18",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Dégager des clés pratiques constituant autant d’outils favorisant la créativité (cadrer, monter, éclairer, filtrer, superposer…) et développant l’imagination."
+  },
+  {
+   "code": "CTEA-18-5",
+   "parentCode": "CTEA-18",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Transposer dans un autre registre visuel, sonore ou audiovisuel, déplacer dans un autre domaine de l’expression une première expérience formelle."
+  },
+  {
+   "code": "CTEA-18-6",
+   "parentCode": "CTEA-18",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Pouvoir tirer profit des hasards, convertir les erreurs, utiliser l’inattendu et détourner les choses de leurs fonctions habituelles."
+  },
+  {
+   "code": "CTEA-18-7",
+   "parentCode": "CTEA-18",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Etre capable de détourner un objet ou une image du sens convenu pour lequel il a été fait et se l’approprier en lui donnant un sens nouveau, inattendu et signifiant."
+  },
+  {
+   "code": "CTEA-18-8",
+   "parentCode": "CTEA-18",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Exprimer son appréciation sur une œuvre audiovisuelle, justifier ses goûts et en dégager l’intérêt relatif."
+  },
+  {
+   "code": "CTEA-19",
+   "parentCode": "CTEA",
+   "kind": "competence",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Audiovisuel – objectif : connaître"
+  },
+  {
+   "code": "CTEA-19-1",
+   "parentCode": "CTEA-19",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Dégager les caractères stylistiques essentiels d’une écriture audiovisuelle, d’une époque ou d’un style."
+  },
+  {
+   "code": "CTEA-19-2",
+   "parentCode": "CTEA-19",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Décrire l’enchaînement et penser à relier l’apparition ou la résurgence des formes d’expression à leur contexte historique et social. Comprendre qu’elles s’y inscrivent, où qu’elles peuvent être en rupture. Apprécier l’interaction dynamique entre ces différentes composantes et en quoi le créateur forge, définit, voire remet en question les valeurs et la sensibilité de la culture de telle ou telle société."
+  },
+  {
+   "code": "CTEA-19-3",
+   "parentCode": "CTEA-19",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Comparer les œuvres du présent et du passé, dégager des correspondances et les convergences fortuites, déceler les influences, apprécier l’impact d’une œuvre à court et à long terme, prendre conscience des ruptures, donner du sens."
+  },
+  {
+   "code": "CTEA-19-4",
+   "parentCode": "CTEA-19",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Connaître les méthodes d’approche sémiologique et sémantique de base appliquées à la communication (figures et procédés stylistiques, tropes, injonction, redondance…)"
+  },
+  {
+   "code": "CTEA-19-5",
+   "parentCode": "CTEA-19",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Tout en proscrivant le jargon, user d’un vocabulaire précis, nuancé et spécifique à l’égard des techniques employées. Assumer de cette façon la richesse du langage professionnel."
+  },
+  {
+   "code": "CTEA-19-6",
+   "parentCode": "CTEA-19",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Situer les diverses interventions des acteurs de la production audiovisuelle l’une par rapport à l’autre (chronologie, rôles et interférences)."
+  },
+  {
+   "code": "CTEA-19-7",
+   "parentCode": "CTEA-19",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Comprendre l’esprit et la logique des différents outils, supports et médias en usage dans le domaine de la communication audiovisuelle."
+  },
+  {
+   "code": "CTEA-19-8",
+   "parentCode": "CTEA-19",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Connaître de manière critique les principaux ressorts psychologiques agissant à l’intérieur des œuvres médiatiques ou audiovisuelles."
+  },
+  {
+   "code": "CTEA-19-9",
+   "parentCode": "CTEA-19",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Apprendre à se documenter, à recueillir des témoignages, à recouper son information et à s’informer, en particulier sur l’actualité, l’évolution des médias et des productions audiovisuelles (usage des encyclopédies, des bibliothèques, des médiathèques, des tables des matières, des corrélats, des productions de la presse écrite, des CDROM, d’Internet, des dossiers de presse…)"
+  },
+  {
+   "code": "CTEA-19-10",
+   "parentCode": "CTEA-19",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Considérer comme indispensable la fréquentation directe des milieux professionnels, des médiathèques, vidéothèques et cinémathèques, des galeries et musées afin de les connaître dans leurs vraies dimensions spatiales, humaines et sensibles."
+  },
+  {
+   "code": "CTEA-19-11",
+   "parentCode": "CTEA-19",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Connaître les techniques de base des systèmes audiovisuels afin de pouvoir effectuer des choix pratiques judicieux."
+  },
+  {
+   "code": "CTEA-20",
+   "parentCode": "CTEA",
+   "kind": "competence",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Audiovisuel – objectif : apprécier"
+  },
+  {
+   "code": "CTEA-20-1",
+   "parentCode": "CTEA-20",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Construire le jugement éclairé en structurant la pensée critique (tant vis-à-vis de ses propres réalisations que de celles des autres) et permettre d’échanger ses raisons d’aimer en argumentant : au regard de la logique documentaire ou du reportage qui, là où elle est invoquée, implique une approche objective"
+  },
+  {
+   "code": "CTEA-20-2",
+   "parentCode": "CTEA-20",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "au regard du « quotient créateur » (puissance transformatrice ou créatrice, originalité de l’apport…)"
+  },
+  {
+   "code": "CTEA-20-3",
+   "parentCode": "CTEA-20",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "au regard des possibilités connotatives (ouverture ou fermeture du sens)"
+  },
+  {
+   "code": "CTEA-20-4",
+   "parentCode": "CTEA-20",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "au regard de l’existence formelle, visuelle et sonore (image, musique, texte, voix…) constitutive de l’œuvre (espace, composition, tension, formes, valeurs, couleurs, textures, proportions, lumières, échelle, mouvement, raccords, temps…), mais aussi dans le rapport de la forme et du contenu"
+  },
+  {
+   "code": "CTEA-20-5",
+   "parentCode": "CTEA-20",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "au regard de sa lisibilité et de son intelligibilité, notamment dans la relation aux conditions de production et de réception"
+  },
+  {
+   "code": "CTEA-20-6",
+   "parentCode": "CTEA-20",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "au regard de la norme et du hors norme des codes esthétiques."
+  },
+  {
+   "code": "CTEA-20-7",
+   "parentCode": "CTEA-20",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Lire et comprendre le fonctionnement des documents audiovisuels existants (presse, annonces, clips vidéos…), de manière à en assurer la compréhension (aspects sociologiques, sémiologiques, psychologiques…) et la critique de même qu’à pouvoir en évaluer l’impact sur le public"
+  },
+  {
+   "code": "CTEA-21",
+   "parentCode": "CTEA",
+   "kind": "competence",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Musique – objectif : faire"
+  },
+  {
+   "code": "CTEA-21-1",
+   "parentCode": "CTEA-21",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Lire et utilise les principaux signes du langage musical."
+  },
+  {
+   "code": "CTEA-21-2",
+   "parentCode": "CTEA-21",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "S’approprier et utiliser des gestes d’expression musicale et sonore (vocale, instrumentale, corporelle..)."
+  },
+  {
+   "code": "CTEA-21-3",
+   "parentCode": "CTEA-21",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Intégrer les paramètres sonores dans l’expression vocale et instrumentale."
+  },
+  {
+   "code": "CTEA-21-4",
+   "parentCode": "CTEA-21",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Donner des sens différents en agissant sur l’expression sonore, vocale et instrumentale."
+  },
+  {
+   "code": "CTEA-21-5",
+   "parentCode": "CTEA-21",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Associer des expressions sonores et musicales à différents modes d’expression (littéraire, théâtral, pictural, gestuel, corporel)."
+  },
+  {
+   "code": "CTEA-21-6",
+   "parentCode": "CTEA-21",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Associer différents caractères rythmiques, mélodiques et harmoniques pour construire un message sonore."
+  },
+  {
+   "code": "CTEA-21-7",
+   "parentCode": "CTEA-21",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Utiliser les nouvelles technologies pour la recherche d’informations, pour la création, l’analyse sonore et musicale."
+  },
+  {
+   "code": "CTEA-21-8",
+   "parentCode": "CTEA-21",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "S’engager dans un projet collectif et le mener à terme."
+  },
+  {
+   "code": "CTEA-22",
+   "parentCode": "CTEA",
+   "kind": "competence",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Musique – objectif : écouter/regarder"
+  },
+  {
+   "code": "CTEA-22-1",
+   "parentCode": "CTEA-22",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Comprendre les langages du domaine sonore et musical."
+  },
+  {
+   "code": "CTEA-22-2",
+   "parentCode": "CTEA-22",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Ecouter la musique dans son déroulement (logique narrative, succession de motifs, structure, forme, relation au spatial, au temporel)."
+  },
+  {
+   "code": "CTEA-22-3",
+   "parentCode": "CTEA-22",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Identifier des thèmes reconnus dans leurs différences d’interprétations, d’orchestrations…"
+  },
+  {
+   "code": "CTEA-22-4",
+   "parentCode": "CTEA-22",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Associer et interpréter les différents messages sonores."
+  },
+  {
+   "code": "CTEA-22-5",
+   "parentCode": "CTEA-22",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Découvrir et s’approprier des éléments techniques et culturels au travers d’auditions actives."
+  },
+  {
+   "code": "CTEA-22-6",
+   "parentCode": "CTEA-22",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Identifier un événement culturel ponctuel et le relier à un ensemble d’activités d’expression."
+  },
+  {
+   "code": "CTEA-22-7",
+   "parentCode": "CTEA-22",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Se poser des questions à propos des supports techniques (anciens et nouveaux) de l’expression."
+  },
+  {
+   "code": "CTEA-23",
+   "parentCode": "CTEA",
+   "kind": "competence",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Musique – objectif : s’exprimer"
+  },
+  {
+   "code": "CTEA-23-1",
+   "parentCode": "CTEA-23",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Créer des situations sonores cohérentes par rapport à un argument littéraire, corporel, technique ou plastique."
+  },
+  {
+   "code": "CTEA-23-2",
+   "parentCode": "CTEA-23",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Associer des ambiances, des séances musicales et les adapter à une situation de communication et au sens du message."
+  },
+  {
+   "code": "CTEA-23-3",
+   "parentCode": "CTEA-23",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Mettre ses compétences musicales individuelles au service de la création collégiale."
+  },
+  {
+   "code": "CTEA-24",
+   "parentCode": "CTEA",
+   "kind": "competence",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Musique – objectif : connaître"
+  },
+  {
+   "code": "CTEA-24-1",
+   "parentCode": "CTEA-24",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Connaître les principales caractéristiques d’une époque, d’un style, d’un genre."
+  },
+  {
+   "code": "CTEA-24-2",
+   "parentCode": "CTEA-24",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Connaître différents phénomènes sonores (émission, propagation et réception du son)."
+  },
+  {
+   "code": "CTEA-24-3",
+   "parentCode": "CTEA-24",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Connaître différents outils de production sonore et de création musicale."
+  },
+  {
+   "code": "CTEA-24-4",
+   "parentCode": "CTEA-24",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Connaître les principales techniques du langage audiovisuel."
+  },
+  {
+   "code": "CTEA-24-5",
+   "parentCode": "CTEA-24",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Reconnaître l’œuvre musicale en la situant dans son contexte (temps, espace, école…)."
+  },
+  {
+   "code": "CTEA-24-6",
+   "parentCode": "CTEA-24",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Connaître les principales expressions du vocabulaire spécifique des métiers de la musique et du son."
+  },
+  {
+   "code": "CTEA-24-7",
+   "parentCode": "CTEA-24",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Identifier un événement culturel ponctuel et le relier à un ensemble d’activités d’expression."
+  },
+  {
+   "code": "CTEA-25",
+   "parentCode": "CTEA",
+   "kind": "competence",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Musique – objectif : apprécier"
+  },
+  {
+   "code": "CTEA-25-1",
+   "parentCode": "CTEA-25",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Exprimer son appréciation sur une œuvre, affirmer et défendre ses goûts."
+  },
+  {
+   "code": "CTEA-25-2",
+   "parentCode": "CTEA-25",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Donner un avis argumenté sur l’emploi combiné de différents modes d’expression en fonction de l’intention du créateur."
+  },
+  {
+   "code": "CTEA-25-3",
+   "parentCode": "CTEA-25",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "S’interroger sur l’intérêt, le sens d’une réactualisation."
+  },
+  {
+   "code": "CTEA-25-4",
+   "parentCode": "CTEA-25",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Formuler une appréciation critique sur l’utilisation de nouvelles technologies."
+  },
+  {
+   "code": "CTEA-25-5",
+   "parentCode": "CTEA-25",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Mener une réflexion argumentée sur les valeurs esthétiques dans l’expression sonore et musicale."
+  }
+ ]
+}

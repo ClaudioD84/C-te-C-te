@@ -1,0 +1,5680 @@
+{
+ "source": {
+  "title": "Compétences terminales et savoirs communs en formation scientifique (humanités professionnelles et techniques)",
+  "url": "https://www.enseignement.be/fileadmin/portail_age/uploads/parcours_apprentissage/secondaire_ordinaire/Organisation/Contenus_apprentissages_Secondaire/competences_terminales/FORM_COM_2et3_degres_et_7e_PROF_et_techni_de_qualif/2014_CT_HPT-Form-scientif.pdf",
+  "version": "2014"
+ },
+ "level": "secondaire",
+ "tracks": [
+  "technique",
+  "professionnel",
+  "specialise"
+ ],
+ "entries": [
+  {
+   "code": "CTFSQ",
+   "parentCode": null,
+   "kind": "domaine",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Compétences terminales et savoirs communs en formation scientifique (humanités professionnelles et techniques)"
+  },
+  {
+   "code": "CTFSQ-UAA1",
+   "parentCode": "CTFSQ",
+   "kind": "competence",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "LES MOUVEMENTS DE LA TERRE"
+  },
+  {
+   "code": "CTFSQ-UAA1-C1",
+   "parentCode": "CTFSQ-UAA1",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Compétence : Sur base d’une démarche d’investigation, décrire un phénomène observé sur Terre"
+  },
+  {
+   "code": "CTFSQ-UAA1-A1",
+   "parentCode": "CTFSQ-UAA1",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Utiliser un dispositif permettant de décrire un phénomène observé sur Terre parmi les suivants : l’alternance lumière/obscurité"
+  },
+  {
+   "code": "CTFSQ-UAA1-A2",
+   "parentCode": "CTFSQ-UAA1",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Utiliser un dispositif permettant de décrire un phénomène observé sur Terre parmi les suivants : la différence de température en été et en hiver sous nos latitudes"
+  },
+  {
+   "code": "CTFSQ-UAA1-A3",
+   "parentCode": "CTFSQ-UAA1",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Utiliser un dispositif permettant de décrire un phénomène observé sur Terre parmi les suivants : la différence de température à midi et au coucher du Soleil pour un jour donné"
+  },
+  {
+   "code": "CTFSQ-UAA1-A4",
+   "parentCode": "CTFSQ-UAA1",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Utiliser un dispositif permettant de décrire un phénomène observé sur Terre parmi les suivants : le décalage horaire entre deux régions du globe"
+  },
+  {
+   "code": "CTFSQ-UAA1-K1",
+   "parentCode": "CTFSQ-UAA1",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Connaître : Décrire le système solaire comme un ensemble de planètes qui gravitent autour du Soleil"
+  },
+  {
+   "code": "CTFSQ-UAA1-K2",
+   "parentCode": "CTFSQ-UAA1",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Connaître : Distinguer étoile, planète et satellite"
+  },
+  {
+   "code": "CTFSQ-UAA1-K3",
+   "parentCode": "CTFSQ-UAA1",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Connaître : Associer l’alternance lumière/obscurité et la durée du jour à la rotation de la Terre"
+  },
+  {
+   "code": "CTFSQ-UAA1-K4",
+   "parentCode": "CTFSQ-UAA1",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Connaître : Associer l’alternance des saisons et la durée d’une année à la révolution de la Terre"
+  },
+  {
+   "code": "CTFSQ-UAA1-R1",
+   "parentCode": "CTFSQ-UAA1",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Étoile, planète et satellite naturel (astres)"
+  },
+  {
+   "code": "CTFSQ-UAA1-R2",
+   "parentCode": "CTFSQ-UAA1",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Système solaire"
+  },
+  {
+   "code": "CTFSQ-UAA1-R3",
+   "parentCode": "CTFSQ-UAA1",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Mouvements de la Terre (rotation et révolution)"
+  },
+  {
+   "code": "CTFSQ-UAA1-R4",
+   "parentCode": "CTFSQ-UAA1",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Utiliser un dispositif illustrant un phénomène"
+  },
+  {
+   "code": "CTFSQ-UAA1-R5",
+   "parentCode": "CTFSQ-UAA1",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Utiliser une mappemonde"
+  },
+  {
+   "code": "CTFSQ-UAA2",
+   "parentCode": "CTFSQ",
+   "kind": "competence",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "LA LUMIÈRE NOUS PERMET D’OBSERVER"
+  },
+  {
+   "code": "CTFSQ-UAA2-C1",
+   "parentCode": "CTFSQ-UAA2",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Compétence : Sur base d’une démarche d’investigation, déterminer les conditions de visibilité d’un objet ainsi que la couleur sous laquelle on le perçoit"
+  },
+  {
+   "code": "CTFSQ-UAA2-A1",
+   "parentCode": "CTFSQ-UAA2",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Suivre un mode opératoire permettant de vérifier la propagation rectiligne de la lumière"
+  },
+  {
+   "code": "CTFSQ-UAA2-A2",
+   "parentCode": "CTFSQ-UAA2",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Identifier par une construction géométrique les zones d’ombre propre, d’ombre portée et de cône d’ombre produites par un objet éclairé à l’aide d’une source lumineuse ponctuelle"
+  },
+  {
+   "code": "CTFSQ-UAA2-A3",
+   "parentCode": "CTFSQ-UAA2",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Suivre un mode opératoire pour décomposer une lumière blanche"
+  },
+  {
+   "code": "CTFSQ-UAA2-A4",
+   "parentCode": "CTFSQ-UAA2",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Utiliser un dispositif pour produire une lumière colorée à partir de couleurs primaires (rouge, vert et bleu)"
+  },
+  {
+   "code": "CTFSQ-UAA2-A5",
+   "parentCode": "CTFSQ-UAA2",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Prévoir et justifier la couleur sous laquelle on perçoit un objet éclairé par une lumière colorée (rouge, verte et bleue)"
+  },
+  {
+   "code": "CTFSQ-UAA2-T1",
+   "parentCode": "CTFSQ-UAA2",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Transférer : À partir d’un texte simple ou d’un dispositif expérimental, expliquer les phases de la Lune (uniquement en TQ)"
+  },
+  {
+   "code": "CTFSQ-UAA2-K1",
+   "parentCode": "CTFSQ-UAA2",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Connaître : Différencier une source de lumière d’un objet éclairé"
+  },
+  {
+   "code": "CTFSQ-UAA2-K2",
+   "parentCode": "CTFSQ-UAA2",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Connaître : Décrire les conditions de visibilité d’un objet (objet lumineux, récepteur et sans obstacle entre l’objet et le récepteur)"
+  },
+  {
+   "code": "CTFSQ-UAA2-K3",
+   "parentCode": "CTFSQ-UAA2",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Connaître : Schématiser la propagation rectiligne de la lumière à l’aide du rayon lumineux"
+  },
+  {
+   "code": "CTFSQ-UAA2-K4",
+   "parentCode": "CTFSQ-UAA2",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Connaître : Différencier les corps transparents des corps translucides et des corps opaques"
+  },
+  {
+   "code": "CTFSQ-UAA2-K5",
+   "parentCode": "CTFSQ-UAA2",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Connaître : Schématiser l’effet d’un ou de plusieurs filtres colorés sur la lumière blanche"
+  },
+  {
+   "code": "CTFSQ-UAA2-R1",
+   "parentCode": "CTFSQ-UAA2",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Sources de lumière et objets éclairés"
+  },
+  {
+   "code": "CTFSQ-UAA2-R2",
+   "parentCode": "CTFSQ-UAA2",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Propagation rectiligne de la lumière"
+  },
+  {
+   "code": "CTFSQ-UAA2-R3",
+   "parentCode": "CTFSQ-UAA2",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Rayon lumineux"
+  },
+  {
+   "code": "CTFSQ-UAA2-R4",
+   "parentCode": "CTFSQ-UAA2",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Corps transparents, corps translucides et corps opaques"
+  },
+  {
+   "code": "CTFSQ-UAA2-R5",
+   "parentCode": "CTFSQ-UAA2",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Ombre propre, ombre portée, cône d’ombre (en se limitant à une source ponctuelle)"
+  },
+  {
+   "code": "CTFSQ-UAA2-R6",
+   "parentCode": "CTFSQ-UAA2",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Décomposition de la lumière blanche"
+  },
+  {
+   "code": "CTFSQ-UAA2-R7",
+   "parentCode": "CTFSQ-UAA2",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Filtres colorés (rouge, vert et bleu)"
+  },
+  {
+   "code": "CTFSQ-UAA2-R8",
+   "parentCode": "CTFSQ-UAA2",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Synthèse des couleurs"
+  },
+  {
+   "code": "CTFSQ-UAA2-R9",
+   "parentCode": "CTFSQ-UAA2",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Couleur prise par un objet"
+  },
+  {
+   "code": "CTFSQ-UAA2-R10",
+   "parentCode": "CTFSQ-UAA2",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Schématiser le trajet des rayons lumineux"
+  },
+  {
+   "code": "CTFSQ-UAA2-R11",
+   "parentCode": "CTFSQ-UAA2",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Suivre un mode opératoire"
+  },
+  {
+   "code": "CTFSQ-UAA2-R12",
+   "parentCode": "CTFSQ-UAA2",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Utiliser un dispositif opératoire"
+  },
+  {
+   "code": "CTFSQ-UAA3",
+   "parentCode": "CTFSQ",
+   "kind": "competence",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "LA CELLULE, UNITÉ DE BASE DU MONDE VIVANT"
+  },
+  {
+   "code": "CTFSQ-UAA3-C1",
+   "parentCode": "CTFSQ-UAA3",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Compétence : Partie I : Sur base d’une démarche d’investigation, observer qu’un organisme pluricellulaire est constitué de cellules qui assurent les fonctions essentielles du vivant"
+  },
+  {
+   "code": "CTFSQ-UAA3-C2",
+   "parentCode": "CTFSQ-UAA3",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Compétence : Partie II : Sur base d’une démarche d’investigation, montrer que certaines cellules sont spécialisées pour assurer des fonctions spécifiques, en prenant l’exemple de la vision"
+  },
+  {
+   "code": "CTFSQ-UAA3-C3",
+   "parentCode": "CTFSQ-UAA3",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Compétence : Partie II : Décrire l’action de certaines substances sur le système nerveux en vue d’expliquer leurs effets sur la santé"
+  },
+  {
+   "code": "CTFSQ-UAA3-A1",
+   "parentCode": "CTFSQ-UAA3",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Partie I : Partie I"
+  },
+  {
+   "code": "CTFSQ-UAA3-A2",
+   "parentCode": "CTFSQ-UAA3",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Sur base de documents iconographiques, hiérarchiser les : Sur base d’observations réalisées au microscope, différents niveaux d’organisation d’un organisme pluricellulaire: système, organe, tissu, cellule"
+  },
+  {
+   "code": "CTFSQ-UAA3-A3",
+   "parentCode": "CTFSQ-UAA3",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Réaliser le dessin d’une cellule observée au microscope : À partir d’un document, analyser et interpréter le optique et estimer son ordre de grandeur"
+  },
+  {
+   "code": "CTFSQ-UAA3-A4",
+   "parentCode": "CTFSQ-UAA3",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Analyser et interpréter une expérience faite en classe (exemples: membrane et perméabilité, paroi et turgescence, photosynthèse et production d’amidon) Partie II"
+  },
+  {
+   "code": "CTFSQ-UAA3-A5",
+   "parentCode": "CTFSQ-UAA3",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Partie II : À partir d’un document simple, identifier l’effet d’une"
+  },
+  {
+   "code": "CTFSQ-UAA3-A6",
+   "parentCode": "CTFSQ-UAA3",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : À partir de la dissection d’un œil, légender un schéma fourni : Légender et commenter un schéma de la communication"
+  },
+  {
+   "code": "CTFSQ-UAA3-T1",
+   "parentCode": "CTFSQ-UAA3",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Transférer : identifier le type de cellule (végétale ou animale), en justifiant son choix"
+  },
+  {
+   "code": "CTFSQ-UAA3-T2",
+   "parentCode": "CTFSQ-UAA3",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Transférer : résultat d’une expérience (non réalisée en classe) mettant en évidence les rôles des constituants cellulaires visibles au microscope optique (uniquement en TQ)"
+  },
+  {
+   "code": "CTFSQ-UAA3-T3",
+   "parentCode": "CTFSQ-UAA3",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Transférer : substance sur le système nerveux et son impact sur la santé"
+  },
+  {
+   "code": "CTFSQ-UAA3-T4",
+   "parentCode": "CTFSQ-UAA3",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Transférer : nerveuse depuis un organe sensoriel (autre que l’œil) jusqu’à un organe effecteur (uniquement en TQ)"
+  },
+  {
+   "code": "CTFSQ-UAA3-K1",
+   "parentCode": "CTFSQ-UAA3",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Connaître : Partie I"
+  },
+  {
+   "code": "CTFSQ-UAA3-K2",
+   "parentCode": "CTFSQ-UAA3",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Connaître : Légender un dessin ou un schéma d’une cellule animale et d’une cellule végétale observées en microscopie optique"
+  },
+  {
+   "code": "CTFSQ-UAA3-K3",
+   "parentCode": "CTFSQ-UAA3",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Connaître : Mettre en relation les organites cellulaires étudiés avec les quatre fonctions que sont la nutrition et l’excrétion, la respiration et la photosynthèse"
+  },
+  {
+   "code": "CTFSQ-UAA3-K4",
+   "parentCode": "CTFSQ-UAA3",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Connaître : Partie II"
+  },
+  {
+   "code": "CTFSQ-UAA3-K5",
+   "parentCode": "CTFSQ-UAA3",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Connaître : Légender un schéma des différentes parties de l’œil humain (coupe sagittale)"
+  },
+  {
+   "code": "CTFSQ-UAA3-K6",
+   "parentCode": "CTFSQ-UAA3",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Connaître : Légender et expliciter un schéma de la communication nerveuse depuis l’œil jusqu’à un organe effecteur"
+  },
+  {
+   "code": "CTFSQ-UAA3-R1",
+   "parentCode": "CTFSQ-UAA3",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Différents niveaux d’organisation: système, organe, tissu, cellule"
+  },
+  {
+   "code": "CTFSQ-UAA3-R2",
+   "parentCode": "CTFSQ-UAA3",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Cellules eucaryotes"
+  },
+  {
+   "code": "CTFSQ-UAA3-R3",
+   "parentCode": "CTFSQ-UAA3",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Ordre de grandeur de la taille d’une cellule"
+  },
+  {
+   "code": "CTFSQ-UAA3-R4",
+   "parentCode": "CTFSQ-UAA3",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Structure cellulaire et rôles des organites (se limiter à: noyau, cytoplasme, membrane plasmique, paroi cellulosique, chloroplaste, vacuole et mitochondrie)"
+  },
+  {
+   "code": "CTFSQ-UAA3-R5",
+   "parentCode": "CTFSQ-UAA3",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Liens entre le fonctionnement de systèmes et la vie cellulaire (se limiter à nutrition et excrétion, respiration et photosynthèse)"
+  },
+  {
+   "code": "CTFSQ-UAA3-R6",
+   "parentCode": "CTFSQ-UAA3",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Œil, organe des sens constitué de cellules spécialisées"
+  },
+  {
+   "code": "CTFSQ-UAA3-R7",
+   "parentCode": "CTFSQ-UAA3",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Structure du système nerveux: encéphale, moelle épinière, nerfs"
+  },
+  {
+   "code": "CTFSQ-UAA3-R8",
+   "parentCode": "CTFSQ-UAA3",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Système nerveux, moyen de transfert d’informations entre les organes (organe sensoriel et organe effecteur) via les neurones"
+  },
+  {
+   "code": "CTFSQ-UAA3-R9",
+   "parentCode": "CTFSQ-UAA3",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Hygiène psychique: action de certaines substances sur le système nerveux"
+  },
+  {
+   "code": "CTFSQ-UAA3-R10",
+   "parentCode": "CTFSQ-UAA3",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Distinguer un dessin d’un schéma"
+  },
+  {
+   "code": "CTFSQ-UAA3-R11",
+   "parentCode": "CTFSQ-UAA3",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Légender un dessin ou un schéma"
+  },
+  {
+   "code": "CTFSQ-UAA3-R12",
+   "parentCode": "CTFSQ-UAA3",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Utiliser un microscope optique"
+  },
+  {
+   "code": "CTFSQ-UAA3-R13",
+   "parentCode": "CTFSQ-UAA3",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Calculer le grossissement obtenu avec un microscope optique"
+  },
+  {
+   "code": "CTFSQ-UAA3-R14",
+   "parentCode": "CTFSQ-UAA3",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Réaliser un dessin d’observation"
+  },
+  {
+   "code": "CTFSQ-UAA3-R15",
+   "parentCode": "CTFSQ-UAA3",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Expliciter un schéma fonctionnel"
+  },
+  {
+   "code": "CTFSQ-UAA3-R16",
+   "parentCode": "CTFSQ-UAA3",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Suivre un mode opératoire"
+  },
+  {
+   "code": "CTFSQ-UAA3-R17",
+   "parentCode": "CTFSQ-UAA3",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Analyser et interpréter le résultat d’une expérience"
+  },
+  {
+   "code": "CTFSQ-UAA4",
+   "parentCode": "CTFSQ",
+   "kind": "competence",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "TRANSFORMATION DE LA MATIÈRE"
+  },
+  {
+   "code": "CTFSQ-UAA4-C1",
+   "parentCode": "CTFSQ-UAA4",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Compétence : Partie I : Sur base d’une démarche d’investigation, montrer qu’il y a conservation de la masse lors d’une transformation de la matière"
+  },
+  {
+   "code": "CTFSQ-UAA4-C2",
+   "parentCode": "CTFSQ-UAA4",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Compétence : Partie II : Sur base d’une démarche d’investigation, identifier les caractéristiques d’une réaction de combustion"
+  },
+  {
+   "code": "CTFSQ-UAA4-A1",
+   "parentCode": "CTFSQ-UAA4",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Partie I"
+  },
+  {
+   "code": "CTFSQ-UAA4-A2",
+   "parentCode": "CTFSQ-UAA4",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Sur base d’une expérience réalisée en classe, mettre en évidence la conservation de la masse"
+  },
+  {
+   "code": "CTFSQ-UAA4-A3",
+   "parentCode": "CTFSQ-UAA4",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Partie II"
+  },
+  {
+   "code": "CTFSQ-UAA4-A4",
+   "parentCode": "CTFSQ-UAA4",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Sur base d’une expérience réalisée en classe, mettre en évidence la présence d’énergie, d’eau et de dioxyde de carbone lors d’une réaction de combustion"
+  },
+  {
+   "code": "CTFSQ-UAA4-T1",
+   "parentCode": "CTFSQ-UAA4",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Transférer : Sur base d’un document simple, identifier les conséquences d’une réaction de combustion incomplète"
+  },
+  {
+   "code": "CTFSQ-UAA4-T2",
+   "parentCode": "CTFSQ-UAA4",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Transférer : Montrer que la respiration est une réaction de combustion (uniquement en TQ)"
+  },
+  {
+   "code": "CTFSQ-UAA4-K1",
+   "parentCode": "CTFSQ-UAA4",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Connaître : Partie I"
+  },
+  {
+   "code": "CTFSQ-UAA4-K2",
+   "parentCode": "CTFSQ-UAA4",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Connaître : Sur base expérimentale, expliciter le critère permettant de distinguer une réaction chimique d’un changement d’état"
+  },
+  {
+   "code": "CTFSQ-UAA4-K3",
+   "parentCode": "CTFSQ-UAA4",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Connaître : Partie II"
+  },
+  {
+   "code": "CTFSQ-UAA4-K4",
+   "parentCode": "CTFSQ-UAA4",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Connaître : Identifier dans une situation concrète les différents éléments du triangle du feu"
+  },
+  {
+   "code": "CTFSQ-UAA4-K5",
+   "parentCode": "CTFSQ-UAA4",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Connaître : Associer un pictogramme (SGH01, SGH02, SGH03 et SGH04) au danger qu’il représente"
+  },
+  {
+   "code": "CTFSQ-UAA4-R1",
+   "parentCode": "CTFSQ-UAA4",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Phénomène physique (uniquement changements d’état)"
+  },
+  {
+   "code": "CTFSQ-UAA4-R2",
+   "parentCode": "CTFSQ-UAA4",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Réaction chimique (se limiter à l’aspect macroscopique)"
+  },
+  {
+   "code": "CTFSQ-UAA4-R3",
+   "parentCode": "CTFSQ-UAA4",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Conservation de la masse"
+  },
+  {
+   "code": "CTFSQ-UAA4-R4",
+   "parentCode": "CTFSQ-UAA4",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Réaction de combustion (se limiter à l’écriture nominative)"
+  },
+  {
+   "code": "CTFSQ-UAA4-R5",
+   "parentCode": "CTFSQ-UAA4",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Triangle du feu"
+  },
+  {
+   "code": "CTFSQ-UAA4-R6",
+   "parentCode": "CTFSQ-UAA4",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Pictogrammes de dangers, mentions des dangers et conseils de prudence (en lien avec la combustion)"
+  },
+  {
+   "code": "CTFSQ-UAA4-R7",
+   "parentCode": "CTFSQ-UAA4",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Mesurer des volumes et des masses"
+  },
+  {
+   "code": "CTFSQ-UAA4-R8",
+   "parentCode": "CTFSQ-UAA4",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Schématiser un montage expérimental"
+  },
+  {
+   "code": "CTFSQ-UAA4-R9",
+   "parentCode": "CTFSQ-UAA4",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Analyser et interpréter les résultats d’une expérience"
+  },
+  {
+   "code": "CTFSQ-UAA4-R10",
+   "parentCode": "CTFSQ-UAA4",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Suivre un mode opératoire"
+  },
+  {
+   "code": "CTFSQ-UAA5",
+   "parentCode": "CTFSQ",
+   "kind": "competence",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "L’ÉNERGIE ÉLECTRIQUE"
+  },
+  {
+   "code": "CTFSQ-UAA5-C1",
+   "parentCode": "CTFSQ-UAA5",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Compétence : Sur base d’une démarche d’investigation, expliciter les conditions d’utilisation d’appareils électriques"
+  },
+  {
+   "code": "CTFSQ-UAA5-A1",
+   "parentCode": "CTFSQ-UAA5",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Construire un circuit électrique à partir d’un schéma"
+  },
+  {
+   "code": "CTFSQ-UAA5-A2",
+   "parentCode": "CTFSQ-UAA5",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Établir expérimentalement comment varie l’intensité du courant dans un circuit quand la résistance varie à tension constante"
+  },
+  {
+   "code": "CTFSQ-UAA5-A3",
+   "parentCode": "CTFSQ-UAA5",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : À l’aide d’un ohmmètre, mesurer la résistance de différents appareils à usage domestique"
+  },
+  {
+   "code": "CTFSQ-UAA5-A4",
+   "parentCode": "CTFSQ-UAA5",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : À l’aide d’un ohmmètre, comparer la résistance du corps humain dans différentes conditions"
+  },
+  {
+   "code": "CTFSQ-UAA5-A5",
+   "parentCode": "CTFSQ-UAA5",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Extraire de l’étiquette signalétique d’un appareil électrique les renseignements nécessaires à une utilisation correcte"
+  },
+  {
+   "code": "CTFSQ-UAA5-A6",
+   "parentCode": "CTFSQ-UAA5",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : À l’aide d’un énergimètre (wattheuremètre), estimer la consommation annuelle d’un appareil en fonctionnement et en mode veille"
+  },
+  {
+   "code": "CTFSQ-UAA5-T1",
+   "parentCode": "CTFSQ-UAA5",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Transférer : À partir d’un document iconographique décrivant une situation de la vie courante, relever les manquements en matière de sécurité électrique"
+  },
+  {
+   "code": "CTFSQ-UAA5-T2",
+   "parentCode": "CTFSQ-UAA5",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Transférer : Sur base documentaire, proposer des solutions pour diminuer la consommation d’énergie électrique d’une habitation, dans une perspective de développement durable"
+  },
+  {
+   "code": "CTFSQ-UAA5-K1",
+   "parentCode": "CTFSQ-UAA5",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Connaître : Utiliser une analogie pour différencier une tension électrique d’une intensité de courant"
+  },
+  {
+   "code": "CTFSQ-UAA5-K2",
+   "parentCode": "CTFSQ-UAA5",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Connaître : Identifier les conditions de circulation d’un courant électrique dans un circuit (présence d’un générateur, circuit fermé)"
+  },
+  {
+   "code": "CTFSQ-UAA5-K3",
+   "parentCode": "CTFSQ-UAA5",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Connaître : Citer différents exemples de générateurs électriques et indiquer la transformation d’énergie dont ils sont le siège"
+  },
+  {
+   "code": "CTFSQ-UAA5-K4",
+   "parentCode": "CTFSQ-UAA5",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Connaître : Citer différents exemples de récepteurs et indiquer la transformation d’énergie dont ils sont le siège"
+  },
+  {
+   "code": "CTFSQ-UAA5-K5",
+   "parentCode": "CTFSQ-UAA5",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Connaître : Dans une situation donnée, choisir en le justifiant le dispositif de sécurité adéquat (fusible, disjoncteur, différentiel, prise de terre)"
+  },
+  {
+   "code": "CTFSQ-UAA5-K6",
+   "parentCode": "CTFSQ-UAA5",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Connaître : Illustrer la notion de kWh dans une situation de la vie courante"
+  },
+  {
+   "code": "CTFSQ-UAA5-R1",
+   "parentCode": "CTFSQ-UAA5",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Circuits électriques en série, en parallèle"
+  },
+  {
+   "code": "CTFSQ-UAA5-R2",
+   "parentCode": "CTFSQ-UAA5",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Énergie électrique et transformations d’énergie"
+  },
+  {
+   "code": "CTFSQ-UAA5-R3",
+   "parentCode": "CTFSQ-UAA5",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Tension électrique"
+  },
+  {
+   "code": "CTFSQ-UAA5-R4",
+   "parentCode": "CTFSQ-UAA5",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Intensité de courant"
+  },
+  {
+   "code": "CTFSQ-UAA5-R5",
+   "parentCode": "CTFSQ-UAA5",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Résistance (sans la loi d’Ohm)"
+  },
+  {
+   "code": "CTFSQ-UAA5-R6",
+   "parentCode": "CTFSQ-UAA5",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Générateur, récepteur"
+  },
+  {
+   "code": "CTFSQ-UAA5-R7",
+   "parentCode": "CTFSQ-UAA5",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Effets (thermique, lumineux, magnétique, mécanique, chimique) du courant"
+  },
+  {
+   "code": "CTFSQ-UAA5-R8",
+   "parentCode": "CTFSQ-UAA5",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Symboles des composants usuels"
+  },
+  {
+   "code": "CTFSQ-UAA5-R9",
+   "parentCode": "CTFSQ-UAA5",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Relation entre puissance et énergie électrique"
+  },
+  {
+   "code": "CTFSQ-UAA5-R10",
+   "parentCode": "CTFSQ-UAA5",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Unités: volt, ampère, ohm, watt et kilowattheure"
+  },
+  {
+   "code": "CTFSQ-UAA5-R11",
+   "parentCode": "CTFSQ-UAA5",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Dangers du courant électrique, notamment le court-circuit"
+  },
+  {
+   "code": "CTFSQ-UAA5-R12",
+   "parentCode": "CTFSQ-UAA5",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Fusible, disjoncteur, différentiel, prise de terre (rôle fonctionnel, sans détail)"
+  },
+  {
+   "code": "CTFSQ-UAA5-R13",
+   "parentCode": "CTFSQ-UAA5",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Dessiner un schéma électrique"
+  },
+  {
+   "code": "CTFSQ-UAA5-R14",
+   "parentCode": "CTFSQ-UAA5",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Réaliser un circuit électrique sur base d’un schéma"
+  },
+  {
+   "code": "CTFSQ-UAA5-R15",
+   "parentCode": "CTFSQ-UAA5",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Utiliser un multimètre"
+  },
+  {
+   "code": "CTFSQ-UAA5-R16",
+   "parentCode": "CTFSQ-UAA5",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Utiliser un énergimètre (wattheuremètre)"
+  },
+  {
+   "code": "CTFSQ-UAA6",
+   "parentCode": "CTFSQ",
+   "kind": "competence",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "BIODIVERSITÉ ET ÉVOLUTION"
+  },
+  {
+   "code": "CTFSQ-UAA6-C1",
+   "parentCode": "CTFSQ-UAA6",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Compétence : Partie I : Sur base d’une démarche d’investigation, décrire les êtres vivants qui peuplent un écosystème et analyser leurs relations intra et interspécifiques"
+  },
+  {
+   "code": "CTFSQ-UAA6-C2",
+   "parentCode": "CTFSQ-UAA6",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Compétence : Partie I : Sur base d’une démarche d’investigation, classer les êtres vivants d’une collection donnée afin de montrer qu’ils ont un ancêtre commun"
+  },
+  {
+   "code": "CTFSQ-UAA6-C3",
+   "parentCode": "CTFSQ-UAA6",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Compétence : Partie II : Sur base d’une démarche d’investigation, montrer qu’il existe différents types d’arguments scientifiques prouvant l’évolution"
+  },
+  {
+   "code": "CTFSQ-UAA6-A1",
+   "parentCode": "CTFSQ-UAA6",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Partie I"
+  },
+  {
+   "code": "CTFSQ-UAA6-A2",
+   "parentCode": "CTFSQ-UAA6",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Dans le cas de l’écosystème exploré sur le terrain, décrire les facteurs abiotiques"
+  },
+  {
+   "code": "CTFSQ-UAA6-A3",
+   "parentCode": "CTFSQ-UAA6",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Dans le cas de l’écosystème exploré sur le terrain, caractériser les relations alimentaires entre les êtres vivants à l’aide d’un réseau trophique"
+  },
+  {
+   "code": "CTFSQ-UAA6-A4",
+   "parentCode": "CTFSQ-UAA6",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Dans le cas de l’écosystème exploré sur le terrain, classer les organismes d’un échantillon sur base de leurs caractères morphologiques partagés"
+  },
+  {
+   "code": "CTFSQ-UAA6-A5",
+   "parentCode": "CTFSQ-UAA6",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Dans le cas de l’écosystème exploré sur le terrain, représenter les relations de parenté au sein d’un échantillon d’animaux sous la forme d’un arbre phylogénétique"
+  },
+  {
+   "code": "CTFSQ-UAA6-A6",
+   "parentCode": "CTFSQ-UAA6",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Partie II"
+  },
+  {
+   "code": "CTFSQ-UAA6-A7",
+   "parentCode": "CTFSQ-UAA6",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Sur base d’un document, développer des arguments (morphologiques, anatomiques, paléontologiques) en faveur de l’évolution des êtres vivants"
+  },
+  {
+   "code": "CTFSQ-UAA6-T1",
+   "parentCode": "CTFSQ-UAA6",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Transférer : Sur base d’un document, expliciter que la biodiversité d’un écosystème est le résultat de : Écosystème, biotope, biocénose l’évolution"
+  },
+  {
+   "code": "CTFSQ-UAA6-T2",
+   "parentCode": "CTFSQ-UAA6",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Transférer : Sur base d’un document, expliciter que la biodiversité d’un écosystème est le résultat de : Relations alimentaires (prédation, parasitisme…) et réseaux"
+  },
+  {
+   "code": "CTFSQ-UAA6-T3",
+   "parentCode": "CTFSQ-UAA6",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Transférer : Sur base d’un document, expliciter que la biodiversité d’un écosystème est le résultat de : Biodiversité"
+  },
+  {
+   "code": "CTFSQ-UAA6-T4",
+   "parentCode": "CTFSQ-UAA6",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Transférer : Sur base d’un document, expliciter que la biodiversité d’un écosystème est le résultat de : Classement phylogénétique"
+  },
+  {
+   "code": "CTFSQ-UAA6-T5",
+   "parentCode": "CTFSQ-UAA6",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Transférer : Sur base d’un document, expliciter que la biodiversité d’un écosystème est le résultat de : Fossiles"
+  },
+  {
+   "code": "CTFSQ-UAA6-T6",
+   "parentCode": "CTFSQ-UAA6",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Transférer : Sur base d’un document, expliciter que la biodiversité d’un écosystème est le résultat de : Arguments morphologiques, anatomiques et paléontologiques"
+  },
+  {
+   "code": "CTFSQ-UAA6-T7",
+   "parentCode": "CTFSQ-UAA6",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Transférer : Sur base d’un document, expliciter que la biodiversité d’un écosystème est le résultat de : Réaliser des relevés sur le terrain"
+  },
+  {
+   "code": "CTFSQ-UAA6-T8",
+   "parentCode": "CTFSQ-UAA6",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Transférer : Sur base d’un document, expliciter que la biodiversité d’un écosystème est le résultat de : Récolter, observer, décrire et comparer des êtres vivants"
+  },
+  {
+   "code": "CTFSQ-UAA6-T9",
+   "parentCode": "CTFSQ-UAA6",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Transférer : Sur base d’un document, expliciter que la biodiversité d’un écosystème est le résultat de : Réaliser des ensembles emboités et schématiser les liens de"
+  },
+  {
+   "code": "CTFSQ-UAA6-K1",
+   "parentCode": "CTFSQ-UAA6",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Connaître : Partie I"
+  },
+  {
+   "code": "CTFSQ-UAA6-K2",
+   "parentCode": "CTFSQ-UAA6",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Connaître : Dans le cas d’un écosystème étudié sur le terrain (étang, haie, prairie, jardin, sol, forêt…) : expliciter cet écosystème comme un ensemble formé d’un biotope et d’une biocénose d’une grande diversité"
+  },
+  {
+   "code": "CTFSQ-UAA6-K3",
+   "parentCode": "CTFSQ-UAA6",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Connaître : Dans le cas d’un écosystème étudié sur le terrain (étang, haie, prairie, jardin, sol, forêt…) : justifier qu’un classement phylogénétique permet de montrer qu’un ensemble d’êtres vivants ont un ancêtre commun"
+  },
+  {
+   "code": "CTFSQ-UAA6-K4",
+   "parentCode": "CTFSQ-UAA6",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Connaître : Partie II"
+  },
+  {
+   "code": "CTFSQ-UAA6-K5",
+   "parentCode": "CTFSQ-UAA6",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Connaître : Expliciter que l’évolution des êtres vivants n’est pas une croyance, mais un fait scientifique."
+  },
+  {
+   "code": "CTFSQ-UAA6-K6",
+   "parentCode": "CTFSQ-UAA6",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Connaître : Schématiser un réseau trophique"
+  },
+  {
+   "code": "CTFSQ-UAA6-K7",
+   "parentCode": "CTFSQ-UAA6",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Connaître : Respecter le milieu naturel visité"
+  },
+  {
+   "code": "CTFSQ-UAA6-K8",
+   "parentCode": "CTFSQ-UAA6",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Connaître : Respecter les consignes de sécurité des laboratoires"
+  },
+  {
+   "code": "CTFSQ-UAA6-K9",
+   "parentCode": "CTFSQ-UAA6",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Connaître : Utiliser de manière appropriée et en toute sécurité l’équipement"
+  },
+  {
+   "code": "CTFSQ-UAA6-R1",
+   "parentCode": "CTFSQ-UAA6",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : trophiques"
+  },
+  {
+   "code": "CTFSQ-UAA6-R2",
+   "parentCode": "CTFSQ-UAA6",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : en faveur de l’évolution"
+  },
+  {
+   "code": "CTFSQ-UAA6-R3",
+   "parentCode": "CTFSQ-UAA6",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : parenté qui en découlent sous forme d’un arbre phylogénétique"
+  },
+  {
+   "code": "CTFSQ-UAA7",
+   "parentCode": "CTFSQ",
+   "kind": "competence",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "LES LENTILLES NOUS AIDENT À OBSERVER"
+  },
+  {
+   "code": "CTFSQ-UAA7-C1",
+   "parentCode": "CTFSQ-UAA7",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Compétence : Sur base d’une démarche d’investigation, justifier l’usage de différentes lentilles"
+  },
+  {
+   "code": "CTFSQ-UAA7-A1",
+   "parentCode": "CTFSQ-UAA7",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Comparer et trier quelques lentilles par diverses méthodes (toucher, déviation d’un faisceau parallèle, observation d’un texte)"
+  },
+  {
+   "code": "CTFSQ-UAA7-A2",
+   "parentCode": "CTFSQ-UAA7",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Utiliser un dispositif pour modéliser le fonctionnement de l’œil normal, myope et hypermétrope"
+  },
+  {
+   "code": "CTFSQ-UAA7-T1",
+   "parentCode": "CTFSQ-UAA7",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Transférer : Utiliser un dispositif expérimental pour modéliser la correction d’un défaut de l’œil."
+  },
+  {
+   "code": "CTFSQ-UAA7-T2",
+   "parentCode": "CTFSQ-UAA7",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Transférer : Extraire d’un document les informations montrant des applications des lentilles dans la vie courante"
+  },
+  {
+   "code": "CTFSQ-UAA7-K1",
+   "parentCode": "CTFSQ-UAA7",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Connaître : Différencier l’effet d’une lentille convergente de celui d’une lentille divergente"
+  },
+  {
+   "code": "CTFSQ-UAA7-K2",
+   "parentCode": "CTFSQ-UAA7",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Connaître : Identifier et décrire le rôle des différentes parties de l’œil dans le mécanisme de la vision"
+  },
+  {
+   "code": "CTFSQ-UAA7-R1",
+   "parentCode": "CTFSQ-UAA7",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Déviation de la lumière par des lentilles: effets de convergence et de divergence"
+  },
+  {
+   "code": "CTFSQ-UAA7-R2",
+   "parentCode": "CTFSQ-UAA7",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Œil humain: paupières, cristallin, pupille et rétine"
+  },
+  {
+   "code": "CTFSQ-UAA7-R3",
+   "parentCode": "CTFSQ-UAA7",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Défauts de l’œil: myopie et hypermétropie"
+  },
+  {
+   "code": "CTFSQ-UAA7-R4",
+   "parentCode": "CTFSQ-UAA7",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Suivre un mode opératoire"
+  },
+  {
+   "code": "CTFSQ-UAA7-R5",
+   "parentCode": "CTFSQ-UAA7",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Schématiser un dispositif expérimental"
+  },
+  {
+   "code": "CTFSQ-UAA8",
+   "parentCode": "CTFSQ",
+   "kind": "competence",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "VIVRE UNE SEXUALITÉ RESPONSABLE"
+  },
+  {
+   "code": "CTFSQ-UAA8-C1",
+   "parentCode": "CTFSQ-UAA8",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Compétence : Utiliser des arguments scientifiques pour justifier des choix en relation avec sa sexualité"
+  },
+  {
+   "code": "CTFSQ-UAA8-A1",
+   "parentCode": "CTFSQ-UAA8",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Schématiser le trajet des spermatozoïdes et de l’ovule dans les voies génitales y compris lors d’un rapport sexuel"
+  },
+  {
+   "code": "CTFSQ-UAA8-A2",
+   "parentCode": "CTFSQ-UAA8",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : À partir d’un document iconographique, décrire le processus de fécondation"
+  },
+  {
+   "code": "CTFSQ-UAA8-A3",
+   "parentCode": "CTFSQ-UAA8",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Sur base d’un document simple, identifier un moyen de prévention en relation avec une infection sexuellement transmissible"
+  },
+  {
+   "code": "CTFSQ-UAA8-T1",
+   "parentCode": "CTFSQ-UAA8",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Transférer : Sur base d’un document illustrant un comportement à risques (usage d’alcool, de tabac, de drogue…), décrire les dangers pour l’embryon à l’aide d’un schéma des échanges placentaires"
+  },
+  {
+   "code": "CTFSQ-UAA8-K1",
+   "parentCode": "CTFSQ-UAA8",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Connaître : Légender un schéma des appareils reproducteurs humains et expliciter le rôle des principaux organes"
+  },
+  {
+   "code": "CTFSQ-UAA8-K2",
+   "parentCode": "CTFSQ-UAA8",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Connaître : Décrire les étapes du cycle menstruel"
+  },
+  {
+   "code": "CTFSQ-UAA8-K3",
+   "parentCode": "CTFSQ-UAA8",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Connaître : Mettre en relation le mode d’action de quelques contraceptifs avec l’anatomie des appareils reproducteurs humains"
+  },
+  {
+   "code": "CTFSQ-UAA8-K4",
+   "parentCode": "CTFSQ-UAA8",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Connaître : Expliciter la notion d’infection sexuellement transmissible et les moyens de prévention"
+  },
+  {
+   "code": "CTFSQ-UAA8-K5",
+   "parentCode": "CTFSQ-UAA8",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Connaître : Différencier un embryon d’un fœtus"
+  },
+  {
+   "code": "CTFSQ-UAA8-K6",
+   "parentCode": "CTFSQ-UAA8",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Connaître : Schématiser les échanges vitaux au niveau du placenta"
+  },
+  {
+   "code": "CTFSQ-UAA8-R1",
+   "parentCode": "CTFSQ-UAA8",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Appareils reproducteurs humains"
+  },
+  {
+   "code": "CTFSQ-UAA8-R2",
+   "parentCode": "CTFSQ-UAA8",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Spermatozoïde et ovule en termes de cellules (se limiter à: membrane, noyau et cytoplasme)"
+  },
+  {
+   "code": "CTFSQ-UAA8-R3",
+   "parentCode": "CTFSQ-UAA8",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Cycle menstruel"
+  },
+  {
+   "code": "CTFSQ-UAA8-R4",
+   "parentCode": "CTFSQ-UAA8",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Fécondation"
+  },
+  {
+   "code": "CTFSQ-UAA8-R5",
+   "parentCode": "CTFSQ-UAA8",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Embryon et fœtus"
+  },
+  {
+   "code": "CTFSQ-UAA8-R6",
+   "parentCode": "CTFSQ-UAA8",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Rôles du placenta"
+  },
+  {
+   "code": "CTFSQ-UAA8-R7",
+   "parentCode": "CTFSQ-UAA8",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Modes d’action de quelques contraceptifs"
+  },
+  {
+   "code": "CTFSQ-UAA8-R8",
+   "parentCode": "CTFSQ-UAA8",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Infection sexuellement transmissible et prévention"
+  },
+  {
+   "code": "CTFSQ-UAA8-R9",
+   "parentCode": "CTFSQ-UAA8",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Établir un schéma à partir d’un document"
+  },
+  {
+   "code": "CTFSQ-UAA8-R10",
+   "parentCode": "CTFSQ-UAA8",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Utiliser un document iconographique pour décrire un phénomène"
+  },
+  {
+   "code": "CTFSQ-UAA9",
+   "parentCode": "CTFSQ",
+   "kind": "competence",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "L’ATOME, CONSTITUANT ÉLÉMENTAIRE DE LA MATIÈRE"
+  },
+  {
+   "code": "CTFSQ-UAA9-C1",
+   "parentCode": "CTFSQ-UAA9",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Compétence : Partie I : Sur base d’une démarche d’investigation, modéliser les composants de la matière"
+  },
+  {
+   "code": "CTFSQ-UAA9-C2",
+   "parentCode": "CTFSQ-UAA9",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Compétence : Partie II : Sur base d’une démarche d’investigation, justifier l’utilisation des corps métalliques et des corps non métalliques en fonction de leurs propriétés"
+  },
+  {
+   "code": "CTFSQ-UAA9-A1",
+   "parentCode": "CTFSQ-UAA9",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Partie I"
+  },
+  {
+   "code": "CTFSQ-UAA9-A2",
+   "parentCode": "CTFSQ-UAA9",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Distinguer un mélange d’un corps pur"
+  },
+  {
+   "code": "CTFSQ-UAA9-A3",
+   "parentCode": "CTFSQ-UAA9",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : À partir de la formule chimique d’une substance courante, donner sa composition atomique"
+  },
+  {
+   "code": "CTFSQ-UAA9-A4",
+   "parentCode": "CTFSQ-UAA9",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Partie II"
+  },
+  {
+   "code": "CTFSQ-UAA9-A5",
+   "parentCode": "CTFSQ-UAA9",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Distinguer expérimentalement corps métalliques"
+  },
+  {
+   "code": "CTFSQ-UAA9-A6",
+   "parentCode": "CTFSQ-UAA9",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : et corps non-métalliques sur base de leurs propriétés"
+  },
+  {
+   "code": "CTFSQ-UAA9-T1",
+   "parentCode": "CTFSQ-UAA9",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Transférer : Sur base d’un document simple, mettre en relation les propriétés d’un élément métallique ou d’un élément nonmétallique avec ses utilisations et les conséquences de celles-ci"
+  },
+  {
+   "code": "CTFSQ-UAA9-K1",
+   "parentCode": "CTFSQ-UAA9",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Connaître : Partie I"
+  },
+  {
+   "code": "CTFSQ-UAA9-K2",
+   "parentCode": "CTFSQ-UAA9",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Connaître : Sur base d’une expérience réalisée en classe, expliciter la molécule comme étant un assemblage d’atomes"
+  },
+  {
+   "code": "CTFSQ-UAA9-K3",
+   "parentCode": "CTFSQ-UAA9",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Connaître : Décrire l’atome comme une entité neutre"
+  },
+  {
+   "code": "CTFSQ-UAA9-K4",
+   "parentCode": "CTFSQ-UAA9",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Connaître : Écrire les symboles des éléments rencontrés"
+  },
+  {
+   "code": "CTFSQ-UAA9-K5",
+   "parentCode": "CTFSQ-UAA9",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Connaître : Estimer l’ordre de grandeur d’un atome"
+  },
+  {
+   "code": "CTFSQ-UAA9-K6",
+   "parentCode": "CTFSQ-UAA9",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Connaître : Partie II"
+  },
+  {
+   "code": "CTFSQ-UAA9-K7",
+   "parentCode": "CTFSQ-UAA9",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Connaître : Lier le classement des éléments dans le tableau périodique à leurs propriétés"
+  },
+  {
+   "code": "CTFSQ-UAA9-K8",
+   "parentCode": "CTFSQ-UAA9",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Connaître : Décrire un ion comme un atome ayant gagné ou perdu un (des) électron(s)"
+  },
+  {
+   "code": "CTFSQ-UAA9-R1",
+   "parentCode": "CTFSQ-UAA9",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Mélanges (ensemble de molécules différentes) et corps purs (ensemble de molécules identiques)"
+  },
+  {
+   "code": "CTFSQ-UAA9-R2",
+   "parentCode": "CTFSQ-UAA9",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Modèle moléculaire (\"assemblage d’atomes\")"
+  },
+  {
+   "code": "CTFSQ-UAA9-R3",
+   "parentCode": "CTFSQ-UAA9",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Modèle atomique de Rutherford (noyau et électrons)"
+  },
+  {
+   "code": "CTFSQ-UAA9-R4",
+   "parentCode": "CTFSQ-UAA9",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Ordre de grandeur d’un atome"
+  },
+  {
+   "code": "CTFSQ-UAA9-R5",
+   "parentCode": "CTFSQ-UAA9",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Quelques éléments et leur symbole"
+  },
+  {
+   "code": "CTFSQ-UAA9-R6",
+   "parentCode": "CTFSQ-UAA9",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Notion de formule chimique"
+  },
+  {
+   "code": "CTFSQ-UAA9-R7",
+   "parentCode": "CTFSQ-UAA9",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Propriétés des corps métalliques et des corps nonmétalliques (aspect, conductibilité, réaction avec l’eau…)"
+  },
+  {
+   "code": "CTFSQ-UAA9-R8",
+   "parentCode": "CTFSQ-UAA9",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Position des éléments métalliques et non-métalliques dans le tableau périodique"
+  },
+  {
+   "code": "CTFSQ-UAA9-R9",
+   "parentCode": "CTFSQ-UAA9",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Réaction chimique (se limiter à l’écriture nominative)"
+  },
+  {
+   "code": "CTFSQ-UAA9-R10",
+   "parentCode": "CTFSQ-UAA9",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Notion d’ion"
+  },
+  {
+   "code": "CTFSQ-UAA9-R11",
+   "parentCode": "CTFSQ-UAA9",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Utiliser un multimètre"
+  },
+  {
+   "code": "CTFSQ-UAA9-R12",
+   "parentCode": "CTFSQ-UAA9",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Suivre un mode opératoire"
+  },
+  {
+   "code": "CTFSQ-UAA9-R13",
+   "parentCode": "CTFSQ-UAA9",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Analyser et interpréter des résultats d’expériences réalisées en classe"
+  },
+  {
+   "code": "CTFSQ-UAA10",
+   "parentCode": "CTFSQ",
+   "kind": "competence",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "LES ÊTRES VIVANTS ONT BESOIN D’ÉNERGIE POUR FONCTIONNER"
+  },
+  {
+   "code": "CTFSQ-UAA10-C1",
+   "parentCode": "CTFSQ-UAA10",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Compétence : Partie I : Sur base d’une démarche d’investigation, analyser l’alimentation de l’être humain"
+  },
+  {
+   "code": "CTFSQ-UAA10-C2",
+   "parentCode": "CTFSQ-UAA10",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Compétence : Partie II : Sur base d’une démarche d’investigation, établir que tous les organismes ont besoin d’énergie"
+  },
+  {
+   "code": "CTFSQ-UAA10-A1",
+   "parentCode": "CTFSQ-UAA10",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Partie I"
+  },
+  {
+   "code": "CTFSQ-UAA10-A2",
+   "parentCode": "CTFSQ-UAA10",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Comparer les besoins énergétiques de divers individus en fonction de facteurs variés (âge, sexe, niveau d’activité physique, environnement…)"
+  },
+  {
+   "code": "CTFSQ-UAA10-A3",
+   "parentCode": "CTFSQ-UAA10",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Partie II"
+  },
+  {
+   "code": "CTFSQ-UAA10-A4",
+   "parentCode": "CTFSQ-UAA10",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Sur base d’un schéma d’une cellule type, mettre en évidence que la cellule est, entre autres, une centrale énergétique"
+  },
+  {
+   "code": "CTFSQ-UAA10-A5",
+   "parentCode": "CTFSQ-UAA10",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Comparer les pyramides d’énergie de différents écosystèmes"
+  },
+  {
+   "code": "CTFSQ-UAA10-T1",
+   "parentCode": "CTFSQ-UAA10",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Transférer : Partie I"
+  },
+  {
+   "code": "CTFSQ-UAA10-T2",
+   "parentCode": "CTFSQ-UAA10",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Transférer : À l'aide de tables de composition des aliments et de tableaux de consommation énergétique, déterminer et justifier si un régime alimentaire est équilibré"
+  },
+  {
+   "code": "CTFSQ-UAA10-T3",
+   "parentCode": "CTFSQ-UAA10",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Transférer : Identifier dans un texte quelques changements significatifs d’habitudes alimentaires en relation avec le développement de maladies nutritionnelles (uniquement en TQ)"
+  },
+  {
+   "code": "CTFSQ-UAA10-T4",
+   "parentCode": "CTFSQ-UAA10",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Transférer : Partie II"
+  },
+  {
+   "code": "CTFSQ-UAA10-T5",
+   "parentCode": "CTFSQ-UAA10",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Transférer : Expliquer les effets de l’élimination ou de l’affaiblissement d’une partie d’une pyramide d’énergie (uniquement en TQ)"
+  },
+  {
+   "code": "CTFSQ-UAA10-K1",
+   "parentCode": "CTFSQ-UAA10",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Connaître : Partie I"
+  },
+  {
+   "code": "CTFSQ-UAA10-K2",
+   "parentCode": "CTFSQ-UAA10",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Connaître : Expliciter les catégories et les rôles des aliments nécessaires au fonctionnement de l’organisme humain"
+  },
+  {
+   "code": "CTFSQ-UAA10-K3",
+   "parentCode": "CTFSQ-UAA10",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Connaître : Expliciter comment la valeur énergétique d’un aliment est déterminée"
+  },
+  {
+   "code": "CTFSQ-UAA10-K4",
+   "parentCode": "CTFSQ-UAA10",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Connaître : Mettre en relation quelques activités concrètes avec l’énergie dépensée pour les réaliser"
+  },
+  {
+   "code": "CTFSQ-UAA10-K5",
+   "parentCode": "CTFSQ-UAA10",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Connaître : Partie II"
+  },
+  {
+   "code": "CTFSQ-UAA10-K6",
+   "parentCode": "CTFSQ-UAA10",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Connaître : Citer les conditions nécessaires à la vie"
+  },
+  {
+   "code": "CTFSQ-UAA10-K7",
+   "parentCode": "CTFSQ-UAA10",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Connaître : Mettre en relation l’organisation générale d’une plante verte avec la physiologie de sa nutrition"
+  },
+  {
+   "code": "CTFSQ-UAA10-K8",
+   "parentCode": "CTFSQ-UAA10",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Connaître : Comparer les rôles de la photosynthèse et de la respiration; localiser ces phénomènes dans la cellule"
+  },
+  {
+   "code": "CTFSQ-UAA10-K9",
+   "parentCode": "CTFSQ-UAA10",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Connaître : Décrire le transfert qui s’effectue dans une pyramide d’énergie"
+  },
+  {
+   "code": "CTFSQ-UAA10-R1",
+   "parentCode": "CTFSQ-UAA10",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Catégories et rôles des aliments (eau, glucides, lipides, protides, sels minéraux et vitamines)"
+  },
+  {
+   "code": "CTFSQ-UAA10-R2",
+   "parentCode": "CTFSQ-UAA10",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Le kilojoule, unité d’énergie alimentaire"
+  },
+  {
+   "code": "CTFSQ-UAA10-R3",
+   "parentCode": "CTFSQ-UAA10",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Règles de base d’une alimentation équilibrée"
+  },
+  {
+   "code": "CTFSQ-UAA10-R4",
+   "parentCode": "CTFSQ-UAA10",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Conditions nécessaires à la vie (énergie, eau, matière…)"
+  },
+  {
+   "code": "CTFSQ-UAA10-R5",
+   "parentCode": "CTFSQ-UAA10",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Organismes autotrophes et hétérotrophes"
+  },
+  {
+   "code": "CTFSQ-UAA10-R6",
+   "parentCode": "CTFSQ-UAA10",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Organisation générale de la plante verte"
+  },
+  {
+   "code": "CTFSQ-UAA10-R7",
+   "parentCode": "CTFSQ-UAA10",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Photosynthèse et respiration (se limiter à l’écriture nominative)"
+  },
+  {
+   "code": "CTFSQ-UAA10-R8",
+   "parentCode": "CTFSQ-UAA10",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Relations alimentaires entre organismes vivants représentées par des pyramides d’énergie."
+  },
+  {
+   "code": "CTFSQ-UAA10-R9",
+   "parentCode": "CTFSQ-UAA10",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Utiliser une table de composition d’aliments"
+  },
+  {
+   "code": "CTFSQ-UAA10-R10",
+   "parentCode": "CTFSQ-UAA10",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Utiliser une table de valeurs énergétiques des aliments"
+  },
+  {
+   "code": "CTFSQ-UAA10-R11",
+   "parentCode": "CTFSQ-UAA10",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Utiliser une table de dépenses énergétiques en fonction des activités humaines"
+  },
+  {
+   "code": "CTFSQ-UAA10-R12",
+   "parentCode": "CTFSQ-UAA10",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Critiquer un régime alimentaire"
+  },
+  {
+   "code": "CTFSQ-UAA11",
+   "parentCode": "CTFSQ",
+   "kind": "competence",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "ACTIVITÉS HUMAINES ET MODIFICATIONS ENVIRONNEMENTALES"
+  },
+  {
+   "code": "CTFSQ-UAA11-C1",
+   "parentCode": "CTFSQ-UAA11",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Compétence : Sur base d’une démarche d’investigation, analyser l’impact d’activités humaines rejetant des polluants dans un écosystème."
+  },
+  {
+   "code": "CTFSQ-UAA11-A1",
+   "parentCode": "CTFSQ-UAA11",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Établir les liens entre les cycles du carbone et de l’oxygène : À partir de résultats d’analyse d’un échantillon (eau, air ou"
+  },
+  {
+   "code": "CTFSQ-UAA11-A2",
+   "parentCode": "CTFSQ-UAA11",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Sur base de documents, identifier des modes de propagation d’un polluant et montrer son transfert d’un milieu à un autre : Sur base de documents, expliquer comment l’être humain"
+  },
+  {
+   "code": "CTFSQ-UAA11-A3",
+   "parentCode": "CTFSQ-UAA11",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Sur base de documents, identifier des modes de propagation d’un polluant et montrer son transfert d’un milieu à un autre : Déterminer une empreinte écologique puis proposer des"
+  },
+  {
+   "code": "CTFSQ-UAA11-A4",
+   "parentCode": "CTFSQ-UAA11",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Sur base de documents, identifier des modes de propagation d’un polluant et montrer son transfert d’un milieu à un autre : Sur base d’une documentation, évaluer l’incidence sur"
+  },
+  {
+   "code": "CTFSQ-UAA11-T1",
+   "parentCode": "CTFSQ-UAA11",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Transférer : sol), décrire l’impact d’un polluant sur la biodiversité d’un écosystème"
+  },
+  {
+   "code": "CTFSQ-UAA11-T2",
+   "parentCode": "CTFSQ-UAA11",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Transférer : remédie à une pollution dont il est responsable"
+  },
+  {
+   "code": "CTFSQ-UAA11-T3",
+   "parentCode": "CTFSQ-UAA11",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Transférer : actions permettant de la réduire"
+  },
+  {
+   "code": "CTFSQ-UAA11-T4",
+   "parentCode": "CTFSQ-UAA11",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Transférer : l’environnement de l’utilisation domestique d’une solution comme l’esprit de sel, un déboucheur liquide"
+  },
+  {
+   "code": "CTFSQ-UAA11-K1",
+   "parentCode": "CTFSQ-UAA11",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : À partir d’un schéma, décrire les cycles du carbone et de l’oxygène"
+  },
+  {
+   "code": "CTFSQ-UAA11-K2",
+   "parentCode": "CTFSQ-UAA11",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : Différencier les types de pollution"
+  },
+  {
+   "code": "CTFSQ-UAA11-K3",
+   "parentCode": "CTFSQ-UAA11",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : Identifier des polluants et les lier à des activités humaines responsables de leur rejet dans l’eau, l’atmosphère ou le sol"
+  },
+  {
+   "code": "CTFSQ-UAA11-K4",
+   "parentCode": "CTFSQ-UAA11",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : Expliciter la notion d’empreinte écologique"
+  },
+  {
+   "code": "CTFSQ-UAA11-R1",
+   "parentCode": "CTFSQ-UAA11",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Cycles biogéochimiques (carbone et oxygène)"
+  },
+  {
+   "code": "CTFSQ-UAA11-R2",
+   "parentCode": "CTFSQ-UAA11",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Notion de pollution"
+  },
+  {
+   "code": "CTFSQ-UAA11-R3",
+   "parentCode": "CTFSQ-UAA11",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Pollutions naturelle et anthropique"
+  },
+  {
+   "code": "CTFSQ-UAA11-R4",
+   "parentCode": "CTFSQ-UAA11",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Empreinte écologique"
+  },
+  {
+   "code": "CTFSQ-UAA11-R5",
+   "parentCode": "CTFSQ-UAA11",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Décrire un cycle biogéochimique à partir d’un schéma"
+  },
+  {
+   "code": "CTFSQ-UAA11-R6",
+   "parentCode": "CTFSQ-UAA11",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Adopter une attitude citoyenne face à l’environnement"
+  },
+  {
+   "code": "CTFSQ-UAA12",
+   "parentCode": "CTFSQ",
+   "kind": "competence",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "LES ONDES SONORES"
+  },
+  {
+   "code": "CTFSQ-UAA12-C1",
+   "parentCode": "CTFSQ-UAA12",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Compétence : Sur base d’une démarche d’investigation, caractériser les ondes sonores, leurs utilisations et leurs effets"
+  },
+  {
+   "code": "CTFSQ-UAA12-A1",
+   "parentCode": "CTFSQ-UAA12",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Déterminer expérimentalement la période d’un son et : Dans une situation concrète, justifier la pertinence de calculer sa fréquence"
+  },
+  {
+   "code": "CTFSQ-UAA12-A2",
+   "parentCode": "CTFSQ-UAA12",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Comparer la vitesse de propagation d’un son dans différents milieux : Sur base d’une recherche documentaire, expliquer le"
+  },
+  {
+   "code": "CTFSQ-UAA12-A3",
+   "parentCode": "CTFSQ-UAA12",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : À l’aide d’un sonomètre, comparer les niveaux d’intensité dans différentes situations"
+  },
+  {
+   "code": "CTFSQ-UAA12-A4",
+   "parentCode": "CTFSQ-UAA12",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Établir et comparer les plages d’audibilité de quelques volontaires en classe"
+  },
+  {
+   "code": "CTFSQ-UAA12-A5",
+   "parentCode": "CTFSQ-UAA12",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Sur base de l’interprétation d’oscillogrammes, classer des sons du plus grave au plus aigu"
+  },
+  {
+   "code": "CTFSQ-UAA12-A6",
+   "parentCode": "CTFSQ-UAA12",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Comparer expérimentalement l’atténuation phonique obtenue avec différents matériaux limitant les nuisances sonores"
+  },
+  {
+   "code": "CTFSQ-UAA12-T1",
+   "parentCode": "CTFSQ-UAA12",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Transférer : solutions proposées pour lutter contre les nuisances sonores"
+  },
+  {
+   "code": "CTFSQ-UAA12-T2",
+   "parentCode": "CTFSQ-UAA12",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Transférer : principe d’une technologie utilisant les ondes sonores pour observer et communiquer (par exemple: échographie, sonar, écholocation …)"
+  },
+  {
+   "code": "CTFSQ-UAA12-K1",
+   "parentCode": "CTFSQ-UAA12",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : Sur base d’un exemple, déterminer les conditions de production et de propagation d’un son"
+  },
+  {
+   "code": "CTFSQ-UAA12-K2",
+   "parentCode": "CTFSQ-UAA12",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : Décrire une expérience montrant qu’une onde transporte de l’énergie sans transport de matière"
+  },
+  {
+   "code": "CTFSQ-UAA12-R1",
+   "parentCode": "CTFSQ-UAA12",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Mouvement vibratoire"
+  },
+  {
+   "code": "CTFSQ-UAA12-R2",
+   "parentCode": "CTFSQ-UAA12",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Période, fréquence, amplitude"
+  },
+  {
+   "code": "CTFSQ-UAA12-R3",
+   "parentCode": "CTFSQ-UAA12",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Onde sonore, exemple d’onde matérielle"
+  },
+  {
+   "code": "CTFSQ-UAA12-R4",
+   "parentCode": "CTFSQ-UAA12",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Caractéristiques d’un signal sonore (hauteur, intensité)"
+  },
+  {
+   "code": "CTFSQ-UAA12-R5",
+   "parentCode": "CTFSQ-UAA12",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Unités usuelles: hertz (fréquence) et décibel (niveau sonore)"
+  },
+  {
+   "code": "CTFSQ-UAA12-R6",
+   "parentCode": "CTFSQ-UAA12",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Influence du milieu sur la vitesse de propagation"
+  },
+  {
+   "code": "CTFSQ-UAA12-R7",
+   "parentCode": "CTFSQ-UAA12",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Dangers causés par les sons"
+  },
+  {
+   "code": "CTFSQ-UAA12-R8",
+   "parentCode": "CTFSQ-UAA12",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Isolation phonique"
+  },
+  {
+   "code": "CTFSQ-UAA12-R9",
+   "parentCode": "CTFSQ-UAA12",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Infrasons, sons et ultrasons"
+  },
+  {
+   "code": "CTFSQ-UAA12-R10",
+   "parentCode": "CTFSQ-UAA12",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Lire et interpréter un oscillogramme"
+  },
+  {
+   "code": "CTFSQ-UAA12-R11",
+   "parentCode": "CTFSQ-UAA12",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Utiliser un sonomètre"
+  },
+  {
+   "code": "CTFSQ-UAA13",
+   "parentCode": "CTFSQ",
+   "kind": "competence",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "LES ORGANISMES VIVANTS CONTIENNENT, UTILISENT ET TRANSMETTENT DE L’INFORMATION GÉNÉTIQUE"
+  },
+  {
+   "code": "CTFSQ-UAA13-C1",
+   "parentCode": "CTFSQ-UAA13",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Compétence : Sur base d’une démarche d’investigation, analyser des mécanismes de transmission de caractères héréditaires, principalement chez l’être humain"
+  },
+  {
+   "code": "CTFSQ-UAA13-C2",
+   "parentCode": "CTFSQ-UAA13",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Compétence : Utiliser des arguments scientifiques pour expliciter l’impact de la biotechnologie sur notre quotidien"
+  },
+  {
+   "code": "CTFSQ-UAA13-A1",
+   "parentCode": "CTFSQ-UAA13",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Décrypter un caryotype humain afin d’en tirer des informations sur le genre ou sur une anomalie"
+  },
+  {
+   "code": "CTFSQ-UAA13-A2",
+   "parentCode": "CTFSQ-UAA13",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Sur base d’un document, préciser les caractéristiques d’une mutation (cause, nature, effets éventuels)"
+  },
+  {
+   "code": "CTFSQ-UAA13-A3",
+   "parentCode": "CTFSQ-UAA13",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Construire un échiquier de croisement pour expliquer un cas de monohybridisme chez l’être humain"
+  },
+  {
+   "code": "CTFSQ-UAA13-T1",
+   "parentCode": "CTFSQ-UAA13",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Transférer : Résoudre un problème simple d’hérédité chez l’être humain"
+  },
+  {
+   "code": "CTFSQ-UAA13-T2",
+   "parentCode": "CTFSQ-UAA13",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Transférer : Interpréter la transmission d’un caractère à partir d’un arbre généalogique donné"
+  },
+  {
+   "code": "CTFSQ-UAA13-T3",
+   "parentCode": "CTFSQ-UAA13",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Transférer : À partir de documents décrivant une biotechnologie, présenter la technique, puis mettre en évidence des avantages et des inconvénients de son application"
+  },
+  {
+   "code": "CTFSQ-UAA13-K1",
+   "parentCode": "CTFSQ-UAA13",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : Différencier la mitose de la méiose en faisant le lien avec le type de reproduction"
+  },
+  {
+   "code": "CTFSQ-UAA13-K2",
+   "parentCode": "CTFSQ-UAA13",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : Expliciter la notion de brassage chromosomique et ses conséquences"
+  },
+  {
+   "code": "CTFSQ-UAA13-K3",
+   "parentCode": "CTFSQ-UAA13",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : Sur base d’un schéma donné, expliciter les liens conceptuels entre chromosome, ADN, gène, protéine et caractère héréditaire"
+  },
+  {
+   "code": "CTFSQ-UAA13-K4",
+   "parentCode": "CTFSQ-UAA13",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : Expliciter que chaque gène peut exister sous des formes différentes menant à une variabilité des caractères"
+  },
+  {
+   "code": "CTFSQ-UAA13-K5",
+   "parentCode": "CTFSQ-UAA13",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : Sur base d’un exemple, expliciter que tous les caractères ne sont pas héréditaires"
+  },
+  {
+   "code": "CTFSQ-UAA13-R1",
+   "parentCode": "CTFSQ-UAA13",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Mitose et méiose, reproductions asexuée et sexuée (sans aborder les crossing-over)"
+  },
+  {
+   "code": "CTFSQ-UAA13-R2",
+   "parentCode": "CTFSQ-UAA13",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Caryotype"
+  },
+  {
+   "code": "CTFSQ-UAA13-R3",
+   "parentCode": "CTFSQ-UAA13",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Transmission génétique des caractères héréditaires (monohybridisme uniquement)"
+  },
+  {
+   "code": "CTFSQ-UAA13-R4",
+   "parentCode": "CTFSQ-UAA13",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Hérédité humaine: groupes sanguins, facteurs rhésus, hérédité liée au sexe"
+  },
+  {
+   "code": "CTFSQ-UAA13-R5",
+   "parentCode": "CTFSQ-UAA13",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Notion de macromolécules organiques (structure simplifiée de l’ADN et d’une protéine)"
+  },
+  {
+   "code": "CTFSQ-UAA13-R6",
+   "parentCode": "CTFSQ-UAA13",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Notion élémentaire de gène (considérer le gène comme segment d’ADN, porté par un chromosome et déterminant un caractère héréditaire, via la production d’une protéine)"
+  },
+  {
+   "code": "CTFSQ-UAA13-R7",
+   "parentCode": "CTFSQ-UAA13",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Universalité de l’information génétique et du code génétique"
+  },
+  {
+   "code": "CTFSQ-UAA13-R8",
+   "parentCode": "CTFSQ-UAA13",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Mutation"
+  },
+  {
+   "code": "CTFSQ-UAA13-R9",
+   "parentCode": "CTFSQ-UAA13",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Biotechnologies: clonage artificiel, ingénierie génétique"
+  },
+  {
+   "code": "CTFSQ-UAA13-R10",
+   "parentCode": "CTFSQ-UAA13",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Construire un échiquier de croisement"
+  },
+  {
+   "code": "CTFSQ-UAA13-R11",
+   "parentCode": "CTFSQ-UAA13",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Interpréter un arbre généalogique"
+  },
+  {
+   "code": "CTFSQ-UAA13-R12",
+   "parentCode": "CTFSQ-UAA13",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Modéliser une biotechnologie"
+  },
+  {
+   "code": "CTFSQ-UAA14",
+   "parentCode": "CTFSQ",
+   "kind": "competence",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "LES SOLUTIONS AQUEUSES"
+  },
+  {
+   "code": "CTFSQ-UAA14-C1",
+   "parentCode": "CTFSQ-UAA14",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Compétence : Sur base d’une démarche d’investigation, identifier le caractère basique ou acide de différentes substances de la vie courante afin de les utiliser à bon escient"
+  },
+  {
+   "code": "CTFSQ-UAA14-A1",
+   "parentCode": "CTFSQ-UAA14",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Préparer une solution de concentration donnée (g/L) par pesée directe et la diluer dans un rapport simple"
+  },
+  {
+   "code": "CTFSQ-UAA14-A2",
+   "parentCode": "CTFSQ-UAA14",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Déterminer le caractère basique, acide ou neutre de diverses solutions rencontrées dans la vie courante"
+  },
+  {
+   "code": "CTFSQ-UAA14-A3",
+   "parentCode": "CTFSQ-UAA14",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Expliciter les informations données par des étiquettes de flacons contenant des solutions utilisées dans la vie courante"
+  },
+  {
+   "code": "CTFSQ-UAA14-A4",
+   "parentCode": "CTFSQ-UAA14",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Mettre en évidence le caractère acide, basique ou neutre des réactifs et des produits dans une réaction de neutralisation"
+  },
+  {
+   "code": "CTFSQ-UAA14-A5",
+   "parentCode": "CTFSQ-UAA14",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Dans l’équation chimique d’une réaction de neutralisation, identifier l’acide, la base, le sel et l’eau"
+  },
+  {
+   "code": "CTFSQ-UAA14-T1",
+   "parentCode": "CTFSQ-UAA14",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Transférer : Exploiter les informations données par l’étiquette d’un produit d’usage domestique pour décrire les risques encourus et les moyens de s’en prévenir"
+  },
+  {
+   "code": "CTFSQ-UAA14-T2",
+   "parentCode": "CTFSQ-UAA14",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Transférer : Sur base d’une documentation, proposer un moyen de lutte contre l’acidification d’un milieu naturel"
+  },
+  {
+   "code": "CTFSQ-UAA14-K1",
+   "parentCode": "CTFSQ-UAA14",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : Énoncer l’effet de la dilution sur la concentration d’une solution aqueuse"
+  },
+  {
+   "code": "CTFSQ-UAA14-K2",
+   "parentCode": "CTFSQ-UAA14",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : Expliciter la réaction acide/base comme une réaction chimique impliquant un transfert d’H+"
+  },
+  {
+   "code": "CTFSQ-UAA14-K3",
+   "parentCode": "CTFSQ-UAA14",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : Reproduire une échelle de pH en explicitant sa signification"
+  },
+  {
+   "code": "CTFSQ-UAA14-K4",
+   "parentCode": "CTFSQ-UAA14",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : Associer un pictogramme (SGH05 à SGH09) au danger qu’il représente"
+  },
+  {
+   "code": "CTFSQ-UAA14-K5",
+   "parentCode": "CTFSQ-UAA14",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : Sur base expérimentale, décrire le mécanisme de formation des pluies acides"
+  },
+  {
+   "code": "CTFSQ-UAA14-R1",
+   "parentCode": "CTFSQ-UAA14",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Solution, solvant, soluté"
+  },
+  {
+   "code": "CTFSQ-UAA14-R2",
+   "parentCode": "CTFSQ-UAA14",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Concentration d’une solution"
+  },
+  {
+   "code": "CTFSQ-UAA14-R3",
+   "parentCode": "CTFSQ-UAA14",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Notion de dilution"
+  },
+  {
+   "code": "CTFSQ-UAA14-R4",
+   "parentCode": "CTFSQ-UAA14",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Acide, base, sel"
+  },
+  {
+   "code": "CTFSQ-UAA14-R5",
+   "parentCode": "CTFSQ-UAA14",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Notions de réactifs et de produits"
+  },
+  {
+   "code": "CTFSQ-UAA14-R6",
+   "parentCode": "CTFSQ-UAA14",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Réaction de neutralisation avec formation d’eau"
+  },
+  {
+   "code": "CTFSQ-UAA14-R7",
+   "parentCode": "CTFSQ-UAA14",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Échelle de pH"
+  },
+  {
+   "code": "CTFSQ-UAA14-R8",
+   "parentCode": "CTFSQ-UAA14",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Pictogrammes de dangers, mentions des dangers et conseils de prudence (en lien avec les acides et les bases)"
+  },
+  {
+   "code": "CTFSQ-UAA14-R9",
+   "parentCode": "CTFSQ-UAA14",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Pluies acides"
+  },
+  {
+   "code": "CTFSQ-UAA14-R10",
+   "parentCode": "CTFSQ-UAA14",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Suivre un protocole expérimental"
+  },
+  {
+   "code": "CTFSQ-UAA14-R11",
+   "parentCode": "CTFSQ-UAA14",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Mesurer des volumes et des masses"
+  },
+  {
+   "code": "CTFSQ-UAA14-R12",
+   "parentCode": "CTFSQ-UAA14",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Préparer une solution"
+  },
+  {
+   "code": "CTFSQ-UAA14-R13",
+   "parentCode": "CTFSQ-UAA14",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Analyser et interpréter des résultats d’expériences réalisées en classe"
+  },
+  {
+   "code": "CTFSQ-UAA15",
+   "parentCode": "CTFSQ",
+   "kind": "competence",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "SE DÉPLACER EN TOUTE SÉCURITÉ"
+  },
+  {
+   "code": "CTFSQ-UAA15-C1",
+   "parentCode": "CTFSQ-UAA15",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Compétence : Sur base d’une démarche d’investigation, utiliser des arguments scientifiques pour justifier des comportements citoyens en matière de déplacements"
+  },
+  {
+   "code": "CTFSQ-UAA15-A1",
+   "parentCode": "CTFSQ-UAA15",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Identifier les variations d’énergie (cinétique et potentielle) dans un mouvement simple"
+  },
+  {
+   "code": "CTFSQ-UAA15-A2",
+   "parentCode": "CTFSQ-UAA15",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Dans une situation concrète, utiliser la première loi de Newton pour expliquer les effets d’inertie"
+  },
+  {
+   "code": "CTFSQ-UAA15-A3",
+   "parentCode": "CTFSQ-UAA15",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Résoudre un exercice simple reliant vitesse, distance et durée"
+  },
+  {
+   "code": "CTFSQ-UAA15-A4",
+   "parentCode": "CTFSQ-UAA15",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Proposer et tester une méthode permettant d’estimer l’ordre de grandeur d’une vitesse dans une situation concrète ou expérimentale"
+  },
+  {
+   "code": "CTFSQ-UAA15-A5",
+   "parentCode": "CTFSQ-UAA15",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Identifier les rôles joués par les frottements lors d’un déplacement"
+  },
+  {
+   "code": "CTFSQ-UAA15-A6",
+   "parentCode": "CTFSQ-UAA15",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Utiliser un abaque donnant les distances d’arrêt d’un véhicule pour expliquer la pertinence d’une norme de sécurité routière"
+  },
+  {
+   "code": "CTFSQ-UAA15-T1",
+   "parentCode": "CTFSQ-UAA15",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Transférer : Sur base de documents fournis, avancer une réponse argumentée permettant d’expliquer, par exemple : l’importance du port de la ceinture de sécurité"
+  },
+  {
+   "code": "CTFSQ-UAA15-T2",
+   "parentCode": "CTFSQ-UAA15",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Transférer : Sur base de documents fournis, avancer une réponse argumentée permettant d’expliquer, par exemple : les différents dégâts occasionnés lors d’une collision axiale entre deux véhicules"
+  },
+  {
+   "code": "CTFSQ-UAA15-T3",
+   "parentCode": "CTFSQ-UAA15",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Transférer : Sur base de documents fournis, avancer une réponse argumentée permettant d’expliquer, par exemple : une affirmation de la sécurité routière du type: \"une collision d’une voiture à 90 km/h contre un mur correspond à la chute de cette même voiture d’une hauteur de onze étages\""
+  },
+  {
+   "code": "CTFSQ-UAA15-K1",
+   "parentCode": "CTFSQ-UAA15",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : Identifier le type d’énergie (cinétique ou potentielle) dans une situation simple"
+  },
+  {
+   "code": "CTFSQ-UAA15-K2",
+   "parentCode": "CTFSQ-UAA15",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : Décrire une situation concrète illustrant le principe de conservation de l’énergie mécanique"
+  },
+  {
+   "code": "CTFSQ-UAA15-K3",
+   "parentCode": "CTFSQ-UAA15",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : Associer la distance d’arrêt d’un véhicule aux paramètres dont elle dépend (temps de réaction, vitesse initiale, état de la route…)"
+  },
+  {
+   "code": "CTFSQ-UAA15-R1",
+   "parentCode": "CTFSQ-UAA15",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Force"
+  },
+  {
+   "code": "CTFSQ-UAA15-R2",
+   "parentCode": "CTFSQ-UAA15",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Vitesse, accélération"
+  },
+  {
+   "code": "CTFSQ-UAA15-R3",
+   "parentCode": "CTFSQ-UAA15",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Énergie mécanique"
+  },
+  {
+   "code": "CTFSQ-UAA15-R4",
+   "parentCode": "CTFSQ-UAA15",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Énergie cinétique (uniquement translation)"
+  },
+  {
+   "code": "CTFSQ-UAA15-R5",
+   "parentCode": "CTFSQ-UAA15",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Énergie potentielle de pesanteur"
+  },
+  {
+   "code": "CTFSQ-UAA15-R6",
+   "parentCode": "CTFSQ-UAA15",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Principe de conservation de l’énergie mécanique"
+  },
+  {
+   "code": "CTFSQ-UAA15-R7",
+   "parentCode": "CTFSQ-UAA15",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Frottements (sans formalisme mathématique)"
+  },
+  {
+   "code": "CTFSQ-UAA15-R8",
+   "parentCode": "CTFSQ-UAA15",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Unités SI de force, de vitesse, d’énergie"
+  },
+  {
+   "code": "CTFSQ-UAA15-R9",
+   "parentCode": "CTFSQ-UAA15",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Lois de Newton"
+  },
+  {
+   "code": "CTFSQ-UAA15-R10",
+   "parentCode": "CTFSQ-UAA15",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Mesurer des distances et des durées"
+  },
+  {
+   "code": "CTFSQ-UAA15-R11",
+   "parentCode": "CTFSQ-UAA15",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Exprimer le résultat d’une mesure et ’un calcul"
+  },
+  {
+   "code": "CTFSQ-UAA15-R12",
+   "parentCode": "CTFSQ-UAA15",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Transformer des unités de vitesse."
+  },
+  {
+   "code": "CTFSQ-UAA16",
+   "parentCode": "CTFSQ",
+   "kind": "competence",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "ÉVOLUTION DU VIVANT"
+  },
+  {
+   "code": "CTFSQ-UAA16-C1",
+   "parentCode": "CTFSQ-UAA16",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Compétence : En se basant sur des arguments scientifiques, proposer une reconstitution des principales étapes de l’histoire de la vie sur Terre, y compris celle de la lignée humaine"
+  },
+  {
+   "code": "CTFSQ-UAA16-C2",
+   "parentCode": "CTFSQ-UAA16",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Compétence : Sur base d’une démarche d’investigation, mettre en évidence des mécanismes de l’évolution des êtres vivants"
+  },
+  {
+   "code": "CTFSQ-UAA16-C3",
+   "parentCode": "CTFSQ-UAA16",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Compétence : Dans le cadre de l’origine de la diversité des êtres vivants, distinguer un argument scientifique d’une croyance"
+  },
+  {
+   "code": "CTFSQ-UAA16-A1",
+   "parentCode": "CTFSQ-UAA16",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Sur base de documents (audiovisuels notamment) ou d’une visite de musée, situer sur une ligne du temps les grandes étapes de l’évolution de la vie (maximum une dizaine)"
+  },
+  {
+   "code": "CTFSQ-UAA16-A2",
+   "parentCode": "CTFSQ-UAA16",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Dans une situation concrète, utiliser la théorie de la sélection naturelle pour prédire et justifier quel caractère simple est favorisé dans un environnement donné"
+  },
+  {
+   "code": "CTFSQ-UAA16-A3",
+   "parentCode": "CTFSQ-UAA16",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Identifier et décrire un processus de spéciation à partir d’un exemple concret"
+  },
+  {
+   "code": "CTFSQ-UAA16-A4",
+   "parentCode": "CTFSQ-UAA16",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Différencier le caractère scientifique de la théorie de l’évolution d’une explication dogmatique comme le créationnisme"
+  },
+  {
+   "code": "CTFSQ-UAA16-T1",
+   "parentCode": "CTFSQ-UAA16",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Transférer : Sur base de documents (audiovisuels notamment) ou d’une visite de musée, repérer sur une ligne du temps un évènement d’extinction massive et proposer des hypothèses scientifiques pour l’expliquer"
+  },
+  {
+   "code": "CTFSQ-UAA16-T2",
+   "parentCode": "CTFSQ-UAA16",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Transférer : À travers un exemple concret (la phalène du bouleau, la résistance aux antibiotiques…), mettre en évidence les mécanismes qui expliquent l’adaptation au milieu"
+  },
+  {
+   "code": "CTFSQ-UAA16-T3",
+   "parentCode": "CTFSQ-UAA16",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Transférer : Sur base de documents, relever des arguments scientifiques permettant de progresser dans la résolution d’une énigme liée à la lignée humaine (par exemple, l’Homme de Neandertal et l’Homme moderne appartiennent-ils à la même espèce?)"
+  },
+  {
+   "code": "CTFSQ-UAA16-K1",
+   "parentCode": "CTFSQ-UAA16",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : À travers un exemple, expliciter le lien entre la dérive des continents et l’histoire de la vie"
+  },
+  {
+   "code": "CTFSQ-UAA16-K2",
+   "parentCode": "CTFSQ-UAA16",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : Expliciter en quoi la découverte des principaux fossiles de la lignée humaine permet de mettre en évidence le caractère \"buissonnant\" de l’évolution de cette lignée"
+  },
+  {
+   "code": "CTFSQ-UAA16-K3",
+   "parentCode": "CTFSQ-UAA16",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : Expliciter en quoi la phrase \"L’être humain descend du singe.» n’a pas de sens"
+  },
+  {
+   "code": "CTFSQ-UAA16-K4",
+   "parentCode": "CTFSQ-UAA16",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : Comparer le processus de sélection artificielle à celui de sélection naturelle"
+  },
+  {
+   "code": "CTFSQ-UAA16-K5",
+   "parentCode": "CTFSQ-UAA16",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : Expliciter que les mutations génèrent la variabilité génétique et se produisent indépendamment de leur utilité éventuelle"
+  },
+  {
+   "code": "CTFSQ-UAA16-K6",
+   "parentCode": "CTFSQ-UAA16",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : Situer les évènements de spéciation sur un arbre phylogénétique et en expliciter le mécanisme général"
+  },
+  {
+   "code": "CTFSQ-UAA16-R1",
+   "parentCode": "CTFSQ-UAA16",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Aspect aléatoire d’une mutation"
+  },
+  {
+   "code": "CTFSQ-UAA16-R2",
+   "parentCode": "CTFSQ-UAA16",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Sélection artificielle et sélection naturelle"
+  },
+  {
+   "code": "CTFSQ-UAA16-R3",
+   "parentCode": "CTFSQ-UAA16",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Adaptation"
+  },
+  {
+   "code": "CTFSQ-UAA16-R4",
+   "parentCode": "CTFSQ-UAA16",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Spéciation"
+  },
+  {
+   "code": "CTFSQ-UAA16-R5",
+   "parentCode": "CTFSQ-UAA16",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Extinctions massives"
+  },
+  {
+   "code": "CTFSQ-UAA16-R6",
+   "parentCode": "CTFSQ-UAA16",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Dérive des continents"
+  },
+  {
+   "code": "CTFSQ-UAA16-R7",
+   "parentCode": "CTFSQ-UAA16",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Origine de la vie et étapes de l’évolution"
+  },
+  {
+   "code": "CTFSQ-UAA16-R8",
+   "parentCode": "CTFSQ-UAA16",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Lire une ligne du temps prenant en compte les grandes étapes de l’évolution"
+  },
+  {
+   "code": "CTFSQ-UAA16-R9",
+   "parentCode": "CTFSQ-UAA16",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Distinguer un argument scientifique d’une croyance"
+  },
+  {
+   "code": "CTFSQ-UAA17",
+   "parentCode": "CTFSQ",
+   "kind": "competence",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "LES ONDES ÉLECTROMAGNÉTIQUES"
+  },
+  {
+   "code": "CTFSQ-UAA17-C1",
+   "parentCode": "CTFSQ-UAA17",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Compétence : Sur base d’une démarche d’investigation, caractériser les ondes électromagnétiques, leurs utilisations et leurs effets"
+  },
+  {
+   "code": "CTFSQ-UAA17-A1",
+   "parentCode": "CTFSQ-UAA17",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Sur base expérimentale, décrire l’action d’un rayonnement électromagnétique (par exemple: élévation de température par les infrarouges, stérilisation par les ultraviolets…)"
+  },
+  {
+   "code": "CTFSQ-UAA17-A2",
+   "parentCode": "CTFSQ-UAA17",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Dans une situation concrète, justifier le décalage dans la réception d’un phénomène lumineux et d’un phénomène sonore émis simultanément au même endroit"
+  },
+  {
+   "code": "CTFSQ-UAA17-T1",
+   "parentCode": "CTFSQ-UAA17",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Transférer : Sur base d’une recherche documentaire, expliquer le principe d’une technologie utilisant les ondes électromagnétiques pour observer (par exemple: radar, caméra infrarouge, scanner, radiographie …)"
+  },
+  {
+   "code": "CTFSQ-UAA17-T2",
+   "parentCode": "CTFSQ-UAA17",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Transférer : Mener une recherche sur les effets d’un type d’onde électromagnétique (par exemple: infrarouges, ultraviolets, microondes, ondes GSM, rayons X…)"
+  },
+  {
+   "code": "CTFSQ-UAA17-K1",
+   "parentCode": "CTFSQ-UAA17",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : Décrire une expérience illustrant le caractère ondulatoire de la lumière"
+  },
+  {
+   "code": "CTFSQ-UAA17-K2",
+   "parentCode": "CTFSQ-UAA17",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : Associer différentes technologies au spectre électromagnétique"
+  },
+  {
+   "code": "CTFSQ-UAA17-K3",
+   "parentCode": "CTFSQ-UAA17",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : Justifier l’appellation d’ionisantes pour certaines ondes électromagnétiques"
+  },
+  {
+   "code": "CTFSQ-UAA17-R1",
+   "parentCode": "CTFSQ-UAA17",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Onde lumineuse, exemple d’onde électromagnétique"
+  },
+  {
+   "code": "CTFSQ-UAA17-R2",
+   "parentCode": "CTFSQ-UAA17",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Diffraction"
+  },
+  {
+   "code": "CTFSQ-UAA17-R3",
+   "parentCode": "CTFSQ-UAA17",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Longueur d’onde"
+  },
+  {
+   "code": "CTFSQ-UAA17-R4",
+   "parentCode": "CTFSQ-UAA17",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Spectre des ondes électromagnétiques dont infrarouge, spectre visible, ultraviolet"
+  },
+  {
+   "code": "CTFSQ-UAA17-R5",
+   "parentCode": "CTFSQ-UAA17",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Particularité des ondes électromagnétiques: propagation dans le vide"
+  },
+  {
+   "code": "CTFSQ-UAA17-R6",
+   "parentCode": "CTFSQ-UAA17",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Vitesse de propagation dans le vide"
+  },
+  {
+   "code": "CTFSQ-UAA17-R7",
+   "parentCode": "CTFSQ-UAA17",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Relation entre fréquence, longueur d’onde et vitesse"
+  },
+  {
+   "code": "CTFSQ-UAA17-R8",
+   "parentCode": "CTFSQ-UAA17",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Utiliser la relation. = c"
+  },
+  {
+   "code": "CTFSQ-UAA17-R9",
+   "parentCode": "CTFSQ-UAA17",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Schématiser un montage expérimental"
+  },
+  {
+   "code": "CTFSQ-UAA17-R10",
+   "parentCode": "CTFSQ-UAA17",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Analyser et interpréter les résultats d’une expérience"
+  },
+  {
+   "code": "CTFSQ-UAA18",
+   "parentCode": "CTFSQ",
+   "kind": "competence",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "L’ÊTRE HUMAIN ET LES MICROORGANISMES"
+  },
+  {
+   "code": "CTFSQ-UAA18-C1",
+   "parentCode": "CTFSQ-UAA18",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Compétence : Sur base d’une démarche d’investigation, décrire les rôles que jouent les microorganismes dans la vie des êtres humains"
+  },
+  {
+   "code": "CTFSQ-UAA18-A1",
+   "parentCode": "CTFSQ-UAA18",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : À partir d’un document iconographique, décrire la réaction inflammatoire"
+  },
+  {
+   "code": "CTFSQ-UAA18-A2",
+   "parentCode": "CTFSQ-UAA18",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : À partir d’un texte simple, schématiser le principe d’une vaccination"
+  },
+  {
+   "code": "CTFSQ-UAA18-A3",
+   "parentCode": "CTFSQ-UAA18",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Réaliser une expérience illustrant le rôle des microorganismes dans une fermentation (par exemple: yaourt, pain…)"
+  },
+  {
+   "code": "CTFSQ-UAA18-T1",
+   "parentCode": "CTFSQ-UAA18",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Transférer : À partir de documents, rechercher des arguments scientifiques sur la nécessité de la vaccination"
+  },
+  {
+   "code": "CTFSQ-UAA18-T2",
+   "parentCode": "CTFSQ-UAA18",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Transférer : À partir d’une activité de recherche, décrire le mécanisme de propagation d’une maladie (SIDA et une autre épidémie en lien avec l’actualité) ainsi que les moyens de s’en prémunir"
+  },
+  {
+   "code": "CTFSQ-UAA18-T3",
+   "parentCode": "CTFSQ-UAA18",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Transférer : Sur base d’un document relatif au mécanisme de"
+  },
+  {
+   "code": "CTFSQ-UAA18-T4",
+   "parentCode": "CTFSQ-UAA18",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Transférer : résistance à un antibiotique, expliciter un slogan de prévention comme: \"Les antibiotiques, c’est pas automatique\""
+  },
+  {
+   "code": "CTFSQ-UAA18-K1",
+   "parentCode": "CTFSQ-UAA18",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : Sur base de photographies prises au microscope, identifier en justifiant les différents types de microorganismes"
+  },
+  {
+   "code": "CTFSQ-UAA18-K2",
+   "parentCode": "CTFSQ-UAA18",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : Expliciter les rôles bénéfiques ou pathogènes de quelques microorganismes pour l’être humain"
+  },
+  {
+   "code": "CTFSQ-UAA18-K3",
+   "parentCode": "CTFSQ-UAA18",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : Décrire les principales barrières naturelles contre les agents pathogènes"
+  },
+  {
+   "code": "CTFSQ-UAA18-K4",
+   "parentCode": "CTFSQ-UAA18",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : Expliciter les principaux moyens de prévention et de lutte contre les agents pathogènes"
+  },
+  {
+   "code": "CTFSQ-UAA18-R1",
+   "parentCode": "CTFSQ-UAA18",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Microorganismes: virus, bactéries, eucaryotes unicellulaires, mycètes"
+  },
+  {
+   "code": "CTFSQ-UAA18-R2",
+   "parentCode": "CTFSQ-UAA18",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Barrières naturelles contre les agents pathogènes"
+  },
+  {
+   "code": "CTFSQ-UAA18-R3",
+   "parentCode": "CTFSQ-UAA18",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Défenses innées et non spécifiques: fièvre, inflammation, phagocytose"
+  },
+  {
+   "code": "CTFSQ-UAA18-R4",
+   "parentCode": "CTFSQ-UAA18",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Immunité acquise et défense spécifique: anticorps, antigène, globule blanc"
+  },
+  {
+   "code": "CTFSQ-UAA18-R5",
+   "parentCode": "CTFSQ-UAA18",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Prévention et lutte contre les agents pathogènes: hygiène, antisepsie, asepsie, préservatif, antibiotique, vaccination"
+  },
+  {
+   "code": "CTFSQ-UAA18-R6",
+   "parentCode": "CTFSQ-UAA18",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Épidémies et pandémies (SIDA, grippes …)"
+  },
+  {
+   "code": "CTFSQ-UAA18-R7",
+   "parentCode": "CTFSQ-UAA18",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Fermentations"
+  },
+  {
+   "code": "CTFSQ-UAA18-R8",
+   "parentCode": "CTFSQ-UAA18",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Commenter un schéma"
+  },
+  {
+   "code": "CTFSQ-UAA18-R9",
+   "parentCode": "CTFSQ-UAA18",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Schématiser un processus"
+  },
+  {
+   "code": "CTFSQ-UAA18-R10",
+   "parentCode": "CTFSQ-UAA18",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Suivre un mode opératoire"
+  },
+  {
+   "code": "CTFSQ-UAA19",
+   "parentCode": "CTFSQ",
+   "kind": "competence",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "OXYDANTS ET RÉDUCTEURS"
+  },
+  {
+   "code": "CTFSQ-UAA19-C1",
+   "parentCode": "CTFSQ-UAA19",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Compétence : Sur base d’une démarche d’investigation, expliciter la corrosion des métaux"
+  },
+  {
+   "code": "CTFSQ-UAA19-C2",
+   "parentCode": "CTFSQ-UAA19",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Compétence : Sur base d’une démarche d’investigation, mettre en évidence la transformation d’énergie chimique en énergie électrique dans une pile"
+  },
+  {
+   "code": "CTFSQ-UAA19-A1",
+   "parentCode": "CTFSQ-UAA19",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Sur base d’une expérience réalisée en classe, mettre en évidence l’oxydation des métaux"
+  },
+  {
+   "code": "CTFSQ-UAA19-A2",
+   "parentCode": "CTFSQ-UAA19",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Sur base d’un document donné, retrouver la (les) conséquence(s) de la corrosion d’un métal"
+  },
+  {
+   "code": "CTFSQ-UAA19-A3",
+   "parentCode": "CTFSQ-UAA19",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Sur base d’une expérience réalisée en classe, expliciter les conditions nécessaires au fonctionnement d’une pile"
+  },
+  {
+   "code": "CTFSQ-UAA19-T1",
+   "parentCode": "CTFSQ-UAA19",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Transférer : Réaliser une recherche documentaire pour expliquer une technique utilisée pour protéger les métaux de la corrosion"
+  },
+  {
+   "code": "CTFSQ-UAA19-T2",
+   "parentCode": "CTFSQ-UAA19",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Transférer : Construire une pile en sélectionnant dans le matériel mis à disposition les éléments nécessaires pour faire fonctionner un récepteur donné"
+  },
+  {
+   "code": "CTFSQ-UAA19-K1",
+   "parentCode": "CTFSQ-UAA19",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : À l’aide d’un exemple, décrire le phénomène de corrosion des métaux à l’air libre"
+  },
+  {
+   "code": "CTFSQ-UAA19-K2",
+   "parentCode": "CTFSQ-UAA19",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : Expliciter la pile comme le siège d’une réaction chimique impliquant un transfert d’électrons"
+  },
+  {
+   "code": "CTFSQ-UAA19-K3",
+   "parentCode": "CTFSQ-UAA19",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : Différencier une pile d’un accumulateur"
+  },
+  {
+   "code": "CTFSQ-UAA19-K4",
+   "parentCode": "CTFSQ-UAA19",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : Par des exemples, illustrer différentes utilisations de piles et d’accumulateurs"
+  },
+  {
+   "code": "CTFSQ-UAA19-R1",
+   "parentCode": "CTFSQ-UAA19",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Action de l’air sur les métaux"
+  },
+  {
+   "code": "CTFSQ-UAA19-R2",
+   "parentCode": "CTFSQ-UAA19",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Oxydation/réduction et oxydant/réducteur"
+  },
+  {
+   "code": "CTFSQ-UAA19-R3",
+   "parentCode": "CTFSQ-UAA19",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Transformation d’énergie dans une pile"
+  },
+  {
+   "code": "CTFSQ-UAA19-R4",
+   "parentCode": "CTFSQ-UAA19",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Pile et accumulateur"
+  },
+  {
+   "code": "CTFSQ-UAA19-R5",
+   "parentCode": "CTFSQ-UAA19",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Suivre un mode opératoire"
+  },
+  {
+   "code": "CTFSQ-UAA19-R6",
+   "parentCode": "CTFSQ-UAA19",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Analyser et interpréter des résultats d’expériences réalisées en classe"
+  },
+  {
+   "code": "CTFSQ-UAA19-R7",
+   "parentCode": "CTFSQ-UAA19",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Utiliser un multimètre"
+  },
+  {
+   "code": "CTFSQ-UAA20",
+   "parentCode": "CTFSQ",
+   "kind": "competence",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "ÉNERGIES: CHOIX JUDICIEUX ET UTILISATION RATIONNELLE"
+  },
+  {
+   "code": "CTFSQ-UAA20-C1",
+   "parentCode": "CTFSQ-UAA20",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Compétence : Utiliser des arguments scientifiques pour alimenter ou comprendre une prise de position sur les choix énergétiques"
+  },
+  {
+   "code": "CTFSQ-UAA20-A1",
+   "parentCode": "CTFSQ-UAA20",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Estimer la quantité d’énergie grise associée à différents produits de consommation"
+  },
+  {
+   "code": "CTFSQ-UAA20-A2",
+   "parentCode": "CTFSQ-UAA20",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Sur base d’une expérience, calculer le rendement d’une transformation énergétique simple en mettant en évidence les pertes d’énergie"
+  },
+  {
+   "code": "CTFSQ-UAA20-A3",
+   "parentCode": "CTFSQ-UAA20",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Sur base de documents iconographiques ou de visites, comparer les principales étapes de transformations énergétiques dans deux types différents de centrales électriques"
+  },
+  {
+   "code": "CTFSQ-UAA20-T1",
+   "parentCode": "CTFSQ-UAA20",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Transférer : Proposer des initiatives citoyennes visant à diminuer la consommation d’énergie"
+  },
+  {
+   "code": "CTFSQ-UAA20-T2",
+   "parentCode": "CTFSQ-UAA20",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Transférer : À l’aide de documents, comparer divers modes de production d’électricité en fonction de facteurs tels que l’économie, l’environnement et la qualité de vie pour justifier un choix énergétique"
+  },
+  {
+   "code": "CTFSQ-UAA20-T3",
+   "parentCode": "CTFSQ-UAA20",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Transférer : Sur base d’un dossier documentaire, évaluer les impacts de la consommation des matières plastiques puis proposer des solutions pour protéger l’environnement et pour lutter contre l’épuisement du pétrole"
+  },
+  {
+   "code": "CTFSQ-UAA20-K1",
+   "parentCode": "CTFSQ-UAA20",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : Justifier le caractère renouvelable ou non renouvelable de différentes sources d’énergie"
+  },
+  {
+   "code": "CTFSQ-UAA20-K2",
+   "parentCode": "CTFSQ-UAA20",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : Identifier les transformations d’énergie dans une centrale productrice d’énergie électrique"
+  },
+  {
+   "code": "CTFSQ-UAA20-K3",
+   "parentCode": "CTFSQ-UAA20",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : Citer des impacts environnementaux associés aux différents types d’énergie"
+  },
+  {
+   "code": "CTFSQ-UAA20-K4",
+   "parentCode": "CTFSQ-UAA20",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : Expliciter la notion d’énergie grise"
+  },
+  {
+   "code": "CTFSQ-UAA20-R1",
+   "parentCode": "CTFSQ-UAA20",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Énergies renouvelables et non renouvelables"
+  },
+  {
+   "code": "CTFSQ-UAA20-R2",
+   "parentCode": "CTFSQ-UAA20",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Énergie grise"
+  },
+  {
+   "code": "CTFSQ-UAA20-R3",
+   "parentCode": "CTFSQ-UAA20",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Combustibles et plastiques issus du traitement du pétrole"
+  },
+  {
+   "code": "CTFSQ-UAA20-R4",
+   "parentCode": "CTFSQ-UAA20",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Transformations d’énergie dans une centrale productrice d’énergie électrique"
+  },
+  {
+   "code": "CTFSQ-UAA20-R5",
+   "parentCode": "CTFSQ-UAA20",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Calculer un rendement énergétique"
+  },
+  {
+   "code": "CTFSQ-UAA20-R6",
+   "parentCode": "CTFSQ-UAA20",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Analyser et interpréter les résultats d’une expérience"
+  },
+  {
+   "code": "CTFSQ-UAA20-R7",
+   "parentCode": "CTFSQ-UAA20",
+   "kind": "attendu",
+   "subject": "Sciences",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Exprimer les résultats d’une mesure et d’un calcul"
+  }
+ ]
+}

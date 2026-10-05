@@ -1,0 +1,1692 @@
+{
+ "source": {
+  "title": "Compétences terminales et savoirs requis en sciences économiques et sciences sociales (transition)",
+  "url": "https://www.enseignement.be/fileadmin/portail_age/uploads/parcours_apprentissage/secondaire_ordinaire/Organisation/Contenus_apprentissages_Secondaire/competences_terminales/HUM_GEN_et_TECH_2et3_degres/2000_CT_HGT_Sciences-Eco.pdf",
+  "version": "2000"
+ },
+ "level": "secondaire",
+ "tracks": [
+  "general",
+  "technique",
+  "specialise"
+ ],
+ "entries": [
+  {
+   "code": "CTSE",
+   "parentCode": null,
+   "kind": "domaine",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Compétences terminales et savoirs requis en sciences économiques et sciences sociales (transition)"
+  },
+  {
+   "code": "CTSE-1",
+   "parentCode": "CTSE",
+   "kind": "competence",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Sciences économiques – 1. MAITRISER LES ACQUIS THÉORIQUES DE BASE"
+  },
+  {
+   "code": "CTSE-1-1",
+   "parentCode": "CTSE-1",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "définir correctement les notions et concepts"
+  },
+  {
+   "code": "CTSE-1-2",
+   "parentCode": "CTSE-1",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "utiliser convenablement les termes, les concepts, les ordres de grandeur, les procédures et les techniques"
+  },
+  {
+   "code": "CTSE-1-3",
+   "parentCode": "CTSE-1",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "produire un exposé correct des mécanismes, des lois, des relations"
+  },
+  {
+   "code": "CTSE-1-4",
+   "parentCode": "CTSE-1",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "énoncer les postulats et les limites des concepts, des modèles, des procédures et des techniques."
+  },
+  {
+   "code": "CTSE-2",
+   "parentCode": "CTSE",
+   "kind": "competence",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Sciences économiques – 2. RECUEILLIR ET TRAITER DES INFORMATIONS EN FONCTION D’UNE RECHERCHE"
+  },
+  {
+   "code": "CTSE-2-1",
+   "parentCode": "CTSE-2",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "trouver les informations dans différentes sources courantes"
+  },
+  {
+   "code": "CTSE-2-2",
+   "parentCode": "CTSE-2",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "noter les informations utiles, sous une forme utilisable dans le traitement des données"
+  },
+  {
+   "code": "CTSE-2-3",
+   "parentCode": "CTSE-2",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "extraire des données d'un texte, d'un graphique, d'un tableau, d'un document..."
+  },
+  {
+   "code": "CTSE-2-4",
+   "parentCode": "CTSE-2",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "retrouver des mécanismes, des lois, des relations dans un texte, un graphique, un tableau, un document…"
+  },
+  {
+   "code": "CTSE-2-5",
+   "parentCode": "CTSE-2",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "appliquer des critères de critique des sources"
+  },
+  {
+   "code": "CTSE-2-6",
+   "parentCode": "CTSE-2",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "montrer sa compréhension par des exemples et/ou des contre-exemples, par des applications"
+  },
+  {
+   "code": "CTSE-2-7",
+   "parentCode": "CTSE-2",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "traduire des données, des mécanismes, des lois, des relations d'un registre de communication à un autre."
+  },
+  {
+   "code": "CTSE-3",
+   "parentCode": "CTSE",
+   "kind": "competence",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Sciences économiques – 3. ANALYSER DES INFORMATIONS"
+  },
+  {
+   "code": "CTSE-3-1",
+   "parentCode": "CTSE-3",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "identifier les éléments de base d'un raisonnement"
+  },
+  {
+   "code": "CTSE-3-2",
+   "parentCode": "CTSE-3",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "dégager les relations entre ces éléments"
+  },
+  {
+   "code": "CTSE-3-3",
+   "parentCode": "CTSE-3",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "distinguer entre ce qui est hypothétique et ce qui est démontré"
+  },
+  {
+   "code": "CTSE-3-4",
+   "parentCode": "CTSE-3",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "identifier une structure, un principe d'organisation."
+  },
+  {
+   "code": "CTSE-4",
+   "parentCode": "CTSE",
+   "kind": "competence",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Sciences économiques – 4. SYNTHÉTISER DES INFORMATIONS"
+  },
+  {
+   "code": "CTSE-4-1",
+   "parentCode": "CTSE-4",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "dégager des informations-clés communes à plusieurs sources"
+  },
+  {
+   "code": "CTSE-4-2",
+   "parentCode": "CTSE-4",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "présenter les relations entre ces informations-clés de manière structurée, sous forme d'un plan, d'un schéma, d'un graphique."
+  },
+  {
+   "code": "CTSE-5",
+   "parentCode": "CTSE",
+   "kind": "competence",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Sciences économiques – 5. APPLIQUER DES CONCEPTS, DES MODÈLES, DES PROCÉDURES (APPRIS)"
+  },
+  {
+   "code": "CTSE-5-1",
+   "parentCode": "CTSE-5",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "choisir le concept, le modèle, la procédure qui sont adéquats"
+  },
+  {
+   "code": "CTSE-5-2",
+   "parentCode": "CTSE-5",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "traiter les données avec le concept, le modèle, la procédure qui ont été choisis"
+  },
+  {
+   "code": "CTSE-5-3",
+   "parentCode": "CTSE-5",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "évaluer le résultat en fonction de critères."
+  },
+  {
+   "code": "CTSE-6",
+   "parentCode": "CTSE",
+   "kind": "competence",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Sciences économiques – 6. RÉSOUDRE DES PROBLÈMES POUR LESQUELS LES SAVOIRS, CONCEPTS ET"
+  },
+  {
+   "code": "CTSE-6-1",
+   "parentCode": "CTSE-6",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "poser le problème"
+  },
+  {
+   "code": "CTSE-6-2",
+   "parentCode": "CTSE-6",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "déterminer les démarches nécessaires à la résolution du problème"
+  },
+  {
+   "code": "CTSE-6-3",
+   "parentCode": "CTSE-6",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "mobiliser des savoirs existants"
+  },
+  {
+   "code": "CTSE-6-4",
+   "parentCode": "CTSE-6",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "produire une présentation claire de la procédure de solution"
+  },
+  {
+   "code": "CTSE-6-5",
+   "parentCode": "CTSE-6",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "déterminer les limites de la pertinence de la solution."
+  },
+  {
+   "code": "CTSE-7",
+   "parentCode": "CTSE",
+   "kind": "competence",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Sciences économiques – 7. RÉSOUDRE DES PROBLÈMES POUR LESQUELS DES SAVOIRS, CONCEPTS ET PROCÉDURES SUPPLÉMENTAIRES DOIVENT ÊTRE ÉLABORÉS"
+  },
+  {
+   "code": "CTSE-7-1",
+   "parentCode": "CTSE-7",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "poser le problème"
+  },
+  {
+   "code": "CTSE-7-2",
+   "parentCode": "CTSE-7",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "déterminer les démarches nécessaires à la résolution du problème"
+  },
+  {
+   "code": "CTSE-7-3",
+   "parentCode": "CTSE-7",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "construire des concepts, des schémas explicatifs, des modèles : produire des hypothèses"
+  },
+  {
+   "code": "CTSE-7-4",
+   "parentCode": "CTSE-7",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "tester la pertinence explicative des hypothèses"
+  },
+  {
+   "code": "CTSE-7-5",
+   "parentCode": "CTSE-7",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "améliorer la production par ajustement"
+  },
+  {
+   "code": "CTSE-7-6",
+   "parentCode": "CTSE-7",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "élaborer un plan d'action"
+  },
+  {
+   "code": "CTSE-7-7",
+   "parentCode": "CTSE-7",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "produire une présentation claire de la procédure de solution"
+  },
+  {
+   "code": "CTSE-7-8",
+   "parentCode": "CTSE-7",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "déterminer les limites de la pertinence de la solution."
+  },
+  {
+   "code": "CTSE-8",
+   "parentCode": "CTSE",
+   "kind": "competence",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Sciences économiques – 8. APPRÉHENDER LA MULTIPLICITÉ DES THÉORIES RELATIVES À UNE MÊME PROBLÉMATIQUE"
+  },
+  {
+   "code": "CTSE-8-1",
+   "parentCode": "CTSE-8",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "confronter deux (ou plusieurs) explications différentes d'un même problème économique courant"
+  },
+  {
+   "code": "CTSE-8-2",
+   "parentCode": "CTSE-8",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "identifier la logique explicative de chacune des théories."
+  },
+  {
+   "code": "CTSE-9",
+   "parentCode": "CTSE",
+   "kind": "competence",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Sciences économiques – objets et problématiques (général de transition)"
+  },
+  {
+   "code": "CTSE-9-1",
+   "parentCode": "CTSE-9",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "approches classique et néo-classique de l'économie"
+  },
+  {
+   "code": "CTSE-9-2",
+   "parentCode": "CTSE-9",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "approche keynésienne de l'économie"
+  },
+  {
+   "code": "CTSE-9-3",
+   "parentCode": "CTSE-9",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "banque"
+  },
+  {
+   "code": "CTSE-9-4",
+   "parentCode": "CTSE-9",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "bourse (des valeurs)"
+  },
+  {
+   "code": "CTSE-9-5",
+   "parentCode": "CTSE-9",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "contrats"
+  },
+  {
+   "code": "CTSE-9-6",
+   "parentCode": "CTSE-9",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "entreprise"
+  },
+  {
+   "code": "CTSE-9-7",
+   "parentCode": "CTSE-9",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "finances publiques"
+  },
+  {
+   "code": "CTSE-9-8",
+   "parentCode": "CTSE-9",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "formes concrètes d'organisation économique"
+  },
+  {
+   "code": "CTSE-9-9",
+   "parentCode": "CTSE-9",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "indicateurs et mesure de l'économie (comptabilité nationale)"
+  },
+  {
+   "code": "CTSE-9-10",
+   "parentCode": "CTSE-9",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "monnaie"
+  },
+  {
+   "code": "CTSE-9-11",
+   "parentCode": "CTSE-9",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "politiques économiques"
+  },
+  {
+   "code": "CTSE-9-12",
+   "parentCode": "CTSE-9",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "relations économiques internationales"
+  },
+  {
+   "code": "CTSE-9-13",
+   "parentCode": "CTSE-9",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "sécurité sociale"
+  },
+  {
+   "code": "CTSE-9-14",
+   "parentCode": "CTSE-9",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "types de marché."
+  },
+  {
+   "code": "CTSE-10",
+   "parentCode": "CTSE",
+   "kind": "competence",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Sciences économiques – objets et problématiques (technique de transition)"
+  },
+  {
+   "code": "CTSE-10-1",
+   "parentCode": "CTSE-10",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Analyse de gestion : comptabilité générale et comptabilité analytique."
+  },
+  {
+   "code": "CTSE-10-2",
+   "parentCode": "CTSE-10",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Droit : droit civil : les personnes, les biens"
+  },
+  {
+   "code": "CTSE-10-3",
+   "parentCode": "CTSE-10",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Droit : droit social : la sécurité sociale, les relations individuelles, les relations collectives"
+  },
+  {
+   "code": "CTSE-10-4",
+   "parentCode": "CTSE-10",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Droit : droit commercial : les droits et les obligations des commerçants"
+  },
+  {
+   "code": "CTSE-10-5",
+   "parentCode": "CTSE-10",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Droit : droit fiscal : la fiscalité directe, la fiscalité indirecte."
+  },
+  {
+   "code": "CTSE-10-6",
+   "parentCode": "CTSE-10",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Entreprise : types"
+  },
+  {
+   "code": "CTSE-10-7",
+   "parentCode": "CTSE-10",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Entreprise : organisation"
+  },
+  {
+   "code": "CTSE-10-8",
+   "parentCode": "CTSE-10",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Entreprise : fonctions"
+  },
+  {
+   "code": "CTSE-10-9",
+   "parentCode": "CTSE-10",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Entreprise : vie et mort"
+  },
+  {
+   "code": "CTSE-10-10",
+   "parentCode": "CTSE-10",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Entreprise : étude plus approfondie de deux fonctions, par exemple : le marketing, la gestion des ressources humaines."
+  },
+  {
+   "code": "CTSE-11",
+   "parentCode": "CTSE",
+   "kind": "competence",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Sciences sociales – 1. TRAVAILLER SES REPRÉSENTATIONS"
+  },
+  {
+   "code": "CTSE-11-1",
+   "parentCode": "CTSE-11",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "exprimer ses propres représentations, les confronter à celles d'autrui, prendre conscience de la contingence de ces représentations, évaluer leurs modifications en fin de recherche."
+  },
+  {
+   "code": "CTSE-12",
+   "parentCode": "CTSE",
+   "kind": "competence",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Sciences sociales – 2. ETRE CAPABLE DE PRENDRE PART ACTIVEMENT À UN TRAVAIL D’ÉQUIPE"
+  },
+  {
+   "code": "CTSE-12-1",
+   "parentCode": "CTSE-12",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Sciences sociales – 2. ETRE CAPABLE DE PRENDRE PART ACTIVEMENT À UN TRAVAIL D’ÉQUIPE"
+  },
+  {
+   "code": "CTSE-13",
+   "parentCode": "CTSE",
+   "kind": "competence",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Sciences sociales – 3. MAITRISER LES ACQUIS THÉORIQUES DE BASE"
+  },
+  {
+   "code": "CTSE-13-1",
+   "parentCode": "CTSE-13",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "définir correctement les notions et concepts"
+  },
+  {
+   "code": "CTSE-13-2",
+   "parentCode": "CTSE-13",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "utiliser convenablement les termes, les concepts, les ordres de grandeur, les procédures et les techniques"
+  },
+  {
+   "code": "CTSE-13-3",
+   "parentCode": "CTSE-13",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "produire un exposé correct des mécanismes, des relations"
+  },
+  {
+   "code": "CTSE-13-4",
+   "parentCode": "CTSE-13",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "énoncer les postulats et les limites des concepts, des modèles, des procédures et des techniques."
+  },
+  {
+   "code": "CTSE-14",
+   "parentCode": "CTSE",
+   "kind": "competence",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Sciences sociales – 4. RECUEILLIR ET TRAITER DES INFORMATIONS EN FONCTION D’UNE RECHERCHE"
+  },
+  {
+   "code": "CTSE-14-1",
+   "parentCode": "CTSE-14",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "trouver les informations dans différentes sources courantes"
+  },
+  {
+   "code": "CTSE-14-2",
+   "parentCode": "CTSE-14",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "noter les informations utiles, sous une forme utilisable dans le traitement des données"
+  },
+  {
+   "code": "CTSE-14-3",
+   "parentCode": "CTSE-14",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "replacer les informations dans leur contexte de production"
+  },
+  {
+   "code": "CTSE-14-4",
+   "parentCode": "CTSE-14",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "extraire des données d'un texte, d'un graphique, d'un tableau, d'un document..."
+  },
+  {
+   "code": "CTSE-14-5",
+   "parentCode": "CTSE-14",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "retrouver des mécanismes, des relations dans un texte, un graphique, un tableau, un document..."
+  },
+  {
+   "code": "CTSE-14-6",
+   "parentCode": "CTSE-14",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "appliquer des critères de critique des sources"
+  },
+  {
+   "code": "CTSE-14-7",
+   "parentCode": "CTSE-14",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "montrer sa compréhension par des exemples et/ou des contre-exemples, par des applications"
+  },
+  {
+   "code": "CTSE-14-8",
+   "parentCode": "CTSE-14",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "traduire des données, des mécanismes, des relations d'un registre de communication à un autre."
+  },
+  {
+   "code": "CTSE-15",
+   "parentCode": "CTSE",
+   "kind": "competence",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Sciences sociales – 5. ANALYSER DES INFORMATIONS"
+  },
+  {
+   "code": "CTSE-15-1",
+   "parentCode": "CTSE-15",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "distinguer faits observables et concepts"
+  },
+  {
+   "code": "CTSE-15-2",
+   "parentCode": "CTSE-15",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "identifier les éléments de base d'un raisonnement"
+  },
+  {
+   "code": "CTSE-15-3",
+   "parentCode": "CTSE-15",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "dégager les relations entre ces éléments"
+  },
+  {
+   "code": "CTSE-15-4",
+   "parentCode": "CTSE-15",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "distinguer entre ce qui est hypothétique et ce qui est démontré"
+  },
+  {
+   "code": "CTSE-15-5",
+   "parentCode": "CTSE-15",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "identifier une structure, un principe d'organisation."
+  },
+  {
+   "code": "CTSE-16",
+   "parentCode": "CTSE",
+   "kind": "competence",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Sciences sociales – 6. SYNTHÉTISER DES INFORMATIONS"
+  },
+  {
+   "code": "CTSE-16-1",
+   "parentCode": "CTSE-16",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "dégager des informations-clés communes à plusieurs sources"
+  },
+  {
+   "code": "CTSE-16-2",
+   "parentCode": "CTSE-16",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "présenter les relations entre ces informations-clés de manière structurée, sous forme d'un plan, d'un schéma, d'un graphique..."
+  },
+  {
+   "code": "CTSE-17",
+   "parentCode": "CTSE",
+   "kind": "competence",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Sciences sociales – 7. APPLIQUER DES CONCEPTS, DES THÉORIES, DES MODÈLES, DES PROCÉDURES"
+  },
+  {
+   "code": "CTSE-17-1",
+   "parentCode": "CTSE-17",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "choisir le concept, le modèle, la théorie, la procédure qui sont adéquats"
+  },
+  {
+   "code": "CTSE-17-2",
+   "parentCode": "CTSE-17",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "traiter les données avec le concept, le modèle, la théorie, la procédure qui ont été choisis"
+  },
+  {
+   "code": "CTSE-17-3",
+   "parentCode": "CTSE-17",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "évaluer le résultat en fonction de critères."
+  },
+  {
+   "code": "CTSE-18",
+   "parentCode": "CTSE",
+   "kind": "competence",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Sciences sociales – 8. ANALYSER DES PROBLÉMATIQUES SELON UNE DÉMARCHE SCIENTIFIQUE"
+  },
+  {
+   "code": "CTSE-18-1",
+   "parentCode": "CTSE-18",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "poser le problème"
+  },
+  {
+   "code": "CTSE-18-2",
+   "parentCode": "CTSE-18",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "déterminer les démarches nécessaires à la résolution du problème"
+  },
+  {
+   "code": "CTSE-18-3",
+   "parentCode": "CTSE-18",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "mobiliser des savoirs existants"
+  },
+  {
+   "code": "CTSE-18-4",
+   "parentCode": "CTSE-18",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "construire des concepts, des schémas explicatifs, des modèles : produire des hypothèses"
+  },
+  {
+   "code": "CTSE-18-5",
+   "parentCode": "CTSE-18",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "tester la pertinence explicative des hypothèses"
+  },
+  {
+   "code": "CTSE-18-6",
+   "parentCode": "CTSE-18",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "améliorer la production par ajustement"
+  },
+  {
+   "code": "CTSE-18-7",
+   "parentCode": "CTSE-18",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "identifier les différentes solutions proposées et en déterminer les limites."
+  },
+  {
+   "code": "CTSE-19",
+   "parentCode": "CTSE",
+   "kind": "competence",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Sciences sociales – 9. APPRÉHENDER LA MULTIPLICITÉ DES THÉORIES RELATIVES À UNE MÊME PROBLÉMATIQUE"
+  },
+  {
+   "code": "CTSE-19-1",
+   "parentCode": "CTSE-19",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "confronter deux (ou plusieurs) explications différentes d'un même problème de société"
+  },
+  {
+   "code": "CTSE-19-2",
+   "parentCode": "CTSE-19",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "identifier la logique explicative de chacune des théories."
+  },
+  {
+   "code": "CTSE-20",
+   "parentCode": "CTSE",
+   "kind": "competence",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Sciences sociales – objets et problématiques (général de transition)"
+  },
+  {
+   "code": "CTSE-20-1",
+   "parentCode": "CTSE-20",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "compétition et coopération confrontation entre la logique de compétition, dominante dans le discours du monde économique et des médias, et la nécessité de la coopération"
+  },
+  {
+   "code": "CTSE-20-2",
+   "parentCode": "CTSE-20",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "consensus et conflit caractère inévitable des conflits, recherche du consensus, nécessités de gestion et d'arbitrage des conflits"
+  },
+  {
+   "code": "CTSE-20-3",
+   "parentCode": "CTSE-20",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "public et privé distinction entre sphère publique et sphère privée : ce qui est du ressort de tous (règles formelles communes à une société donnée) et du ressort de chacun (décisions personnelles)"
+  },
+  {
+   "code": "CTSE-20-4",
+   "parentCode": "CTSE-20",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "individuel versus collectif compréhension de l'articulation entre l'individuel et le collectif : examen des différentes réponses théoriques"
+  },
+  {
+   "code": "CTSE-20-5",
+   "parentCode": "CTSE-20",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "comportement intéressé versus comportement normatif détermination de la place respective des intérêts et des valeurs dans l'explication de faits sociaux"
+  },
+  {
+   "code": "CTSE-20-6",
+   "parentCode": "CTSE-20",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "régulation « consciente » versus régulation «inconsciente » compréhension de deux modes de régulation : l'un fondé sur la délibération et la décision collective, l'autre sur l'agrégation des décisions individuelles"
+  },
+  {
+   "code": "CTSE-20-7",
+   "parentCode": "CTSE-20",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "production et reproduction compréhension de la dynamique du changement (actifs/suiveurs, rôles et enjeux de l'éducation...)"
+  },
+  {
+   "code": "CTSE-20-8",
+   "parentCode": "CTSE-20",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "marchand et non marchand confrontation de la notion de services avec le marché besoins «solvables» ou non, rentabilité financière et/ou sociale, monde associatif, professionnalisme et bénévolat..."
+  },
+  {
+   "code": "CTSE-20-9",
+   "parentCode": "CTSE-20",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "insertion et exclusion compréhension des mécanismes d'insertion et d'exclusion sociales : examen de la situation des chômeurs, des immigrés..."
+  },
+  {
+   "code": "CTSE-21",
+   "parentCode": "CTSE",
+   "kind": "competence",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Sciences sociales – objets et problématiques (technique de transition)"
+  },
+  {
+   "code": "CTSE-21-1",
+   "parentCode": "CTSE-21",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "l’homme face à la consommation"
+  },
+  {
+   "code": "CTSE-21-2",
+   "parentCode": "CTSE-21",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "l’homme face au travail"
+  },
+  {
+   "code": "CTSE-21-3",
+   "parentCode": "CTSE-21",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "l’homme et le temps libre"
+  },
+  {
+   "code": "CTSE-21-4",
+   "parentCode": "CTSE-21",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "l’homme, être sexuel"
+  },
+  {
+   "code": "CTSE-21-5",
+   "parentCode": "CTSE-21",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "l’homme et son environnement"
+  },
+  {
+   "code": "CTSE-21-6",
+   "parentCode": "CTSE-21",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "l’homme en difficulté."
+  }
+ ]
+}

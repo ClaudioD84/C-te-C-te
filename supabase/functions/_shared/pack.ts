@@ -135,15 +135,21 @@ export function parsePack(text: string): StudyPack {
 const SUBJECT_ALIASES: [RegExp, string[]][] = [
   [/fran[cç]ais|lecture|orthographe|grammaire|conjugaison|dict[ée]e|r[ée]daction|latin|grec/i, ['Français']],
   [/math|calcul|g[ée]om[ée]trie|alg[èe]bre/i, ['Mathématiques']],
-  [/\bsciences?\b(?!\s+humaines)|biologie|chimie|(?<!ducation )physique|[ée]veil/i, ['Sciences']],
   [
-    /histoire|g[ée]ographie|g[ée]o\b|fhg|formation historique|sciences humaines|[ée]veil/i,
+    /\bsciences?\b(?!\s+(humaines|[ée]conomiques|sociales))|biologie|chimie|(?<!ducation )physique|[ée]veil/i,
+    ['Sciences'],
+  ],
+  [
+    /histoire|g[ée]ographie|g[ée]o\b|fhg|formation historique|sciences humaines|[ée]veil|[ée]conomi|sciences sociales/i,
     ['Formation historique et géographique'],
   ],
   [/philosophie|citoyennet[ée]|\bepc\b/i, ['Éducation à la philosophie et à la citoyenneté']],
   [/gym|[ée]ducation physique|psychomotricit[ée]/i, ['Éducation physique']],
-  [/dessin|\barts?\b|musique|[ée]ducation (culturelle|artistique)/i, ['Éducation culturelle et artistique']],
-  [/technologie|manuelle|\btechnique/i, ['Formation manuelle et technique']],
+  [
+    /dessin|\barts?\b|musique|[ée]ducation (culturelle|artistique)|cirque/i,
+    ['Éducation culturelle et artistique'],
+  ],
+  [/technologie|manuelle|\btechnique|informatique/i, ['Formation manuelle et technique']],
   [/n[ée]erlandais|anglais|allemand|langues? modernes?/i, ['Langue moderne']],
 ];
 

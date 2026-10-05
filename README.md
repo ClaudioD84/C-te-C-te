@@ -9,14 +9,14 @@ Assistant pédagogique pour les familles de la Fédération Wallonie-Bruxelles :
 
 ## Organisation du dépôt
 
-| Dossier | Contenu |
-|---|---|
-| `apps/mobile` | Application Expo (iPhone, Android, tablettes) |
-| `packages/shared` | Schémas, règles d'adaptation au profil, minuteur Pomodoro (code partagé et testé) |
-| `supabase` | Configuration, migrations SQL (schéma, sécurité RLS, stockage), fonctions serveur (`functions/`) |
-| `scripts/referentiels` | Structuration et import des référentiels officiels FWB |
-| `scripts/culture` | Base de contenus culturels vérifiés (« pour aller plus loin ») |
-| `docs` | Cahier des charges et architecture |
+| Dossier                | Contenu                                                                                          |
+| ---------------------- | ------------------------------------------------------------------------------------------------ |
+| `apps/mobile`          | Application Expo (iPhone, Android, tablettes)                                                    |
+| `packages/shared`      | Schémas, règles d'adaptation au profil, minuteur Pomodoro (code partagé et testé)                |
+| `supabase`             | Configuration, migrations SQL (schéma, sécurité RLS, stockage), fonctions serveur (`functions/`) |
+| `scripts/referentiels` | Structuration et import des référentiels officiels FWB                                           |
+| `scripts/culture`      | Base de contenus culturels vérifiés (« pour aller plus loin »)                                   |
+| `docs`                 | Cahier des charges et architecture                                                               |
 
 ## Démarrer en local
 
@@ -76,7 +76,8 @@ La CI GitHub Actions exécute ces vérifications et applique les migrations Supa
 
 Reste pour l'étape 1 : l'abonnement (RevenueCat, App Store, Google Play).
 
-Référentiels importés : tout le tronc commun, de M1 à S3 (10 998 entrées) ; voir `scripts/referentiels/README.md`.
+Référentiels importés : tout le tronc commun, de M1 à S3 (10 998 entrées), et les compétences terminales du
+secondaire, S3/S4 à S6/S7, selon la filière (9 364 entrées) ; voir `scripts/referentiels/README.md`.
 
 Étape 2 en cours. En place :
 
@@ -84,9 +85,8 @@ Référentiels importés : tout le tronc commun, de M1 à S3 (10 998 entrées) ;
   dès la publication du planning ; signalement d'erreur et régénération par le parent ;
 - cartes de révision à répétition espacée, ramenées avant la date de l'évaluation ;
 - export « Print & Go » : PDF accessible (Lexend, grands espacements, réponses sur une page séparée) ;
-- police Lexend dans l'application pour les profils dyslexie.
-
-Reste pour l'étape 2 : les compétences terminales des 2e et 3e degrés du secondaire (S4 → S6/S7).
+- police Lexend dans l'application pour les profils dyslexie ;
+- compétences terminales du secondaire supérieur, filtrées selon la filière de l'enfant (transition ou qualification).
 
 Étape 3 en cours. En place :
 

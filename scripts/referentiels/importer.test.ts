@@ -22,6 +22,12 @@ Deno.test('génère des insertions idempotentes, parents en premier, apostrophes
   if (parentPosition < 0 || childPosition < parentPosition) throw new Error('Le parent doit précéder l’enfant');
 });
 
+Deno.test('enregistre les types d’enseignement (tous par défaut)', () => {
+  assertStringIncludes(toSql([file]), "array['general', 'technique', 'professionnel', 'specialise']::text[]");
+  const qualification = { ...file, source: { ...file.source, version: 'q' }, tracks: ['professionnel' as const] };
+  assertStringIncludes(toSql([qualification]), "array['professionnel']::text[]");
+});
+
 Deno.test('refuse un code en double entre fichiers', () => {
   assertThrows(() => toSql([file, file]));
 });

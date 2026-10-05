@@ -50,7 +50,7 @@ Deno.serve(async (request) => {
 
     const { data: child } = await admin
       .from('child_profile')
-      .select('grade')
+      .select('grade, track')
       .eq('id', input.childId)
       .eq('family_id', familyId)
       .maybeSingle();
@@ -76,6 +76,7 @@ Deno.serve(async (request) => {
       .from('curriculum_item')
       .select('subject, label')
       .contains('grades', [child.grade])
+      .contains('tracks', [child.track])
       .in('subject', [...new Set(input.subjects.flatMap(curriculumSubjects))])
       .eq('kind', 'attendu')
       .limit(80);

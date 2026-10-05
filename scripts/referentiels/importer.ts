@@ -4,7 +4,12 @@
  *
  *   deno run --config scripts/referentiels/deno.json --allow-read --allow-write scripts/referentiels/importer.ts
  */
-import { curriculumFileSchema, sortParentsFirst, type CurriculumFile } from '../../packages/shared/src/curriculum.ts';
+import {
+  curriculumFileSchema,
+  curriculumTracks,
+  sortParentsFirst,
+  type CurriculumFile,
+} from '../../packages/shared/src/curriculum.ts';
 
 const DATA_DIR = new URL('./donnees/', import.meta.url);
 const OUTPUT = new URL('../../supabase/seed/referentiels.sql', import.meta.url);
@@ -23,6 +28,7 @@ export function toSql(files: readonly CurriculumFile[]): string {
   for (const file of files) {
     const { version, title, url } = file.source;
     const source = url ? `${title} (${url})` : title;
+    const tracks = sqlArray(curriculumTracks(file));
     lines.push(`-- ${title} — version ${version}`);
 
     for (const entry of sortParentsFirst(file.entries)) {
@@ -34,10 +40,11 @@ export function toSql(files: readonly CurriculumFile[]): string {
         ? `(select id from public.curriculum_item where version = ${sql(version)} and code = ${sql(entry.parentCode)})`
         : 'null';
       lines.push(
-        `insert into public.curriculum_item (code, parent_id, level, grades, subject, kind, label, source, version) values (` +
-          [sql(entry.code), parent, sql(file.level), sqlArray(entry.grades), sql(entry.subject), sql(entry.kind), sql(entry.label), sql(source), sql(version)].join(', ') +
+        `insert into public.curriculum_item (code, parent_id, level, grades, tracks, subject, kind, label, source, version) values (` +
+          [sql(entry.code), parent, sql(file.level), sqlArray(entry.grades), tracks, sql(entry.subject), sql(entry.kind), sql(entry.label), sql(source), sql(version)].join(', ') +
           `) on conflict (version, code) do update set parent_id = excluded.parent_id, level = excluded.level, ` +
-          `grades = excluded.grades, subject = excluded.subject, kind = excluded.kind, label = excluded.label, source = excluded.source;`,
+          `grades = excluded.grades, tracks = excluded.tracks, subject = excluded.subject, kind = excluded.kind, ` +
+          `label = excluded.label, source = excluded.source;`,
       );
     }
     lines.push('');
