@@ -20,6 +20,11 @@ test('écoute et écris : les mots clés de la fiche, accents tolérés, effort 
   await enterChildMode(page, 'Écureuil');
   await openTraining(page);
 
+  // Lecture à voix haute de toute la fiche (arrêtable).
+  await page.getByRole('radio', { name: 'Fiche' }).click();
+  await button(page, '🔊 Écouter la fiche').click();
+  await expect(button(page, '⏹️ Arrêter la lecture').or(button(page, '🔊 Écouter la fiche'))).toBeVisible();
+
   await page.getByRole('radio', { name: 'Écoute et écris' }).click();
   await expect(page.getByText('Mot 1 sur 2')).toBeVisible();
   await page.getByLabel('Écris le mot que tu entends').fill(' fleuve ');

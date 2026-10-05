@@ -29,3 +29,20 @@ describe('écoute et écris', () => {
     expect(speechLanguage('Éveil')).toBe('fr-BE');
   });
 });
+
+describe('lecture de la fiche', () => {
+  it('titre, parties, puis mots importants, avec ponctuation', async () => {
+    const { ficheSegments } = await import('./dictation');
+    expect(
+      ficheSegments({
+        title: 'Les fleuves',
+        sections: [{ heading: 'La Meuse', points: ['Traverse Liège', 'Prend sa source en France.'] }],
+        keyTerms: [{ term: 'Fleuve', definition: "Cours d'eau qui se jette dans la mer." }],
+      }),
+    ).toEqual([
+      'Les fleuves.',
+      'La Meuse. Traverse Liège. Prend sa source en France.',
+      "Mots importants. Fleuve : Cours d'eau qui se jette dans la mer.",
+    ]);
+  });
+});

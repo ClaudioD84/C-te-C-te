@@ -40,3 +40,22 @@ export function speechLanguage(subject: string): string {
   if (s.includes('italien')) return 'it-IT';
   return 'fr-BE';
 }
+
+/**
+ * Lecture à voix haute d'une fiche, morceau par morceau (titre, chaque partie, mots importants) :
+ * l'écran surligne la partie lue.
+ */
+export function ficheSegments(fiche: {
+  title: string;
+  sections: readonly { heading: string; points: readonly string[] }[];
+  keyTerms: readonly { term: string; definition: string }[];
+}): string[] {
+  const end = (text: string) => (/[.!?…]$/.test(text.trim()) ? text.trim() : `${text.trim()}.`);
+  return [
+    end(fiche.title),
+    ...fiche.sections.map((s) => [end(s.heading), ...s.points.map(end)].join(' ')),
+    ...(fiche.keyTerms.length > 0
+      ? [['Mots importants.', ...fiche.keyTerms.map((t) => end(`${t.term} : ${t.definition}`))].join(' ')]
+      : []),
+  ];
+}
