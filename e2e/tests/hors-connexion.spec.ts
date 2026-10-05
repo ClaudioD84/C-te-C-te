@@ -47,7 +47,11 @@ test('la mission du jour fonctionne hors connexion et se synchronise sans doublo
   const todo = await button(page, "C'est fait !").count();
   await button(page, "C'est fait !").first().click();
   await expect(button(page, "C'est fait !")).toHaveCount(todo - 1);
-  while ((await button(page, "C'est fait !").count()) > 0) await button(page, "C'est fait !").first().click();
+  // Une à une, en attendant que chaque activité cochée disparaisse avant de cliquer sur la suivante.
+  for (let left = await button(page, "C'est fait !").count(); left > 0; left--) {
+    await button(page, "C'est fait !").first().click();
+    await expect(button(page, "C'est fait !")).toHaveCount(left - 1);
+  }
   await expect(page.getByText('Mission accomplie, bravo !')).toBeVisible();
 
   // Rien n'est encore arrivé sur le serveur.
