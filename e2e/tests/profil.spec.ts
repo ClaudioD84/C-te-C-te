@@ -1,6 +1,6 @@
 import { expect, test } from '@playwright/test';
 
-import { addChild, button, signUp, sql } from './helpers';
+import { addChild, button, signUp, sql, childTitle } from './helpers';
 
 test('modification du profil, retrait du consentement et suppression', async ({ page }) => {
   const email = await signUp(page, 'profil');
@@ -17,7 +17,7 @@ test('modification du profil, retrait du consentement et suppression', async ({ 
   await page.getByRole('checkbox', { name: 'TDAH' }).click();
   await expect(page.getByText(/vous retirez votre consentement/)).toBeVisible();
   await button(page, 'Enregistrer').click();
-  await expect(page.getByText('Grand Renard', { exact: true })).toBeVisible();
+  await expect(childTitle(page, 'Grand Renard')).toBeVisible();
   expect(
     sql(
       `select alias || ' ' || cardinality(needs) || ' ' || (needs_consent_at is null) from child_profile where id = '${childId}'`,

@@ -1,6 +1,7 @@
 import {
   childProfileSchema,
   nextNeedsConsentAt,
+  schoolLevel,
   type ChildProfile,
   type ChildProfileInput,
 } from '@cote-a-cote/shared';
@@ -18,6 +19,11 @@ function fromRow(row: Record<string, unknown>): StoredChildProfile {
 }
 
 const profilesKey = ['child_profiles'] as const;
+
+/** Options saisies au clavier : sans espaces superflus ni éléments vides. */
+function cleanOptions<T extends { options?: string[] }>(input: T): T {
+  return { ...input, options: (input.options ?? []).map((o) => o.trim()).filter(Boolean) };
+}
 
 export function useChildProfiles() {
   return useQuery({
@@ -47,7 +53,7 @@ export function useCreateChildProfile() {
   const queryClient = useQueryClient();
   return useMutation({
     mutationFn: async (input: ChildProfileInput) => {
-      const profile = childProfileSchema.parse(input);
+      const profile = childProfileSchema.parse(cleanOptions(input));
       // family_id est rempli par la base à partir de l'utilisateur connecté.
       const { data, error } = await supabase
         .from('child_profile')
@@ -74,8 +80,8 @@ export function useCreateChildProfile() {
 export function useUpdateChildProfile(id: string) {
   const queryClient = useQueryClient();
   return useMutation({
-    mutationFn: async (input: Pick<ChildProfileInput, 'alias' | 'grade' | 'track' | 'needs'>) => {
-      const profile = childProfileSchema.parse(input);
+    mutationFn: async (input: ChildProfileInput) => {
+      const profile = childProfileSchema.parse(cleanOptions(input));
       const { data: current, error: readError } = await supabase
         .from('child_profile')
         .select('needs, needs_consent_at')
@@ -86,9 +92,14 @@ export function useUpdateChildProfile(id: string) {
         .from('child_profile')
         .update({
           alias: profile.alias,
+          avatar: profile.avatar,
           grade: profile.grade,
           track: profile.track,
+          // Réseau et options n'ont de sens qu'au secondaire.
+          network: schoolLevel(profile.grade) === 'secondaire' ? (profile.network ?? null) : null,
+          options: schoolLevel(profile.grade) === 'secondaire' ? profile.options : [],
           needs: profile.needs,
+          preferences: profile.preferences,
           needs_consent_at: nextNeedsConsentAt(
             current.needs as string[],
             profile.needs,

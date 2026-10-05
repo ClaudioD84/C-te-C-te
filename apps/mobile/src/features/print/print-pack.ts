@@ -1,4 +1,10 @@
-import { buildPackHtml, type LearningSettings, type PrintMeta, type StudyPack } from '@cote-a-cote/shared';
+import {
+  buildPackHtml,
+  buildPacksHtml,
+  type LearningSettings,
+  type PrintMeta,
+  type StudyPack,
+} from '@cote-a-cote/shared';
 import { Asset } from 'expo-asset';
 import { File } from 'expo-file-system';
 import * as Print from 'expo-print';
@@ -46,4 +52,16 @@ export async function sharePackPdf(
     dialogTitle: 'Fiche à imprimer',
     UTI: 'com.adobe.pdf',
   });
+}
+
+/** Toutes les fiches de la semaine en un seul document (F10), chacune sur une nouvelle page. */
+export async function printPacks(
+  items: readonly { pack: StudyPack; meta: PrintMeta }[],
+  settings: LearningSettings,
+): Promise<void> {
+  const html = buildPacksHtml(items, settings, {
+    fontFaceCss: await lexendFontFace(),
+    fontFamilyName: 'Lexend',
+  });
+  await Print.printAsync({ html });
 }

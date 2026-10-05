@@ -22,17 +22,8 @@ export interface PrintOptions {
 const escapeHtml = (text: string) =>
   text.replaceAll('&', '&amp;').replaceAll('<', '&lt;').replaceAll('>', '&gt;').replaceAll('"', '&quot;');
 
-export function buildPackHtml(
-  pack: StudyPack,
-  settings: LearningSettings,
-  meta: PrintMeta,
-  options: PrintOptions,
-): string {
-  const baseSize = 13 * settings.fontScale;
-  const family =
-    settings.fontFamily === 'dyslexia' && options.fontFamilyName
-      ? `'${options.fontFamilyName}', Verdana, sans-serif`
-      : 'Verdana, Arial, sans-serif';
+/** Contenu imprimable d'un paquet (sans l'enveloppe HTML). */
+function packBody(pack: StudyPack, settings: LearningSettings, meta: PrintMeta): string {
   // Peu d'éléments par page pour les profils qui en ont besoin.
   const perPage = Math.max(2, settings.maxItemsPerScreen * 2);
   const e = escapeHtml;
@@ -93,6 +84,15 @@ export function buildPackHtml(
     parts.push('</section>');
   }
 
+  return parts.join('\n');
+}
+
+function documentHtml(body: string, settings: LearningSettings, options: PrintOptions): string {
+  const baseSize = 13 * settings.fontScale;
+  const family =
+    settings.fontFamily === 'dyslexia' && options.fontFamilyName
+      ? `'${options.fontFamilyName}', Verdana, sans-serif`
+      : 'Verdana, Arial, sans-serif';
   return `<!doctype html>
 <html lang="fr">
 <head>
@@ -126,7 +126,33 @@ li { margin-bottom: 0.4em; }
 </style>
 </head>
 <body>
-${parts.join('\n')}
+${body}
 </body>
 </html>`;
+}
+
+export function buildPackHtml(
+  pack: StudyPack,
+  settings: LearningSettings,
+  meta: PrintMeta,
+  options: PrintOptions,
+): string {
+  return documentHtml(packBody(pack, settings, meta), settings, options);
+}
+
+/**
+ * Plusieurs fiches dans un seul document (« Print & Go » de la semaine, F10) : chaque fiche commence sur une
+ * nouvelle page, avec ses réponses à la fin de la fiche.
+ */
+export function buildPacksHtml(
+  items: readonly { pack: StudyPack; meta: PrintMeta }[],
+  settings: LearningSettings,
+  options: PrintOptions,
+): string {
+  const bodies = items.map(({ pack, meta }, i) =>
+    i === 0
+      ? packBody(pack, settings, meta)
+      : `<div class="new-page"></div>\n${packBody(pack, settings, meta)}`,
+  );
+  return documentHtml(bodies.join('\n'), settings, options);
 }

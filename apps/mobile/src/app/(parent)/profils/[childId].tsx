@@ -40,9 +40,13 @@ export default function EditChildProfileScreen() {
 function EditForm({ child }: { child: StoredChildProfile }) {
   const form = useProfileForm({
     alias: child.alias,
+    avatar: child.avatar,
     grade: child.grade,
     track: child.track,
+    network: child.network,
+    options: child.options,
     needs: child.needs,
+    preferences: child.preferences,
   });
   const update = useUpdateChildProfile(child.id);
   const remove = useDeleteChildProfile(child.id);

@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 
-import { childProfileSchema, nextNeedsConsentAt } from './profile';
+import { avatarOf, childProfileSchema, nextNeedsConsentAt } from './profile';
 import { isTrackAllowed, schoolLevel } from './school';
 
 describe('childProfileSchema', () => {
@@ -57,5 +57,12 @@ describe('nextNeedsConsentAt', () => {
   it('renouvelle la date quand un besoin est ajouté', () => {
     expect(nextNeedsConsentAt(['tdah'], ['tdah', 'dyscalculie'], before, now)).toBe(now.toISOString());
     expect(nextNeedsConsentAt([], ['dyslexie'], null, now)).toBe(now.toISOString());
+  });
+});
+
+describe('avatars', () => {
+  it('retombe sur le lion pour un code inconnu', () => {
+    expect(avatarOf('renard').emoji).toBe('🦊');
+    expect(avatarOf('dragon').emoji).toBe('🦁');
   });
 });

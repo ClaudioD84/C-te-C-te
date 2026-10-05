@@ -10,6 +10,7 @@ import {
   signUp,
   sql,
   openTraining,
+  childTitle,
 } from './helpers';
 
 test('parcours complet : profil, planning, fiches, console enfant, suivi, dossier de révision', async ({
@@ -28,7 +29,7 @@ test('parcours complet : profil, planning, fiches, console enfant, suivi, dossie
     await expect(button(page, 'Enregistrer')).toBeDisabled();
     await page.getByRole('checkbox', { name: /J'accepte/ }).click();
     await button(page, 'Enregistrer').click();
-    await expect(page.getByText('Petit Lion', { exact: true })).toBeVisible();
+    await expect(childTitle(page, 'Petit Lion')).toBeVisible();
   });
   const childId = childOf(email, 'Petit Lion');
   const familyId = familyOf(email);

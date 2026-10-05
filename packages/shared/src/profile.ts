@@ -66,3 +66,35 @@ export function nextNeedsConsentAt(
   const added = next.some((need) => !previous.includes(need));
   return added || !previousConsentAt ? now.toISOString() : previousConsentAt;
 }
+
+export const WEEKDAY_LABELS: Record<Weekday, string> = {
+  lun: 'Lundi',
+  mar: 'Mardi',
+  mer: 'Mercredi',
+  jeu: 'Jeudi',
+  ven: 'Vendredi',
+  sam: 'Samedi',
+  dim: 'Dimanche',
+};
+
+/** Avatars proposés à l'enfant (affichés dans sa console). Codes stables : ils sont enregistrés. */
+export const AVATARS = {
+  lion: { emoji: '🦁', label: 'Lion' },
+  renard: { emoji: '🦊', label: 'Renard' },
+  hibou: { emoji: '🦉', label: 'Hibou' },
+  tortue: { emoji: '🐢', label: 'Tortue' },
+  chat: { emoji: '🐱', label: 'Chat' },
+  panda: { emoji: '🐼', label: 'Panda' },
+  dauphin: { emoji: '🐬', label: 'Dauphin' },
+  licorne: { emoji: '🦄', label: 'Licorne' },
+} as const;
+export type AvatarCode = keyof typeof AVATARS;
+export const AVATAR_CODES = Object.keys(AVATARS) as AvatarCode[];
+
+/** Avatar d'un profil ; un code inconnu (ancienne version) retombe sur le lion. */
+export function avatarOf(code: string): (typeof AVATARS)[AvatarCode] {
+  return AVATARS[code as AvatarCode] ?? AVATARS.lion;
+}
+
+/** Durées de séance proposées au parent (en minutes) ; sinon, durée recommandée selon le profil. */
+export const SESSION_MINUTES_CHOICES = [10, 15, 20, 25, 30, 45] as const;

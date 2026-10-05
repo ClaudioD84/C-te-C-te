@@ -1,6 +1,7 @@
 import {
   deriveLearningSettings,
   formatRelativeDate,
+  formatShortDate,
   planWeek,
   TASK_KIND_LABELS,
   toIsoDate,
@@ -8,6 +9,7 @@ import {
   type PlannedDay,
   type WeekPlan,
 } from '@cote-a-cote/shared';
+import { useQueryClient } from '@tanstack/react-query';
 import { router, useLocalSearchParams } from 'expo-router';
 import { useState } from 'react';
 import { ActivityIndicator, StyleSheet, View } from 'react-native';
@@ -20,7 +22,8 @@ import { Spacing } from '@/constants/theme';
 import { usePublishPlan, useSessions, useUpcomingTasks, type UpcomingTask } from '@/features/planning/api';
 import { ACTIVITY_LABELS, alertText, capitalize } from '@/features/planning/labels';
 import { useChildProfile } from '@/features/profiles/api';
-import { preparePacks } from '@/features/study/api';
+import { printPacks } from '@/features/print/print-pack';
+import { preparePacks, usePacksForTasks } from '@/features/study/api';
 import { useTheme } from '@/hooks/use-theme';
 
 /** Planning de la semaine (F4) avec régulation de la charge (F8). Le parent valide avant publication. */
@@ -31,9 +34,16 @@ export default function PlanningScreen() {
   const tasks = useUpcomingTasks(childId);
   const sessions = useSessions(childId, today);
   const publish = usePublishPlan(childId);
+  const queryClient = useQueryClient();
   const [extraDates, setExtraDates] = useState<IsoDate[]>([]);
   const [preview, setPreview] = useState<WeekPlan | null>(null);
   const [preparing, setPreparing] = useState<{ done: number; total: number } | null>(null);
+  const [printError, setPrintError] = useState<string | null>(null);
+  // Fiches des tâches prévues dans le planning publié, pour les imprimer en une fois (F10).
+  const plannedTaskIds = [
+    ...new Set((sessions.data ?? []).flatMap((s) => s.study_session_task.map((i) => i.task_id))),
+  ];
+  const packs = usePacksForTasks(plannedTaskIds);
 
   if (child.isLoading || tasks.isLoading || sessions.isLoading) {
     return (
@@ -112,7 +122,11 @@ export default function PlanningScreen() {
                   if (toStudy.length > 0) {
                     setPreparing({ done: 0, total: toStudy.length });
                     preparePacks(toStudy, (done) => setPreparing({ done, total: toStudy.length })).finally(
-                      () => setPreparing(null),
+                      () => {
+                        setPreparing(null);
+                        // Les fiches viennent d'être préparées : la carte « Version papier » peut les proposer.
+                        void queryClient.invalidateQueries({ queryKey: ['study_packs'] });
+                      },
                     );
                   }
                 },
@@ -162,6 +176,45 @@ export default function PlanningScreen() {
           />
         ))
       )}
+
+      {(packs.data?.length ?? 0) > 0 ? (
+        <ThemedView type="backgroundElement" style={styles.card}>
+          <ThemedText type="smallBold">Version papier</ThemedText>
+          <ThemedText type="small" themeColor="textSecondary">
+            {profile.preferences.prefersPaper
+              ? `${profile.alias} préfère travailler sur papier : imprimez les fiches de la semaine en une fois.`
+              : 'Toutes les fiches de la semaine dans un seul document, chacune avec ses réponses à part.'}
+          </ThemedText>
+          <Button
+            variant={profile.preferences.prefersPaper ? 'primary' : 'secondary'}
+            label={`Imprimer les fiches de la semaine (${packs.data!.length})`}
+            onPress={async () => {
+              setPrintError(null);
+              const byTask = new Map(tasks.data!.map((t) => [t.id, t]));
+              const items = packs
+                .data!.filter((p) => !p.content.topicUnclear && byTask.has(p.task_id))
+                .sort((a, b) => byTask.get(a.task_id)!.dueDate.localeCompare(byTask.get(b.task_id)!.dueDate))
+                .map((p) => {
+                  const task = byTask.get(p.task_id)!;
+                  return {
+                    pack: p.content,
+                    meta: {
+                      subject: task.subject,
+                      description: task.description,
+                      dueLabel: formatShortDate(task.dueDate),
+                    },
+                  };
+                });
+              try {
+                await printPacks(items, deriveLearningSettings(profile));
+              } catch {
+                setPrintError("L'impression a échoué. Réessayez.");
+              }
+            }}
+          />
+          {printError ? <ThemedText themeColor="danger">{printError}</ThemedText> : null}
+        </ThemedView>
+      ) : null}
 
       {tasks.data.length > 0 ? (
         <ThemedView type="backgroundElement" style={styles.card}>

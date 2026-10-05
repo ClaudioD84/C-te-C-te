@@ -1,4 +1,4 @@
-import { GRADE_LABELS, NEED_LABELS } from '@cote-a-cote/shared';
+import { avatarOf, GRADE_LABELS, NEED_LABELS } from '@cote-a-cote/shared';
 import { Link, router } from 'expo-router';
 import { ActivityIndicator, StyleSheet, View } from 'react-native';
 
@@ -28,7 +28,9 @@ function ChildCard({ child }: { child: StoredChildProfile }) {
   const needs = child.needs.map((n) => NEED_LABELS[n]).join(', ');
   return (
     <ThemedView type="backgroundElement" style={styles.card}>
-      <ThemedText type="subtitle">{child.alias}</ThemedText>
+      <ThemedText type="subtitle">
+        {avatarOf(child.avatar).emoji} {child.alias}
+      </ThemedText>
       <ThemedText themeColor="textSecondary">
         {GRADE_LABELS[child.grade]}
         {needs ? ` · ${needs}` : ''}

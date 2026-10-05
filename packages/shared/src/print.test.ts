@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest';
 
 import { deriveLearningSettings } from './learning-settings';
-import { buildPackHtml } from './print';
+import { buildPackHtml, buildPacksHtml } from './print';
 import type { StudyPack } from './study-pack';
 
 const pack: StudyPack = {
@@ -61,5 +61,26 @@ describe('export PDF', () => {
     expect(answers).toBeGreaterThan(html.indexOf('Quel fleuve ?'));
     expect(html.slice(answers)).toContain('Sambre');
     expect(html.slice(0, answers)).not.toContain('Sambre');
+  });
+
+  it('réunit plusieurs fiches dans un document, chacune sur une nouvelle page', () => {
+    const settings = deriveLearningSettings({ grade: 'P5', needs: [], preferences });
+    const html = buildPacksHtml(
+      [
+        { pack, meta },
+        {
+          pack: { ...pack, fiche: { ...pack.fiche!, title: 'Les fractions' } },
+          meta: { ...meta, subject: 'Mathématiques' },
+        },
+      ],
+      settings,
+      options,
+    );
+    expect(html.match(/<!doctype html>/g)).toHaveLength(1);
+    expect(html).toContain('Les &lt;fleuves&gt;');
+    expect(html).toContain('Les fractions');
+    expect(html).toContain('<div class="new-page"></div>');
+    // Les réponses de chaque fiche restent à la fin de sa fiche.
+    expect(html.match(/<h2>Réponses<\/h2>/g)).toHaveLength(2);
   });
 });

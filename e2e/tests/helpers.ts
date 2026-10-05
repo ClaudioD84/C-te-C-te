@@ -37,6 +37,13 @@ export async function signUp(page: Page, prefix: string): Promise<string> {
   return email;
 }
 
+/** Titre de la carte d'un enfant dans le cockpit : « <avatar> <pseudonyme> ». */
+export function childTitle(page: Page, alias: string) {
+  return page.getByRole('heading', {
+    name: new RegExp(`^\\S+ ${alias.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}$`),
+  });
+}
+
 /** Famille du parent inscrit avec cette adresse. */
 export function familyOf(email: string): string {
   return sql(
@@ -61,7 +68,7 @@ export async function addChild(
   for (const need of needs) await page.getByRole('checkbox', { name: need }).click();
   if (needs.length > 0) await page.getByRole('checkbox', { name: /J'accepte/ }).click();
   await button(page, 'Enregistrer').click();
-  await expect(page.getByText(alias, { exact: true })).toBeVisible();
+  await expect(childTitle(page, alias)).toBeVisible();
   return { childId: childOf(email, alias), familyId: familyOf(email) };
 }
 

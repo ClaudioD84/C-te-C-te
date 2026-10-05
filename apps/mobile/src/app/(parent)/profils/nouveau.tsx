@@ -4,10 +4,10 @@ import { Button } from '@/components/button';
 import { Screen } from '@/components/screen';
 import { ThemedText } from '@/components/themed-text';
 import { useCreateChildProfile } from '@/features/profiles/api';
-import { ProfileFields, useProfileForm } from '@/features/profiles/profile-form';
+import { DEFAULT_PROFILE_VALUES, ProfileFields, useProfileForm } from '@/features/profiles/profile-form';
 
 export default function NewChildProfileScreen() {
-  const form = useProfileForm({ alias: '', grade: 'P1', track: 'general', needs: [] });
+  const form = useProfileForm(DEFAULT_PROFILE_VALUES);
   const createProfile = useCreateChildProfile();
 
   async function save() {

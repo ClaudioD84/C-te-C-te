@@ -63,6 +63,7 @@ export function useGeneratePack(taskId: string) {
     onSuccess: (pack) => {
       queryClient.setQueryData(['study_pack', taskId], pack);
       queryClient.invalidateQueries({ queryKey: ['flashcards'] });
+      queryClient.invalidateQueries({ queryKey: ['study_packs'] });
       // Le serveur a pu rattacher la tâche au programme (F2).
       queryClient.invalidateQueries({ queryKey: ['task_curriculum', taskId] });
       queryClient.invalidateQueries({ queryKey: ['curriculum_seen'] });
@@ -221,4 +222,20 @@ export async function prefetchForOffline(
 ) {
   const taskIds = [...new Set(sessions.flatMap((s) => s.study_session_task.map((i) => i.task_id)))];
   await Promise.all(taskIds.map((id) => queryClient.prefetchQuery(studyPackQuery(id))));
+}
+
+/** Fiches déjà préparées pour une liste de tâches (impression de la semaine). */
+export function usePacksForTasks(taskIds: readonly string[]) {
+  return useQuery({
+    queryKey: ['study_packs', [...taskIds].sort()],
+    enabled: taskIds.length > 0,
+    queryFn: async (): Promise<StoredPack[]> => {
+      const { data, error } = await supabase
+        .from('study_pack')
+        .select('id, task_id, content, created_at, reported_at')
+        .in('task_id', [...taskIds]);
+      if (error) throw error;
+      return data.map((row) => ({ ...row, content: studyPackSchema.parse(row.content) }));
+    },
+  });
 }

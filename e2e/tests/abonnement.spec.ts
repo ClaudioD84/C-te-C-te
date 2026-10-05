@@ -1,6 +1,6 @@
 import { expect, test } from '@playwright/test';
 
-import { button, signUp, sql } from './helpers';
+import { button, signUp, sql, childTitle } from './helpers';
 
 test('essai, achat simulé de la formule Solo et limite d’un enfant', async ({ page }) => {
   const email = await signUp(page, 'abonnement');
@@ -20,7 +20,7 @@ test('essai, achat simulé de la formule Solo et limite d’un enfant', async ({
     await button(page, 'Ajouter un enfant').click();
     await page.getByLabel("Pseudonyme de l'enfant").fill(alias);
     await button(page, 'Enregistrer').click();
-    if (alias === 'Ours') await expect(page.getByText('Ours', { exact: true })).toBeVisible();
+    if (alias === 'Ours') await expect(childTitle(page, 'Ours')).toBeVisible();
   }
   await expect(page.getByText(/formule Solo concerne un seul enfant/)).toBeVisible();
 });

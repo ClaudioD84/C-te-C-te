@@ -58,6 +58,13 @@ export const NETWORKS = [
 export const networkSchema = z.enum(NETWORKS);
 export type Network = z.infer<typeof networkSchema>;
 
+export const NETWORK_LABELS: Record<Network, string> = {
+  wbe: 'Wallonie-Bruxelles Enseignement',
+  libre_confessionnel: 'Libre confessionnel',
+  officiel_subventionne: 'Officiel subventionné (communes, provinces)',
+  libre_non_confessionnel: 'Libre non confessionnel',
+};
+
 /** Indique si un type d'enseignement est possible pour une année donnée. */
 export function isTrackAllowed(grade: Grade, track: Track): boolean {
   if (track === 'general' || track === 'specialise') {

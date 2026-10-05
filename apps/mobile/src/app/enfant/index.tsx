@@ -1,5 +1,6 @@
 import {
   ACTIVITY_PICTOGRAMS,
+  avatarOf,
   BADGES,
   deriveLearningSettings,
   subjectPictogram,
@@ -96,7 +97,9 @@ export default function ChildConsoleScreen() {
   return (
     <ThemedView style={styles.container}>
       <View style={styles.header}>
-        <ThemedText type="subtitle">Bonjour {child.data.alias} !</ThemedText>
+        <ThemedText type="subtitle">
+          {avatarOf(child.data.avatar).emoji} Bonjour {child.data.alias} !
+        </ThemedText>
         {parentButton}
       </View>
 
