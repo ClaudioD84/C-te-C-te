@@ -12,6 +12,7 @@ export default function ParentLayout() {
       <Stack.Screen name="planning/[childId]" options={{ title: 'Planning' }} />
       <Stack.Screen name="compte" options={{ title: 'Mon compte' }} />
       <Stack.Screen name="abonnement" options={{ title: 'Abonnement' }} />
+      <Stack.Screen name="rappels" options={{ title: 'Rappels' }} />
       <Stack.Screen name="programme/[childId]" options={{ title: "Programme de l'année" }} />
       <Stack.Screen name="paquet/[taskId]" options={{ title: 'Fiche et quiz' }} />
       <Stack.Screen name="examen/nouveau" options={{ title: 'Dossier de révision' }} />

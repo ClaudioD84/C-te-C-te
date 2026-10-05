@@ -9,6 +9,7 @@ export * from './planning';
 export * from './print';
 export * from './pomodoro';
 export * from './profile';
+export * from './reminders';
 export * from './revision';
 export * from './rewards';
 export * from './school';

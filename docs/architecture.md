@@ -238,6 +238,19 @@ Algorithme déterministe (`packages/shared/src/planning.ts`), exécuté dans l'a
 - **Déconnexion** : le cache et la file d'attente sont effacés.
 - Les fonctions du parent (photos, planning, fiches à préparer, épreuves) demandent le réseau.
 
+### 9.4 Rappels
+
+- **Notifications locales** (`expo-notifications`), programmées sur l'appareil : aucun serveur d'envoi,
+  aucun jeton de notification stocké. Réglages propres à chaque appareil (écran Rappels).
+- Rappels : mission du jour (pour l'enfant, à l'heure choisie, les jours où une mission reste à faire),
+  interrogations et examens (la veille ; une semaine avant pour CEB, CE1D, CESS et bilans), planning de la
+  semaine suivante non préparé, photos analysées en attente de validation.
+- **Heures calmes** : les rappels sont reportés au matin ; une mission tombant pendant ces heures est omise.
+- Calcul pur et testé (`packages/shared/src/reminders.ts`), au plus 50 rappels programmés (limite iOS : 64).
+  Reprogrammation à l'ouverture de l'application, au retour au premier plan, après la publication d'un
+  planning, la validation d'une photo et la création d'un dossier de révision ; effacement à la déconnexion.
+- Contenu sobre (écran verrouillé) : pseudonyme et matière seulement, jamais de donnée de santé.
+
 ## 10. Accessibilité dans l'application (F12)
 
 - Un **thème par profil** applique police, taille, interlignage, espacement des lettres et nombre d'éléments par écran.

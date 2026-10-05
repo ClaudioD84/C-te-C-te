@@ -3,6 +3,7 @@ import { FunctionsHttpError } from '@supabase/supabase-js';
 import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query';
 import * as Crypto from 'expo-crypto';
 
+import { syncReminders } from '@/features/reminders/sync';
 import { supabase } from '@/lib/supabase';
 
 import { renderMaskedJpeg, type PreparedImage } from './image';
@@ -187,6 +188,7 @@ export function useValidateScan(scanId: string) {
     onSuccess: () => {
       queryClient.invalidateQueries({ queryKey: ['scan', scanId] });
       queryClient.invalidateQueries({ queryKey: ['tasks'] });
+      void syncReminders();
     },
   });
 }

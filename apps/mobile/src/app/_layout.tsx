@@ -8,6 +8,8 @@ import { GestureHandlerRootView } from 'react-native-gesture-handler';
 
 import { SessionProvider, useSession } from '@/features/auth/session-provider';
 import { ChildModeProvider, useChildMode } from '@/features/child-mode/child-mode-provider';
+import { cancelAllReminders } from '@/features/reminders/notifications';
+import { useReminderSync } from '@/features/reminders/use-reminder-sync';
 import { logOutBilling } from '@/features/subscription/billing';
 import { clearOfflineCache, persistOptions, queryClient } from '@/lib/query-client';
 import { isSupabaseConfigured } from '@/lib/supabase';
@@ -22,6 +24,7 @@ function useClearCacheOnSignOut(signedIn: boolean, loading: boolean) {
     if (wasSignedIn.current && !signedIn) {
       clearOfflineCache();
       logOutBilling();
+      cancelAllReminders();
     }
     wasSignedIn.current = signedIn;
   }, [signedIn, loading]);
@@ -30,6 +33,7 @@ function useClearCacheOnSignOut(signedIn: boolean, loading: boolean) {
 function RootNavigator() {
   const { session, loading: sessionLoading } = useSession();
   useClearCacheOnSignOut(Boolean(session), sessionLoading);
+  useReminderSync(Boolean(session));
   const { activeChildId, loading: childModeLoading } = useChildMode();
   // En cas d'échec de chargement de la police, on continue avec la police système.
   const [fontsLoaded, fontError] = useFonts({ Lexend_400Regular, Lexend_600SemiBold });

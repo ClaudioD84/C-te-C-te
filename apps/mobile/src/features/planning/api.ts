@@ -11,6 +11,7 @@ import { queryOptions, useMutation, useQuery, useQueryClient } from '@tanstack/r
 import { randomUUID } from 'expo-crypto';
 
 import { OFFLINE_MUTATIONS, type CompleteItemVariables } from '@/features/offline/mutations';
+import { syncReminders } from '@/features/reminders/sync';
 import { supabase } from '@/lib/supabase';
 
 export interface UpcomingTask extends PlannableTask {
@@ -115,7 +116,10 @@ export function usePublishPlan(childId: string) {
       });
       if (error) throw error;
     },
-    onSuccess: () => queryClient.invalidateQueries({ queryKey: ['sessions', childId] }),
+    onSuccess: () => {
+      queryClient.invalidateQueries({ queryKey: ['sessions', childId] });
+      void syncReminders();
+    },
   });
 }
 

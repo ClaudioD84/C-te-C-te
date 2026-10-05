@@ -9,6 +9,7 @@ import {
 import { FunctionsHttpError } from '@supabase/supabase-js';
 import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query';
 
+import { syncReminders } from '@/features/reminders/sync';
 import { supabase } from '@/lib/supabase';
 
 export interface Exam {
@@ -100,6 +101,7 @@ export function useCreateExam(childId: string) {
     onSuccess: () => {
       queryClient.invalidateQueries({ queryKey: ['exams', childId] });
       queryClient.invalidateQueries({ queryKey: ['tasks', childId] });
+      void syncReminders();
     },
   });
 }
@@ -116,6 +118,7 @@ export function useDeleteExam(childId: string) {
       queryClient.invalidateQueries({ queryKey: ['exams', childId] });
       queryClient.invalidateQueries({ queryKey: ['tasks', childId] });
       queryClient.invalidateQueries({ queryKey: ['sessions', childId] });
+      void syncReminders();
     },
   });
 }
