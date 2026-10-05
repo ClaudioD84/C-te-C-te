@@ -10,6 +10,7 @@ import { Screen } from '@/components/screen';
 import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
 import { Spacing } from '@/constants/theme';
+import { useSeenExpectations } from '@/features/curriculum/api';
 import { useChildProfile } from '@/features/profiles/api';
 import { supabase } from '@/lib/supabase';
 
@@ -33,6 +34,7 @@ export default function ProgrammeScreen() {
   const track = child.data?.track;
   const [selected, setSelected] = useState<string>(CURRICULUM_SUBJECTS[0]);
   const [open, setOpen] = useState<ReadonlySet<string>>(new Set());
+  const seen = useSeenExpectations(childId ?? '');
 
   // Une matière à la fois, par pages : en fin de secondaire, une matière peut dépasser la limite d'une requête.
   const items = useQuery({
@@ -97,6 +99,9 @@ export default function ProgrammeScreen() {
         selected={[current]}
         onToggle={setSelected}
       />
+      <ThemedText type="small" themeColor="textSecondary">
+        ✓ : attendu déjà travaillé (leçons et devoirs rattachés au programme).
+      </ThemedText>
       {items.isLoading ? <ActivityIndicator /> : null}
       {!items.isLoading && rows.length === 0 ? (
         <ThemedText themeColor="textSecondary">
@@ -121,15 +126,19 @@ export default function ProgrammeScreen() {
                   </ThemedText>
                 </Pressable>
                 {expanded
-                  ? (children.get(competence.id) ?? []).map((attendu) => (
-                      <ThemedText
-                        key={attendu.id}
-                        type="small"
-                        themeColor="textSecondary"
-                        style={styles.indent}>
-                        • {attendu.label}
-                      </ThemedText>
-                    ))
+                  ? (children.get(competence.id) ?? []).map((attendu) => {
+                      const done = seen.data?.has(attendu.id) ?? false;
+                      return (
+                        <ThemedText
+                          key={attendu.id}
+                          type="small"
+                          themeColor={done ? 'primary' : 'textSecondary'}
+                          accessibilityLabel={done ? `${attendu.label}, déjà travaillé` : attendu.label}
+                          style={styles.indent}>
+                          {done ? '✓' : '•'} {attendu.label}
+                        </ThemedText>
+                      );
+                    })
                   : null}
               </View>
             );

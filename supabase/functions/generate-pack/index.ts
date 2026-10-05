@@ -13,7 +13,7 @@ import {
   curriculumSubjects,
   PACK_JSON_SCHEMA,
   PACK_SYSTEM_PROMPT,
-  parsePack,
+  parsePackResponse,
 } from '../_shared/pack.ts';
 import { estimateCostUsd } from '../_shared/pricing.ts';
 import { adminClient, authenticate } from '../_shared/supabase.ts';
@@ -39,7 +39,7 @@ Deno.serve(async (request) => {
 
     const { data: task } = await admin
       .from('task')
-      .select('id, child_id, subject, kind, description, reference, status')
+      .select('id, child_id, subject, kind, description, reference, status, curriculum_item_id')
       .eq('id', taskId)
       .eq('family_id', familyId)
       .maybeSingle();
@@ -80,7 +80,7 @@ Deno.serve(async (request) => {
 
     const { data: curriculum } = await admin
       .from('curriculum_item')
-      .select('label')
+      .select('id, label')
       .contains('grades', [child.grade])
       .contains('tracks', [child.track])
       .in('subject', curriculumSubjects(task.subject))
@@ -106,7 +106,7 @@ Deno.serve(async (request) => {
         },
       ],
     });
-    const content = parsePack(result.text);
+    const { content, curriculumIndex } = parsePackResponse(result.text, curriculum?.length ?? 0);
 
     // Régénération : l'ancien paquet et ses cartes sont remplacés.
     if (existing) await admin.from('study_pack').delete().eq('id', existing.id);
@@ -143,6 +143,15 @@ Deno.serve(async (request) => {
         })),
       );
       if (cardsError) throw cardsError;
+    }
+
+    // Rattachement au programme (F2), sans jamais remplacer un choix du parent.
+    if (curriculumIndex !== null && !task.curriculum_item_id) {
+      await admin
+        .from('task')
+        .update({ curriculum_item_id: curriculum![curriculumIndex]!.id })
+        .eq('id', task.id)
+        .is('curriculum_item_id', null);
     }
 
     await admin.from('ai_usage').insert({

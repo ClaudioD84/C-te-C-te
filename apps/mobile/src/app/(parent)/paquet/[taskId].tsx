@@ -10,6 +10,7 @@ import { TextField } from '@/components/text-field';
 import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
 import { Spacing } from '@/constants/theme';
+import { CurriculumLinkCard } from '@/features/curriculum/curriculum-link';
 import { printPack, sharePackPdf } from '@/features/print/print-pack';
 import { useChildProfile } from '@/features/profiles/api';
 import { useGeneratePack, useReportPack, useStudyPack } from '@/features/study/api';
@@ -71,6 +72,7 @@ export default function PackScreen() {
         {task.data.subject} · {TASK_KIND_LABELS[task.data.kind as keyof typeof TASK_KIND_LABELS]}
       </ThemedText>
       <ThemedText>{task.data.description}</ThemedText>
+      <CurriculumLinkCard taskId={task.data.id} grade={child.data.grade} track={child.data.track} />
 
       {!pack.data ? (
         <>

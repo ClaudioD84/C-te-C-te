@@ -63,6 +63,9 @@ export function useGeneratePack(taskId: string) {
     onSuccess: (pack) => {
       queryClient.setQueryData(['study_pack', taskId], pack);
       queryClient.invalidateQueries({ queryKey: ['flashcards'] });
+      // Le serveur a pu rattacher la tâche au programme (F2).
+      queryClient.invalidateQueries({ queryKey: ['task_curriculum', taskId] });
+      queryClient.invalidateQueries({ queryKey: ['curriculum_seen'] });
     },
   });
 }

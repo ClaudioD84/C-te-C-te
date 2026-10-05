@@ -30,6 +30,8 @@ const answers = {
   },
   topicUnclear: {
     topicUnclear: false,
+    // Premier attendu fourni (ou aucun s'il n'y en a pas : ignoré par le serveur).
+    curriculumMatch: 1,
     fiche: {
       title: 'Les fleuves de Belgique',
       sections: [

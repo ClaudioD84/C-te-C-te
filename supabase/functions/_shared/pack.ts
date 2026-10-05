@@ -48,6 +48,7 @@ const obj = (properties: Record<string, unknown>) => ({
 
 export const PACK_JSON_SCHEMA = obj({
   topicUnclear: { type: 'boolean' },
+  curriculumMatch: { anyOf: [{ type: 'integer' }, { type: 'null' }] },
   fiche: {
     anyOf: [
       obj({
@@ -89,7 +90,9 @@ Règles :
 4. Si la tâche ne permet pas de savoir quoi réviser (ex. « étudier p. 45 » sans sujet), mets "topicUnclear" à true,
    "fiche" à null et des listes vides.
 5. Respecte les adaptations demandées pour cet élève.
-6. Quantités : quiz 5 à 10 questions, cartes 6 à 15, exercices 4 à 8 (moins pour les petits niveaux).`;
+6. Quantités : quiz 5 à 10 questions, cartes 6 à 15, exercices 4 à 8 (moins pour les petits niveaux).
+7. "curriculumMatch" : le numéro de l'attendu du référentiel qui correspond le mieux à la tâche, ou null si
+   aucun ne correspond clairement (ou si aucun attendu n'est fourni).`;
 
 /**
  * Besoins particuliers traduits en consignes de rédaction. Minimisation (RGPD) : le trouble lui-même
@@ -120,12 +123,31 @@ export function buildPackRequest(input: {
   if (adaptations.length > 0) lines.push('Adaptations :', ...adaptations.map((a) => `- ${a}`));
   if (input.curriculum.length > 0) {
     lines.push(
-      'Attendus du référentiel officiel pour cette année et cette matière :',
-      ...input.curriculum.map((c) => `- ${c}`),
+      'Attendus du référentiel officiel pour cette année et cette matière (numérotés) :',
+      ...input.curriculum.map((c, i) => `${i + 1}. ${c}`),
     );
   }
   lines.push('Prépare le paquet d’étude.');
   return lines.join('\n');
+}
+
+const packResponseSchema = z
+  .object({ curriculumMatch: z.number().int().nullable().optional() })
+  .passthrough();
+
+/**
+ * Réponse de l'IA : le paquet d'étude, et l'attendu du référentiel auquel rattacher la tâche (F2).
+ * `curriculumIndex` est l'indice (à partir de 0) dans la liste envoyée, ou null si le numéro est absent ou hors liste.
+ */
+export function parsePackResponse(
+  text: string,
+  curriculumCount: number,
+): { content: StudyPack; curriculumIndex: number | null } {
+  const raw = JSON.parse(text);
+  const { curriculumMatch } = packResponseSchema.parse(raw);
+  const content = studyPackSchema.parse(raw);
+  const index = curriculumMatch == null ? null : curriculumMatch - 1;
+  return { content, curriculumIndex: index !== null && index >= 0 && index < curriculumCount ? index : null };
 }
 
 export function parsePack(text: string): StudyPack {

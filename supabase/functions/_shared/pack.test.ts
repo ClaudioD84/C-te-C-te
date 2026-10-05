@@ -1,6 +1,6 @@
 import { assertEquals, assertStringIncludes, assertThrows } from 'jsr:@std/assert@1';
 
-import { buildPackRequest, curriculumSubjects, parsePack } from './pack.ts';
+import { buildPackRequest, curriculumSubjects, parsePack, parsePackResponse } from './pack.ts';
 
 const valid = {
   topicUnclear: false,
@@ -63,4 +63,28 @@ Deno.test('correspondance des matières avec le référentiel', () => {
   assertEquals(curriculumSubjects('Sciences générales'), ['Sciences']);
   assertEquals(curriculumSubjects('Informatique'), ['Formation manuelle et technique']);
   assertEquals(curriculumSubjects('Latin'), ['Français']);
+});
+
+Deno.test('rattachement au programme : numéro de l’attendu converti en indice', () => {
+  const answer = (curriculumMatch: number | null) => JSON.stringify({ ...valid, curriculumMatch });
+  assertEquals(parsePackResponse(answer(2), 3).curriculumIndex, 1);
+  assertEquals(parsePackResponse(answer(null), 3).curriculumIndex, null);
+  // Numéro hors de la liste envoyée (ou liste vide) : pas de rattachement.
+  assertEquals(parsePackResponse(answer(4), 3).curriculumIndex, null);
+  assertEquals(parsePackResponse(answer(0), 3).curriculumIndex, null);
+  assertEquals(parsePackResponse(answer(1), 0).curriculumIndex, null);
+  // Le numéro ne fait pas partie du contenu enregistré.
+  assertEquals('curriculumMatch' in parsePackResponse(answer(2), 3).content, false);
+});
+
+Deno.test('les attendus sont numérotés dans la demande', () => {
+  const text = buildPackRequest({
+    grade: 'P5',
+    track: 'general',
+    needs: [],
+    task: { subject: 'Éveil', kind: 'lecon', description: 'Les fleuves', reference: null },
+    curriculum: ['Situer les principaux cours d’eau', 'Lire une carte'],
+  });
+  assertStringIncludes(text, '1. Situer les principaux cours d’eau');
+  assertStringIncludes(text, '2. Lire une carte');
 });
