@@ -10,6 +10,7 @@ import { Spacing } from '@/constants/theme';
 import { useChildMode } from '@/features/child-mode/child-mode-provider';
 import { hasParentCode } from '@/features/child-mode/parent-code-store';
 import { OfflineBanner } from '@/features/offline/offline-banner';
+import { FirstSteps } from '@/features/onboarding/first-steps';
 import { SubscriptionBanner } from '@/features/subscription/subscription-banner';
 import { useChildProfiles, type StoredChildProfile } from '@/features/profiles/api';
 
@@ -78,6 +79,7 @@ export default function CockpitScreen() {
       <OfflineBanner audience="parent" />
       <SubscriptionBanner />
       <ThemedText type="subtitle">Vos enfants</ThemedText>
+      {children ? <FirstSteps children={children} /> : null}
 
       {isLoading ? <ActivityIndicator /> : null}
       {error ? (
