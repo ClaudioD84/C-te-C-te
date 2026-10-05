@@ -8,6 +8,7 @@ import {
   publishPlanning,
   signUp,
   sql,
+  openTraining,
 } from './helpers';
 
 test('la mission du jour fonctionne hors connexion et se synchronise sans doublon', async ({
@@ -17,7 +18,7 @@ test('la mission du jour fonctionne hors connexion et se synchronise sans doublo
   const email = await signUp(page, 'hors-ligne');
   const { childId, familyId } = await addChild(page, email, 'Hibou');
   insertValidatedTasks(familyId, childId);
-  await publishPlanning(page, 'Hibou');
+  await publishPlanning(page, 'Hibou', childId);
   const sessionId = sql(
     `select id from study_session where child_id = '${childId}' and scheduled_on = (now() at time zone 'Europe/Brussels')::date`,
   );
@@ -33,11 +34,7 @@ test('la mission du jour fonctionne hors connexion et se synchronise sans doublo
 
   await context.setOffline(true);
   await expect(page.getByText(/Pas de connexion\. Tu peux continuer/)).toBeVisible();
-  const todo = await button(page, "C'est fait !").count();
-  await button(page, "C'est fait !").first().click();
-  await expect(button(page, "C'est fait !")).toHaveCount(todo - 1);
-
-  await button(page, "S'entraîner").first().click();
+  await openTraining(page);
   await expect(page.getByText('Les fleuves de Belgique', { exact: true })).toBeVisible();
   await page.getByRole('radio', { name: 'Quiz' }).click();
   await button(page, 'La Meuse').click();
@@ -46,6 +43,10 @@ test('la mission du jour fonctionne hors connexion et se synchronise sans doublo
   await button(page, 'Voir le résultat').click();
   await expect(page.getByText('Quiz terminé !')).toBeVisible();
   await button(page, 'Retour à la mission').click();
+  // Une activité cochée hors connexion disparaît tout de suite de l'écran.
+  const todo = await button(page, "C'est fait !").count();
+  await button(page, "C'est fait !").first().click();
+  await expect(button(page, "C'est fait !")).toHaveCount(todo - 1);
   while ((await button(page, "C'est fait !").count()) > 0) await button(page, "C'est fait !").first().click();
   await expect(page.getByText('Mission accomplie, bravo !')).toBeVisible();
 

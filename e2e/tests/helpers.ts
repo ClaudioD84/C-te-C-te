@@ -73,13 +73,21 @@ export function insertValidatedTasks(familyId: string, childId: string) {
     ('${familyId}', '${childId}', 'Éveil', 'lecon', 'Étudier la Meuse et l''Escaut', current_date + 1, null, 'validated')`);
 }
 
-/** Calcule et publie le planning de la semaine, puis attend la préparation des fiches. */
-export async function publishPlanning(page: Page, alias: string) {
+/**
+ * Calcule et publie le planning de la semaine, puis attend que les fiches des leçons et interrogations
+ * (préparées en arrière-plan par l'IA) soient enregistrées.
+ */
+export async function publishPlanning(page: Page, alias: string, childId: string) {
   await button(page, 'Planning de la semaine').click();
   await button(page, 'Calculer le planning').click();
   await expect(page.getByText('Proposition')).toBeVisible();
   await button(page, "Publier sur la console de l'enfant").click();
   await expect(page.getByText(`Semaine de ${alias}`)).toBeVisible();
+  await expect
+    .poll(() => Number(sql(`select count(*) from study_pack where child_id = '${childId}'`)), {
+      timeout: 60_000,
+    })
+    .toBeGreaterThanOrEqual(2);
   await expect(page.getByText(/Préparation des fiches/)).toHaveCount(0, { timeout: 60_000 });
 }
 
@@ -90,4 +98,23 @@ export async function enterChildMode(page: Page, alias: string) {
   await expect(page.getByText('Saisissez à nouveau')).toBeVisible();
   for (const digit of '2809') await button(page, digit).click();
   await expect(page.getByText(`Bonjour ${alias}`)).toBeVisible();
+}
+
+/**
+ * Ouvre l'entraînement de la première activité qui en propose un. Selon le profil (TDAH), la console n'affiche
+ * qu'une activité à la fois et l'ordre du jour varie : les activités « à faire » qui précèdent sont cochées.
+ */
+export async function openTraining(page: Page) {
+  for (let i = 0; i < 5; i++) {
+    const celebration = button(page, 'Super !');
+    if (await celebration.isVisible().catch(() => false)) await celebration.click();
+    const training = button(page, "S'entraîner").first();
+    if (await training.isVisible().catch(() => false)) {
+      await training.click();
+      return;
+    }
+    await button(page, "C'est fait !").first().click();
+    await page.waitForTimeout(500);
+  }
+  throw new Error('Aucune activité avec entraînement dans la mission du jour.');
 }

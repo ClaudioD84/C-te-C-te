@@ -1,7 +1,15 @@
 import AxeBuilder from '@axe-core/playwright';
 import { expect, test, type Page } from '@playwright/test';
 
-import { addChild, button, enterChildMode, insertValidatedTasks, publishPlanning, signUp } from './helpers';
+import {
+  addChild,
+  button,
+  enterChildMode,
+  insertValidatedTasks,
+  publishPlanning,
+  signUp,
+  openTraining,
+} from './helpers';
 
 /** Audit WCAG 2.2 AA (exigence 6.2) des écrans principaux, en thème clair et sombre. */
 async function audit(page: Page, screen: string) {
@@ -30,7 +38,7 @@ for (const colorScheme of ['light', 'dark'] as const) {
     const { childId, familyId } = await addChild(page, email, 'Castor', { needs: ['Dyslexie'] });
     await audit(page, 'cockpit');
     insertValidatedTasks(familyId, childId);
-    await publishPlanning(page, 'Castor');
+    await publishPlanning(page, 'Castor', childId);
     await audit(page, 'planning');
     await page.goBack();
 
@@ -50,7 +58,7 @@ for (const colorScheme of ['light', 'dark'] as const) {
 
     await enterChildMode(page, 'Castor');
     await audit(page, 'console enfant');
-    await button(page, "S'entraîner").first().click();
+    await openTraining(page);
     await expect(page.getByText('Les fleuves de Belgique', { exact: true })).toBeVisible();
     await audit(page, 'fiche');
     await page.getByRole('radio', { name: 'Quiz' }).click();

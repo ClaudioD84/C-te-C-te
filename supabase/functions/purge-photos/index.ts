@@ -1,4 +1,5 @@
 import { json } from '../_shared/http.ts';
+import { hasBearerSecret } from '../_shared/secret.ts';
 import { adminClient } from '../_shared/supabase.ts';
 
 /** Durée maximale de conservation d'une photo non traitée (échec, application fermée pendant l'envoi…). */
@@ -11,9 +12,7 @@ const BUCKET = 'scans';
  * Appelée par une tâche planifiée (Supabase > Integrations > Cron), protégée par le secret PURGE_SECRET.
  */
 Deno.serve(async (request) => {
-  const secret = Deno.env.get('PURGE_SECRET');
-  const given = request.headers.get('Authorization')?.replace(/^Bearer\s+/i, '');
-  if (!secret || given !== secret) return json({ error: 'Non autorisé' }, 401);
+  if (!hasBearerSecret(request, Deno.env.get('PURGE_SECRET'))) return json({ error: 'Non autorisé' }, 401);
 
   const admin = adminClient();
   const limit = new Date(Date.now() - MAX_AGE_HOURS * 3600 * 1000).toISOString();

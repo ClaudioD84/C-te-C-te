@@ -60,10 +60,12 @@ Deno.serve(async (request) => {
         .select('plan, status, current_period_end')
         .eq('family_id', familyId)
         .maybeSingle(),
+      // Quota compté sur le journal de consommation : supprimer une fiche ne rend pas de crédit.
       admin
-        .from('study_pack')
+        .from('ai_usage')
         .select('id', { count: 'exact', head: true })
         .eq('family_id', familyId)
+        .eq('function_name', 'generate-pack')
         .gte('created_at', startOfMonthBrussels(now)),
     ]);
     const problem = checkAccess(subscription as Subscription | null, count ?? 0, MONTHLY_PACK_QUOTA, now);

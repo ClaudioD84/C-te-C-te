@@ -110,3 +110,57 @@ test('conservation : compte inactif averti puis supprimé, journal de plus de 2 
   expect(touch.ok()).toBeTruthy();
   expect(sql(`select inactivity_warned_at is null from family where id = '${warned.familyId}'`)).toBe('t');
 });
+
+test('sécurité : chemin de photo d’une autre famille et contournement des quotas refusés', async ({
+  request,
+}) => {
+  const victim = await createParent(request);
+  const attacker = await createParent(request);
+  const child = await request.post(`${GATEWAY_URL}/rest/v1/child_profile`, {
+    headers: { ...headers(attacker.token), Prefer: 'return=representation' },
+    data: { alias: 'Pirate', grade: 'P5' },
+  });
+  const [{ id: childId }] = await child.json();
+
+  // Une numérisation pointant vers le dossier d'une autre famille est refusée.
+  const foreign = await request.post(`${GATEWAY_URL}/rest/v1/scan`, {
+    headers: headers(attacker.token),
+    data: {
+      child_id: childId,
+      document_type: 'journal_de_classe',
+      storage_path: `${victim.familyId}/photo.jpg`,
+    },
+  });
+  expect(foreign.ok()).toBeFalsy();
+
+  // Numérisation légitime, déjà analysée.
+  const scanId = crypto.randomUUID();
+  const created = await request.post(`${GATEWAY_URL}/rest/v1/scan`, {
+    headers: headers(attacker.token),
+    data: {
+      id: scanId,
+      child_id: childId,
+      document_type: 'journal_de_classe',
+      storage_path: `${attacker.familyId}/${scanId}.jpg`,
+    },
+  });
+  expect(created.status()).toBe(201);
+  sql(`update scan set status = 'draft', storage_path = null, processed_at = now() where id = '${scanId}'`);
+
+  const patch = (data: Record<string, unknown>) =>
+    request.patch(`${GATEWAY_URL}/rest/v1/scan?id=eq.${scanId}`, { headers: headers(attacker.token), data });
+  // Ni la date de traitement (quota), ni le chemin du fichier, ni un retour en arrière du statut.
+  expect((await patch({ processed_at: '2020-01-01T00:00:00Z' })).ok()).toBeFalsy();
+  expect((await patch({ storage_path: `${victim.familyId}/photo.jpg` })).ok()).toBeFalsy();
+  expect((await patch({ status: 'uploaded' })).ok()).toBeFalsy();
+  // La validation par le parent reste possible.
+  expect((await patch({ status: 'validated' })).ok()).toBeTruthy();
+  expect(sql(`select status from scan where id = '${scanId}'`)).toBe('validated');
+
+  // Le contenu d'une fiche générée n'est pas modifiable par le parent.
+  const pack = await request.patch(`${GATEWAY_URL}/rest/v1/study_pack?family_id=eq.${attacker.familyId}`, {
+    headers: headers(attacker.token),
+    data: { content: {} },
+  });
+  expect(pack.ok()).toBeFalsy();
+});

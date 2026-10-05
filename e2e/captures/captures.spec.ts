@@ -10,6 +10,7 @@ import {
   publishPlanning,
   signUp,
   sql,
+  openTraining,
 } from '../tests/helpers';
 
 /**
@@ -55,7 +56,7 @@ test('captures des stores', async ({ page }, testInfo) => {
   await shot('02-photo-analysee');
   await page.goto('/');
 
-  await publishPlanning(page, 'Petit Lion');
+  await publishPlanning(page, 'Petit Lion', childId);
   await shot('03-planning');
   await button(page, 'Éveil · Revoir les fleuves de Belgique').click();
   await expect(page.getByText('Les fleuves de Belgique', { exact: true })).toBeVisible();
@@ -71,7 +72,7 @@ test('captures des stores', async ({ page }, testInfo) => {
   await enterChildMode(page, 'Petit Lion');
   await dismissCelebration(page);
   await shot('06-mission-enfant');
-  await button(page, "S'entraîner").first().click();
+  await openTraining(page);
   await page.getByRole('radio', { name: 'Quiz' }).click();
   await button(page, 'La Meuse').click();
   await expect(page.getByText('Bonne réponse !')).toBeVisible();

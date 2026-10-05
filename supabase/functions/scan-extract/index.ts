@@ -51,6 +51,8 @@ Deno.serve(async (request) => {
       throw new UserFacingError('Cette photo est déjà en cours d’analyse ou a déjà été analysée.', 409);
     }
     if (!scan.storage_path) throw new UserFacingError('La photo a expiré. Reprenez-la.', 410);
+    // Défense en profondeur (voir la contrainte scan_storage_path_family) : jamais hors du dossier de la famille.
+    if (!scan.storage_path.startsWith(`${familyId}/`)) throw new UserFacingError('Photo introuvable.', 404);
 
     const now = new Date();
     const [{ data: subscription }, { count }] = await Promise.all([
@@ -59,12 +61,13 @@ Deno.serve(async (request) => {
         .select('plan, status, current_period_end')
         .eq('family_id', familyId)
         .maybeSingle(),
+      // Quota compté sur le journal de consommation, que seul le serveur écrit.
       admin
-        .from('scan')
+        .from('ai_usage')
         .select('id', { count: 'exact', head: true })
         .eq('family_id', familyId)
-        .in('status', ['draft', 'validated'])
-        .gte('processed_at', startOfMonthBrussels(now)),
+        .eq('function_name', 'scan-extract')
+        .gte('created_at', startOfMonthBrussels(now)),
     ]);
     const problem = checkScanAccess(subscription as Subscription | null, count ?? 0, now);
     if (problem) throw new UserFacingError(ACCESS_MESSAGES[problem], 402);

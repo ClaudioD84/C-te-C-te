@@ -6,6 +6,7 @@ import {
   type RevenueCatEvent,
 } from '../_shared/billing.ts';
 import { json } from '../_shared/http.ts';
+import { hasBearerSecret } from '../_shared/secret.ts';
 import { adminClient } from '../_shared/supabase.ts';
 
 /**
@@ -19,9 +20,8 @@ import { adminClient } from '../_shared/supabase.ts';
 Deno.serve(async (request) => {
   if (request.method !== 'POST') return json({ error: 'Méthode non autorisée' }, 405);
 
-  const secret = Deno.env.get('REVENUECAT_WEBHOOK_SECRET');
-  const given = request.headers.get('Authorization')?.replace(/^Bearer\s+/i, '');
-  if (!secret || !given || !timingSafeEqual(given, secret)) return json({ error: 'Non autorisé' }, 401);
+  if (!hasBearerSecret(request, Deno.env.get('REVENUECAT_WEBHOOK_SECRET')))
+    return json({ error: 'Non autorisé' }, 401);
 
   const body = (await request.json().catch(() => null)) as { event?: RevenueCatEvent } | null;
   const event = body?.event;
@@ -99,12 +99,4 @@ async function fetchState(familyId: string, apiKey: string, now: Date) {
   });
   if (!response.ok) throw new Error(`RevenueCat ${response.status}`);
   return stateFromSubscriber((await response.json()) as RcSubscriber, now);
-}
-
-function timingSafeEqual(a: string, b: string): boolean {
-  const ea = new TextEncoder().encode(a);
-  const eb = new TextEncoder().encode(b);
-  let diff = ea.length ^ eb.length;
-  for (let i = 0; i < Math.max(ea.length, eb.length); i++) diff |= (ea[i] ?? 0) ^ (eb[i] ?? 0);
-  return diff === 0;
 }

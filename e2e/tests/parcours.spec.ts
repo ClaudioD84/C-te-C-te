@@ -9,6 +9,7 @@ import {
   publishPlanning,
   signUp,
   sql,
+  openTraining,
 } from './helpers';
 
 test('parcours complet : profil, planning, fiches, console enfant, suivi, dossier de révision', async ({
@@ -35,7 +36,7 @@ test('parcours complet : profil, planning, fiches, console enfant, suivi, dossie
 
   await test.step('planning publié et fiches préparées par l’IA', async () => {
     insertValidatedTasks(familyId, childId);
-    await publishPlanning(page, 'Petit Lion');
+    await publishPlanning(page, 'Petit Lion', childId);
     expect(Number(sql(`select count(*) from study_session where child_id = '${childId}'`))).toBeGreaterThan(
       0,
     );
@@ -63,16 +64,7 @@ test('parcours complet : profil, planning, fiches, console enfant, suivi, dossie
     await page.reload();
     await expect(page.getByText('Bonjour Petit Lion')).toBeVisible();
 
-    await button(page, "C'est fait !").first().click();
-    await expect
-      .poll(() =>
-        sql(
-          `select count(*) from study_session_task st join study_session s on s.id = st.session_id where s.child_id = '${childId}' and st.done_at is not null`,
-        ),
-      )
-      .not.toBe('0');
-
-    await button(page, "S'entraîner").first().click();
+    await openTraining(page);
     await expect(page.getByText('Les fleuves de Belgique', { exact: true })).toBeVisible();
     await page.getByRole('radio', { name: 'Quiz' }).click();
     await button(page, 'La Meuse').click();
@@ -82,6 +74,15 @@ test('parcours complet : profil, planning, fiches, console enfant, suivi, dossie
     await button(page, 'Voir le résultat').click();
     await expect(page.getByText('Quiz terminé !')).toBeVisible();
     await button(page, 'Retour à la mission').click();
+    // L'ordre des activités du jour varie : on coche après l'entraînement.
+    await button(page, "C'est fait !").first().click();
+    await expect
+      .poll(() =>
+        sql(
+          `select count(*) from study_session_task st join study_session s on s.id = st.session_id where s.child_id = '${childId}' and st.done_at is not null`,
+        ),
+      )
+      .not.toBe('0');
 
     await button(page, /Cartes à revoir/).click();
     await page.getByRole('button', { name: /^Question :/ }).click();
@@ -103,7 +104,8 @@ test('parcours complet : profil, planning, fiches, console enfant, suivi, dossie
     const events = sql(
       `select string_agg(distinct type, ',' order by type) from learning_event where child_id = '${childId}'`,
     );
-    expect(events).toBe('activite,carte,quiz');
+    // « session » s'y ajoute quand toute la mission du jour a été faite (selon l'ordre des activités).
+    expect(events.split(',')).toEqual(expect.arrayContaining(['activite', 'carte', 'quiz']));
   });
 
   await test.step('suivi et dossier de révision', async () => {

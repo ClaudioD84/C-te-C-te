@@ -1,5 +1,6 @@
 import { z } from '../_shared/deps.ts';
 import { corsHeaders, json, UserFacingError } from '../_shared/http.ts';
+import { isLocalStack } from '../_shared/secret.ts';
 import { adminClient, authenticate } from '../_shared/supabase.ts';
 
 const bodySchema = z.object({ plan: z.enum(['solo', 'famille']), period: z.enum(['mois', 'annee']) });
@@ -11,7 +12,8 @@ const bodySchema = z.object({ plan: z.enum(['solo', 'famille']), period: z.enum(
  */
 Deno.serve(async (request) => {
   if (request.method === 'OPTIONS') return new Response('ok', { headers: corsHeaders });
-  if (Deno.env.get('ALLOW_SIMULATED_PURCHASES') !== 'true')
+  // Double verrou : activé explicitement ET sur une pile locale. Sur un projet hébergé, jamais d'abonnement gratuit.
+  if (Deno.env.get('ALLOW_SIMULATED_PURCHASES') !== 'true' || !isLocalStack(Deno.env.get('SUPABASE_URL')))
     return json({ error: 'Achats simulés désactivés.' }, 403);
 
   const admin = adminClient();
