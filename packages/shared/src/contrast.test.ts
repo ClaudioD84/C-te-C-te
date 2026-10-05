@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest';
 
 // Palette de l'application mobile (fichier sans dépendance).
-import { Colors } from '../../../apps/mobile/src/constants/colors';
+import { CHILD_PALETTES, Colors } from '../../../apps/mobile/src/constants/colors';
 import { contrastRatio } from './contrast';
 
 describe('contrastRatio', () => {
@@ -31,5 +31,19 @@ describe('palette (WCAG 2.2 AA)', () => {
         }
       }
     });
+  }
+});
+
+describe('couleurs préférées de l’enfant (WCAG 2.2 AA)', () => {
+  for (const [code, palette] of Object.entries(CHILD_PALETTES)) {
+    for (const mode of ['light', 'dark'] as const) {
+      it(`${code} (${mode})`, () => {
+        const { primary, onPrimary } = palette[mode];
+        for (const bg of ['background', 'backgroundElement', 'backgroundSelected'] as const) {
+          expect(contrastRatio(primary, Colors[mode][bg]), `sur ${bg}`).toBeGreaterThanOrEqual(4.5);
+        }
+        expect(contrastRatio(onPrimary, primary)).toBeGreaterThanOrEqual(4.5);
+      });
+    }
   }
 });

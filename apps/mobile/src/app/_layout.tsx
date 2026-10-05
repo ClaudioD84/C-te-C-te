@@ -8,6 +8,7 @@ import { GestureHandlerRootView } from 'react-native-gesture-handler';
 
 import { useActivityPing } from '@/features/account/use-activity-ping';
 import { SessionProvider, useSession } from '@/features/auth/session-provider';
+import { ChildColorProvider } from '@/features/child-mode/child-color';
 import { ChildModeProvider, useChildMode } from '@/features/child-mode/child-mode-provider';
 import { cancelAllReminders } from '@/features/reminders/notifications';
 import { useReminderSync } from '@/features/reminders/use-reminder-sync';
@@ -82,9 +83,11 @@ export default function RootLayout() {
         }}>
         <SessionProvider>
           <ChildModeProvider>
-            <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
-              <RootNavigator />
-            </ThemeProvider>
+            <ChildColorProvider>
+              <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
+                <RootNavigator />
+              </ThemeProvider>
+            </ChildColorProvider>
           </ChildModeProvider>
         </SessionProvider>
       </PersistQueryClientProvider>

@@ -22,6 +22,10 @@ test('accessoires de l’avatar : débloqués par l’effort, choisis par l’en
     .poll(() => sql(`select accessory from child_profile where id = '${childId}'`))
     .toBe('casquette');
 
+  // Couleur préférée : la couleur principale de la console change (contrastes vérifiés par test).
+  await page.getByRole('radio', { name: '🔵 Bleu' }).click();
+  await expect(button(page, 'Retour à la mission')).toHaveCSS('background-color', 'rgb(29, 95, 168)');
+
   await button(page, 'Retour à la mission').click();
   await expect(page.getByText(/🧢 Bonjour Renardeau/)).toBeVisible();
 });

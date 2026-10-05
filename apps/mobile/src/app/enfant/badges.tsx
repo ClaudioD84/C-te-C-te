@@ -9,6 +9,9 @@ import { Spacing } from '@/constants/theme';
 import { useChildMode } from '@/features/child-mode/child-mode-provider';
 import { useChildProfile } from '@/features/profiles/api';
 import { useRewards } from '@/features/rewards/api';
+import { ChoiceChips } from '@/components/choice-chips';
+import { CHILD_PALETTES, type ChildPaletteCode } from '@/constants/colors';
+import { useChildColor } from '@/features/child-mode/child-color';
 import { printCertificate } from '@/features/print/print-pack';
 import { AccessoryPicker, avatarWithAccessory } from '@/features/rewards/accessory-picker';
 import { AvatarProgress } from '@/features/rewards/avatar-progress';
@@ -18,6 +21,8 @@ export default function BadgesScreen() {
   const { activeChildId } = useChildMode();
   const child = useChildProfile(activeChildId ?? '');
   const { summary } = useRewards(activeChildId ?? '', child.data?.preferences.availableDays);
+  const { color, setColor } = useChildColor();
+  const paletteCodes = Object.keys(CHILD_PALETTES) as ChildPaletteCode[];
 
   if (!summary) {
     return (
@@ -39,6 +44,18 @@ export default function BadgesScreen() {
           {summary.currentStreak > 1 ? ` · série de ${summary.currentStreak} jours` : ''}
         </ThemedText>
         {child.data ? <AccessoryPicker child={child.data} summary={summary} /> : null}
+        <ChoiceChips
+          label="Ma couleur préférée"
+          options={paletteCodes}
+          labels={
+            Object.fromEntries(paletteCodes.map((c) => [c, CHILD_PALETTES[c].label])) as Record<
+              ChildPaletteCode,
+              string
+            >
+          }
+          selected={[color ?? 'vert']}
+          onToggle={setColor}
+        />
         {(Object.keys(BADGES) as BadgeCode[]).map((code) => {
           const badge = BADGES[code];
           const date = earned.get(code);

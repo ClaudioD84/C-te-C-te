@@ -33,3 +33,41 @@ export const Colors = {
     border: '#737C8A',
   },
 } as const;
+
+/**
+ * Couleur préférée de l'enfant pour sa console : remplace la couleur principale. Chaque variante respecte
+ * les mêmes contrastes que la palette (vérifiés par le même test).
+ */
+export const CHILD_PALETTES = {
+  vert: {
+    label: '🟢 Vert',
+    light: { primary: '#1A6B60', onPrimary: '#FFFFFF' },
+    dark: { primary: '#5CC2B2', onPrimary: '#0B1F1C' },
+  },
+  bleu: {
+    label: '🔵 Bleu',
+    light: { primary: '#1D5FA8', onPrimary: '#FFFFFF' },
+    dark: { primary: '#8EC5FF', onPrimary: '#0A1A2E' },
+  },
+  violet: {
+    label: '🟣 Violet',
+    light: { primary: '#6B3FA0', onPrimary: '#FFFFFF' },
+    dark: { primary: '#C9A8F5', onPrimary: '#1E0F33' },
+  },
+  rose: {
+    label: '🩷 Rose',
+    light: { primary: '#A3305F', onPrimary: '#FFFFFF' },
+    dark: { primary: '#F5A3C7', onPrimary: '#330A1C' },
+  },
+  orange: {
+    label: '🟠 Orange',
+    light: { primary: '#9A4508', onPrimary: '#FFFFFF' },
+    dark: { primary: '#F5B27A', onPrimary: '#2E1503' },
+  },
+  rouge: {
+    label: '🔴 Rouge',
+    light: { primary: '#B02A22', onPrimary: '#FFFFFF' },
+    dark: { primary: '#F7A59F', onPrimary: '#330B08' },
+  },
+} as const;
+export type ChildPaletteCode = keyof typeof CHILD_PALETTES;

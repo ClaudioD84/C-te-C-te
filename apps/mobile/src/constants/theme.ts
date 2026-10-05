@@ -2,9 +2,9 @@
 
 import { Platform } from 'react-native';
 
-import { Colors } from './colors';
+import { CHILD_PALETTES, Colors } from './colors';
 
-export { Colors };
+export { CHILD_PALETTES, Colors };
 
 export type ThemeColor = keyof typeof Colors.light & keyof typeof Colors.dark;
 
