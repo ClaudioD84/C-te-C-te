@@ -27,6 +27,17 @@ run 2022_REF_Lang-mod-LM.pdf lm-2022.json --mode generique --matiere "Langue mod
 run 2022_REF_Hist-geo-FHGES.pdf hg-2022.json --mode colonnes --matiere "Formation historique et géographique" \
   --prefixe HG --version 2022 \
   --titre "Référentiel de Formation historique, géographique, économique et sociale (tronc commun)"
+run 2022_REF_Edu-physique-EPS.pdf ep-2022.json --mode generique --sans-intertitres --matiere "Éducation physique" \
+  --prefixe EP --version 2022 --titre "Référentiel d'Éducation physique et à la santé (tronc commun)"
+run 2022_REF_Edu-cult-art-ECA.pdf ea-2022.json --mode generique --sans-intertitres \
+  --matiere "Éducation culturelle et artistique" --prefixe EA --version 2022 \
+  --titre "Référentiel d'Éducation culturelle et artistique (tronc commun)"
+run 2022_REF_Educa-Philo-EPC.pdf pc-2022.json --mode generique --sans-intertitres \
+  --matiere "Éducation à la philosophie et à la citoyenneté" --prefixe PC --version 2022 \
+  --titre "Référentiel d'Éducation à la philosophie et à la citoyenneté (tronc commun)"
+run 2022_REF_Manu-techn-FMTTN.pdf mt-2022.json --mode generique --sans-intertitres \
+  --matiere "Formation manuelle et technique" --prefixe MT --version 2022 \
+  --titre "Référentiel de Formation manuelle, technique, technologique et numérique (tronc commun)"
 run 2020_REF_Comp-initia-M1M3.pdf mat-2020.json --mode maternelle --ignorer "$TAGS" --matiere "Maternelle" \
   --niveau maternelle --prefixe MAT --version 2020 --titre "Référentiel des compétences initiales (maternelle, tronc commun)"
 

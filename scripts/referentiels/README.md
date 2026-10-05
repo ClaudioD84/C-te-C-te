@@ -13,6 +13,10 @@ pour la table `curriculum_item` (fonctionnalité F2).
 | `donnees/sc-2022.json` | Sciences | P1 → S3 | `generique` |
 | `donnees/lm-2022.json` | Langues modernes | P3 → S3 | `generique` |
 | `donnees/hg-2022.json` | Formation historique, géographique, économique et sociale | P1 → S3 | `colonnes` |
+| `donnees/ep-2022.json` | Éducation physique et à la santé | P1 → S3 | `generique --sans-intertitres` |
+| `donnees/ea-2022.json` | Éducation culturelle et artistique | P1 → S3 | `generique --sans-intertitres` |
+| `donnees/pc-2022.json` | Éducation à la philosophie et à la citoyenneté | P1 → S3 | `generique --sans-intertitres` |
+| `donnees/mt-2022.json` | Formation manuelle, technique, technologique et numérique | P1 → S3 | `generique --sans-intertitres` |
 
 Tout se régénère avec `scripts/referentiels/regenerer.sh <dossier des PDF>` (puis le SQL d'import).
 En maternelle, les attendus « M1-M2 » sont ceux de fin de 2e maternelle ; ils sont associés à M1 et M2.
@@ -22,8 +26,11 @@ Les intitulés sont recopiés mot pour mot depuis les PDF officiels publiés sur
 La découpe automatique peut couper un attendu en deux sur un saut de page ou rattacher un attendu
 au mauvais savoir : **une relecture reste nécessaire** avant la sortie publique.
 
-Pas encore importés : éducation physique, éducation culturelle et artistique, philosophie et citoyenneté
-et formation manuelle et technique en primaire et secondaire ; compétences terminales des 2e et 3e degrés.
+Tous les référentiels du tronc commun sont importés (10 998 entrées). Pas encore importés : les compétences
+terminales des 2e et 3e degrés du secondaire (S4 → S6/S7), publiées dans un autre format.
+
+Le référentiel d'éducation culturelle et artistique cite de nombreuses œuvres, artistes et lieux par année :
+une bonne source pour constituer la base de contenus culturels (`scripts/culture`).
 
 ## 0. Découper un PDF sans IA (recommandé quand la mise en page est reconnue)
 

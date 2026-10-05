@@ -64,7 +64,14 @@ def split_columns(line: str, split_min: int) -> tuple[str, str]:
 
 def join_lines(lines: list[str], vocabulary: Counter) -> str:
     text = ""
+    merged: list[str] = []
     for part in lines:
+        # Lettrine détachée : « - B » puis « allets (par ex. : …) » → « - Ballets (par ex. : …) ».
+        if merged and re.fullmatch(r"\s*-\s+[A-ZÉÈÀ]", merged[-1]) and part.strip()[:1].islower():
+            merged[-1] = merged[-1].rstrip() + part.strip()
+        else:
+            merged.append(part)
+    for part in merged:
         part = part.strip()
         if not text:
             text = part
@@ -78,10 +85,11 @@ def join_lines(lines: list[str], vocabulary: Counter) -> str:
             text = text + " " + part
     # Glyphes de puce du PDF : « - c \x07 onduites » → « - conduites » ; caractères invisibles retirés.
     # (sauf pour les mots d'une lettre : « - à la », « - a »).
-    text = re.sub(r"\b([^\W\dàôyÀ])\s*\x07\s*", r"\1", text).replace("\x07", "").replace("\xad", "").replace("\ufffd", "•").replace("\x84", "•")
+    text = re.sub(r"\b([^\W\dàôyÀ])\s*\x07\s*", r"\1", text).replace("\x07", "").replace("\xad", "").replace("\ufffd", "•").replace("\x84", "•").replace("\u200b", "")
     text = re.sub(r"\s+", " ", text).strip()
     # Lettres espacées par la mise en page du PDF : « - d es connecteurs » → « - des connecteurs ».
-    return re.sub(r"(?<=- )d (es|e|u)\b", r"d\1", text)
+    text = re.sub(r"(?<=- )d (es|e|u)\b", r"d\1", text)
+    return re.sub(r"(?<=- )([A-ZÉÈÀ]) (?=[a-zàâçéèêëîïôûù’'])", r"\1", text)
 
 
 def parse(lines: list[str]) -> list[dict]:
@@ -179,7 +187,9 @@ def remove_tags(line: str, tags: set[str]) -> str:
     return re.sub(pattern, lambda m: " " * len(m.group(0)), line)
 
 
-def parse_generic(lines: list[str], tags: set[str] | None = None, maternelle: bool = False) -> list[dict]:
+def parse_generic(
+    lines: list[str], tags: set[str] | None = None, maternelle: bool = False, drop_titles: bool = False
+) -> list[dict]:
     """
     Mise en page générique : tableaux à deux colonnes (savoir à gauche, attendu à droite)
     regroupés par année. La compétence est l'intitulé de gauche, l'attendu le paragraphe de droite.
@@ -203,7 +213,7 @@ def parse_generic(lines: list[str], tags: set[str] | None = None, maternelle: bo
         if paragraph and year and left_parts:
             text = join_lines(paragraph, vocabulary)
             # Intertitre centré (« Le vivant », « Orienter son écoute… ») : une seule ligne, sans ponctuation finale.
-            if maternelle and len(paragraph) == 1 and len(text) < 70 and not text.endswith((".", ":", ";", "?", "!", ")")):
+            if (maternelle or drop_titles) and len(paragraph) == 1 and len(text) < 70 and not text.endswith((".", ":", ";", "?", "!", ")")):
                 paragraph = []
                 return
             last = entries[-1] if entries else None
@@ -255,6 +265,8 @@ def parse_generic(lines: list[str], tags: set[str] | None = None, maternelle: bo
         if (
             year is None
             or is_chrome(line)
+            # Navigation propre au référentiel d'éducation physique.
+            or re.search(r"Habiletés sociomotrices et citoyenneté\s+Gestion de sa santé", line)
             or "✘" in line
             or "Tableau synoptique" in line
             or re.search(r"\bAttendus?\s*$", line)
@@ -268,7 +280,7 @@ def parse_generic(lines: list[str], tags: set[str] | None = None, maternelle: bo
         indent = len(line) - len(line.lstrip())
         left, right = split_columns(line, split_min)
         # Titres en majuscules (VIVANTS, PRIMAIRE…) : ce ne sont ni des savoirs ni des attendus.
-        if right and right.upper() == right and not any(c.isdigit() for c in right):
+        if right and len(right.strip("- ")) > 2 and right.upper() == right and not any(c.isdigit() for c in right):
             right = ""
         if left and left.upper() == left and len(left) > 3:
             flush()
@@ -442,6 +454,7 @@ def main():
     ap.add_argument("--niveau", default="primaire")
     ap.add_argument("--mode", choices=["champs", "generique", "colonnes", "maternelle"], default="champs")
     ap.add_argument("--ignorer", default="", help="étiquettes à ignorer, séparées par des virgules")
+    ap.add_argument("--sans-intertitres", action="store_true", help="écarter les intertitres d'une ligne")
     args = ap.parse_args()
     lines = pdf_text(args.pdf)
     tags = {t.strip() for t in args.ignorer.split(",") if t.strip()}
@@ -450,7 +463,7 @@ def main():
     elif args.mode == "maternelle":
         parsed = parse_generic(lines, tags, maternelle=True)
     else:
-        parsed = parse(lines) if args.mode == "champs" else parse_generic(lines, tags)
+        parsed = parse(lines) if args.mode == "champs" else parse_generic(lines, tags, drop_titles=args.sans_intertitres)
     entries = build(parsed, args.matiere, args.prefixe)
     if not entries:
         sys.exit("Aucun attendu trouvé : la mise en page du document n'est pas reconnue.")

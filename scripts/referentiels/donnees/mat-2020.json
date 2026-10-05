@@ -1494,7 +1494,7 @@
       "grades": [
         "M3"
       ],
-      "label": "Répondre aux questions : ui écrit à qui ? uoi ? our quoi (le but) ? ourquoi ?"
+      "label": "Répondre aux questions : - Qui écrit à qui ? - Quoi ? - Pour quoi (le but) ? - Pourquoi ?"
     },
     {
       "code": "MAT-M3-25-1",
@@ -7104,7 +7104,7 @@
       "grades": [
         "M3"
       ],
-      "label": "Associer des caractéristiques d’un animal à son milieu de vie : - un animal a des ailes et il peut voler ; - un animal a un bec et il peut prendre sa nourriture ;"
+      "label": "Associer des caractéristiques d’un animal à son milieu de vie : - un animal a des ailes et il peut voler ; - un animal a un bec et il peut prendre sa nourriture ; - …"
     },
     {
       "code": "MAT-C292",

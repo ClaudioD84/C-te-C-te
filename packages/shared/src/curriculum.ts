@@ -74,3 +74,16 @@ export function sortParentsFirst(entries: readonly CurriculumEntry[]): Curriculu
   };
   return [...entries].sort((a, b) => depth(a) - depth(b));
 }
+
+/** Matières des référentiels importés, dans l'ordre d'affichage. */
+export const CURRICULUM_SUBJECTS = [
+  'Français',
+  'Mathématiques',
+  'Sciences',
+  'Formation historique et géographique',
+  'Langue moderne',
+  'Éducation à la philosophie et à la citoyenneté',
+  'Éducation culturelle et artistique',
+  'Éducation physique',
+  'Formation manuelle et technique',
+] as const;

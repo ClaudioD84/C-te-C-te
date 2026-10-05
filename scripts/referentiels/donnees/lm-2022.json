@@ -9732,7 +9732,7 @@
       "grades": [
         "S3"
       ],
-      "label": "Les déterminants démonstratifs Les déterminants numéraux ordinaux de 0 à 31 Les déterminants numéraux ordinaux au-delà de 31"
+      "label": "Les déterminants démonstratifs Les déterminants numéraux ordinaux de 0 à 31 Les déterminants numéraux ordinaux au-delà de 31 Les déterminants numéraux cardinaux de 0 à 99 Les déterminants numéraux cardinaux au-delà de 99"
     },
     {
       "code": "LM-S3-239-1",
@@ -9742,7 +9742,7 @@
       "grades": [
         "S3"
       ],
-      "label": "Nom Akk Dat Gen Nom Akk Dat Gen Nom Akk Dat Gen"
+      "label": "Nom Akk Dat Gen Nom Akk Dat Gen Nom Akk Dat Gen X X"
     },
     {
       "code": "LM-C240",
@@ -9772,7 +9772,7 @@
       "grades": [
         "S3"
       ],
-      "label": "Le mot interrogatif « wer » Les pronoms possessifs et démonstratifs Le mot interrogatif « welch »"
+      "label": "La place de l’adjectif épithète L’accord de l’adjectif épithète Le mot interrogatif « wer » Les pronoms possessifs et démonstratifs Le mot interrogatif « welch »"
     },
     {
       "code": "LM-S3-241-1",
@@ -9782,7 +9782,7 @@
       "grades": [
         "S3"
       ],
-      "label": "Nom Akk Dat Gen Nom Akk Dat Gen Nom"
+      "label": "X X Nom Akk Dat Gen Nom Akk Dat Gen Nom"
     },
     {
       "code": "LM-C242",
@@ -9832,7 +9832,7 @@
       "grades": [
         "S3"
       ],
-      "label": "Les prépositions régissant un seul cas"
+      "label": "L’ordre des compléments non pronominalisés L’adjectif attribut Les prépositions régissant un seul cas Les prépositions mixtes"
     },
     {
       "code": "LM-S3-243-1",
@@ -9842,7 +9842,27 @@
       "grades": [
         "S3"
       ],
-      "label": "Akk Dat Gen"
+      "label": "X X Akk Dat Gen X"
+    },
+    {
+      "code": "LM-S3-243-2",
+      "parentCode": "LM-C243",
+      "kind": "attendu",
+      "subject": "Langue moderne",
+      "grades": [
+        "S3"
+      ],
+      "label": "A1 A2 A3 A4 A5 A6 A7 A8"
+    },
+    {
+      "code": "LM-S3-243-3",
+      "parentCode": "LM-C243",
+      "kind": "attendu",
+      "subject": "Langue moderne",
+      "grades": [
+        "S3"
+      ],
+      "label": "A1 A2.1 PRÉ-A1 (Expres- (Expres- A2.2 B1.1 B1.2 (Pas d’expression écrite) sion écrite : sion écrite :"
     },
     {
       "code": "LM-C244",
@@ -9852,7 +9872,7 @@
       "grades": [
         "S3"
       ],
-      "label": "• production très courte"
+      "label": "La proposition infinitive de but introduite « um … zu »"
     },
     {
       "code": "LM-S3-244-1",
@@ -9862,7 +9882,17 @@
       "grades": [
         "S3"
       ],
-      "label": "• production très courte • production très courte • production très courte • production courte et • production courte et • production constituée"
+      "label": "A1 A2 A3 A4 A5 A6 A7 A8"
+    },
+    {
+      "code": "LM-S3-244-2",
+      "parentCode": "LM-C244",
+      "kind": "attendu",
+      "subject": "Langue moderne",
+      "grades": [
+        "S3"
+      ],
+      "label": "A1 A2.1 PRÉ-A1 (Expres- (Expres- A2.2 B1.1 B1.2 (Pas d’expression écrite) sion écrite : sion écrite :"
     },
     {
       "code": "LM-C245",
@@ -9872,7 +9902,7 @@
       "grades": [
         "S3"
       ],
-      "label": "(3 ou 4 informations différentes) et très simple"
+      "label": "Les pronoms personnels sujets Les déterminants possessifs Les déterminants démonstratifs Les pronoms démonstratifs Les déterminants numéraux cardinaux (de 0 à 99) Les déterminants numéraux cardinaux (au-delà de 99) Les déterminants numéraux ordinaux (de 0 à 31) Les déterminants numéraux ordinaux (au-delà de 31) L’expression de la possession avec « ’s » et « of » L’adjectif épithète : place et invariabilité Les pronoms personnels compléments Les déterminants indéfinis : some/any, much/many/a lot of Les pronoms possessifs Les pronoms démonstratifs"
     },
     {
       "code": "LM-S3-245-1",
@@ -9882,7 +9912,7 @@
       "grades": [
         "S3"
       ],
-      "label": "(4 ou 5 informations (5 ou 6 informations (6 ou 7 informations simple, constituée simple, constituée de phrases articulées, différentes) et très différentes) et simple différentes) et simple, de phrases de phrases courtes, simples et complexes simple (éventuellement constituée de phrases courtes, simples articulées, simples et (un temps de parole des mots isolés) simples juxtaposées ou éventuellement, complexes (un temps d’environ 2 minutes) articulées (un temps de parole d’environ 2 de parole d’environ 1 minutes) minute)"
+      "label": "X X X X X X X X X X X X X X"
     },
     {
       "code": "LM-C246",
@@ -9892,7 +9922,7 @@
       "grades": [
         "S3"
       ],
-      "label": "• compréhensible par un destinataire attentif et proactif"
+      "label": "La proposition infinitive de but introduite par « to »"
     },
     {
       "code": "LM-S3-246-1",
@@ -9902,7 +9932,17 @@
       "grades": [
         "S3"
       ],
-      "label": "• compréhensible par un destinataire attentif et • compréhensible par un destinataire attentif et • compréhensible par un coopératif bienveillant destinataire bienveillant"
+      "label": "A1 A2 A3 A4 A5 A6 A7 A8"
+    },
+    {
+      "code": "LM-S3-246-2",
+      "parentCode": "LM-C246",
+      "kind": "attendu",
+      "subject": "Langue moderne",
+      "grades": [
+        "S3"
+      ],
+      "label": "A1 A2.1 PRÉ-A1 (Expres- (Expres- A2.2 B1.1 B1.2 (Pas d’expression écrite) sion écrite : sion écrite :"
     },
     {
       "code": "LM-C247",
@@ -9912,7 +9952,7 @@
       "grades": [
         "S3"
       ],
-      "label": "• pertinent par rapport au contexte • qui traduit la ou les intentions de communication • prévisible"
+      "label": "Les pronoms personnels sujets Les déterminants possessifs (mijn, je/jouw, uw, zijn, haar) Les déterminants démonstratifs Les pronoms démonstratifs Les déterminants numéraux cardinaux (de 0 à 99) Les déterminants numéraux cardinaux (au-delà de 99) Les déterminants numéraux ordinaux (de 0 à 31)"
     },
     {
       "code": "LM-S3-247-1",
@@ -9922,17 +9962,7 @@
       "grades": [
         "S3"
       ],
-      "label": "• pas entièrement prévisible • cohésion assurée • cohésion assurée par l’utilisation de connecteurs par l’utilisation de simples et pouvant entrainer une modification connecteurs simples syntaxique et n’impliquant pas de modification syntaxique"
-    },
-    {
-      "code": "LM-S3-247-2",
-      "parentCode": "LM-C247",
-      "kind": "attendu",
-      "subject": "Langue moderne",
-      "grades": [
-        "S3"
-      ],
-      "label": "A1 A2 A3 A4 A5 A6 A7 A8"
+      "label": "X X X X X X X"
     },
     {
       "code": "LM-C248",
@@ -9942,7 +9972,7 @@
       "grades": [
         "S3"
       ],
-      "label": "• sphère personnelle et familiale de base • sujets concrets directement liés à l’enfant, aux intérêts d’un enfant de cet âge"
+      "label": "L’OTT : les verbes pronominaux réfléchis Le rejet du verbe à l’infinitif Impératif : 2e personne du singulier et du pluriel L’expression « zou graag » + infinitif « zou moeten » pour exprimer un conseil"
     },
     {
       "code": "LM-S3-248-1",
@@ -9952,7 +9982,7 @@
       "grades": [
         "S3"
       ],
-      "label": "• sphère personnelle et familiale de base • sphère personnelle et • sphère personnelle et • sphère personnelle et • sujets concrets directement liés à l’enfant, aux familiale familiale et sociale de sociale intérêts de l’enfant et à son quotidien • vie quotidienne base • vie sociale et culturelle • sujets concrets • vie quotidienne • sujets concrets de la directement liés au • sujets concrets liés aux vie courante jeune, à ses intérêts et à intérêts des jeunes et"
+      "label": "X X X X X"
     },
     {
       "code": "LM-C249",
@@ -9962,7 +9992,7 @@
       "grades": [
         "S3"
       ],
-      "label": "• étendue des sujets :"
+      "label": "La proposition infinitive de but (om … te)"
     },
     {
       "code": "LM-S3-249-1",
@@ -9972,7 +10002,7 @@
       "grades": [
         "S3"
       ],
-      "label": "• étendue des sujets : • étendue des sujets : • étendue des sujets : • étendue des sujets : • étendue sujets : en • étendue des sujets :"
+      "label": "A1 A2 A3 A4 A5 A6 A7 A8"
     },
     {
       "code": "LM-C250",
@@ -9982,7 +10012,7 @@
       "grades": [
         "S3"
       ],
-      "label": "en lien avec le champ thématique « caractérisation"
+      "label": "• production très courte"
     },
     {
       "code": "LM-S3-250-1",
@@ -9992,17 +10022,7 @@
       "grades": [
         "S3"
       ],
-      "label": "en lien avec les en lien avec les en lien avec les en lien avec les lien avec les champs en lien avec les champs thématiques champs thématiques champs thématiques champs thématiques thématiques à champs thématiques à entretenir et ceux à entretenir et ceux à entretenir et ceux à entretenir et ceux entretenir et ceux à entretenir et ceux 4, 6, 7, 8, 10 et 12) 4, 6, 8, 9, 10 et 12) 5, 7, 9, 10, 11 et 12) 3, 4, 5, 6, 7, 8, 9, 10, 11 4, 5, 6, 7, 8, 9, 10 et 12) 4, 5, 7, 8, 9, 10, 11 et 12) et 12)"
-    },
-    {
-      "code": "LM-S3-250-2",
-      "parentCode": "LM-C250",
-      "kind": "attendu",
-      "subject": "Langue moderne",
-      "grades": [
-        "S3"
-      ],
-      "label": "A1 A2 A3 A4 A5 A6 A7 A8"
+      "label": "• production très courte • production très courte • production très courte • production courte et • production courte et • production constituée"
     },
     {
       "code": "LM-C251",
@@ -10012,7 +10032,7 @@
       "grades": [
         "S3"
       ],
-      "label": "Lexique usage correct d’un répertoire • de mots de base, de mots internationalement partagés et • d’expressions toutes faites en lien avec la sphère précitée Grammaire"
+      "label": "(3 ou 4 informations différentes) et très simple"
     },
     {
       "code": "LM-S3-251-1",
@@ -10022,7 +10042,7 @@
       "grades": [
         "S3"
       ],
-      "label": "Lexique Lexique usage correct d’un répertoire • usage correct d’un répertoire de mots et expressions en lien avec la sphère • de mots de base, de mots internationalement précitée partagés et • d’énoncés très courts (généralement des expressions idiomatiques et/ou routinisées) en lien avec la sphère précitée Grammaire Grammaire Grammaire Grammaire • utilisation de formes grammaticales simples et de • usage correct de • usage de structures simples et complexes structures syntaxiques mémorisées structures simples • utilisation adéquate (y compris leur implication • utilisation adéquate syntaxique éventuelle) de conjonctions et/ou de conjonctions et/ou d’organisateurs textuels d’organisateurs textuels n’impliquant pas de modification syntaxique"
+      "label": "(4 ou 5 informations (5 ou 6 informations (6 ou 7 informations simple, constituée simple, constituée de phrases articulées, différentes) et très différentes) et simple différentes) et simple, de phrases de phrases courtes, simples et complexes simple (éventuellement constituée de phrases courtes, simples articulées, simples et (un temps de parole des mots isolés) simples juxtaposées ou éventuellement, complexes (un temps d’environ 2 minutes) articulées (un temps de parole d’environ 2 de parole d’environ 1 minutes) minute)"
     },
     {
       "code": "LM-C252",
@@ -10032,7 +10052,7 @@
       "grades": [
         "S3"
       ],
-      "label": "Prononciation, intonation et débit • prononciation globalement compréhensible par un auditeur attentif et proactif"
+      "label": "• compréhensible par un destinataire attentif et proactif"
     },
     {
       "code": "LM-S3-252-1",
@@ -10042,7 +10062,7 @@
       "grades": [
         "S3"
       ],
-      "label": "Prononciation, intonation et débit Prononciation, intonation et débit • prononciation globalement compréhensible par un • prononciation globalement compréhensible, malgré un accent non natif marqué auditeur attentif et coopératif et malgré des erreurs qui peuvent parfois nuire à la communication • intonation adéquate, au service de l’intention communicative • débit lent et nombreuses pauses pour permettre à • débit relativement fluide, en dépit de pauses et • débit relativement l’élève de chercher ses mots, pour prononcer les d’hésitations fluide, en dépit de mots moins familiers pauses et d’hésitations occasionnelles"
+      "label": "• compréhensible par un destinataire attentif et • compréhensible par un destinataire attentif et • compréhensible par un coopératif bienveillant destinataire bienveillant"
     },
     {
       "code": "LM-C253",
@@ -10052,7 +10072,7 @@
       "grades": [
         "S3"
       ],
-      "label": "Correction sociolinguistique • utilisation correcte des formes de politesse les plus élémentaires"
+      "label": "• pertinent par rapport au contexte • qui traduit la ou les intentions de communication • prévisible"
     },
     {
       "code": "LM-S3-253-1",
@@ -10062,7 +10082,7 @@
       "grades": [
         "S3"
       ],
-      "label": "Correction Correction Correction sociolinguistique sociolinguistique sociolinguistique • utilisation correcte de • utilisation correcte de • utilisation correcte de marqueurs de relations marqueurs de relations marqueurs de relations sociales et de règles sociales et de règles sociales et de règles de politesse courants, de politesse courants, de politesse courants, dans un registre de dans un registre de dans un registre de langue adapté à la langue adapté à la langue adapté à la situation situation situation"
+      "label": "• pas entièrement prévisible • cohésion assurée • cohésion assurée par l’utilisation de connecteurs par l’utilisation de simples et pouvant entrainer une modification connecteurs simples syntaxique et n’impliquant pas de modification syntaxique"
     },
     {
       "code": "LM-S3-253-2",
@@ -10082,7 +10102,7 @@
       "grades": [
         "S3"
       ],
-      "label": "• quelques erreurs qui peuvent nécessiter"
+      "label": "• sphère personnelle et familiale de base • sujets concrets directement liés à l’enfant, aux intérêts d’un enfant de cet âge"
     },
     {
       "code": "LM-S3-254-1",
@@ -10092,7 +10112,7 @@
       "grades": [
         "S3"
       ],
-      "label": "• quelques erreurs qui • quelques erreurs qui • quelques erreurs qui • quelques erreurs élémentaires qui peuvent • quelques erreurs peuvent nécessiter peuvent nécessiter peuvent nécessiter nécessiter des efforts de compréhension de la part élémentaires qui ne"
+      "label": "• sphère personnelle et familiale de base • sphère personnelle et • sphère personnelle et • sphère personnelle et • sujets concrets directement liés à l’enfant, aux familiale familiale et sociale de sociale intérêts de l’enfant et à son quotidien • vie quotidienne base • vie sociale et culturelle • sujets concrets • vie quotidienne • sujets concrets de la directement liés au • sujets concrets liés aux vie courante jeune, à ses intérêts et à intérêts des jeunes et"
     },
     {
       "code": "LM-C255",
@@ -10102,7 +10122,7 @@
       "grades": [
         "S3"
       ],
-      "label": "des efforts de compréhension de la part du destinataire L’élève • s’exprime seul - devant une personne ou"
+      "label": "• étendue des sujets :"
     },
     {
       "code": "LM-S3-255-1",
@@ -10112,7 +10132,7 @@
       "grades": [
         "S3"
       ],
-      "label": "des efforts de des efforts de des efforts de du destinataire nécessitent pas d’effort compréhension de la compréhension de la compréhension de la • des pauses et des hésitations de compréhension de part du destinataire part du destinataire part du destinataire la part du destinataire • de nombreuses pauses • de nombreuses pauses • de nombreuses pauses • des pauses et pour permettre à l’élève pour permettre à l’élève pour permettre à l’élève des hésitations de chercher ses mots, de chercher ses mots, de chercher ses mots, occasionnelles pour prononcer les pour prononcer les pour prononcer les mots moins familiers mots moins familiers mots moins familiers L’élève L’élève • s’exprime seul • s’exprime seul - devant une personne ou - devant une personne (en présentiel ou en ligne) ou - devant un groupe et/ou - devant un groupe (en présentiel ou en ligne) ou"
+      "label": "• étendue des sujets : • étendue des sujets : • étendue des sujets : • étendue des sujets : • étendue sujets : en • étendue des sujets :"
     },
     {
       "code": "LM-C256",
@@ -10122,7 +10142,7 @@
       "grades": [
         "S3"
       ],
-      "label": "- devant un groupe • s’exprime de manière relativement spontanée et sommaire • s’appuie sur un support visuel (ex. : illustrations, posters) qui peut contenir quelques éléments textuels (ex. :"
+      "label": "en lien avec le champ thématique « caractérisation"
     },
     {
       "code": "LM-S3-256-1",
@@ -10132,7 +10152,17 @@
       "grades": [
         "S3"
       ],
-      "label": "- sous forme d’un enregistrement audio(visuel) - au téléphone • s’exprime de manière spontanée avec l’aide éventuelle d’un support visuel schématique (ex. : plan, diaporama, liste de mots clés, carte heuristique)"
+      "label": "en lien avec les en lien avec les en lien avec les en lien avec les lien avec les champs en lien avec les champs thématiques champs thématiques champs thématiques champs thématiques thématiques à champs thématiques à entretenir et ceux à entretenir et ceux à entretenir et ceux à entretenir et ceux entretenir et ceux à entretenir et ceux 4, 6, 7, 8, 10 et 12) 4, 6, 8, 9, 10 et 12) 5, 7, 9, 10, 11 et 12) 3, 4, 5, 6, 7, 8, 9, 10, 11 4, 5, 6, 7, 8, 9, 10 et 12) 4, 5, 7, 8, 9, 10, 11 et 12) et 12)"
+    },
+    {
+      "code": "LM-S3-256-2",
+      "parentCode": "LM-C256",
+      "kind": "attendu",
+      "subject": "Langue moderne",
+      "grades": [
+        "S3"
+      ],
+      "label": "A1 A2 A3 A4 A5 A6 A7 A8"
     },
     {
       "code": "LM-C257",
@@ -10142,7 +10172,7 @@
       "grades": [
         "S3"
       ],
-      "label": "mots clés, titre) • d"
+      "label": "Lexique usage correct d’un répertoire • de mots de base, de mots internationalement partagés et • d’expressions toutes faites en lien avec la sphère précitée Grammaire"
     },
     {
       "code": "LM-S3-257-1",
@@ -10152,7 +10182,7 @@
       "grades": [
         "S3"
       ],
-      "label": "• dispose en classe d’un bref temps pour réfléchir et/ou préparer son support"
+      "label": "Lexique Lexique usage correct d’un répertoire • usage correct d’un répertoire de mots et expressions en lien avec la sphère • de mots de base, de mots internationalement précitée partagés et • d’énoncés très courts (généralement des expressions idiomatiques et/ou routinisées) en lien avec la sphère précitée Grammaire Grammaire Grammaire Grammaire • utilisation de formes grammaticales simples et de • usage correct de • usage de structures simples et complexes structures syntaxiques mémorisées structures simples • utilisation adéquate (y compris leur implication • utilisation adéquate syntaxique éventuelle) de conjonctions et/ou de conjonctions et/ou d’organisateurs textuels d’organisateurs textuels n’impliquant pas de modification syntaxique"
     },
     {
       "code": "LM-C258",
@@ -10162,7 +10192,7 @@
       "grades": [
         "S3"
       ],
-      "label": "au besoin"
+      "label": "Prononciation, intonation et débit • prononciation globalement compréhensible par un auditeur attentif et proactif"
     },
     {
       "code": "LM-S3-258-1",
@@ -10172,17 +10202,7 @@
       "grades": [
         "S3"
       ],
-      "label": "• prendre en compte le destinataire du message • prendre en compte le • prendre en compte le destinataire du message destinataire du message et anticiper ses besoins d’information et ses et anticiper ses besoins réactions potentielles d’information et ses réactions potentielles • préparer la façon de communiquer les points importants du message, en mobilisant toutes les ressources disponibles"
-    },
-    {
-      "code": "LM-S3-258-2",
-      "parentCode": "LM-C258",
-      "kind": "attendu",
-      "subject": "Langue moderne",
-      "grades": [
-        "S3"
-      ],
-      "label": "A1 A2 A3 A4 A5 A6 A7 A8"
+      "label": "Prononciation, intonation et débit Prononciation, intonation et débit • prononciation globalement compréhensible par un • prononciation globalement compréhensible, malgré un accent non natif marqué auditeur attentif et coopératif et malgré des erreurs qui peuvent parfois nuire à la communication • intonation adéquate, au service de l’intention communicative • débit lent et nombreuses pauses pour permettre à • débit relativement fluide, en dépit de pauses et • débit relativement l’élève de chercher ses mots, pour prononcer les d’hésitations fluide, en dépit de mots moins familiers pauses et d’hésitations occasionnelles"
     },
     {
       "code": "LM-C259",
@@ -10192,7 +10212,7 @@
       "grades": [
         "S3"
       ],
-      "label": "• associer le non-verbal à la parole"
+      "label": "Correction sociolinguistique • utilisation correcte des formes de politesse les plus élémentaires"
     },
     {
       "code": "LM-S3-259-1",
@@ -10202,7 +10222,17 @@
       "grades": [
         "S3"
       ],
-      "label": "• associer le non-verbal voire l’écrit à la parole • faire appel à un mot internationalement partagé"
+      "label": "Correction Correction Correction sociolinguistique sociolinguistique sociolinguistique • utilisation correcte de • utilisation correcte de • utilisation correcte de marqueurs de relations marqueurs de relations marqueurs de relations sociales et de règles sociales et de règles sociales et de règles de politesse courants, de politesse courants, de politesse courants, dans un registre de dans un registre de dans un registre de langue adapté à la langue adapté à la langue adapté à la situation situation situation"
+    },
+    {
+      "code": "LM-S3-259-2",
+      "parentCode": "LM-C259",
+      "kind": "attendu",
+      "subject": "Langue moderne",
+      "grades": [
+        "S3"
+      ],
+      "label": "A1 A2 A3 A4 A5 A6 A7 A8"
     },
     {
       "code": "LM-C260",
@@ -10212,7 +10242,7 @@
       "grades": [
         "S3"
       ],
-      "label": "• production très courte (3 ou 4 informations"
+      "label": "• quelques erreurs qui peuvent nécessiter"
     },
     {
       "code": "LM-S3-260-1",
@@ -10222,7 +10252,7 @@
       "grades": [
         "S3"
       ],
-      "label": "• production très courte • production très courte • production très courte •production courte et • production courte et • production constituée (4 ou 5 informations (5 ou 6 informations (6 ou 7 informations simple, constituée de simple, constituée de phrases articulées,"
+      "label": "• quelques erreurs qui • quelques erreurs qui • quelques erreurs qui • quelques erreurs élémentaires qui peuvent • quelques erreurs peuvent nécessiter peuvent nécessiter peuvent nécessiter nécessiter des efforts de compréhension de la part élémentaires qui ne"
     },
     {
       "code": "LM-C261",
@@ -10232,7 +10262,7 @@
       "grades": [
         "S3"
       ],
-      "label": "différentes) et très simple"
+      "label": "des efforts de compréhension de la part du destinataire L’élève • s’exprime seul - devant une personne ou"
     },
     {
       "code": "LM-S3-261-1",
@@ -10242,7 +10272,7 @@
       "grades": [
         "S3"
       ],
-      "label": "différentes) et très différentes) et simple différentes) et simple, phrases courtes, simples de phrases courtes, simples et complexes simple (éventuellement constituée de phrases ou éventuellement, articulées, simples ou (un temps de parole des mots isolés) simples juxtaposées articulées (un temps de complexes (un temps d’environ 4 minutes par parole d’environ 1 minute de parole d’environ 3 intervenant, en fonction par intervenant, en fonc- minutes par intervenant, du sujet) tion du sujet) en fonction du sujet)"
+      "label": "des efforts de des efforts de des efforts de du destinataire nécessitent pas d’effort compréhension de la compréhension de la compréhension de la • des pauses et des hésitations de compréhension de part du destinataire part du destinataire part du destinataire la part du destinataire • de nombreuses pauses • de nombreuses pauses • de nombreuses pauses • des pauses et pour permettre à l’élève pour permettre à l’élève pour permettre à l’élève des hésitations de chercher ses mots, de chercher ses mots, de chercher ses mots, occasionnelles pour prononcer les pour prononcer les pour prononcer les mots moins familiers mots moins familiers mots moins familiers L’élève L’élève • s’exprime seul • s’exprime seul - devant une personne ou - devant une personne (en présentiel ou en ligne) ou - devant un groupe et/ou - devant un groupe (en présentiel ou en ligne) ou"
     },
     {
       "code": "LM-C262",
@@ -10252,7 +10282,7 @@
       "grades": [
         "S3"
       ],
-      "label": "• en réponse à des questions prévisibles et routinisées"
+      "label": "- devant un groupe • s’exprime de manière relativement spontanée et sommaire • s’appuie sur un support visuel (ex. : illustrations, posters) qui peut contenir quelques éléments textuels (ex. :"
     },
     {
       "code": "LM-S3-262-1",
@@ -10262,7 +10292,7 @@
       "grades": [
         "S3"
       ],
-      "label": "• prévisible • pas entièrement prévisible"
+      "label": "- sous forme d’un enregistrement audio(visuel) - au téléphone • s’exprime de manière spontanée avec l’aide éventuelle d’un support visuel schématique (ex. : plan, diaporama, liste de mots clés, carte heuristique)"
     },
     {
       "code": "LM-C263",
@@ -10272,7 +10302,7 @@
       "grades": [
         "S3"
       ],
-      "label": "• compréhensible par un destinataire attentif et proactif • pertinent par rapport au contexte • qui traduit la ou les intentions de communication • sphère personnelle et familiale de base • sujets concrets directement liés à l’enfant, aux intérêts d’un enfant de cet âge"
+      "label": "mots clés, titre) • d"
     },
     {
       "code": "LM-S3-263-1",
@@ -10282,7 +10312,7 @@
       "grades": [
         "S3"
       ],
-      "label": "• compréhensible par un destinataire attentif et coopératif • cohésion assurée • cohésion assurée par l’utilisation de connecteurs par l’utilisation de simples et pouvant entrainer une modification connecteurs simples syntaxique et n’impliquant pas de modification syntaxique • sphère personnelle et • sphère personnelle, fami- • sphère personnelle et familiale liale et sociale de base sociale • vie quotidienne • vie sociale et culturelle • sujets concrets directement liés à l’enfant, aux • sujets concrets • sujets concrets, habituels et quotidiens intérêts de l’enfant et à son quotidien directement liés au"
+      "label": "• dispose en classe d’un bref temps pour réfléchir et/ou préparer son support"
     },
     {
       "code": "LM-C264",
@@ -10292,7 +10322,7 @@
       "grades": [
         "S3"
       ],
-      "label": "• étendue des sujets : en lien avec les champs thématiques de P3 (1, 3, 5, 6, 7, 8, 11 et 12)"
+      "label": "au besoin"
     },
     {
       "code": "LM-S3-264-1",
@@ -10302,7 +10332,7 @@
       "grades": [
         "S3"
       ],
-      "label": "• étendue des sujets : • étendue des sujets : • étendue des sujets : • étendue des sujets : en • étendue des sujets : en • étendue des sujets : en lien avec les en lien avec les en lien avec les lien avec les champs lien avec les champs en lien avec les champs thématiques champs thématiques champs thématiques thématiques à entretenir thématique de S2 (1, champs thématiques à entretenir et ceux à entretenir et ceux à entretenir et ceux et ceux travaillés en S1 2, 3, 4, 5, 6, 7, 8, 9, 10 à entretenir et ceux 4, 6, 7, 8, 10 et 12) 4, 6, 8, 9, 10 et 12) 5, 7, 9, 10, 11 et 12) 11 et 12) 4, 5, 7, 8, 9, 10, 11 et 12)"
+      "label": "• prendre en compte le destinataire du message • prendre en compte le • prendre en compte le destinataire du message destinataire du message et anticiper ses besoins d’information et ses et anticiper ses besoins réactions potentielles d’information et ses réactions potentielles • préparer la façon de communiquer les points importants du message, en mobilisant toutes les ressources disponibles"
     },
     {
       "code": "LM-S3-264-2",
@@ -10322,7 +10352,7 @@
       "grades": [
         "S3"
       ],
-      "label": "• l’élève participe aux échanges sans les animer • l’interlocuteur, natif ou assimilé, - s’adresse directement à l’élève,"
+      "label": "• associer le non-verbal à la parole"
     },
     {
       "code": "LM-S3-265-1",
@@ -10332,7 +10362,7 @@
       "grades": [
         "S3"
       ],
-      "label": "• l’élève participe aux • l’élève participe aux • l’élève participe aux échanges et peut les échanges et peut les échanges et peut les animer ponctuellement animer ponctuellement animer • l’élève échange sans restituer intégralement un contenu appris par cœur • l’élève peut attirer • l’élève peut attirer • l’élève peut attirer l’attention de l’attention de l’attention de l’interlocuteur pour l’interlocuteur pour l’interlocuteur pour initier, la conversation initier, relancer la initier, relancer la conversation conversation • l’interlocuteur, natif ou assimilé, • l’interlocuteur, natif ou - s’adresse directement à l’élève, distinctement, lentement et simplement assimilé,"
+      "label": "• associer le non-verbal voire l’écrit à la parole • faire appel à un mot internationalement partagé"
     },
     {
       "code": "LM-C266",
@@ -10342,7 +10372,7 @@
       "grades": [
         "S3"
       ],
-      "label": "distinctement, lentement et simplement - se montre spontanément attentif et proactif (répétitions, reformulations, rectifications, non-verbal) - s’exprime dans une langue standard sans accent régional marqué qui constituerait un obstacle à la compréhension"
+      "label": "• production très courte (3 ou 4 informations"
     },
     {
       "code": "LM-S3-266-1",
@@ -10352,17 +10382,7 @@
       "grades": [
         "S3"
       ],
-      "label": "- se montre spontanément attentif et coopératif (répétitions, reformulations, rectifications, non-verbal) - s’adresse directement - s’exprime dans une langue standard sans accent régional marqué qui constituerait un obstacle à la compréhension à l’élève, distinctement et simplement - peut être amené, quand la communication est entravée, à répéter, reformuler, rectifier ou recourir au non-verbal - s’exprime dans une langue standard sans accent régional marqué qui constituerait un obstacle à la compréhension"
-    },
-    {
-      "code": "LM-S3-266-2",
-      "parentCode": "LM-C266",
-      "kind": "attendu",
-      "subject": "Langue moderne",
-      "grades": [
-        "S3"
-      ],
-      "label": "A1 A2 A3 A4 A5 A6 A7 A8"
+      "label": "• production très courte • production très courte • production très courte •production courte et • production courte et • production constituée (4 ou 5 informations (5 ou 6 informations (6 ou 7 informations simple, constituée de simple, constituée de phrases articulées,"
     },
     {
       "code": "LM-C267",
@@ -10372,7 +10392,7 @@
       "grades": [
         "S3"
       ],
-      "label": "Lexique usage correct d’un répertoire • de mots de base, de mots internationalement partagés • d’expressions toutes faites en lien avec la sphère précitée Grammaire"
+      "label": "différentes) et très simple"
     },
     {
       "code": "LM-S3-267-1",
@@ -10382,7 +10402,7 @@
       "grades": [
         "S3"
       ],
-      "label": "Lexique Lexique usage correct d’un répertoire • usage correct d’un répertoire de mots et expressions en lien avec la sphère • de mots de base, de mots internationalement précitée partagés • d’énoncés très courts (généralement des expressions idiomatiques et/ou routinisées) en lien avec la sphère précitée Grammaire Grammaire Grammaire Grammaire • utilisation de formes grammaticales simples et de • usage correct de • usage de structures • usage de structures structures syntaxiques mémorisées structures simples simples et complexes simples et complexes • utilisation adéquate • utilisation adéquate (y compris leur implication de conjonctions et/ou syntaxique éventuelle) de conjonctions et/ou d’organisateurs textuels d’organisateurs textuels n’impliquant pas de modification syntaxique"
+      "label": "différentes) et très différentes) et simple différentes) et simple, phrases courtes, simples de phrases courtes, simples et complexes simple (éventuellement constituée de phrases ou éventuellement, articulées, simples ou (un temps de parole des mots isolés) simples juxtaposées articulées (un temps de complexes (un temps d’environ 4 minutes par parole d’environ 1 minute de parole d’environ 3 intervenant, en fonction par intervenant, en fonc- minutes par intervenant, du sujet) tion du sujet) en fonction du sujet)"
     },
     {
       "code": "LM-C268",
@@ -10392,7 +10412,7 @@
       "grades": [
         "S3"
       ],
-      "label": "Prononciation, intonation et débit • prononciation globalement compréhensible par un auditeur attentif et proactif Correction sociolinguistique • utilisation correcte des formes de politesse les plus élémentaires"
+      "label": "• en réponse à des questions prévisibles et routinisées"
     },
     {
       "code": "LM-S3-268-1",
@@ -10402,27 +10422,7 @@
       "grades": [
         "S3"
       ],
-      "label": "Prononciation, intonation et débit Prononciation, intonation et débit Prononciation, • prononciation globalement compréhensible par un • prononciation globalement compréhensible, malgré intonation et débit auditeur attentif et coopératif un accent non-natif marqué et malgré des erreurs • prononciation qui peuvent parfois nuire à la communication globalement compréhensible, malgré un accent non natif marqué et malgré des erreurs qui peuvent parfois perturber la communication • intonation adéquate, au service de l’intention communicative • débit lent et nombreuses pauses pour permettre à • débit relativement fluide, en dépit de pauses et • débit relativement l’élève de chercher ses mots, pour prononcer les d’hésitations fluide, en dépit de mots moins familiers pauses et d’hésitations occasionnelles Correction sociolinguistique • utilisation correcte de marqueurs de relations sociales et de règles de politesse courants, dans un registre de langue adapté à la situation"
-    },
-    {
-      "code": "LM-S3-268-2",
-      "parentCode": "LM-C268",
-      "kind": "attendu",
-      "subject": "Langue moderne",
-      "grades": [
-        "S3"
-      ],
-      "label": "A1 A2 A3 A4 A5 A6 A7 A8"
-    },
-    {
-      "code": "LM-S3-254-2",
-      "parentCode": "LM-C254",
-      "kind": "attendu",
-      "subject": "Langue moderne",
-      "grades": [
-        "S3"
-      ],
-      "label": "• quelques erreurs qui peuvent nécessiter des efforts de compréhension de la • quelques erreurs élémentaires qui peuvent • quelques erreurs part du destinataire nécessiter des efforts de compréhension de la part élémentaires qui ne"
+      "label": "• prévisible • pas entièrement prévisible"
     },
     {
       "code": "LM-C269",
@@ -10432,7 +10432,7 @@
       "grades": [
         "S3"
       ],
-      "label": "des efforts de"
+      "label": "• compréhensible par un destinataire attentif et proactif • pertinent par rapport au contexte • qui traduit la ou les intentions de communication • sphère personnelle et familiale de base • sujets concrets directement liés à l’enfant, aux intérêts d’un enfant de cet âge"
     },
     {
       "code": "LM-S3-269-1",
@@ -10442,7 +10442,7 @@
       "grades": [
         "S3"
       ],
-      "label": "• de nombreuses pauses pour permettre à l’élève de chercher ses mots, pour du destinataire nécessitent pas d’effort"
+      "label": "• compréhensible par un destinataire attentif et coopératif • cohésion assurée • cohésion assurée par l’utilisation de connecteurs par l’utilisation de simples et pouvant entrainer une modification connecteurs simples syntaxique et n’impliquant pas de modification syntaxique • sphère personnelle et • sphère personnelle, fami- • sphère personnelle et familiale liale et sociale de base sociale • vie quotidienne • vie sociale et culturelle • sujets concrets directement liés à l’enfant, aux • sujets concrets • sujets concrets, habituels et quotidiens intérêts de l’enfant et à son quotidien directement liés au"
     },
     {
       "code": "LM-C270",
@@ -10452,7 +10452,7 @@
       "grades": [
         "S3"
       ],
-      "label": "compréhension de la part du destinataire L’élève • s’exprime en face à face réel ou virtuel"
+      "label": "• étendue des sujets : en lien avec les champs thématiques de P3 (1, 3, 5, 6, 7, 8, 11 et 12)"
     },
     {
       "code": "LM-S3-270-1",
@@ -10462,7 +10462,17 @@
       "grades": [
         "S3"
       ],
-      "label": "prononcer les mots moins familiers • des pauses et des hésitations de compréhension de la part du destinataire • des pauses et des hésitations occasionnelles L’élève L’élève L’élève • s’exprime en face à face • s’exprime en face à face • s’exprime seul devant réel ou virtuel, ou par réel ou virtuel, ou par une personne ou un téléphone téléphone groupe (en présentiel ou en ligne) ou au"
+      "label": "• étendue des sujets : • étendue des sujets : • étendue des sujets : • étendue des sujets : en • étendue des sujets : en • étendue des sujets : en lien avec les en lien avec les en lien avec les lien avec les champs lien avec les champs en lien avec les champs thématiques champs thématiques champs thématiques thématiques à entretenir thématique de S2 (1, champs thématiques à entretenir et ceux à entretenir et ceux à entretenir et ceux et ceux travaillés en S1 2, 3, 4, 5, 6, 7, 8, 9, 10 à entretenir et ceux 4, 6, 7, 8, 10 et 12) 4, 6, 8, 9, 10 et 12) 5, 7, 9, 10, 11 et 12) 11 et 12) 4, 5, 7, 8, 9, 10, 11 et 12)"
+    },
+    {
+      "code": "LM-S3-270-2",
+      "parentCode": "LM-C270",
+      "kind": "attendu",
+      "subject": "Langue moderne",
+      "grades": [
+        "S3"
+      ],
+      "label": "A1 A2 A3 A4 A5 A6 A7 A8"
     },
     {
       "code": "LM-C271",
@@ -10472,7 +10482,7 @@
       "grades": [
         "S3"
       ],
-      "label": "• s’exprime de manière relativement spontanée et sommaire"
+      "label": "• l’élève participe aux échanges sans les animer • l’interlocuteur, natif ou assimilé, - s’adresse directement à l’élève,"
     },
     {
       "code": "LM-S3-271-1",
@@ -10482,7 +10492,7 @@
       "grades": [
         "S3"
       ],
-      "label": "• s’exprime de manière relativement spontanée"
+      "label": "• l’élève participe aux • l’élève participe aux • l’élève participe aux échanges et peut les échanges et peut les échanges et peut les animer ponctuellement animer ponctuellement animer • l’élève échange sans restituer intégralement un contenu appris par cœur • l’élève peut attirer • l’élève peut attirer • l’élève peut attirer l’attention de l’attention de l’attention de l’interlocuteur pour l’interlocuteur pour l’interlocuteur pour initier, la conversation initier, relancer la initier, relancer la conversation conversation • l’interlocuteur, natif ou assimilé, • l’interlocuteur, natif ou - s’adresse directement à l’élève, distinctement, lentement et simplement assimilé,"
     },
     {
       "code": "LM-C272",
@@ -10492,7 +10502,7 @@
       "grades": [
         "S3"
       ],
-      "label": "• est amené à s’exprimer sur un nombre restreint d’éléments • dispose en classe d’un temps de réflexion et de préparation À visée informative • conversation"
+      "label": "distinctement, lentement et simplement - se montre spontanément attentif et proactif (répétitions, reformulations, rectifications, non-verbal) - s’exprime dans une langue standard sans accent régional marqué qui constituerait un obstacle à la compréhension"
     },
     {
       "code": "LM-S3-272-1",
@@ -10502,7 +10512,17 @@
       "grades": [
         "S3"
       ],
-      "label": "• s’exprime avec l’aide éventuelle d’un support visuel schématique (ex. : plan, illustrations, liste de mots clés, carte heuristique…) • dispose en classe d’un bref temps de réflexion et/ou de préparation de son support À visée informative À visée informative À visée informative À visée informative À visée informative À visée informative • conversation • conversation • conversation • conversation • conversation • conversation • dialogue • dialogue • dialogue • discussion formelle ou"
+      "label": "- se montre spontanément attentif et coopératif (répétitions, reformulations, rectifications, non-verbal) - s’adresse directement - s’exprime dans une langue standard sans accent régional marqué qui constituerait un obstacle à la compréhension à l’élève, distinctement et simplement - peut être amené, quand la communication est entravée, à répéter, reformuler, rectifier ou recourir au non-verbal - s’exprime dans une langue standard sans accent régional marqué qui constituerait un obstacle à la compréhension"
+    },
+    {
+      "code": "LM-S3-272-2",
+      "parentCode": "LM-C272",
+      "kind": "attendu",
+      "subject": "Langue moderne",
+      "grades": [
+        "S3"
+      ],
+      "label": "A1 A2 A3 A4 A5 A6 A7 A8"
     },
     {
       "code": "LM-C273",
@@ -10512,7 +10532,7 @@
       "grades": [
         "S3"
       ],
-      "label": "CA • audio et audiovisuel, enregistré ou en présentiel"
+      "label": "Lexique usage correct d’un répertoire • de mots de base, de mots internationalement partagés • d’expressions toutes faites en lien avec la sphère précitée Grammaire"
     },
     {
       "code": "LM-S3-273-1",
@@ -10522,7 +10542,7 @@
       "grades": [
         "S3"
       ],
-      "label": "Compréhension à l’Audition PRÉ-A1 A1 A2.1 A2.2 B1.1 B1.2"
+      "label": "Lexique Lexique usage correct d’un répertoire • usage correct d’un répertoire de mots et expressions en lien avec la sphère • de mots de base, de mots internationalement précitée partagés • d’énoncés très courts (généralement des expressions idiomatiques et/ou routinisées) en lien avec la sphère précitée Grammaire Grammaire Grammaire Grammaire • utilisation de formes grammaticales simples et de • usage correct de • usage de structures • usage de structures structures syntaxiques mémorisées structures simples simples et complexes simples et complexes • utilisation adéquate • utilisation adéquate (y compris leur implication de conjonctions et/ou syntaxique éventuelle) de conjonctions et/ou d’organisateurs textuels d’organisateurs textuels n’impliquant pas de modification syntaxique"
     },
     {
       "code": "LM-C274",
@@ -10532,7 +10552,7 @@
       "grades": [
         "S3"
       ],
-      "label": "• longueur : message bref (monologue ou dialogue"
+      "label": "Prononciation, intonation et débit • prononciation globalement compréhensible par un auditeur attentif et proactif Correction sociolinguistique • utilisation correcte des formes de politesse les plus élémentaires"
     },
     {
       "code": "LM-S3-274-1",
@@ -10542,7 +10562,27 @@
       "grades": [
         "S3"
       ],
-      "label": "• longueur : message • longueur : support • longueur : support • longueur : support • longueur : support d’une longueur globale d’une longueur globale"
+      "label": "Prononciation, intonation et débit Prononciation, intonation et débit Prononciation, • prononciation globalement compréhensible par un • prononciation globalement compréhensible, malgré intonation et débit auditeur attentif et coopératif un accent non-natif marqué et malgré des erreurs • prononciation qui peuvent parfois nuire à la communication globalement compréhensible, malgré un accent non natif marqué et malgré des erreurs qui peuvent parfois perturber la communication • intonation adéquate, au service de l’intention communicative • débit lent et nombreuses pauses pour permettre à • débit relativement fluide, en dépit de pauses et • débit relativement l’élève de chercher ses mots, pour prononcer les d’hésitations fluide, en dépit de mots moins familiers pauses et d’hésitations occasionnelles Correction sociolinguistique • utilisation correcte de marqueurs de relations sociales et de règles de politesse courants, dans un registre de langue adapté à la situation"
+    },
+    {
+      "code": "LM-S3-274-2",
+      "parentCode": "LM-C274",
+      "kind": "attendu",
+      "subject": "Langue moderne",
+      "grades": [
+        "S3"
+      ],
+      "label": "A1 A2 A3 A4 A5 A6 A7 A8"
+    },
+    {
+      "code": "LM-S3-260-2",
+      "parentCode": "LM-C260",
+      "kind": "attendu",
+      "subject": "Langue moderne",
+      "grades": [
+        "S3"
+      ],
+      "label": "• quelques erreurs qui peuvent nécessiter des efforts de compréhension de la • quelques erreurs élémentaires qui peuvent • quelques erreurs part du destinataire nécessiter des efforts de compréhension de la part élémentaires qui ne"
     },
     {
       "code": "LM-C275",
@@ -10552,7 +10592,7 @@
       "grades": [
         "S3"
       ],
-      "label": "d’environ 20 à 30 mots) • authentique simple, simplifié ou conçu dans une visée éducative au départ d’un message authentique"
+      "label": "des efforts de"
     },
     {
       "code": "LM-S3-275-1",
@@ -10562,7 +10602,7 @@
       "grades": [
         "S3"
       ],
-      "label": "bref (monologue ou d’une longueur globale d’une longueur globale dialogue d’environ 30 à d’environ 50 à 100 mots d’environ 150 mots d’environ 200 mots d’environ 250 mots 50 mots) • structure : les informations suivent un ordre logique • authentique ou"
+      "label": "• de nombreuses pauses pour permettre à l’élève de chercher ses mots, pour du destinataire nécessitent pas d’effort"
     },
     {
       "code": "LM-C276",
@@ -10572,7 +10612,7 @@
       "grades": [
         "S3"
       ],
-      "label": "• prévisible"
+      "label": "compréhension de la part du destinataire L’élève • s’exprime en face à face réel ou virtuel"
     },
     {
       "code": "LM-S3-276-1",
@@ -10582,37 +10622,7 @@
       "grades": [
         "S3"
       ],
-      "label": "• contenu pas"
-    },
-    {
-      "code": "LM-S3-248-2",
-      "parentCode": "LM-C248",
-      "kind": "attendu",
-      "subject": "Langue moderne",
-      "grades": [
-        "S3"
-      ],
-      "label": "• sphère personnelle et • sphère personnelle, • sphère personnelle et familiale familiale et sociale de sociale base • sujets concrets directement liés à l’enfant, aux • sujets concrets • sujets concrets, • sujets concrets de la intérêts de l’enfant et à son quotidien directement liés au habituels et quotidiens vie courante jeune, à ses intérêts et ceux de ses proches"
-    },
-    {
-      "code": "LM-S3-264-3",
-      "parentCode": "LM-C264",
-      "kind": "attendu",
-      "subject": "Langue moderne",
-      "grades": [
-        "S3"
-      ],
-      "label": "• étendue des sujets : • étendue des sujets : • étendue des sujets : • étendue des sujets : • étendue des sujets : • étendue des sujets : en lien avec les en lien avec les en lien avec les en lien avec les en lien avec les en lien avec les champs thématiques champs thématiques champs thématiques champs thématiques champs thématiques champs thématiques à entretenir et ceux à entretenir et ceux à entretenir et ceux à entretenir et ceux à entretenir et ceux à entretenir et ceux 4, 6, 7, 8, 10 et 12) 4, 6, 8, 9, 10 et 12) 5, 7, 9, 10, 11 et 12) 3, 4, 5, 6, 7, 8, 9, 10, 11 4, 5, 6, 7, 8, 9, 10 et 12) 4, 5, 7, 8, 9, 10, 11 et 12) et 12)"
-    },
-    {
-      "code": "LM-S3-264-4",
-      "parentCode": "LM-C264",
-      "kind": "attendu",
-      "subject": "Langue moderne",
-      "grades": [
-        "S3"
-      ],
-      "label": "A1 A2 A3 A4 A5 A6 A7 A8"
+      "label": "prononcer les mots moins familiers • des pauses et des hésitations de compréhension de la part du destinataire • des pauses et des hésitations occasionnelles L’élève L’élève L’élève • s’exprime en face à face • s’exprime en face à face • s’exprime seul devant réel ou virtuel, ou par réel ou virtuel, ou par une personne ou un téléphone téléphone groupe (en présentiel ou en ligne) ou au"
     },
     {
       "code": "LM-C277",
@@ -10622,7 +10632,7 @@
       "grades": [
         "S3"
       ],
-      "label": "CA Lexique le message doit être constitué • d’un répertoire de mots de base, de mots internationalement partagés • d’expressions toutes faites en lien avec la sphère précitée Grammaire"
+      "label": "• s’exprime de manière relativement spontanée et sommaire"
     },
     {
       "code": "LM-S3-277-1",
@@ -10632,7 +10642,7 @@
       "grades": [
         "S3"
       ],
-      "label": "Compréhension à l’Audition PRÉ-A1 A1 A2.1 A2.2 B1.1 B1.2 Lexique Lexique Lexique le message doit être le message doit être le message doit être constitué constitué exprimé dans une langue • de vocabulaire très • de vocabulaire fréquent standard fréquent • d’énoncés très courts (généralement des • d’expressions simples expressions idiomatiques et/ou routinisées) en lien avec la sphère précitée Grammaire Grammaire Grammaire • support caractérisé par • support caractérisé par • support caractérisé par - des formes grammaticales simples et - des structures simples - des structures simples et complexes - des structures syntaxiques mémorisées - des conjonctions - des conjonctions et/ou des organisateurs textuels et/ou des (y compris leur implication syntaxique)"
+      "label": "• s’exprime de manière relativement spontanée"
     },
     {
       "code": "LM-C278",
@@ -10642,7 +10652,7 @@
       "grades": [
         "S3"
       ],
-      "label": "Prononciation, intonation et débit Le locuteur, natif ou assimilé, s’exprime • clairement et distinctement • avec un débit très lent • avec un accent ne nuisant pas à la compréhension Correction sociolinguistique • l’élève comprend les formes de politesse les plus élémentaires"
+      "label": "• est amené à s’exprimer sur un nombre restreint d’éléments • dispose en classe d’un temps de réflexion et de préparation À visée informative • conversation"
     },
     {
       "code": "LM-S3-278-1",
@@ -10652,17 +10662,7 @@
       "grades": [
         "S3"
       ],
-      "label": "Prononciation, intonation et débit Prononciation, intonation et débit Prononciation, Le locuteur, Le locuteur, intonation et débit natif ou assimilé, s’exprime natif ou assimilé, s’exprime Le locuteur, • clairement et distinctement • clairement et distinctement natif ou assimilé, • avec un débit lent • avec un débit modéré s’exprime • avec un accent ne nuisant pas à la compréhension • avec un accent ne nuisant pas à la compréhension • clairement • avec un débit naturel • avec un accent ne nuisant pas à la compréhension Correction sociolinguistique • l’élève comprend les marqueurs de relations sociales et de règles de politesse courants, dans un registre adapté à la situation"
-    },
-    {
-      "code": "LM-S3-278-2",
-      "parentCode": "LM-C278",
-      "kind": "attendu",
-      "subject": "Langue moderne",
-      "grades": [
-        "S3"
-      ],
-      "label": "A1 A2 A3 A4 A5 A6 A7 A8"
+      "label": "• s’exprime avec l’aide éventuelle d’un support visuel schématique (ex. : plan, illustrations, liste de mots clés, carte heuristique…) • dispose en classe d’un bref temps de réflexion et/ou de préparation de son support À visée informative À visée informative À visée informative À visée informative À visée informative À visée informative • conversation • conversation • conversation • conversation • conversation • conversation • dialogue • dialogue • dialogue • discussion formelle ou"
     },
     {
       "code": "LM-C279",
@@ -10672,7 +10672,7 @@
       "grades": [
         "S3"
       ],
-      "label": "CA • enregistré ou en présentiel"
+      "label": "CA • audio et audiovisuel, enregistré ou en présentiel"
     },
     {
       "code": "LM-S3-279-1",
@@ -10682,7 +10682,7 @@
       "grades": [
         "S3"
       ],
-      "label": "Compréhension à l’Audition PRÉ-A1 A1 A2.1 A2.2 B1.1 B1.2 • enregistré (avec un minimum de bruits de fond) ou en présentiel"
+      "label": "Compréhension à l’Audition PRÉ-A1 A1 A2.1 A2.2 B1.1 B1.2"
     },
     {
       "code": "LM-C280",
@@ -10692,7 +10692,7 @@
       "grades": [
         "S3"
       ],
-      "label": "• émis dans de bonnes conditions sonores • soutien - message répété (idéalement 2 auditions) - illustration par des gestes ou des images facilitant la compréhension À visée informative • monologue • chanson, histoire contée"
+      "label": "• longueur : message bref (monologue ou dialogue"
     },
     {
       "code": "LM-S3-280-1",
@@ -10702,7 +10702,7 @@
       "grades": [
         "S3"
       ],
-      "label": "• soutien - message répété (idéalement 2 auditions) - illustration par des gestes ou des supports visuels facilitant la compréhension À visée informative À visée informative À visée informative À visée informative À visée informative À visée informative ou dialogue • monologue ou • monologue ou dialogue • monologue ou dialogue • extrait d’émission TV et • extrait d’émission TV et • récit (fictif ou réel) comptine, dialogue • chanson, comptine, • chanson, comptine, de film de film • relativement court • chanson, comptine, histoire contée histoire contée • conversation, échanges • conversation • conversation"
+      "label": "• longueur : message • longueur : support • longueur : support • longueur : support • longueur : support d’une longueur globale d’une longueur globale"
     },
     {
       "code": "LM-C281",
@@ -10712,7 +10712,7 @@
       "grades": [
         "S3"
       ],
-      "label": "• document (dessin animé, série, émission, jeux) À visée injonctive"
+      "label": "d’environ 20 à 30 mots) • authentique simple, simplifié ou conçu dans une visée éducative au départ d’un message authentique"
     },
     {
       "code": "LM-S3-281-1",
@@ -10722,7 +10722,7 @@
       "grades": [
         "S3"
       ],
-      "label": "audiovisuel histoire contée • document audiovisuel • document audiovisuel sociaux • interview • message sur boite • document audiovisuel (dessin animé, série, (dessin animé, série, • visite guidée • bulletin d’information vocale (dessin animé, série, émission, jeux, selfie) émission, jeux, selfie) • interview • selfie-vidéo • interview émission, jeux) • bulletin d’information • court récit (fictif ou réel) • annonce publique ou À visée injonctive À visée injonctive • selfie-vidéo • message sur boite privée"
+      "label": "bref (monologue ou d’une longueur globale d’une longueur globale dialogue d’environ 30 à d’environ 50 à 100 mots d’environ 150 mots d’environ 200 mots d’environ 250 mots 50 mots) • structure : les informations suivent un ordre logique • authentique ou"
     },
     {
       "code": "LM-C282",
@@ -10732,7 +10732,7 @@
       "grades": [
         "S3"
       ],
-      "label": "consignes, en classe ou dans un tutoriel"
+      "label": "• prévisible"
     },
     {
       "code": "LM-S3-282-1",
@@ -10742,7 +10742,37 @@
       "grades": [
         "S3"
       ],
-      "label": "À visée injonctive • consignes, instructions • consignes, instructions • court récit vocale • chanson • consignes, en classe relatives à l’environne- relatives à l’environne- • message sur boite • annonce publique ou • témoignage ou dans un tutoriel ment immédiat ment immédiat vocale privée • spot publicitaire • annonce courte, par • annonce courte, par • annonce publique ou • courte publicité • bulletin d’information exemple, dans une gare exemple, dans une gare privée • chanson • exposé relativement court ou un magasin ou un magasin • chanson • audioguide • tutoriel • tutoriel À visée injonctive • extrait d’une émission À visée injonctive • annonce TV et d’un film • annonce • instruction, consigne • (extrait de) documentaire • instruction, consigne • recette de cuisine • conversation • message sur boite • itinéraire simple • interview vocale • message sur boite • témoignage • selfie-vidéo vocale • tutoriel • selfie-vidéo À visée injonctive • tutoriel • annonce • instruction, consigne • itinéraire détaillé • message sur boite vocale • spot publicitaire"
+      "label": "• contenu pas"
+    },
+    {
+      "code": "LM-S3-254-2",
+      "parentCode": "LM-C254",
+      "kind": "attendu",
+      "subject": "Langue moderne",
+      "grades": [
+        "S3"
+      ],
+      "label": "• sphère personnelle et • sphère personnelle, • sphère personnelle et familiale familiale et sociale de sociale base • sujets concrets directement liés à l’enfant, aux • sujets concrets • sujets concrets, • sujets concrets de la intérêts de l’enfant et à son quotidien directement liés au habituels et quotidiens vie courante jeune, à ses intérêts et ceux de ses proches"
+    },
+    {
+      "code": "LM-S3-270-3",
+      "parentCode": "LM-C270",
+      "kind": "attendu",
+      "subject": "Langue moderne",
+      "grades": [
+        "S3"
+      ],
+      "label": "• étendue des sujets : • étendue des sujets : • étendue des sujets : • étendue des sujets : • étendue des sujets : • étendue des sujets : en lien avec les en lien avec les en lien avec les en lien avec les en lien avec les en lien avec les champs thématiques champs thématiques champs thématiques champs thématiques champs thématiques champs thématiques à entretenir et ceux à entretenir et ceux à entretenir et ceux à entretenir et ceux à entretenir et ceux à entretenir et ceux 4, 6, 7, 8, 10 et 12) 4, 6, 8, 9, 10 et 12) 5, 7, 9, 10, 11 et 12) 3, 4, 5, 6, 7, 8, 9, 10, 11 4, 5, 6, 7, 8, 9, 10 et 12) 4, 5, 7, 8, 9, 10, 11 et 12) et 12)"
+    },
+    {
+      "code": "LM-S3-270-4",
+      "parentCode": "LM-C270",
+      "kind": "attendu",
+      "subject": "Langue moderne",
+      "grades": [
+        "S3"
+      ],
+      "label": "A1 A2 A3 A4 A5 A6 A7 A8"
     },
     {
       "code": "LM-C283",
@@ -10752,7 +10782,7 @@
       "grades": [
         "S3"
       ],
-      "label": "CA"
+      "label": "CA Lexique le message doit être constitué • d’un répertoire de mots de base, de mots internationalement partagés • d’expressions toutes faites en lien avec la sphère précitée Grammaire"
     },
     {
       "code": "LM-S3-283-1",
@@ -10762,7 +10792,7 @@
       "grades": [
         "S3"
       ],
-      "label": "Compréhension à l’Audition PRÉ-A1 A1 A2.1 A2.2 B1.1 B1.2 A. Cadrer • identifier les informations essentielles dans la • sur la base des éléments disponibles avant l’écoute (titre, éléments visuels éventuels) consigne - anticiper le contenu du message - anticiper les éléments lexicaux du message B. Formuler des hypothèses"
+      "label": "Compréhension à l’Audition PRÉ-A1 A1 A2.1 A2.2 B1.1 B1.2 Lexique Lexique Lexique le message doit être le message doit être le message doit être constitué constitué exprimé dans une langue • de vocabulaire très • de vocabulaire fréquent standard fréquent • d’énoncés très courts (généralement des • d’expressions simples expressions idiomatiques et/ou routinisées) en lien avec la sphère précitée Grammaire Grammaire Grammaire • support caractérisé par • support caractérisé par • support caractérisé par - des formes grammaticales simples et - des structures simples - des structures simples et complexes - des structures syntaxiques mémorisées - des conjonctions - des conjonctions et/ou des organisateurs textuels et/ou des (y compris leur implication syntaxique)"
     },
     {
       "code": "LM-C284",
@@ -10772,7 +10802,7 @@
       "grades": [
         "S3"
       ],
-      "label": "CL • longueur : entre 30 et 40 mots, en fonction de la nature du message"
+      "label": "Prononciation, intonation et débit Le locuteur, natif ou assimilé, s’exprime • clairement et distinctement • avec un débit très lent • avec un accent ne nuisant pas à la compréhension Correction sociolinguistique • l’élève comprend les formes de politesse les plus élémentaires"
     },
     {
       "code": "LM-S3-284-1",
@@ -10782,37 +10812,17 @@
       "grades": [
         "S3"
       ],
-      "label": "Compréhension à la Lecture PRÉ-A1 A1 A2.1 A2.2 B1.1 B1.2 • longueur : d’environ • longueur : d’environ • longueur : support • longueur : support • longueur : support 40 à 60 mots, en 50 à 100 mots, en d’une longueur d’une longueur d’une longueur"
+      "label": "Prononciation, intonation et débit Prononciation, intonation et débit Prononciation, Le locuteur, Le locuteur, intonation et débit natif ou assimilé, s’exprime natif ou assimilé, s’exprime Le locuteur, • clairement et distinctement • clairement et distinctement natif ou assimilé, • avec un débit lent • avec un débit modéré s’exprime • avec un accent ne nuisant pas à la compréhension • avec un accent ne nuisant pas à la compréhension • clairement • avec un débit naturel • avec un accent ne nuisant pas à la compréhension Correction sociolinguistique • l’élève comprend les marqueurs de relations sociales et de règles de politesse courants, dans un registre adapté à la situation"
     },
     {
-      "code": "LM-S3-276-2",
-      "parentCode": "LM-C276",
+      "code": "LM-S3-284-2",
+      "parentCode": "LM-C284",
       "kind": "attendu",
       "subject": "Langue moderne",
       "grades": [
         "S3"
       ],
-      "label": "• contenu pas"
-    },
-    {
-      "code": "LM-S3-248-3",
-      "parentCode": "LM-C248",
-      "kind": "attendu",
-      "subject": "Langue moderne",
-      "grades": [
-        "S3"
-      ],
-      "label": "• sphère personnelle et • sphère personnelle, • sphère personnelle et familiale familiale et sociale de sociale base • vie quotidienne • vie sociale et culturelle • sujets concrets directement liés à l’enfant, aux • sujets concrets • sujets concrets, • sujets concrets de la intérêts de l’enfant et à son quotidien directement liés au habituels et quotidiens vie courante"
-    },
-    {
-      "code": "LM-S3-249-2",
-      "parentCode": "LM-C249",
-      "kind": "attendu",
-      "subject": "Langue moderne",
-      "grades": [
-        "S3"
-      ],
-      "label": "• étendue des sujets : • étendue des sujets : • étendue des sujets : • étendue des sujets : • étendue sujets : • étendue des sujets :"
+      "label": "A1 A2 A3 A4 A5 A6 A7 A8"
     },
     {
       "code": "LM-C285",
@@ -10822,7 +10832,7 @@
       "grades": [
         "S3"
       ],
-      "label": "en lien avec les champs thématiques de P3 (1, 3, 5, 6, 7, 8, 11 et 12)"
+      "label": "CA • enregistré ou en présentiel"
     },
     {
       "code": "LM-S3-285-1",
@@ -10832,17 +10842,7 @@
       "grades": [
         "S3"
       ],
-      "label": "en lien avec les en lien avec les en lien avec les en lien avec les en lien avec les en lien avec les champs thématiques champs thématiques champs thématiques champs thématiques champs thématiques champs thématiques à entretenir et ceux à entretenir et ceux à entretenir et ceux à entretenir et ceux à entretenir et ceux à entretenir et ceux 4, 6, 7, 8, 10 et 12) 4, 6, 8, 9, 10 et 12) 5, 7, 9, 10, 11 et 12) 4, 5, 6, 7, 8, 9, 10, 11 et 12) 4, 5, 6, 7, 8, 9, 10 et 12) 4, 5, 7, 8, 9 10, 11 et 12)"
-    },
-    {
-      "code": "LM-S3-285-2",
-      "parentCode": "LM-C285",
-      "kind": "attendu",
-      "subject": "Langue moderne",
-      "grades": [
-        "S3"
-      ],
-      "label": "A1 A2 A3 A4 A5 A6 A7 A8"
+      "label": "Compréhension à l’Audition PRÉ-A1 A1 A2.1 A2.2 B1.1 B1.2 • enregistré (avec un minimum de bruits de fond) ou en présentiel"
     },
     {
       "code": "LM-C286",
@@ -10852,7 +10852,7 @@
       "grades": [
         "S3"
       ],
-      "label": "CL Lexique le message doit être constitué d’un répertoire • de mots de base, de mots internationalement partagés et • d’expressions toutes faites en lien avec la sphère précitée"
+      "label": "• émis dans de bonnes conditions sonores • soutien - message répété (idéalement 2 auditions) - illustration par des gestes ou des images facilitant la compréhension À visée informative • monologue • chanson, histoire contée"
     },
     {
       "code": "LM-S3-286-1",
@@ -10862,7 +10862,7 @@
       "grades": [
         "S3"
       ],
-      "label": "Compréhension à la Lecture PRÉ-A1 A1 A2.1 A2.2 B1.1 B1.2 Lexique Lexique Lexique Lexique Lexique Lexique le message doit être le message doit être le message doit être le message doit être le message doit être le message doit être constitué d’un répertoire constitué d’un répertoire constitué d’un répertoire constitué constitué exprimé dans une langue • de mots de • de mots de • de mots de • de vocabulaire très • de vocabulaire fréquent standard base, de mots base, de mots base, de mots fréquent • d’expressions simples internationalement internationalement internationalement • d’expressions simples partagés et partagés partagés • d’expressions toutes • d’énoncés très • d’énoncés très faites courts (généralement courts (généralement en lien avec la sphère des expressions des expressions précitée idiomatiques et/ou idiomatiques et/ou"
+      "label": "• soutien - message répété (idéalement 2 auditions) - illustration par des gestes ou des supports visuels facilitant la compréhension À visée informative À visée informative À visée informative À visée informative À visée informative À visée informative ou dialogue • monologue ou • monologue ou dialogue • monologue ou dialogue • extrait d’émission TV et • extrait d’émission TV et • récit (fictif ou réel) comptine, dialogue • chanson, comptine, • chanson, comptine, de film de film • relativement court • chanson, comptine, histoire contée histoire contée • conversation, échanges • conversation • conversation"
     },
     {
       "code": "LM-C287",
@@ -10872,7 +10872,7 @@
       "grades": [
         "S3"
       ],
-      "label": "Grammaire Correction sociolinguistique • l’élève comprend les formes de politesse les plus élémentaires • illustré par un support visuel"
+      "label": "• document (dessin animé, série, émission, jeux) À visée injonctive"
     },
     {
       "code": "LM-S3-287-1",
@@ -10882,7 +10882,7 @@
       "grades": [
         "S3"
       ],
-      "label": "Grammaire Grammaire Grammaire support caractérisé par support caractérisé par support caractérisé par • des formes grammaticales simples • des structures simples • des structures simples et complexes • des structures syntaxiques mémorisées • des conjonctions • des conjonctions et/ou des organisateurs textuels et/ou des organisateurs (y compris leur implication syntaxique éventuelle) textuels n’impliquant pas de modification syntaxique Étendue grammaticale des sujets : outre les items pour lesquels des attendus grammaticaux ont été formulés spécifiquement cette année, les supports proposés aux élèves peuvent déjà contenir notions grammaticales qui seront abordées, à condition qu’elles ne portent pas préjudice à la compréhension. Correction sociolinguistique • l’élève comprend les marqueurs de relations sociales et de règles de politesse courants, dans un registre adapté à la situation • illustré ou non par un support visuel, en fonction de la nature du message"
+      "label": "audiovisuel histoire contée • document audiovisuel • document audiovisuel sociaux • interview • message sur boite • document audiovisuel (dessin animé, série, (dessin animé, série, • visite guidée • bulletin d’information vocale (dessin animé, série, émission, jeux, selfie) émission, jeux, selfie) • interview • selfie-vidéo • interview émission, jeux) • bulletin d’information • court récit (fictif ou réel) • annonce publique ou À visée injonctive À visée injonctive • selfie-vidéo • message sur boite privée"
     },
     {
       "code": "LM-C288",
@@ -10892,7 +10892,7 @@
       "grades": [
         "S3"
       ],
-      "label": "CL À visée informative • liste de fournitures scolaires, de vêtements, d’animaux • invitation • album jeunesse • livre d’images"
+      "label": "consignes, en classe ou dans un tutoriel"
     },
     {
       "code": "LM-S3-288-1",
@@ -10902,7 +10902,7 @@
       "grades": [
         "S3"
       ],
-      "label": "Compréhension à la Lecture PRÉ-A1 A1 A2.1 A2.2 B1.1 B1.2 À visée informative À visée informative À visée informative Documents à dominante Documents à dominante Documents à dominante • liste • liste • liste textuelle textuelle textuelle • invitation • carte postale, courriel, • carte postale, courriel, • album jeunesse SMS SMS À visée informative À visée informative À visée informative • livre d’images • écriteaux et panneaux • écriteaux et panneaux • lettre • lettre • lettre • BD • prospectus et • prospectus et • carte (postale ou • courriel • courriel • calendrier publicités publicités électronique)/courriel/ • post sur un réseau • article (journal, revue,"
+      "label": "À visée injonctive • consignes, instructions • consignes, instructions • court récit vocale • chanson • consignes, en classe relatives à l’environne- relatives à l’environne- • message sur boite • annonce publique ou • témoignage ou dans un tutoriel ment immédiat ment immédiat vocale privée • spot publicitaire • annonce courte, par • annonce courte, par • annonce publique ou • courte publicité • bulletin d’information exemple, dans une gare exemple, dans une gare privée • chanson • exposé relativement court ou un magasin ou un magasin • chanson • audioguide • tutoriel • tutoriel À visée injonctive • extrait d’une émission À visée injonctive • annonce TV et d’un film • annonce • instruction, consigne • (extrait de) documentaire • instruction, consigne • recette de cuisine • conversation • message sur boite • itinéraire simple • interview vocale • message sur boite • témoignage • selfie-vidéo vocale • tutoriel • selfie-vidéo À visée injonctive • tutoriel • annonce • instruction, consigne • itinéraire détaillé • message sur boite vocale • spot publicitaire"
     },
     {
       "code": "LM-C289",
@@ -10912,7 +10912,7 @@
       "grades": [
         "S3"
       ],
-      "label": "• calendrier À visée injonctive • liste"
+      "label": "CA"
     },
     {
       "code": "LM-S3-289-1",
@@ -10922,7 +10922,7 @@
       "grades": [
         "S3"
       ],
-      "label": "À visée injonctive • menu de restauration • menu de restauration • post sur un réseau • invitation • page web • liste rapide rapide social • petite annonce • programmes TV • consignes • album jeunesse • album jeunesse • invitation • article de presse • horoscope • recette simplifiée • livre d’images • livre d’images • petite annonce • page web • conte, nouvelle, extrait"
+      "label": "Compréhension à l’Audition PRÉ-A1 A1 A2.1 A2.2 B1.1 B1.2 A. Cadrer • identifier les informations essentielles dans la • sur la base des éléments disponibles avant l’écoute (titre, éléments visuels éventuels) consigne - anticiper le contenu du message - anticiper les éléments lexicaux du message B. Formuler des hypothèses"
     },
     {
       "code": "LM-C290",
@@ -10932,7 +10932,7 @@
       "grades": [
         "S3"
       ],
-      "label": "• consignes"
+      "label": "CL • longueur : entre 30 et 40 mots, en fonction de la nature du message"
     },
     {
       "code": "LM-S3-290-1",
@@ -10942,17 +10942,37 @@
       "grades": [
         "S3"
       ],
-      "label": "• BD • BD • formulaire complété • littérature pour la de roman • calendrier • calendrier • écriteau jeunesse • littérature pour la • blog • blog • article de presse • littérature simplifiée jeunesse • menu • littérature simplifiée À visée injonctive À visée injonctive • page web À visée injonctive • planches de roman • liste • liste • littérature pour la • règles (simples) de jeu graphique • consignes • consignes jeunesse • procédure • brochure • recette simplifiée • recette simplifiée • littérature simplifiée • consignes • publicité • itinéraire • panneau, affiche À visée injonctive • recette • règles (simples) de jeu • mode d’emploi d’un À visée injonctive • procédure appareil d’usage • mode d’emploi • consignes courant • consignes • itinéraire • règlement • règlement • recette • procédure • mémo • itinéraire • convocation • règles de jeux • mode d’emploi d’un • recette appareil d’usage • convocation courant • affiche publicitaire • brochure"
+      "label": "Compréhension à la Lecture PRÉ-A1 A1 A2.1 A2.2 B1.1 B1.2 • longueur : d’environ • longueur : d’environ • longueur : support • longueur : support • longueur : support 40 à 60 mots, en 50 à 100 mots, en d’une longueur d’une longueur d’une longueur"
     },
     {
-      "code": "LM-S3-290-2",
-      "parentCode": "LM-C290",
+      "code": "LM-S3-282-2",
+      "parentCode": "LM-C282",
       "kind": "attendu",
       "subject": "Langue moderne",
       "grades": [
         "S3"
       ],
-      "label": "A1 A2 A3 A4 A5 A6 A7 A8"
+      "label": "• contenu pas"
+    },
+    {
+      "code": "LM-S3-254-3",
+      "parentCode": "LM-C254",
+      "kind": "attendu",
+      "subject": "Langue moderne",
+      "grades": [
+        "S3"
+      ],
+      "label": "• sphère personnelle et • sphère personnelle, • sphère personnelle et familiale familiale et sociale de sociale base • vie quotidienne • vie sociale et culturelle • sujets concrets directement liés à l’enfant, aux • sujets concrets • sujets concrets, • sujets concrets de la intérêts de l’enfant et à son quotidien directement liés au habituels et quotidiens vie courante"
+    },
+    {
+      "code": "LM-S3-255-2",
+      "parentCode": "LM-C255",
+      "kind": "attendu",
+      "subject": "Langue moderne",
+      "grades": [
+        "S3"
+      ],
+      "label": "• étendue des sujets : • étendue des sujets : • étendue des sujets : • étendue des sujets : • étendue sujets : • étendue des sujets :"
     },
     {
       "code": "LM-C291",
@@ -10962,7 +10982,7 @@
       "grades": [
         "S3"
       ],
-      "label": "CL"
+      "label": "en lien avec les champs thématiques de P3 (1, 3, 5, 6, 7, 8, 11 et 12)"
     },
     {
       "code": "LM-S3-291-1",
@@ -10972,57 +10992,7 @@
       "grades": [
         "S3"
       ],
-      "label": "Compréhension à la Lecture PRÉ-A1 A1 A2.1 A2.2 B1.1 B1.2 Documents à dominante Documents à dominante Documents à dominante iconographique iconographique iconographique Caractéristiques Caractéristiques Caractéristiques identiques à celles citées identiques à celles citées identiques à celles citées ci-dessus (documents à ci-dessus (documents à ci-dessus (documents à dominante textuelle) dominante textuelle) dominante textuelle) Au niveau du contenu, le Au niveau du contenu, le Au niveau du contenu, le texte doit être soutenu texte doit être soutenu texte doit être soutenu par des éléments visuels par des éléments visuels par des éléments visuels"
-    },
-    {
-      "code": "LM-C292",
-      "parentCode": "LM-0",
-      "kind": "competence",
-      "subject": "Langue moderne",
-      "grades": [
-        "S3"
-      ],
-      "label": "• sur la base des éléments visuels éventuels :"
-    },
-    {
-      "code": "LM-S3-292-1",
-      "parentCode": "LM-C292",
-      "kind": "attendu",
-      "subject": "Langue moderne",
-      "grades": [
-        "S3"
-      ],
-      "label": "• sur la base des éléments visuels éventuels • sur la base du paratexte (mise en page, illustrations, conventions"
-    },
-    {
-      "code": "LM-C293",
-      "parentCode": "LM-0",
-      "kind": "competence",
-      "subject": "Langue moderne",
-      "grades": [
-        "S3"
-      ],
-      "label": "- identifier le type de support et ses caractéristiques principales"
-    },
-    {
-      "code": "LM-S3-293-1",
-      "parentCode": "LM-C293",
-      "kind": "attendu",
-      "subject": "Langue moderne",
-      "grades": [
-        "S3"
-      ],
-      "label": "- identifier le type de document typographiques…) - anticiper le contenu du message - identifier le type de document - anticiper les éléments lexicaux du message - anticiper le contenu du message - anticiper les éléments lexicaux du message"
-    },
-    {
-      "code": "LM-S3-293-2",
-      "parentCode": "LM-C293",
-      "kind": "attendu",
-      "subject": "Langue moderne",
-      "grades": [
-        "S3"
-      ],
-      "label": "A1 A2 A3 A4 A5 A6 A7 A8"
+      "label": "en lien avec les en lien avec les en lien avec les en lien avec les en lien avec les en lien avec les champs thématiques champs thématiques champs thématiques champs thématiques champs thématiques champs thématiques à entretenir et ceux à entretenir et ceux à entretenir et ceux à entretenir et ceux à entretenir et ceux à entretenir et ceux 4, 6, 7, 8, 10 et 12) 4, 6, 8, 9, 10 et 12) 5, 7, 9, 10, 11 et 12) 4, 5, 6, 7, 8, 9, 10, 11 et 12) 4, 5, 6, 7, 8, 9, 10 et 12) 4, 5, 7, 8, 9 10, 11 et 12)"
     },
     {
       "code": "LM-S3-291-2",
@@ -11032,7 +11002,47 @@
       "grades": [
         "S3"
       ],
-      "label": "Compréhension à la Lecture PRÉ-A1 A1 A2.1 A2.2 B1.1 B1.2 B. Formuler des hypothèses • exploiter des indices non linguistiques (éléments • se baser sur sa connaissance du monde visuels, pictogrammes, type de document, titre,"
+      "label": "A1 A2 A3 A4 A5 A6 A7 A8"
+    },
+    {
+      "code": "LM-C292",
+      "parentCode": "LM-0",
+      "kind": "competence",
+      "subject": "Langue moderne",
+      "grades": [
+        "S3"
+      ],
+      "label": "CL Lexique le message doit être constitué d’un répertoire • de mots de base, de mots internationalement partagés et • d’expressions toutes faites en lien avec la sphère précitée"
+    },
+    {
+      "code": "LM-S3-292-1",
+      "parentCode": "LM-C292",
+      "kind": "attendu",
+      "subject": "Langue moderne",
+      "grades": [
+        "S3"
+      ],
+      "label": "Compréhension à la Lecture PRÉ-A1 A1 A2.1 A2.2 B1.1 B1.2 Lexique Lexique Lexique Lexique Lexique Lexique le message doit être le message doit être le message doit être le message doit être le message doit être le message doit être constitué d’un répertoire constitué d’un répertoire constitué d’un répertoire constitué constitué exprimé dans une langue • de mots de • de mots de • de mots de • de vocabulaire très • de vocabulaire fréquent standard base, de mots base, de mots base, de mots fréquent • d’expressions simples internationalement internationalement internationalement • d’expressions simples partagés et partagés partagés • d’expressions toutes • d’énoncés très • d’énoncés très faites courts (généralement courts (généralement en lien avec la sphère des expressions des expressions précitée idiomatiques et/ou idiomatiques et/ou"
+    },
+    {
+      "code": "LM-C293",
+      "parentCode": "LM-0",
+      "kind": "competence",
+      "subject": "Langue moderne",
+      "grades": [
+        "S3"
+      ],
+      "label": "Grammaire Correction sociolinguistique • l’élève comprend les formes de politesse les plus élémentaires • illustré par un support visuel"
+    },
+    {
+      "code": "LM-S3-293-1",
+      "parentCode": "LM-C293",
+      "kind": "attendu",
+      "subject": "Langue moderne",
+      "grades": [
+        "S3"
+      ],
+      "label": "Grammaire Grammaire Grammaire support caractérisé par support caractérisé par support caractérisé par • des formes grammaticales simples • des structures simples • des structures simples et complexes • des structures syntaxiques mémorisées • des conjonctions • des conjonctions et/ou des organisateurs textuels et/ou des organisateurs (y compris leur implication syntaxique éventuelle) textuels n’impliquant pas de modification syntaxique Étendue grammaticale des sujets : outre les items pour lesquels des attendus grammaticaux ont été formulés spécifiquement cette année, les supports proposés aux élèves peuvent déjà contenir notions grammaticales qui seront abordées, à condition qu’elles ne portent pas préjudice à la compréhension. Correction sociolinguistique • l’élève comprend les marqueurs de relations sociales et de règles de politesse courants, dans un registre adapté à la situation • illustré ou non par un support visuel, en fonction de la nature du message"
     },
     {
       "code": "LM-C294",
@@ -11042,7 +11052,7 @@
       "grades": [
         "S3"
       ],
-      "label": "EE"
+      "label": "CL À visée informative • liste de fournitures scolaires, de vêtements, d’animaux • invitation • album jeunesse • livre d’images"
     },
     {
       "code": "LM-S3-294-1",
@@ -11052,57 +11062,7 @@
       "grades": [
         "S3"
       ],
-      "label": "Expression Écrite PRÉ-A1 A1 A2.2 B1.1 B1.2 production très courte production très courte production courte et production courte et production d’un texte constituée constituée simple constituée simple constituée structuré constitué • de mots isolés • de mots isolés • de phrases courtes, • de phrases simples et • de phrases simples et • de maximum 20 mots, • d’énoncés très courts simples et articulées de phrases complexes, de phrases complexes,"
-    },
-    {
-      "code": "LM-S3-294-2",
-      "parentCode": "LM-C294",
-      "kind": "attendu",
-      "subject": "Langue moderne",
-      "grades": [
-        "S3"
-      ],
-      "label": "Expression Écrite PRÉ-A1 A1 A2.2 B1.1 B1.2 • sphère personnelle et familiale de base • sphère personnelle et • sphère personnelle, • sphère personnelle et familiale familiale et sociale de sociale base • vie quotidienne • vie sociale et culturelle • sujets concrets directement liés à l’enfant, aux • sujets concrets directement liés au jeune, à ses • sujets concrets de la"
-    },
-    {
-      "code": "LM-S3-294-3",
-      "parentCode": "LM-C294",
-      "kind": "attendu",
-      "subject": "Langue moderne",
-      "grades": [
-        "S3"
-      ],
-      "label": "Expression Écrite PRÉ-A1 A1 A2.2 B1.1 B1.2 Orthographe Orthographe Orthographe • ne nuisant pas, malgré un grand nombre • relative exactitude orthographique des mots qui • bonne correction de appartiennent à son répertoire écrit mémorisé l’orthographe et de"
-    },
-    {
-      "code": "LM-S3-294-4",
-      "parentCode": "LM-C294",
-      "kind": "attendu",
-      "subject": "Langue moderne",
-      "grades": [
-        "S3"
-      ],
-      "label": "Expression Écrite PRÉ-A1 A1 A2.2 B1.1 B1.2 Pour informer Pour informer Pour (s’)informer Pour (s’)informer Pour les trois intentions • invitation pré-imprimée • questionnaire/ • faire-part • questionnaire de communication à compléter fiche de présentation • questionnaire (ex. : sondage) • courriel/lettre • mémo/Post-it à compléter ou à (ex. : sondage) • profil sur un réseau • article (journal, revue, • questionnaire/fiche construire social blog…) de présentation • carte de vœux, Pour faire agir • extrait de journal intime à compléter ou à d’anniversaire (postale • règlement, consigne, Pour faire agir construire ou électronique) instruction • règlement, consigne, Pour (s’)informer • affiche/poster • mémo/liste instruction • compte rendu, rapport • liste • affiche/poster Pour (s’)informer et pour • récit réel ou fictif • illustration commentée • illustration commentée faire agir Pour (s’)informer et pour • bande dessinée"
-    },
-    {
-      "code": "LM-S3-294-5",
-      "parentCode": "LM-C294",
-      "kind": "attendu",
-      "subject": "Langue moderne",
-      "grades": [
-        "S3"
-      ],
-      "label": "Expression Écrite PRÉ-A1 A1 A2.2 B1.1 B1.2 A. Planifier • se forger une représentation mentale de la production attendue • envisager les informations à communiquer • prendre en compte le destinataire • sélectionner les ressources linguistiques et tirer de son répertoire une série d’expressions appropriées • réfléchir aux éléments constitutifs du message et à leur organisation"
-    },
-    {
-      "code": "LM-S3-294-6",
-      "parentCode": "LM-C294",
-      "kind": "attendu",
-      "subject": "Langue moderne",
-      "grades": [
-        "S3"
-      ],
-      "label": "Expression Écrite PRÉ-A1 A1 A2.2 B1.1 B1.2 C. Relire sa production • vérifier autant que faire se peut la correction • vérifier la correction lexicale, grammaticale, syntaxique et orthographique, par lexicale, grammaticale et orthographique exemple, à l’aide d’une grille d’(auto-)évaluation • vérifier l’organisation de la production et du contenu, par exemple, à l’aide d’une"
+      "label": "Compréhension à la Lecture PRÉ-A1 A1 A2.1 A2.2 B1.1 B1.2 À visée informative À visée informative À visée informative Documents à dominante Documents à dominante Documents à dominante • liste • liste • liste textuelle textuelle textuelle • invitation • carte postale, courriel, • carte postale, courriel, • album jeunesse SMS SMS À visée informative À visée informative À visée informative • livre d’images • écriteaux et panneaux • écriteaux et panneaux • lettre • lettre • lettre • BD • prospectus et • prospectus et • carte (postale ou • courriel • courriel • calendrier publicités publicités électronique)/courriel/ • post sur un réseau • article (journal, revue,"
     },
     {
       "code": "LM-C295",
@@ -11112,7 +11072,7 @@
       "grades": [
         "S3"
       ],
-      "label": "anniversaires"
+      "label": "• calendrier À visée injonctive • liste"
     },
     {
       "code": "LM-S3-295-1",
@@ -11122,27 +11082,7 @@
       "grades": [
         "S3"
       ],
-      "label": "à l’école en lien avec la langue cultures de pays dont la étudiée langue nationale est la langue étudiée • quelques éléments culturels internationalement partagés"
-    },
-    {
-      "code": "LM-S3-295-2",
-      "parentCode": "LM-C295",
-      "kind": "attendu",
-      "subject": "Langue moderne",
-      "grades": [
-        "S3"
-      ],
-      "label": "A1 A2 A3 A4 A5 A6 A7 A8"
-    },
-    {
-      "code": "LM-S3-295-3",
-      "parentCode": "LM-C295",
-      "kind": "attendu",
-      "subject": "Langue moderne",
-      "grades": [
-        "S3"
-      ],
-      "label": "1. CHAMPS THÉMATIQUES"
+      "label": "À visée injonctive • menu de restauration • menu de restauration • post sur un réseau • invitation • page web • liste rapide rapide social • petite annonce • programmes TV • consignes • album jeunesse • album jeunesse • invitation • article de presse • horoscope • recette simplifiée • livre d’images • livre d’images • petite annonce • page web • conte, nouvelle, extrait"
     },
     {
       "code": "LM-C296",
@@ -11152,11 +11092,231 @@
       "grades": [
         "S3"
       ],
-      "label": "• quelques noms de sports, de jeux et de hobbys"
+      "label": "• consignes"
     },
     {
       "code": "LM-S3-296-1",
       "parentCode": "LM-C296",
+      "kind": "attendu",
+      "subject": "Langue moderne",
+      "grades": [
+        "S3"
+      ],
+      "label": "• BD • BD • formulaire complété • littérature pour la de roman • calendrier • calendrier • écriteau jeunesse • littérature pour la • blog • blog • article de presse • littérature simplifiée jeunesse • menu • littérature simplifiée À visée injonctive À visée injonctive • page web À visée injonctive • planches de roman • liste • liste • littérature pour la • règles (simples) de jeu graphique • consignes • consignes jeunesse • procédure • brochure • recette simplifiée • recette simplifiée • littérature simplifiée • consignes • publicité • itinéraire • panneau, affiche À visée injonctive • recette • règles (simples) de jeu • mode d’emploi d’un À visée injonctive • procédure appareil d’usage • mode d’emploi • consignes courant • consignes • itinéraire • règlement • règlement • recette • procédure • mémo • itinéraire • convocation • règles de jeux • mode d’emploi d’un • recette appareil d’usage • convocation courant • affiche publicitaire • brochure"
+    },
+    {
+      "code": "LM-S3-296-2",
+      "parentCode": "LM-C296",
+      "kind": "attendu",
+      "subject": "Langue moderne",
+      "grades": [
+        "S3"
+      ],
+      "label": "A1 A2 A3 A4 A5 A6 A7 A8"
+    },
+    {
+      "code": "LM-C297",
+      "parentCode": "LM-0",
+      "kind": "competence",
+      "subject": "Langue moderne",
+      "grades": [
+        "S3"
+      ],
+      "label": "CL"
+    },
+    {
+      "code": "LM-S3-297-1",
+      "parentCode": "LM-C297",
+      "kind": "attendu",
+      "subject": "Langue moderne",
+      "grades": [
+        "S3"
+      ],
+      "label": "Compréhension à la Lecture PRÉ-A1 A1 A2.1 A2.2 B1.1 B1.2 Documents à dominante Documents à dominante Documents à dominante iconographique iconographique iconographique Caractéristiques Caractéristiques Caractéristiques identiques à celles citées identiques à celles citées identiques à celles citées ci-dessus (documents à ci-dessus (documents à ci-dessus (documents à dominante textuelle) dominante textuelle) dominante textuelle) Au niveau du contenu, le Au niveau du contenu, le Au niveau du contenu, le texte doit être soutenu texte doit être soutenu texte doit être soutenu par des éléments visuels par des éléments visuels par des éléments visuels"
+    },
+    {
+      "code": "LM-C298",
+      "parentCode": "LM-0",
+      "kind": "competence",
+      "subject": "Langue moderne",
+      "grades": [
+        "S3"
+      ],
+      "label": "• sur la base des éléments visuels éventuels :"
+    },
+    {
+      "code": "LM-S3-298-1",
+      "parentCode": "LM-C298",
+      "kind": "attendu",
+      "subject": "Langue moderne",
+      "grades": [
+        "S3"
+      ],
+      "label": "• sur la base des éléments visuels éventuels • sur la base du paratexte (mise en page, illustrations, conventions"
+    },
+    {
+      "code": "LM-C299",
+      "parentCode": "LM-0",
+      "kind": "competence",
+      "subject": "Langue moderne",
+      "grades": [
+        "S3"
+      ],
+      "label": "- identifier le type de support et ses caractéristiques principales"
+    },
+    {
+      "code": "LM-S3-299-1",
+      "parentCode": "LM-C299",
+      "kind": "attendu",
+      "subject": "Langue moderne",
+      "grades": [
+        "S3"
+      ],
+      "label": "- identifier le type de document typographiques…) - anticiper le contenu du message - identifier le type de document - anticiper les éléments lexicaux du message - anticiper le contenu du message - anticiper les éléments lexicaux du message"
+    },
+    {
+      "code": "LM-S3-299-2",
+      "parentCode": "LM-C299",
+      "kind": "attendu",
+      "subject": "Langue moderne",
+      "grades": [
+        "S3"
+      ],
+      "label": "A1 A2 A3 A4 A5 A6 A7 A8"
+    },
+    {
+      "code": "LM-S3-297-2",
+      "parentCode": "LM-C297",
+      "kind": "attendu",
+      "subject": "Langue moderne",
+      "grades": [
+        "S3"
+      ],
+      "label": "Compréhension à la Lecture PRÉ-A1 A1 A2.1 A2.2 B1.1 B1.2 B. Formuler des hypothèses • exploiter des indices non linguistiques (éléments • se baser sur sa connaissance du monde visuels, pictogrammes, type de document, titre,"
+    },
+    {
+      "code": "LM-C300",
+      "parentCode": "LM-0",
+      "kind": "competence",
+      "subject": "Langue moderne",
+      "grades": [
+        "S3"
+      ],
+      "label": "EE"
+    },
+    {
+      "code": "LM-S3-300-1",
+      "parentCode": "LM-C300",
+      "kind": "attendu",
+      "subject": "Langue moderne",
+      "grades": [
+        "S3"
+      ],
+      "label": "Expression Écrite PRÉ-A1 A1 A2.2 B1.1 B1.2 production très courte production très courte production courte et production courte et production d’un texte constituée constituée simple constituée simple constituée structuré constitué • de mots isolés • de mots isolés • de phrases courtes, • de phrases simples et • de phrases simples et • de maximum 20 mots, • d’énoncés très courts simples et articulées de phrases complexes, de phrases complexes,"
+    },
+    {
+      "code": "LM-S3-300-2",
+      "parentCode": "LM-C300",
+      "kind": "attendu",
+      "subject": "Langue moderne",
+      "grades": [
+        "S3"
+      ],
+      "label": "Expression Écrite PRÉ-A1 A1 A2.2 B1.1 B1.2 • sphère personnelle et familiale de base • sphère personnelle et • sphère personnelle, • sphère personnelle et familiale familiale et sociale de sociale base • vie quotidienne • vie sociale et culturelle • sujets concrets directement liés à l’enfant, aux • sujets concrets directement liés au jeune, à ses • sujets concrets de la"
+    },
+    {
+      "code": "LM-S3-300-3",
+      "parentCode": "LM-C300",
+      "kind": "attendu",
+      "subject": "Langue moderne",
+      "grades": [
+        "S3"
+      ],
+      "label": "Expression Écrite PRÉ-A1 A1 A2.2 B1.1 B1.2 Orthographe Orthographe Orthographe • ne nuisant pas, malgré un grand nombre • relative exactitude orthographique des mots qui • bonne correction de appartiennent à son répertoire écrit mémorisé l’orthographe et de"
+    },
+    {
+      "code": "LM-S3-300-4",
+      "parentCode": "LM-C300",
+      "kind": "attendu",
+      "subject": "Langue moderne",
+      "grades": [
+        "S3"
+      ],
+      "label": "Expression Écrite PRÉ-A1 A1 A2.2 B1.1 B1.2 Pour informer Pour informer Pour (s’)informer Pour (s’)informer Pour les trois intentions • invitation pré-imprimée • questionnaire/ • faire-part • questionnaire de communication à compléter fiche de présentation • questionnaire (ex. : sondage) • courriel/lettre • mémo/Post-it à compléter ou à (ex. : sondage) • profil sur un réseau • article (journal, revue, • questionnaire/fiche construire social blog…) de présentation • carte de vœux, Pour faire agir • extrait de journal intime à compléter ou à d’anniversaire (postale • règlement, consigne, Pour faire agir construire ou électronique) instruction • règlement, consigne, Pour (s’)informer • affiche/poster • mémo/liste instruction • compte rendu, rapport • liste • affiche/poster Pour (s’)informer et pour • récit réel ou fictif • illustration commentée • illustration commentée faire agir Pour (s’)informer et pour • bande dessinée"
+    },
+    {
+      "code": "LM-S3-300-5",
+      "parentCode": "LM-C300",
+      "kind": "attendu",
+      "subject": "Langue moderne",
+      "grades": [
+        "S3"
+      ],
+      "label": "Expression Écrite PRÉ-A1 A1 A2.2 B1.1 B1.2 A. Planifier • se forger une représentation mentale de la production attendue • envisager les informations à communiquer • prendre en compte le destinataire • sélectionner les ressources linguistiques et tirer de son répertoire une série d’expressions appropriées • réfléchir aux éléments constitutifs du message et à leur organisation"
+    },
+    {
+      "code": "LM-S3-300-6",
+      "parentCode": "LM-C300",
+      "kind": "attendu",
+      "subject": "Langue moderne",
+      "grades": [
+        "S3"
+      ],
+      "label": "Expression Écrite PRÉ-A1 A1 A2.2 B1.1 B1.2 C. Relire sa production • vérifier autant que faire se peut la correction • vérifier la correction lexicale, grammaticale, syntaxique et orthographique, par lexicale, grammaticale et orthographique exemple, à l’aide d’une grille d’(auto-)évaluation • vérifier l’organisation de la production et du contenu, par exemple, à l’aide d’une"
+    },
+    {
+      "code": "LM-C301",
+      "parentCode": "LM-0",
+      "kind": "competence",
+      "subject": "Langue moderne",
+      "grades": [
+        "S3"
+      ],
+      "label": "anniversaires"
+    },
+    {
+      "code": "LM-S3-301-1",
+      "parentCode": "LM-C301",
+      "kind": "attendu",
+      "subject": "Langue moderne",
+      "grades": [
+        "S3"
+      ],
+      "label": "à l’école en lien avec la langue cultures de pays dont la étudiée langue nationale est la langue étudiée • quelques éléments culturels internationalement partagés"
+    },
+    {
+      "code": "LM-S3-301-2",
+      "parentCode": "LM-C301",
+      "kind": "attendu",
+      "subject": "Langue moderne",
+      "grades": [
+        "S3"
+      ],
+      "label": "A1 A2 A3 A4 A5 A6 A7 A8"
+    },
+    {
+      "code": "LM-S3-301-3",
+      "parentCode": "LM-C301",
+      "kind": "attendu",
+      "subject": "Langue moderne",
+      "grades": [
+        "S3"
+      ],
+      "label": "1. CHAMPS THÉMATIQUES"
+    },
+    {
+      "code": "LM-C302",
+      "parentCode": "LM-0",
+      "kind": "competence",
+      "subject": "Langue moderne",
+      "grades": [
+        "S3"
+      ],
+      "label": "• quelques noms de sports, de jeux et de hobbys"
+    },
+    {
+      "code": "LM-S3-302-1",
+      "parentCode": "LM-C302",
       "kind": "attendu",
       "subject": "Langue moderne",
       "grades": [
@@ -11185,7 +11345,7 @@
       "label": "liés à ces lieux"
     },
     {
-      "code": "LM-C297",
+      "code": "LM-C303",
       "parentCode": "LM-0",
       "kind": "competence",
       "subject": "Langue moderne",
@@ -11195,176 +11355,6 @@
       "label": "(madame, mademoiselle, monsieur)"
     },
     {
-      "code": "LM-S3-297-1",
-      "parentCode": "LM-C297",
-      "kind": "attendu",
-      "subject": "Langue moderne",
-      "grades": [
-        "S3"
-      ],
-      "label": "salutation, de prise de congé, d’excuse"
-    },
-    {
-      "code": "LM-C298",
-      "parentCode": "LM-0",
-      "kind": "competence",
-      "subject": "Langue moderne",
-      "grades": [
-        "S3"
-      ],
-      "label": "• quelques boissons et aliments courants, dont ceux propres à l’enfance"
-    },
-    {
-      "code": "LM-S3-298-1",
-      "parentCode": "LM-C298",
-      "kind": "attendu",
-      "subject": "Langue moderne",
-      "grades": [
-        "S3"
-      ],
-      "label": "• les repas de la journée • mets et boissons liés aux cultures de pays dont la langue nationale est la langue étudiée"
-    },
-    {
-      "code": "LM-C299",
-      "parentCode": "LM-0",
-      "kind": "competence",
-      "subject": "Langue moderne",
-      "grades": [
-        "S3"
-      ],
-      "label": "• l’heure (heure entière)"
-    },
-    {
-      "code": "LM-S3-299-1",
-      "parentCode": "LM-C299",
-      "kind": "attendu",
-      "subject": "Langue moderne",
-      "grades": [
-        "S3"
-      ],
-      "label": "• la date • l’heure (demi-heure, quart d’heure) • congés qui jalonnent l’année"
-    },
-    {
-      "code": "LM-S3-299-2",
-      "parentCode": "LM-C299",
-      "kind": "attendu",
-      "subject": "Langue moderne",
-      "grades": [
-        "S3"
-      ],
-      "label": "A1 A2 A3 A4 A5 A6 A7 A8"
-    },
-    {
-      "code": "LM-S3-299-3",
-      "parentCode": "LM-C299",
-      "kind": "attendu",
-      "subject": "Langue moderne",
-      "grades": [
-        "S3"
-      ],
-      "label": "2. SUPPORTS"
-    },
-    {
-      "code": "LM-C300",
-      "parentCode": "LM-0",
-      "kind": "competence",
-      "subject": "Langue moderne",
-      "grades": [
-        "S3"
-      ],
-      "label": "CA À visée informative • chanson, comptine, histoire contée • document audiovisuel (dessin animé, série,"
-    },
-    {
-      "code": "LM-S3-300-1",
-      "parentCode": "LM-C300",
-      "kind": "attendu",
-      "subject": "Langue moderne",
-      "grades": [
-        "S3"
-      ],
-      "label": "Compréhension à l’Audition PRÉ-A1 A1 A2.1 A2.2 B1.1 B1.2 À visée informative À visée informative À visée informative À visée informative À visée informative À visée informative • chanson, comptine, • chanson, comptine, • chanson, comptine, • extrait d’émission TV et • extrait d’émission TV et • récit (fictif ou réel) histoire contée histoire contée histoire contée de film de film relativement court • document audiovisuel • document audiovisuel • document audiovisuel • échanges sociaux • bulletin d’information • annonce publique (dessin animé, série, (dessin animé, série, (dessin animé, série, • visite guidée • court récit (fictif ou réel) • chanson"
-    },
-    {
-      "code": "LM-C301",
-      "parentCode": "LM-0",
-      "kind": "competence",
-      "subject": "Langue moderne",
-      "grades": [
-        "S3"
-      ],
-      "label": "émission, jeux)"
-    },
-    {
-      "code": "LM-S3-301-1",
-      "parentCode": "LM-C301",
-      "kind": "attendu",
-      "subject": "Langue moderne",
-      "grades": [
-        "S3"
-      ],
-      "label": "émission, jeux) émission, jeux) émission, jeux) • bulletin d’information • annonce publique • spot publicitaire • court récit • courte publicité • bulletin d’information • annonce publique • chanson • audioguide À visée injonctive À visée injonctive • chanson • extrait d’une émission • annonce courte, par • annonce courte, par À visée injonctive TV et d’un film exemple, dans une gare exemple, dans une gare À visée injonctive • annonce • (extrait de) ou un magasin ou un magasin • annonce • recette de cuisine documentaire"
-    },
-    {
-      "code": "LM-S3-301-2",
-      "parentCode": "LM-C301",
-      "kind": "attendu",
-      "subject": "Langue moderne",
-      "grades": [
-        "S3"
-      ],
-      "label": "À visée injonctive • annonce • itinéraire détaillé • spot publicitaire"
-    },
-    {
-      "code": "LM-S3-301-3",
-      "parentCode": "LM-C301",
-      "kind": "attendu",
-      "subject": "Langue moderne",
-      "grades": [
-        "S3"
-      ],
-      "label": "A1 A2 A3 A4 A5 A6 A7 A8"
-    },
-    {
-      "code": "LM-C302",
-      "parentCode": "LM-0",
-      "kind": "competence",
-      "subject": "Langue moderne",
-      "grades": [
-        "S3"
-      ],
-      "label": "CL À visée informative • album jeunesse • livre d’images"
-    },
-    {
-      "code": "LM-S3-302-1",
-      "parentCode": "LM-C302",
-      "kind": "attendu",
-      "subject": "Langue moderne",
-      "grades": [
-        "S3"
-      ],
-      "label": "Compréhension à la Lecture PRÉ-A1 A1 A2.1 A2.2 B1.1 B1.2 À visée informative À visée informative À visée informative À visée informative À visée informative Documents à dominante • album jeunesse • écriteaux et panneaux • écriteaux et panneaux • lettre • lettre textuelle • livre d’images • prospectus et • prospectus et • carte électronique/ • carte électronique/"
-    },
-    {
-      "code": "LM-S3-291-3",
-      "parentCode": "LM-C291",
-      "kind": "attendu",
-      "subject": "Langue moderne",
-      "grades": [
-        "S3"
-      ],
-      "label": "Compréhension à la Lecture"
-    },
-    {
-      "code": "LM-C303",
-      "parentCode": "LM-0",
-      "kind": "competence",
-      "subject": "Langue moderne",
-      "grades": [
-        "S3"
-      ],
-      "label": "A1"
-    },
-    {
       "code": "LM-S3-303-1",
       "parentCode": "LM-C303",
       "kind": "attendu",
@@ -11372,7 +11362,7 @@
       "grades": [
         "S3"
       ],
-      "label": "A2.1 A2.2"
+      "label": "salutation, de prise de congé, d’excuse"
     },
     {
       "code": "LM-C304",
@@ -11382,7 +11372,7 @@
       "grades": [
         "S3"
       ],
-      "label": "- Identité de soi et d’autrui • le nom, l’âge, le genre • le lieu de naissance et la date d’anniversaire • la composition de la famille proche • quelques noms de métiers • les langues parlées ou apprise(s) et les pays en relation avec ces"
+      "label": "• quelques boissons et aliments courants, dont ceux propres à l’enfance"
     },
     {
       "code": "LM-S3-304-1",
@@ -11392,7 +11382,7 @@
       "grades": [
         "S3"
       ],
-      "label": "- Description • l’aspect physique : stature, silhouette et caractéristiques particulières • traits de caractère les plus courants • quelques états d’esprit • l’un ou l’autre personnage célèbre"
+      "label": "• les repas de la journée • mets et boissons liés aux cultures de pays dont la langue nationale est la langue étudiée"
     },
     {
       "code": "LM-C305",
@@ -11402,7 +11392,7 @@
       "grades": [
         "S3"
       ],
-      "label": "• les activités routinières à l’école et à la maison • quelques noms d’outils numériques liés à la vie quotidienne"
+      "label": "• l’heure (heure entière)"
     },
     {
       "code": "LM-S3-305-1",
@@ -11412,7 +11402,27 @@
       "grades": [
         "S3"
       ],
-      "label": "• activités spécifiques aux vacances • activités routinières à la maison, à l’école liées aux cultures de pays dont la langue nationale est la langue étudiée • quelques éléments culturels internationalement partagés • outils et activités liés aux technologies numériques de l’information et des médias"
+      "label": "• la date • l’heure (demi-heure, quart d’heure) • congés qui jalonnent l’année"
+    },
+    {
+      "code": "LM-S3-305-2",
+      "parentCode": "LM-C305",
+      "kind": "attendu",
+      "subject": "Langue moderne",
+      "grades": [
+        "S3"
+      ],
+      "label": "A1 A2 A3 A4 A5 A6 A7 A8"
+    },
+    {
+      "code": "LM-S3-305-3",
+      "parentCode": "LM-C305",
+      "kind": "attendu",
+      "subject": "Langue moderne",
+      "grades": [
+        "S3"
+      ],
+      "label": "2. SUPPORTS"
     },
     {
       "code": "LM-C306",
@@ -11422,7 +11432,7 @@
       "grades": [
         "S3"
       ],
-      "label": "• les activités sportives les plus courantes • quelques lieux relatifs à des activités sportives • quelques activités culturelles • quelques lieux relatifs aux activités culturelles • quelques noms d’outils numériques liés aux loisirs"
+      "label": "CA À visée informative • chanson, comptine, histoire contée • document audiovisuel (dessin animé, série,"
     },
     {
       "code": "LM-S3-306-1",
@@ -11432,7 +11442,7 @@
       "grades": [
         "S3"
       ],
-      "label": "• quelques outils et activités liés aux technologies • quelques acteurs de la vie culturelle, manifestations, évènements et productions artistiques • quelques noms de sports et de loisirs liés aux cultures de pays dont la langue nationale est la langue étudiée"
+      "label": "Compréhension à l’Audition PRÉ-A1 A1 A2.1 A2.2 B1.1 B1.2 À visée informative À visée informative À visée informative À visée informative À visée informative À visée informative • chanson, comptine, • chanson, comptine, • chanson, comptine, • extrait d’émission TV et • extrait d’émission TV et • récit (fictif ou réel) histoire contée histoire contée histoire contée de film de film relativement court • document audiovisuel • document audiovisuel • document audiovisuel • échanges sociaux • bulletin d’information • annonce publique (dessin animé, série, (dessin animé, série, (dessin animé, série, • visite guidée • court récit (fictif ou réel) • chanson"
     },
     {
       "code": "LM-C307",
@@ -11442,7 +11452,7 @@
       "grades": [
         "S3"
       ],
-      "label": "• les moyens de transport courants • itinéraires simples avec et sans repères"
+      "label": "émission, jeux)"
     },
     {
       "code": "LM-S3-307-1",
@@ -11452,7 +11462,7 @@
       "grades": [
         "S3"
       ],
-      "label": "• titres et documents de voyage • objets liés aux voyages • lieux et bâtiments liés au transport • quelques lieux de villégiature et d’hébergement. Infrastructures, équipements et services liés à ces lieux"
+      "label": "émission, jeux) émission, jeux) émission, jeux) • bulletin d’information • annonce publique • spot publicitaire • court récit • courte publicité • bulletin d’information • annonce publique • chanson • audioguide À visée injonctive À visée injonctive • chanson • extrait d’une émission • annonce courte, par • annonce courte, par À visée injonctive TV et d’un film exemple, dans une gare exemple, dans une gare À visée injonctive • annonce • (extrait de) ou un magasin ou un magasin • annonce • recette de cuisine documentaire"
     },
     {
       "code": "LM-S3-307-2",
@@ -11462,17 +11472,17 @@
       "grades": [
         "S3"
       ],
-      "label": "A1 A2 A3 A4 A5 A6 A7 A8"
+      "label": "À visée injonctive • annonce • itinéraire détaillé • spot publicitaire"
     },
     {
-      "code": "LM-S3-303-2",
-      "parentCode": "LM-C303",
+      "code": "LM-S3-307-3",
+      "parentCode": "LM-C307",
       "kind": "attendu",
       "subject": "Langue moderne",
       "grades": [
         "S3"
       ],
-      "label": "A2.1 A2.2"
+      "label": "A1 A2 A3 A4 A5 A6 A7 A8"
     },
     {
       "code": "LM-C308",
@@ -11482,7 +11492,7 @@
       "grades": [
         "S3"
       ],
-      "label": "• quelques formules de politesse • les titres et appellations (madame, mademoiselle, monsieur) • les relations avec son entourage (ami.e.s, famille…)"
+      "label": "CL À visée informative • album jeunesse • livre d’images"
     },
     {
       "code": "LM-S3-308-1",
@@ -11492,7 +11502,17 @@
       "grades": [
         "S3"
       ],
-      "label": "• actions liées aux relations avec l’entourage • codes sociaux : formules d’adresse, de remerciement, de salutation, de prise de congé, d’excuse"
+      "label": "Compréhension à la Lecture PRÉ-A1 A1 A2.1 A2.2 B1.1 B1.2 À visée informative À visée informative À visée informative À visée informative À visée informative Documents à dominante • album jeunesse • écriteaux et panneaux • écriteaux et panneaux • lettre • lettre textuelle • livre d’images • prospectus et • prospectus et • carte électronique/ • carte électronique/"
+    },
+    {
+      "code": "LM-S3-297-3",
+      "parentCode": "LM-C297",
+      "kind": "attendu",
+      "subject": "Langue moderne",
+      "grades": [
+        "S3"
+      ],
+      "label": "Compréhension à la Lecture"
     },
     {
       "code": "LM-C309",
@@ -11502,7 +11522,7 @@
       "grades": [
         "S3"
       ],
-      "label": "• les cours suivis par l’élève"
+      "label": "A1"
     },
     {
       "code": "LM-S3-309-1",
@@ -11512,7 +11532,7 @@
       "grades": [
         "S3"
       ],
-      "label": "• les grandes étapes du cursus scolaire"
+      "label": "A2.1 A2.2"
     },
     {
       "code": "LM-C310",
@@ -11522,7 +11542,7 @@
       "grades": [
         "S3"
       ],
-      "label": "• boissons et aliments courants • les actions de base liées à la consommation de nourriture et aux boissons • les repas de la journée • quelques objets liés à la restauration"
+      "label": "- Identité de soi et d’autrui • le nom, l’âge, le genre • le lieu de naissance et la date d’anniversaire • la composition de la famille proche • quelques noms de métiers • les langues parlées ou apprise(s) et les pays en relation avec ces"
     },
     {
       "code": "LM-S3-310-1",
@@ -11532,7 +11552,7 @@
       "grades": [
         "S3"
       ],
-      "label": "• expression des saveurs • les services qui composent un menu • objets et intervenants liés à la restauration • mets et boissons liés aux cultures de pays dont la langue nationale est la langue étudiée"
+      "label": "- Description • l’aspect physique : stature, silhouette et caractéristiques particulières • traits de caractère les plus courants • quelques états d’esprit • l’un ou l’autre personnage célèbre"
     },
     {
       "code": "LM-C311",
@@ -11542,7 +11562,7 @@
       "grades": [
         "S3"
       ],
-      "label": "• le temps qu’il fait au quotidien, y compris la température"
+      "label": "• les activités routinières à l’école et à la maison • quelques noms d’outils numériques liés à la vie quotidienne"
     },
     {
       "code": "LM-S3-311-1",
@@ -11552,7 +11572,7 @@
       "grades": [
         "S3"
       ],
-      "label": "• la météo : prévisions météorologiques (en réception)"
+      "label": "• activités spécifiques aux vacances • activités routinières à la maison, à l’école liées aux cultures de pays dont la langue nationale est la langue étudiée • quelques éléments culturels internationalement partagés • outils et activités liés aux technologies numériques de l’information et des médias"
     },
     {
       "code": "LM-C312",
@@ -11562,7 +11582,7 @@
       "grades": [
         "S3"
       ],
-      "label": "• la division de la journée • les saisons"
+      "label": "• les activités sportives les plus courantes • quelques lieux relatifs à des activités sportives • quelques activités culturelles • quelques lieux relatifs aux activités culturelles • quelques noms d’outils numériques liés aux loisirs"
     },
     {
       "code": "LM-S3-312-1",
@@ -11572,7 +11592,7 @@
       "grades": [
         "S3"
       ],
-      "label": "• indicateurs temporels liés aux temps étudiés • les congés et les fêtes qui jalonnent l’année"
+      "label": "• quelques outils et activités liés aux technologies • quelques acteurs de la vie culturelle, manifestations, évènements et productions artistiques • quelques noms de sports et de loisirs liés aux cultures de pays dont la langue nationale est la langue étudiée"
     },
     {
       "code": "LM-C313",
@@ -11582,7 +11602,7 @@
       "grades": [
         "S3"
       ],
-      "label": "Les pronoms personnels Les déterminants possessifs"
+      "label": "• les moyens de transport courants • itinéraires simples avec et sans repères"
     },
     {
       "code": "LM-S3-313-1",
@@ -11592,7 +11612,27 @@
       "grades": [
         "S3"
       ],
-      "label": "Nom Akk Dat Nom Akk Dat Gen"
+      "label": "• titres et documents de voyage • objets liés aux voyages • lieux et bâtiments liés au transport • quelques lieux de villégiature et d’hébergement. Infrastructures, équipements et services liés à ces lieux"
+    },
+    {
+      "code": "LM-S3-313-2",
+      "parentCode": "LM-C313",
+      "kind": "attendu",
+      "subject": "Langue moderne",
+      "grades": [
+        "S3"
+      ],
+      "label": "A1 A2 A3 A4 A5 A6 A7 A8"
+    },
+    {
+      "code": "LM-S3-309-2",
+      "parentCode": "LM-C309",
+      "kind": "attendu",
+      "subject": "Langue moderne",
+      "grades": [
+        "S3"
+      ],
+      "label": "A2.1 A2.2"
     },
     {
       "code": "LM-C314",
@@ -11602,7 +11642,7 @@
       "grades": [
         "S3"
       ],
-      "label": "Les déterminants démonstratifs"
+      "label": "• quelques formules de politesse • les titres et appellations (madame, mademoiselle, monsieur) • les relations avec son entourage (ami.e.s, famille…)"
     },
     {
       "code": "LM-S3-314-1",
@@ -11612,7 +11652,7 @@
       "grades": [
         "S3"
       ],
-      "label": "Nom Akk Dat Gen"
+      "label": "• actions liées aux relations avec l’entourage • codes sociaux : formules d’adresse, de remerciement, de salutation, de prise de congé, d’excuse"
     },
     {
       "code": "LM-C315",
@@ -11622,7 +11662,7 @@
       "grades": [
         "S3"
       ],
-      "label": "Le mot interrogatif « wer »"
+      "label": "• les cours suivis par l’élève"
     },
     {
       "code": "LM-S3-315-1",
@@ -11632,7 +11672,7 @@
       "grades": [
         "S3"
       ],
-      "label": "Nom Akk Dat"
+      "label": "• les grandes étapes du cursus scolaire"
     },
     {
       "code": "LM-C316",
@@ -11642,7 +11682,7 @@
       "grades": [
         "S3"
       ],
-      "label": "et simple constituée de phrases courtes, simples et articulées (6 ou 7 informations différentes) Pour rencontrer l’attendu, les productions définies ci-dessus peuvent mobiliser plusieurs champs thématiques, s’appuyer sur différents supports et combiner plusieurs structures et intentions de communication."
+      "label": "• boissons et aliments courants • les actions de base liées à la consommation de nourriture et aux boissons • les repas de la journée • quelques objets liés à la restauration"
     },
     {
       "code": "LM-S3-316-1",
@@ -11652,17 +11692,7 @@
       "grades": [
         "S3"
       ],
-      "label": "et simple constituée enregistré ou en complexité : un et simple constituée de phrases courtes, présentiel support simple d’une de phrases courtes, simples et articulées • longueur et longueur d’environ simples et articulées (6 ou 7 informations complexité : un 50 à 100 mots, en d’environ 60 à 80 différentes par support simple d’une fonction de la nature mots, en fonction de intervenant) longueur globale du message la nature du message d’environ 50 à 100 mots • structure : les informations suivent un ordre logique Pour rencontrer l’attendu, les productions définies ci-dessus peuvent mobiliser plusieurs champs thématiques, s’appuyer sur différents supports et combiner plusieurs structures et intentions de communication."
-    },
-    {
-      "code": "LM-S3-316-2",
-      "parentCode": "LM-C316",
-      "kind": "attendu",
-      "subject": "Langue moderne",
-      "grades": [
-        "S3"
-      ],
-      "label": "Au niveau de l’authenticité • authentique simple, simplifié ou conçu dans une visée éducative au départ d’un message authentique Au niveau du contenu"
+      "label": "• expression des saveurs • les services qui composent un menu • objets et intervenants liés à la restauration • mets et boissons liés aux cultures de pays dont la langue nationale est la langue étudiée"
     },
     {
       "code": "LM-C317",
@@ -11672,7 +11702,7 @@
       "grades": [
         "S3"
       ],
-      "label": "ompréhensible par un destinataire attentif"
+      "label": "• le temps qu’il fait au quotidien, y compris la température"
     },
     {
       "code": "LM-S3-317-1",
@@ -11682,7 +11712,7 @@
       "grades": [
         "S3"
       ],
-      "label": "questions prévisibles • formulation : explicite, • formulation : explicite • compréhensible par routinisées sans équivoque (pas sans abréviations, un destinataire attentif"
+      "label": "• la météo : prévisions météorologiques (en réception)"
     },
     {
       "code": "LM-C318",
@@ -11692,7 +11722,7 @@
       "grades": [
         "S3"
       ],
-      "label": "ertinent par rapport au contexte"
+      "label": "• la division de la journée • les saisons"
     },
     {
       "code": "LM-S3-318-1",
@@ -11702,7 +11732,7 @@
       "grades": [
         "S3"
       ],
-      "label": "un destinataire attentif second degré) de jeu de mots, pas de • pertinent par rapport et coopératif second degré au contexte"
+      "label": "• indicateurs temporels liés aux temps étudiés • les congés et les fêtes qui jalonnent l’année"
     },
     {
       "code": "LM-C319",
@@ -11712,7 +11742,7 @@
       "grades": [
         "S3"
       ],
-      "label": "intentions de"
+      "label": "Les pronoms personnels Les déterminants possessifs"
     },
     {
       "code": "LM-S3-319-1",
@@ -11722,7 +11752,7 @@
       "grades": [
         "S3"
       ],
-      "label": "au contexte intentions de"
+      "label": "Nom Akk Dat Nom Akk Dat Gen"
     },
     {
       "code": "LM-C320",
@@ -11732,7 +11762,7 @@
       "grades": [
         "S3"
       ],
-      "label": "Dynamique • l’élève participe aux échanges sans les animer • l’interlocuteur, natif ou assimilé - s’adresse - se montre - s’exprime dans une"
+      "label": "Les déterminants démonstratifs"
     },
     {
       "code": "LM-S3-320-1",
@@ -11742,17 +11772,7 @@
       "grades": [
         "S3"
       ],
-      "label": "directement à l’élève, distinctement, lentement et simplement spontanément attentif et coopératif (répétitions, reformulations, rectifications, non-verbal) langue standard sans accent régional marqué qui constituerait un obstacle à la compréhension"
-    },
-    {
-      "code": "LM-S3-320-2",
-      "parentCode": "LM-C320",
-      "kind": "attendu",
-      "subject": "Langue moderne",
-      "grades": [
-        "S3"
-      ],
-      "label": "Au niveau de la langue"
+      "label": "Nom Akk Dat Gen"
     },
     {
       "code": "LM-C321",
@@ -11762,7 +11782,7 @@
       "grades": [
         "S3"
       ],
-      "label": "Lexique usage correct d’un répertoire • de mots de base, de mots internationalement partagés • d’énoncés très courts (généralement des expressions idiomatiques et/ou routinisées), en lien avec la sphère précitée Grammaire • utilisation de formes grammaticales simples et de structures syntaxiques mémorisées • étendue grammaticale : outre les items pour lesquels des attendus grammaticaux ont été formulés spécifiquement cette année, les productions des élèves pourraient faire appel à des notions grammaticales qui seront abordées ultérieurement, sans qu’une erreur éventuelle relative à cette notion ne pénalise l’élève"
+      "label": "L’adjectif épithète : place et accord L’adjectif attribut Le mot interrogatif « wer »"
     },
     {
       "code": "LM-S3-321-1",
@@ -11772,27 +11792,7 @@
       "grades": [
         "S3"
       ],
-      "label": "Lexique Lexique le message doit être constitué d’un répertoire usage correct d’un • de mots de base, de mots internationalement répertoire élémentaire partagés • de mots, de mots • d’expressions toutes faites, en lien avec la internationalement sphère précitée partagés • d’expressions simples, en lien avec la sphère précitée Grammaire Grammaire • support caractérisé par • utilisation de formes - des formes grammaticales simples et grammaticales - des structures syntaxiques mémorisées simples et de • étendue grammaticale des sujets : outre les structures items pour lesquels des attendus grammaticaux syntaxiques ont été formulés spécifiquement cette année, mémorisées les supports proposés aux élèves peuvent • étendue grammaticale déjà contenir notions grammaticales qui seront des sujets : outre abordées, à condition qu’elles ne portent pas les items pour préjudice à la compréhension lesquels des attendus grammaticaux ont été formulés spécifiquement cette année, les productions des élèves pourraient faire appel à des notions grammaticales qui seront abordées ultérieurement, sans qu’une erreur éventuelle relative à cette notion ne pénalise l’élève"
-    },
-    {
-      "code": "LM-S3-321-2",
-      "parentCode": "LM-C321",
-      "kind": "attendu",
-      "subject": "Langue moderne",
-      "grades": [
-        "S3"
-      ],
-      "label": "A1 A2 A3 A4 A5 A6 A7 A8"
-    },
-    {
-      "code": "LM-S3-321-3",
-      "parentCode": "LM-C321",
-      "kind": "attendu",
-      "subject": "Langue moderne",
-      "grades": [
-        "S3"
-      ],
-      "label": "S2 : Niveau A1 + Début du niveau A2.1"
+      "label": "X X Nom Akk Dat"
     },
     {
       "code": "LM-C322",
@@ -11802,7 +11802,7 @@
       "grades": [
         "S3"
       ],
-      "label": "Prononciation, intonation et débit • prononciation globalement compréhensible par un auditeur attentif et coopératif • intonation adéquate, au service de l’intention communicative • débit lent et nombreuses pauses pour permettre à l’élève de chercher ses mots, pour prononcer les mots moins familiers Correction sociolinguistique • utilisation correcte des formes de politesse les plus élémentaires • quelques erreurs qui peuvent nécessiter des efforts de compréhension de la part du destinataire • de nombreuses pauses pour permettre à l’élève de chercher ses mots, pour prononcer les mots"
+      "label": "L’ordre des compléments non pronominalisés Les prépositions régissant un seul cas en fonction du contexte abordé Les prépositions mixtes en fonction du contexte abordé La proposition coordonnée (und, aber, oder, denn)"
     },
     {
       "code": "LM-S3-322-1",
@@ -11812,7 +11812,27 @@
       "grades": [
         "S3"
       ],
-      "label": "Prononciation, Orthographe intonation et débit • ne nuisant pas, le locuteur, malgré un grand natif ou assimilé, nombre d’erreurs, à la s’exprime compréhension par un • clairement et destinataire attentif distinctement et coopératif, grâce • avec un débit lent à une transcription • avec un accent ne suffisamment nuisant pas à la interprétable compréhension Correction sociolinguistique Correction • l’élève comprend les formes de politesse les plus sociolinguistique élémentaires • utilisation correcte des formes de politesse les plus élémentaires Tolérance à l’erreur • quelques erreurs qui peuvent nécessiter des efforts de compréhension de la part du destinataire"
+      "label": "X Akk Dat X X"
+    },
+    {
+      "code": "LM-S3-322-2",
+      "parentCode": "LM-C322",
+      "kind": "attendu",
+      "subject": "Langue moderne",
+      "grades": [
+        "S3"
+      ],
+      "label": "A1 A2 A3 A4 A5 A6 A7 A8"
+    },
+    {
+      "code": "LM-S3-322-3",
+      "parentCode": "LM-C322",
+      "kind": "attendu",
+      "subject": "Langue moderne",
+      "grades": [
+        "S3"
+      ],
+      "label": "A1 A2.1 A2.2"
     },
     {
       "code": "LM-C323",
@@ -11822,7 +11842,7 @@
       "grades": [
         "S3"
       ],
-      "label": "• devant une personne"
+      "label": "Les pronoms personnels sujets Les pronoms personnels compléments Les déterminants possessifs Les déterminants démonstratifs L’expression de la possession avec « ’s » et « of » L’adjectif attribut, l’adjectif épithète : place et invariabilité Les déterminants indéfinis : some/any, much/many/a lot of"
     },
     {
       "code": "LM-S3-323-1",
@@ -11832,7 +11852,7 @@
       "grades": [
         "S3"
       ],
-      "label": "face réel ou virtuel • émis dans de bonnes • présenté/mis en page dictionnaire traductif/"
+      "label": "X X X X X X X"
     },
     {
       "code": "LM-C324",
@@ -11842,7 +11862,7 @@
       "grades": [
         "S3"
       ],
-      "label": "• devant un groupe et/ou • sous forme d’un"
+      "label": "La proposition coordonnée (and, or, but) La proposition subordonnée introduite par « because » La proposition subordonnée introduite par une conjonction de subordination L’ordre des compléments"
     },
     {
       "code": "LM-S3-324-1",
@@ -11852,7 +11872,17 @@
       "grades": [
         "S3"
       ],
-      "label": "manière relativement • soutien à mettre en papier ou numérique) spontanée et - message évidence certaines sommaire éventuellement informations/"
+      "label": "A1 A2 A3 A4 A5 A6 A7 A8"
+    },
+    {
+      "code": "LM-S3-324-2",
+      "parentCode": "LM-C324",
+      "kind": "attendu",
+      "subject": "Langue moderne",
+      "grades": [
+        "S3"
+      ],
+      "label": "A1 A2.1 A2.2"
     },
     {
       "code": "LM-C325",
@@ -11862,7 +11892,7 @@
       "grades": [
         "S3"
       ],
-      "label": "audio(visuel) • s’exprime de manière relativement"
+      "label": "L’adjectif attribut L’adjectif épithète : place et accord Les pronoms personnels sujets Les déterminants possessifs Les déterminants démonstratifs Les pronoms personnels compléments directs"
     },
     {
       "code": "LM-S3-325-1",
@@ -11872,7 +11902,7 @@
       "grades": [
         "S3"
       ],
-      "label": "s’exprimer sur un - illustration par • présenté dans de nombre restreint des gestes ou des bonnes conditions de d’éléments images facilitant la lisibilité"
+      "label": "X X X X X X"
     },
     {
       "code": "LM-C326",
@@ -11882,7 +11912,7 @@
       "grades": [
         "S3"
       ],
-      "label": "sommaire • s’appuie sur un support visuel (ex. :"
+      "label": "La phrase simple affirmative avec ou sans inversion La phrase simple interrogative (avec ou sans mot interrogatif) La phrase simple négative avec « niet » ou « geen » L’ordre des compléments non pronominalisés La proposition coordonnée (maar, en, of, want)"
     },
     {
       "code": "LM-S3-326-1",
@@ -11892,7 +11922,17 @@
       "grades": [
         "S3"
       ],
-      "label": "d’un temps de réflexion et de préparation"
+      "label": "X X X X X"
+    },
+    {
+      "code": "LM-S3-326-2",
+      "parentCode": "LM-C326",
+      "kind": "attendu",
+      "subject": "Langue moderne",
+      "grades": [
+        "S3"
+      ],
+      "label": "A1 A2 A3 A4 A5 A6 A7 A8"
     },
     {
       "code": "LM-C327",
@@ -11902,7 +11942,7 @@
       "grades": [
         "S3"
       ],
-      "label": "une • présentation"
+      "label": "et simple constituée de phrases courtes, simples et articulées (6 ou 7 informations différentes) Pour rencontrer l’attendu, les productions définies ci-dessus peuvent mobiliser plusieurs champs thématiques, s’appuyer sur différents supports et combiner plusieurs structures et intentions de communication."
     },
     {
       "code": "LM-S3-327-1",
@@ -11912,7 +11952,17 @@
       "grades": [
         "S3"
       ],
-      "label": "dialogue dialogue • carte postale, courriel, présentation à com- • chanson, comptine, SMS pléter ou à construire"
+      "label": "et simple constituée enregistré ou en complexité : un et simple constituée de phrases courtes, présentiel support simple d’une de phrases courtes, simples et articulées • longueur et longueur d’environ simples et articulées (6 ou 7 informations complexité : un 50 à 100 mots, en d’environ 60 à 80 différentes par support simple d’une fonction de la nature mots, en fonction de intervenant) longueur globale du message la nature du message d’environ 50 à 100 mots • structure : les informations suivent un ordre logique Pour rencontrer l’attendu, les productions définies ci-dessus peuvent mobiliser plusieurs champs thématiques, s’appuyer sur différents supports et combiner plusieurs structures et intentions de communication."
+    },
+    {
+      "code": "LM-S3-327-2",
+      "parentCode": "LM-C327",
+      "kind": "attendu",
+      "subject": "Langue moderne",
+      "grades": [
+        "S3"
+      ],
+      "label": "Au niveau de l’authenticité • authentique simple, simplifié ou conçu dans une visée éducative au départ d’un message authentique Au niveau du contenu"
     },
     {
       "code": "LM-C328",
@@ -11922,7 +11972,7 @@
       "grades": [
         "S3"
       ],
-      "label": "et de lieux • description de personnes et d’objets À visée injonctive • consignes ou instructions pour effectuer une activité (bricolage, jeu, itinéraire avec plan) A. Planifier • se forger une représentation mentale de la production attendue • envisager les informations à communiquer • sélectionner les ressources linguistiques et tirer de son répertoire une série d’expressions"
+      "label": "ompréhensible par un destinataire attentif"
     },
     {
       "code": "LM-S3-328-1",
@@ -11932,7 +11982,7 @@
       "grades": [
         "S3"
       ],
-      "label": "instructions (dessin animé, série, publicités ou électronique) émission, jeux, selfie) • invitation • mémo/liste • menu de restauration • affiche/poster À visée injonctive rapide • illustration commentée • consignes, • album jeunesse • schéma commenté instructions relatives • livre d’images (itinéraire, plan) à l’environnement • BD immédiat • calendrier À visée injonctive • annonce courte, par • blog • mémo/liste exemple, dans une • affiche/poster gare ou un magasin À visée injonctive • illustration commentée • tutoriel • liste • schéma commenté • consignes (itinéraire, plan) • recette simplifiée À visée informative/ injonctive • invitation pré-imprimée à compléter • mémo/liste • affiche/poster • illustration commentée • schéma commenté (itinéraire, plan) Exemples de stratégies à activer au besoin A. Cadrer A. Cadrer A. Planifier • sur la base des • sur la base des • se forger une éléments disponibles éléments visuels représentation avant l’écoute (titre, éventuels : mentale de la éléments visuels - identifier le type de production attendue éventuels) : document - anticiper le contenu - anticiper le contenu du message du message - anticiper les - anticiper les éléments lexicaux du éléments lexicaux du message message • envisager les informations à communiquer • prendre en compte le destinataire"
+      "label": "questions prévisibles • formulation : explicite, • formulation : explicite • compréhensible par routinisées sans équivoque (pas sans abréviations, un destinataire attentif"
     },
     {
       "code": "LM-C329",
@@ -11942,7 +11992,7 @@
       "grades": [
         "S3"
       ],
-      "label": "• prendre en compte le destinataire du message"
+      "label": "ertinent par rapport au contexte"
     },
     {
       "code": "LM-S3-329-1",
@@ -11952,7 +12002,7 @@
       "grades": [
         "S3"
       ],
-      "label": "• sélectionner les ressources linguistiques et tirer de son répertoire une série d’expressions appropriées"
+      "label": "un destinataire attentif second degré) de jeu de mots, pas de • pertinent par rapport et coopératif second degré au contexte"
     },
     {
       "code": "LM-C330",
@@ -11962,7 +12012,7 @@
       "grades": [
         "S3"
       ],
-      "label": "B. Exécuter • s’appuyer sur des acquis et expériences antérieurs • prendre le risque de s’exprimer avec les ressources linguistiques disponibles • le cas échéant, maintenir le contact visuel avec le destinataire du message • trouver les moyens de contourner les difficultés, en mobilisant les ressources verbales (mots internationalement partagés, synonymes,"
+      "label": "intentions de"
     },
     {
       "code": "LM-S3-330-1",
@@ -11972,7 +12022,7 @@
       "grades": [
         "S3"
       ],
-      "label": "B. Formuler des B. Formuler des B. Exécuter hypothèses hypothèses • s’appuyer sur sa • se baser sur sa • prendre le risque connaissance du connaissance du de s’exprimer avec monde monde les ressources linguistiques disponibles • exploiter des indices • sélectionner les • s’appuyer sur des phoniques (voix, mots dont il faut acquis et expériences bruits de fond…) chercher ou vérifier la antérieurs et prosodiques signification dans le (intonation, ton) dictionnaire • exploiter les • exploiter des indices • organiser le message indices non non linguistiques de façon logique linguistiques (gestes, (éléments visuels, mimiques, regards, pictogrammes, type indices visuels, de document, titre, pictogrammes…) sous-titres) • repérer des mots clés • exploiter des indices linguistiques (mots clés)"
+      "label": "au contexte intentions de"
     },
     {
       "code": "LM-C331",
@@ -11982,7 +12032,7 @@
       "grades": [
         "S3"
       ],
-      "label": "• gérer l’aléatoire C. S’assurer de la compréhension du message"
+      "label": "Dynamique • l’élève participe aux échanges sans les animer • l’interlocuteur, natif ou assimilé - s’adresse - se montre - s’exprime dans une"
     },
     {
       "code": "LM-S3-331-1",
@@ -11992,7 +12042,17 @@
       "grades": [
         "S3"
       ],
-      "label": "en adaptant le scénario envisagé, en temporisant C. Vérifier les hypothèses C. Relire sa production"
+      "label": "directement à l’élève, distinctement, lentement et simplement spontanément attentif et coopératif (répétitions, reformulations, rectifications, non-verbal) langue standard sans accent régional marqué qui constituerait un obstacle à la compréhension"
+    },
+    {
+      "code": "LM-S3-331-2",
+      "parentCode": "LM-C331",
+      "kind": "attendu",
+      "subject": "Langue moderne",
+      "grades": [
+        "S3"
+      ],
+      "label": "Au niveau de la langue"
     },
     {
       "code": "LM-C332",
@@ -12002,7 +12062,7 @@
       "grades": [
         "S3"
       ],
-      "label": "que le message est passé en se basant sur le feedback non verbal du destinataire du message • répéter l’élément d’information dont on veut vérifier la bonne compréhension • coopérer en D. Remédier aux éventuelles incompréhensions • associer le non-verbal à la parole"
+      "label": "Lexique usage correct d’un répertoire • de mots de base, de mots internationalement partagés • d’énoncés très courts (généralement des expressions idiomatiques et/ou routinisées), en lien avec la sphère précitée Grammaire • utilisation de formes grammaticales simples et de structures syntaxiques mémorisées • étendue grammaticale : outre les items pour lesquels des attendus grammaticaux ont été formulés spécifiquement cette année, les productions des élèves pourraient faire appel à des notions grammaticales qui seront abordées ultérieurement, sans qu’une erreur éventuelle relative à cette notion ne pénalise l’élève"
     },
     {
       "code": "LM-S3-332-1",
@@ -12012,7 +12072,27 @@
       "grades": [
         "S3"
       ],
-      "label": "message est passé retirer de l’information se peut la correction en se basant sur lexicale, grammaticale le feedback verbal et orthographique ou non verbal du destinataire du message • vérifier la logique et la cohérence des informations retenues (éviter les contresens et les invraisemblances) manifestant sa (non-) compréhension D. Réviser les hypothèses D. Remédier • reprendre la démarche à l’étape A ou B, si trop • corriger les peu d’information découle de la vérification des éventuelles hypothèses inexactitudes"
+      "label": "Lexique Lexique le message doit être constitué d’un répertoire usage correct d’un • de mots de base, de mots internationalement répertoire élémentaire partagés • de mots, de mots • d’expressions toutes faites, en lien avec la internationalement sphère précitée partagés • d’expressions simples, en lien avec la sphère précitée Grammaire Grammaire • support caractérisé par • utilisation de formes - des formes grammaticales simples et grammaticales - des structures syntaxiques mémorisées simples et de • étendue grammaticale des sujets : outre les structures items pour lesquels des attendus grammaticaux syntaxiques ont été formulés spécifiquement cette année, mémorisées les supports proposés aux élèves peuvent • étendue grammaticale déjà contenir notions grammaticales qui seront des sujets : outre abordées, à condition qu’elles ne portent pas les items pour préjudice à la compréhension lesquels des attendus grammaticaux ont été formulés spécifiquement cette année, les productions des élèves pourraient faire appel à des notions grammaticales qui seront abordées ultérieurement, sans qu’une erreur éventuelle relative à cette notion ne pénalise l’élève"
+    },
+    {
+      "code": "LM-S3-332-2",
+      "parentCode": "LM-C332",
+      "kind": "attendu",
+      "subject": "Langue moderne",
+      "grades": [
+        "S3"
+      ],
+      "label": "A1 A2 A3 A4 A5 A6 A7 A8"
+    },
+    {
+      "code": "LM-S3-332-3",
+      "parentCode": "LM-C332",
+      "kind": "attendu",
+      "subject": "Langue moderne",
+      "grades": [
+        "S3"
+      ],
+      "label": "S2 : Niveau A1 + Début du niveau A2.1"
     },
     {
       "code": "LM-C333",
@@ -12022,7 +12102,7 @@
       "grades": [
         "S3"
       ],
-      "label": "• indiquer son"
+      "label": "Prononciation, intonation et débit • prononciation globalement compréhensible par un auditeur attentif et coopératif • intonation adéquate, au service de l’intention communicative • débit lent et nombreuses pauses pour permettre à l’élève de chercher ses mots, pour prononcer les mots moins familiers Correction sociolinguistique • utilisation correcte des formes de politesse les plus élémentaires • quelques erreurs qui peuvent nécessiter des efforts de compréhension de la part du destinataire • de nombreuses pauses pour permettre à l’élève de chercher ses mots, pour prononcer les mots"
     },
     {
       "code": "LM-S3-333-1",
@@ -12032,27 +12112,7 @@
       "grades": [
         "S3"
       ],
-      "label": "incompréhension à l’interlocuteur pour le faire répéter"
-    },
-    {
-      "code": "LM-S3-333-2",
-      "parentCode": "LM-C333",
-      "kind": "attendu",
-      "subject": "Langue moderne",
-      "grades": [
-        "S3"
-      ],
-      "label": "A1 A2 A3 A4 A5 A6 A7 A8"
-    },
-    {
-      "code": "LM-S3-333-3",
-      "parentCode": "LM-C333",
-      "kind": "attendu",
-      "subject": "Langue moderne",
-      "grades": [
-        "S3"
-      ],
-      "label": "S3 : niveau A2.2"
+      "label": "Prononciation, Orthographe intonation et débit • ne nuisant pas, le locuteur, malgré un grand natif ou assimilé, nombre d’erreurs, à la s’exprime compréhension par un • clairement et destinataire attentif distinctement et coopératif, grâce • avec un débit lent à une transcription • avec un accent ne suffisamment nuisant pas à la interprétable compréhension Correction sociolinguistique Correction • l’élève comprend les formes de politesse les plus sociolinguistique élémentaires • utilisation correcte des formes de politesse les plus élémentaires Tolérance à l’erreur • quelques erreurs qui peuvent nécessiter des efforts de compréhension de la part du destinataire"
     },
     {
       "code": "LM-C334",
@@ -12062,7 +12122,7 @@
       "grades": [
         "S3"
       ],
-      "label": "simple, constituée de phrases courtes, simples et articulées (un temps de parole d’environ 1 minute) Pour rencontrer l’attendu, les productions définies ci-dessus peuvent mobiliser plusieurs champs thématiques, s’appuyer sur différents supports et combiner plusieurs structures et intentions de communication."
+      "label": "• devant une personne"
     },
     {
       "code": "LM-S3-334-1",
@@ -12072,17 +12132,7 @@
       "grades": [
         "S3"
       ],
-      "label": "simple, constituée enregistré ou en d’une longueur simple, constituée de phrases courtes, présentiel d’environ 150 à 250 de phrases courtes, simples et articulées • longueur : support mots, en fonction de simples et articulées (un temps de parole d’une longueur la nature du message d’environ 100 à 120 de minimum 1 minute globale d’environ 150 mots, en fonction de par intervenant, en mots la nature du message fonction du sujet) • structure : les informations suivent un ordre logique Pour rencontrer l’attendu, les productions définies ci-dessus peuvent mobiliser plusieurs champs thématiques, s’appuyer sur différents supports et combiner plusieurs structures et intentions de communication."
-    },
-    {
-      "code": "LM-S3-334-2",
-      "parentCode": "LM-C334",
-      "kind": "attendu",
-      "subject": "Langue moderne",
-      "grades": [
-        "S3"
-      ],
-      "label": "Au niveau de l’authenticité • authentique simple, simplifié ou conçu dans une visée éducative au départ d’un message authentique Au niveau du contenu"
+      "label": "face réel ou virtuel • émis dans de bonnes • présenté/mis en page dictionnaire traductif/"
     },
     {
       "code": "LM-C335",
@@ -12092,7 +12142,7 @@
       "grades": [
         "S3"
       ],
-      "label": "ompréhensible par"
+      "label": "• devant un groupe et/ou • sous forme d’un"
     },
     {
       "code": "LM-S3-335-1",
@@ -12102,7 +12152,7 @@
       "grades": [
         "S3"
       ],
-      "label": "questions prévisible • formulation : explicite, sans équivoque (pas de • compréhensible par"
+      "label": "manière relativement • soutien à mettre en papier ou numérique) spontanée et - message évidence certaines sommaire éventuellement informations/"
     },
     {
       "code": "LM-C336",
@@ -12112,7 +12162,7 @@
       "grades": [
         "S3"
       ],
-      "label": "et bienveillant"
+      "label": "audio(visuel) • s’exprime de manière relativement"
     },
     {
       "code": "LM-S3-336-1",
@@ -12122,7 +12172,7 @@
       "grades": [
         "S3"
       ],
-      "label": "un destinataire attentif et bienveillant"
+      "label": "s’exprimer sur un - illustration par • présenté dans de nombre restreint des gestes ou des bonnes conditions de d’éléments images facilitant la lisibilité"
     },
     {
       "code": "LM-C337",
@@ -12132,7 +12182,7 @@
       "grades": [
         "S3"
       ],
-      "label": "ertinent par rapport"
+      "label": "sommaire • s’appuie sur un support visuel (ex. :"
     },
     {
       "code": "LM-S3-337-1",
@@ -12142,7 +12192,7 @@
       "grades": [
         "S3"
       ],
-      "label": "et bienveillant • pertinent par rapport"
+      "label": "d’un temps de réflexion et de préparation"
     },
     {
       "code": "LM-C338",
@@ -12152,7 +12202,7 @@
       "grades": [
         "S3"
       ],
-      "label": "ui traduit la ou les"
+      "label": "une • présentation"
     },
     {
       "code": "LM-S3-338-1",
@@ -12162,7 +12212,7 @@
       "grades": [
         "S3"
       ],
-      "label": "au contexte • qui traduit la ou les"
+      "label": "dialogue dialogue • carte postale, courriel, présentation à com- • chanson, comptine, SMS pléter ou à construire"
     },
     {
       "code": "LM-C339",
@@ -12172,7 +12222,7 @@
       "grades": [
         "S3"
       ],
-      "label": "communication"
+      "label": "et de lieux • description de personnes et d’objets À visée injonctive • consignes ou instructions pour effectuer une activité (bricolage, jeu, itinéraire avec plan) A. Planifier • se forger une représentation mentale de la production attendue • envisager les informations à communiquer • sélectionner les ressources linguistiques et tirer de son répertoire une série d’expressions"
     },
     {
       "code": "LM-S3-339-1",
@@ -12182,7 +12232,7 @@
       "grades": [
         "S3"
       ],
-      "label": "intentions de communication"
+      "label": "instructions (dessin animé, série, publicités ou électronique) émission, jeux, selfie) • invitation • mémo/liste • menu de restauration • affiche/poster À visée injonctive rapide • illustration commentée • consignes, • album jeunesse • schéma commenté instructions relatives • livre d’images (itinéraire, plan) à l’environnement • BD immédiat • calendrier À visée injonctive • annonce courte, par • blog • mémo/liste exemple, dans une • affiche/poster gare ou un magasin À visée injonctive • illustration commentée • tutoriel • liste • schéma commenté • consignes (itinéraire, plan) • recette simplifiée À visée informative/ injonctive • invitation pré-imprimée à compléter • mémo/liste • affiche/poster • illustration commentée • schéma commenté (itinéraire, plan) Exemples de stratégies à activer au besoin A. Cadrer A. Cadrer A. Planifier • sur la base des • sur la base des • se forger une éléments disponibles éléments visuels représentation avant l’écoute (titre, éventuels : mentale de la éléments visuels - identifier le type de production attendue éventuels) : document - anticiper le contenu - anticiper le contenu du message du message - anticiper les - anticiper les éléments lexicaux du éléments lexicaux du message message • envisager les informations à communiquer • prendre en compte le destinataire"
     },
     {
       "code": "LM-C340",
@@ -12192,7 +12242,7 @@
       "grades": [
         "S3"
       ],
-      "label": "ohésion assurée"
+      "label": "• prendre en compte le destinataire du message"
     },
     {
       "code": "LM-S3-340-1",
@@ -12202,7 +12252,7 @@
       "grades": [
         "S3"
       ],
-      "label": "communication • cohésion"
+      "label": "• sélectionner les ressources linguistiques et tirer de son répertoire une série d’expressions appropriées"
     },
     {
       "code": "LM-C341",
@@ -12212,7 +12262,7 @@
       "grades": [
         "S3"
       ],
-      "label": "connecteurs simples et n’impliquant pas de modification syntaxique"
+      "label": "B. Exécuter • s’appuyer sur des acquis et expériences antérieurs • prendre le risque de s’exprimer avec les ressources linguistiques disponibles • le cas échéant, maintenir le contact visuel avec le destinataire du message • trouver les moyens de contourner les difficultés, en mobilisant les ressources verbales (mots internationalement partagés, synonymes,"
     },
     {
       "code": "LM-S3-341-1",
@@ -12222,7 +12272,7 @@
       "grades": [
         "S3"
       ],
-      "label": "par l’utilisation de assurée par connecteurs simples l’utilisation de et n’impliquant pas connecteurs simples de modification syntaxique"
+      "label": "B. Formuler des B. Formuler des B. Exécuter hypothèses hypothèses • s’appuyer sur sa • se baser sur sa • prendre le risque connaissance du connaissance du de s’exprimer avec monde monde les ressources linguistiques disponibles • exploiter des indices • sélectionner les • s’appuyer sur des phoniques (voix, mots dont il faut acquis et expériences bruits de fond…) chercher ou vérifier la antérieurs et prosodiques signification dans le (intonation, ton) dictionnaire • exploiter les • exploiter des indices • organiser le message indices non non linguistiques de façon logique linguistiques (gestes, (éléments visuels, mimiques, regards, pictogrammes, type indices visuels, de document, titre, pictogrammes…) sous-titres) • repérer des mots clés • exploiter des indices linguistiques (mots clés)"
     },
     {
       "code": "LM-C342",
@@ -12232,7 +12282,7 @@
       "grades": [
         "S3"
       ],
-      "label": "Dynamique • l’élève participe aux échanges et peut les animer ponctuellement • l’élève échange sans restituer intégralement un contenu appris par cœur • l’élève peut attirer l’attention de l’interlocuteur pour initier, relancer la conversation • l’interlocuteur, natif ou assimilé - s’adresse - se montre - s’exprime dans une Lexique • usage correct d’un répertoire - de mots - de mots internationalement partagés - d’expressions, en lien avec la sphère précitée"
+      "label": "• gérer l’aléatoire C. S’assurer de la compréhension du message"
     },
     {
       "code": "LM-S3-342-1",
@@ -12242,27 +12292,7 @@
       "grades": [
         "S3"
       ],
-      "label": "directement à l’élève, distinctement et simplement spontanément attentif et bienveillant (répétitions, reformulations, rectifications, non-verbal) langue standard sans accent régional marqué qui constituerait un obstacle à la compréhension Au niveau de la langue Lexique Lexique • le message doit être constitué • usage correct d’un - de vocabulaire très fréquent répertoire - d’expressions simples, en lien avec la sphère - de mots précitée - d’expressions, en lien avec la sphère précitée"
-    },
-    {
-      "code": "LM-S3-342-2",
-      "parentCode": "LM-C342",
-      "kind": "attendu",
-      "subject": "Langue moderne",
-      "grades": [
-        "S3"
-      ],
-      "label": "A1 A2 A3 A4 A5 A6 A7 A8"
-    },
-    {
-      "code": "LM-S3-342-3",
-      "parentCode": "LM-C342",
-      "kind": "attendu",
-      "subject": "Langue moderne",
-      "grades": [
-        "S3"
-      ],
-      "label": "S3 : niveau A2.2"
+      "label": "en adaptant le scénario envisagé, en temporisant C. Vérifier les hypothèses C. Relire sa production"
     },
     {
       "code": "LM-C343",
@@ -12272,7 +12302,7 @@
       "grades": [
         "S3"
       ],
-      "label": "Grammaire • usage correct de structures simples • utilisation adéquate de conjonctions et/ou d’organisateurs textuels n’impliquant pas de modification syntaxique • étendue grammaticale : outre les items pour lesquels des attendus grammaticaux ont été formulés spécifiquement cette année, les productions des élèves pourraient faire appel à des notions grammaticales qui seront abordées ultérieurement, sans qu’une erreur éventuelle relative à cette notion ne pénalise l’élève Prononciation, intonation et débit • globalement compréhensible, malgré un accent non natif marqué et malgré des erreurs qui peuvent parfois nuire à la communication • intonation adéquate, au service de l’intention communicative • débit relativement fluide, en dépit de pauses et d’hésitations Correction sociolinguistique • utilisation correcte de marqueurs de relations sociales et de règles de politesse courants dans un registre de langue adapté à la situation"
+      "label": "que le message est passé en se basant sur le feedback non verbal du destinataire du message • répéter l’élément d’information dont on veut vérifier la bonne compréhension • coopérer en D. Remédier aux éventuelles incompréhensions • associer le non-verbal à la parole"
     },
     {
       "code": "LM-S3-343-1",
@@ -12282,17 +12312,7 @@
       "grades": [
         "S3"
       ],
-      "label": "Grammaire Grammaire • support caractérisé par des structures simples • usage • utilisation adéquate de conjonctions et/ou - de structures d’organisateurs textuels n’impliquant pas de simples modification syntaxique - de conjonctions et/ou • étendue grammaticale des sujets : outre les d’organisateurs items pour lesquels des attendus grammaticaux textuels n’impliquant ont été formulés spécifiquement cette année, pas de modification les supports proposés aux élèves peuvent syntaxique déjà contenir notions grammaticales qui seront • étendue grammaticale abordées, à condition qu’elles ne portent pas des sujets : outre préjudice à la compréhension les items pour lesquels des attendus grammaticaux ont été formulés spécifiquement cette année, les productions des élèves pourraient faire appel à des notions grammaticales qui seront abordées ultérieurement, sans qu’une erreur éventuelle relative à cette notion ne pénalise l’élève Prononciation, Orthographe intonation et débit • relative exactitude le locuteur, orthographique natif ou assimilé, des mots qui s’exprime appartiennent à • clairement et son répertoire écrit distinctement mémorisé • avec un débit lent • relative exactitude • avec un accent ne phonétique (mais nuisant pas à la pas forcément compréhension orthographique) des mots qui appartiennent à son vocabulaire oral Correction sociolinguistique Correction • l’élève comprend les marqueurs de relations sociolinguistique sociales et de règles de politesse courants dans • utilisation correcte un registre adapté à la situation de marqueurs de relations sociales et de règles de politesse courants dans un registre de langue adapté à la situation"
-    },
-    {
-      "code": "LM-S3-343-2",
-      "parentCode": "LM-C343",
-      "kind": "attendu",
-      "subject": "Langue moderne",
-      "grades": [
-        "S3"
-      ],
-      "label": "Tolérance à l’erreur"
+      "label": "message est passé retirer de l’information se peut la correction en se basant sur lexicale, grammaticale le feedback verbal et orthographique ou non verbal du destinataire du message • vérifier la logique et la cohérence des informations retenues (éviter les contresens et les invraisemblances) manifestant sa (non-) compréhension D. Réviser les hypothèses D. Remédier • reprendre la démarche à l’étape A ou B, si trop • corriger les peu d’information découle de la vérification des éventuelles hypothèses inexactitudes"
     },
     {
       "code": "LM-C344",
@@ -12302,7 +12322,7 @@
       "grades": [
         "S3"
       ],
-      "label": "• quelques erreurs élémentaires qui peuvent nécessiter des efforts de compréhension de la part du destinataire • des pauses et des hésitations"
+      "label": "• indiquer son"
     },
     {
       "code": "LM-S3-344-1",
@@ -12312,7 +12332,7 @@
       "grades": [
         "S3"
       ],
-      "label": "• quelques erreurs élémentaires récurrentes qui n’entravent pas la compréhension du sens général du message"
+      "label": "incompréhension à l’interlocuteur pour le faire répéter"
     },
     {
       "code": "LM-S3-344-2",
@@ -12342,7 +12362,7 @@
       "grades": [
         "S3"
       ],
-      "label": "- devant une personne ou"
+      "label": "simple, constituée de phrases courtes, simples et articulées (un temps de parole d’environ 1 minute) Pour rencontrer l’attendu, les productions définies ci-dessus peuvent mobiliser plusieurs champs thématiques, s’appuyer sur différents supports et combiner plusieurs structures et intentions de communication."
     },
     {
       "code": "LM-S3-345-1",
@@ -12352,7 +12372,17 @@
       "grades": [
         "S3"
       ],
-      "label": "face réel ou virtuel, ou • émis dans de bonnes fonction de la nature (en version papier ou par téléphone conditions sonores du message numérique)"
+      "label": "simple, constituée enregistré ou en d’une longueur simple, constituée de phrases courtes, présentiel d’environ 150 à 250 de phrases courtes, simples et articulées • longueur : support mots, en fonction de simples et articulées (un temps de parole d’une longueur la nature du message d’environ 100 à 120 de minimum 1 minute globale d’environ 150 mots, en fonction de par intervenant, en mots la nature du message fonction du sujet) • structure : les informations suivent un ordre logique Pour rencontrer l’attendu, les productions définies ci-dessus peuvent mobiliser plusieurs champs thématiques, s’appuyer sur différents supports et combiner plusieurs structures et intentions de communication."
+    },
+    {
+      "code": "LM-S3-345-2",
+      "parentCode": "LM-C345",
+      "kind": "attendu",
+      "subject": "Langue moderne",
+      "grades": [
+        "S3"
+      ],
+      "label": "Au niveau de l’authenticité • authentique simple, simplifié ou conçu dans une visée éducative au départ d’un message authentique Au niveau du contenu"
     },
     {
       "code": "LM-C346",
@@ -12362,7 +12392,7 @@
       "grades": [
         "S3"
       ],
-      "label": "présentiel ou en ligne) ou"
+      "label": "ompréhensible par"
     },
     {
       "code": "LM-S3-346-1",
@@ -12372,7 +12402,7 @@
       "grades": [
         "S3"
       ],
-      "label": "manière relativement plusieurs intervenants bonnes conditions de spontanée natifs (ou, à défaut, lisibilité"
+      "label": "questions prévisible • formulation : explicite, sans équivoque (pas de • compréhensible par"
     },
     {
       "code": "LM-C347",
@@ -12382,7 +12412,7 @@
       "grades": [
         "S3"
       ],
-      "label": "• s’exprime avec l’aide éventuelle d’un support visuel schématique (ex. :"
+      "label": "et bienveillant"
     },
     {
       "code": "LM-S3-347-1",
@@ -12392,7 +12422,7 @@
       "grades": [
         "S3"
       ],
-      "label": "l’aide éventuelle • soutien d’un support visuel - message schématique (ex. : éventuellement plan, illustrations, liste répété"
+      "label": "un destinataire attentif et bienveillant"
     },
     {
       "code": "LM-C348",
@@ -12402,7 +12432,7 @@
       "grades": [
         "S3"
       ],
-      "label": "plan, diaporama, liste de mots clés, carte"
+      "label": "ertinent par rapport"
     },
     {
       "code": "LM-S3-348-1",
@@ -12412,7 +12442,7 @@
       "grades": [
         "S3"
       ],
-      "label": "de mots clés, carte - illustration par heuristique…) des gestes ou"
+      "label": "et bienveillant • pertinent par rapport"
     },
     {
       "code": "LM-C349",
@@ -12422,7 +12452,7 @@
       "grades": [
         "S3"
       ],
-      "label": "• dispose en classe d’un bref temps pour réfléchir et/ou"
+      "label": "ui traduit la ou les"
     },
     {
       "code": "LM-S3-349-1",
@@ -12432,7 +12462,7 @@
       "grades": [
         "S3"
       ],
-      "label": "d’un bref temps visuels facilitant la pour réfléchir et/ou compréhension préparer son support"
+      "label": "au contexte • qui traduit la ou les"
     },
     {
       "code": "LM-C350",
@@ -12442,7 +12472,7 @@
       "grades": [
         "S3"
       ],
-      "label": "• description et"
+      "label": "communication"
     },
     {
       "code": "LM-S3-350-1",
@@ -12452,7 +12482,7 @@
       "grades": [
         "S3"
       ],
-      "label": "de base (type GPS) • interview électronique)/courriel/ • règlement, consigne,"
+      "label": "intentions de communication"
     },
     {
       "code": "LM-C351",
@@ -12462,7 +12492,7 @@
       "grades": [
         "S3"
       ],
-      "label": "présentation d’une"
+      "label": "ohésion assurée"
     },
     {
       "code": "LM-S3-351-1",
@@ -12472,7 +12502,7 @@
       "grades": [
         "S3"
       ],
-      "label": "• bulletin d’information SMS instruction"
+      "label": "communication • cohésion"
     },
     {
       "code": "LM-C352",
@@ -12482,7 +12512,7 @@
       "grades": [
         "S3"
       ],
-      "label": "photos, d’affiches, de séquences vidéo…) • visite guidée (d’un bâtiment, d’un quartier de la ville…) • message sur une boite vocale À visée injonctive • instruction • tutoriel • message sur une boite vocale"
+      "label": "connecteurs simples et n’impliquant pas de modification syntaxique"
     },
     {
       "code": "LM-S3-352-1",
@@ -12492,7 +12522,7 @@
       "grades": [
         "S3"
       ],
-      "label": "instructions • message sur boite • invitation injonctive vocale • petite annonce • carton d’invitation • annonce publique ou • formulaire complété • courriel/lettre privée • écriteau • note/mémo/Post-it • chanson • article de presse • carte (postale ou • menu électronique) À visée injonctive • page web • article dans le journal • annonce • littérature pour la de l’école • instruction, consignes jeunesse • journal personnel • message sur boite • littérature simplifiée décrivant des vocale activités • selfie-vidéo À visée injonctive • article de blog • tutoriel • règles (simples) de jeu • avis de recherche • procédure • petite annonce • consignes • itinéraire • recette • mémo • convocation • mode d’emploi d’un appareil d’usage courant"
+      "label": "par l’utilisation de assurée par connecteurs simples l’utilisation de et n’impliquant pas connecteurs simples de modification syntaxique"
     },
     {
       "code": "LM-C353",
@@ -12502,7 +12532,7 @@
       "grades": [
         "S3"
       ],
-      "label": "A. Planifier • se forger une représentation mentale de la production attendue • envisager les informations à communiquer"
+      "label": "Dynamique • l’élève participe aux échanges et peut les animer ponctuellement • l’élève échange sans restituer intégralement un contenu appris par cœur • l’élève peut attirer l’attention de l’interlocuteur pour initier, relancer la conversation • l’interlocuteur, natif ou assimilé - s’adresse - se montre - s’exprime dans une Lexique • usage correct d’un répertoire - de mots - de mots internationalement partagés - d’expressions, en lien avec la sphère précitée"
     },
     {
       "code": "LM-S3-353-1",
@@ -12512,7 +12542,27 @@
       "grades": [
         "S3"
       ],
-      "label": "A. Cadrer A. Cadrer A. Planifier • sur la base des • sur la base du • se forger une éléments disponibles paratexte (mise en représentation avant l’écoute (titre, page, illustrations, mentale de la éléments visuels conventions production attendue éventuels) : typographiques…) : - anticiper le contenu - identifier le type de du message document - anticiper les - anticiper le contenu éléments lexicaux du du message message - anticiper les éléments lexicaux du message • envisager les informations à communiquer"
+      "label": "directement à l’élève, distinctement et simplement spontanément attentif et bienveillant (répétitions, reformulations, rectifications, non-verbal) langue standard sans accent régional marqué qui constituerait un obstacle à la compréhension Au niveau de la langue Lexique Lexique • le message doit être constitué • usage correct d’un - de vocabulaire très fréquent répertoire - d’expressions simples, en lien avec la sphère - de mots précitée - d’expressions, en lien avec la sphère précitée"
+    },
+    {
+      "code": "LM-S3-353-2",
+      "parentCode": "LM-C353",
+      "kind": "attendu",
+      "subject": "Langue moderne",
+      "grades": [
+        "S3"
+      ],
+      "label": "A1 A2 A3 A4 A5 A6 A7 A8"
+    },
+    {
+      "code": "LM-S3-353-3",
+      "parentCode": "LM-C353",
+      "kind": "attendu",
+      "subject": "Langue moderne",
+      "grades": [
+        "S3"
+      ],
+      "label": "S3 : niveau A2.2"
     },
     {
       "code": "LM-C354",
@@ -12522,7 +12572,7 @@
       "grades": [
         "S3"
       ],
-      "label": "électionner les ressources linguistiques et tirer de son répertoire une série d’expressions appropriées • prendre en compte le destinataire du message et anticiper ses besoins d’information et ses réactions potentielles"
+      "label": "Grammaire • usage correct de structures simples • utilisation adéquate de conjonctions et/ou d’organisateurs textuels n’impliquant pas de modification syntaxique • étendue grammaticale : outre les items pour lesquels des attendus grammaticaux ont été formulés spécifiquement cette année, les productions des élèves pourraient faire appel à des notions grammaticales qui seront abordées ultérieurement, sans qu’une erreur éventuelle relative à cette notion ne pénalise l’élève Prononciation, intonation et débit • globalement compréhensible, malgré un accent non natif marqué et malgré des erreurs qui peuvent parfois nuire à la communication • intonation adéquate, au service de l’intention communicative • débit relativement fluide, en dépit de pauses et d’hésitations Correction sociolinguistique • utilisation correcte de marqueurs de relations sociales et de règles de politesse courants dans un registre de langue adapté à la situation"
     },
     {
       "code": "LM-S3-354-1",
@@ -12532,7 +12582,7 @@
       "grades": [
         "S3"
       ],
-      "label": "• prendre en compte le destinataire • sélectionner les ressources linguistiques et tirer de son répertoire une série d’expressions appropriées • réfléchir aux éléments constitutifs du message et à leur organisation"
+      "label": "Grammaire Grammaire • support caractérisé par des structures simples • usage • utilisation adéquate de conjonctions et/ou - de structures d’organisateurs textuels n’impliquant pas de simples modification syntaxique - de conjonctions et/ou • étendue grammaticale des sujets : outre les d’organisateurs items pour lesquels des attendus grammaticaux textuels n’impliquant ont été formulés spécifiquement cette année, pas de modification les supports proposés aux élèves peuvent syntaxique déjà contenir notions grammaticales qui seront • étendue grammaticale abordées, à condition qu’elles ne portent pas des sujets : outre préjudice à la compréhension les items pour lesquels des attendus grammaticaux ont été formulés spécifiquement cette année, les productions des élèves pourraient faire appel à des notions grammaticales qui seront abordées ultérieurement, sans qu’une erreur éventuelle relative à cette notion ne pénalise l’élève Prononciation, Orthographe intonation et débit • relative exactitude le locuteur, orthographique natif ou assimilé, des mots qui s’exprime appartiennent à • clairement et son répertoire écrit distinctement mémorisé • avec un débit lent • relative exactitude • avec un accent ne phonétique (mais nuisant pas à la pas forcément compréhension orthographique) des mots qui appartiennent à son vocabulaire oral Correction sociolinguistique Correction • l’élève comprend les marqueurs de relations sociolinguistique sociales et de règles de politesse courants dans • utilisation correcte un registre adapté à la situation de marqueurs de relations sociales et de règles de politesse courants dans un registre de langue adapté à la situation"
     },
     {
       "code": "LM-S3-354-2",
@@ -12542,17 +12592,7 @@
       "grades": [
         "S3"
       ],
-      "label": "A1 A2 A3 A4 A5 A6 A7 A8"
-    },
-    {
-      "code": "LM-S3-354-3",
-      "parentCode": "LM-C354",
-      "kind": "attendu",
-      "subject": "Langue moderne",
-      "grades": [
-        "S3"
-      ],
-      "label": "S3 : niveau A2.2"
+      "label": "Tolérance à l’erreur"
     },
     {
       "code": "LM-C355",
@@ -12562,7 +12602,7 @@
       "grades": [
         "S3"
       ],
-      "label": "• s’appuyer sur des acquis et expériences antérieurs • prendre le risque de s’exprimer avec les ressources linguistiques disponibles"
+      "label": "• quelques erreurs élémentaires qui peuvent nécessiter des efforts de compréhension de la part du destinataire • des pauses et des hésitations"
     },
     {
       "code": "LM-S3-355-1",
@@ -12572,7 +12612,27 @@
       "grades": [
         "S3"
       ],
-      "label": "• s’appuyer sur sa • se baser sur sa • prendre le risque connaissance du connaissance du de s’exprimer avec monde monde les ressources linguistiques disponibles • exploiter les indices • sélectionner les • s’appuyer sur des phoniques (voix, mots dont il faut acquis et expériences bruits de fond…) chercher ou vérifier la antérieurs et prosodiques signification dans le (intonation, débit, dictionnaire accent, ton)"
+      "label": "• quelques erreurs élémentaires récurrentes qui n’entravent pas la compréhension du sens général du message"
+    },
+    {
+      "code": "LM-S3-355-2",
+      "parentCode": "LM-C355",
+      "kind": "attendu",
+      "subject": "Langue moderne",
+      "grades": [
+        "S3"
+      ],
+      "label": "A1 A2 A3 A4 A5 A6 A7 A8"
+    },
+    {
+      "code": "LM-S3-355-3",
+      "parentCode": "LM-C355",
+      "kind": "attendu",
+      "subject": "Langue moderne",
+      "grades": [
+        "S3"
+      ],
+      "label": "S3 : niveau A2.2"
     },
     {
       "code": "LM-C356",
@@ -12582,7 +12642,7 @@
       "grades": [
         "S3"
       ],
-      "label": "maintenir le contact visuel avec le destinataire du message"
+      "label": "- devant une personne ou"
     },
     {
       "code": "LM-S3-356-1",
@@ -12592,7 +12652,7 @@
       "grades": [
         "S3"
       ],
-      "label": "visuel avec le indices non non linguistiques de façon cohérente destinataire du linguistiques (gestes, (éléments visuels, message mimiques, regards, pictogrammes, type indices visuels, de document, titre, pictogrammes) sous-titres, éléments du paratexte…)"
+      "label": "face réel ou virtuel, ou • émis dans de bonnes fonction de la nature (en version papier ou par téléphone conditions sonores du message numérique)"
     },
     {
       "code": "LM-C357",
@@ -12602,7 +12662,7 @@
       "grades": [
         "S3"
       ],
-      "label": "• trouver les moyens de contourner les difficultés, en mobilisant les ressources verbales (simplifications, synonymes, tentatives d’adaptation de mots français…) et/ou non verbales dont on dispose • gérer l’aléatoire en adaptant le scénario envisagé, en temporisant • prendre la parole au • prendre l’initiative • coopérer en"
+      "label": "présentiel ou en ligne) ou"
     },
     {
       "code": "LM-S3-357-1",
@@ -12612,27 +12672,7 @@
       "grades": [
         "S3"
       ],
-      "label": "• repérer les mots clés • exploiter les indices • trouver les moyens et les marqueurs de linguistiques (mots de contourner discours (connecteurs clés, marqueurs de les difficultés, logiques, temporels…) discours, connecteurs en mobilisant logiques, temporels…) les ressources linguistiques (simplifications, synonymes, tentatives d’adaptation de mots français dans la langue cible…) dont on dispose • inférer, à partir du • inférer, à partir du contexte et/ou de leur contexte et/ou de morphologie, le sens leur morphologie, des mots inconnus et le sens des mots déduire le sens des ou d’expressions unités sémantiques inconnus et déduire le sens des unités sémantiques moment opportun de l’échange en attirant l’attention de l’interlocuteur manifestant sa (non-) compréhension"
-    },
-    {
-      "code": "LM-S3-357-2",
-      "parentCode": "LM-C357",
-      "kind": "attendu",
-      "subject": "Langue moderne",
-      "grades": [
-        "S3"
-      ],
-      "label": "A1 A2 A3 A4 A5 A6 A7 A8"
-    },
-    {
-      "code": "LM-S3-357-3",
-      "parentCode": "LM-C357",
-      "kind": "attendu",
-      "subject": "Langue moderne",
-      "grades": [
-        "S3"
-      ],
-      "label": "S3 : niveau A2.2"
+      "label": "manière relativement plusieurs intervenants bonnes conditions de spontanée natifs (ou, à défaut, lisibilité"
     },
     {
       "code": "LM-C358",
@@ -12642,7 +12682,7 @@
       "grades": [
         "S3"
       ],
-      "label": "message est passé, en se basant sur le feedback non verbal du destinataire du message • répéter l’élément d’information dont on veut vérifier la bonne compréhension D. Remédier aux éventuelles incompréhensions • associer le non-verbal voire l’écrit à la parole"
+      "label": "• s’exprime avec l’aide éventuelle d’un support visuel schématique (ex. :"
     },
     {
       "code": "LM-S3-358-1",
@@ -12652,7 +12692,7 @@
       "grades": [
         "S3"
       ],
-      "label": "message est passé, valider et en retirer de l’information lexicale, grammaticale, en se basant sur syntaxique et le feedback verbal orthographique, par et non verbal de exemple, à l’aide l’interlocuteur et d’une grille d’(auto-) sur la suite de la évaluation conversation • vérifier la logique et la cohérence des • vérifier l’organisation informations retenues (éviter les contresens et de la production et du les invraisemblances) contenu, par exemple, à l’aide d’une grille d’(auto-)évaluation D. Réviser les hypothèses D. Remédier • reprendre la démarche à l’étape A ou B, si trop • corriger les peu d’information découle de la vérification des éventuelles hypothèses inexactitudes et incohérences sur la base de ses connaissances ; à ce stade, affiner sa production à l’aide d’un dictionnaire traductif"
+      "label": "l’aide éventuelle • soutien d’un support visuel - message schématique (ex. : éventuellement plan, illustrations, liste répété"
     },
     {
       "code": "LM-C359",
@@ -12662,7 +12702,7 @@
       "grades": [
         "S3"
       ],
-      "label": "prononciation qui a conduit à un malentendu, si le non-"
+      "label": "plan, diaporama, liste de mots clés, carte"
     },
     {
       "code": "LM-S3-359-1",
@@ -12672,17 +12712,7 @@
       "grades": [
         "S3"
       ],
-      "label": "incompréhension à l’interlocuteur pour le faire répéter"
-    },
-    {
-      "code": "LM-S3-303-3",
-      "parentCode": "LM-C303",
-      "kind": "attendu",
-      "subject": "Langue moderne",
-      "grades": [
-        "S3"
-      ],
-      "label": "A2.1 A2.2"
+      "label": "de mots clés, carte - illustration par heuristique…) des gestes ou"
     },
     {
       "code": "LM-C360",
@@ -12692,7 +12722,7 @@
       "grades": [
         "S3"
       ],
-      "label": "- Identité de soi et d’autrui • les adresses postale et électronique"
+      "label": "• dispose en classe d’un bref temps pour réfléchir et/ou"
     },
     {
       "code": "LM-S3-360-1",
@@ -12702,7 +12732,7 @@
       "grades": [
         "S3"
       ],
-      "label": "- Description • l’un ou l’autre personnage célèbre"
+      "label": "d’un bref temps visuels facilitant la pour réfléchir et/ou compréhension préparer son support"
     },
     {
       "code": "LM-C361",
@@ -12712,7 +12742,7 @@
       "grades": [
         "S3"
       ],
-      "label": "• les activités routinières à l’école et à la maison"
+      "label": "• description et"
     },
     {
       "code": "LM-S3-361-1",
@@ -12722,7 +12752,7 @@
       "grades": [
         "S3"
       ],
-      "label": "• activités routinières à la maison, à l’école liées aux cultures de pays dont la langue nationale est la langue étudiée • quelques éléments culturels internationalement partagés"
+      "label": "de base (type GPS) • interview électronique)/courriel/ • règlement, consigne,"
     },
     {
       "code": "LM-C362",
@@ -12732,7 +12762,7 @@
       "grades": [
         "S3"
       ],
-      "label": "• les activités sportives les plus courantes • quelques lieux relatifs à des activités sportives • quelques activités culturelles • quelques lieux relatifs aux activités culturelles"
+      "label": "présentation d’une"
     },
     {
       "code": "LM-S3-362-1",
@@ -12742,7 +12772,7 @@
       "grades": [
         "S3"
       ],
-      "label": "• quelques acteurs de la vie culturelle, manifestations, évènements et productions artistiques • quelques noms de sports et de loisirs liés aux cultures de pays dont la langue nationale est la langue étudiée"
+      "label": "• bulletin d’information SMS instruction"
     },
     {
       "code": "LM-C363",
@@ -12752,7 +12782,7 @@
       "grades": [
         "S3"
       ],
-      "label": "• les moyens de transport courants"
+      "label": "photos, d’affiches, de séquences vidéo…) • visite guidée (d’un bâtiment, d’un quartier de la ville…) • message sur une boite vocale À visée injonctive • instruction • tutoriel • message sur une boite vocale"
     },
     {
       "code": "LM-S3-363-1",
@@ -12762,17 +12792,7 @@
       "grades": [
         "S3"
       ],
-      "label": "• quelques lieux de villégiature et d’hébergement."
-    },
-    {
-      "code": "LM-S3-363-2",
-      "parentCode": "LM-C363",
-      "kind": "attendu",
-      "subject": "Langue moderne",
-      "grades": [
-        "S3"
-      ],
-      "label": "Infrastructures, équipements et services liés à ces lieux"
+      "label": "instructions • message sur boite • invitation injonctive vocale • petite annonce • carton d’invitation • annonce publique ou • formulaire complété • courriel/lettre privée • écriteau • note/mémo/Post-it • chanson • article de presse • carte (postale ou • menu électronique) À visée injonctive • page web • article dans le journal • annonce • littérature pour la de l’école • instruction, consignes jeunesse • journal personnel • message sur boite • littérature simplifiée décrivant des vocale activités • selfie-vidéo À visée injonctive • article de blog • tutoriel • règles (simples) de jeu • avis de recherche • procédure • petite annonce • consignes • itinéraire • recette • mémo • convocation • mode d’emploi d’un appareil d’usage courant"
     },
     {
       "code": "LM-C364",
@@ -12782,7 +12802,7 @@
       "grades": [
         "S3"
       ],
-      "label": "uelques formules de politesse"
+      "label": "A. Planifier • se forger une représentation mentale de la production attendue • envisager les informations à communiquer"
     },
     {
       "code": "LM-S3-364-1",
@@ -12792,7 +12812,7 @@
       "grades": [
         "S3"
       ],
-      "label": "• codes sociaux : formules d’adresse, de remerciement, de salutation, de prise de congé, d’excuse"
+      "label": "A. Cadrer A. Cadrer A. Planifier • sur la base des • sur la base du • se forger une éléments disponibles paratexte (mise en représentation avant l’écoute (titre, page, illustrations, mentale de la éléments visuels conventions production attendue éventuels) : typographiques…) : - anticiper le contenu - identifier le type de du message document - anticiper les - anticiper le contenu éléments lexicaux du du message message - anticiper les éléments lexicaux du message • envisager les informations à communiquer"
     },
     {
       "code": "LM-C365",
@@ -12802,7 +12822,7 @@
       "grades": [
         "S3"
       ],
-      "label": "• la vie scolaire dans une région/un pays où la langue cible est"
+      "label": "électionner les ressources linguistiques et tirer de son répertoire une série d’expressions appropriées • prendre en compte le destinataire du message et anticiper ses besoins d’information et ses réactions potentielles"
     },
     {
       "code": "LM-S3-365-1",
@@ -12812,7 +12832,27 @@
       "grades": [
         "S3"
       ],
-      "label": "• les grandes étapes du cursus scolaire"
+      "label": "• prendre en compte le destinataire • sélectionner les ressources linguistiques et tirer de son répertoire une série d’expressions appropriées • réfléchir aux éléments constitutifs du message et à leur organisation"
+    },
+    {
+      "code": "LM-S3-365-2",
+      "parentCode": "LM-C365",
+      "kind": "attendu",
+      "subject": "Langue moderne",
+      "grades": [
+        "S3"
+      ],
+      "label": "A1 A2 A3 A4 A5 A6 A7 A8"
+    },
+    {
+      "code": "LM-S3-365-3",
+      "parentCode": "LM-C365",
+      "kind": "attendu",
+      "subject": "Langue moderne",
+      "grades": [
+        "S3"
+      ],
+      "label": "S3 : niveau A2.2"
     },
     {
       "code": "LM-C366",
@@ -12822,7 +12862,7 @@
       "grades": [
         "S3"
       ],
-      "label": "• boissons et aliments courants • les repas de la journée"
+      "label": "• s’appuyer sur des acquis et expériences antérieurs • prendre le risque de s’exprimer avec les ressources linguistiques disponibles"
     },
     {
       "code": "LM-S3-366-1",
@@ -12832,7 +12872,7 @@
       "grades": [
         "S3"
       ],
-      "label": "• mets et boissons liés aux cultures de pays dont la langue nationale est la langue étudiée"
+      "label": "• s’appuyer sur sa • se baser sur sa • prendre le risque connaissance du connaissance du de s’exprimer avec monde monde les ressources linguistiques disponibles • exploiter les indices • sélectionner les • s’appuyer sur des phoniques (voix, mots dont il faut acquis et expériences bruits de fond…) chercher ou vérifier la antérieurs et prosodiques signification dans le (intonation, débit, dictionnaire accent, ton)"
     },
     {
       "code": "LM-C367",
@@ -12842,11 +12882,271 @@
       "grades": [
         "S3"
       ],
-      "label": "• la date"
+      "label": "maintenir le contact visuel avec le destinataire du message"
     },
     {
       "code": "LM-S3-367-1",
       "parentCode": "LM-C367",
+      "kind": "attendu",
+      "subject": "Langue moderne",
+      "grades": [
+        "S3"
+      ],
+      "label": "visuel avec le indices non non linguistiques de façon cohérente destinataire du linguistiques (gestes, (éléments visuels, message mimiques, regards, pictogrammes, type indices visuels, de document, titre, pictogrammes) sous-titres, éléments du paratexte…)"
+    },
+    {
+      "code": "LM-C368",
+      "parentCode": "LM-0",
+      "kind": "competence",
+      "subject": "Langue moderne",
+      "grades": [
+        "S3"
+      ],
+      "label": "• trouver les moyens de contourner les difficultés, en mobilisant les ressources verbales (simplifications, synonymes, tentatives d’adaptation de mots français…) et/ou non verbales dont on dispose • gérer l’aléatoire en adaptant le scénario envisagé, en temporisant • prendre la parole au • prendre l’initiative • coopérer en"
+    },
+    {
+      "code": "LM-S3-368-1",
+      "parentCode": "LM-C368",
+      "kind": "attendu",
+      "subject": "Langue moderne",
+      "grades": [
+        "S3"
+      ],
+      "label": "• repérer les mots clés • exploiter les indices • trouver les moyens et les marqueurs de linguistiques (mots de contourner discours (connecteurs clés, marqueurs de les difficultés, logiques, temporels…) discours, connecteurs en mobilisant logiques, temporels…) les ressources linguistiques (simplifications, synonymes, tentatives d’adaptation de mots français dans la langue cible…) dont on dispose • inférer, à partir du • inférer, à partir du contexte et/ou de leur contexte et/ou de morphologie, le sens leur morphologie, des mots inconnus et le sens des mots déduire le sens des ou d’expressions unités sémantiques inconnus et déduire le sens des unités sémantiques moment opportun de l’échange en attirant l’attention de l’interlocuteur manifestant sa (non-) compréhension"
+    },
+    {
+      "code": "LM-S3-368-2",
+      "parentCode": "LM-C368",
+      "kind": "attendu",
+      "subject": "Langue moderne",
+      "grades": [
+        "S3"
+      ],
+      "label": "A1 A2 A3 A4 A5 A6 A7 A8"
+    },
+    {
+      "code": "LM-S3-368-3",
+      "parentCode": "LM-C368",
+      "kind": "attendu",
+      "subject": "Langue moderne",
+      "grades": [
+        "S3"
+      ],
+      "label": "S3 : niveau A2.2"
+    },
+    {
+      "code": "LM-C369",
+      "parentCode": "LM-0",
+      "kind": "competence",
+      "subject": "Langue moderne",
+      "grades": [
+        "S3"
+      ],
+      "label": "message est passé, en se basant sur le feedback non verbal du destinataire du message • répéter l’élément d’information dont on veut vérifier la bonne compréhension D. Remédier aux éventuelles incompréhensions • associer le non-verbal voire l’écrit à la parole"
+    },
+    {
+      "code": "LM-S3-369-1",
+      "parentCode": "LM-C369",
+      "kind": "attendu",
+      "subject": "Langue moderne",
+      "grades": [
+        "S3"
+      ],
+      "label": "message est passé, valider et en retirer de l’information lexicale, grammaticale, en se basant sur syntaxique et le feedback verbal orthographique, par et non verbal de exemple, à l’aide l’interlocuteur et d’une grille d’(auto-) sur la suite de la évaluation conversation • vérifier la logique et la cohérence des • vérifier l’organisation informations retenues (éviter les contresens et de la production et du les invraisemblances) contenu, par exemple, à l’aide d’une grille d’(auto-)évaluation D. Réviser les hypothèses D. Remédier • reprendre la démarche à l’étape A ou B, si trop • corriger les peu d’information découle de la vérification des éventuelles hypothèses inexactitudes et incohérences sur la base de ses connaissances ; à ce stade, affiner sa production à l’aide d’un dictionnaire traductif"
+    },
+    {
+      "code": "LM-C370",
+      "parentCode": "LM-0",
+      "kind": "competence",
+      "subject": "Langue moderne",
+      "grades": [
+        "S3"
+      ],
+      "label": "prononciation qui a conduit à un malentendu, si le non-"
+    },
+    {
+      "code": "LM-S3-370-1",
+      "parentCode": "LM-C370",
+      "kind": "attendu",
+      "subject": "Langue moderne",
+      "grades": [
+        "S3"
+      ],
+      "label": "incompréhension à l’interlocuteur pour le faire répéter"
+    },
+    {
+      "code": "LM-S3-309-3",
+      "parentCode": "LM-C309",
+      "kind": "attendu",
+      "subject": "Langue moderne",
+      "grades": [
+        "S3"
+      ],
+      "label": "A2.1 A2.2"
+    },
+    {
+      "code": "LM-C371",
+      "parentCode": "LM-0",
+      "kind": "competence",
+      "subject": "Langue moderne",
+      "grades": [
+        "S3"
+      ],
+      "label": "- Identité de soi et d’autrui • les adresses postale et électronique"
+    },
+    {
+      "code": "LM-S3-371-1",
+      "parentCode": "LM-C371",
+      "kind": "attendu",
+      "subject": "Langue moderne",
+      "grades": [
+        "S3"
+      ],
+      "label": "- Description • l’un ou l’autre personnage célèbre"
+    },
+    {
+      "code": "LM-C372",
+      "parentCode": "LM-0",
+      "kind": "competence",
+      "subject": "Langue moderne",
+      "grades": [
+        "S3"
+      ],
+      "label": "• les activités routinières à l’école et à la maison"
+    },
+    {
+      "code": "LM-S3-372-1",
+      "parentCode": "LM-C372",
+      "kind": "attendu",
+      "subject": "Langue moderne",
+      "grades": [
+        "S3"
+      ],
+      "label": "• activités routinières à la maison, à l’école liées aux cultures de pays dont la langue nationale est la langue étudiée • quelques éléments culturels internationalement partagés"
+    },
+    {
+      "code": "LM-C373",
+      "parentCode": "LM-0",
+      "kind": "competence",
+      "subject": "Langue moderne",
+      "grades": [
+        "S3"
+      ],
+      "label": "• les activités sportives les plus courantes • quelques lieux relatifs à des activités sportives • quelques activités culturelles • quelques lieux relatifs aux activités culturelles"
+    },
+    {
+      "code": "LM-S3-373-1",
+      "parentCode": "LM-C373",
+      "kind": "attendu",
+      "subject": "Langue moderne",
+      "grades": [
+        "S3"
+      ],
+      "label": "• quelques acteurs de la vie culturelle, manifestations, évènements et productions artistiques • quelques noms de sports et de loisirs liés aux cultures de pays dont la langue nationale est la langue étudiée"
+    },
+    {
+      "code": "LM-C374",
+      "parentCode": "LM-0",
+      "kind": "competence",
+      "subject": "Langue moderne",
+      "grades": [
+        "S3"
+      ],
+      "label": "• les moyens de transport courants"
+    },
+    {
+      "code": "LM-S3-374-1",
+      "parentCode": "LM-C374",
+      "kind": "attendu",
+      "subject": "Langue moderne",
+      "grades": [
+        "S3"
+      ],
+      "label": "• quelques lieux de villégiature et d’hébergement."
+    },
+    {
+      "code": "LM-S3-374-2",
+      "parentCode": "LM-C374",
+      "kind": "attendu",
+      "subject": "Langue moderne",
+      "grades": [
+        "S3"
+      ],
+      "label": "Infrastructures, équipements et services liés à ces lieux"
+    },
+    {
+      "code": "LM-C375",
+      "parentCode": "LM-0",
+      "kind": "competence",
+      "subject": "Langue moderne",
+      "grades": [
+        "S3"
+      ],
+      "label": "uelques formules de politesse"
+    },
+    {
+      "code": "LM-S3-375-1",
+      "parentCode": "LM-C375",
+      "kind": "attendu",
+      "subject": "Langue moderne",
+      "grades": [
+        "S3"
+      ],
+      "label": "• codes sociaux : formules d’adresse, de remerciement, de salutation, de prise de congé, d’excuse"
+    },
+    {
+      "code": "LM-C376",
+      "parentCode": "LM-0",
+      "kind": "competence",
+      "subject": "Langue moderne",
+      "grades": [
+        "S3"
+      ],
+      "label": "• la vie scolaire dans une région/un pays où la langue cible est"
+    },
+    {
+      "code": "LM-S3-376-1",
+      "parentCode": "LM-C376",
+      "kind": "attendu",
+      "subject": "Langue moderne",
+      "grades": [
+        "S3"
+      ],
+      "label": "• les grandes étapes du cursus scolaire"
+    },
+    {
+      "code": "LM-C377",
+      "parentCode": "LM-0",
+      "kind": "competence",
+      "subject": "Langue moderne",
+      "grades": [
+        "S3"
+      ],
+      "label": "• boissons et aliments courants • les repas de la journée"
+    },
+    {
+      "code": "LM-S3-377-1",
+      "parentCode": "LM-C377",
+      "kind": "attendu",
+      "subject": "Langue moderne",
+      "grades": [
+        "S3"
+      ],
+      "label": "• mets et boissons liés aux cultures de pays dont la langue nationale est la langue étudiée"
+    },
+    {
+      "code": "LM-C378",
+      "parentCode": "LM-0",
+      "kind": "competence",
+      "subject": "Langue moderne",
+      "grades": [
+        "S3"
+      ],
+      "label": "• la date"
+    },
+    {
+      "code": "LM-S3-378-1",
+      "parentCode": "LM-C378",
       "kind": "attendu",
       "subject": "Langue moderne",
       "grades": [

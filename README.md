@@ -76,8 +76,7 @@ La CI GitHub Actions exécute ces vérifications et applique les migrations Supa
 
 Reste pour l'étape 1 : l'abonnement (RevenueCat, App Store, Google Play).
 
-Référentiels importés : maternelle (8 disciplines), mathématiques, français, sciences, langues modernes et
-formation historique, géographique, économique et sociale (tronc commun, M1 → S3) ; voir `scripts/referentiels/README.md`.
+Référentiels importés : tout le tronc commun, de M1 à S3 (10 998 entrées) ; voir `scripts/referentiels/README.md`.
 
 Étape 2 en cours. En place :
 
@@ -87,8 +86,7 @@ formation historique, géographique, économique et sociale (tronc commun, M1 �
 - export « Print & Go » : PDF accessible (Lexend, grands espacements, réponses sur une page séparée) ;
 - police Lexend dans l'application pour les profils dyslexie.
 
-Reste pour l'étape 2 : les autres disciplines du tronc commun en primaire et secondaire ; les compétences
-terminales des 2e et 3e degrés du secondaire.
+Reste pour l'étape 2 : les compétences terminales des 2e et 3e degrés du secondaire (S4 → S6/S7).
 
 Étape 3 en cours. En place :
 

@@ -1,4 +1,4 @@
-import { GRADE_LABELS } from '@cote-a-cote/shared';
+import { CURRICULUM_SUBJECTS, GRADE_LABELS } from '@cote-a-cote/shared';
 import { useQuery } from '@tanstack/react-query';
 import { useLocalSearchParams } from 'expo-router';
 import { useState } from 'react';
@@ -27,10 +27,11 @@ export default function ProgrammeScreen() {
   const { childId } = useLocalSearchParams<{ childId: string }>();
   const child = useChildProfile(childId);
   const grade = child.data?.grade;
-  const [selected, setSelected] = useState<string | null>(null);
+  const [selected, setSelected] = useState<string>(CURRICULUM_SUBJECTS[0]);
 
+  // Une matière à la fois : une année complète dépasse la limite de lignes d'une requête.
   const items = useQuery({
-    queryKey: ['curriculum', grade],
+    queryKey: ['curriculum', grade, selected],
     enabled: Boolean(grade),
     staleTime: Infinity,
     queryFn: async () => {
@@ -38,14 +39,14 @@ export default function ProgrammeScreen() {
         .from('curriculum_item')
         .select('id, parent_id, subject, kind, code, label')
         .contains('grades', [grade])
-        .order('subject')
+        .eq('subject', selected)
         .order('created_at');
       if (error) throw error;
       return data as CurriculumRow[];
     },
   });
 
-  if (child.isLoading || items.isLoading) {
+  if (child.isLoading) {
     return (
       <Screen>
         <ActivityIndicator />
@@ -54,25 +55,24 @@ export default function ProgrammeScreen() {
   }
 
   const rows = items.data ?? [];
-  const subjects = [...new Set(rows.map((r) => r.subject))];
-  const current = selected && subjects.includes(selected) ? selected : subjects[0];
+  const subjects = [...CURRICULUM_SUBJECTS];
+  const current = selected;
 
   return (
     <Screen>
       <ThemedText type="subtitle">{grade ? GRADE_LABELS[grade] : 'Programme'}</ThemedText>
-      {rows.length === 0 ? (
+      <ChoiceChips
+        label="Matière"
+        options={subjects}
+        labels={Object.fromEntries(subjects.map((x) => [x, x]))}
+        selected={[current]}
+        onToggle={setSelected}
+      />
+      {items.isLoading ? <ActivityIndicator /> : null}
+      {!items.isLoading && rows.length === 0 ? (
         <ThemedText themeColor="textSecondary">
-          Le programme de cette année n&apos;est pas encore disponible dans l&apos;application.
+          Pas d&apos;attendus pour cette matière cette année.
         </ThemedText>
-      ) : null}
-      {subjects.length > 1 ? (
-        <ChoiceChips
-          label="Matière"
-          options={subjects}
-          labels={Object.fromEntries(subjects.map((x) => [x, x]))}
-          selected={current ? [current] : []}
-          onToggle={setSelected}
-        />
       ) : null}
       {subjects
         .filter((subject) => subject === current)
