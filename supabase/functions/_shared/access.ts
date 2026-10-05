@@ -26,7 +26,7 @@ export const MONTHLY_PACK_QUOTA: Record<Plan, number> = {
   famille: 400,
 };
 
-/** Dossiers de révision créés par mois civil (valeurs provisoires). */
+/** Dossiers de révision créés par mois civil. */
 export const MONTHLY_REVISION_QUOTA: Record<Plan, number> = {
   essai: 3,
   solo: 10,

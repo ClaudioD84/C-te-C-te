@@ -5,21 +5,25 @@ pour la table `curriculum_item` (fonctionnalité F2).
 
 ## État actuel
 
-| Fichier | Référentiel (tronc commun, version 2022) | Années | Méthode |
+| Fichier | Référentiel (tronc commun) | Années | Mode de `decouper.py` |
 |---|---|---|---|
-| `donnees/ma-2022.json` | Mathématiques | P1 → S3 | `decouper.py` (champs) |
-| `donnees/fr-2022.json` | Français et Langues anciennes | P1 → S3 | `decouper.py --mode generique --ignorer "parler,écouter,lire,écrire"` |
-| `donnees/sc-2022.json` | Sciences | P1 → S3 | `decouper.py --mode generique` |
-| `donnees/lm-2022.json` | Langues modernes | P3 → S3 | `decouper.py --mode generique` |
+| `donnees/mat-2020.json` | Compétences initiales (maternelle, 8 disciplines) | M1-M2, M3 | `maternelle` |
+| `donnees/ma-2022.json` | Mathématiques | P1 → S3 | `champs` |
+| `donnees/fr-2022.json` | Français et Langues anciennes | P1 → S3 | `generique` (+ étiquettes ignorées) |
+| `donnees/sc-2022.json` | Sciences | P1 → S3 | `generique` |
+| `donnees/lm-2022.json` | Langues modernes | P3 → S3 | `generique` |
+| `donnees/hg-2022.json` | Formation historique, géographique, économique et sociale | P1 → S3 | `colonnes` |
+
+Tout se régénère avec `scripts/referentiels/regenerer.sh <dossier des PDF>` (puis le SQL d'import).
+En maternelle, les attendus « M1-M2 » sont ceux de fin de 2e maternelle ; ils sont associés à M1 et M2.
 
 Les intitulés sont recopiés mot pour mot depuis les PDF officiels publiés sur
 [enseignement.be](https://www.enseignement.be/parcours-dapprentissage/maternel-et-primaire-ordinaire/organisation-de-lenseignement-maternel-et-primaire/contenus-dapprentissage).
 La découpe automatique peut couper un attendu en deux sur un saut de page ou rattacher un attendu
 au mauvais savoir : **une relecture reste nécessaire** avant la sortie publique.
 
-Pas encore importés : maternelle (compétences initiales), formation historique, géographique,
-économique et sociale (mise en page sur trois colonnes), éducation physique, artistique,
-philosophie et citoyenneté, formation manuelle et technique.
+Pas encore importés : éducation physique, éducation culturelle et artistique, philosophie et citoyenneté
+et formation manuelle et technique en primaire et secondaire ; compétences terminales des 2e et 3e degrés.
 
 ## 0. Découper un PDF sans IA (recommandé quand la mise en page est reconnue)
 

@@ -49,7 +49,10 @@ Deno.test('requête : niveau, tâche, adaptations et référentiel, sans donnée
 });
 
 Deno.test('correspondance des matières avec le référentiel', () => {
-  assertEquals(curriculumSubjects('Éveil'), ['Sciences']);
+  assertEquals(curriculumSubjects('Éveil'), ['Sciences', 'Formation historique et géographique']);
+  assertEquals(curriculumSubjects('Histoire'), ['Formation historique et géographique']);
+  assertEquals(curriculumSubjects('Éducation physique'), ['Éducation physique']);
+  assertEquals(curriculumSubjects('Sciences humaines'), ['Formation historique et géographique']);
   assertEquals(curriculumSubjects('Néerlandais'), ['Langue moderne']);
   assertEquals(curriculumSubjects('Mathématiques'), ['Mathématiques']);
   assertEquals(curriculumSubjects('Conjugaison'), ['Français']);

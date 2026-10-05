@@ -77,7 +77,8 @@ def join_lines(lines: list[str], vocabulary: Counter) -> str:
         else:
             text = text + " " + part
     # Glyphes de puce du PDF : « - c \x07 onduites » → « - conduites » ; caractères invisibles retirés.
-    text = re.sub(r"\b(\w)\s*\x07\s*", r"\1", text).replace("\x07", "").replace("\xad", "").replace("\ufffd", "•")
+    # (sauf pour les mots d'une lettre : « - à la », « - a »).
+    text = re.sub(r"\b([^\W\dàôyÀ])\s*\x07\s*", r"\1", text).replace("\x07", "").replace("\xad", "").replace("\ufffd", "•").replace("\x84", "•")
     text = re.sub(r"\s+", " ", text).strip()
     # Lettres espacées par la mise en page du PDF : « - d es connecteurs » → « - des connecteurs ».
     return re.sub(r"(?<=- )d (es|e|u)\b", r"d\1", text)
@@ -153,6 +154,23 @@ def parse(lines: list[str]) -> list[dict]:
     return entries
 
 
+MAT_YEAR_RE = re.compile(r"^\s{0,8}(M1-M2|M3)\b")
+MAT_DISCIPLINE_RE = re.compile(r"^\s*(4\.\d(?:\.\d)?)\.\s+(\S.+?)\s*$")
+# Disciplines du référentiel des compétences initiales → matières de l'application.
+MAT_SUBJECTS = {
+    "FRANÇAIS": "Français",
+    "ÉDUCATION CULTURELLE ET ARTISTIQUE": "Éducation culturelle et artistique",
+    "LANGUES MODERNES": "Langue moderne",
+    "FORMATION MATHÉMATIQUE": "Mathématiques",
+    "FORMATION SCIENTIFIQUE": "Sciences",
+    "FORMATION MANUELLE ET TECHNIQUE": "Formation manuelle et technique",
+    "FORMATION HUMAINE ET SOCIALE": "Formation historique et géographique",
+    "ÉDUCATION À LA PHILOSOPHIE ET À LA CITOYENNETÉ": "Éducation à la philosophie et à la citoyenneté",
+    "ÉDUCATION PHYSIQUE, BIEN-ÊTRE ET SANTÉ": "Éducation physique",
+}
+MAT_GRADES = {"M1-M2": ["M1", "M2"], "M3": ["M3"]}
+
+
 def remove_tags(line: str, tags: set[str]) -> str:
     """Retire les étiquettes isolées d'une colonne intermédiaire (ex. « lire », « écrire » en français)."""
     if not tags:
@@ -161,7 +179,7 @@ def remove_tags(line: str, tags: set[str]) -> str:
     return re.sub(pattern, lambda m: " " * len(m.group(0)), line)
 
 
-def parse_generic(lines: list[str], tags: set[str] | None = None) -> list[dict]:
+def parse_generic(lines: list[str], tags: set[str] | None = None, maternelle: bool = False) -> list[dict]:
     """
     Mise en page générique : tableaux à deux colonnes (savoir à gauche, attendu à droite)
     regroupés par année. La compétence est l'intitulé de gauche, l'attendu le paragraphe de droite.
@@ -169,6 +187,8 @@ def parse_generic(lines: list[str], tags: set[str] | None = None) -> list[dict]:
     vocabulary = Counter(w.lower() for line in lines for w in re.findall(r"\w+", line))
     entries: list[dict] = []
     year = None
+    subject = None
+    discipline = None
     left_parts: list[str] = []
     left_closed = True
     blank_since_left = False
@@ -182,16 +202,52 @@ def parse_generic(lines: list[str], tags: set[str] | None = None) -> list[dict]:
         nonlocal paragraph
         if paragraph and year and left_parts:
             text = join_lines(paragraph, vocabulary)
+            # Intertitre centré (« Le vivant », « Orienter son écoute… ») : une seule ligne, sans ponctuation finale.
+            if maternelle and len(paragraph) == 1 and len(text) < 70 and not text.endswith((".", ":", ";", "?", "!", ")")):
+                paragraph = []
+                return
             last = entries[-1] if entries else None
             if re.match(r"^Ex\.?\s*:", text) and last and last["year"] == year:
                 last["text"] += " " + text
             elif len(text) >= 8 and (len(text) >= 80 or not re.match(r"^(Savoirs?|Savoir-faire|Compétences?)\b", text)):
-                entries.append({"year": year, "domain": None, "section": label(), "text": text})
+                entry = {"year": year, "domain": None, "section": label(), "text": text}
+                if maternelle:
+                    if not subject:
+                        paragraph = []
+                        return
+                    entry.update(domain=(discipline, subject), subject=subject, grades=MAT_GRADES[year])
+                entries.append(entry)
         paragraph = []
 
     for raw in lines:
         line = strip_margin(remove_tags(" " + raw, tags or set())[1:])
-        y = YEAR_RE.match(line)
+        if maternelle:
+            disc = MAT_DISCIPLINE_RE.match(line)
+            if disc and disc.group(2).upper() == disc.group(2):
+                flush()
+                name = disc.group(2).strip()
+                subject = MAT_SUBJECTS.get(name)
+                discipline = disc.group(1)
+                year, left_parts, left_closed = None, [], True
+                continue
+            m = MAT_YEAR_RE.match(line)
+            if m:
+                if m.group(1) != year:
+                    flush()
+                    year, left_parts, left_closed = m.group(1), [], True
+                # Le repère de marge peut partager la ligne avec du texte du tableau.
+                line = " " * m.end(1) + line[m.end(1):]
+                if not line.strip():
+                    continue
+        if maternelle and re.search(
+            r"Arts et Culture|Sciences et Techniques|Philosophie - Citoyenneté|Bien-être et Santé|Langues modernes"
+            r"|^\s*(Introduction|Objectifs|Apprentissages|Contenus|et attendus|par domaine|en maternelle)\b"
+            r"|^\s*\d\.(\s+\d\.)+\s*$|^\s*(Français|Mathématiques|Sciences)\s{3,}"
+            r"|Sciences humaines|Éducation physique,|\d\.\s+Contenus|^\s*Français,\s*$",
+            line,
+        ):
+            continue
+        y = None if maternelle else YEAR_RE.match(line)
         if y:
             flush()
             year, left_parts, left_closed = y.group(1), [], True
@@ -240,19 +296,112 @@ def parse_generic(lines: list[str], tags: set[str] | None = None) -> list[dict]:
     return entries
 
 
+DISCIPLINE_RE = re.compile(r"^\s*(\d)\.\s+FORMATION\s+([A-ZÉÈÀÂÊÎÔÛÇ' ]+?)\s*$")
+
+
+def is_heading(text: str) -> bool:
+    letters = [c for c in text if c.isalpha()]
+    return len(letters) >= 6 and sum(c.isupper() for c in letters) / len(letters) > 0.9
+
+
+def parse_columns(path: str) -> list[dict]:
+    """
+    Mise en page « savoirs | attendus » sans lignes vides entre les attendus (formation historique,
+    géographique, économique et sociale). Seule la colonne des attendus est lue ; les titres en
+    majuscules donnent la compétence, la sous-discipline (« 1. FORMATION HISTORIQUE ») le domaine.
+    """
+    raw = subprocess.run(["pdftotext", "-layout", path, "-"], capture_output=True, text=True, check=True).stdout
+    pages = [page.split("\n") for page in raw.split("\f")]
+    vocabulary = Counter(w.lower() for page in pages for line in page for w in re.findall(r"\w+", line))
+    entries: list[dict] = []
+    year = None
+    domain = None
+    heading: list[str] = []
+    heading_open = False
+    paragraph: list[str] = []
+
+    def flush():
+        nonlocal paragraph
+        if paragraph and year and domain:
+            text = join_lines(paragraph, vocabulary)
+            # Sans titre de tableau, l'attendu est rattaché à la sous-discipline elle-même.
+            section = join_lines(heading, vocabulary) if heading else domain[1]
+            if len(text) >= 12:
+                entries.append({"year": year, "domain": domain, "section": section, "text": text})
+        paragraph = []
+
+    for page in pages:
+        lines = [strip_margin(line) for line in page]
+        # Début de la colonne des attendus sur cette page : position la plus fréquente après un grand blanc.
+        starts = Counter()
+        for line in lines:
+            m = re.search(r"\S(\s{3,})(\S)", line)
+            if m and 50 <= m.start(2) <= 100:
+                starts[m.start(2)] += 1
+        column = starts.most_common(1)[0][0] if starts else None
+
+        for line in lines:
+            d = DISCIPLINE_RE.match(line)
+            if d:
+                flush()
+                domain, year = (d.group(1), "Formation " + d.group(2).strip().lower()), None
+                continue
+            y = YEAR_RE.match(line)
+            if y:
+                flush()
+                year, heading = y.group(1), []
+                continue
+            if year is None or is_chrome(line) or column is None or not line.strip():
+                heading_open = False
+                continue
+            if len(re.findall(r"\b[PS][1-6]\b", line)) >= 3 or re.search(r"\bAttendus?\s*$", line):
+                continue
+            stripped = line.strip()
+            # En-tête de navigation propre à ce référentiel.
+            if (
+                re.search(r"Croisements|transversales|Visées|^Enjeux|^et objectifs|^généraux", stripped)
+                or stripped in ("FORMATION", "ET SOCIALE", "ÉCONOMIQUE")
+                or re.fullmatch(r"(FORMATION\s+)?(HISTORIQUE|GÉOGRAPHIQUE)(\s+(FORMATION\s+)?(HISTORIQUE|GÉOGRAPHIQUE))*", stripped)
+            ):
+                heading_open = False
+                continue
+            indent = len(line) - len(line.lstrip())
+            if is_heading(stripped) and indent > 20:
+                flush()
+                heading = heading + [stripped] if heading_open else [stripped]
+                heading_open = True
+                continue
+            heading_open = False
+            right = ""
+            if abs(indent - column) <= 4:
+                right = stripped
+            else:
+                m = re.search(r"\S(\s{3,})(\S)", line)
+                if m and abs(m.start(2) - column) <= 4:
+                    right = line[m.start(2):].strip()
+            if not right:
+                continue
+            if paragraph and paragraph[-1].rstrip().endswith(".") and right[:1].isupper():
+                flush()
+            paragraph.append(right)
+        flush()
+    return entries
+
+
 def build(entries: list[dict], subject: str, prefix: str) -> list[dict]:
     out: list[dict] = []
     domains: dict[str, dict] = {}
     sections: dict[str, dict] = {}
     counters: Counter = Counter()
-    section_numbers: dict[str, str] = {}
+    section_numbers: dict[tuple[str, str], str] = {}
     for e in entries:
         if not e["section"] or len(e["text"]) < 8:
             continue
+        entry_subject = e.get("subject", subject)
         dnum, dlabel = e["domain"] or ("0", subject)
         dcode = f"{prefix}-{dnum}"
         if dcode not in domains:
-            domains[dcode] = {"code": dcode, "parentCode": None, "kind": "domaine", "subject": subject, "grades": [], "label": dlabel}
+            domains[dcode] = {"code": dcode, "parentCode": None, "kind": "domaine", "subject": entry_subject, "grades": [], "label": dlabel}
             out.append(domains[dcode])
         if isinstance(e["section"], tuple):
             snum, slabel = e["section"]
@@ -260,20 +409,23 @@ def build(entries: list[dict], subject: str, prefix: str) -> list[dict]:
         else:
             # Mode générique : la compétence est identifiée par son intitulé.
             full_label = e["section"]
-            snum = section_numbers.setdefault(full_label, str(len(section_numbers) + 1))
-        scode = f"{prefix}-{snum}"
+            snum = section_numbers.setdefault((dnum, full_label), str(len(section_numbers) + 1))
+        # Compétences numérotées automatiquement : préfixe « C » pour ne pas heurter les codes des domaines.
+        scode = f"{prefix}-{snum}" if isinstance(e["section"], tuple) else f"{prefix}-C{snum}"
         if scode not in sections:
-            sections[scode] = {"code": scode, "parentCode": dcode, "kind": "competence", "subject": subject, "grades": [], "label": full_label}
+            sections[scode] = {"code": scode, "parentCode": dcode, "kind": "competence", "subject": entry_subject, "grades": [], "label": full_label}
             out.append(sections[scode])
-        if e["year"] not in sections[scode]["grades"]:
-            sections[scode]["grades"].append(e["year"])
+        grades = e.get("grades", [e["year"]])
+        for grade in grades:
+            if grade not in sections[scode]["grades"]:
+                sections[scode]["grades"].append(grade)
         counters[(e["year"], snum)] += 1
         out.append({
             "code": f"{prefix}-{e['year']}-{snum}-{counters[(e['year'], snum)]}",
             "parentCode": scode,
             "kind": "attendu",
-            "subject": subject,
-            "grades": [e["year"]],
+            "subject": entry_subject,
+            "grades": grades,
             "label": e["text"],
         })
     return out
@@ -288,12 +440,17 @@ def main():
     ap.add_argument("--version", required=True)
     ap.add_argument("--url")
     ap.add_argument("--niveau", default="primaire")
-    ap.add_argument("--mode", choices=["champs", "generique"], default="champs")
+    ap.add_argument("--mode", choices=["champs", "generique", "colonnes", "maternelle"], default="champs")
     ap.add_argument("--ignorer", default="", help="étiquettes à ignorer, séparées par des virgules")
     args = ap.parse_args()
     lines = pdf_text(args.pdf)
     tags = {t.strip() for t in args.ignorer.split(",") if t.strip()}
-    parsed = parse(lines) if args.mode == "champs" else parse_generic(lines, tags)
+    if args.mode == "colonnes":
+        parsed = parse_columns(args.pdf)
+    elif args.mode == "maternelle":
+        parsed = parse_generic(lines, tags, maternelle=True)
+    else:
+        parsed = parse(lines) if args.mode == "champs" else parse_generic(lines, tags)
     entries = build(parsed, args.matiere, args.prefixe)
     if not entries:
         sys.exit("Aucun attendu trouvé : la mise en page du document n'est pas reconnue.")
