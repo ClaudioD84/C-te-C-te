@@ -7,6 +7,7 @@ import {
   type DayOffKind,
   type IsoDate,
 } from '@cote-a-cote/shared';
+import { router } from 'expo-router';
 import { useState } from 'react';
 import { StyleSheet, View } from 'react-native';
 
@@ -65,6 +66,13 @@ export function DaysOffCard({ childId }: { childId: string }) {
           />
         </View>
       ))}
+      {daysOff.data?.some((d) => d.kind === 'conge') ? (
+        <Button
+          variant="secondary"
+          label="Idées pour les vacances"
+          onPress={() => router.push({ pathname: '/vacances/[childId]', params: { childId } })}
+        />
+      ) : null}
       {adding ? (
         <>
           <ChoiceChips

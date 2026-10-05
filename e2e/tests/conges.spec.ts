@@ -1,6 +1,6 @@
 import { expect, test } from '@playwright/test';
 
-import { addChild, button, insertValidatedTasks, signUp, sql } from './helpers';
+import { addChild, button, enterChildMode, insertValidatedTasks, signUp, sql } from './helpers';
 
 test('congés et absences : aucun travail ces jours-là, tâches signalées', async ({ page }) => {
   const email = await signUp(page, 'conges');
@@ -35,4 +35,19 @@ test('congés et absences : aucun travail ces jours-là, tâches signalées', as
   await expect(page.getByText(/^Absence \(maladie, voyage…\) le /)).toHaveCount(0);
   await button(page, 'Calculer le planning').click();
   await expect(page.getByText(/tombent? pendant un congé/)).toHaveCount(0);
+});
+
+test('vacances : idées pour le parent, message sur la console de l’enfant', async ({ page }) => {
+  const email = await signUp(page, 'vacances');
+  const { childId, familyId } = await addChild(page, email, 'Mouette');
+  sql(`insert into day_off (family_id, child_id, start_date, end_date, kind)
+       values ('${familyId}', '${childId}', current_date - 1, current_date + 6, 'conge')`);
+  await page.reload();
+  await button(page, '🏖️ Idées pour les vacances').click();
+  await expect(page.getByText('Le chef pâtissier')).toBeVisible();
+  await expect(page.getByText('Le carnet de vacances')).toBeVisible();
+  await page.goBack();
+
+  await enterChildMode(page, 'Mouette');
+  await expect(page.getByText('🏖️ C’est les vacances !')).toBeVisible();
 });

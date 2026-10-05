@@ -30,3 +30,7 @@ create policy "Appareil marque un petit mot comme lu" on public.child_note
   for update to authenticated
   using (child_id = (select public.current_device_child_id()))
   with check (child_id = (select public.current_device_child_id()));
+
+-- La tablette sait si l'enfant est en congé (message de vacances sur sa console).
+create policy "Appareil lit les congés" on public.day_off
+  for select to authenticated using (child_id = (select public.current_device_child_id()));

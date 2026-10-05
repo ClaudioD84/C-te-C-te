@@ -25,3 +25,4 @@ export * from './days-off';
 export * from './report';
 export * from './dictation';
 export * from './breathing';
+export * from './holidays';

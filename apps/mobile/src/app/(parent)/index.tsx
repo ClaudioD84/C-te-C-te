@@ -1,4 +1,11 @@
-import { avatarOf, GRADE_LABELS, NEED_LABELS, schoolLevel } from '@cote-a-cote/shared';
+import {
+  avatarOf,
+  currentHoliday,
+  GRADE_LABELS,
+  NEED_LABELS,
+  schoolLevel,
+  toIsoDate,
+} from '@cote-a-cote/shared';
 import { Link, router } from 'expo-router';
 import { ActivityIndicator, StyleSheet, View } from 'react-native';
 
@@ -9,6 +16,7 @@ import { ThemedView } from '@/components/themed-view';
 import { Spacing } from '@/constants/theme';
 import { useChildMode } from '@/features/child-mode/child-mode-provider';
 import { hasParentCode } from '@/features/child-mode/parent-code-store';
+import { useDaysOff } from '@/features/days-off/api';
 import { OfflineBanner } from '@/features/offline/offline-banner';
 import { FirstSteps } from '@/features/onboarding/first-steps';
 import { SubscriptionBanner } from '@/features/subscription/subscription-banner';
@@ -16,6 +24,8 @@ import { useChildProfiles, type StoredChildProfile } from '@/features/profiles/a
 
 function ChildCard({ child }: { child: StoredChildProfile }) {
   const { enter } = useChildMode();
+  const daysOff = useDaysOff(child.id);
+  const holiday = currentHoliday(daysOff.data ?? [], toIsoDate(new Date()));
 
   async function launchMission() {
     // Le code parent est obligatoire avant de confier l'appareil à l'enfant.
@@ -37,6 +47,12 @@ function ChildCard({ child }: { child: StoredChildProfile }) {
         {GRADE_LABELS[child.grade]}
         {needs ? ` · ${needs}` : ''}
       </ThemedText>
+      {holiday ? (
+        <Button
+          label="🏖️ Idées pour les vacances"
+          onPress={() => router.push({ pathname: '/vacances/[childId]', params: { childId: child.id } })}
+        />
+      ) : null}
       {kindergarten ? (
         // Maternelle : pas de devoirs ni de journal de classe, des jeux à faire ensemble.
         <Button

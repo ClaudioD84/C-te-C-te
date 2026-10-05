@@ -21,6 +21,7 @@ import { MinTouchSize, Spacing } from '@/constants/theme';
 import { useChildMode } from '@/features/child-mode/child-mode-provider';
 import { KindergartenMission } from '@/features/kindergarten/kindergarten-mission';
 import { MOODS, MoodPicker, useTodayMood } from '@/features/mood/mood';
+import { HolidayBanner } from '@/features/holidays/holiday-banner';
 import { NoteCard } from '@/features/notes/note-card';
 import { BreathingExercise } from '@/features/mission/breathing-exercise';
 import { PomodoroTimer } from '@/features/mission/pomodoro-timer';
@@ -127,6 +128,7 @@ export default function ChildConsoleScreen() {
       <ScrollView contentContainerStyle={styles.content}>
         <OfflineBanner audience="enfant" />
         <NoteCard childId={childId} settings={settings} />
+        <HolidayBanner childId={childId} settings={settings} />
         {fresh.length > 0 ? (
           <ThemedView type="backgroundSelected" style={styles.card} accessibilityLiveRegion="polite">
             <ThemedText type="subtitle">Nouveau badge !</ThemedText>

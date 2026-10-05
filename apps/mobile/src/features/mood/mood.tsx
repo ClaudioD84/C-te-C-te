@@ -51,7 +51,13 @@ export function useTodayMood(childId: string) {
   return { mood, choose, loading: mood === undefined };
 }
 
-export function MoodPicker({ onChoose, settings }: { onChoose: (mood: Mood) => void; settings: LearningSettings }) {
+export function MoodPicker({
+  onChoose,
+  settings,
+}: {
+  onChoose: (mood: Mood) => void;
+  settings: LearningSettings;
+}) {
   return (
     <ThemedView type="backgroundElement" style={styles.card}>
       <ThemedText style={learningTextStyle(settings)}>Comment tu te sens aujourd’hui ?</ThemedText>
