@@ -232,6 +232,23 @@ export function useLogQuiz(childId: string) {
     });
 }
 
+/** Entraînement libre (les tables…) : compté comme un quiz de la matière, sans tâche liée. */
+export function useLogPractice(childId: string) {
+  const queryClient = useQueryClient();
+  const mutation = useMutation<void, Error, LearningEventVariables>({
+    mutationKey: OFFLINE_MUTATIONS.learningEvent,
+    onSettled: () => queryClient.invalidateQueries({ queryKey: ['effort', childId] }),
+  });
+  return (mode: string, subject: string, score: number, total: number) =>
+    mutation.mutate({
+      id: randomUUID(),
+      childId,
+      type: 'quiz',
+      meta: { mode, subject, score, total },
+      at: new Date().toISOString(),
+    });
+}
+
 /**
  * Garde sur l'appareil la mission des prochains jours et les fiches de ses tâches,
  * pour que l'enfant puisse travailler hors connexion.

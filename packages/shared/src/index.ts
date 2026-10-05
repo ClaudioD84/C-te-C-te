@@ -29,3 +29,4 @@ export * from './holidays';
 export * from './accessories';
 export * from './table-talk';
 export * from './certificate';
+export * from './times-tables';

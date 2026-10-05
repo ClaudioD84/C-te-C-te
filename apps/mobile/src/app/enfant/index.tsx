@@ -2,6 +2,7 @@ import {
   ACTIVITY_PICTOGRAMS,
   BADGES,
   deriveLearningSettings,
+  gradeYear,
   schoolLevel,
   subjectPictogram,
   toIsoDate,
@@ -145,6 +146,13 @@ export default function ChildConsoleScreen() {
           </ThemedView>
         ) : null}
         {summary ? <AvatarProgress summary={summary} onPress={() => router.push('/enfant/badges')} /> : null}
+        {schoolLevel(child.data.grade) === 'primaire' ? (
+          <Button
+            variant="secondary"
+            label={gradeYear(child.data.grade) <= 2 ? '➕ Les additions' : '✖️ Les tables'}
+            onPress={() => router.push('/enfant/tables')}
+          />
+        ) : null}
         {dueCards.data && dueCards.data.length > 0 ? (
           <Button
             variant="secondary"
