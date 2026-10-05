@@ -33,6 +33,10 @@ test('photo depuis l’ordinateur : la zone tracée à la souris est noircie dan
   await button(page, 'Envoyer pour analyse').click();
   const sent = (await upload).postDataBuffer()!;
   await expect(page.getByText(/Vérifiez ce que nous avons lu/)).toBeVisible();
+  // Mots de dictée relevés sur la photo : un clic les met dans la dictée de la semaine.
+  await expect(page.getByText('Mots de dictée trouvés (3)')).toBeVisible();
+  await button(page, 'Utiliser pour la dictée de la semaine').click();
+  await expect(page.getByText(/C’est la dictée de la semaine/)).toBeVisible();
 
   // L'image envoyée est un JPEG dont le coin masqué est noir, dans le navigateur lui-même.
   const darkness = await page.evaluate(async (base64) => {

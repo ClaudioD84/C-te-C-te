@@ -65,6 +65,14 @@ Deno.test('interrogation corrigée : notions à retravailler, 3 au plus, échéa
   );
 });
 
+Deno.test('mots de dictée : nettoyés, sans doublon ; absents par défaut', () => {
+  const result = parseExtraction(
+    JSON.stringify({ ...valid, spellingWords: ['  le  château ', 'le château', '', 'une forêt'] }),
+  );
+  assertEquals(result.spellingWords, ['le château', 'une forêt']);
+  assertEquals(parseExtraction(JSON.stringify(valid)).spellingWords, []);
+});
+
 Deno.test('réponse invalide : erreur', () => {
   assertThrows(() => parseExtraction('{"documentType":"journal_de_classe","tasks":[{"kind":"autre"}]}'));
   assertThrows(() => parseExtraction('pas du json'));

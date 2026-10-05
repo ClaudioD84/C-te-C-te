@@ -5,6 +5,7 @@ import { ActivityIndicator, StyleSheet, View } from 'react-native';
 
 import { Button } from '@/components/button';
 import { Screen } from '@/components/screen';
+import { ScanWordsCard } from '@/features/spelling/scan-words-card';
 import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
 import { Spacing } from '@/constants/theme';
@@ -80,6 +81,10 @@ export default function ScanReviewScreen() {
       {tasks.data?.map((task) => (
         <TaskCard key={task.id} task={task} scanId={scanId} childId={childId} readOnly={readOnly} />
       ))}
+
+      {scan.data.spelling_words && scan.data.spelling_words.length > 0 ? (
+        <ScanWordsCard childId={childId} words={scan.data.spelling_words} />
+      ) : null}
 
       {readOnly ? (
         <Button label="Retour au cockpit" onPress={() => router.dismissTo('/')} />

@@ -16,6 +16,8 @@ export interface Scan {
   document_type: DocumentType | null;
   status: ScanStatus;
   error: string | null;
+  /** Mots d'une dictée préparée relevés sur la photo. */
+  spelling_words: string[] | null;
 }
 
 export interface TaskRow {
@@ -105,7 +107,7 @@ export function useScan(scanId: string) {
     queryFn: async () => {
       const { data, error } = await supabase
         .from('scan')
-        .select('id, child_id, document_type, status, error')
+        .select('id, child_id, document_type, status, error, spelling_words')
         .eq('id', scanId)
         .single();
       if (error) throw error;

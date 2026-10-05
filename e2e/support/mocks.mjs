@@ -9,6 +9,7 @@ const emails = [];
 const answers = {
   documentType: {
     documentType: 'journal_de_classe',
+    spellingWords: ['le château', 'une forêt', 'ils marchaient'],
     tasks: [
       {
         subject: 'Mathématiques',

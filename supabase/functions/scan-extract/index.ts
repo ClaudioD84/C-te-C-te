@@ -109,6 +109,7 @@ Deno.serve(async (request) => {
       .update({
         status: 'draft',
         document_type: extraction.documentType,
+        spelling_words: extraction.spellingWords.length > 0 ? extraction.spellingWords : null,
         storage_path: null,
         processed_at: now.toISOString(),
       })

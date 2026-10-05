@@ -11,6 +11,8 @@ export type DocumentType = (typeof DOCUMENT_TYPES)[number];
 
 export const extractionSchema = z.object({
   documentType: z.enum(DOCUMENT_TYPES),
+  /** Mots d'une dictée préparée recopiés sur le document (liste à étudier), sinon vide. */
+  spellingWords: z.array(z.string()).default([]),
   tasks: z.array(
     z.object({
       subject: z.string().trim().min(1),
@@ -33,9 +35,10 @@ export type Extraction = z.infer<typeof extractionSchema>;
 export const EXTRACTION_JSON_SCHEMA = {
   type: 'object',
   additionalProperties: false,
-  required: ['documentType', 'tasks'],
+  required: ['documentType', 'spellingWords', 'tasks'],
   properties: {
     documentType: { type: 'string', enum: [...DOCUMENT_TYPES] },
+    spellingWords: { type: 'array', items: { type: 'string' } },
     tasks: {
       type: 'array',
       items: {
@@ -84,7 +87,8 @@ Règles :
    Pour toutes les autres tâches, "remediation" vaut false.
 9. Les rectangles noirs cachent des informations personnelles : ignore-les. Ne recopie jamais le nom d'une personne.
 10. "documentType" : le type réel du document photographié.
-11. Si aucune tâche n'est lisible, renvoie une liste vide.`;
+11. Si aucune tâche n'est lisible, renvoie une liste vide.
+12. "spellingWords" : seulement si le document contient la liste de mots d'une dictée préparée (ou des mots de vocabulaire à savoir écrire), recopie chaque mot ou groupe de mots tel qu'il est écrit, 40 au plus ; sinon une liste vide. La tâche « préparer la dictée » reste une tâche à part.`;
 
 export const GRADE_LABELS: Record<string, string> = {
   M1: '1re maternelle',
@@ -144,8 +148,16 @@ export function parseExtraction(text: string, now: Date = new Date()): Extractio
   const parsed = extractionSchema.parse(JSON.parse(text));
   const defaultDue = addDaysIso(todayInBrussels(now).iso, REMEDIATION_DAYS);
   let remediations = 0;
+  const spellingWords = [
+    ...new Set(
+      parsed.spellingWords
+        .map((w) => w.trim().replace(/\s+/g, ' '))
+        .filter((w) => w.length > 0 && w.length <= 40),
+    ),
+  ].slice(0, 40);
   return {
     ...parsed,
+    spellingWords,
     tasks: parsed.tasks
       .filter((task) => !task.remediation || ++remediations <= MAX_REMEDIATIONS)
       .map((task) => {
