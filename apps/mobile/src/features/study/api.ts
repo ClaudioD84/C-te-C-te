@@ -8,6 +8,7 @@ import {
 import { FunctionsHttpError } from '@supabase/supabase-js';
 import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query';
 
+import { logLearningEvent } from '@/features/rewards/api';
 import { supabase } from '@/lib/supabase';
 
 export interface StoredPack {
@@ -148,7 +149,11 @@ export function useReviewFlashcard(childId: string) {
         })
         .eq('id', card.id);
       if (error) throw error;
+      await logLearningEvent(childId, 'carte', { card_id: card.id, rating });
     },
-    onSuccess: () => queryClient.invalidateQueries({ queryKey: ['flashcards', childId] }),
+    onSuccess: () => {
+      queryClient.invalidateQueries({ queryKey: ['flashcards', childId] });
+      queryClient.invalidateQueries({ queryKey: ['effort', childId] });
+    },
   });
 }

@@ -13,9 +13,12 @@ import { useTheme } from '@/hooks/use-theme';
 export function QuizPlayer({
   questions,
   settings,
+  onFinish,
 }: {
   questions: QuizQuestion[];
   settings: LearningSettings;
+  /** Appelé une fois à la fin du quiz (enregistrement de l'effort). */
+  onFinish?: (score: number, total: number) => void;
 }) {
   const theme = useTheme();
   const [index, setIndex] = useState(0);
@@ -88,6 +91,7 @@ export function QuizPlayer({
           <Button
             label={index + 1 < questions.length ? 'Question suivante' : 'Voir le résultat'}
             onPress={() => {
+              if (index + 1 === questions.length) onFinish?.(score, questions.length);
               setIndex(index + 1);
               setChosen(null);
             }}

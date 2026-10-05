@@ -9,6 +9,7 @@ import {
 } from '@cote-a-cote/shared';
 import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query';
 
+import { logLearningEvent } from '@/features/rewards/api';
 import { supabase } from '@/lib/supabase';
 
 export interface UpcomingTask extends PlannableTask {
@@ -136,6 +137,7 @@ export function useCompleteItem(childId: string) {
     onSuccess: () => {
       queryClient.invalidateQueries({ queryKey: ['sessions', childId] });
       queryClient.invalidateQueries({ queryKey: ['tasks', childId] });
+      queryClient.invalidateQueries({ queryKey: ['effort', childId] });
     },
   });
 }

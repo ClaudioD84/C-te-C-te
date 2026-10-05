@@ -13,6 +13,7 @@ import { useChildProfile } from '@/features/profiles/api';
 import { ExerciseList } from '@/features/study/exercise-list';
 import { FicheView } from '@/features/study/fiche-view';
 import { QuizPlayer } from '@/features/study/quiz-player';
+import { logLearningEvent, useInvalidateRewards } from '@/features/rewards/api';
 import { useGeneratePack, useStudyPack } from '@/features/study/api';
 
 type Section = 'fiche' | 'quiz' | 'exercices';
@@ -27,6 +28,7 @@ export default function StudyScreen() {
   const generate = useGeneratePack(taskId);
   const requested = useRef(false);
   const [section, setSection] = useState<Section | null>(mode ?? null);
+  const invalidateRewards = useInvalidateRewards(activeChildId ?? '');
 
   // Paquet absent : on le prépare à l'arrivée sur l'écran.
   const missing = pack.isSuccess && pack.data === null;
@@ -88,7 +90,17 @@ export default function StudyScreen() {
         {current === 'fiche' && content.fiche ? (
           <FicheView fiche={content.fiche} settings={settings} />
         ) : null}
-        {current === 'quiz' ? <QuizPlayer questions={content.quiz} settings={settings} /> : null}
+        {current === 'quiz' ? (
+          <QuizPlayer
+            questions={content.quiz}
+            settings={settings}
+            onFinish={(score, total) =>
+              logLearningEvent(activeChildId ?? '', 'quiz', { task_id: taskId, score, total }).then(
+                invalidateRewards,
+              )
+            }
+          />
+        ) : null}
         {current === 'exercices' ? <ExerciseList exercises={content.exercises} settings={settings} /> : null}
         {back}
       </ScrollView>

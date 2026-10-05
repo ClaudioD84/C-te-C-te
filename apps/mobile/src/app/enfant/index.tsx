@@ -1,4 +1,4 @@
-import { deriveLearningSettings, toIsoDate, type LearningSettings } from '@cote-a-cote/shared';
+import { BADGES, deriveLearningSettings, toIsoDate, type LearningSettings } from '@cote-a-cote/shared';
 import * as Speech from 'expo-speech';
 import { router } from 'expo-router';
 import { ActivityIndicator, Pressable, ScrollView, StyleSheet, View } from 'react-native';
@@ -13,6 +13,8 @@ import { PomodoroTimer } from '@/features/mission/pomodoro-timer';
 import { useCompleteItem, useSessions, type SessionItem, type StudySession } from '@/features/planning/api';
 import { CHILD_ACTIVITY_PREFIX } from '@/features/planning/labels';
 import { useChildProfile } from '@/features/profiles/api';
+import { useNewBadges, useRewards } from '@/features/rewards/api';
+import { AvatarProgress } from '@/features/rewards/avatar-progress';
 import { useDueFlashcards } from '@/features/study/api';
 
 /** Console enfant : uniquement la mission du jour, sans menu. */
@@ -23,6 +25,11 @@ export default function ChildConsoleScreen() {
   const child = useChildProfile(childId);
   const sessions = useSessions(childId, today, 1);
   const dueCards = useDueFlashcards(childId);
+  const { summary } = useRewards(childId, child.data?.preferences.availableDays);
+  const { fresh, markSeen } = useNewBadges(
+    childId,
+    summary?.badges.map((b) => b.code),
+  );
 
   const parentButton = (
     <Pressable
@@ -73,6 +80,18 @@ export default function ChildConsoleScreen() {
       </View>
 
       <ScrollView contentContainerStyle={styles.content}>
+        {fresh.length > 0 ? (
+          <ThemedView type="backgroundSelected" style={styles.card} accessibilityLiveRegion="polite">
+            <ThemedText type="subtitle">Nouveau badge !</ThemedText>
+            {fresh.map((code) => (
+              <ThemedText key={code} style={learningTextStyle(settings)}>
+                {BADGES[code].emoji} {BADGES[code].title} : {BADGES[code].description}
+              </ThemedText>
+            ))}
+            <Button label="Super !" onPress={markSeen} />
+          </ThemedView>
+        ) : null}
+        {summary ? <AvatarProgress summary={summary} onPress={() => router.push('/enfant/badges')} /> : null}
         {dueCards.data && dueCards.data.length > 0 ? (
           <Button
             variant="secondary"
