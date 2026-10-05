@@ -140,4 +140,37 @@ describe('examen blanc (F5)', () => {
     ]);
     expect(plan.alerts.some((a) => a.type === 'evaluations_rapprochees')).toBe(false);
   });
+
+  it('congés : aucun travail ces jours-là, la préparation est avancée', () => {
+    const plan = planWeek({
+      ...base,
+      tasks: [{ id: 'i', subject: 'Éveil', kind: 'interro', dueDate: '2026-10-09' }],
+      blockedDates: ['2026-10-07', '2026-10-08'],
+    });
+    const dates = plan.days.map((d) => d.date);
+    expect(dates).not.toContain('2026-10-07');
+    expect(dates).not.toContain('2026-10-08');
+    expect(plan.days.reduce((sum, d) => sum + d.totalMinutes, 0)).toBe(45);
+  });
+
+  it('congés : une tâche dont toute la préparation tombe en congé est signalée', () => {
+    const plan = planWeek({
+      ...base,
+      tasks: [{ id: 'd', subject: 'Français', kind: 'devoir', dueDate: '2026-10-07' }],
+      blockedDates: ['2026-10-05', '2026-10-06'],
+    });
+    expect(plan.days).toEqual([]);
+    expect(plan.alerts).toEqual([{ type: 'conge', count: 1 }]);
+  });
+
+  it('congés : priment sur un jour ajouté exceptionnellement', () => {
+    const plan = planWeek({
+      ...base,
+      tasks: [{ id: 'd', subject: 'Français', kind: 'devoir', dueDate: '2026-10-12' }],
+      extraDates: ['2026-10-10'],
+      blockedDates: ['2026-10-10', '2026-10-11'],
+    });
+    expect(plan.days.map((d) => d.date)).toEqual([]);
+    expect(plan.alerts).toEqual([{ type: 'conge', count: 1 }]);
+  });
 });

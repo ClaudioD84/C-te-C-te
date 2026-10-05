@@ -46,7 +46,7 @@ Aucune donnée n'est vendue, louée ni utilisée à des fins publicitaires. Aucu
 |---|---|
 | Finalité | Adapter l'organisation du travail et les contenus à l'année scolaire et au profil de l'enfant |
 | Base légale | Exécution du contrat (art. 6.1.b) |
-| Données | Pseudonyme, avatar, année, type d'enseignement, réseau, options, préférences (jours, durée de travail) |
+| Données | Pseudonyme, avatar, année, type d'enseignement, réseau, options, préférences (jours, durée de travail, centres d'intérêt choisis dans une liste fermée), congés et absences (dates et type, sans motif détaillé) |
 | Conservation | Durée du compte ; suppression du profil ou du compte à tout moment |
 | Remarque | Le vrai prénom de l'enfant n'est jamais demandé. La liste des noms à masquer sur les photos reste sur l'appareil (stockage chiffré) |
 

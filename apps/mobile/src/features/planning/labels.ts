@@ -15,6 +15,10 @@ export function alertText(alert: PlanningAlert, today: IsoDate): string {
       return `${alert.count} évaluations le même jour (${formatRelativeDate(alert.date, today)}) : les révisions commencent plus tôt`;
     case 'week_end_conseille':
       return 'Le week-end permettrait d’alléger la semaine';
+    case 'conge':
+      return alert.count > 1
+        ? `${alert.count} tâches tombent pendant un congé : prévoyez-les avant ou après`
+        : 'Une tâche tombe pendant un congé : prévoyez-la avant ou après';
   }
 }
 

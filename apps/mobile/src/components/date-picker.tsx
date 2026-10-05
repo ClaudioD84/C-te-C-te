@@ -27,11 +27,14 @@ export function DatePicker({
   value,
   onChange,
   months = 10,
+  includeToday = false,
 }: {
   label: string;
   value: IsoDate | null;
   onChange: (value: IsoDate) => void;
   months?: number;
+  /** Aujourd'hui fait partie des choix (sinon seulement les jours suivants). */
+  includeToday?: boolean;
 }) {
   const today = new Date();
   const monthKeys = Array.from({ length: months }, (_, i) => {
@@ -45,7 +48,7 @@ export function DatePicker({
   const days = Array.from(
     { length: daysInMonth },
     (_, i) => `${month}-${String(i + 1).padStart(2, '0')}`,
-  ).filter((d) => d > todayIso);
+  ).filter((d) => (includeToday ? d >= todayIso : d > todayIso));
 
   const monthLabels = Object.fromEntries(
     monthKeys.map((key) => {

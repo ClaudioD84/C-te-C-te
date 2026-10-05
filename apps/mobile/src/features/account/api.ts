@@ -24,6 +24,7 @@ const EXPORTED_TABLES = [
   'ai_usage',
   'kindergarten_week',
   'child_device',
+  'day_off',
 ] as const;
 
 /** Export RGPD : un fichier JSON partagé via la feuille de partage du téléphone (téléchargé sur le web). */

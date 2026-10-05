@@ -37,7 +37,9 @@ export interface PlannedDay {
 export type PlanningAlert =
   | { type: 'surcharge'; date: IsoDate; overMinutes: number }
   | { type: 'evaluations_rapprochees'; date: IsoDate; count: number }
-  | { type: 'week_end_conseille'; dates: IsoDate[] };
+  | { type: 'week_end_conseille'; dates: IsoDate[] }
+  /** Tâches dont toute la préparation tombe pendant un congé : à caser avant ou après. */
+  | { type: 'conge'; count: number };
 
 export interface PlanningInput {
   tasks: readonly PlannableTask[];
@@ -52,6 +54,8 @@ export interface PlanningInput {
   horizonDays?: number;
   /** Jours ajoutés exceptionnellement par le parent (ex. un week-end chargé). */
   extraDates?: readonly IsoDate[];
+  /** Congés et absences : aucun travail ces jours-là, même s'ils sont ajoutés exceptionnellement. */
+  blockedDates?: readonly IsoDate[];
 }
 
 export interface WeekPlan {
@@ -131,7 +135,10 @@ export function planWeek(input: PlanningInput): WeekPlan {
   const lastDay = addDays(input.today, horizon - 1);
   const available = new Set(input.availableDays);
   const extra = new Set(input.extraDates ?? []);
-  const isAvailable = (date: IsoDate) => available.has(weekdayKey(date)) || extra.has(date);
+  const blocked = new Set(input.blockedDates ?? []);
+  const isAvailable = (date: IsoDate) =>
+    !blocked.has(date) && (available.has(weekdayKey(date)) || extra.has(date));
+  let duringBreak = 0;
 
   const chunks: Chunk[] = [];
   const tasks = [...input.tasks]
@@ -142,7 +149,8 @@ export function planWeek(input: PlanningInput): WeekPlan {
     if (task.mockExam) {
       // Examen blanc : une seule séance « se tester », le jour prévu (sans lissage vers d'autres jours).
       const minutes = roundTo5(MOCK_EXAM_MINUTES * levelFactor(input.grade)) - (task.doneMinutes ?? 0);
-      if (minutes > 0 && task.dueDate <= lastDay) {
+      if (minutes > 0 && task.dueDate <= lastDay && blocked.has(task.dueDate)) duringBreak++;
+      else if (minutes > 0 && task.dueDate <= lastDay) {
         chunks.push({ task, minutes, window: [task.dueDate], day: task.dueDate });
       }
       continue;
@@ -161,7 +169,12 @@ export function planWeek(input: PlanningInput): WeekPlan {
       allDays.push(addDays(input.today, offset));
     }
     let window = allDays.filter(isAvailable);
-    if (window.length === 0) window = allDays.slice(-1);
+    // Aucun jour habituel : le dernier jour hors congé, sinon la tâche est signalée au parent.
+    if (window.length === 0) window = allDays.filter((d) => !blocked.has(d)).slice(-1);
+    if (window.length === 0) {
+      if (allDays.some((d) => d <= lastDay)) duringBreak++;
+      continue;
+    }
 
     // Une partie seulement tombe dans l'horizon si l'échéance est lointaine.
     const inHorizon = window.filter((d) => d <= lastDay);
@@ -215,7 +228,9 @@ export function planWeek(input: PlanningInput): WeekPlan {
     days.push({ date, items: list, totalMinutes: list.reduce((sum, i) => sum + i.minutes, 0) });
   }
 
-  return { days, alerts: buildAlerts(days, input, capacity, isAvailable) };
+  const alerts = buildAlerts(days, input, capacity, isAvailable);
+  if (duringBreak > 0) alerts.push({ type: 'conge', count: duringBreak });
+  return { days, alerts };
 }
 
 function buildAlerts(
@@ -252,7 +267,9 @@ function buildAlerts(
     for (let offset = 0; offset < (input.horizonDays ?? 7); offset++) {
       const date = addDays(input.today, offset);
       const key = weekdayKey(date);
-      if ((key === 'sam' || key === 'dim') && !isAvailable(date) && date < latestDue) weekend.push(date);
+      const blocked = input.blockedDates?.includes(date) ?? false;
+      if ((key === 'sam' || key === 'dim') && !isAvailable(date) && !blocked && date < latestDue)
+        weekend.push(date);
     }
     if (weekend.length > 0) alerts.push({ type: 'week_end_conseille', dates: weekend });
   }

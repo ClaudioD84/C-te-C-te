@@ -1,4 +1,6 @@
 import {
+  addDays,
+  datesInRanges,
   deriveLearningSettings,
   formatRelativeDate,
   formatShortDate,
@@ -19,6 +21,8 @@ import { Screen } from '@/components/screen';
 import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
 import { Spacing } from '@/constants/theme';
+import { DaysOffCard } from '@/features/days-off/days-off-card';
+import { useDaysOff } from '@/features/days-off/api';
 import { usePublishPlan, useSessions, useUpcomingTasks, type UpcomingTask } from '@/features/planning/api';
 import { ACTIVITY_LABELS, alertText, capitalize } from '@/features/planning/labels';
 import { useChildProfile } from '@/features/profiles/api';
@@ -34,6 +38,7 @@ export default function PlanningScreen() {
   const tasks = useUpcomingTasks(childId);
   const sessions = useSessions(childId, today);
   const publish = usePublishPlan(childId);
+  const daysOff = useDaysOff(childId);
   const queryClient = useQueryClient();
   const [extraDates, setExtraDates] = useState<IsoDate[]>([]);
   const [preview, setPreview] = useState<WeekPlan | null>(null);
@@ -74,6 +79,7 @@ export default function PlanningScreen() {
         availableDays: profile.preferences.availableDays,
         workMinutes: settings.workMinutes,
         extraDates: extra,
+        blockedDates: datesInRanges(daysOff.data ?? [], today, addDays(today, 6)),
       }),
     );
   }
@@ -229,6 +235,8 @@ export default function PlanningScreen() {
           ))}
         </ThemedView>
       ) : null}
+
+      <DaysOffCard childId={childId} />
 
       <Button
         variant="secondary"
