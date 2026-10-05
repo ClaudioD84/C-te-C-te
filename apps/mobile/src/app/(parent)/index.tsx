@@ -61,30 +61,42 @@ function ChildCard({ child }: { child: StoredChildProfile }) {
           onPress={() => router.push({ pathname: '/scan/nouveau', params: { childId: child.id } })}
         />
       )}
-      <Button
-        variant="secondary"
-        label={kindergarten ? 'Suivi' : 'Suivi et épreuves'}
-        onPress={() => router.push({ pathname: '/suivi/[childId]', params: { childId: child.id } })}
-      />
-      {!kindergarten ? (
+      {/* Actions secondaires sur deux colonnes : la carte reste courte. */}
+      <View style={styles.grid}>
         <Button
+          style={styles.half}
           variant="secondary"
-          label="Planning de la semaine"
-          onPress={() => router.push({ pathname: '/planning/[childId]', params: { childId: child.id } })}
+          label={kindergarten ? 'Suivi' : 'Suivi et épreuves'}
+          onPress={() => router.push({ pathname: '/suivi/[childId]', params: { childId: child.id } })}
         />
-      ) : null}
-      <Button variant="secondary" label="Lancer la mission du jour" onPress={launchMission} />
-      <Button
-        variant="secondary"
-        label="Écrire un petit mot"
-        accessibilityLabel={`Écrire un petit mot à ${child.alias}`}
-        onPress={() => router.push({ pathname: '/mot/[childId]', params: { childId: child.id } })}
-      />
-      <Button
-        variant="secondary"
-        label="Modifier le profil"
-        onPress={() => router.push({ pathname: '/profils/[childId]', params: { childId: child.id } })}
-      />
+        {!kindergarten ? (
+          <Button
+            style={styles.half}
+            variant="secondary"
+            label="Planning de la semaine"
+            onPress={() => router.push({ pathname: '/planning/[childId]', params: { childId: child.id } })}
+          />
+        ) : null}
+        <Button
+          style={styles.half}
+          variant="secondary"
+          label="Lancer la mission du jour"
+          onPress={launchMission}
+        />
+        <Button
+          style={styles.half}
+          variant="secondary"
+          label="Écrire un petit mot"
+          accessibilityLabel={`Écrire un petit mot à ${child.alias}`}
+          onPress={() => router.push({ pathname: '/mot/[childId]', params: { childId: child.id } })}
+        />
+        <Button
+          style={styles.half}
+          variant="secondary"
+          label="Modifier le profil"
+          onPress={() => router.push({ pathname: '/profils/[childId]', params: { childId: child.id } })}
+        />
+      </View>
     </ThemedView>
   );
 }
@@ -128,6 +140,8 @@ export default function CockpitScreen() {
 }
 
 const styles = StyleSheet.create({
+  grid: { flexDirection: 'row', flexWrap: 'wrap', gap: Spacing.two },
+  half: { flexGrow: 1, flexBasis: '45%' },
   card: {
     padding: Spacing.three,
     borderRadius: Spacing.three,
