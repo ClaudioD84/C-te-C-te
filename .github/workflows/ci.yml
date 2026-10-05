@@ -5,6 +5,11 @@ on:
     branches: [main]
   pull_request:
 
+# Un nouveau push annule la série en cours sur la même branche : les runners ne s'empilent plus.
+concurrency:
+  group: ci-${{ github.workflow }}-${{ github.head_ref || github.ref }}
+  cancel-in-progress: true
+
 jobs:
   app:
     name: Lint, types et tests
