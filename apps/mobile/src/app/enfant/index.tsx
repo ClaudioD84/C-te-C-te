@@ -19,6 +19,7 @@ import { learningTextStyle } from '@/constants/fonts';
 import { MinTouchSize, Spacing } from '@/constants/theme';
 import { useChildMode } from '@/features/child-mode/child-mode-provider';
 import { KindergartenMission } from '@/features/kindergarten/kindergarten-mission';
+import { NoteCard } from '@/features/notes/note-card';
 import { PomodoroTimer } from '@/features/mission/pomodoro-timer';
 import { OfflineBanner, useIsOnline } from '@/features/offline/offline-banner';
 import { usePrepareOffline } from '@/features/offline/use-prepare-offline';
@@ -110,6 +111,7 @@ export default function ChildConsoleScreen() {
 
       <ScrollView contentContainerStyle={styles.content}>
         <OfflineBanner audience="enfant" />
+        <NoteCard childId={childId} settings={settings} />
         {fresh.length > 0 ? (
           <ThemedView type="backgroundSelected" style={styles.card} accessibilityLiveRegion="polite">
             <ThemedText type="subtitle">Nouveau badge !</ThemedText>

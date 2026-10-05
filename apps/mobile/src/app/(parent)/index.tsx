@@ -64,6 +64,12 @@ function ChildCard({ child }: { child: StoredChildProfile }) {
       <Button variant="secondary" label="Lancer la mission du jour" onPress={launchMission} />
       <Button
         variant="secondary"
+        label="Écrire un petit mot"
+        accessibilityLabel={`Écrire un petit mot à ${child.alias}`}
+        onPress={() => router.push({ pathname: '/mot/[childId]', params: { childId: child.id } })}
+      />
+      <Button
+        variant="secondary"
         label="Modifier le profil"
         onPress={() => router.push({ pathname: '/profils/[childId]', params: { childId: child.id } })}
       />

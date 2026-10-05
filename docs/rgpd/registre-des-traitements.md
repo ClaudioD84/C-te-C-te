@@ -118,6 +118,16 @@ Aucune donnée n'est vendue, louée ni utilisée à des fins publicitaires. Aucu
 | Conservation | Effacées à la déconnexion et à la suppression du compte |
 | Remarque | Les rappels sont des notifications locales : aucun identifiant de notification n'est envoyé au serveur |
 
+### T11 — Petits mots du parent
+
+| | |
+|---|---|
+| Finalité | Encourager l'enfant par un court message affiché sur sa console |
+| Base légale | Exécution du contrat (art. 6.1.b) |
+| Données | Texte du message (200 caractères), dates d'envoi et de lecture ; jamais envoyé à l'IA |
+| Conservation | Durée du profil ; supprimés avec le profil ou le compte |
+| Destinataires | Supabase |
+
 ### T10 — Tablette de l'enfant
 
 | | |

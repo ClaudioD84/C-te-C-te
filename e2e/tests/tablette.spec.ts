@@ -239,6 +239,19 @@ test('tablette : droits limités à la console de son enfant', async ({ request 
   });
   expect(foreignPack.status()).toBe(404);
 
+  // Petits mots : lus et marqués comme lus, jamais modifiés.
+  sql(
+    `insert into child_note (family_id, child_id, message) values ('${family.familyId}', '${family.childId}', 'Bravo !')`,
+  );
+  expect(await get('child_note?select=message')).toEqual([{ message: 'Bravo !' }]);
+  const note = (data: Record<string, unknown>) =>
+    request.patch(`${GATEWAY_URL}/rest/v1/child_note?child_id=eq.${family.childId}`, {
+      headers: headers(token),
+      data,
+    });
+  expect((await note({ message: 'Modifié' })).ok()).toBeFalsy();
+  expect((await note({ seen_at: new Date().toISOString() })).ok()).toBeTruthy();
+
   // Essais de codes au hasard : bloqués après 10 erreurs pour une même adresse.
   for (let i = 0; i < 9; i++) expect((await pair('ZZZZZZZZ')).status()).toBe(404);
   expect((await pair('ZZZZZZZZ')).status()).toBe(429);
