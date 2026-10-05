@@ -163,6 +163,9 @@ def parse(lines: list[str]) -> list[dict]:
 
 
 MAT_YEAR_RE = re.compile(r"^\s{0,8}(M1-M2|M3)\b")
+# Titre du chapitre qui suit les attendus (le sommaire l'écrit en minuscules, suivi de points de conduite).
+# Le PDF glisse parfois un caractère de contrôle (\x07) devant le titre.
+MAT_END_RE = re.compile(r"^\s*5\.[\s\x00-\x1f]+VISÉES TRANSVERSALES\s*$")
 MAT_DISCIPLINE_RE = re.compile(r"^\s*(4\.\d(?:\.\d)?)\.\s+(\S.+?)\s*$")
 # Disciplines du référentiel des compétences initiales → matières de l'application.
 MAT_SUBJECTS = {
@@ -231,6 +234,10 @@ def parse_generic(
 
     for raw in lines:
         line = strip_margin(remove_tags(" " + raw, tags or set())[1:])
+        if maternelle and MAT_END_RE.match(line):
+            # Fin du chapitre « Contenus et attendus » : la suite (visées transversales, tableaux de croisements
+            # sur plusieurs colonnes) n'est pas une liste d'attendus et se lirait comme du texte mélangé.
+            break
         if maternelle:
             disc = MAT_DISCIPLINE_RE.match(line)
             if disc and disc.group(2).upper() == disc.group(2):

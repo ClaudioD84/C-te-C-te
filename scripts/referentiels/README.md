@@ -52,6 +52,10 @@ En maternelle, les attendus « M1-M2 » sont ceux de fin de 2e maternelle ; ils 
 
 Les intitulés sont recopiés mot pour mot depuis les PDF officiels publiés sur
 [enseignement.be](https://www.enseignement.be/parcours-dapprentissage/maternel-et-primaire-ordinaire/organisation-de-lenseignement-maternel-et-primaire/contenus-dapprentissage).
+En maternelle, la lecture s'arrête au chapitre « 5. Visées transversales » : la suite (visées transversales et
+tableaux de croisements sur plusieurs colonnes) n'est pas une liste d'attendus. `donnees.test.ts` vérifie
+qu'aucun attendu, dans aucun référentiel, ne contient de texte mélangé de plusieurs colonnes.
+
 La découpe automatique peut couper un attendu en deux sur un saut de page ou rattacher un attendu
 au mauvais savoir : **une relecture reste nécessaire** avant la sortie publique.
 
