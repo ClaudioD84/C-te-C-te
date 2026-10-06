@@ -16,6 +16,7 @@ import { Spacing } from '@/constants/theme';
 import { useTheme } from '@/hooks/use-theme';
 
 import { BreathingExercise } from './breathing-exercise';
+import { TimeDisc } from './time-disc';
 
 const PHASE_LABELS = {
   travail: 'Au travail !',
@@ -75,6 +76,7 @@ export function PomodoroTimer({ workMinutes, breakMinutes, cycles }: PomodoroCon
             accessibilityLabel={`Temps restant ${formatDuration(state.remainingSeconds)}`}>
             {formatDuration(state.remainingSeconds)}
           </ThemedText>
+          <TimeDisc remaining={1 - progress} color={barColor} track={theme.backgroundSelected} />
           <View
             style={[styles.track, { backgroundColor: theme.backgroundSelected }]}
             accessibilityRole="progressbar"
