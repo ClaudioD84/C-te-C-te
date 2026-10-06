@@ -52,7 +52,7 @@ test('la mission du jour fonctionne hors connexion et se synchronise sans doublo
     await button(page, "C'est fait !").first().click();
     await expect(button(page, "C'est fait !")).toHaveCount(left - 1);
   }
-  await expect(page.getByText('Mission accomplie, bravo !')).toBeVisible();
+  await expect(page.getByText('Mission accomplie !', { exact: true })).toBeVisible();
 
   // Rien n'est encore arrivé sur le serveur.
   expect(

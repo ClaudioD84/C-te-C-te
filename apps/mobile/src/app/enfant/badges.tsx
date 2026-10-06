@@ -13,6 +13,7 @@ import { ChoiceChips } from '@/components/choice-chips';
 import { CHILD_PALETTES, type ChildPaletteCode } from '@/constants/colors';
 import { useChildColor } from '@/features/child-mode/child-color';
 import { MasteryCard } from '@/features/mastery/mastery-card';
+import { useTreasures } from '@/features/mission/treasures';
 import { printCertificate } from '@/features/print/print-pack';
 import { AccessoryPicker, avatarWithAccessory } from '@/features/rewards/accessory-picker';
 import { AvatarProgress } from '@/features/rewards/avatar-progress';
@@ -23,6 +24,7 @@ export default function BadgesScreen() {
   const child = useChildProfile(activeChildId ?? '');
   const { summary } = useRewards(activeChildId ?? '', child.data?.preferences.availableDays);
   const { color, setColor } = useChildColor();
+  const treasures = useTreasures(activeChildId ?? '');
   const paletteCodes = Object.keys(CHILD_PALETTES) as ChildPaletteCode[];
 
   if (!summary) {
@@ -45,6 +47,16 @@ export default function BadgesScreen() {
           {summary.currentStreak > 1 ? ` · série de ${summary.currentStreak} jours` : ''}
         </ThemedText>
         <MasteryCard childId={activeChildId ?? ''} />
+        {treasures.owned.length > 0 ? (
+          <ThemedView type="backgroundElement" style={styles.treasures}>
+            <ThemedText type="subtitle">Mes trésors ({treasures.owned.length})</ThemedText>
+            {treasures.owned.map((t) => (
+              <ThemedText key={t.id}>
+                {t.kind === 'blague' ? '😄' : '💡'} {t.text}
+              </ThemedText>
+            ))}
+          </ThemedView>
+        ) : null}
         {child.data ? <AccessoryPicker child={child.data} summary={summary} /> : null}
         <ChoiceChips
           label="Ma couleur préférée"
@@ -115,6 +127,7 @@ const styles = StyleSheet.create({
     borderRadius: Spacing.three,
   },
   locked: { opacity: 0.55 },
+  treasures: { padding: Spacing.three, borderRadius: Spacing.three, gap: Spacing.two },
   emoji: { fontSize: 32, lineHeight: 40 },
   text: { flex: 1, gap: Spacing.half },
 });

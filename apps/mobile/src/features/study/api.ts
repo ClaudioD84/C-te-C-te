@@ -281,12 +281,19 @@ export function useLogPractice(childId: string) {
     mutationKey: OFFLINE_MUTATIONS.learningEvent,
     onSettled: () => queryClient.invalidateQueries({ queryKey: ['effort', childId] }),
   });
-  return (mode: string, subject: string, score: number, total: number, extra: Record<string, unknown> = {}) =>
+  return (
+    mode: string,
+    subject: string | null,
+    score: number,
+    total: number,
+    extra: Record<string, unknown> = {},
+  ) =>
     mutation.mutate({
       id: randomUUID(),
       childId,
       type: 'quiz',
-      meta: { ...extra, mode, subject, score, total },
+      // Sans matière (défi bonus mélangé) : compté dans l'effort, pas dans le suivi par matière.
+      meta: { ...extra, mode, ...(subject ? { subject } : {}), score, total },
       at: new Date().toISOString(),
     });
 }

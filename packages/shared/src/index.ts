@@ -32,3 +32,4 @@ export * from './certificate';
 export * from './times-tables';
 export * from './school-calendar';
 export * from './mastery';
+export * from './celebration';

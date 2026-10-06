@@ -16,6 +16,7 @@ export default function ChildLayout() {
       <Stack.Screen name="tables" />
       <Stack.Screen name="dictee" />
       <Stack.Screen name="lecture" />
+      <Stack.Screen name="bonus" />
       <Stack.Screen name="appareil" options={{ presentation: 'modal' }} />
     </Stack>
   );

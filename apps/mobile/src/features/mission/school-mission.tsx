@@ -8,6 +8,7 @@ import type { SessionItem, StudySession } from '@/features/planning/api';
 
 import { BreathingExercise } from './breathing-exercise';
 import { MissionCard, MissionText } from './mission-card';
+import { MissionComplete } from './mission-complete';
 import { PomodoroTimer } from './pomodoro-timer';
 
 /**
@@ -53,8 +54,7 @@ export function SchoolMission({
       </>
     );
   }
-  if (remaining.length === 0)
-    return <MissionText settings={settings}>Mission accomplie, bravo !</MissionText>;
+  if (remaining.length === 0) return <MissionComplete childId={childId} settings={settings} />;
 
   const hidden = remaining.length - settings.maxItemsPerScreen;
   return (

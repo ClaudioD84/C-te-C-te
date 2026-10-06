@@ -10,6 +10,7 @@ import { Spacing } from '@/constants/theme';
 import { useChildMode } from '@/features/child-mode/child-mode-provider';
 import { hasParentCode } from '@/features/child-mode/parent-code-store';
 import { useDaysOff } from '@/features/days-off/api';
+import { useSessions } from '@/features/planning/api';
 import { avatarWithAccessory } from '@/features/rewards/accessory-picker';
 import { TableTalkCard } from '@/features/table/table-talk-card';
 import { HelpRequestsCard } from '@/features/help/help-requests-card';
@@ -23,6 +24,8 @@ function ChildCard({ child }: { child: StoredChildProfile }) {
   const { enter } = useChildMode();
   const daysOff = useDaysOff(child.id);
   const holiday = currentHoliday(daysOff.data ?? [], toIsoDate(new Date()));
+  const todaySessions = useSessions(child.id, toIsoDate(new Date()), 1);
+  const missionDone = todaySessions.data?.[0]?.status === 'done';
 
   async function launchMission() {
     // Le code parent est obligatoire avant de confier l'appareil à l'enfant.
@@ -44,6 +47,11 @@ function ChildCard({ child }: { child: StoredChildProfile }) {
         {GRADE_LABELS[child.grade]}
         {needs ? ` · ${needs}` : ''}
       </ThemedText>
+      {missionDone ? (
+        <ThemedText type="smallBold" themeColor="primary">
+          ✅ Mission du jour accomplie
+        </ThemedText>
+      ) : null}
       <HelpRequestsCard childId={child.id} alias={child.alias} />
       <RewardEarnedCard childId={child.id} alias={child.alias} />
       {!kindergarten ? <TableTalkCard childId={child.id} alias={child.alias} /> : null}
