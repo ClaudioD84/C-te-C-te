@@ -2,6 +2,7 @@ import {
   AVATAR_STAGES,
   BACKGROUNDS,
   backgroundsFor,
+  defaultBackground,
   isBackgroundUnlocked,
   type BackgroundCode,
   type BackgroundTheme,
@@ -21,7 +22,8 @@ const STAGE_NAMES = Object.fromEntries(AVATAR_STAGES.map((s) => [s.level, s.name
 export function BackgroundPicker({ child, summary }: { child: StoredChildProfile; summary: RewardSummary }) {
   const theme = useTheme();
   const setBackground = useSetBackground(child.id);
-  const current = child.background ?? 'uni';
+  const current =
+    child.background ?? defaultBackground(child.grade, child.preferences.interests ?? [], child.needs);
   const codes = backgroundsFor(child.grade, child.preferences.interests ?? []);
 
   return (

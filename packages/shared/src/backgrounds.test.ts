@@ -1,7 +1,13 @@
 /// <reference types="vite/client" />
 import { describe, expect, it } from 'vitest';
 
-import { ageGroup, backgroundsFor, isBackground, isBackgroundUnlocked } from './backgrounds';
+import {
+  ageGroup,
+  backgroundsFor,
+  defaultBackground,
+  isBackground,
+  isBackgroundUnlocked,
+} from './backgrounds';
 
 describe('fonds d’écran', () => {
   it('tranches d’âge', () => {
@@ -36,5 +42,12 @@ describe('fonds acceptés par la base', () => {
   it('la contrainte SQL connaît exactement les mêmes codes', () => {
     const codes = [...migration.matchAll(/'([a-z_]+)'/g)].map((m) => m[1]);
     expect(new Set(codes)).toEqual(new Set(BACKGROUND_CODES));
+  });
+
+  it('fond par défaut : selon l’âge et les intérêts, uni avec le TDAH', () => {
+    expect(defaultBackground('P5', ['mer'], [])).toBe('ocean');
+    expect(defaultBackground('S3', ['football'], [])).toBe('foot');
+    expect(defaultBackground('P5', [], ['dyslexie'])).not.toBe('uni');
+    expect(defaultBackground('P5', ['mer'], ['tdah'])).toBe('uni');
   });
 });

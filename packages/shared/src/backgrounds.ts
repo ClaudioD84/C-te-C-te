@@ -185,3 +185,18 @@ export function isBackgroundUnlocked(code: BackgroundCode, avatarLevel: number):
   const level = (BACKGROUNDS[code] as BackgroundTheme).unlockLevel;
   return level === undefined || avatarLevel >= level;
 }
+
+/**
+ * Fond tant que l'enfant n'a rien choisi : le premier proposé pour son âge et ses centres d'intérêt
+ * (déjà débloqué) ; fond uni avec le TDAH, pour ne rien ajouter à l'écran.
+ */
+export function defaultBackground(
+  grade: Grade,
+  interests: readonly Interest[],
+  needs: readonly string[],
+): BackgroundCode {
+  if (needs.includes('tdah')) return 'uni';
+  return (
+    backgroundsFor(grade, interests).find((code) => code !== 'uni' && isBackgroundUnlocked(code, 0)) ?? 'uni'
+  );
+}

@@ -27,7 +27,9 @@ test('accessoires de l’avatar : débloqués par l’effort, choisis par l’en
   await expect(button(page, 'Retour à la mission')).toHaveCSS('background-color', 'rgb(29, 95, 168)');
 
   // Fond d'écran : ceux de son âge, certains débloqués par l'effort.
-  await expect(page.getByRole('button', { name: 'Fond Fond uni, choisi' })).toBeVisible();
+  // Sans choix : un fond de son âge est proposé d'office (le fond uni reste au choix).
+  await expect(page.getByRole('button', { name: 'Fond Ciel étoilé, choisi' })).toBeVisible();
+  await expect(page.getByRole('button', { name: 'Fond Fond uni', exact: true })).toBeEnabled();
   await expect(page.getByRole('button', { name: /^Fond Aurore boréale, à débloquer/ })).toBeDisabled();
   await page.getByRole('button', { name: 'Fond Océan', exact: true }).click();
   await expect(page.getByRole('button', { name: 'Fond Océan, choisi' })).toBeVisible();
