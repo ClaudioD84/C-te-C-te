@@ -24,6 +24,11 @@ Tout ce qui est prêt dans le dépôt, et ce qu'il reste à faire de votre côt�
 - Profils de compilation EAS (`apps/mobile/eas.json`) : `development`, `preview` (installation directe, APK
   Android) et `production` ; envoi Android vers le test interne, en brouillon.
 
+## Chaque année
+
+- **Calendrier scolaire** : vérifier les dates 2026-2027 sur enseignement.be (elles viennent de la presse) et
+  ajouter l'année suivante dans `packages/shared/src/school-calendar.ts` avant la fin de l'année en cours.
+
 ## Bloquant avant la première soumission
 
 1. **Icône et écran de démarrage** : ce sont encore ceux du modèle Expo. Il faut une icône 1024 × 1024 (sans

@@ -58,3 +58,19 @@ export function useRemoveDayOff(childId: string) {
     onSuccess: () => queryClient.invalidateQueries({ queryKey: key(childId) }),
   });
 }
+
+/** Ajoute plusieurs congés scolaires d'un coup (calendrier officiel). */
+export function useAddSchoolBreaks(childId: string) {
+  const queryClient = useQueryClient();
+  return useMutation({
+    mutationFn: async (breaks: { start: IsoDate; end: IsoDate }[]) => {
+      const { error } = await supabase
+        .from('day_off')
+        .insert(
+          breaks.map((b) => ({ child_id: childId, start_date: b.start, end_date: b.end, kind: 'conge' })),
+        );
+      if (error) throw error;
+    },
+    onSuccess: () => queryClient.invalidateQueries({ queryKey: key(childId) }),
+  });
+}

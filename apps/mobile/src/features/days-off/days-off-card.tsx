@@ -4,6 +4,9 @@ import {
   daysBetween,
   formatShortDate,
   MAX_DAY_OFF_DAYS,
+  currentSchoolYear,
+  toIsoDate,
+  upcomingBreaks,
   type DayOffKind,
   type IsoDate,
 } from '@cote-a-cote/shared';
@@ -18,7 +21,7 @@ import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
 import { Spacing } from '@/constants/theme';
 
-import { useAddDayOff, useDaysOff, useRemoveDayOff } from './api';
+import { useAddDayOff, useAddSchoolBreaks, useDaysOff, useRemoveDayOff } from './api';
 
 function periodLabel(start: IsoDate, end: IsoDate): string {
   return start === end
@@ -31,6 +34,13 @@ export function DaysOffCard({ childId }: { childId: string }) {
   const daysOff = useDaysOff(childId);
   const add = useAddDayOff(childId);
   const remove = useRemoveDayOff(childId);
+  const addBreaks = useAddSchoolBreaks(childId);
+  const today = toIsoDate(new Date());
+  const schoolYear = currentSchoolYear(today);
+  // Congés officiels pas encore ajoutés (même période déjà présente = déjà ajouté).
+  const missingBreaks = upcomingBreaks(today).filter(
+    (b) => !(daysOff.data ?? []).some((d) => d.start === b.start && d.end === b.end),
+  );
   const [adding, setAdding] = useState(false);
   const [start, setStart] = useState<IsoDate | null>(null);
   const [end, setEnd] = useState<IsoDate | null>(null);
@@ -66,6 +76,25 @@ export function DaysOffCard({ childId }: { childId: string }) {
           />
         </View>
       ))}
+      {daysOff.data && schoolYear && missingBreaks.length > 0 ? (
+        <ThemedView type="backgroundSelected" style={styles.card}>
+          <ThemedText type="smallBold">Congés scolaires {schoolYear.name}</ThemedText>
+          {missingBreaks.map((b) => (
+            <ThemedText key={b.start} type="small">
+              {b.label} {periodLabel(b.start, b.end)}
+            </ThemedText>
+          ))}
+          <ThemedText type="small" themeColor="textSecondary">
+            Calendrier de la Fédération Wallonie-Bruxelles, à vérifier sur enseignement.be.
+          </ThemedText>
+          <Button
+            variant="secondary"
+            label={`Ajouter les congés scolaires (${missingBreaks.length})`}
+            loading={addBreaks.isPending}
+            onPress={() => addBreaks.mutate(missingBreaks)}
+          />
+        </ThemedView>
+      ) : null}
       {daysOff.data?.some((d) => d.kind === 'conge') ? (
         <Button
           variant="secondary"

@@ -51,3 +51,17 @@ test('vacances : idées pour le parent, message sur la console de l’enfant', a
   await enterChildMode(page, 'Mouette');
   await expect(page.getByText('🏖️ C’est les vacances !')).toBeVisible();
 });
+
+test('congés scolaires officiels : ajoutés en un geste, puis plus proposés', async ({ page }) => {
+  // Calendrier connu jusqu'au lundi de Pentecôte 2027 (à compléter pour les années suivantes).
+  test.skip(new Date() > new Date('2027-05-16'), 'Calendrier scolaire suivant pas encore ajouté');
+  const email = await signUp(page, 'conges-officiels');
+  const { childId } = await addChild(page, email, 'Loir');
+  await button(page, 'Planning de la semaine').click();
+  await expect(page.getByText('Congés scolaires 2026-2027')).toBeVisible();
+  await button(page, /^Ajouter les congés scolaires \(\d+\)$/).click();
+  await expect(page.getByText('Congés scolaires 2026-2027')).toHaveCount(0);
+  expect(
+    Number(sql(`select count(*) from day_off where child_id = '${childId}' and kind = 'conge'`)),
+  ).toBeGreaterThan(0);
+});
