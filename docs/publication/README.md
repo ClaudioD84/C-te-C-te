@@ -44,6 +44,14 @@ Tout ce qui est prêt dans le dépôt, et ce qu'il reste à faire de votre côt�
 > au moins 12 testeurs pendant 14 jours avant de pouvoir publier. Un compte *organisation* (société, numéro
 > D-U-N-S) en est dispensé et affiche le nom de la société comme éditeur. Même question chez Apple (nom affiché).
 
+## Parrainage
+
+- Pendant l'essai, le mois offert est ajouté automatiquement. Pour une marraine déjà abonnée, la récompense est
+  notée `referrer_reward_pending` (table `referral`) : à accorder par une **promotion RevenueCat** (entitlement
+  offert 1 mois) une fois RevenueCat configuré, puis passer `referrer_rewarded` à vrai.
+- Ajouter les conditions du parrainage aux conditions d'utilisation (un mois chacun, nouvelle famille de moins de
+  30 jours, une fois par famille, 10 récompenses par an au plus).
+
 ## Étapes
 
 ### 1. Expo et EAS

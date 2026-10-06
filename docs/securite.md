@@ -42,6 +42,9 @@ et les fonctions serveur ; les attaques corrigées sont rejouées par les tests 
   famille), 10 essais erronés par quart d'heure et par compte. Rejoindre une famille est refusé si son compte a
   déjà des enfants ou un abonnement payé (rien n'est fusionné ni perdu) ; 4 parents au plus. Un parent retiré
   repart avec une famille vide sans nouvel essai gratuit. Couvert par `e2e/tests/famille.spec.ts`.
+- **Parrainage** : codes de 8 caractères, essais erronés limités (10 par quart d'heure et par compte), une
+  seule utilisation par famille, seulement dans les 30 jours après l'inscription, jamais son propre code ;
+  10 récompenses par an au plus pour une marraine (limite l'intérêt de créer de faux comptes).
 - **Dépôt** : aucun secret versionné (`functions.env` des tests ne contient que des valeurs factices).
 
 ## Risques acceptés (à revoir)

@@ -8,6 +8,7 @@ import { Screen } from '@/components/screen';
 import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
 import { Spacing } from '@/constants/theme';
+import { ReferralCard } from '@/features/referral/referral-card';
 import { useBuyOffer, useOffers, useRestorePurchases, useSubscription } from '@/features/subscription/api';
 import { billingMode, MANAGE_SUBSCRIPTIONS_URL, type Offer } from '@/features/subscription/billing';
 
@@ -71,6 +72,8 @@ export default function SubscriptionScreen() {
           onPress={() => WebBrowser.openBrowserAsync(MANAGE_SUBSCRIPTIONS_URL)}
         />
       ) : null}
+
+      <ReferralCard />
 
       <ThemedText type="subtitle">Les formules</ThemedText>
       {billingMode === 'indisponible' ? (
