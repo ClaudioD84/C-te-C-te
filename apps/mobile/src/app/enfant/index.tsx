@@ -25,6 +25,7 @@ import { ExpressReviewCard } from '@/features/express/express-review-card';
 import { HolidayBanner } from '@/features/holidays/holiday-banner';
 import { useAskHelp, useOpenHelpRequests } from '@/features/help/api';
 import { NoteCard } from '@/features/notes/note-card';
+import { WeeklyChallenge } from '@/features/challenge/weekly-challenge';
 import { useSpellingList } from '@/features/spelling/api';
 import { BreathingExercise } from '@/features/mission/breathing-exercise';
 import { PomodoroTimer } from '@/features/mission/pomodoro-timer';
@@ -227,6 +228,13 @@ export default function ChildConsoleScreen() {
         {/* Entraînements libres, après la mission ; avec le TDAH, seulement une fois la mission faite. */}
         {settings.maxItemsPerScreen > 1 || remaining.length === 0 ? (
           <View style={styles.extras}>
+            {summary && schoolLevel(child.data.grade) !== 'maternelle' ? (
+              <WeeklyChallenge
+                childId={childId}
+                effortDays={summary.effortDaysThisWeek}
+                settings={settings}
+              />
+            ) : null}
             <ThemedText type="smallBold" themeColor="textSecondary">
               Pour t’entraîner
             </ThemedText>
