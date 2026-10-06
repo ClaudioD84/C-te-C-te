@@ -12,16 +12,18 @@ import { useChildMode } from '@/features/child-mode/child-mode-provider';
 import { useChildProfile } from '@/features/profiles/api';
 import { DictationPlayer } from '@/features/study/dictation-player';
 import { ExerciseList } from '@/features/study/exercise-list';
+import { RecitationRecorder } from '@/features/study/recitation-recorder';
 import { FicheView } from '@/features/study/fiche-view';
 import { QuizPlayer } from '@/features/study/quiz-player';
 import { useGeneratePack, useLogQuiz, useStudyPack } from '@/features/study/api';
 
-type Section = 'fiche' | 'quiz' | 'exercices' | 'ecoute';
+type Section = 'fiche' | 'quiz' | 'exercices' | 'ecoute' | 'reciter';
 const SECTION_LABELS: Record<Section, string> = {
   fiche: 'Fiche',
   quiz: 'Quiz',
   exercices: 'Exercices',
   ecoute: 'Écoute et écris',
+  reciter: 'Je récite',
 };
 
 /** Entraînement de l'enfant sur une tâche : fiche, quiz et exercices. */
@@ -91,14 +93,16 @@ export default function StudyScreen() {
   }
 
   const words = dictationWords(subject ?? '', content.fiche?.keyTerms ?? []);
-  const available = (['fiche', 'quiz', 'exercices', 'ecoute'] as const).filter((s) =>
-    s === 'fiche'
-      ? content.fiche !== null
-      : s === 'quiz'
-        ? content.quiz.length > 0
-        : s === 'exercices'
-          ? content.exercises.length > 0
-          : words.length >= 2,
+  const available = (['fiche', 'quiz', 'exercices', 'ecoute', 'reciter'] as const).filter((s) =>
+    s === 'reciter'
+      ? true
+      : s === 'fiche'
+        ? content.fiche !== null
+        : s === 'quiz'
+          ? content.quiz.length > 0
+          : s === 'exercices'
+            ? content.exercises.length > 0
+            : words.length >= 2,
   );
   const current = section && available.includes(section) ? section : available[0];
 
@@ -137,6 +141,7 @@ export default function StudyScreen() {
             onFinish={(correct, total) => logQuiz(taskId, correct, total, 'ecoute')}
           />
         ) : null}
+        {current === 'reciter' ? <RecitationRecorder /> : null}
         {back}
       </ScrollView>
     </ThemedView>

@@ -18,11 +18,12 @@ const MAX = 180;
  */
 export function BreathingExercise({ onClose }: { onClose: () => void }) {
   const theme = useTheme();
-  const start = useRef(Date.now());
+  const start = useRef(0);
   const [state, setState] = useState<BreathingState>(breathingAt(0));
   const [reduceMotion, setReduceMotion] = useState(false);
 
   useEffect(() => {
+    start.current = Date.now();
     AccessibilityInfo.isReduceMotionEnabled()
       .then(setReduceMotion)
       .catch(() => undefined);

@@ -50,7 +50,6 @@
       "predictiveBackGestureEnabled": false,
       "package": "be.coteacote.app",
       "blockedPermissions": [
-        "android.permission.RECORD_AUDIO",
         "android.permission.READ_MEDIA_IMAGES",
         "android.permission.READ_MEDIA_VIDEO",
         "android.permission.READ_MEDIA_AUDIO",
@@ -87,7 +86,15 @@
       ],
       "expo-sharing",
       "expo-asset",
-      "expo-notifications"
+      "expo-notifications",
+      [
+        "expo-audio",
+        {
+          "microphonePermission": "Le micro sert uniquement à « Je récite » : votre enfant s'enregistre puis se réécoute. L'enregistrement reste sur l'appareil et n'est jamais envoyé.",
+          "enableBackgroundRecording": false,
+          "enableBackgroundPlayback": false
+        }
+      ]
     ],
     "experiments": {
       "typedRoutes": true,

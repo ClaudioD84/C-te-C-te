@@ -111,7 +111,7 @@ export default function CockpitScreen() {
       <OfflineBanner audience="parent" />
       <SubscriptionBanner />
       <ThemedText type="subtitle">Vos enfants</ThemedText>
-      {children ? <FirstSteps children={children} /> : null}
+      {children ? <FirstSteps profiles={children} /> : null}
 
       {isLoading ? <ActivityIndicator /> : null}
       {error ? (

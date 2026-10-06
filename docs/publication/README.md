@@ -13,8 +13,10 @@ Tout ce qui est prêt dans le dépôt, et ce qu'il reste à faire de votre côt�
 
 - Identifiants : `be.coteacote.app` (iOS et Android), version 1.0.0, numéros de build gérés par EAS.
 - Textes d'autorisation en français (appareil photo ; photothèque via le sélecteur du système, sans accès à toute
-  la photothèque ; notifications).
-- Android : aucune autorisation sensible (pas de micro, pas d'accès à toutes les photos, pas de superposition).
+  la photothèque ; notifications ; micro pour « Je récite », demandé seulement au premier enregistrement).
+- Android : autorisations limitées (micro pour « Je récite » ; pas d'accès à toutes les photos, pas de
+  superposition). L'enregistrement reste sur l'appareil : rien à déclarer comme donnée collectée (« Audio »
+  non collecté), mais le micro doit être justifié dans la fiche si Google le demande.
 - iOS : manifeste de confidentialité (aucun suivi, motifs d'utilisation des API déclarés), chiffrement standard
   déclaré (pas de question d'export à chaque envoi), langue française.
 - Exigences des stores : suppression du compte dans l'application, liens conditions et confidentialité sur

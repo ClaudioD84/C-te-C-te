@@ -1,5 +1,5 @@
 import { parseSpellingWords } from '@cote-a-cote/shared';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { StyleSheet } from 'react-native';
 
 import { Button } from '@/components/button';
@@ -14,11 +14,10 @@ import { useSaveSpellingList, useSpellingList } from './api';
 export function SpellingCard({ childId, alias }: { childId: string; alias: string }) {
   const list = useSpellingList(childId);
   const save = useSaveSpellingList(childId);
-  const [text, setText] = useState<string | null>(null);
-  useEffect(() => {
-    if (list.data !== undefined && text === null) setText((list.data ?? []).join('\n'));
-  }, [list.data, text]);
-  const words = parseSpellingWords(text ?? '');
+  // Texte saisi ; tant que le parent n'a rien tapé, la liste enregistrée.
+  const [typed, setText] = useState<string | null>(null);
+  const text = typed ?? (list.data ?? []).join('\n');
+  const words = parseSpellingWords(text);
   const saved = (list.data ?? []).join('\n') === words.join('\n');
 
   return (
@@ -30,7 +29,7 @@ export function SpellingCard({ childId, alias }: { childId: string; alias: strin
       </ThemedText>
       <TextField
         label="Mots de la dictée"
-        value={text ?? ''}
+        value={text}
         onChangeText={setText}
         multiline
         autoCapitalize="none"

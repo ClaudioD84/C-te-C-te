@@ -125,7 +125,7 @@ Aucune donnée n'est vendue, louée ni utilisée à des fins publicitaires. Aucu
 | Finalité | Encourager l'enfant (petit mot du parent), l'entraîner à la dictée préparée, prévenir le parent quand l'enfant bloque (« J'ai besoin d'aide ») |
 | Base légale | Exécution du contrat (art. 6.1.b) |
 | Données | Texte du petit mot (200 caractères), dates d'envoi et de lecture ; mots de la dictée de la semaine ; demandes d'aide (activité concernée, dates). Jamais envoyés à l'IA |
-| Remarque | La « météo » de l'enfant (comment il se sent) et sa couleur préférée restent sur l'appareil, pour la journée pour la météo : ni envoyées au serveur ni montrées au parent |
+| Remarque | « Je récite » : l'enregistrement de la voix reste sur l'appareil, le temps de la séance ; il n'est jamais envoyé ni conservé. La « météo » de l'enfant (comment il se sent) et sa couleur préférée restent sur l'appareil, pour la journée pour la météo : ni envoyées au serveur ni montrées au parent |
 | Conservation | Durée du profil ; supprimés avec le profil ou le compte |
 | Destinataires | Supabase |
 

@@ -103,18 +103,16 @@ Deno.serve(async (request) => {
     const explanation = parseExplanation(result.text);
 
     // Demande simultanée : la première explication enregistrée est gardée.
-    await admin
-      .from('explanation')
-      .upsert(
-        {
-          pack_id: packId,
-          section_index: section,
-          family_id: familyId,
-          child_id: pack.child_id,
-          content: explanation,
-        },
-        { onConflict: 'pack_id,section_index', ignoreDuplicates: true },
-      );
+    await admin.from('explanation').upsert(
+      {
+        pack_id: packId,
+        section_index: section,
+        family_id: familyId,
+        child_id: pack.child_id,
+        content: explanation,
+      },
+      { onConflict: 'pack_id,section_index', ignoreDuplicates: true },
+    );
     await admin.from('ai_usage').insert({
       family_id: familyId,
       function_name: 'explain-again',

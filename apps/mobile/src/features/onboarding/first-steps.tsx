@@ -39,7 +39,7 @@ function useProgress(enabled: boolean) {
  * Accueil guidé : les 4 étapes pour une première semaine réussie, cochées au fur et à mesure.
  * Disparaît quand tout est fait, ou à la demande (mémorisé sur l'appareil).
  */
-export function FirstSteps({ children }: { children: readonly StoredChildProfile[] }) {
+export function FirstSteps({ profiles }: { profiles: readonly StoredChildProfile[] }) {
   const [hidden, setHidden] = useState<boolean | null>(null);
   useEffect(() => {
     AsyncStorage.getItem(HIDDEN_KEY)
@@ -49,11 +49,11 @@ export function FirstSteps({ children }: { children: readonly StoredChildProfile
   const progress = useProgress(hidden === false);
 
   if (hidden !== false || !progress.data) return null;
-  const first = children[0];
-  const schoolChild = children.find((c) => !c.grade.startsWith('M'));
+  const first = profiles[0];
+  const schoolChild = profiles.find((c) => !c.grade.startsWith('M'));
   const steps = [
     {
-      done: children.length > 0,
+      done: profiles.length > 0,
       title: 'Ajouter votre enfant',
       detail: 'Un pseudonyme suffit, jamais son vrai nom.',
       action: { label: 'Ajouter mon premier enfant', onPress: () => router.push('/profils/nouveau') },
