@@ -72,6 +72,11 @@ export default function FollowUpScreen() {
     <Screen>
       <ThemedText type="subtitle">Suivi de {child.data.alias}</ThemedText>
 
+      <Button
+        variant="secondary"
+        label="🎁 Récompense en famille"
+        onPress={() => router.push({ pathname: '/recompense/[childId]', params: { childId } })}
+      />
       <WeeklyReportCard
         alias={child.data.alias}
         week={thisWeek}

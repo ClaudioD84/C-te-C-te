@@ -16,6 +16,7 @@ import { PracticeLinks } from '@/features/mission/practice-links';
 import { SchoolMission } from '@/features/mission/school-mission';
 import { useTodayMood } from '@/features/mood/mood';
 import { NoteCard } from '@/features/notes/note-card';
+import { RewardProgress } from '@/features/family-reward/reward-progress';
 import { OfflineBanner, useIsOnline } from '@/features/offline/offline-banner';
 import { usePrepareOffline } from '@/features/offline/use-prepare-offline';
 import { useSessions } from '@/features/planning/api';
@@ -116,6 +117,7 @@ export default function ChildConsoleScreen() {
           </ThemedView>
         ) : null}
         {summary ? <AvatarProgress summary={summary} onPress={() => router.push('/enfant/badges')} /> : null}
+        <RewardProgress childId={childId} settings={settings} />
         {dueCards.data && dueCards.data.length > 0 ? (
           <Button
             variant="secondary"
