@@ -2,19 +2,15 @@ import {
   addDays,
   datesInRanges,
   deriveLearningSettings,
-  formatRelativeDate,
-  formatShortDate,
   planWeek,
-  TASK_KIND_LABELS,
   toIsoDate,
   type IsoDate,
-  type PlannedDay,
   type WeekPlan,
 } from '@cote-a-cote/shared';
 import { useQueryClient } from '@tanstack/react-query';
 import { router, useLocalSearchParams } from 'expo-router';
 import { useState } from 'react';
-import { ActivityIndicator, StyleSheet, View } from 'react-native';
+import { ActivityIndicator, StyleSheet } from 'react-native';
 
 import { Button } from '@/components/button';
 import { Screen } from '@/components/screen';
@@ -25,12 +21,12 @@ import { DaysOffCard } from '@/features/days-off/days-off-card';
 import { SpellingCard } from '@/features/spelling/spelling-card';
 import { TeacherNoteCard } from '@/features/teacher/teacher-note-card';
 import { useDaysOff } from '@/features/days-off/api';
-import { usePublishPlan, useSessions, useUpcomingTasks, type UpcomingTask } from '@/features/planning/api';
-import { ACTIVITY_LABELS, alertText, capitalize } from '@/features/planning/labels';
+import { usePublishPlan, useSessions, useUpcomingTasks } from '@/features/planning/api';
+import { alertText } from '@/features/planning/labels';
 import { useChildProfile } from '@/features/profiles/api';
-import { printPacks } from '@/features/print/print-pack';
-import { preparePacks, usePacksForTasks } from '@/features/study/api';
-import { useTheme } from '@/hooks/use-theme';
+import { PaperWeekCard } from '@/features/print/paper-week-card';
+import { preparePacks } from '@/features/study/api';
+import { AlertBox, DayCard } from '@/features/planning/day-card';
 
 /** Planning de la semaine (F4) avec régulation de la charge (F8). Le parent valide avant publication. */
 export default function PlanningScreen() {
@@ -46,12 +42,6 @@ export default function PlanningScreen() {
   const [lightWeek, setLightWeek] = useState(false);
   const [preview, setPreview] = useState<WeekPlan | null>(null);
   const [preparing, setPreparing] = useState<{ done: number; total: number } | null>(null);
-  const [printError, setPrintError] = useState<string | null>(null);
-  // Fiches des tâches prévues dans le planning publié, pour les imprimer en une fois (F10).
-  const plannedTaskIds = [
-    ...new Set((sessions.data ?? []).flatMap((s) => s.study_session_task.map((i) => i.task_id))),
-  ];
-  const packs = usePacksForTasks(plannedTaskIds);
 
   if (child.isLoading || tasks.isLoading || sessions.isLoading) {
     return (
@@ -193,44 +183,7 @@ export default function PlanningScreen() {
         ))
       )}
 
-      {(packs.data?.length ?? 0) > 0 ? (
-        <ThemedView type="backgroundElement" style={styles.card}>
-          <ThemedText type="smallBold">Version papier</ThemedText>
-          <ThemedText type="small" themeColor="textSecondary">
-            {profile.preferences.prefersPaper
-              ? `${profile.alias} préfère travailler sur papier : imprimez les fiches de la semaine en une fois.`
-              : 'Toutes les fiches de la semaine dans un seul document, chacune avec ses réponses à part.'}
-          </ThemedText>
-          <Button
-            variant={profile.preferences.prefersPaper ? 'primary' : 'secondary'}
-            label={`Imprimer les fiches de la semaine (${packs.data!.length})`}
-            onPress={async () => {
-              setPrintError(null);
-              const byTask = new Map(tasks.data!.map((t) => [t.id, t]));
-              const items = packs
-                .data!.filter((p) => !p.content.topicUnclear && byTask.has(p.task_id))
-                .sort((a, b) => byTask.get(a.task_id)!.dueDate.localeCompare(byTask.get(b.task_id)!.dueDate))
-                .map((p) => {
-                  const task = byTask.get(p.task_id)!;
-                  return {
-                    pack: p.content,
-                    meta: {
-                      subject: task.subject,
-                      description: task.description,
-                      dueLabel: formatShortDate(task.dueDate),
-                    },
-                  };
-                });
-              try {
-                await printPacks(items, deriveLearningSettings(profile));
-              } catch {
-                setPrintError("L'impression a échoué. Réessayez.");
-              }
-            }}
-          />
-          {printError ? <ThemedText themeColor="danger">{printError}</ThemedText> : null}
-        </ThemedView>
-      ) : null}
+      <PaperWeekCard profile={profile} tasks={tasks.data} sessions={sessions.data} />
 
       {tasks.data.length > 0 ? (
         <ThemedView type="backgroundElement" style={styles.card}>
@@ -264,52 +217,6 @@ export default function PlanningScreen() {
   );
 }
 
-type DisplayItem = PlannedDay['items'][number] & { done?: boolean; label?: string };
-
-function DayCard({
-  day,
-  today,
-  taskById,
-}: {
-  day: { date: IsoDate; totalMinutes: number; items: DisplayItem[] };
-  today: IsoDate;
-  taskById: Map<string, UpcomingTask>;
-}) {
-  return (
-    <ThemedView type="backgroundElement" style={styles.card}>
-      <View style={styles.row}>
-        <ThemedText type="smallBold">{capitalize(formatRelativeDate(day.date, today))}</ThemedText>
-        <ThemedText type="small" themeColor="textSecondary">
-          {day.totalMinutes} min
-        </ThemedText>
-      </View>
-      {day.items.map((item) => {
-        const task = taskById.get(item.taskId);
-        const label =
-          item.label ??
-          (task ? `${task.subject} · ${task.description} (${TASK_KIND_LABELS[task.kind]})` : '');
-        return (
-          <ThemedText key={item.taskId} type="small" themeColor={item.done ? 'textSecondary' : 'text'}>
-            {item.done ? '✓ ' : '• '}
-            {ACTIVITY_LABELS[item.activity]} {item.minutes} min — {label}
-          </ThemedText>
-        );
-      })}
-    </ThemedView>
-  );
-}
-
-function AlertBox({ text }: { text: string }) {
-  const theme = useTheme();
-  return (
-    <View style={[styles.alert, { borderColor: theme.accent }]}>
-      <ThemedText type="small">{text}</ThemedText>
-    </View>
-  );
-}
-
 const styles = StyleSheet.create({
   card: { padding: Spacing.three, borderRadius: Spacing.three, gap: Spacing.one },
-  row: { flexDirection: 'row', justifyContent: 'space-between' },
-  alert: { borderWidth: 2, borderRadius: Spacing.two, padding: Spacing.three },
 });
