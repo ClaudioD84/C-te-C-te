@@ -2,7 +2,8 @@
 // Lance la pile Supabase locale (Docker), les fonctions serveur avec l'IA simulée et la version web, crée un
 // compte de démonstration puis ouvre le navigateur. Ctrl+C pour arrêter. Voir docs/demo.md.
 import { execFileSync, spawn } from 'node:child_process';
-import { existsSync, readFileSync, writeFileSync } from 'node:fs';
+import { createHash } from 'node:crypto';
+import { existsSync, readdirSync, readFileSync, statSync, writeFileSync } from 'node:fs';
 import { networkInterfaces } from 'node:os';
 import { join } from 'node:path';
 
@@ -96,6 +97,16 @@ for (let attempt = 1; !supabaseReady(); attempt++) {
     await sleep(30_000);
   }
 }
+// Base déjà créée par une démonstration précédente : les nouveautés du code (tables, fonctions) y sont
+// ajoutées sans effacer les essais.
+step('Mise à jour de la base de données');
+try {
+  run('pnpm', ['exec', 'supabase', 'migration', 'up', '--local']);
+} catch {
+  fail(
+    'La mise à jour de la base a échoué. Pour repartir de zéro : `pnpm exec supabase db reset`, puis `pnpm demo`.',
+  );
+}
 const status = supabaseStatus();
 
 // 2. Version web.
@@ -123,15 +134,34 @@ if (iphone && (apiRunning || webRunning) && !(await servesPhoneVersion())) {
 // La version iPhone contient l'adresse du Mac : elle est refaite si cette adresse change (autre Wi-Fi).
 const builtFor = join(webDir, '.adresse-api');
 const builtApi = existsSync(builtFor) ? readFileSync(builtFor, 'utf8') : null;
+// Empreinte du code de l'application : une nouvelle version téléchargée est préparée automatiquement.
+function codeFingerprint() {
+  const hash = createHash('sha256');
+  const walk = (dir) => {
+    for (const name of readdirSync(dir).sort()) {
+      const path = join(dir, name);
+      if (statSync(path).isDirectory()) walk(path);
+      else hash.update(path).update(readFileSync(path));
+    }
+  };
+  for (const dir of ['apps/mobile/src', 'packages/shared/src']) walk(join(ROOT, dir));
+  hash.update(readFileSync(join(ROOT, 'apps/mobile/app.json')));
+  return hash.digest('hex');
+}
+const builtCodeFile = join(webDir, '.version-code');
+const fingerprint = codeFingerprint();
+const builtCode = existsSync(builtCodeFile) ? readFileSync(builtCodeFile, 'utf8') : null;
 if (
   process.argv.includes('--rebuild') ||
   !existsSync(join(webDir, 'index.html')) ||
+  builtCode !== fingerprint ||
   (iphone && builtApi !== expectedApi)
 ) {
   step('Préparation de la version web (1 à 3 minutes)');
   try {
     run(process.execPath, [here('build-web.mjs')]);
     writeFileSync(builtFor, expectedApi);
+    writeFileSync(builtCodeFile, fingerprint);
   } catch {
     fail('La préparation de la version web a échoué (voir les messages ci-dessus).');
   }

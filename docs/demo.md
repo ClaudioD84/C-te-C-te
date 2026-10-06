@@ -177,6 +177,22 @@ L'iPhone ouvre la démonstration qui tourne sur le Mac, par le Wi-Fi (l'iPhone e
 Si le Mac change de réseau Wi-Fi, relancer simplement `pnpm demo --iphone` : la version iPhone est refaite
 automatiquement avec la nouvelle adresse.
 
+## Essayer une nouvelle version
+
+1. Arrêter la démonstration si elle tourne (`Ctrl + C` dans son Terminal).
+2. Télécharger à nouveau le ZIP de la branche (étape 2), le décompresser et remplacer l'ancien dossier
+   `cote-a-cote` (le supprimer d'abord, puis renommer le nouveau).
+3. Dans le Terminal :
+
+   ```bash
+   cd ~/Downloads/cote-a-cote
+   pnpm install
+   pnpm demo:iphone
+   ```
+
+La base de données est mise à jour (vos essais sont gardés) et l'application est préparée de nouveau, avec
+les nouveautés, automatiquement.
+
 ## Ce qui ne peut pas être essayé sur Mac ni dans Safari
 
 Le masquage **automatique** des noms (reconnaissance de texte du téléphone), les notifications de rappel, le
@@ -190,7 +206,7 @@ que dans l'application installée sur un téléphone : bêta TestFlight (iPhone)
 | « Docker ne répond pas » | Ouvrir Docker Desktop, attendre « Engine running », relancer `pnpm demo` |
 | « command not found: pnpm » | Refaire l'étape 1.3, puis fermer et rouvrir le Terminal |
 | « Supabase n'a pas pu démarrer » | Quitter puis rouvrir Docker Desktop, relancer `pnpm demo` |
-| La page ne s'affiche plus après une mise à jour du code | `pnpm demo --rebuild` |
+| La page ne s'affiche plus ou montre l'ancienne version | `pnpm demo --rebuild` (ou `pnpm demo:iphone --rebuild`) |
 | L'iPhone n'arrive pas à ouvrir la page | Vérifier le même Wi-Fi ; Réglages Système > Réseau > Coupe-feu : autoriser « node » ; certains Wi-Fi publics ou d'entreprise isolent les appareils |
 | « Une démonstration est déjà lancée sans le mode iPhone » | `Ctrl + C` dans le Terminal où elle tourne, puis `pnpm demo --iphone` |
 | Repartir de zéro (effacer tous les essais) | `pnpm exec supabase db reset` puis `pnpm demo` |
