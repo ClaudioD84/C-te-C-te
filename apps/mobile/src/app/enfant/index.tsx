@@ -1,15 +1,4 @@
-import {
-  ACTIVITY_PICTOGRAMS,
-  BADGES,
-  deriveLearningSettings,
-  gradeYear,
-  schoolLevel,
-  subjectPictogram,
-  toIsoDate,
-  type LearningSettings,
-} from '@cote-a-cote/shared';
-import * as Speech from 'expo-speech';
-import { useState } from 'react';
+import { BADGES, deriveLearningSettings, schoolLevel, toIsoDate } from '@cote-a-cote/shared';
 import { router } from 'expo-router';
 import { ActivityIndicator, Pressable, ScrollView, StyleSheet, View } from 'react-native';
 
@@ -19,29 +8,20 @@ import { ThemedView } from '@/components/themed-view';
 import { learningTextStyle } from '@/constants/fonts';
 import { MinTouchSize, Spacing } from '@/constants/theme';
 import { useChildMode } from '@/features/child-mode/child-mode-provider';
-import { KindergartenMission } from '@/features/kindergarten/kindergarten-mission';
-import { MOODS, MoodPicker, useTodayMood } from '@/features/mood/mood';
 import { ExpressReviewCard } from '@/features/express/express-review-card';
 import { HolidayBanner } from '@/features/holidays/holiday-banner';
-import { useAskHelp, useOpenHelpRequests } from '@/features/help/api';
+import { KindergartenMission } from '@/features/kindergarten/kindergarten-mission';
+import { missionItems } from '@/features/mission/mission-items';
+import { PracticeLinks } from '@/features/mission/practice-links';
+import { SchoolMission } from '@/features/mission/school-mission';
+import { useTodayMood } from '@/features/mood/mood';
 import { NoteCard } from '@/features/notes/note-card';
-import { WeeklyChallenge } from '@/features/challenge/weekly-challenge';
-import { useSpellingList } from '@/features/spelling/api';
-import { BreathingExercise } from '@/features/mission/breathing-exercise';
-import { PomodoroTimer } from '@/features/mission/pomodoro-timer';
 import { OfflineBanner, useIsOnline } from '@/features/offline/offline-banner';
 import { usePrepareOffline } from '@/features/offline/use-prepare-offline';
-import {
-  completeItemVariables,
-  useCompleteItem,
-  useSessions,
-  type SessionItem,
-  type StudySession,
-} from '@/features/planning/api';
-import { CHILD_ACTIVITY_PREFIX } from '@/features/planning/labels';
+import { useSessions } from '@/features/planning/api';
 import { useChildProfile } from '@/features/profiles/api';
-import { useNewBadges, useRewards } from '@/features/rewards/api';
 import { avatarWithAccessory } from '@/features/rewards/accessory-picker';
+import { useNewBadges, useRewards } from '@/features/rewards/api';
 import { AvatarProgress } from '@/features/rewards/avatar-progress';
 import { useDueFlashcards } from '@/features/study/api';
 
@@ -61,8 +41,6 @@ export default function ChildConsoleScreen() {
   const online = useIsOnline();
   usePrepareOffline(childId);
   const { mood, choose: chooseMood, loading: moodLoading } = useTodayMood(childId);
-  const [breathing, setBreathing] = useState(false);
-  const spelling = useSpellingList(childId);
 
   // Sur la tablette de l'enfant, pas d'espace parent : seulement les réglages de l'appareil.
   const parentButton = (
@@ -108,19 +86,9 @@ export default function ChildConsoleScreen() {
   }
 
   const settings = deriveLearningSettings(child.data);
+  const kindergarten = schoolLevel(child.data.grade) === 'maternelle';
   const session = sessions.data?.[0];
-  const items = session?.study_session_task ?? [];
-  const allRemaining = items.filter((item) => item.done_at === null);
-  // Fatigué : l'essentiel, c'est la première activité de la séance pas encore faite au moment du choix…
-  // fixée pour la journée : une fois faite, la mission ne propose pas la suivante.
-  const moodLimit = mood ? MOODS[mood].items : null;
-  const firstOpen = items.findIndex((item) => item.done_at === null || item.done_at >= today);
-  const remaining = moodLimit
-    ? items
-        .slice(Math.max(0, firstOpen), Math.max(0, firstOpen) + moodLimit)
-        .filter((i) => i.done_at === null)
-    : allRemaining;
-  const remainingMinutes = remaining.reduce((sum, item) => sum + item.minutes, 0);
+  const { allRemaining, remaining } = missionItems(session?.study_session_task ?? [], mood, today);
 
   return (
     <ThemedView style={styles.container}>
@@ -135,9 +103,7 @@ export default function ChildConsoleScreen() {
         <OfflineBanner audience="enfant" />
         <NoteCard childId={childId} settings={settings} />
         <HolidayBanner childId={childId} settings={settings} />
-        {schoolLevel(child.data.grade) !== 'maternelle' ? (
-          <ExpressReviewCard childId={childId} settings={settings} />
-        ) : null}
+        {!kindergarten ? <ExpressReviewCard childId={childId} settings={settings} /> : null}
         {fresh.length > 0 ? (
           <ThemedView type="backgroundSelected" style={styles.card} accessibilityLiveRegion="polite">
             <ThemedText type="subtitle">Nouveau badge !</ThemedText>
@@ -157,7 +123,7 @@ export default function ChildConsoleScreen() {
             onPress={() => router.push('/enfant/cartes')}
           />
         ) : null}
-        {schoolLevel(child.data.grade) === 'maternelle' ? (
+        {kindergarten ? (
           // Maternelle : pas de devoirs, des activités de la semaine à faire avec le parent.
           <KindergartenMission childId={childId} grade={child.data.grade} settings={settings} />
         ) : (
@@ -165,187 +131,27 @@ export default function ChildConsoleScreen() {
             <ThemedText type="smallBold" themeColor="textSecondary">
               Mission du jour
             </ThemedText>
-
-            {session && allRemaining.length > 0 && !mood ? (
-              <MoodPicker settings={settings} onChoose={chooseMood} />
-            ) : !session ? (
-              <MissionText settings={settings}>Pas de mission aujourd&apos;hui. Profite bien !</MissionText>
-            ) : remaining.length === 0 && allRemaining.length > 0 ? (
-              <>
-                <MissionText settings={settings}>
-                  Bravo, l&apos;essentiel est fait ! Le reste peut attendre.
-                </MissionText>
-                <Button
-                  variant="secondary"
-                  label="J'ai encore de l'énergie : continuer"
-                  onPress={() => chooseMood('forme')}
-                />
-              </>
-            ) : remaining.length === 0 ? (
-              <MissionText settings={settings}>Mission accomplie, bravo !</MissionText>
-            ) : (
-              <>
-                {mood && mood !== 'forme' ? (
-                  <MissionText settings={settings}>
-                    {MOODS[mood].emoji} {MOODS[mood].message}
-                  </MissionText>
-                ) : null}
-                {mood && mood !== 'forme' ? (
-                  breathing ? (
-                    <BreathingExercise onClose={() => setBreathing(false)} />
-                  ) : (
-                    <Button
-                      variant="secondary"
-                      label="Respirer un moment avant"
-                      onPress={() => setBreathing(true)}
-                    />
-                  )
-                ) : null}
-                {remaining.slice(0, settings.maxItemsPerScreen).map((item) => (
-                  <MissionCard
-                    key={item.task_id}
-                    item={item}
-                    session={session}
-                    settings={settings}
-                    childId={childId}
-                  />
-                ))}
-                {remaining.length > settings.maxItemsPerScreen ? (
-                  <ThemedText themeColor="textSecondary">
-                    Ensuite : encore {remaining.length - settings.maxItemsPerScreen} activité
-                    {remaining.length - settings.maxItemsPerScreen > 1 ? 's' : ''}.
-                  </ThemedText>
-                ) : null}
-                <PomodoroTimer
-                  workMinutes={settings.workMinutes}
-                  breakMinutes={settings.breakMinutes}
-                  cycles={Math.min(4, Math.max(1, Math.ceil(remainingMinutes / settings.workMinutes)))}
-                />
-              </>
-            )}
+            <SchoolMission
+              childId={childId}
+              session={session}
+              allRemaining={allRemaining}
+              remaining={remaining}
+              settings={settings}
+              mood={mood}
+              onMood={chooseMood}
+            />
           </>
         )}
         {/* Entraînements libres, après la mission ; avec le TDAH, seulement une fois la mission faite. */}
         {settings.maxItemsPerScreen > 1 || remaining.length === 0 ? (
-          <View style={styles.extras}>
-            {summary && schoolLevel(child.data.grade) !== 'maternelle' ? (
-              <WeeklyChallenge
-                childId={childId}
-                effortDays={summary.effortDaysThisWeek}
-                settings={settings}
-              />
-            ) : null}
-            <ThemedText type="smallBold" themeColor="textSecondary">
-              Pour t’entraîner
-            </ThemedText>
-            {spelling.data && spelling.data.length > 0 ? (
-              <Button
-                variant="secondary"
-                label={`✏️ Ma dictée (${spelling.data.length} mots)`}
-                onPress={() => router.push('/enfant/dictee')}
-              />
-            ) : null}
-            {schoolLevel(child.data.grade) !== 'maternelle' ? (
-              <Button variant="secondary" label="📚 J’ai lu" onPress={() => router.push('/enfant/lecture')} />
-            ) : null}
-            {schoolLevel(child.data.grade) === 'primaire' ? (
-              <Button
-                variant="secondary"
-                label={gradeYear(child.data.grade) <= 2 ? '➕ Les additions' : '✖️ Les tables'}
-                onPress={() => router.push('/enfant/tables')}
-              />
-            ) : null}
-          </View>
+          <PracticeLinks
+            childId={childId}
+            grade={child.data.grade}
+            effortDays={summary?.effortDaysThisWeek}
+            settings={settings}
+          />
         ) : null}
       </ScrollView>
-    </ThemedView>
-  );
-}
-
-function MissionText({ settings, children }: { settings: LearningSettings; children: React.ReactNode }) {
-  return <ThemedText style={learningTextStyle(settings)}>{children}</ThemedText>;
-}
-
-function MissionCard({
-  item,
-  session,
-  settings,
-  childId,
-}: {
-  item: SessionItem;
-  session: StudySession;
-  settings: LearningSettings;
-  childId: string;
-}) {
-  const complete = useCompleteItem(childId);
-  const help = useOpenHelpRequests(childId);
-  const askHelp = useAskHelp(childId);
-  const asked = help.data?.some((r) => r.task_id === item.task_id) ?? false;
-  const prefix = CHILD_ACTIVITY_PREFIX[item.activity];
-  const reference = item.task.reference ? ` (${item.task.reference})` : '';
-  const instruction = `${prefix ? `${prefix} : ` : ''}${item.task.description}${reference}`;
-
-  return (
-    <ThemedView type="backgroundElement" style={styles.card}>
-      {settings.pictograms ? (
-        // Repères visuels pour les jeunes lecteurs ; décoratifs, le texte dit la même chose.
-        <View
-          style={styles.pictograms}
-          aria-hidden
-          accessibilityElementsHidden
-          importantForAccessibility="no-hide-descendants">
-          <ThemedText style={styles.pictogram}>{subjectPictogram(item.task.subject)}</ThemedText>
-          <ThemedText style={styles.pictogram}>{ACTIVITY_PICTOGRAMS[item.activity]}</ThemedText>
-        </View>
-      ) : null}
-      <ThemedText type="smallBold" themeColor="primary">
-        {item.task.subject} · {item.minutes} min
-      </ThemedText>
-      <MissionText settings={settings}>{instruction}</MissionText>
-      {asked ? (
-        <ThemedText themeColor="textSecondary" accessibilityLiveRegion="polite">
-          🙋 Ton parent est prévenu : vous regarderez ensemble.
-        </ThemedText>
-      ) : (
-        <Button
-          variant="secondary"
-          label="🙋 J’ai besoin d’aide"
-          loading={askHelp.isPending}
-          onPress={() => askHelp.mutate(item.task_id)}
-        />
-      )}
-      <View style={styles.actions}>
-        {settings.readAloud ? (
-          <Button
-            variant="secondary"
-            label="Écouter"
-            style={styles.flex}
-            onPress={() => Speech.speak(instruction, { language: 'fr-BE' })}
-          />
-        ) : null}
-        {item.activity !== 'faire' ? (
-          <Button
-            variant="secondary"
-            label="S'entraîner"
-            style={styles.flex}
-            onPress={() =>
-              router.push({
-                pathname: '/enfant/etude/[taskId]',
-                params: {
-                  taskId: item.task_id,
-                  mode: item.activity === 'etudier' ? 'fiche' : 'quiz',
-                  subject: item.task.subject,
-                },
-              })
-            }
-          />
-        ) : null}
-        <Button
-          label="C'est fait !"
-          style={styles.flex}
-          onPress={() => complete.mutate(completeItemVariables(childId, session, item.task_id))}
-        />
-      </View>
     </ThemedView>
   );
 }
@@ -363,9 +169,4 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   card: { padding: Spacing.four, borderRadius: Spacing.four, gap: Spacing.three },
-  actions: { flexDirection: 'row', gap: Spacing.two },
-  pictograms: { flexDirection: 'row', gap: Spacing.three },
-  pictogram: { fontSize: 44, lineHeight: 56 },
-  flex: { flex: 1 },
-  extras: { gap: Spacing.two, marginTop: Spacing.three },
 });

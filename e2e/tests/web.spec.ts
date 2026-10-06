@@ -74,3 +74,16 @@ test('export des données : un fichier JSON est téléchargé', async ({ page })
   expect(content.account.email).toBe(email);
   expect(content).toHaveProperty('child_profile');
 });
+
+test('analyse échouée : « Abandonner » supprime la numérisation', async ({ page }) => {
+  const email = await signUp(page, 'abandon');
+  const { childId, familyId } = await addChild(page, email, 'Merle');
+  const scanId = sql(`insert into scan (family_id, child_id, document_type, status, error)
+    values ('${familyId}', '${childId}', 'journal_de_classe', 'failed', 'Photo illisible.') returning id`).split(
+    '\n',
+  )[0];
+  await page.goto(`/scan/${scanId}`);
+  await expect(page.getByText('Photo illisible.')).toBeVisible();
+  await button(page, 'Abandonner').click();
+  await expect.poll(() => sql(`select count(*) from scan where id = '${scanId}'`)).toBe('0');
+});

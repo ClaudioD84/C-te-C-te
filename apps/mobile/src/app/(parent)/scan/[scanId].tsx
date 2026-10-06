@@ -59,7 +59,13 @@ export default function ScanReviewScreen() {
       <Screen>
         <ThemedText themeColor="danger">{scan.data?.error ?? "L'analyse de la photo a échoué."}</ThemedText>
         <Button label="Réessayer" onPress={() => process.mutate()} />
-        <Button variant="secondary" label="Abandonner" onPress={() => router.back()} />
+        {/* Abandon : la photo, les tâches en brouillon et la numérisation sont supprimées tout de suite. */}
+        <Button
+          variant="secondary"
+          label="Abandonner"
+          loading={abandon.isPending}
+          onPress={() => abandon.mutate(undefined, { onSettled: () => router.back() })}
+        />
       </Screen>
     );
   }
