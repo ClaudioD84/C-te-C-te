@@ -43,6 +43,7 @@ export default function PlanningScreen() {
   const daysOff = useDaysOff(childId);
   const queryClient = useQueryClient();
   const [extraDates, setExtraDates] = useState<IsoDate[]>([]);
+  const [lightWeek, setLightWeek] = useState(false);
   const [preview, setPreview] = useState<WeekPlan | null>(null);
   const [preparing, setPreparing] = useState<{ done: number; total: number } | null>(null);
   const [printError, setPrintError] = useState<string | null>(null);
@@ -70,9 +71,10 @@ export default function PlanningScreen() {
   const profile = child.data;
   const taskById = new Map(tasks.data.map((t) => [t.id, t]));
 
-  function compute(extra: IsoDate[]) {
+  function compute(extra: IsoDate[], light = lightWeek) {
     const settings = deriveLearningSettings(profile);
     setExtraDates(extra);
+    setLightWeek(light);
     setPreview(
       planWeek({
         tasks: tasks.data ?? [],
@@ -82,6 +84,7 @@ export default function PlanningScreen() {
         workMinutes: settings.workMinutes,
         extraDates: extra,
         blockedDates: datesInRanges(daysOff.data ?? [], today, addDays(today, 6)),
+        lightWeek: light,
       }),
     );
   }
@@ -91,6 +94,11 @@ export default function PlanningScreen() {
     return (
       <Screen>
         <ThemedText type="subtitle">Proposition</ThemedText>
+        <Button
+          variant="secondary"
+          label={lightWeek ? 'Revenir au planning complet' : 'Semaine chargée : l’essentiel seulement'}
+          onPress={() => compute(extraDates, !lightWeek)}
+        />
         {preview.alerts.map((alert, i) => (
           <AlertBox key={i} text={alertText(alert, today)} />
         ))}

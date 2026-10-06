@@ -39,7 +39,9 @@ export type PlanningAlert =
   | { type: 'evaluations_rapprochees'; date: IsoDate; count: number }
   | { type: 'week_end_conseille'; dates: IsoDate[] }
   /** Tâches dont toute la préparation tombe pendant un congé : à caser avant ou après. */
-  | { type: 'conge'; count: number };
+  | { type: 'conge'; count: number }
+  /** Semaine chargée : tâches reportées au prochain planning. */
+  | { type: 'reporte'; count: number };
 
 export interface PlanningInput {
   tasks: readonly PlannableTask[];
@@ -56,6 +58,11 @@ export interface PlanningInput {
   extraDates?: readonly IsoDate[];
   /** Congés et absences : aucun travail ces jours-là, même s'ils sont ajoutés exceptionnellement. */
   blockedDates?: readonly IsoDate[];
+  /**
+   * Semaine chargée : seulement l'essentiel (devoirs, évaluations, leçons pour les 3 prochains jours),
+   * avec 60 % du temps quotidien habituel ; le reste est reporté au prochain planning.
+   */
+  lightWeek?: boolean;
 }
 
 export interface WeekPlan {
@@ -91,6 +98,10 @@ const roundTo5 = (minutes: number) => Math.max(5, Math.round(minutes / 5) * 5);
 export function estimateTaskMinutes(kind: TaskKind, grade: Grade): number {
   return roundTo5(BASE_MINUTES[kind] * levelFactor(grade));
 }
+
+/** Semaine chargée : part du temps quotidien habituel, et horizon des leçons gardées. */
+const LIGHT_WEEK_FACTOR = 0.6;
+const LIGHT_WEEK_LESSON_DAYS = 3;
 
 /** Durée d'un examen blanc : une séance d'entraînement, pas une préparation de plusieurs jours. */
 const MOCK_EXAM_MINUTES = 40;
@@ -130,7 +141,9 @@ interface Chunk {
 
 export function planWeek(input: PlanningInput): WeekPlan {
   const horizon = input.horizonDays ?? 7;
-  const capacity = input.dailyCapacityMinutes ?? defaultDailyCapacity(input.grade);
+  const baseCapacity = input.dailyCapacityMinutes ?? defaultDailyCapacity(input.grade);
+  const capacity = input.lightWeek ? roundTo5(baseCapacity * LIGHT_WEEK_FACTOR) : baseCapacity;
+  let postponed = 0;
   const chunkSize = Math.max(10, input.workMinutes);
   const lastDay = addDays(input.today, horizon - 1);
   const available = new Set(input.availableDays);
@@ -157,6 +170,14 @@ export function planWeek(input: PlanningInput): WeekPlan {
     }
     const remaining = estimateTaskMinutes(task.kind, input.grade) - (task.doneMinutes ?? 0);
     if (remaining <= 0) continue;
+    if (
+      input.lightWeek &&
+      task.kind === 'lecon' &&
+      daysBetween(input.today, task.dueDate) > LIGHT_WEEK_LESSON_DAYS
+    ) {
+      postponed++;
+      continue;
+    }
 
     const dueIn = daysBetween(input.today, task.dueDate);
     // Fenêtre de préparation : les jours qui précèdent l'échéance (le jour même si elle est aujourd'hui).
@@ -230,6 +251,7 @@ export function planWeek(input: PlanningInput): WeekPlan {
 
   const alerts = buildAlerts(days, input, capacity, isAvailable);
   if (duringBreak > 0) alerts.push({ type: 'conge', count: duringBreak });
+  if (postponed > 0) alerts.push({ type: 'reporte', count: postponed });
   return { days, alerts };
 }
 

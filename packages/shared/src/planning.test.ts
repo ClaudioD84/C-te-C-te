@@ -173,4 +173,18 @@ describe('examen blanc (F5)', () => {
     expect(plan.days.map((d) => d.date)).toEqual([]);
     expect(plan.alerts).toEqual([{ type: 'conge', count: 1 }]);
   });
+
+  it('semaine chargée : l’essentiel seulement, leçons lointaines reportées, charge réduite', () => {
+    const tasks = [
+      { id: 'd', subject: 'Français', kind: 'devoir' as const, dueDate: '2026-10-07' },
+      { id: 'l-proche', subject: 'Éveil', kind: 'lecon' as const, dueDate: '2026-10-08' },
+      { id: 'l-loin', subject: 'Éveil', kind: 'lecon' as const, dueDate: '2026-10-10' },
+    ];
+    const normal = planWeek({ ...base, tasks });
+    const light = planWeek({ ...base, tasks, lightWeek: true });
+    const planned = (plan: typeof light) => new Set(plan.days.flatMap((d) => d.items.map((i) => i.taskId)));
+    expect(planned(normal).has('l-loin')).toBe(true);
+    expect(planned(light)).toEqual(new Set(['d', 'l-proche']));
+    expect(light.alerts).toContainEqual({ type: 'reporte', count: 1 });
+  });
 });
