@@ -20,6 +20,18 @@ test('écoute et écris : les mots clés de la fiche, accents tolérés, effort 
   await enterChildMode(page, 'Écureuil');
   await openTraining(page);
 
+  // « Explique-moi autrement » : une autre explication de la partie, préparée une seule fois.
+  await page.getByRole('radio', { name: 'Fiche' }).click();
+  await button(page, 'Explique-moi autrement : La Meuse').click();
+  await expect(page.getByText('Autrement dit…')).toBeVisible();
+  await expect(page.getByText(/long toboggan d'eau/)).toBeVisible();
+  await page.reload();
+  await page.getByRole('radio', { name: 'Fiche' }).click();
+  await expect(page.getByText(/long toboggan d'eau/)).toBeVisible();
+  expect(
+    sql(`select count(*) from ai_usage where family_id = '${familyId}' and function_name = 'explain-again'`),
+  ).toBe('1');
+
   // Lecture à voix haute de toute la fiche (arrêtable).
   await page.getByRole('radio', { name: 'Fiche' }).click();
   await button(page, '🔊 Écouter la fiche').click();

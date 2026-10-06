@@ -113,7 +113,7 @@ export default function StudyScreen() {
           onToggle={setSection}
         />
         {current === 'fiche' && content.fiche ? (
-          <FicheView fiche={content.fiche} settings={settings} />
+          <FicheView fiche={content.fiche} settings={settings} packId={pack.data?.id} />
         ) : null}
         {current === 'quiz' ? (
           <QuizPlayer

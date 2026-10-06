@@ -33,6 +33,13 @@ export const MONTHLY_REVISION_QUOTA: Record<Plan, number> = {
   famille: 25,
 };
 
+/** Explications « autrement » par mois civil (courtes, peu coûteuses). */
+export const MONTHLY_EXPLAIN_QUOTA: Record<Plan, number> = {
+  essai: 60,
+  solo: 150,
+  famille: 400,
+};
+
 export type AccessProblem = 'abonnement_expire' | 'quota_atteint';
 
 export function checkAccess(
@@ -84,3 +91,8 @@ export function startOfMonthBrussels(now: Date): string {
   // Minuit à Bruxelles : UTC+1 ou UTC+2. Une marge d'une heure ou deux est sans importance pour un quota.
   return `${year}-${month}-01T00:00:00+01:00`;
 }
+
+export const EXPLAIN_ACCESS_MESSAGES: Record<AccessProblem, string> = {
+  abonnement_expire: 'L’essai ou l’abonnement est terminé : demande à ton parent.',
+  quota_atteint: 'Plus d’explications possibles ce mois-ci. Demande à ton parent de t’aider.',
+};

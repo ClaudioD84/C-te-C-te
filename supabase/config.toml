@@ -427,6 +427,10 @@ verify_jwt = true
 [functions.generate-pack]
 verify_jwt = true
 
+# « Explique-le moi autrement » : autre explication d'une partie de fiche.
+[functions.explain-again]
+verify_jwt = true
+
 # Dossiers de révision (thèmes proposés pour une épreuve).
 [functions.revision-plan]
 verify_jwt = true

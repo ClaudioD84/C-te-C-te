@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from 'react';
 import { StyleSheet, View } from 'react-native';
 
 import { Button } from '@/components/button';
+import { useExplainAgain, useExplanations } from '@/features/study/api';
 import { useTheme } from '@/hooks/use-theme';
 import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
@@ -13,10 +14,15 @@ import { Spacing } from '@/constants/theme';
 export function FicheView({
   fiche,
   settings,
+  packId,
 }: {
   fiche: NonNullable<StudyPack['fiche']>;
   settings: LearningSettings;
+  /** Fiche enregistrée : permet de demander une autre explication d'une partie. */
+  packId?: string;
 }) {
+  const explanations = useExplanations(packId);
+  const explain = useExplainAgain(packId);
   const text = learningTextStyle(settings, 18);
   const theme = useTheme();
   // Morceau en cours de lecture : 0 = titre, puis les parties, puis les mots importants.
@@ -78,6 +84,42 @@ export function FicheView({
               • {point}
             </ThemedText>
           ))}
+          {packId ? (
+            explanations.data?.get(i) ? (
+              <ThemedView
+                type="backgroundSelected"
+                style={styles.explanation}
+                accessibilityLiveRegion="polite">
+                <ThemedText type="smallBold">Autrement dit…</ThemedText>
+                <ThemedText style={text}>{explanations.data.get(i)!.explanation}</ThemedText>
+                <ThemedText style={text}>💡 {explanations.data.get(i)!.example}</ThemedText>
+                <Button
+                  variant="secondary"
+                  label="Écouter l’explication"
+                  onPress={() =>
+                    Speech.speak(
+                      `${explanations.data!.get(i)!.explanation} ${explanations.data!.get(i)!.example}`,
+                      { language: 'fr-BE' },
+                    )
+                  }
+                />
+              </ThemedView>
+            ) : (
+              <Button
+                variant="secondary"
+                label="🤔 Explique-moi autrement"
+                accessibilityLabel={`Explique-moi autrement : ${section.heading}`}
+                loading={explain.isPending && explain.variables === i}
+                disabled={explain.isPending}
+                onPress={() => explain.mutate(i)}
+              />
+            )
+          ) : null}
+          {explain.error && explain.variables === i ? (
+            <ThemedText themeColor="danger" accessibilityRole="alert">
+              {explain.error.message}
+            </ThemedText>
+          ) : null}
         </ThemedView>
       ))}
       {fiche.keyTerms.length > 0 ? (
@@ -100,4 +142,5 @@ const styles = StyleSheet.create({
   container: { gap: Spacing.three },
   card: { padding: Spacing.three, borderRadius: Spacing.three, gap: Spacing.two },
   bold: { fontWeight: 700 },
+  explanation: { padding: Spacing.three, borderRadius: Spacing.three, gap: Spacing.two },
 });

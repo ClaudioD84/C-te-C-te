@@ -76,7 +76,7 @@ Aucune donnée n'est vendue, louée ni utilisée à des fins publicitaires. Aucu
 |---|---|
 | Finalité | Préparer des supports d'étude adaptés à partir des tâches et du programme officiel |
 | Base légale | Exécution du contrat (art. 6.1.b) ; pour les adaptations liées aux besoins : consentement (T3) |
-| Données | Tâches, année, consignes d'adaptation, contenus générés, signalements d'erreur |
+| Données | Tâches, année, consignes d'adaptation, centres d'intérêt (liste fermée), contenus générés (dont les explications « autrement » d'une partie de fiche), signalements d'erreur |
 | Conservation | Durée du compte |
 | Destinataires | Supabase ; Anthropic |
 

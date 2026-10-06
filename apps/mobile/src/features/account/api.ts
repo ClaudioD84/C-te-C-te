@@ -28,6 +28,7 @@ const EXPORTED_TABLES = [
   'child_note',
   'spelling_list',
   'help_request',
+  'explanation',
 ] as const;
 
 /** Export RGPD : un fichier JSON partagé via la feuille de partage du téléphone (téléchargé sur le web). */

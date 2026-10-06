@@ -7,6 +7,12 @@ export const MOCKS_PORT = 5300;
 const emails = [];
 
 const answers = {
+  explanation: {
+    explanation:
+      "Imagine une rivière comme un long toboggan d'eau : elle descend toujours vers la mer. La Meuse est une de ces grandes rivières.",
+    example:
+      'Quand tu verses de l’eau en haut d’une pente, elle coule vers le bas : un fleuve fait pareil, jusqu’à la mer.',
+  },
   documentType: {
     documentType: 'journal_de_classe',
     spellingWords: ['le château', 'une forêt', 'ils marchaient'],

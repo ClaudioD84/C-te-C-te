@@ -140,6 +140,48 @@ export function useDueFlashcards(childId: string) {
   });
 }
 
+export interface Explanation {
+  explanation: string;
+  example: string;
+}
+
+/** Explications « autrement » déjà préparées pour une fiche, par numéro de partie. */
+export function useExplanations(packId: string | undefined) {
+  return useQuery({
+    queryKey: ['explanations', packId],
+    enabled: Boolean(packId),
+    queryFn: async (): Promise<Map<number, Explanation>> => {
+      const { data, error } = await supabase
+        .from('explanation')
+        .select('section_index, content')
+        .eq('pack_id', packId!);
+      if (error) throw error;
+      return new Map(data.map((row) => [row.section_index as number, row.content as Explanation]));
+    },
+  });
+}
+
+/** Demande une autre explication d'une partie de la fiche (IA, gardée ensuite). */
+export function useExplainAgain(packId: string | undefined) {
+  const queryClient = useQueryClient();
+  return useMutation({
+    mutationFn: async (section: number): Promise<Explanation> => {
+      const { data, error } = await supabase.functions.invoke('explain-again', { body: { packId, section } });
+      if (error instanceof FunctionsHttpError) {
+        const body = (await error.context.json().catch(() => null)) as { error?: string } | null;
+        throw new Error(body?.error ?? 'L’explication n’a pas pu être préparée.');
+      }
+      if (error) throw new Error('Pas de connexion : réessaie quand le réseau revient.');
+      return (data as { explanation: Explanation }).explanation;
+    },
+    onSuccess: (explanation, section) => {
+      queryClient.setQueryData<Map<number, Explanation>>(['explanations', packId], (current) =>
+        new Map(current ?? []).set(section, explanation),
+      );
+    },
+  });
+}
+
 /** Toutes les cartes d'une tâche, pour la révision express la veille d'une évaluation. */
 export function useTaskFlashcards(childId: string, taskId: string | undefined) {
   return useQuery({
