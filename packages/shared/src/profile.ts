@@ -85,6 +85,8 @@ export const childPreferencesSchema = z.object({
   availableDays: z.array(weekdaySchema).min(1).default(['lun', 'mar', 'mer', 'jeu', 'ven']),
   prefersPaper: z.boolean().default(false),
   interests: z.array(interestSchema).max(MAX_INTERESTS).optional(),
+  /** Coin détente : minutes de petits jeux par jour (0 : fermé ; 10 par défaut). */
+  relaxMinutes: z.number().int().min(0).max(30).optional(),
 });
 export type ChildPreferences = z.infer<typeof childPreferencesSchema>;
 

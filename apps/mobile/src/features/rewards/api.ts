@@ -5,7 +5,7 @@ import { useCallback, useEffect, useState } from 'react';
 
 import { supabase } from '@/lib/supabase';
 
-export type LearningEventType = 'activite' | 'carte' | 'quiz' | 'session';
+export type LearningEventType = 'activite' | 'carte' | 'quiz' | 'session' | 'detente';
 
 export interface EffortDayWithMinutes extends EffortDay {
   minutes: number;

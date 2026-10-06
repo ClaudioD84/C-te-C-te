@@ -14,6 +14,8 @@ import {
   NETWORKS,
   schoolLevel,
   SESSION_MINUTES_CHOICES,
+  RELAX_MINUTE_CHOICES,
+  relaxMinutesLimit,
   TRACK_LABELS,
   TRACKS,
   WEEKDAY_LABELS,
@@ -214,6 +216,15 @@ function PreferenceFields({ values, setValues }: Pick<Props, 'values' | 'setValu
         )}
         selected={[values.preferences.sessionMinutes ? String(values.preferences.sessionMinutes) : AUTO]}
         onToggle={(d) => setPreferences({ sessionMinutes: d === AUTO ? undefined : Number(d) })}
+      />
+      <ChoiceChips
+        label="Coin détente : petits jeux calmes par jour, une fois la mission faite (sans points d'effort)"
+        options={RELAX_MINUTE_CHOICES.map(String)}
+        labels={Object.fromEntries(
+          RELAX_MINUTE_CHOICES.map((m) => [String(m), m === 0 ? 'Fermé' : `${m} min`]),
+        )}
+        selected={[String(relaxMinutesLimit(values.preferences))]}
+        onToggle={(m) => setPreferences({ relaxMinutes: Number(m) })}
       />
       <ChoiceChips
         label={`Centres d'intérêt (${MAX_INTERESTS} au plus) : les exemples des fiches et exercices s'en inspirent`}

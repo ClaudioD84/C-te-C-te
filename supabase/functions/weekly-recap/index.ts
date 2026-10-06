@@ -61,6 +61,8 @@ Deno.serve(async (request) => {
           .from('learning_event')
           .select('type, meta, created_at')
           .eq('child_id', child.id)
+          // Le coin détente n'est pas du travail.
+          .neq('type', 'detente')
           .gte('created_at', from.toISOString()),
         admin.rpc('child_subject_stats', { p_child_id: child.id, p_since: from.toISOString().slice(0, 10) }),
       ]);

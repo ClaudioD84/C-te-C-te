@@ -1,4 +1,10 @@
-import { BADGES, deriveLearningSettings, schoolLevel, toIsoDate } from '@cote-a-cote/shared';
+import {
+  BADGES,
+  deriveLearningSettings,
+  relaxMinutesLimit,
+  schoolLevel,
+  toIsoDate,
+} from '@cote-a-cote/shared';
 import { router } from 'expo-router';
 import { ActivityIndicator, Pressable, ScrollView, StyleSheet, View } from 'react-native';
 
@@ -90,6 +96,7 @@ export default function ChildConsoleScreen() {
   const settings = deriveLearningSettings(child.data);
   const kindergarten = schoolLevel(child.data.grade) === 'maternelle';
   const session = sessions.data?.[0];
+  const relaxEnabled = relaxMinutesLimit(child.data.preferences) > 0;
   const { allRemaining, remaining } = missionItems(session?.study_session_task ?? [], mood, today);
 
   return (
@@ -148,9 +155,17 @@ export default function ChildConsoleScreen() {
               settings={settings}
               mood={mood}
               onMood={chooseMood}
+              relaxEnabled={relaxEnabled}
             />
           </>
         )}
+        {remaining.length === 0 && relaxEnabled ? (
+          <Button
+            variant="secondary"
+            label="🎈 Coin détente"
+            onPress={() => router.push('/enfant/detente')}
+          />
+        ) : null}
         {/* Entraînements libres, après la mission ; avec le TDAH, seulement une fois la mission faite. */}
         {settings.maxItemsPerScreen > 1 || remaining.length === 0 ? (
           <PracticeLinks

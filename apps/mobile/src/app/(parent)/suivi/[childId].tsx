@@ -27,6 +27,7 @@ import { ComparisonCard, HistoryCard, SubjectsCard } from '@/features/progress/p
 import { WeeklyReportCard } from '@/features/progress/weekly-report-card';
 import { useChildProfile } from '@/features/profiles/api';
 import { useRewards } from '@/features/rewards/api';
+import { useRelaxMinutes } from '@/features/relax/api';
 import { AvatarProgress } from '@/features/rewards/avatar-progress';
 import { WeeklyChart } from '@/features/rewards/weekly-chart';
 
@@ -43,6 +44,8 @@ export default function FollowUpScreen() {
   const SUBJECT_WEEKS = 4;
   const subjects = useSubjectProgress(childId, addDays(mondayOfWeek(today), -7 * (SUBJECT_WEEKS - 1)));
   const thisWeekSubjects = useSubjectProgress(childId, mondayOfWeek(today));
+  // Temps de jeu (coin détente) depuis lundi, heure locale : à part du temps de travail.
+  const relax = useRelaxMinutes(childId, new Date(`${mondayOfWeek(today)}T00:00:00`).toISOString());
   const culture = useCultureSuggestions(
     child.data?.grade,
     (upcoming.data ?? []).map((t) => t.subject),
@@ -92,6 +95,7 @@ export default function FollowUpScreen() {
         <Kpi value={String(rewards.summary.effortDaysThisWeek)} label="jours actifs cette semaine" />
         <Kpi value={String(thisWeek.cards)} label="cartes revues" />
         <Kpi value={String(rewards.summary.badges.length)} label="badges gagnés" />
+        {relax.data ? <Kpi value={`${relax.data} min`} label="au coin détente cette semaine" /> : null}
       </View>
 
       <ThemedView type="backgroundElement" style={styles.card}>

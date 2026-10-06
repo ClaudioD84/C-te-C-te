@@ -1,4 +1,5 @@
 import type { LearningSettings } from '@cote-a-cote/shared';
+import { router } from 'expo-router';
 import { useState } from 'react';
 
 import { Button } from '@/components/button';
@@ -23,6 +24,7 @@ export function SchoolMission({
   settings,
   mood,
   onMood,
+  relaxEnabled,
 }: {
   childId: string;
   session: StudySession | undefined;
@@ -31,6 +33,8 @@ export function SchoolMission({
   settings: LearningSettings;
   mood: Mood | null | undefined;
   onMood: (mood: Mood) => void;
+  /** Coin détente ouvert : un petit jeu est proposé pendant les pauses du minuteur. */
+  relaxEnabled: boolean;
 }) {
   const [breathing, setBreathing] = useState(false);
   const tired = mood && mood !== 'forme';
@@ -83,6 +87,7 @@ export function SchoolMission({
         workMinutes={settings.workMinutes}
         breakMinutes={settings.breakMinutes}
         cycles={Math.min(4, Math.max(1, Math.ceil(remainingMinutes / settings.workMinutes)))}
+        onRelax={relaxEnabled ? () => router.push('/enfant/detente') : undefined}
       />
     </>
   );

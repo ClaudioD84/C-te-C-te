@@ -24,7 +24,12 @@ const PHASE_LABELS = {
   termine: 'Bravo, session terminée !',
 } as const;
 
-export function PomodoroTimer({ workMinutes, breakMinutes, cycles }: PomodoroConfig) {
+export function PomodoroTimer({
+  workMinutes,
+  breakMinutes,
+  cycles,
+  onRelax,
+}: PomodoroConfig & { onRelax?: () => void }) {
   const theme = useTheme();
   const config = useMemo(() => ({ workMinutes, breakMinutes, cycles }), [workMinutes, breakMinutes, cycles]);
   const [state, setState] = useState<PomodoroState | null>(null);
@@ -91,7 +96,10 @@ export function PomodoroTimer({ workMinutes, breakMinutes, cycles }: PomodoroCon
             breathing ? (
               <BreathingExercise onClose={() => setBreathing(false)} />
             ) : (
-              <Button variant="secondary" label="Respirer avec moi" onPress={() => setBreathing(true)} />
+              <>
+                <Button variant="secondary" label="Respirer avec moi" onPress={() => setBreathing(true)} />
+                {onRelax ? <Button variant="secondary" label="🎈 Un petit jeu" onPress={onRelax} /> : null}
+              </>
             )
           ) : null}
           <Button
