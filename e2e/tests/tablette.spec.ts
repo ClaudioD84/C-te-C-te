@@ -272,6 +272,16 @@ test('tablette : droits limités à la console de son enfant', async ({ request 
   expect((await accessory(siblingId, 'cape')).ok()).toBeFalsy();
   expect((await accessory(family.childId, 'inconnu')).ok()).toBeFalsy();
 
+  // Fond d'écran : pour son enfant seulement, parmi les fonds connus.
+  const background = (childId: string, value: string) =>
+    request.post(`${GATEWAY_URL}/rest/v1/rpc/set_child_background`, {
+      headers: headers(token),
+      data: { p_child_id: childId, p_background: value },
+    });
+  expect((await background(family.childId, 'foret')).ok()).toBeTruthy();
+  expect((await background(siblingId, 'foret')).ok()).toBeFalsy();
+  expect((await background(family.childId, 'inconnu')).ok()).toBeFalsy();
+
   // Demande d'aide : pour une tâche de son enfant, famille déduite ; pas pour un autre enfant.
   const ownTask = sql(`select id from task where child_id = '${family.childId}' limit 1`);
   const ask = (childId: string, taskId: string) =>

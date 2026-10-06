@@ -1,7 +1,9 @@
 import {
   childProfileSchema,
   isAccessory,
+  isBackground,
   type AccessoryCode,
+  type BackgroundCode,
   nextNeedsConsentAt,
   schoolLevel,
   type ChildProfile,
@@ -15,13 +17,36 @@ export type StoredChildProfile = ChildProfile & {
   id: string;
   /** Accessoire de l'avatar choisi par l'enfant (absent des données gardées avant son ajout). */
   accessory?: AccessoryCode | null;
+  /** Fond d'écran de la console choisi par l'enfant. */
+  background?: BackgroundCode | null;
 };
 
-const COLUMNS = 'id, alias, avatar, grade, track, network, options, needs, preferences, accessory';
+const COLUMNS =
+  'id, alias, avatar, grade, track, network, options, needs, preferences, accessory, background';
 
 function fromRow(row: Record<string, unknown>): StoredChildProfile {
   const profile = childProfileSchema.parse({ ...row, network: row.network ?? undefined });
-  return { id: String(row.id), ...profile, accessory: isAccessory(row.accessory) ? row.accessory : null };
+  return {
+    id: String(row.id),
+    ...profile,
+    accessory: isAccessory(row.accessory) ? row.accessory : null,
+    background: isBackground(row.background) ? row.background : null,
+  };
+}
+
+/** L'enfant choisit le fond d'écran de sa console (aussi depuis sa tablette). */
+export function useSetBackground(childId: string) {
+  const queryClient = useQueryClient();
+  return useMutation({
+    mutationFn: async (background: BackgroundCode) => {
+      const { error } = await supabase.rpc('set_child_background', {
+        p_child_id: childId,
+        p_background: background,
+      });
+      if (error) throw error;
+    },
+    onSuccess: () => queryClient.invalidateQueries({ queryKey: profilesKey }),
+  });
 }
 
 /** L'enfant choisit l'accessoire de son avatar (aussi depuis sa tablette). */

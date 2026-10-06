@@ -5,6 +5,8 @@ import { ActivityIndicator, ScrollView, StyleSheet, View } from 'react-native';
 import { Button } from '@/components/button';
 import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
+import { BackgroundPicker } from '@/features/backgrounds/background-picker';
+import { ChildScreen } from '@/features/backgrounds/child-screen';
 import { Spacing } from '@/constants/theme';
 import { useChildMode } from '@/features/child-mode/child-mode-provider';
 import { useChildProfile } from '@/features/profiles/api';
@@ -39,7 +41,7 @@ export default function BadgesScreen() {
   const earned = new Map(summary.badges.map((b) => [b.code, b.earnedOn]));
 
   return (
-    <ThemedView style={styles.container}>
+    <ChildScreen style={styles.container}>
       <ScrollView contentContainerStyle={styles.content}>
         <AvatarProgress summary={summary} />
         <ThemedText themeColor="textSecondary">
@@ -60,6 +62,7 @@ export default function BadgesScreen() {
           </ThemedView>
         ) : null}
         {child.data ? <AccessoryPicker child={child.data} summary={summary} /> : null}
+        {child.data ? <BackgroundPicker child={child.data} summary={summary} /> : null}
         <ChoiceChips
           label="Ma couleur préférée"
           options={paletteCodes}
@@ -113,7 +116,7 @@ export default function BadgesScreen() {
         })}
         <Button label="Retour à la mission" onPress={() => router.back()} />
       </ScrollView>
-    </ThemedView>
+    </ChildScreen>
   );
 }
 

@@ -115,7 +115,8 @@ devoirs et deux semaines de suivi, et « Petite Chouette » (2e maternelle).
   **2 jokers** par semaine ; dans « Mes badges » : **Ce que je sais**, **album des animaux de Belgique**,
   **trésors** trouvés.
 - **Avatar** (touchez la graine) : badges, **accessoires** débloqués par l'effort, **couleur préférée**,
-  **diplômes** à imprimer.
+  **fond d'écran** (selon l'âge et les centres d'intérêt, motif discret, « Arc-en-ciel » et « Aurore
+  boréale » à débloquer ; plus pâle pour un profil TDAH), **diplômes** à imprimer.
 
 **Côté parent**
 

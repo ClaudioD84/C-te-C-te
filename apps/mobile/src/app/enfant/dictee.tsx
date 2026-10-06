@@ -5,6 +5,7 @@ import { ActivityIndicator, ScrollView, StyleSheet } from 'react-native';
 import { Button } from '@/components/button';
 import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
+import { ChildScreen } from '@/features/backgrounds/child-screen';
 import { Spacing } from '@/constants/theme';
 import { useChildMode } from '@/features/child-mode/child-mode-provider';
 import { useChildProfile } from '@/features/profiles/api';
@@ -28,7 +29,7 @@ export default function SpellingScreen() {
     );
   }
   return (
-    <ThemedView style={styles.container}>
+    <ChildScreen style={styles.container}>
       <ScrollView contentContainerStyle={styles.content}>
         <ThemedText type="subtitle">Ma dictée de la semaine</ThemedText>
         {list.data && list.data.length > 0 ? (
@@ -43,7 +44,7 @@ export default function SpellingScreen() {
         )}
         <Button variant="secondary" label="Retour à la mission" onPress={() => router.back()} />
       </ScrollView>
-    </ThemedView>
+    </ChildScreen>
   );
 }
 

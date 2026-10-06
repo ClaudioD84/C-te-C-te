@@ -6,6 +6,7 @@ import { ActivityIndicator, ScrollView, StyleSheet } from 'react-native';
 import { Button } from '@/components/button';
 import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
+import { ChildScreen } from '@/features/backgrounds/child-screen';
 import { Spacing } from '@/constants/theme';
 import { useChildMode } from '@/features/child-mode/child-mode-provider';
 import { useChildProfile } from '@/features/profiles/api';
@@ -48,7 +49,7 @@ export default function BonusScreen() {
     );
   }
   return (
-    <ThemedView style={styles.container}>
+    <ChildScreen style={styles.container}>
       <ScrollView contentContainerStyle={styles.content}>
         <ThemedText type="subtitle">⭐ Défi bonus</ThemedText>
         {questions.data && questions.data.length > 0 ? (
@@ -62,7 +63,7 @@ export default function BonusScreen() {
         )}
         <Button variant="secondary" label="Retour à la mission" onPress={() => router.back()} />
       </ScrollView>
-    </ThemedView>
+    </ChildScreen>
   );
 }
 

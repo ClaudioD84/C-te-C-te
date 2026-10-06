@@ -2,6 +2,7 @@ import { describe, expect, it } from 'vitest';
 
 // Palette de l'application mobile (fichier sans dépendance).
 import { CHILD_PALETTES, Colors } from '../../../apps/mobile/src/constants/colors';
+import { BACKGROUNDS } from './backgrounds';
 import { contrastRatio } from './contrast';
 
 describe('contrastRatio', () => {
@@ -46,4 +47,28 @@ describe('couleurs préférées de l’enfant (WCAG 2.2 AA)', () => {
       });
     }
   }
+});
+
+describe('teintes des fonds d’écran (WCAG 2.2 AA)', () => {
+  for (const [code, theme] of Object.entries(BACKGROUNDS)) {
+    for (const mode of ['light', 'dark'] as const) {
+      it(`${code} (${mode}) : texte et couleur principale lisibles directement sur le fond`, () => {
+        for (const fg of ['text', 'textSecondary', 'primary'] as const) {
+          expect(contrastRatio(Colors[mode][fg], theme.tint[mode]), fg).toBeGreaterThanOrEqual(4.5);
+        }
+      });
+    }
+  }
+});
+
+describe('couleur préférée sur chaque fond d’écran', () => {
+  it('la couleur principale choisie reste lisible sur toutes les teintes', () => {
+    for (const palette of Object.values(CHILD_PALETTES)) {
+      for (const theme of Object.values(BACKGROUNDS)) {
+        for (const mode of ['light', 'dark'] as const) {
+          expect(contrastRatio(palette[mode].primary, theme.tint[mode])).toBeGreaterThanOrEqual(4.5);
+        }
+      }
+    }
+  });
 });

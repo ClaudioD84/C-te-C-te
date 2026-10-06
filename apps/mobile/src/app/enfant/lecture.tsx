@@ -8,6 +8,7 @@ import { ChoiceChips } from '@/components/choice-chips';
 import { TextField } from '@/components/text-field';
 import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
+import { ChildScreen } from '@/features/backgrounds/child-screen';
 import { learningTextStyle } from '@/constants/fonts';
 import { Spacing } from '@/constants/theme';
 import { useChildMode } from '@/features/child-mode/child-mode-provider';
@@ -40,7 +41,7 @@ export default function ReadingScreen() {
   const books = [...new Set(entries.map((e) => e.book).filter((b): b is string => Boolean(b)))];
 
   return (
-    <ThemedView style={styles.container}>
+    <ChildScreen style={styles.container}>
       <ScrollView contentContainerStyle={styles.content}>
         <ThemedText type="subtitle">📚 Mon carnet de lecture</ThemedText>
         <ThemedView type="backgroundElement" style={styles.card}>
@@ -96,7 +97,7 @@ export default function ReadingScreen() {
         ) : null}
         <Button variant="secondary" label="Retour à la mission" onPress={() => router.back()} />
       </ScrollView>
-    </ThemedView>
+    </ChildScreen>
   );
 }
 

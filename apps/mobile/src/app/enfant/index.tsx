@@ -5,6 +5,7 @@ import { ActivityIndicator, Pressable, ScrollView, StyleSheet, View } from 'reac
 import { Button } from '@/components/button';
 import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
+import { ChildScreen } from '@/features/backgrounds/child-screen';
 import { learningTextStyle } from '@/constants/fonts';
 import { MinTouchSize, Spacing } from '@/constants/theme';
 import { useChildMode } from '@/features/child-mode/child-mode-provider';
@@ -92,7 +93,7 @@ export default function ChildConsoleScreen() {
   const { allRemaining, remaining } = missionItems(session?.study_session_task ?? [], mood, today);
 
   return (
-    <ThemedView style={styles.container}>
+    <ChildScreen style={styles.container}>
       <View style={styles.header}>
         <ThemedText type="subtitle">
           {avatarWithAccessory(child.data)} Bonjour {child.data.alias} !
@@ -160,7 +161,7 @@ export default function ChildConsoleScreen() {
           />
         ) : null}
       </ScrollView>
-    </ThemedView>
+    </ChildScreen>
   );
 }
 

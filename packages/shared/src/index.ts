@@ -34,3 +34,4 @@ export * from './school-calendar';
 export * from './mastery';
 export * from './celebration';
 export * from './collection';
+export * from './backgrounds';

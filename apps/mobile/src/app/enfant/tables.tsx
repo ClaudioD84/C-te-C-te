@@ -18,6 +18,7 @@ import { ChoiceChips } from '@/components/choice-chips';
 import { TextField } from '@/components/text-field';
 import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
+import { ChildScreen } from '@/features/backgrounds/child-screen';
 import { learningTextStyle } from '@/constants/fonts';
 import { Spacing } from '@/constants/theme';
 import { useChildMode } from '@/features/child-mode/child-mode-provider';
@@ -60,7 +61,7 @@ export default function TablesScreen() {
 
   if (!series) {
     return (
-      <ThemedView style={styles.container}>
+      <ChildScreen style={styles.container}>
         <ScrollView contentContainerStyle={styles.content}>
           <ThemedText type="subtitle">
             {operation === 'multiplication' ? 'Les tables' : 'Les additions'}
@@ -88,7 +89,7 @@ export default function TablesScreen() {
           />
           {back}
         </ScrollView>
-      </ThemedView>
+      </ChildScreen>
     );
   }
 
@@ -140,7 +141,7 @@ export default function TablesScreen() {
   }
 
   return (
-    <ThemedView style={styles.container}>
+    <ChildScreen style={styles.container}>
       <ScrollView contentContainerStyle={styles.content}>
         <ThemedText type="small" themeColor="textSecondary">
           Question {index + 1} sur {series.length}
@@ -178,7 +179,7 @@ export default function TablesScreen() {
           </>
         )}
       </ScrollView>
-    </ThemedView>
+    </ChildScreen>
   );
 }
 

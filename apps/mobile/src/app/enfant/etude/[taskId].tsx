@@ -7,6 +7,7 @@ import { Button } from '@/components/button';
 import { ChoiceChips } from '@/components/choice-chips';
 import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
+import { ChildScreen } from '@/features/backgrounds/child-screen';
 import { Spacing } from '@/constants/theme';
 import { useChildMode } from '@/features/child-mode/child-mode-provider';
 import { useChildProfile } from '@/features/profiles/api';
@@ -107,7 +108,7 @@ export default function StudyScreen() {
   const current = section && available.includes(section) ? section : available[0];
 
   return (
-    <ThemedView style={styles.container}>
+    <ChildScreen style={styles.container}>
       <ScrollView contentContainerStyle={styles.content}>
         <ChoiceChips
           label="Je veux…"
@@ -144,7 +145,7 @@ export default function StudyScreen() {
         {current === 'reciter' ? <RecitationRecorder /> : null}
         {back}
       </ScrollView>
-    </ThemedView>
+    </ChildScreen>
   );
 }
 

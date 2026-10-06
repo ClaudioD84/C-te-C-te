@@ -26,6 +26,15 @@ test('accessoires de l’avatar : débloqués par l’effort, choisis par l’en
   await page.getByRole('radio', { name: '🔵 Bleu' }).click();
   await expect(button(page, 'Retour à la mission')).toHaveCSS('background-color', 'rgb(29, 95, 168)');
 
+  // Fond d'écran : ceux de son âge, certains débloqués par l'effort.
+  await expect(page.getByRole('button', { name: 'Fond Fond uni, choisi' })).toBeVisible();
+  await expect(page.getByRole('button', { name: /^Fond Aurore boréale, à débloquer/ })).toBeDisabled();
+  await page.getByRole('button', { name: 'Fond Océan', exact: true }).click();
+  await expect(page.getByRole('button', { name: 'Fond Océan, choisi' })).toBeVisible();
+  await expect.poll(() => sql(`select background from child_profile where id = '${childId}'`)).toBe('ocean');
+
   await button(page, 'Retour à la mission').click();
   await expect(page.getByText(/🧢 Bonjour Renardeau/)).toBeVisible();
+  // Le motif décoratif est derrière la mission, caché aux lecteurs d'écran.
+  await expect(page.getByText('🐠').first()).toBeAttached();
 });

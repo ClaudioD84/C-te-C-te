@@ -6,6 +6,7 @@ import { ActivityIndicator, Pressable, StyleSheet, View } from 'react-native';
 import { Button } from '@/components/button';
 import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
+import { ChildScreen } from '@/features/backgrounds/child-screen';
 import { learningTextStyle } from '@/constants/fonts';
 import { Spacing } from '@/constants/theme';
 import { useChildMode } from '@/features/child-mode/child-mode-provider';
@@ -68,7 +69,7 @@ export default function FlashcardsScreen() {
   }
 
   return (
-    <ThemedView style={styles.container}>
+    <ChildScreen style={styles.container}>
       <ThemedText type="small" themeColor="textSecondary">
         {card.study_pack.task.subject} · encore {cards.data!.length} carte{cards.data!.length > 1 ? 's' : ''}
       </ThemedText>
@@ -111,7 +112,7 @@ export default function FlashcardsScreen() {
         </View>
       ) : null}
       <Button variant="secondary" label="Arrêter pour aujourd'hui" onPress={() => router.back()} />
-    </ThemedView>
+    </ChildScreen>
   );
 }
 
