@@ -304,6 +304,17 @@ test('tablette : droits limités à la console de son enfant', async ({ request 
   expect((await pride(siblingId)).ok()).toBeFalsy();
   expect(await get('pride_entry?select=text')).toEqual([{ text: 'Mon exposé' }]);
 
+  // Défi de la fratrie : la tablette voit le défi de sa famille (le total seulement).
+  sql(`insert into sibling_challenge (family_id, label, missions_needed)
+       select family_id, 'Soirée pizza', 10 from child_profile where id = '${family.childId}'`);
+  const challenge = await request.post(`${GATEWAY_URL}/rest/v1/rpc/sibling_challenge_progress`, {
+    headers: headers(token),
+  });
+  expect(await challenge.json()).toEqual([
+    expect.objectContaining({ label: 'Soirée pizza', missions_needed: 10 }),
+  ]);
+  expect(await get('sibling_challenge')).toEqual([]);
+
   // Demande d'aide : pour une tâche de son enfant, famille déduite ; pas pour un autre enfant.
   const ownTask = sql(`select id from task where child_id = '${family.childId}' limit 1`);
   const ask = (childId: string, taskId: string) =>

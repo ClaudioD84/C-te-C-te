@@ -29,6 +29,7 @@ import { usePrepareOffline } from '@/features/offline/use-prepare-offline';
 import { useSessions } from '@/features/planning/api';
 import { PridePrompt } from '@/features/pride/pride-prompt';
 import { useChildProfile } from '@/features/profiles/api';
+import { SiblingProgress } from '@/features/sibling/sibling-progress';
 import { SchoolBagCard } from '@/features/school-bag/school-bag-card';
 import { avatarWithAccessory } from '@/features/rewards/accessory-picker';
 import { useNewBadges, useRewards } from '@/features/rewards/api';
@@ -135,6 +136,7 @@ export default function ChildConsoleScreen() {
           </ThemedText>
         ) : null}
         <RewardProgress childId={childId} settings={settings} />
+        <SiblingProgress settings={settings} />
         {dueCards.data && dueCards.data.length > 0 ? (
           <Button
             variant="secondary"

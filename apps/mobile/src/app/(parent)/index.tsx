@@ -19,6 +19,7 @@ import { OfflineBanner } from '@/features/offline/offline-banner';
 import { FirstSteps } from '@/features/onboarding/first-steps';
 import { SubscriptionBanner } from '@/features/subscription/subscription-banner';
 import { useChildProfiles, type StoredChildProfile } from '@/features/profiles/api';
+import { useSiblingChallenge } from '@/features/sibling/api';
 
 function ChildCard({ child }: { child: StoredChildProfile }) {
   const { enter } = useChildMode();
@@ -120,6 +121,26 @@ function ChildCard({ child }: { child: StoredChildProfile }) {
   );
 }
 
+/** Fratrie : le défi commun en cours, ou l'invitation à en lancer un. */
+function SiblingCard() {
+  const challenge = useSiblingChallenge();
+  return (
+    <ThemedView type="backgroundElement" style={styles.card}>
+      <ThemedText type="smallBold">🤝 Défi des frères et sœurs</ThemedText>
+      <ThemedText themeColor="textSecondary">
+        {challenge.data
+          ? `« ${challenge.data.label} » · ${challenge.data.done} mission${challenge.data.done > 1 ? 's' : ''} sur ${challenge.data.missionsNeeded} à eux tous`
+          : 'Un objectif commun pour une récompense partagée, sans classement.'}
+      </ThemedText>
+      <Button
+        variant="secondary"
+        label={challenge.data ? 'Voir le défi' : 'Lancer un défi commun'}
+        onPress={() => router.push('/fratrie')}
+      />
+    </ThemedView>
+  );
+}
+
 export default function CockpitScreen() {
   const { data: children, isLoading, error, refetch } = useChildProfiles();
 
@@ -143,6 +164,7 @@ export default function CockpitScreen() {
           Ajoutez un premier profil pour commencer. Seul un pseudonyme est demandé.
         </ThemedText>
       ) : null}
+      {children && children.length >= 2 ? <SiblingCard /> : null}
       {children?.map((child) => (
         <ChildCard key={child.id} child={child} />
       ))}
