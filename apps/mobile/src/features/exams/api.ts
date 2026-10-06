@@ -1,4 +1,6 @@
 import {
+  type BlocusExam,
+  type BlocusTask,
   spreadRevisionThemes,
   toIsoDate,
   type ExamType,
@@ -119,6 +121,85 @@ export function useDeleteExam(childId: string) {
       queryClient.invalidateQueries({ queryKey: ['tasks', childId] });
       queryClient.invalidateQueries({ queryKey: ['sessions', childId] });
       void syncReminders();
+    },
+  });
+}
+
+/**
+ * Plan de blocus : un examen (type « bilan ») par matière, avec ses révisions datées. En cas d'échec, rien
+ * ne reste à moitié créé.
+ */
+export function useCreateBlocus(childId: string) {
+  const queryClient = useQueryClient();
+  return useMutation({
+    mutationFn: async (input: { exams: readonly BlocusExam[]; tasks: readonly BlocusTask[] }) => {
+      const { data: created, error } = await supabase
+        .from('exam')
+        .insert(
+          input.exams.map((e) => ({
+            child_id: childId,
+            type: 'bilan',
+            exam_date: e.date,
+            subjects: [e.subject],
+          })),
+        )
+        .select('id, exam_date, subjects');
+      if (error) throw error;
+      const idOf = (subject: string, date: string) =>
+        created.find((e) => e.exam_date === date && (e.subjects as string[])[0] === subject)?.id;
+      const insert = await supabase.from('task').insert(
+        input.tasks.map((task) => ({
+          child_id: childId,
+          exam_id: idOf(task.subject, task.examDate),
+          subject: task.subject,
+          kind: task.kind,
+          description: task.description,
+          due_date: task.dueDate,
+          status: 'validated',
+          confidence: 1,
+        })),
+      );
+      if (insert.error) {
+        await supabase
+          .from('exam')
+          .delete()
+          .in(
+            'id',
+            created.map((e) => e.id),
+          );
+        throw insert.error;
+      }
+    },
+    onSuccess: () => {
+      queryClient.invalidateQueries({ queryKey: ['exams', childId] });
+      queryClient.invalidateQueries({ queryKey: ['tasks', childId] });
+      queryClient.invalidateQueries({ queryKey: ['exam_progress', childId] });
+      void syncReminders();
+    },
+  });
+}
+
+/** Avancement des révisions de chaque épreuve : tâches faites (cochées au moins une fois) sur le total. */
+export function useExamProgress(childId: string) {
+  return useQuery({
+    queryKey: ['exam_progress', childId],
+    enabled: childId.length > 0,
+    queryFn: async (): Promise<Map<string, { done: number; total: number }>> => {
+      const { data, error } = await supabase
+        .from('task')
+        .select('exam_id, status, study_session_task(done_at)')
+        .eq('child_id', childId)
+        .not('exam_id', 'is', null);
+      if (error) throw error;
+      const progress = new Map<string, { done: number; total: number }>();
+      for (const task of data) {
+        const entry = progress.get(String(task.exam_id)) ?? { done: 0, total: 0 };
+        entry.total++;
+        const items = (task.study_session_task ?? []) as { done_at: string | null }[];
+        if (task.status === 'done' || items.some((i) => i.done_at !== null)) entry.done++;
+        progress.set(String(task.exam_id), entry);
+      }
+      return progress;
     },
   });
 }

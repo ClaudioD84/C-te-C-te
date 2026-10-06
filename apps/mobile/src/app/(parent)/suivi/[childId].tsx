@@ -20,7 +20,7 @@ import { ThemedView } from '@/components/themed-view';
 import { Spacing } from '@/constants/theme';
 import { useCultureSuggestions } from '@/features/culture/api';
 import { CultureSuggestions } from '@/features/culture/culture-card';
-import { useDeleteExam, useExams } from '@/features/exams/api';
+import { useDeleteExam, useExamProgress, useExams } from '@/features/exams/api';
 import { useSessions, useUpcomingTasks } from '@/features/planning/api';
 import { useSubjectProgress } from '@/features/progress/api';
 import { ComparisonCard, HistoryCard, SubjectsCard } from '@/features/progress/progress-cards';
@@ -38,6 +38,7 @@ export default function FollowUpScreen() {
   const child = useChildProfile(childId);
   const rewards = useRewards(childId, child.data?.preferences.availableDays);
   const exams = useExams(childId);
+  const examProgress = useExamProgress(childId);
   const deleteExam = useDeleteExam(childId);
   const pastSessions = useSessions(childId, addDays(today, -7), 7);
   const upcoming = useUpcomingTasks(childId);
@@ -127,6 +128,12 @@ export default function FollowUpScreen() {
                   <ThemedText type="small" themeColor="textSecondary">
                     Dans {daysBetween(today, exam.exam_date)} jours · {exam.subjects.join(', ')}
                   </ThemedText>
+                  {examProgress.data?.get(exam.id) ? (
+                    <ThemedText type="small" themeColor="textSecondary">
+                      Révisions faites : {examProgress.data.get(exam.id)!.done} sur{' '}
+                      {examProgress.data.get(exam.id)!.total}
+                    </ThemedText>
+                  ) : null}
                 </View>
                 <Button
                   variant="secondary"
@@ -140,6 +147,13 @@ export default function FollowUpScreen() {
               label="Nouveau dossier de révision"
               onPress={() => router.push({ pathname: '/examen/nouveau', params: { childId } })}
             />
+            {schoolLevel(child.data.grade) === 'secondaire' || child.data.grade === 'P6' ? (
+              <Button
+                variant="secondary"
+                label="📅 Plan de blocus (examens)"
+                onPress={() => router.push({ pathname: '/blocus/[childId]', params: { childId } })}
+              />
+            ) : null}
           </ThemedView>
         </>
       ) : null}

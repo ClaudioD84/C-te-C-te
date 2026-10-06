@@ -1,0 +1,68 @@
+import { describe, expect, it } from 'vitest';
+
+import { blocusChapters, planBlocus } from './blocus';
+
+const ALL_DAYS = ['lun', 'mar', 'mer', 'jeu', 'ven', 'sam', 'dim'] as const;
+
+describe('plan de blocus', () => {
+  it('chapitres saisis, sinon des parties numérotées', () => {
+    expect(blocusChapters(' Fractions \n\nÉquations', 'Maths')).toEqual(['Fractions', 'Équations']);
+    expect(blocusChapters('', 'Latin')).toEqual(['Latin, partie 1', 'Latin, partie 2', 'Latin, partie 3']);
+  });
+
+  it('répartit avant chaque examen, le plus proche d’abord, et ajoute la veille', () => {
+    // Lundi 7 décembre 2026 ; examens les mardi 15 et jeudi 17.
+    const plan = planBlocus({
+      today: '2026-12-07',
+      availableDays: ALL_DAYS,
+      exams: [
+        { subject: 'Histoire', date: '2026-12-17', chapters: ['Rome', 'Grèce', 'Égypte'] },
+        { subject: 'Maths', date: '2026-12-15', chapters: ['Fractions', 'Équations', 'Géométrie', 'Stats'] },
+      ],
+    });
+    expect(plan.overloaded).toBe(0);
+    const lessons = plan.tasks.filter((t) => t.kind === 'lecon');
+    expect(lessons).toHaveLength(7);
+    // Chaque chapitre au plus tard l'avant-veille de son examen, jamais le jour même.
+    for (const t of lessons)
+      expect(t.dueDate <= (t.subject === 'Maths' ? '2026-12-13' : '2026-12-15')).toBe(true);
+    // Au plus 2 chapitres par jour, 1 le dimanche (13 décembre).
+    const perDay = new Map<string, number>();
+    for (const t of lessons) perDay.set(t.dueDate, (perDay.get(t.dueDate) ?? 0) + 1);
+    expect(Math.max(...perDay.values())).toBeLessThanOrEqual(2);
+    expect(perDay.get('2026-12-13') ?? 0).toBeLessThanOrEqual(1);
+    // Les maths (examen le plus proche) commencent.
+    expect(lessons[0]!.subject).toBe('Maths');
+    // La veille de chaque examen : révision express.
+    expect(plan.tasks.filter((t) => t.kind === 'examen').map((t) => t.dueDate)).toEqual([
+      '2026-12-14',
+      '2026-12-16',
+    ]);
+  });
+
+  it('signale un plan trop serré sans perdre de chapitre', () => {
+    const plan = planBlocus({
+      today: '2026-12-07',
+      availableDays: ALL_DAYS,
+      exams: [{ subject: 'Sciences', date: '2026-12-10', chapters: ['A', 'B', 'C', 'D', 'E', 'F'] }],
+    });
+    expect(plan.tasks.filter((t) => t.kind === 'lecon')).toHaveLength(6);
+    expect(plan.overloaded).toBeGreaterThan(0);
+  });
+
+  it('ignore les examens passés et respecte les jours de travail', () => {
+    const plan = planBlocus({
+      today: '2026-12-07',
+      availableDays: ['lun', 'mer'],
+      exams: [
+        { subject: 'Latin', date: '2026-12-01', chapters: ['X'] },
+        { subject: 'Anglais', date: '2026-12-18', chapters: ['Verbes', 'Vocabulaire'] },
+      ],
+    });
+    expect(plan.tasks.some((t) => t.subject === 'Latin')).toBe(false);
+    expect(plan.tasks.filter((t) => t.kind === 'lecon').map((t) => t.dueDate)).toEqual([
+      '2026-12-09',
+      '2026-12-14',
+    ]);
+  });
+});
