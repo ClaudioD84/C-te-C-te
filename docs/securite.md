@@ -5,6 +5,11 @@ serveur, application, dépendances. Les corrections sont dans la migration `2026
 et les fonctions serveur ; les attaques corrigées sont rejouées par les tests de bout en bout
 (`e2e/tests/serveur.spec.ts`).
 
+Seconde revue le 6 octobre 2026, sur les ajouts suivants (tablette de l'enfant, plusieurs parents, petits mots,
+demandes d'aide, dictées, explications, bilan par e-mail, parrainage) : constats 8 et 9, corrigés dans
+`20261102000000_security_fixes.sql`. Vérifié aussi : RLS active sur toutes les tables, aucun privilège pour
+les visiteurs non connectés, fonctions privilégiées exécutables seulement par le rôle prévu.
+
 ## Constats et corrections
 
 | # | Gravité | Constat | Correction |
@@ -15,6 +20,8 @@ et les fonctions serveur ; les attaques corrigées sont rejouées par les tests 
 | 4 | Faible | Le contenu d'une fiche ou d'une carte générée était modifiable par le parent (ses propres données). | Seules les colonnes utiles sont modifiables : signalement d'erreur (fiches), suivi de révision (cartes). |
 | 5 | Faible | `simulate-purchase` accorderait un abonnement gratuit s'il était déployé avec `ALLOW_SIMULATED_PURCHASES=true`. | Double verrou : la fonction refuse tout projet hébergé, quel que soit ce réglage. |
 | 6 | Faible | Secrets des purges comparés sans temps constant. | Comparaison en temps constant partagée (`_shared/secret.ts`), tests. |
+| 8 | Faible (disponibilité) | `my_referral_code` : deux appels simultanés pour la même famille faisaient boucler le second indéfiniment (conflit sur la famille pris pour un conflit sur le code). | Le code existant est relu à chaque tentative, 10 tentatives au plus ; test de demandes simultanées. |
+| 9 | Faible | Une demande d'aide pouvait viser la tâche d'un frère ou d'une sœur (même famille) : pas de fuite, mais incohérence. | Déclencheur : la tâche appartient à l'enfant de la demande ; testé depuis la tablette. |
 | 7 | Info | Privilèges `TRUNCATE`, `TRIGGER`, `REFERENCES` accordés par défaut aux rôles de l'API (non exploitables via l'API). | Retirés par prudence, y compris pour les futures tables. |
 
 ## Points vérifiés sans problème
@@ -63,6 +70,12 @@ et les fonctions serveur ; les attaques corrigées sont rejouées par les tests 
   (`x-forwarded-for`), qui peut être falsifiée ; le plafond global (500 erreurs par quart d'heure) reste
   inviolable. Avec 31⁸ codes possibles valables 15 minutes, deviner un code reste hors de portée ; au pire,
   un attaquant bloque temporairement les liaisons.
+
+- **Effort déclaré par l'enfant** : la console (téléphone ou tablette) enregistre elle-même les activités,
+  cartes, quiz et lectures. Un enfant pourrait en ajouter de faux : cela ne touche que ses propres badges,
+  accessoires et bilans, jamais les données d'autres enfants.
+- **Parrainage** : créer de faux comptes rapporte au plus 10 mois par an à une marraine en essai (comptes à
+  confirmer par e-mail en production).
 
 ## Réglages de production à faire (Supabase)
 

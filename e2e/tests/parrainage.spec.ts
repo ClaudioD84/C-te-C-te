@@ -2,6 +2,10 @@ import { expect, test } from '@playwright/test';
 
 import { button, familyOf, signUp, sql } from './helpers';
 
+import { GATEWAY_URL, supabaseStatus } from '../support/supabase.mjs';
+
+const status = supabaseStatus() as { ANON_KEY: string };
+
 const daysLeft = (email: string) =>
   Number(
     sql(`select round(extract(epoch from current_period_end - now()) / 86400) from subscription
@@ -39,4 +43,22 @@ test('parrainage : un mois offert à la nouvelle famille et à la marraine', asy
   await page.reload();
   await expect(page.getByText('1 famille parrainée. Merci !')).toBeVisible();
   await other.close();
+});
+
+test('parrainage : deux demandes simultanées du code renvoient le même code', async ({ request }) => {
+  const email = `simultane-${Date.now()}@exemple.be`;
+  const signup = await request.post(`${GATEWAY_URL}/auth/v1/signup`, {
+    headers: { apikey: status.ANON_KEY },
+    data: { email, password: 'motdepasse1' },
+  });
+  const { access_token: token } = await signup.json();
+  const call = () =>
+    request.post(`${GATEWAY_URL}/rest/v1/rpc/my_referral_code`, {
+      headers: { apikey: status.ANON_KEY, Authorization: `Bearer ${token}` },
+      data: {},
+    });
+  const results = await Promise.all([call(), call(), call()]);
+  const codes = await Promise.all(results.map((r) => r.json()));
+  expect(new Set(codes).size).toBe(1);
+  expect(codes[0]).toMatch(/^[A-HJKMNP-Z2-9]{8}$/);
 });

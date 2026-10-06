@@ -284,6 +284,12 @@ test('tablette : droits limités à la console de son enfant', async ({ request 
     (await ask(other.childId, sql(`select id from task where child_id = '${other.childId}' limit 1`))).ok(),
   ).toBeFalsy();
 
+  // Pas de demande d'aide sur la tâche d'un frère ou d'une sœur (même famille).
+  sql(`insert into task (family_id, child_id, subject, kind, description, due_date, status)
+       values ('${family.familyId}', '${siblingId}', 'Latin', 'devoir', 'Version', current_date + 2, 'validated')`);
+  const siblingTask = sql(`select id from task where child_id = '${siblingId}' limit 1`);
+  expect((await ask(family.childId, siblingTask)).ok()).toBeFalsy();
+
   // Essais de codes au hasard : bloqués après 10 erreurs pour une même adresse.
   for (let i = 0; i < 9; i++) expect((await pair('ZZZZZZZZ')).status()).toBe(404);
   expect((await pair('ZZZZZZZZ')).status()).toBe(429);
