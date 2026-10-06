@@ -25,6 +25,7 @@ export default function ParentLayout() {
       <Stack.Screen name="cartable/[childId]" options={{ title: 'Cartable' }} />
       <Stack.Screen name="blocus/[childId]" options={{ title: 'Plan de blocus' }} />
       <Stack.Screen name="fratrie" options={{ title: 'Défi de la fratrie' }} />
+      <Stack.Screen name="bilan-pro/[childId]" options={{ title: 'Bilan pour un professionnel' }} />
       <Stack.Screen name="appareils/[childId]" options={{ title: 'Tablette de l’enfant' }} />
     </Stack>
   );

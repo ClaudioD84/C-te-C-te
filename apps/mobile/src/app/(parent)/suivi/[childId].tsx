@@ -83,6 +83,11 @@ export default function FollowUpScreen() {
         label="🎁 Récompense en famille"
         onPress={() => router.push({ pathname: '/recompense/[childId]', params: { childId } })}
       />
+      <Button
+        variant="secondary"
+        label="📄 Bilan pour un professionnel"
+        onPress={() => router.push({ pathname: '/bilan-pro/[childId]', params: { childId } })}
+      />
       <WeeklyReportCard
         alias={child.data.alias}
         week={thisWeek}

@@ -123,7 +123,19 @@ devoirs et deux semaines de suivi, et « Petite Chouette » (2e maternelle).
   par défaut (réglable ou fermé dans « Modifier le profil »), puis « Ta pause est finie, à demain ! ».
   Le temps de jeu apparaît dans le Suivi, à part du travail ; il ne rapporte aucun point d'effort.
 
+- **🎒 Cartable** : la liste à cocher « Mon cartable pour demain » (le matin même avant 10 h).
+- **🗣️ Je lis à voix haute** (primaire) : texte de son niveau, chronométré, le parent touche les mots
+  difficiles ; **🎧 Écoute et choisis** et **🔊 Écouter** sur les cartes de langue (néerlandais, anglais…).
+- **🌟 Carnet de fierté** : après la mission (ou dans « Mes badges »), un moment dont il est fier.
+- **🤝 Défi de la fratrie** : total commun des missions sur la console (avec au moins deux enfants).
+
 **Côté parent**
+
+- **🎒 Cartable** (carte de l'enfant) : affaires et jours (gym, piscine…), idées toutes prêtes.
+- **Suivi** : **📅 Plan de blocus** (secondaire et 6e primaire : horaire des examens, aperçu jour par jour,
+  avancement des révisions), **📄 Bilan pour un professionnel** (période et parties au choix, besoins
+  jamais d'office, impression ou PDF), courbe de **lecture à voix haute**, **carnet de fierté** à imprimer.
+- **🤝 Défi des frères et sœurs** (cockpit, dès deux enfants) : objectif commun, « Récompense donnée ».
 
 - **Ce soir à table** apparaît dans le cockpit quand l'enfant a étudié aujourd'hui : questions pour en parler.
 - **Écrire un petit mot**, **Suivi** (bilan positif de la semaine à lire ou partager), **Modifier le profil**
