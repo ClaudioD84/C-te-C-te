@@ -110,6 +110,10 @@ devoirs et deux semaines de suivi, et « Petite Chouette » (2e maternelle).
 - Sur une fiche : **Explique-moi autrement** (autre explication, exemple selon ses centres d'intérêt) et
   **Je récite** (s'enregistrer puis se réécouter, autoriser le micro du navigateur).
 - **Défi de la semaine** (sous la mission) : 2, 3 ou 4 jours, étoiles au fil de la semaine.
+- **Récompenses** : Suivi > « Récompense en famille » (à gagner en X missions, suivie sur la console) ;
+  en fin de mission, fête, **coffre-surprise** (un jour sur trois environ) et **défi bonus** ; série avec
+  **2 jokers** par semaine ; dans « Mes badges » : **Ce que je sais**, **album des animaux de Belgique**,
+  **trésors** trouvés.
 - **Avatar** (touchez la graine) : badges, **accessoires** débloqués par l'effort, **couleur préférée**,
   **diplômes** à imprimer.
 
