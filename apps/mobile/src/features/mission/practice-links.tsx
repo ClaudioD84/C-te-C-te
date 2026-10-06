@@ -59,6 +59,13 @@ export function PracticeLinks({
       {level === 'primaire' ? (
         <Button
           variant="secondary"
+          label="🗣️ Je lis à voix haute"
+          onPress={() => router.push('/enfant/lecture-voix')}
+        />
+      ) : null}
+      {level === 'primaire' ? (
+        <Button
+          variant="secondary"
           label={gradeYear(grade) <= 2 ? '➕ Les additions' : '✖️ Les tables'}
           onPress={() => router.push('/enfant/tables')}
         />

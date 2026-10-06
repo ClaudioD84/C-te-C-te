@@ -39,3 +39,4 @@ export * from './relax';
 export * from './school-bag';
 export * from './blocus';
 export * from './languages';
+export * from './reading-aloud';
