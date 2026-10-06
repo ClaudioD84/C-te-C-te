@@ -28,6 +28,7 @@ import { OfflineBanner, useIsOnline } from '@/features/offline/offline-banner';
 import { usePrepareOffline } from '@/features/offline/use-prepare-offline';
 import { useSessions } from '@/features/planning/api';
 import { useChildProfile } from '@/features/profiles/api';
+import { SchoolBagCard } from '@/features/school-bag/school-bag-card';
 import { avatarWithAccessory } from '@/features/rewards/accessory-picker';
 import { useNewBadges, useRewards } from '@/features/rewards/api';
 import { AvatarProgress } from '@/features/rewards/avatar-progress';
@@ -112,6 +113,7 @@ export default function ChildConsoleScreen() {
         <OfflineBanner audience="enfant" />
         <NoteCard childId={childId} settings={settings} />
         <HolidayBanner childId={childId} settings={settings} />
+        <SchoolBagCard childId={childId} settings={settings} />
         {!kindergarten ? <ExpressReviewCard childId={childId} settings={settings} /> : null}
         {fresh.length > 0 ? (
           <ThemedView type="backgroundSelected" style={styles.card} accessibilityLiveRegion="polite">

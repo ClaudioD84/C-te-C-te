@@ -105,6 +105,13 @@ function ChildCard({ child }: { child: StoredChildProfile }) {
         <Button
           style={styles.half}
           variant="secondary"
+          label="🎒 Cartable"
+          accessibilityLabel={`Cartable de ${child.alias}`}
+          onPress={() => router.push({ pathname: '/cartable/[childId]', params: { childId: child.id } })}
+        />
+        <Button
+          style={styles.half}
+          variant="secondary"
           label="Modifier le profil"
           onPress={() => router.push({ pathname: '/profils/[childId]', params: { childId: child.id } })}
         />

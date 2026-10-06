@@ -36,3 +36,4 @@ export * from './celebration';
 export * from './collection';
 export * from './backgrounds';
 export * from './relax';
+export * from './school-bag';

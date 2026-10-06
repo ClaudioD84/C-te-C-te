@@ -21,6 +21,7 @@ const OFFLINE_QUERIES = new Set([
   'study_pack',
   'flashcards',
   'effort',
+  'school_bag',
 ]);
 
 export const queryClient = new QueryClient({

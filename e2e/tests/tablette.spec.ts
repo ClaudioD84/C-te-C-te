@@ -282,6 +282,18 @@ test('tablette : droits limités à la console de son enfant', async ({ request 
   expect((await background(siblingId, 'foret')).ok()).toBeFalsy();
   expect((await background(family.childId, 'inconnu')).ok()).toBeFalsy();
 
+  // Cartable : la tablette lit la liste de son enfant, sans pouvoir la modifier.
+  sql(`insert into school_bag_item (family_id, child_id, label, days)
+       select family_id, id, 'Plumier', array['lun'] from child_profile where id in ('${family.childId}', '${siblingId}')`);
+  expect(await get('school_bag_item?select=label,child_id')).toEqual([
+    { label: 'Plumier', child_id: family.childId },
+  ]);
+  const bagInsert = await request.post(`${GATEWAY_URL}/rest/v1/school_bag_item`, {
+    headers: headers(token),
+    data: { child_id: family.childId, label: 'Console de jeu', days: ['lun'] },
+  });
+  expect(bagInsert.ok()).toBeFalsy();
+
   // Demande d'aide : pour une tâche de son enfant, famille déduite ; pas pour un autre enfant.
   const ownTask = sql(`select id from task where child_id = '${family.childId}' limit 1`);
   const ask = (childId: string, taskId: string) =>

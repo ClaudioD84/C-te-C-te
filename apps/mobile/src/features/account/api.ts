@@ -32,6 +32,7 @@ const EXPORTED_TABLES = [
   'referral_code',
   'referral',
   'family_reward',
+  'school_bag_item',
 ] as const;
 
 /** Export RGPD : un fichier JSON partagé via la feuille de partage du téléphone (téléchargé sur le web). */
