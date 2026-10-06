@@ -20,6 +20,7 @@ export default function ChildLayout() {
       <Stack.Screen name="detente" />
       <Stack.Screen name="ecoute" />
       <Stack.Screen name="lecture-voix" />
+      <Stack.Screen name="fierte" />
       <Stack.Screen name="appareil" options={{ presentation: 'modal' }} />
     </Stack>
   );

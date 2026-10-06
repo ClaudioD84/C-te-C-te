@@ -114,6 +114,11 @@ export default function BadgesScreen() {
             </ThemedView>
           );
         })}
+        <Button
+          variant="secondary"
+          label="🌟 Mon carnet de fierté"
+          onPress={() => router.push('/enfant/fierte')}
+        />
         <Button label="Retour à la mission" onPress={() => router.back()} />
       </ScrollView>
     </ChildScreen>

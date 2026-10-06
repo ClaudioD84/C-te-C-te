@@ -294,6 +294,16 @@ test('tablette : droits limités à la console de son enfant', async ({ request 
   });
   expect(bagInsert.ok()).toBeFalsy();
 
+  // Carnet de fierté : l'enfant y ajoute un moment, seulement pour lui.
+  const pride = (childId: string) =>
+    request.post(`${GATEWAY_URL}/rest/v1/pride_entry`, {
+      headers: headers(token),
+      data: { child_id: childId, emoji: '⭐', text: 'Mon exposé' },
+    });
+  expect((await pride(family.childId)).status()).toBe(201);
+  expect((await pride(siblingId)).ok()).toBeFalsy();
+  expect(await get('pride_entry?select=text')).toEqual([{ text: 'Mon exposé' }]);
+
   // Demande d'aide : pour une tâche de son enfant, famille déduite ; pas pour un autre enfant.
   const ownTask = sql(`select id from task where child_id = '${family.childId}' limit 1`);
   const ask = (childId: string, taskId: string) =>

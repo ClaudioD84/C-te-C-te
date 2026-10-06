@@ -27,6 +27,7 @@ import { ComparisonCard, HistoryCard, SubjectsCard } from '@/features/progress/p
 import { WeeklyReportCard } from '@/features/progress/weekly-report-card';
 import { useChildProfile } from '@/features/profiles/api';
 import { useRewards } from '@/features/rewards/api';
+import { PrideCard } from '@/features/pride/pride-card';
 import { AloudReadingCard } from '@/features/reading/aloud-card';
 import { useRelaxMinutes } from '@/features/relax/api';
 import { AvatarProgress } from '@/features/rewards/avatar-progress';
@@ -109,6 +110,7 @@ export default function FollowUpScreen() {
 
       {subjects.data ? <SubjectsCard subjects={subjects.data} weeks={SUBJECT_WEEKS} /> : null}
 
+      <PrideCard childId={childId} alias={child.data.alias} />
       <AloudReadingCard childId={childId} />
 
       <AvatarProgress summary={rewards.summary} />

@@ -27,6 +27,7 @@ import { RewardProgress } from '@/features/family-reward/reward-progress';
 import { OfflineBanner, useIsOnline } from '@/features/offline/offline-banner';
 import { usePrepareOffline } from '@/features/offline/use-prepare-offline';
 import { useSessions } from '@/features/planning/api';
+import { PridePrompt } from '@/features/pride/pride-prompt';
 import { useChildProfile } from '@/features/profiles/api';
 import { SchoolBagCard } from '@/features/school-bag/school-bag-card';
 import { avatarWithAccessory } from '@/features/rewards/accessory-picker';
@@ -161,6 +162,7 @@ export default function ChildConsoleScreen() {
             />
           </>
         )}
+        {remaining.length === 0 ? <PridePrompt childId={childId} /> : null}
         {remaining.length === 0 && relaxEnabled ? (
           <Button
             variant="secondary"
