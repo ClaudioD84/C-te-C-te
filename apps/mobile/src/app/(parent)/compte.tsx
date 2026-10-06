@@ -10,6 +10,7 @@ import { Spacing } from '@/constants/theme';
 import { useSession } from '@/features/auth/session-provider';
 import { deleteMyAccount, exportMyData } from '@/features/account/api';
 import { FamilyCard } from '@/features/family/family-card';
+import { WeeklyEmailCard } from '@/features/recap/weekly-email-card';
 import { supabase } from '@/lib/supabase';
 
 export default function AccountScreen() {
@@ -63,6 +64,7 @@ export default function AccountScreen() {
       </Link>
 
       <ThemedText type="smallBold">Mes données</ThemedText>
+      <WeeklyEmailCard />
       <FamilyCard />
 
       <Button variant="secondary" label="Exporter mes données" loading={exporting} onPress={runExport} />

@@ -452,6 +452,10 @@ verify_jwt = false
 [functions.purge-inactive]
 verify_jwt = false
 
+# Bilan de la semaine par e-mail (tâche planifiée du dimanche soir), protégé par PURGE_SECRET.
+[functions.weekly-recap]
+verify_jwt = false
+
 # Liaison d'une tablette enfant : appelée sans être connecté, protégée par un code à usage unique.
 [functions.pair-device]
 verify_jwt = false

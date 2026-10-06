@@ -44,6 +44,7 @@ Version du 5 octobre 2026.
 | 5 | Programmer la purge quotidienne des photos (fonction `purge-photos`, secret `PURGE_SECRET`, tâche planifiée Supabase) | Développement | Code prêt |
 | 6 | Écran de modification du profil enfant (rectification, retrait du consentement aux besoins particuliers) | Développement | Fait |
 | 7 | Conservation : supprimer les comptes inactifs depuis 24 mois (après avertissement par e-mail) et les événements d'effort de plus de 2 ans (fonction `purge-inactive`, tâche quotidienne) | Développement | Fait (à programmer) |
+| 7 bis | Programmer le bilan de la semaine par e-mail (fonction `weekly-recap`, dimanche vers 19 h, même secret `PURGE_SECRET`) : envoyé seulement aux parents qui l'ont demandé | Développement | Fait (à programmer) |
 | 8 | Ouvrir le compte Brevo (formule gratuite, 300 e-mails par jour), valider l'adresse d'expéditeur et le domaine, accepter son accord de sous-traitance : SMTP pour les e-mails de connexion (Supabase Auth) et clé d'API pour l'avertissement des comptes inactifs | Éditeur | Prestataire choisi |
 | 9 | Faire relire l'AIPD, la politique de confidentialité et les conditions d'utilisation par un juriste | Éditeur | À faire |
 | 10 | Publier la politique de confidentialité et les conditions (liens exigés par Apple et Google) | Éditeur | À faire |

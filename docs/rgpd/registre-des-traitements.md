@@ -24,7 +24,7 @@
 | Anthropic PBC | IA : lecture des photos, préparation des fiches et quiz, dossiers de révision | Photo masquée, texte des tâches, année et type d'enseignement, consignes d'adaptation, attendus du programme. **Ni nom, ni pseudonyme, ni e-mail, ni trouble nommé.** | États-Unis [transfert à encadrer] |
 | RevenueCat Inc. | Gestion des abonnements App Store et Google Play | Identifiant technique de la famille, achats et dates | États-Unis [transfert à encadrer] |
 | Apple, Google | Paiement des abonnements, distribution de l'application | Données de paiement (traitées par eux, en tant que responsables distincts) | Selon leurs conditions |
-| Brevo (Sendinblue SAS, France) | E-mails de compte (confirmation, mot de passe oublié, avertissement d'inactivité) | Adresse e-mail du parent | Union européenne |
+| Brevo (Sendinblue SAS, France) | E-mails de compte (confirmation, mot de passe oublié, avertissement d'inactivité) et bilan de la semaine (sur demande) | Adresse e-mail du parent ; pour le bilan : pseudonymes des enfants, jours, minutes et matières travaillées | Union européenne |
 
 Aucune donnée n'est vendue, louée ni utilisée à des fins publicitaires. Aucun outil d'analyse d'audience.
 
