@@ -92,7 +92,10 @@ Règles :
 5. Respecte les adaptations demandées pour cet élève.
 6. Quantités : quiz 5 à 10 questions, cartes 6 à 15, exercices 4 à 8 (moins pour les petits niveaux).
 7. "curriculumMatch" : le numéro de l'attendu du référentiel qui correspond le mieux à la tâche, ou null si
-   aucun ne correspond clairement (ou si aucun attendu n'est fourni).`;
+   aucun ne correspond clairement (ou si aucun attendu n'est fourni).
+8. Langue étrangère (néerlandais, anglais, allemand…) : pour le vocabulaire, au recto de la carte le mot ou
+   l'expression en français, au verso seulement sa traduction dans la langue étudiée (avec l'article : de/het,
+   der/die/das…), sans autre texte : l'application la lit à voix haute.`;
 
 /**
  * Besoins particuliers traduits en consignes de rédaction. Minimisation (RGPD) : le trouble lui-même

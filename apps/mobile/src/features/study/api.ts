@@ -1,4 +1,6 @@
 import {
+  foreignLanguage,
+  type LanguageCard,
   addDays,
   reviewCard,
   studyPackSchema,
@@ -322,6 +324,33 @@ export function usePacksForTasks(taskIds: readonly string[]) {
         .in('task_id', [...taskIds]);
       if (error) throw error;
       return data.map((row) => ({ ...row, content: studyPackSchema.parse(row.content) }));
+    },
+  });
+}
+
+/** Cartes des matières de langue (néerlandais, anglais…), pour « Écoute et choisis ». */
+export function useLanguageCards(childId: string) {
+  return useQuery({
+    queryKey: ['flashcards', childId, 'langues'],
+    enabled: childId.length > 0,
+    queryFn: async (): Promise<LanguageCard[]> => {
+      const { data, error } = await supabase
+        .from('flashcard')
+        .select('id, front, back, study_pack(task(subject))')
+        .eq('child_id', childId)
+        .order('created_at', { ascending: false })
+        .limit(300);
+      if (error) throw error;
+      return (
+        data as unknown as {
+          id: string;
+          front: string;
+          back: string;
+          study_pack: { task: { subject: string } };
+        }[]
+      )
+        .map((c) => ({ id: c.id, front: c.front, back: c.back, subject: c.study_pack.task.subject }))
+        .filter((c) => foreignLanguage(c.subject) !== null);
     },
   });
 }

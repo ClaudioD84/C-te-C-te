@@ -1,4 +1,10 @@
-import { gradeYear, schoolLevel, type Grade, type LearningSettings } from '@cote-a-cote/shared';
+import {
+  gradeYear,
+  LISTENING_MIN_CARDS,
+  schoolLevel,
+  type Grade,
+  type LearningSettings,
+} from '@cote-a-cote/shared';
 import { router } from 'expo-router';
 import { StyleSheet, View } from 'react-native';
 
@@ -7,6 +13,7 @@ import { ThemedText } from '@/components/themed-text';
 import { Spacing } from '@/constants/theme';
 import { WeeklyChallenge } from '@/features/challenge/weekly-challenge';
 import { useSpellingList } from '@/features/spelling/api';
+import { useLanguageCards } from '@/features/study/api';
 
 /** Sous la mission : défi de la semaine et entraînements libres (dictée, lecture, tables). */
 export function PracticeLinks({
@@ -22,6 +29,7 @@ export function PracticeLinks({
   settings: LearningSettings;
 }) {
   const spelling = useSpellingList(childId);
+  const languageCards = useLanguageCards(childId);
   const level = schoolLevel(grade);
   return (
     <View style={styles.extras}>
@@ -36,6 +44,13 @@ export function PracticeLinks({
           variant="secondary"
           label={`✏️ Ma dictée (${spelling.data.length} mots)`}
           onPress={() => router.push('/enfant/dictee')}
+        />
+      ) : null}
+      {(languageCards.data?.length ?? 0) >= LISTENING_MIN_CARDS ? (
+        <Button
+          variant="secondary"
+          label="🎧 Écoute et choisis"
+          onPress={() => router.push('/enfant/ecoute')}
         />
       ) : null}
       {level !== 'maternelle' ? (

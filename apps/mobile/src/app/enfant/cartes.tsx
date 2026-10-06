@@ -1,4 +1,5 @@
-import { deriveLearningSettings, type ReviewRating } from '@cote-a-cote/shared';
+import { deriveLearningSettings, speechLanguage, type ReviewRating } from '@cote-a-cote/shared';
+import * as Speech from 'expo-speech';
 import { router, useLocalSearchParams } from 'expo-router';
 import { useState } from 'react';
 import { ActivityIndicator, Pressable, StyleSheet, View } from 'react-native';
@@ -93,6 +94,17 @@ export default function FlashcardsScreen() {
           </ThemedText>
         ) : null}
       </Pressable>
+      {/* Cartes de langue : le verso est lu dans la langue étudiée (accent belge pour le néerlandais). */}
+      <Button
+        variant="secondary"
+        label="🔊 Écouter"
+        accessibilityLabel={flipped ? 'Écouter la réponse' : 'Écouter la question'}
+        onPress={() =>
+          Speech.speak(flipped ? card.back : card.front, {
+            language: flipped ? speechLanguage(card.study_pack.task.subject) : 'fr-BE',
+          })
+        }
+      />
       {flipped ? (
         <View style={styles.ratings}>
           {RATINGS.map(({ rating, label }) => (
