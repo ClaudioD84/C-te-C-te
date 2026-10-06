@@ -106,6 +106,10 @@ devoirs et deux semaines de suivi, et « Petite Chouette » (2e maternelle).
 - **Révision express** : l'interro de demain propose de revoir ses cartes (après avoir publié le planning).
 - **S'entraîner** sur une leçon : « Écouter la fiche » (lecture surlignée), quiz, exercices, **Écoute et
   écris** (mini-dictée des mots clés).
+- **Minuteur** : « Commencer » affiche un disque qui fond avec le temps.
+- Sur une fiche : **Explique-moi autrement** (autre explication, exemple selon ses centres d'intérêt) et
+  **Je récite** (s'enregistrer puis se réécouter, autoriser le micro du navigateur).
+- **Défi de la semaine** (sous la mission) : 2, 3 ou 4 jours, étoiles au fil de la semaine.
 - **Avatar** (touchez la graine) : badges, **accessoires** débloqués par l'effort, **couleur préférée**,
   **diplômes** à imprimer.
 
@@ -114,6 +118,10 @@ devoirs et deux semaines de suivi, et « Petite Chouette » (2e maternelle).
 - **Ce soir à table** apparaît dans le cockpit quand l'enfant a étudié aujourd'hui : questions pour en parler.
 - **Écrire un petit mot**, **Suivi** (bilan positif de la semaine à lire ou partager), **Modifier le profil**
   (centres d'intérêt, jours, durée, papier) > **Tablette de l'enfant**.
+- **Planning** : **Remarque de l'enseignant** (devient une leçon à retravailler), **Semaine chargée**
+  (l'essentiel seulement) dans la proposition, **congés scolaires 2026-2027** à ajouter en un geste.
+- **Mon abonnement** : **parrainage** (code à partager, un mois offert) ; **Mon compte** : bilan de la semaine
+  par e-mail (non envoyé dans la démonstration).
 - **Petite Chouette** : « Activités de la semaine » (jeux à faire ensemble, thème de la classe).
 - **Mon compte** : inviter un **autre parent** (code à partager), rappels, abonnement (achat simulé), export
   des données.
