@@ -12,6 +12,7 @@ import { useRewards } from '@/features/rewards/api';
 import { ChoiceChips } from '@/components/choice-chips';
 import { CHILD_PALETTES, type ChildPaletteCode } from '@/constants/colors';
 import { useChildColor } from '@/features/child-mode/child-color';
+import { MasteryCard } from '@/features/mastery/mastery-card';
 import { printCertificate } from '@/features/print/print-pack';
 import { AccessoryPicker, avatarWithAccessory } from '@/features/rewards/accessory-picker';
 import { AvatarProgress } from '@/features/rewards/avatar-progress';
@@ -43,6 +44,7 @@ export default function BadgesScreen() {
           semaine
           {summary.currentStreak > 1 ? ` · série de ${summary.currentStreak} jours` : ''}
         </ThemedText>
+        <MasteryCard childId={activeChildId ?? ''} />
         {child.data ? <AccessoryPicker child={child.data} summary={summary} /> : null}
         <ChoiceChips
           label="Ma couleur préférée"

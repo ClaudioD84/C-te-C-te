@@ -281,12 +281,12 @@ export function useLogPractice(childId: string) {
     mutationKey: OFFLINE_MUTATIONS.learningEvent,
     onSettled: () => queryClient.invalidateQueries({ queryKey: ['effort', childId] }),
   });
-  return (mode: string, subject: string, score: number, total: number) =>
+  return (mode: string, subject: string, score: number, total: number, extra: Record<string, unknown> = {}) =>
     mutation.mutate({
       id: randomUUID(),
       childId,
       type: 'quiz',
-      meta: { mode, subject, score, total },
+      meta: { ...extra, mode, subject, score, total },
       at: new Date().toISOString(),
     });
 }

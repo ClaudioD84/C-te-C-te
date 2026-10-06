@@ -39,6 +39,8 @@ export default function TablesScreen() {
   const [feedback, setFeedback] = useState<'juste' | 'faux' | null>(null);
   const [correct, setCorrect] = useState(0);
   const [retried, setRetried] = useState<Set<number>>(new Set());
+  // Réponses du premier coup, par table (maîtrise visible).
+  const [perTable, setPerTable] = useState<Record<string, [number, number]>>({});
 
   if (!child.data) {
     return (
@@ -81,6 +83,7 @@ export default function TablesScreen() {
               setIndex(0);
               setCorrect(0);
               setRetried(new Set());
+              setPerTable({});
             }}
           />
           {back}
@@ -110,6 +113,13 @@ export default function TablesScreen() {
     setFeedback(ok ? 'juste' : 'faux');
     const firstTry = !retried.has(index);
     if (ok && firstTry) setCorrect((c) => c + 1);
+    if (firstTry) {
+      const table = String(question!.a);
+      setPerTable((t) => {
+        const [good, total] = t[table] ?? [0, 0];
+        return { ...t, [table]: [good + (ok ? 1 : 0), total + 1] };
+      });
+    }
     // Une erreur : la même question revient une fois en fin de série.
     if (!ok && firstTry) {
       setSeries((s) => (s ? [...s, question!] : s));
@@ -119,7 +129,11 @@ export default function TablesScreen() {
 
   function next() {
     const last = index + 1 >= series!.length;
-    if (last) logPractice('tables', 'Mathématiques', correct, series!.length - retried.size);
+    if (last)
+      logPractice('tables', 'Mathématiques', correct, series!.length - retried.size, {
+        operation,
+        perTable,
+      });
     setIndex(index + 1);
     setTyped('');
     setFeedback(null);
