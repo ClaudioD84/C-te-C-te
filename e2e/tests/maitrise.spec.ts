@@ -16,4 +16,7 @@ test('maîtrise visible : tables maîtrisées, mots écrits, livres lus', async 
   await expect(page.getByText('✖️ Table maîtrisée : 3 ⭐')).toBeVisible();
   await expect(page.getByText('✏️ 8 mots bien écrits en dictée')).toBeVisible();
   await expect(page.getByText('📚 1 livre lu')).toBeVisible();
+  // 3 quiz (15 points) et 1 activité (10 points) : 25 points, le premier animal de l'album.
+  await expect(page.getByText('Mon album des animaux de Belgique (1/24)')).toBeVisible();
+  await expect(page.getByLabel('Hérisson, vit dans les jardins')).toBeVisible();
 });

@@ -16,6 +16,7 @@ import { MasteryCard } from '@/features/mastery/mastery-card';
 import { useTreasures } from '@/features/mission/treasures';
 import { printCertificate } from '@/features/print/print-pack';
 import { AccessoryPicker, avatarWithAccessory } from '@/features/rewards/accessory-picker';
+import { AnimalAlbum } from '@/features/rewards/animal-album';
 import { AvatarProgress } from '@/features/rewards/avatar-progress';
 
 /** Badges de l'enfant : ceux gagnés, et ceux à découvrir (jamais perdus). */
@@ -47,6 +48,7 @@ export default function BadgesScreen() {
           {summary.currentStreak > 1 ? ` · série de ${summary.currentStreak} jours` : ''}
         </ThemedText>
         <MasteryCard childId={activeChildId ?? ''} />
+        <AnimalAlbum points={summary.points} />
         {treasures.owned.length > 0 ? (
           <ThemedView type="backgroundElement" style={styles.treasures}>
             <ThemedText type="subtitle">Mes trésors ({treasures.owned.length})</ThemedText>
