@@ -133,7 +133,10 @@ export function planReminders(input: ReminderInput, settings: ReminderSettings):
           id: `eval-${childId}-${date}`,
           at: eve,
           title: 'Demain',
-          body: `${name} : ${list(labels)} demain.`,
+          // Interrogations et examens de classe : la révision express l'attend sur sa console.
+          body: items.some((e) => e.kind === 'interro' || e.kind === 'examen')
+            ? `${name} : ${list(labels)} demain. Une révision express de quelques minutes l’attend sur sa console.`
+            : `${name} : ${list(labels)} demain.`,
         });
       }
       // Grandes épreuves : un rappel une semaine avant, pour lancer les révisions.

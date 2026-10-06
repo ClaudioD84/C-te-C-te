@@ -69,7 +69,11 @@ describe('planReminders', () => {
       settings,
     );
     expect(r.map((x) => [x.id, local(x.at), x.body])).toEqual([
-      ['eval-a-2026-10-08', '7/10 18:00', 'Lion : Éveil (interrogation) et Mathématiques (examen) demain.'],
+      [
+        'eval-a-2026-10-08',
+        '7/10 18:00',
+        'Lion : Éveil (interrogation) et Mathématiques (examen) demain. Une révision express de quelques minutes l’attend sur sa console.',
+      ],
       [
         'eval7-b-2026-10-20',
         '13/10 18:00',
