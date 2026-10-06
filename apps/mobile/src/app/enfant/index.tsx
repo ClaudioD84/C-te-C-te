@@ -117,6 +117,12 @@ export default function ChildConsoleScreen() {
           </ThemedView>
         ) : null}
         {summary ? <AvatarProgress summary={summary} onPress={() => router.push('/enfant/badges')} /> : null}
+        {summary && summary.currentStreak >= 2 ? (
+          <ThemedText themeColor="textSecondary">
+            🔥 Série : {summary.currentStreak} jours · 🃏 {summary.jokersLeftThisWeek} joker
+            {summary.jokersLeftThisWeek > 1 ? 's' : ''} cette semaine
+          </ThemedText>
+        ) : null}
         <RewardProgress childId={childId} settings={settings} />
         {dueCards.data && dueCards.data.length > 0 ? (
           <Button

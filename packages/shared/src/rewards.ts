@@ -71,7 +71,11 @@ export const BADGES: Record<BadgeCode, { title: string; description: string; emo
     description: 'Tu as travaillé 5 jours dans la même semaine.',
     emoji: '🗓️',
   },
-  serie_7: { title: 'Belle série', description: '7 jours de travail prévus, tous faits.', emoji: '🔥' },
+  serie_7: {
+    title: 'Belle série',
+    description: '7 jours de travail d’affilée (jokers compris).',
+    emoji: '🔥',
+  },
   cartes_50: { title: 'Mémoire en marche', description: 'Tu as revu 50 cartes.', emoji: '🃏' },
   cartes_200: { title: 'Mémoire d’éléphant', description: 'Tu as revu 200 cartes.', emoji: '🐘' },
   quiz_10: { title: 'Curieux', description: 'Tu as terminé 10 quiz.', emoji: '❓' },
@@ -98,8 +102,10 @@ export interface RewardSummary {
   badges: EarnedBadge[];
   /** Jours avec de l'effort dans la semaine en cours (lundi → aujourd'hui). */
   effortDaysThisWeek: number;
-  /** Jours de travail prévus consécutifs, tous faits (les jours non prévus ne cassent rien). */
+  /** Jours de travail consécutifs (les jours non prévus ne cassent rien, 2 jokers par semaine). */
   currentStreak: number;
+  /** Jokers de série encore disponibles cette semaine. */
+  jokersLeftThisWeek: number;
 }
 
 function mondayOf(date: IsoDate): IsoDate {
@@ -108,6 +114,30 @@ function mondayOf(date: IsoDate): IsoDate {
 }
 
 const hasEffort = (day: EffortDay) => dayPoints(day) > 0;
+
+/** Jours prévus pouvant être manqués chaque semaine sans casser la série. */
+export const JOKERS_PER_WEEK = 2;
+
+/**
+ * Jours prévus manqués entre deux dates (exclues) : chacun consomme un joker de sa semaine.
+ * Renvoie vrai si un jour manqué n'a pas pu être couvert (la série repart).
+ */
+function useJokers(
+  jokers: Map<IsoDate, number>,
+  from: IsoDate,
+  to: IsoDate,
+  available: ReadonlySet<Weekday>,
+): boolean {
+  let broken = false;
+  for (let d = addDays(from, 1); d < to; d = addDays(d, 1)) {
+    if (!available.has(weekdayKey(d))) continue;
+    const week = mondayOf(d);
+    const used = jokers.get(week) ?? 0;
+    if (used < JOKERS_PER_WEEK) jokers.set(week, used + 1);
+    else broken = true;
+  }
+  return broken;
+}
 
 export function computeRewards(
   days: readonly EffortDay[],
@@ -129,6 +159,7 @@ export function computeRewards(
   const daysPerWeek = new Map<IsoDate, number>();
   let previous: IsoDate | null = null;
   let streak = 0;
+  const jokers = new Map<IsoDate, number>();
 
   for (const day of sorted) {
     points += dayPoints(day);
@@ -150,14 +181,11 @@ export function computeRewards(
     if (count >= 3) earn('trois_jours_semaine', day.date);
     if (count >= 5) earn('cinq_jours_semaine', day.date);
 
-    // Série : comptée sur les jours prévus uniquement ; un jour prévu sans effort la fait repartir,
-    // mais le badge déjà gagné reste acquis.
+    // Série douce : comptée sur les jours prévus ; jusqu'à 2 jours prévus manqués par semaine sont
+    // couverts par des jokers. Au-delà, elle repart, mais les badges déjà gagnés restent acquis.
     if (previous !== null) {
-      let missedPlannedDay = false;
-      for (let d = addDays(previous, 1); d < day.date; d = addDays(d, 1)) {
-        if (available.has(weekdayKey(d))) missedPlannedDay = true;
-      }
-      streak = missedPlannedDay ? 1 : streak + 1;
+      const broken = useJokers(jokers, previous, day.date, available);
+      streak = broken ? 1 : streak + 1;
       // Résilience : reprendre après au moins 3 jours sans travail.
       if (daysBetween(previous, day.date) > 3) earn('de_retour', day.date);
     } else {
@@ -167,13 +195,11 @@ export function computeRewards(
     previous = day.date;
   }
 
-  // La série en cours ne compte que si aucun jour prévu n'a été manqué depuis le dernier effort.
+  // Série en cours : les jours prévus manqués depuis le dernier effort consomment aussi des jokers.
   let currentStreak = streak;
-  if (previous !== null) {
-    for (let d = addDays(previous, 1); d < today; d = addDays(d, 1)) {
-      if (available.has(weekdayKey(d))) currentStreak = 0;
-    }
-  }
+  const jokersNow = new Map(jokers);
+  if (previous !== null && useJokers(jokersNow, previous, today, available)) currentStreak = 0;
+  const jokersLeftThisWeek = Math.max(0, JOKERS_PER_WEEK - (jokersNow.get(mondayOf(today)) ?? 0));
 
   const stageIndex = AVATAR_STAGES.findLastIndex((s) => points >= s.threshold);
   const stage = AVATAR_STAGES[Math.max(0, stageIndex)]!;
@@ -183,7 +209,16 @@ export function computeRewards(
   const thisWeek = mondayOf(today);
   const effortDaysThisWeek = sorted.filter((d) => d.date >= thisWeek && d.date <= today).length;
 
-  return { points, stage, nextStage, progress, badges, effortDaysThisWeek, currentStreak };
+  return {
+    points,
+    stage,
+    nextStage,
+    progress,
+    badges,
+    effortDaysThisWeek,
+    currentStreak,
+    jokersLeftThisWeek,
+  };
 }
 
 export interface WeekEffort {

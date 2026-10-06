@@ -55,9 +55,20 @@ describe('récompenses', () => {
     expect(r.badges.map((b) => b.code)).toContain('serie_7');
   });
 
+  it('série douce : 2 jours prévus manqués par semaine sont couverts par des jokers', () => {
+    const days = weekdaysFrom(MON, 7).map((d) => day(d));
+    // Dernier effort mardi 13 ; mercredi et jeudi manqués : les 2 jokers de la semaine.
+    const r = computeRewards(days, WEEKDAYS, '2026-10-16');
+    expect(r.currentStreak).toBe(7);
+    expect(r.jokersLeftThisWeek).toBe(0);
+    const fresh = computeRewards(days, WEEKDAYS, '2026-10-14');
+    expect(fresh.jokersLeftThisWeek).toBe(2);
+  });
+
   it('garde les badges acquis quand la série s’arrête', () => {
     const days = weekdaysFrom(MON, 7).map((d) => day(d));
-    const r = computeRewards(days, WEEKDAYS, '2026-10-16');
+    // Mercredi, jeudi et vendredi manqués : plus de joker, la série repart.
+    const r = computeRewards(days, WEEKDAYS, '2026-10-19');
     expect(r.currentStreak).toBe(0);
     expect(r.badges.map((b) => b.code)).toContain('serie_7');
   });
