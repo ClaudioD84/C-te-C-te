@@ -180,17 +180,21 @@ test('bêta : inscription sur code d’invitation (usage limité), sans code tan
     begin;
     create temp table resultat (v text);
     do $$ begin ${signup('libre', '{}')} end $$;
-    insert into invite_code (code, max_uses) values ('BETA-E2E', 1);
+    insert into invite_code (code, max_uses, trial_days) values ('BETA-E2E', 1, 90);
     do $$ begin
       ${signup('sans', '{}')}
       ${signup('faux', '{"invite_code": "AUTRE"}')}
       ${signup('bon', '{"invite_code": " beta-e2e "}')}
       ${signup('epuise', '{"invite_code": "BETA-E2E"}')}
     end $$;
+    insert into resultat
+      select 'essai:' || (current_period_end::date - current_date)
+      from subscription s join parent p using (family_id) join auth.users u on u.id = p.user_id
+      where u.email like 'bon-%';
     select string_agg(v, ' ') from resultat;
     rollback;`);
   expect(result).toBe(
-    'libre:ok sans:code_invitation_invalide faux:code_invitation_invalide bon:ok epuise:code_invitation_invalide',
+    'libre:ok sans:code_invitation_invalide faux:code_invitation_invalide bon:ok epuise:code_invitation_invalide essai:90',
   );
 });
 

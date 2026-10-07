@@ -3,7 +3,8 @@
 //
 //   SUPABASE_URL=… SUPABASE_SERVICE_ROLE_KEY=… node scripts/beta/beta.mjs <commande>
 //
-//   code <CODE> [utilisations] [note]   crée un code d'invitation (ex. : code ECOLE-2026 20 "école du quartier")
+//   code <CODE> [utilisations] [jours d'essai] [note]
+//                                       crée un code d'invitation (ex. : code ECOLE-2026 20 90 "école")
 //   codes                               liste les codes et leurs utilisations
 //   stats [jours]                       mesures par famille (30 derniers jours par défaut), sans contenu
 //   avis [jours]                        avis des testeurs (14 derniers jours par défaut)
@@ -38,17 +39,22 @@ const [command, ...args] = process.argv.slice(2);
 
 switch (command) {
   case 'code': {
-    const [code, uses = '1', note = null] = args;
+    const [code, uses = '1', trialDays = '90', note = null] = args;
     if (!code) throw new Error('Indiquez le code, par exemple : code FAMILLE-01 1');
     await call('invite_code', {
       method: 'POST',
-      body: JSON.stringify({ code: code.toUpperCase(), max_uses: Number(uses), note }),
+      body: JSON.stringify({
+        code: code.toUpperCase(),
+        max_uses: Number(uses),
+        trial_days: Number(trialDays),
+        note,
+      }),
     });
-    console.log(`Code ${code.toUpperCase()} créé (${uses} inscription(s)).`);
+    console.log(`Code ${code.toUpperCase()} créé : ${uses} inscription(s), ${trialDays} jours d'essai.`);
     break;
   }
   case 'codes': {
-    const codes = await call('invite_code?select=code,note,uses,max_uses,expires_at&order=created_at');
+    const codes = await call('invite_code?select=code,note,uses,max_uses,trial_days,expires_at&order=created_at');
     console.table(codes);
     break;
   }

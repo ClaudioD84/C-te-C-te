@@ -45,6 +45,11 @@ Les achats intégrés réels (RevenueCat) demandent un **build de développement
 `npx eas-cli@latest build --profile development` (ou `npx expo run:android` / `npx expo run:ios`). Dans Expo Go,
 l'abonnement passe par le mode simulé.
 
+## Bêta privée
+
+Version web en ligne (`pnpm deploy:web`), codes d'invitation et suivi des testeurs (`pnpm beta`) :
+[docs/beta/README.md](docs/beta/README.md). À envoyer aux familles : [guide du testeur](docs/beta/guide-testeur.md).
+
 ## Mettre en ligne le serveur
 
 1. Créer un projet sur [supabase.com](https://supabase.com) dans la région **Europe (Frankfurt)**.

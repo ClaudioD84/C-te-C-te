@@ -19,7 +19,8 @@
     "test:e2e": "pnpm --filter e2e test:e2e",
     "demo": "node e2e/support/demo.mjs",
     "demo:iphone": "node e2e/support/demo.mjs --iphone",
-    "beta": "node scripts/beta/beta.mjs"
+    "beta": "node scripts/beta/beta.mjs",
+    "deploy:web": "cd apps/mobile && npx expo export --platform web && npx eas-cli@latest deploy --prod"
   },
   "devDependencies": {
     "deno": "2.9.6",

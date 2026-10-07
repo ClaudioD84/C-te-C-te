@@ -135,9 +135,9 @@ export default function RootLayout() {
 
 const styles = StyleSheet.create({
   root: { flex: 1 },
-  error: { flex: 1, justifyContent: 'center', padding: 24, gap: 16, backgroundColor: '#FAF7F2' },
+  error: { flex: 1, justifyContent: 'center', padding: 24, gap: 16, backgroundColor: '#FBF8F3' },
   errorTitle: { fontSize: 22, fontWeight: '600', color: '#1F2328' },
   errorText: { fontSize: 17, color: '#3D4248' },
-  errorButton: { backgroundColor: '#1B6B5F', borderRadius: 24, padding: 14, alignItems: 'center' },
+  errorButton: { backgroundColor: '#1A6B60', borderRadius: 24, padding: 14, alignItems: 'center' },
   errorButtonText: { color: '#FFFFFF', fontSize: 17, fontWeight: '600' },
 });
