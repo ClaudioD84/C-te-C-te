@@ -18,7 +18,8 @@
     "e2e:build": "pnpm --filter e2e build:web",
     "test:e2e": "pnpm --filter e2e test:e2e",
     "demo": "node e2e/support/demo.mjs",
-    "demo:iphone": "node e2e/support/demo.mjs --iphone"
+    "demo:iphone": "node e2e/support/demo.mjs --iphone",
+    "beta": "node scripts/beta/beta.mjs"
   },
   "devDependencies": {
     "deno": "2.9.6",

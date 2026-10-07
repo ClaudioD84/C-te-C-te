@@ -18,10 +18,12 @@ Données collectées (toutes **liées à l'utilisateur**, aucune utilisée pour 
 | Contenu utilisateur > Autre contenu | Tâches scolaires, supports d'étude, signalements d'erreur | Fonctionnalité de l'app |
 | Identifiants > Identifiant de l'utilisateur | Identifiant du compte et de la famille | Fonctionnalité de l'app |
 | Achats > Historique des achats | Abonnement | Fonctionnalité de l'app |
-| Utilisation > Interactions avec le produit | Activités faites, cartes revues, quiz | Fonctionnalité de l'app |
+| Utilisation > Interactions avec le produit | Activités faites, cartes revues, quiz | Fonctionnalité de l'app, analyses (mesures d'usage de la bêta, sans tiers) |
+| Diagnostics > Données de plantage | Rapport de plantage (message, écran, version), conservé 90 jours | Fonctionnalité de l'app |
+| Contenu utilisateur > Service client | Avis envoyés avec « Donner mon avis » | Fonctionnalité de l'app |
 
-Non collectées : localisation, contacts, données financières (gérées par Apple), historique de navigation,
-diagnostics (pas d'outil de rapport de plantage à ce jour — à mettre à jour si un tel outil est ajouté).
+Non collectées : localisation, contacts, données financières (gérées par Apple), historique de navigation.
+Les rapports de plantage sont enregistrés par l'application elle-même chez notre hébergeur (pas d'outil tiers).
 
 **Catégorie de l'app** : Éducation (et non « Enfants » : l'application est utilisée par les parents, l'enfant n'a
 pas de compte). **Classification d'âge** : 4+.
@@ -48,6 +50,8 @@ l'abonnement dans les réglages de l'App Store.
 | Activité dans l'application > Interactions | Activités, cartes, quiz | Oui | Fonctionnalité de l'app | Non |
 | Activité dans l'application > Autre contenu généré | Tâches, supports, signalements | Oui | Fonctionnalité de l'app | Non |
 | Informations financières > Historique des achats | Abonnement | Oui | Fonctionnalité de l'app | Non |
+| Infos et performances de l'appli > Journaux de plantage | Rapport de plantage (90 jours) | Oui | Analyses, fonctionnalité | Non |
+| Messages > Autres messages | Avis envoyés avec « Donner mon avis » | Oui | Assistance | **Oui** |
 
 **Public cible** (Contenu de l'application > Public cible) : déclarer un public **adulte** (parents). Si Google
 demande si l'application peut attirer des enfants, expliquer que l'enfant utilise une console limitée sur

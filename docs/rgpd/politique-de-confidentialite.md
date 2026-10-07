@@ -44,6 +44,11 @@ faire grandir l'avatar de votre enfant. Il n'y a ni classement ni comparaison av
 **L'abonnement** : la formule choisie et ses dates. Le paiement est géré par l'App Store ou Google Play : nous
 n'avons jamais accès à vos coordonnées bancaires.
 
+**Vos avis et le bon fonctionnement de l'application** : les messages que vous nous envoyez avec « Donner mon
+avis » (avec le nom de l'écran d'où vous écrivez) et, en cas de plantage, un rapport technique (message d'erreur,
+écran, type d'appareil, version de l'application). Ils restent chez notre hébergeur européen, sans outil tiers, et
+ne sont jamais transmis à l'intelligence artificielle.
+
 **Sur votre téléphone uniquement** : le code parent, une copie temporaire de la mission du jour (pour travailler
 sans connexion) et vos réglages de rappels.
 
@@ -52,7 +57,8 @@ sans connexion) et vos réglages de rappels.
 - L'exécution du contrat (votre utilisation de l'application) pour le compte, les profils, les photos, les
   supports d'étude, le suivi et l'abonnement.
 - Votre consentement explicite pour les besoins particuliers.
-- Notre intérêt légitime à maîtriser les coûts du service (suivi du nombre de requêtes, sans contenu).
+- Notre intérêt légitime à maîtriser les coûts du service (suivi du nombre de requêtes, sans contenu) et à
+  corriger les erreurs de l'application (rapports de plantage).
 - Nos obligations légales pour les justificatifs comptables.
 
 ## Qui reçoit vos données ?
@@ -76,6 +82,7 @@ de protection des données UE–États-Unis ou les clauses contractuelles types 
 - Les autres données : tant que votre compte existe. Elles sont supprimées définitivement quand vous supprimez
   votre compte.
 - Le suivi du travail (activités, cartes, quiz) : 2 ans.
+- Les rapports de plantage : 90 jours. Vos avis : tant que votre compte existe.
 - Si vous n'ouvrez pas l'application pendant 24 mois, nous vous prévenons par e-mail ; sans reconnexion dans les
   30 jours, votre compte et toutes ses données sont supprimés (jamais pendant un abonnement payé en cours).
 - Les copies de sauvegarde de l'hébergeur sont effacées après [À COMPLÉTER] jours.

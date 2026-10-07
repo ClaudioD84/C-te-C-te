@@ -109,6 +109,17 @@ Aucune donnée n'est vendue, louée ni utilisée à des fins publicitaires. Aucu
 | Données | Fonction appelée, modèle, nombre de jetons, coût, date (aucun contenu) |
 | Conservation | Durée du compte |
 
+### T12 — Avis, erreurs de l'application et mesures d'usage (bêta)
+
+| | |
+|---|---|
+| Finalité | Améliorer l'application pendant la bêta : avis des familles, correction des plantages, mesure de l'usage (nombre de photos, de tâches, de missions et de jours actifs, coût de l'IA) |
+| Base légale | Intérêt légitime (art. 6.1.f) : qualité et fiabilité du service ; avis : démarche volontaire du parent |
+| Données | Avis : message, humeur choisie, écran d'origine, date. Erreurs : message et pile d'appels, écran (sans identifiant), système, version de l'application, identifiant du compte. Mesures : comptages calculés à la demande à partir des tables existantes (aucune donnée nouvelle) |
+| Conservation | Avis : durée du compte. Erreurs : 90 jours (purge quotidienne `purge-inactive`) |
+| Destinataires | Supabase (UE) ; lus par l'éditeur seulement (script `pnpm beta` avec la clé de service). Jamais transmis à l'IA ni à un outil tiers |
+| Remarque | Codes d'invitation de la bêta : code, note interne (sans donnée d'enfant), nombre d'utilisations |
+
 ### T9 — Données gardées sur l'appareil
 
 | | |

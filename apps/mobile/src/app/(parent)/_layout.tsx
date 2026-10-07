@@ -1,8 +1,11 @@
 import { Stack } from 'expo-router';
 
+import { FeedbackButton } from '@/features/feedback/feedback-button';
+
 export default function ParentLayout() {
   return (
-    <Stack>
+    // Bêta : « Donner mon avis » depuis chaque écran.
+    <Stack screenOptions={{ headerRight: () => <FeedbackButton /> }}>
       <Stack.Screen name="index" options={{ title: 'Cockpit parent' }} />
       <Stack.Screen name="profils/nouveau" options={{ title: 'Nouvel enfant', presentation: 'modal' }} />
       <Stack.Screen name="profils/[childId]" options={{ title: 'Modifier le profil' }} />
@@ -26,6 +29,7 @@ export default function ParentLayout() {
       <Stack.Screen name="fratrie" options={{ title: 'Défi de la fratrie' }} />
       <Stack.Screen name="bilan-pro/[childId]" options={{ title: 'Bilan pour un professionnel' }} />
       <Stack.Screen name="appareils/[childId]" options={{ title: 'Tablette de l’enfant' }} />
+      <Stack.Screen name="avis" options={{ title: 'Donner mon avis' }} />
     </Stack>
   );
 }

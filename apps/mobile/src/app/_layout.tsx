@@ -1,15 +1,27 @@
 import { Lexend_400Regular, Lexend_600SemiBold, useFonts } from '@expo-google-fonts/lexend';
 import { PersistQueryClientProvider } from '@tanstack/react-query-persist-client';
-import { DarkTheme, DefaultTheme, Stack, ThemeProvider } from 'expo-router';
+import {
+  DarkTheme,
+  DefaultTheme,
+  Stack,
+  ThemeProvider,
+  usePathname,
+  type ErrorBoundaryProps,
+} from 'expo-router';
 import * as SplashScreen from 'expo-splash-screen';
 import { useEffect, useRef } from 'react';
-import { StyleSheet, useColorScheme } from 'react-native';
+import { Pressable, StyleSheet, Text, useColorScheme, View } from 'react-native';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 
 import { useActivityPing } from '@/features/account/use-activity-ping';
 import { SessionProvider, useSession } from '@/features/auth/session-provider';
 import { ChildColorProvider } from '@/features/child-mode/child-color';
 import { ChildModeProvider, useChildMode } from '@/features/child-mode/child-mode-provider';
+import {
+  installGlobalErrorHandlers,
+  reportError,
+  setCurrentScreen,
+} from '@/features/monitoring/report-error';
 import { cancelAllReminders } from '@/features/reminders/notifications';
 import { useReminderSync } from '@/features/reminders/use-reminder-sync';
 import { logOutBilling } from '@/features/subscription/billing';
@@ -17,6 +29,30 @@ import { clearOfflineCache, persistOptions, queryClient } from '@/lib/query-clie
 import { isSupabaseConfigured } from '@/lib/supabase';
 
 SplashScreen.preventAutoHideAsync();
+installGlobalErrorHandlers();
+
+/**
+ * Écran affiché si un écran plante : message simple, nouvel essai possible, erreur enregistrée pour l'équipe.
+ * Sans dépendre du thème ni des polices (ils peuvent être la cause du problème).
+ */
+export function ErrorBoundary({ error, retry }: ErrorBoundaryProps) {
+  useEffect(() => {
+    void reportError(error);
+  }, [error]);
+  return (
+    <View style={styles.error}>
+      <Text style={styles.errorTitle} accessibilityRole="header">
+        Oups, quelque chose s’est mal passé.
+      </Text>
+      <Text style={styles.errorText}>
+        Le problème nous a été signalé automatiquement. Vous pouvez réessayer.
+      </Text>
+      <Pressable accessibilityRole="button" onPress={retry} style={styles.errorButton}>
+        <Text style={styles.errorButtonText}>Réessayer</Text>
+      </Pressable>
+    </View>
+  );
+}
 
 /** À la déconnexion, les données gardées sur l'appareil et les actions en attente sont effacées. */
 function useClearCacheOnSignOut(signedIn: boolean, loading: boolean) {
@@ -38,6 +74,8 @@ function RootNavigator() {
   useReminderSync(Boolean(session));
   useActivityPing(Boolean(session));
   const { activeChildId, loading: childModeLoading } = useChildMode();
+  const pathname = usePathname();
+  useEffect(() => setCurrentScreen(pathname), [pathname]);
   // En cas d'échec de chargement de la police, on continue avec la police système.
   const [fontsLoaded, fontError] = useFonts({ Lexend_400Regular, Lexend_600SemiBold });
   const loading = sessionLoading || childModeLoading || (!fontsLoaded && !fontError);
@@ -97,4 +135,9 @@ export default function RootLayout() {
 
 const styles = StyleSheet.create({
   root: { flex: 1 },
+  error: { flex: 1, justifyContent: 'center', padding: 24, gap: 16, backgroundColor: '#FAF7F2' },
+  errorTitle: { fontSize: 22, fontWeight: '600', color: '#1F2328' },
+  errorText: { fontSize: 17, color: '#3D4248' },
+  errorButton: { backgroundColor: '#1B6B5F', borderRadius: 24, padding: 14, alignItems: 'center' },
+  errorButtonText: { color: '#FFFFFF', fontSize: 17, fontWeight: '600' },
 });

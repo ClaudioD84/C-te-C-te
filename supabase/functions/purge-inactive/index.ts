@@ -40,11 +40,26 @@ Deno.serve(async (request) => {
 
   const admin = adminClient();
   const now = new Date();
-  const report = { events: 0, warned: 0, deleted: 0, failures: 0, emailConfigured: emailConfigured() };
+  const report = {
+    events: 0,
+    errors: 0,
+    warned: 0,
+    deleted: 0,
+    failures: 0,
+    emailConfigured: emailConfigured(),
+  };
 
   const events = await admin.rpc('purge_old_learning_events');
   if (events.error) return json({ error: events.error.message }, 500);
   report.events = events.data as number;
+
+  // Journal des erreurs de l'application : 90 jours.
+  const errors = await admin
+    .from('app_error')
+    .delete({ count: 'exact' })
+    .lt('created_at', new Date(now.getTime() - 90 * 86_400_000).toISOString());
+  if (errors.error) return json({ error: errors.error.message }, 500);
+  report.errors = errors.count ?? 0;
 
   if (!report.emailConfigured) return json(report);
 

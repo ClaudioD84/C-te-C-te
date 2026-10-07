@@ -164,3 +164,60 @@ test('sécurité : chemin de photo d’une autre famille et contournement des qu
   });
   expect(pack.ok()).toBeFalsy();
 });
+
+test('bêta : inscription sur code d’invitation (usage limité), sans code tant qu’il n’y en a aucun', () => {
+  // Dans une transaction annulée : les autres tests, qui s'inscrivent en parallèle, ne voient pas le code.
+  const signup = (label: string, meta: string) => `
+    begin
+      insert into auth.users (id, email, raw_user_meta_data, aud, role)
+        values (gen_random_uuid(), '${label}-' || gen_random_uuid() || '@exemple.be', '${meta}'::jsonb,
+                'authenticated', 'authenticated');
+      insert into resultat values ('${label}:ok');
+    exception when others then
+      insert into resultat values ('${label}:' || sqlerrm);
+    end;`;
+  const result = sql(`
+    begin;
+    create temp table resultat (v text);
+    do $$ begin ${signup('libre', '{}')} end $$;
+    insert into invite_code (code, max_uses) values ('BETA-E2E', 1);
+    do $$ begin
+      ${signup('sans', '{}')}
+      ${signup('faux', '{"invite_code": "AUTRE"}')}
+      ${signup('bon', '{"invite_code": " beta-e2e "}')}
+      ${signup('epuise', '{"invite_code": "BETA-E2E"}')}
+    end $$;
+    select string_agg(v, ' ') from resultat;
+    rollback;`);
+  expect(result).toBe(
+    'libre:ok sans:code_invitation_invalide faux:code_invitation_invalide bon:ok epuise:code_invitation_invalide',
+  );
+});
+
+test('bêta : avis et journal d’erreurs par compte ; mesures réservées au serveur', async ({ request }) => {
+  const { token, familyId } = await createParent(request);
+  const rpc = (name: string, data: object, key = token) =>
+    request.post(`${GATEWAY_URL}/rest/v1/rpc/${name}`, { headers: headers(key), data });
+
+  expect((await rpc('signup_requires_code', {})).ok()).toBeTruthy();
+  expect((await rpc('log_app_error', { p_message: 'Boom', p_screen: '/planning' })).ok()).toBeTruthy();
+  const avis = await request.post(`${GATEWAY_URL}/rest/v1/feedback`, {
+    headers: headers(token),
+    data: { message: 'Très pratique', mood: 'content', screen: '/' },
+  });
+  expect(avis.ok()).toBeTruthy();
+  expect(sql(`select count(*) from feedback where family_id = '${familyId}'`)).toBe('1');
+
+  // Le journal des erreurs n'est pas lisible depuis l'application, les mesures non plus.
+  const errors = await request.get(`${GATEWAY_URL}/rest/v1/app_error?select=*`, { headers: headers(token) });
+  expect(errors.ok()).toBeFalsy();
+  expect((await rpc('beta_metrics', {})).ok()).toBeFalsy();
+
+  const { SERVICE_ROLE_KEY } = supabaseStatus() as { SERVICE_ROLE_KEY: string };
+  const metrics = await rpc('beta_metrics', {}, SERVICE_ROLE_KEY);
+  expect(metrics.ok()).toBeTruthy();
+  const mine = ((await metrics.json()) as { family_id: string; feedbacks: number }[]).find(
+    (m) => m.family_id === familyId,
+  );
+  expect(mine?.feedbacks).toBe(1);
+});

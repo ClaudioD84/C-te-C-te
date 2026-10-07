@@ -60,7 +60,7 @@ flowchart LR
 | Abonnements | **RevenueCat** | Gère App Store et Google Play, webhooks vers Supabase |
 | Génération PDF | **expo-print** (HTML vers PDF) | Mise en page accessible en HTML/CSS, impression native |
 | Notifications | **Expo Notifications** | Rappels d'échéances, alertes de charge |
-| Suivi des erreurs | **Sentry** | Plan gratuit suffisant au départ |
+| Suivi des erreurs | **Journal maison** (`app_error`, fonction `log_app_error`) | Plantages enregistrés chez Supabase (UE), sans sous-traitant de plus ; 90 jours ; lus avec `pnpm beta erreurs` |
 | Tests | **Jest** + **React Native Testing Library**, **Maestro** pour les parcours de bout en bout | |
 | Intégration continue | **GitHub Actions** + **EAS Build** | Lint, types, tests à chaque push ; builds de test |
 
@@ -287,7 +287,7 @@ Algorithme déterministe (`packages/shared/src/planning.ts`), exécuté dans l'a
 | Conservation | Fonction `purge-inactive` (tâche quotidienne) : journal de l'effort de plus de 2 ans, comptes inactifs depuis 24 mois (dernière ouverture enregistrée par `touch_family_activity`) avertis par e-mail puis supprimés 30 jours plus tard |
 | Photos | Envoyées sans masquage (elles peuvent montrer des noms), stockage privé, suppression après traitement ; fonction `purge-photos` (tâche quotidienne) pour celles restées plus de 24 h |
 | Données de santé | Consentement explicite et horodaté (renouvelé à chaque besoin ajouté, effacé au retrait) ; les requêtes IA ne contiennent que les consignes d'adaptation, jamais le trouble |
-| Sous-traitants | Supabase, Anthropic, RevenueCat (et Sentry s'il est ajouté) : accords de traitement (DPA) à signer ; vérifier la durée de conservation des données par Anthropic et les options disponibles |
+| Sous-traitants | Supabase, Anthropic, RevenueCat, Brevo : accords de traitement (DPA) à signer ; vérifier la durée de conservation des données par Anthropic et les options disponibles |
 | Droits des utilisateurs | Export JSON, modification et suppression d'un profil enfant, suppression complète du compte depuis l'application |
 | Secrets | Clés API uniquement dans les variables d'environnement des Edge Functions, jamais dans l'application |
 | Avant le lancement public | AIPD, politique de confidentialité et conditions d'utilisation relues par un juriste ; voir le [dossier RGPD](rgpd/README.md) |
@@ -310,7 +310,6 @@ Algorithme déterministe (`packages/shared/src/planning.ts`), exécuté dans l'a
 | Google Play | 25 $ une fois |
 | RevenueCat | Gratuit jusqu'à 2 500 $ de revenus mensuels, puis 1 % |
 | Expo EAS | Plan gratuit au départ |
-| Sentry | Plan gratuit au départ |
 | **Fixe au démarrage** | **~50 à 100 € / mois** |
 
 ## 15. Décisions prises

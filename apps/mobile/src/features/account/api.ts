@@ -34,6 +34,7 @@ const EXPORTED_TABLES = [
   'school_bag_item',
   'pride_entry',
   'sibling_challenge',
+  'feedback',
 ] as const;
 
 /** Export RGPD : un fichier JSON partagé via la feuille de partage du téléphone (téléchargé sur le web). */
