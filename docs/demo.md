@@ -133,8 +133,8 @@ devoirs et deux semaines de suivi, et « Emma » (2e maternelle).
 **Côté parent**
 
 - **🎒 Cartable** (carte de l'enfant) : affaires et jours (gym, piscine…), idées toutes prêtes.
-- **Suivi** : **📅 Plan de blocus** (secondaire et 6e primaire : horaire des examens, aperçu jour par jour,
-  avancement des révisions), **📄 Bilan pour un professionnel** (période et parties au choix, besoins
+- **Suivi** : **📅 Plan de blocus** (secondaire et 6e primaire : horaire des examens, révisions aussi le
+  week-end, examen blanc la veille, aperçu jour par jour, avancement des révisions), **📄 Bilan pour un professionnel** (période et parties au choix, besoins
   jamais d'office, impression ou PDF), courbe de **lecture à voix haute**, **carnet de fierté** à imprimer.
 - **🤝 Défi des frères et sœurs** (cockpit, dès deux enfants) : objectif commun, « Récompense donnée ».
 

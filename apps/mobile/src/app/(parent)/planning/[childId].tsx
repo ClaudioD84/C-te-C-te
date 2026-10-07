@@ -1,7 +1,9 @@
 import {
   addDays,
+  blocusWeekendDates,
   datesInRanges,
   deriveLearningSettings,
+  needsStudyPack,
   planWeek,
   toIsoDate,
   type IsoDate,
@@ -21,6 +23,7 @@ import { DaysOffCard } from '@/features/days-off/days-off-card';
 import { SpellingCard } from '@/features/spelling/spelling-card';
 import { TeacherNoteCard } from '@/features/teacher/teacher-note-card';
 import { useDaysOff } from '@/features/days-off/api';
+import { useExams } from '@/features/exams/api';
 import { usePublishPlan, useSessions, useUpcomingTasks } from '@/features/planning/api';
 import { alertText } from '@/features/planning/labels';
 import { useChildProfile } from '@/features/profiles/api';
@@ -37,13 +40,14 @@ export default function PlanningScreen() {
   const sessions = useSessions(childId, today);
   const publish = usePublishPlan(childId);
   const daysOff = useDaysOff(childId);
+  const exams = useExams(childId);
   const queryClient = useQueryClient();
   const [extraDates, setExtraDates] = useState<IsoDate[]>([]);
   const [lightWeek, setLightWeek] = useState(false);
   const [preview, setPreview] = useState<WeekPlan | null>(null);
   const [preparing, setPreparing] = useState<{ done: number; total: number } | null>(null);
 
-  if (child.isLoading || tasks.isLoading || sessions.isLoading) {
+  if (child.isLoading || tasks.isLoading || sessions.isLoading || exams.isLoading) {
     return (
       <Screen>
         <ActivityIndicator />
@@ -72,7 +76,13 @@ export default function PlanningScreen() {
         grade: profile.grade,
         availableDays: profile.preferences.availableDays,
         workMinutes: settings.workMinutes,
-        extraDates: extra,
+        // Plan de blocus « avec week-end » : samedi et dimanche s'ajoutent jusqu'au dernier examen.
+        extraDates: [
+          ...new Set([
+            ...extra,
+            ...blocusWeekendDates(exams.data ?? [], today, profile.preferences.availableDays),
+          ]),
+        ],
         blockedDates: datesInRanges(daysOff.data ?? [], today, addDays(today, 6)),
         lightWeek: light,
       }),
@@ -120,7 +130,14 @@ export default function PlanningScreen() {
                   const toStudy = [
                     ...new Set(
                       preview.days.flatMap((d) =>
-                        d.items.filter((i) => i.activity !== 'faire').map((i) => i.taskId),
+                        d.items
+                          .filter((i) => i.activity !== 'faire')
+                          .map((i) => i.taskId)
+                          // Pas de fiche IA pour un chapitre de blocus sans nom.
+                          .filter((id) => {
+                            const task = taskById.get(id);
+                            return !task || needsStudyPack(task);
+                          }),
                       ),
                     ),
                   ];

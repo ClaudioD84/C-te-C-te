@@ -19,6 +19,8 @@ export interface Exam {
   type: ExamType;
   exam_date: IsoDate;
   subjects: string[];
+  /** Plan de blocus avec révisions le week-end. */
+  weekend_work: boolean;
 }
 
 export function useExams(childId: string) {
@@ -28,7 +30,7 @@ export function useExams(childId: string) {
     queryFn: async (): Promise<Exam[]> => {
       const { data, error } = await supabase
         .from('exam')
-        .select('id, type, exam_date, subjects')
+        .select('id, type, exam_date, subjects, weekend_work')
         .eq('child_id', childId)
         .gte('exam_date', toIsoDate(new Date()))
         .order('exam_date');
@@ -132,7 +134,12 @@ export function useDeleteExam(childId: string) {
 export function useCreateBlocus(childId: string) {
   const queryClient = useQueryClient();
   return useMutation({
-    mutationFn: async (input: { exams: readonly BlocusExam[]; tasks: readonly BlocusTask[] }) => {
+    mutationFn: async (input: {
+      exams: readonly BlocusExam[];
+      tasks: readonly BlocusTask[];
+      /** Révisions aussi le week-end : le planning de la semaine ajoutera samedi et dimanche. */
+      weekendWork: boolean;
+    }) => {
       const { data: created, error } = await supabase
         .from('exam')
         .insert(
@@ -141,6 +148,7 @@ export function useCreateBlocus(childId: string) {
             type: 'bilan',
             exam_date: e.date,
             subjects: [e.subject],
+            weekend_work: input.weekendWork,
           })),
         )
         .select('id, exam_date, subjects');

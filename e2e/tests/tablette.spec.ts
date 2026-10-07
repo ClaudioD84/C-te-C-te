@@ -281,6 +281,13 @@ test('tablette : droits limités à la console de son enfant', async ({ request 
   expect((await background(family.childId, 'foret')).ok()).toBeTruthy();
   expect((await background(siblingId, 'foret')).ok()).toBeFalsy();
   expect((await background(family.childId, 'inconnu')).ok()).toBeFalsy();
+  // Fonds à débloquer : refusés par le serveur tant que l'effort ne suffit pas (Arc-en-ciel : 200 points).
+  expect((await background(family.childId, 'arc_en_ciel')).ok()).toBeFalsy();
+  sql(`insert into learning_event (family_id, child_id, type, meta)
+       select family_id, id, 'activite', '{"minutes": 10}' from child_profile, generate_series(1, 20)
+       where id = '${family.childId}'`);
+  expect((await background(family.childId, 'arc_en_ciel')).ok()).toBeTruthy();
+  expect((await background(family.childId, 'aurore')).ok()).toBeFalsy();
 
   // Cartable : la tablette lit la liste de son enfant, sans pouvoir la modifier.
   sql(`insert into school_bag_item (family_id, child_id, label, days)

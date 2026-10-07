@@ -1,6 +1,9 @@
 /// <reference types="vite/client" />
 import { describe, expect, it } from 'vitest';
 
+import unlockMigration from '../../../supabase/migrations/20261110000000_blocus_weekend_background_unlock.sql?raw';
+import { AVATAR_STAGES, POINTS } from './rewards';
+
 import {
   ageGroup,
   backgroundsFor,
@@ -36,7 +39,7 @@ describe('fonds d’écran', () => {
 });
 
 import migration from '../../../supabase/migrations/20261104000000_child_background.sql?raw';
-import { BACKGROUND_CODES } from './backgrounds';
+import { BACKGROUND_CODES, BACKGROUNDS } from './backgrounds';
 
 describe('fonds acceptés par la base', () => {
   it('la contrainte SQL connaît exactement les mêmes codes', () => {
@@ -49,5 +52,19 @@ describe('fonds acceptés par la base', () => {
     expect(defaultBackground('S3', ['football'], [])).toBe('foot');
     expect(defaultBackground('P5', [], ['dyslexie'])).not.toBe('uni');
     expect(defaultBackground('P5', ['mer'], ['tdah'])).toBe('uni');
+  });
+});
+
+describe('fonds à débloquer : vérifiés aussi par la base', () => {
+  it('mêmes seuils que les stades de l’avatar, même calcul des points', () => {
+    for (const [code, theme] of Object.entries(BACKGROUNDS) as [string, { unlockLevel?: number }][]) {
+      if (theme.unlockLevel === undefined) continue;
+      const threshold = AVATAR_STAGES.find((s) => s.level === theme.unlockLevel)!.threshold;
+      expect(unlockMigration).toContain(`when '${code}' then ${threshold}`);
+    }
+    expect(unlockMigration).toContain(
+      `activities * ${POINTS.activity} + cards + quizzes * ${POINTS.quiz} + sessions * ${POINTS.session} + recovered * ${POINTS.recovered}`,
+    );
+    expect(POINTS.card).toBe(1);
   });
 });

@@ -4,6 +4,7 @@ import {
   planBlocus,
   toIsoDate,
   type BlocusExam,
+  type Weekday,
   type IsoDate,
 } from '@cote-a-cote/shared';
 import { router, useLocalSearchParams } from 'expo-router';
@@ -44,6 +45,8 @@ export default function BlocusScreen() {
   const [subject, setSubject] = useState('');
   const [date, setDate] = useState<IsoDate | null>(null);
   const [chapters, setChapters] = useState('');
+  // Pendant un blocus, on révise souvent aussi le week-end.
+  const [weekend, setWeekend] = useState(true);
   const [today] = useState(() => toIsoDate(new Date()));
 
   if (!child.data) {
@@ -53,7 +56,9 @@ export default function BlocusScreen() {
       </Screen>
     );
   }
-  const availableDays = child.data.preferences.availableDays;
+  const availableDays: Weekday[] = weekend
+    ? [...new Set([...child.data.preferences.availableDays, 'sam' as const, 'dim' as const])]
+    : [...child.data.preferences.availableDays];
   const plan = planBlocus({ exams, today, availableDays });
   const byDay = new Map<IsoDate, typeof plan.tasks>();
   for (const task of plan.tasks) byDay.set(task.day, [...(byDay.get(task.day) ?? []), task]);
@@ -65,8 +70,17 @@ export default function BlocusScreen() {
       <ThemedText themeColor="textSecondary">
         Recopiez l’horaire des examens. Les chapitres sont répartis jusqu’à chaque examen (le plus proche
         d’abord, deux par jour au plus, un seul le dimanche et les jours d’examen), avec un examen blanc la
-        veille. Ils suivent les jours de travail du profil.
+        veille. Seuls les chapitres nommés reçoivent une fiche préparée par l’IA.
       </ThemedText>
+
+      <ChoiceChips
+        label="Jours de révision"
+        options={['weekend'] as const}
+        labels={{ weekend: 'Réviser aussi le samedi et le dimanche jusqu’au dernier examen' }}
+        selected={weekend ? ['weekend'] : []}
+        onToggle={() => setWeekend(!weekend)}
+        multiple
+      />
 
       <ThemedView type="backgroundElement" style={styles.card}>
         <ChoiceChips
@@ -155,7 +169,12 @@ export default function BlocusScreen() {
         label="Créer le plan de blocus"
         disabled={plan.tasks.length === 0}
         loading={create.isPending}
-        onPress={() => create.mutate({ exams, tasks: plan.tasks }, { onSuccess: () => router.back() })}
+        onPress={() =>
+          create.mutate(
+            { exams, tasks: plan.tasks, weekendWork: weekend },
+            { onSuccess: () => router.back() },
+          )
+        }
       />
     </Screen>
   );

@@ -98,14 +98,19 @@ export async function publishPlanning(page: Page, alias: string, childId: string
   await expect(page.getByText(/Préparation des fiches/)).toHaveCount(0, { timeout: 60_000 });
 }
 
-/** Ouvre la console enfant en créant le code parent 2809. */
-export async function enterChildMode(page: Page, alias: string, mood = '☀️ En forme') {
+/**
+ * Ouvre la console enfant en créant le code parent 2809. Sans météo précisée, « En forme » est répondu si
+ * la question est posée ; avec une météo précisée, la question est attendue (elle peut s'afficher un
+ * instant après la console sur une machine chargée).
+ */
+export async function enterChildMode(page: Page, alias: string, mood?: string) {
   await button(page, 'Lancer la mission du jour').click();
   for (const digit of '2809') await button(page, digit).click();
   await expect(page.getByText('Saisissez à nouveau')).toBeVisible();
   for (const digit of '2809') await button(page, digit).click();
   await expect(page.getByText(`Bonjour ${alias}`)).toBeVisible();
-  await answerMood(page, mood);
+  if (mood) await button(page, mood).click();
+  else await answerMood(page);
 }
 
 /** Météo du jour (demandée quand une mission attend) ; « En forme » affiche la mission complète. */

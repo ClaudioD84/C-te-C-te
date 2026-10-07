@@ -1,5 +1,5 @@
 import { addDays, weekdayKey, type IsoDate } from './dates';
-import { mockExamDescription } from './revision';
+import { isMockExam, mockExamDescription } from './revision';
 import type { Weekday } from './profile';
 
 /**
@@ -39,6 +39,52 @@ export interface BlocusPlan {
 export const BLOCUS_CHAPTERS_PER_DAY = 2;
 export const DEFAULT_BLOCUS_CHAPTERS = 3;
 
+/** Examen blanc sans chapitre nommé : il porte sur toute la matière. */
+export const WHOLE_SUBJECT = 'toute la matière';
+
+const genericChapter = (subject: string, n: number) => `${subject}, partie ${n}`;
+
+function isGenericChapter(chapter: string, subject: string): boolean {
+  const prefix = `${subject}, partie `;
+  return chapter.startsWith(prefix) && /^\d+$/.test(chapter.slice(prefix.length));
+}
+
+/**
+ * Faut-il préparer une fiche (IA) pour cette tâche ? Pas pour un chapitre sans nom (« Histoire, partie 2 »)
+ * ni pour l'examen blanc d'une matière sans chapitre nommé : la fiche serait vague et coûterait du quota.
+ */
+export function needsStudyPack(task: { subject: string; description: string }): boolean {
+  if (task.description.startsWith('Revoir : ')) {
+    return !isGenericChapter(task.description.slice('Revoir : '.length), task.subject);
+  }
+  return !(isMockExam(task.description) && task.description.endsWith(`: ${WHOLE_SUBJECT}`));
+}
+
+/**
+ * Samedis et dimanches à ajouter au planning de la semaine : pendant un blocus « avec week-end », jusqu'au
+ * dernier examen (s'ils ne sont pas déjà des jours de travail).
+ */
+export function blocusWeekendDates(
+  exams: readonly { exam_date: IsoDate; weekend_work?: boolean | null }[],
+  today: IsoDate,
+  availableDays: readonly Weekday[],
+  horizon = 7,
+): IsoDate[] {
+  const last = exams
+    .filter((e) => e.weekend_work)
+    .map((e) => e.exam_date)
+    .sort()
+    .at(-1);
+  if (!last) return [];
+  const dates: IsoDate[] = [];
+  for (let i = 0; i < horizon; i++) {
+    const date = addDays(today, i);
+    const day = weekdayKey(date);
+    if ((day === 'sam' || day === 'dim') && !availableDays.includes(day) && date < last) dates.push(date);
+  }
+  return dates;
+}
+
 /** Chapitres saisis (un par ligne) ; à défaut, des parties numérotées. */
 export function blocusChapters(text: string, subject: string): string[] {
   const lines = text
@@ -48,7 +94,7 @@ export function blocusChapters(text: string, subject: string): string[] {
     .slice(0, 15);
   return lines.length > 0
     ? lines
-    : Array.from({ length: DEFAULT_BLOCUS_CHAPTERS }, (_, i) => `${subject}, partie ${i + 1}`);
+    : Array.from({ length: DEFAULT_BLOCUS_CHAPTERS }, (_, i) => genericChapter(subject, i + 1));
 }
 
 export function planBlocus(input: {
@@ -139,10 +185,11 @@ export function planBlocus(input: {
     // Examen blanc la veille (s'il reste au moins un jour avant l'examen).
     const eve = addDays(exam.date, -1);
     if (eve <= input.today) continue;
+    const named = exam.chapters.filter((c) => !isGenericChapter(c, exam.subject));
     tasks.push({
       subject: exam.subject,
       kind: 'examen',
-      description: mockExamDescription(exam.subject, exam.chapters),
+      description: mockExamDescription(exam.subject, named.length > 0 ? named : [WHOLE_SUBJECT]),
       day: eve,
       dueDate: eve,
       examDate: exam.date,

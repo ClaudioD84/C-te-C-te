@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 
-import { blocusChapters, planBlocus } from './blocus';
+import { blocusChapters, blocusWeekendDates, needsStudyPack, planBlocus } from './blocus';
 import { addDays } from './dates';
 import { isMockExam } from './revision';
 
@@ -66,5 +66,38 @@ describe('plan de blocus', () => {
       '2026-12-09',
       '2026-12-14',
     ]);
+  });
+
+  it('fiches IA seulement pour les chapitres nommés', () => {
+    const plan = planBlocus({
+      today: '2026-12-07',
+      availableDays: ALL_DAYS,
+      exams: [
+        { subject: 'Histoire', date: '2026-12-15', chapters: blocusChapters('', 'Histoire') },
+        { subject: 'Maths', date: '2026-12-16', chapters: ['Fractions'] },
+      ],
+    });
+    const packs = plan.tasks.filter(needsStudyPack).map((t) => t.description);
+    expect(packs).toEqual(['Revoir : Fractions', 'Examen blanc de Maths : Fractions']);
+    expect(plan.tasks.find((t) => t.subject === 'Histoire' && t.kind === 'examen')!.description).toBe(
+      'Examen blanc de Histoire : toute la matière',
+    );
+    // Une tâche du journal de classe garde sa fiche.
+    expect(needsStudyPack({ subject: 'Éveil', description: 'Les fleuves de Belgique' })).toBe(true);
+    expect(needsStudyPack({ subject: 'Histoire', description: 'Revoir : Rome, partie 2' })).toBe(true);
+  });
+
+  it('week-end de blocus : samedis et dimanches jusqu’au dernier examen', () => {
+    const exams = [{ exam_date: '2026-12-15', weekend_work: true }];
+    // Lundi 7 décembre : le week-end des 12 et 13 décembre.
+    expect(blocusWeekendDates(exams, '2026-12-07', ['lun', 'mar', 'mer', 'jeu', 'ven'])).toEqual([
+      '2026-12-12',
+      '2026-12-13',
+    ]);
+    expect(blocusWeekendDates(exams, '2026-12-07', ALL_DAYS)).toEqual([]);
+    expect(
+      blocusWeekendDates([{ exam_date: '2026-12-15', weekend_work: false }], '2026-12-07', ['lun']),
+    ).toEqual([]);
+    expect(blocusWeekendDates(exams, '2026-12-14', ['lun'])).toEqual([]);
   });
 });
