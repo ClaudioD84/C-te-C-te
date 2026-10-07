@@ -108,8 +108,7 @@ export function ProfileFields({ values, setValues, consent, setConsent, needsCon
         maxLength={30}
       />
       <ThemedText type="small" themeColor="textSecondary">
-        Il s’affiche sur sa console. Il n’est jamais envoyé à l’IA et il est masqué automatiquement sur les
-        photos du journal de classe.
+        Il s’affiche sur sa console et n’est jamais transmis à l’IA par l’application.
       </ThemedText>
 
       <ChoiceChips

@@ -158,7 +158,7 @@ sequenceDiagram
 
 Points clés :
 
-- La **liste des noms à masquer** (nom de famille, nom de l'école, enseignants) est saisie par le parent et **reste sur l'appareil**. Elle ne quitte jamais le téléphone. Les **prénoms des enfants** du profil y sont ajoutés automatiquement.
+- La **liste des noms à masquer** (nom de famille, nom de l'école, enseignants) est saisie par le parent et **reste sur l'appareil**. Elle ne quitte jamais le téléphone. Le parent y ajoute ce qu'il veut voir masqué (prénom compris).
 - L'extraction utilise les **sorties structurées** de l'API Claude (`output_config.format` avec un schéma JSON) pour obtenir une liste de tâches toujours valide.
 - La photo est supprimée du stockage dès la fin du traitement. En cas d'échec, elle est conservée pour permettre de réessayer, et supprimée si le parent abandonne (une tâche de nettoyage planifiée reste à mettre en place pour les photos oubliées).
 - La réservation de la photo (`claim_scan`) est atomique : deux analyses de la même photo ne peuvent pas tourner en même temps ; une analyse interrompue peut être relancée après 150 s.
@@ -287,7 +287,7 @@ Algorithme déterministe (`packages/shared/src/planning.ts`), exécuté dans l'a
 |---|---|
 | Hébergement | Supabase région UE (Francfort) |
 | Accès aux données | RLS sur toutes les tables : un parent ne voit que sa famille |
-| Minimisation | Prénom seulement pour les enfants (jamais de nom de famille, jamais envoyé à l'IA) ; prénoms et autres noms masqués sur les photos avant envoi ; liste des noms à masquer uniquement sur l'appareil |
+| Minimisation | Prénom seulement pour les enfants (jamais de nom de famille, jamais transmis à l'IA par l'application) ; noms choisis par le parent masqués sur les photos avant envoi ; liste des noms à masquer uniquement sur l'appareil |
 | Conservation | Fonction `purge-inactive` (tâche quotidienne) : journal de l'effort de plus de 2 ans, comptes inactifs depuis 24 mois (dernière ouverture enregistrée par `touch_family_activity`) avertis par e-mail puis supprimés 30 jours plus tard |
 | Photos | Masquées avant envoi, stockage privé, suppression après traitement ; fonction `purge-photos` (tâche quotidienne) pour celles restées plus de 24 h |
 | Données de santé | Consentement explicite et horodaté (renouvelé à chaque besoin ajouté, effacé au retrait) ; les requêtes IA ne contiennent que les consignes d'adaptation, jamais le trouble |

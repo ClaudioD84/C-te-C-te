@@ -155,7 +155,7 @@ Chaque fonctionnalité porte un identifiant et une **étape de livraison** (voir
 
 ### 6.1 Vie privée et RGPD
 
-- Les enfants sont identifiés par leur **prénom**, jamais leur nom de famille ; le prénom n'est jamais envoyé à l'IA et il est masqué sur les photos.
+- Les enfants sont identifiés par leur **prénom**, jamais leur nom de famille ; le prénom n'est jamais transmis à l'IA par l'application ; le parent masque sur les photos les noms qu'il choisit.
 - Les besoins particuliers sont des **données de santé** : consentement explicite du parent, chiffrement, accès strictement limité.
 - Hébergement des données **dans l'Union européenne**.
 - Floutage des noms sur les photos avant tout envoi à l'IA ; photos supprimées après traitement.

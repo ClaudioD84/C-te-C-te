@@ -34,7 +34,7 @@ Flux principaux :
 | Principe | Mise en œuvre |
 |---|---|
 | Finalités déterminées | Organisation du travail scolaire et préparation de supports d'étude ; aucune publicité, aucune revente |
-| Minimisation | Prénom seulement, jamais de nom de famille ; prénom jamais envoyé à l'IA et masqué automatiquement sur les photos ; aucune date de naissance, adresse ni école demandée ; besoins particuliers facultatifs ; trouble jamais transmis à l'IA ; photo masquée avant envoi |
+| Minimisation | Prénom seulement, jamais de nom de famille ; prénom jamais transmis à l'IA par l'application ; noms choisis par le parent masqués sur les photos ; aucune date de naissance, adresse ni école demandée ; besoins particuliers facultatifs ; trouble jamais transmis à l'IA ; photo masquée avant envoi |
 | Exactitude | Le parent valide chaque tâche extraite et peut signaler une erreur dans un contenu généré |
 | Limitation de la conservation | Photo supprimée dès l'analyse (24 h au plus) ; journal de l'effort effacé après 2 ans ; comptes inactifs depuis 24 mois supprimés après avertissement |
 | Base légale | Contrat pour le service ; consentement explicite, horodaté et facultatif pour les besoins particuliers |

@@ -17,7 +17,7 @@ Version du 5 octobre 2026.
 
 ## Ce qui est déjà en place dans l'application
 
-- Enfants identifiés par leur **prénom** seulement (jamais de nom de famille) ; le prénom n'est jamais envoyé à l'IA et il est masqué automatiquement sur les photos.
+- Enfants identifiés par leur **prénom** seulement (jamais de nom de famille) ; le prénom n'est jamais transmis à l'IA par l'application ; sur les photos, le parent masque les noms qu'il choisit avant l'envoi.
 - Besoins particuliers (TDAH, dyslexie, dyscalculie) enregistrés **seulement après consentement explicite et
   horodaté** du parent ; le trouble n'est **jamais nommé** dans les demandes envoyées à l'IA (seules les
   adaptations de rédaction le sont).
