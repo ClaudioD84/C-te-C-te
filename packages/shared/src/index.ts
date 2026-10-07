@@ -35,6 +35,7 @@ export * from './mastery';
 export * from './celebration';
 export * from './collection';
 export * from './backgrounds';
+export * from './background-scenes';
 export * from './relax';
 export * from './school-bag';
 export * from './blocus';

@@ -2,6 +2,7 @@ import { describe, expect, it } from 'vitest';
 
 // Palette de l'application mobile (fichier sans dépendance).
 import { CHILD_PALETTES, Colors } from '../../../apps/mobile/src/constants/colors';
+import { mixColors, SCENES, type Scene } from './background-scenes';
 import { BACKGROUNDS } from './backgrounds';
 import { contrastRatio } from './contrast';
 
@@ -49,12 +50,34 @@ describe('couleurs préférées de l’enfant (WCAG 2.2 AA)', () => {
   }
 });
 
-describe('teintes des fonds d’écran (WCAG 2.2 AA)', () => {
-  for (const [code, theme] of Object.entries(BACKGROUNDS)) {
+/** Couleurs des scènes : dégradé (haut, milieu, bas) et formes posées derrière le texte. */
+function sceneColors(scene: Scene, mode: 'light' | 'dark'): { stops: string[]; shapes: string[] } {
+  const [top, bottom] = scene.gradient[mode];
+  return {
+    stops: [top, mixColors(top, bottom, 0.5), bottom],
+    shapes: scene.shapes.map((s) => s.color[mode]),
+  };
+}
+
+describe('scènes des fonds d’écran (WCAG 2.2 AA)', () => {
+  it('chaque fond, sauf le fond uni, a sa scène', () => {
+    expect(Object.keys(SCENES).sort()).toEqual(
+      Object.keys(BACKGROUNDS)
+        .filter((c) => c !== 'uni')
+        .sort(),
+    );
+  });
+  for (const [code, scene] of Object.entries(SCENES) as [string, Scene][]) {
     for (const mode of ['light', 'dark'] as const) {
-      it(`${code} (${mode}) : texte et couleur principale lisibles directement sur le fond`, () => {
-        for (const fg of ['text', 'textSecondary', 'primary'] as const) {
-          expect(contrastRatio(Colors[mode][fg], theme.tint[mode]), fg).toBeGreaterThanOrEqual(4.5);
+      it(`${code} (${mode}) : texte lisible sur le dégradé et sur les formes`, () => {
+        const { stops, shapes } = sceneColors(scene, mode);
+        for (const bg of [...stops, ...shapes]) {
+          for (const fg of ['text', 'textSecondary'] as const) {
+            expect(contrastRatio(Colors[mode][fg], bg), `${fg} sur ${bg}`).toBeGreaterThanOrEqual(4.5);
+          }
+        }
+        for (const bg of stops) {
+          expect(contrastRatio(Colors[mode].primary, bg), `primary sur ${bg}`).toBeGreaterThanOrEqual(4.5);
         }
       });
     }
@@ -62,11 +85,13 @@ describe('teintes des fonds d’écran (WCAG 2.2 AA)', () => {
 });
 
 describe('couleur préférée sur chaque fond d’écran', () => {
-  it('la couleur principale choisie reste lisible sur toutes les teintes', () => {
+  it('la couleur principale choisie reste lisible sur tous les dégradés', () => {
     for (const palette of Object.values(CHILD_PALETTES)) {
-      for (const theme of Object.values(BACKGROUNDS)) {
+      for (const scene of Object.values(SCENES) as Scene[]) {
         for (const mode of ['light', 'dark'] as const) {
-          expect(contrastRatio(palette[mode].primary, theme.tint[mode])).toBeGreaterThanOrEqual(4.5);
+          for (const bg of sceneColors(scene, mode).stops) {
+            expect(contrastRatio(palette[mode].primary, bg), bg).toBeGreaterThanOrEqual(4.5);
+          }
         }
       }
     }

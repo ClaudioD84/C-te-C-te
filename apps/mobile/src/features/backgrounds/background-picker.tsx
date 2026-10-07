@@ -16,6 +16,8 @@ import { MinTouchSize, Spacing } from '@/constants/theme';
 import { useSetBackground, type StoredChildProfile } from '@/features/profiles/api';
 import { useTheme } from '@/hooks/use-theme';
 
+import { BackgroundScene } from './background-scene';
+
 const STAGE_NAMES = Object.fromEntries(AVATAR_STAGES.map((s) => [s.level, s.name]));
 
 /** L'enfant choisit son fond d'écran : ceux de son âge, ses centres d'intérêt d'abord. */
@@ -54,9 +56,16 @@ export function BackgroundPicker({ child, summary }: { child: StoredChildProfile
                 { borderColor: selected ? theme.primary : theme.backgroundSelected },
                 selected && styles.selected,
               ]}>
-              <ThemedText style={[styles.emoji, !unlocked && styles.locked]} aria-hidden>
-                {unlocked ? bg.motifs.slice(0, 2).join('') || '⬜' : '🔒'}
-              </ThemedText>
+              {/* Aperçu de la scène, avec un cadenas tant que le fond n'est pas débloqué. */}
+              <View
+                style={[styles.preview, { backgroundColor: theme.background, borderColor: theme.border }]}>
+                {code !== 'uni' ? <BackgroundScene code={code} /> : null}
+                {!unlocked ? (
+                  <ThemedText style={styles.lock} aria-hidden>
+                    🔒
+                  </ThemedText>
+                ) : null}
+              </View>
               <ThemedText type="small" style={styles.label}>
                 {bg.label}
               </ThemedText>
@@ -77,7 +86,7 @@ const styles = StyleSheet.create({
   card: { padding: Spacing.three, borderRadius: Spacing.three, gap: Spacing.two },
   grid: { flexDirection: 'row', flexWrap: 'wrap', gap: Spacing.two },
   item: {
-    width: 104,
+    width: 112,
     minHeight: MinTouchSize,
     alignItems: 'center',
     padding: Spacing.two,
@@ -85,7 +94,15 @@ const styles = StyleSheet.create({
     borderWidth: 2,
   },
   selected: { borderWidth: 3 },
-  emoji: { fontSize: 28, lineHeight: 36 },
-  locked: { opacity: 0.55 },
+  preview: {
+    width: 96,
+    height: 64,
+    borderRadius: Spacing.two,
+    borderWidth: 1,
+    overflow: 'hidden',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  lock: { fontSize: 24, lineHeight: 30 },
   label: { textAlign: 'center' },
 });

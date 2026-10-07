@@ -115,8 +115,9 @@ devoirs et deux semaines de suivi, et « Emma » (2e maternelle).
   **2 jokers** par semaine ; dans « Mes badges » : **Ce que je sais**, **album des animaux de Belgique**,
   **trésors** trouvés.
 - **Avatar** (touchez la graine) : badges, **accessoires** débloqués par l'effort, **couleur préférée**,
-  **fond d'écran** (selon l'âge et les centres d'intérêt, motif discret, « Arc-en-ciel » et « Aurore
-  boréale » à débloquer ; plus pâle pour un profil TDAH), **diplômes** à imprimer.
+  **fond d'écran** (scènes illustrées selon l'âge et les centres d'intérêt, aperçu de chaque scène, « Arc-en-ciel »
+  et « Aurore boréale » à débloquer ; plus discret pour un profil TDAH ; sur tablette, le décor se voit
+  de part et d'autre du contenu), **diplômes** à imprimer.
 - **🎈 Coin détente** (mission faite, ou « Un petit jeu » pendant la pause du minuteur) : memory (avec
   ses centres d'intérêt), coloriage de mandalas, taquin, mots mêlés (avec ses mots de dictée), sudoku
   (formes pour les petits), bulles à éclater. Sans chrono ni score ; un trésor par jour ; 10 min par jour
