@@ -92,7 +92,7 @@ export type ChildPreferences = z.infer<typeof childPreferencesSchema>;
 
 export const childProfileSchema = z
   .object({
-    /** Pseudonyme : le vrai nom de l'enfant n'est jamais stocké sur le serveur. */
+    /** Prénom de l'enfant (champ « alias » en base) : jamais de nom de famille, jamais envoyé à l'IA. */
     alias: z.string().trim().min(2, 'Au moins 2 caractères').max(30, '30 caractères maximum'),
     avatar: z.string().min(1).default('lion'),
     grade: gradeSchema,

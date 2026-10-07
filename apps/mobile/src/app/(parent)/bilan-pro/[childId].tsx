@@ -36,7 +36,7 @@ type Period = 'trimestre' | 'annee';
 
 /**
  * Bilan pour un professionnel (logopède, PMS, enseignant) : le parent choisit la période et chaque partie
- * du document, puis l'imprime ou le partage en PDF. Pseudonyme seulement.
+ * du document, puis l'imprime ou le partage en PDF. Prénom seulement, pas de nom de famille.
  */
 export default function ProReportScreen() {
   const { childId = '' } = useLocalSearchParams<{ childId: string }>();
@@ -88,7 +88,7 @@ export default function ProReportScreen() {
       <ThemedText type="subtitle">Bilan pour un professionnel</ThemedText>
       <ThemedText themeColor="textSecondary">
         Pour un logopède, le centre PMS ou l’enseignant de {profile.alias} : un document des faits observés à
-        la maison. Vous choisissez ce qu’il contient ; seul le pseudonyme y figure.
+        la maison. Vous choisissez ce qu’il contient ; seul son prénom y figure.
       </ThemedText>
       <ChoiceChips
         label="Période"

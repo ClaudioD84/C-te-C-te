@@ -18,7 +18,7 @@ test('essai, achat simulé de la formule Solo et limite d’un enfant', async ({
 
   for (const alias of ['Ours', 'Loup']) {
     await button(page, 'Ajouter un enfant').click();
-    await page.getByLabel("Pseudonyme de l'enfant").fill(alias);
+    await page.getByLabel("Prénom de l'enfant").fill(alias);
     await button(page, 'Enregistrer').click();
     if (alias === 'Ours') await expect(childTitle(page, 'Ours')).toBeVisible();
   }

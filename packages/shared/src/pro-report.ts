@@ -5,7 +5,7 @@ import type { SubjectProgress } from './progress';
 
 /**
  * Bilan pour un professionnel (logopède, PMS, enseignant) : un document du trimestre que le parent compose
- * lui-même (il choisit chaque partie). Pseudonyme seulement ; les besoins particuliers n'y figurent que si
+ * lui-même (il choisit chaque partie). Prénom seulement ; les besoins particuliers n'y figurent que si
  * le parent les coche. Des faits observés, sans jugement ni diagnostic.
  */
 export const PRO_REPORT_SECTIONS = ['effort', 'matieres', 'aide', 'lecture', 'besoins'] as const;

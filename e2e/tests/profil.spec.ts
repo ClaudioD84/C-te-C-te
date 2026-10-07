@@ -7,7 +7,7 @@ test('modification du profil, retrait du consentement et suppression', async ({ 
   const { childId } = await addChild(page, email, 'Renard', { needs: ['TDAH'] });
 
   await button(page, 'Modifier le profil').click();
-  await page.getByLabel("Pseudonyme de l'enfant").fill('Grand Renard');
+  await page.getByLabel("Prénom de l'enfant").fill('Grand Renard');
   // Ajouter un besoin demande un nouvel accord.
   await page.getByRole('checkbox', { name: 'Dyslexie' }).click();
   await expect(page.getByRole('checkbox', { name: /J'accepte/ })).toBeVisible();

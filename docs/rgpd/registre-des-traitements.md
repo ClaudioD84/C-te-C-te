@@ -14,17 +14,17 @@
 
 - **Parents** (titulaires du compte, majeurs).
 - **Enfants** (de la 1re maternelle à la fin du secondaire), qui n'ont pas de compte : ils utilisent la console
-  enfant sur l'appareil du parent ou un appareil confié par lui, sous un **pseudonyme**.
+  enfant sur l'appareil du parent ou un appareil confié par lui, sous son **prénom** (sans nom de famille).
 
 ## Sous-traitants et destinataires
 
 | Prestataire | Rôle | Données | Lieu de traitement |
 |---|---|---|---|
 | Supabase Inc. | Hébergement de la base, des fichiers, de l'authentification et des fonctions serveur | Toutes les données du compte | Union européenne (Francfort) ; société mère aux États-Unis [vérifier le DPA et les transferts] |
-| Anthropic PBC | IA : lecture des photos, préparation des fiches et quiz, dossiers de révision | Photo masquée, texte des tâches, année et type d'enseignement, consignes d'adaptation, attendus du programme. **Ni nom, ni pseudonyme, ni e-mail, ni trouble nommé.** | États-Unis [transfert à encadrer] |
+| Anthropic PBC | IA : lecture des photos, préparation des fiches et quiz, dossiers de révision | Photo masquée, texte des tâches, année et type d'enseignement, consignes d'adaptation, attendus du programme. **Ni nom, ni prénom, ni e-mail, ni trouble nommé.** | États-Unis [transfert à encadrer] |
 | RevenueCat Inc. | Gestion des abonnements App Store et Google Play | Identifiant technique de la famille, achats et dates | États-Unis [transfert à encadrer] |
 | Apple, Google | Paiement des abonnements, distribution de l'application | Données de paiement (traitées par eux, en tant que responsables distincts) | Selon leurs conditions |
-| Brevo (Sendinblue SAS, France) | E-mails de compte (confirmation, mot de passe oublié, avertissement d'inactivité) et bilan de la semaine (sur demande) | Adresse e-mail du parent ; pour le bilan : pseudonymes des enfants, jours, minutes et matières travaillées | Union européenne |
+| Brevo (Sendinblue SAS, France) | E-mails de compte (confirmation, mot de passe oublié, avertissement d'inactivité) et bilan de la semaine (sur demande) | Adresse e-mail du parent ; pour le bilan : prénoms des enfants, jours, minutes et matières travaillées | Union européenne |
 
 Aucune donnée n'est vendue, louée ni utilisée à des fins publicitaires. Aucun outil d'analyse d'audience.
 
@@ -46,9 +46,9 @@ Aucune donnée n'est vendue, louée ni utilisée à des fins publicitaires. Aucu
 |---|---|
 | Finalité | Adapter l'organisation du travail et les contenus à l'année scolaire et au profil de l'enfant |
 | Base légale | Exécution du contrat (art. 6.1.b) |
-| Données | Pseudonyme, avatar, année, type d'enseignement, réseau, options, préférences (jours, durée de travail, centres d'intérêt choisis dans une liste fermée), congés et absences (dates et type, sans motif détaillé) |
+| Données | Prénom (sans nom de famille), avatar, année, type d'enseignement, réseau, options, préférences (jours, durée de travail, centres d'intérêt choisis dans une liste fermée), congés et absences (dates et type, sans motif détaillé) |
 | Conservation | Durée du compte ; suppression du profil ou du compte à tout moment |
-| Remarque | Le vrai prénom de l'enfant n'est jamais demandé. La liste des noms à masquer sur les photos reste sur l'appareil (stockage chiffré) |
+| Remarque | Le nom de famille de l'enfant n'est jamais demandé ; son prénom n'est jamais envoyé à l'IA. Les prénoms des enfants et la liste des noms à masquer servent à masquer les photos sur l'appareil, avant tout envoi (liste stockée chiffrée sur l'appareil) |
 
 ### T3 — Besoins particuliers (données de santé, art. 9)
 

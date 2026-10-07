@@ -29,8 +29,7 @@ export default function NoteScreen() {
     <Screen>
       <ThemedText type="subtitle">Un petit mot pour {alias}</ThemedText>
       <ThemedText themeColor="textSecondary">
-        Il s’affichera en haut de sa mission, avec la lecture à voix haute. Pas de prénom : son pseudonyme
-        suffit.
+        Il s’affichera en haut de sa mission, avec la lecture à voix haute.
       </ThemedText>
       <ChoiceChips
         label="Idées"

@@ -44,7 +44,7 @@ export async function replaceScheduledReminders(reminders: readonly Reminder[]):
   for (const reminder of reminders) {
     await Notifications.scheduleNotificationAsync({
       identifier: reminder.id,
-      // Texte sobre : il peut s'afficher sur l'écran verrouillé (aucune donnée de santé, seulement le pseudonyme).
+      // Texte sobre : il peut s'afficher sur l'écran verrouillé (aucune donnée de santé, seulement le prénom).
       content: { title: reminder.title, body: reminder.body },
       trigger: {
         type: Notifications.SchedulableTriggerInputTypes.DATE,

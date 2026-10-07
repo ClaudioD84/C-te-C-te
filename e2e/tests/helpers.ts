@@ -37,7 +37,7 @@ export async function signUp(page: Page, prefix: string): Promise<string> {
   return email;
 }
 
-/** Titre de la carte d'un enfant dans le cockpit : « <avatar> <pseudonyme> ». */
+/** Titre de la carte d'un enfant dans le cockpit : « <avatar> <prénom> ». */
 export function childTitle(page: Page, alias: string) {
   return page.getByRole('heading', {
     name: new RegExp(`^\\S+ ${alias.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}$`),
@@ -51,7 +51,7 @@ export function familyOf(email: string): string {
   );
 }
 
-/** Enfant d'une famille, par son pseudonyme (les tests tournent en parallèle sur la même base). */
+/** Enfant d'une famille, par son prénom (les tests tournent en parallèle sur la même base). */
 export function childOf(email: string, alias: string): string {
   return sql(`select id from child_profile where family_id = '${familyOf(email)}' and alias = '${alias}'`);
 }
@@ -63,7 +63,7 @@ export async function addChild(
   { grade = '5e primaire', needs = [] as string[] } = {},
 ): Promise<{ childId: string; familyId: string }> {
   await button(page, 'Ajouter un enfant').click();
-  await page.getByLabel("Pseudonyme de l'enfant").fill(alias);
+  await page.getByLabel("Prénom de l'enfant").fill(alias);
   await page.getByRole('radio', { name: grade }).click();
   for (const need of needs) await page.getByRole('checkbox', { name: need }).click();
   if (needs.length > 0) await page.getByRole('checkbox', { name: /J'accepte/ }).click();

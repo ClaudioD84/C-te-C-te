@@ -54,7 +54,7 @@ CEB, CE1D, CE2D ou bilans de fin de période : créez un dossier de révision, l
 revoir et les répartit jusqu'au jour J.
 
 VOS DONNÉES PROTÉGÉES
-Votre enfant est identifié par un pseudonyme. Données hébergées dans l'Union européenne. Photos supprimées après
+Seul le prénom de votre enfant est demandé, jamais son nom de famille. Données hébergées dans l'Union européenne. Photos supprimées après
 lecture. Aucune publicité, aucune revente de données. Export et suppression de votre compte depuis l'application.
 
 ABONNEMENT

@@ -55,7 +55,7 @@ export function FirstSteps({ profiles }: { profiles: readonly StoredChildProfile
     {
       done: profiles.length > 0,
       title: 'Ajouter votre enfant',
-      detail: 'Un pseudonyme suffit, jamais son vrai nom.',
+      detail: 'Son prénom, son année et ses besoins éventuels.',
       action: { label: 'Ajouter mon premier enfant', onPress: () => router.push('/profils/nouveau') },
     },
     {

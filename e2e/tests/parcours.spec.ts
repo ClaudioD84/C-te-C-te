@@ -23,7 +23,7 @@ test('parcours complet : profil, planning, fiches, console enfant, suivi, dossie
 
   await test.step('profil avec besoin particulier : consentement obligatoire', async () => {
     await button(page, 'Ajouter un enfant').click();
-    await page.getByLabel("Pseudonyme de l'enfant").fill('Petit Lion');
+    await page.getByLabel("Prénom de l'enfant").fill('Petit Lion');
     await page.getByRole('radio', { name: '5e primaire' }).click();
     await page.getByRole('checkbox', { name: 'TDAH' }).click();
     await expect(button(page, 'Enregistrer')).toBeDisabled();

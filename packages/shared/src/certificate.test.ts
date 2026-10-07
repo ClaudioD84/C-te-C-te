@@ -3,7 +3,7 @@ import { describe, expect, it } from 'vitest';
 import { buildCertificateHtml } from './certificate';
 
 describe('diplôme', () => {
-  it('reprend le badge et le pseudonyme, échappe le texte', () => {
+  it('reprend le badge et le prénom, échappe le texte', () => {
     const html = buildCertificateHtml({
       alias: 'Lion <script>',
       avatar: '🦁',

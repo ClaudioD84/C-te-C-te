@@ -158,7 +158,7 @@ sequenceDiagram
 
 Points clés :
 
-- La **liste des noms à masquer** (vrai prénom de l'enfant, nom de l'école, enseignants) est saisie par le parent et **reste sur l'appareil**. Elle ne quitte jamais le téléphone.
+- La **liste des noms à masquer** (nom de famille, nom de l'école, enseignants) est saisie par le parent et **reste sur l'appareil**. Elle ne quitte jamais le téléphone. Les **prénoms des enfants** du profil y sont ajoutés automatiquement.
 - L'extraction utilise les **sorties structurées** de l'API Claude (`output_config.format` avec un schéma JSON) pour obtenir une liste de tâches toujours valide.
 - La photo est supprimée du stockage dès la fin du traitement. En cas d'échec, elle est conservée pour permettre de réessayer, et supprimée si le parent abandonne (une tâche de nettoyage planifiée reste à mettre en place pour les photos oubliées).
 - La réservation de la photo (`claim_scan`) est atomique : deux analyses de la même photo ne peuvent pas tourner en même temps ; une analyse interrompue peut être relancée après 150 s.
@@ -249,7 +249,7 @@ Algorithme déterministe (`packages/shared/src/planning.ts`), exécuté dans l'a
 - Calcul pur et testé (`packages/shared/src/reminders.ts`), au plus 50 rappels programmés (limite iOS : 64).
   Reprogrammation à l'ouverture de l'application, au retour au premier plan, après la publication d'un
   planning, la validation d'une photo et la création d'un dossier de révision ; effacement à la déconnexion.
-- Contenu sobre (écran verrouillé) : pseudonyme et matière seulement, jamais de donnée de santé.
+- Contenu sobre (écran verrouillé) : prénom et matière seulement, jamais de donnée de santé.
 
 ## 10. Accessibilité dans l'application (F12)
 
@@ -287,7 +287,7 @@ Algorithme déterministe (`packages/shared/src/planning.ts`), exécuté dans l'a
 |---|---|
 | Hébergement | Supabase région UE (Francfort) |
 | Accès aux données | RLS sur toutes les tables : un parent ne voit que sa famille |
-| Pseudonymisation | Alias pour les enfants ; liste des vrais noms uniquement sur l'appareil |
+| Minimisation | Prénom seulement pour les enfants (jamais de nom de famille, jamais envoyé à l'IA) ; prénoms et autres noms masqués sur les photos avant envoi ; liste des noms à masquer uniquement sur l'appareil |
 | Conservation | Fonction `purge-inactive` (tâche quotidienne) : journal de l'effort de plus de 2 ans, comptes inactifs depuis 24 mois (dernière ouverture enregistrée par `touch_family_activity`) avertis par e-mail puis supprimés 30 jours plus tard |
 | Photos | Masquées avant envoi, stockage privé, suppression après traitement ; fonction `purge-photos` (tâche quotidienne) pour celles restées plus de 24 h |
 | Données de santé | Consentement explicite et horodaté (renouvelé à chaque besoin ajouté, effacé au retrait) ; les requêtes IA ne contiennent que les consignes d'adaptation, jamais le trouble |

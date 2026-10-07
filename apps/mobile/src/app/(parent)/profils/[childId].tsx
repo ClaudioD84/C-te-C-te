@@ -57,7 +57,7 @@ function EditForm({ child }: { child: StoredChildProfile }) {
   async function save() {
     try {
       await update.mutateAsync(form.values);
-      // Le pseudonyme figure dans le texte des rappels.
+      // Le prénom figure dans le texte des rappels.
       void syncReminders();
       router.back();
     } catch {

@@ -103,7 +103,7 @@ signifie : proposée dès la 1re maternelle.
   culturelle et artistique a été mal découpée à l'import (texte de plusieurs colonnes mélangé). Je propose de
   corriger ce découpage avant de développer le mode maternelle.
 - **Prénom de l'enfant** : l'activité « Les lettres de mon prénom » se fait sur la table, l'application ne
-  demande ni ne garde jamais le prénom (le pseudonyme reste la règle).
+  demande ni ne garde jamais le nom de famille (le prénom du profil suffit).
 - **Écran** : à cet âge, la recommandation courante est de limiter fortement les écrans ; d'où le choix d'un
   parent qui lit l'activité et d'une console enfant facultative.
 

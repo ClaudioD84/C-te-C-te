@@ -54,7 +54,7 @@ Trois principes guident le produit :
 ## 4. Comptes, profils et rôles
 
 - **Compte parent** : créé avec une adresse e-mail. Il porte l'abonnement et donne accès au cockpit parent.
-- **Profils enfants** : un ou plusieurs par compte (selon la formule). Chaque profil est identifié par un **alias** (ex. « Petit Lion »), jamais par le vrai nom.
+- **Profils enfants** : un ou plusieurs par compte (selon la formule). Chaque profil est identifié par le **prénom** de l'enfant (ex. « Léa »), jamais par son nom de famille.
 - **Informations d'un profil enfant** :
   - alias et avatar ;
   - année scolaire (ex. P4, S2) et type d'enseignement ;
@@ -72,7 +72,7 @@ Chaque fonctionnalité porte un identifiant et une **étape de livraison** (voir
 
 - Création et modification des profils décrits en section 4.
 - Les besoins particuliers ajustent automatiquement : la durée des sessions, la mise en forme (police, espacements), le type d'exercices et le volume de travail.
-- **Critères d'acceptation** : un parent crée un profil en moins de 2 minutes ; aucun vrai nom n'est demandé.
+- **Critères d'acceptation** : un parent crée un profil en moins de 2 minutes ; aucun nom de famille n'est demandé.
 
 ### F2 — Synchronisation avec le programme officiel *(étape 1 pour le socle, enrichi ensuite)*
 
@@ -155,7 +155,7 @@ Chaque fonctionnalité porte un identifiant et une **étape de livraison** (voir
 
 ### 6.1 Vie privée et RGPD
 
-- Les enfants sont identifiés par un **alias** (pseudonymisation).
+- Les enfants sont identifiés par leur **prénom**, jamais leur nom de famille ; le prénom n'est jamais envoyé à l'IA et il est masqué sur les photos.
 - Les besoins particuliers sont des **données de santé** : consentement explicite du parent, chiffrement, accès strictement limité.
 - Hébergement des données **dans l'Union européenne**.
 - Floutage des noms sur les photos avant tout envoi à l'IA ; photos supprimées après traitement.
@@ -231,7 +231,7 @@ Chaque fonctionnalité porte un identifiant et une **étape de livraison** (voir
 | Erreurs dans les exercices générés | Perte de confiance | Génération ancrée sur le programme, signalement, relecture humaine plus tard |
 | Structuration des référentiels très longue | Retard | Commencer par le primaire, outillage d'import semi-automatique |
 | Coût de l'IA plus élevé que prévu | Marge réduite | Limites d'usage, mise en cache, traitements groupés, mesure dès la bêta |
-| Données de santé de mineurs | Risque juridique | Pseudonymisation, hébergement UE, AIPD, juriste avant lancement |
+| Données de santé de mineurs | Risque juridique | Minimisation (prénom seulement, rien d'identifiant envoyé à l'IA), hébergement UE, AIPD, juriste avant lancement |
 | Un seul développeur | Délais, maintenance | Services gérés (Supabase, Expo, RevenueCat), périmètre par étapes |
 
 ## 10. Questions ouvertes

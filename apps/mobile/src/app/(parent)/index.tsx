@@ -161,7 +161,7 @@ export default function CockpitScreen() {
 
       {children?.length === 0 ? (
         <ThemedText themeColor="textSecondary">
-          Ajoutez un premier profil pour commencer. Seul un pseudonyme est demandé.
+          Ajoutez un premier profil pour commencer : son prénom et son année suffisent.
         </ThemedText>
       ) : null}
       {children && children.length >= 2 ? <SiblingCard /> : null}

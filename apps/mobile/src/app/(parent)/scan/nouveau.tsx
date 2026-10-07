@@ -13,6 +13,7 @@ import { submitScan, useFamilyId } from '@/features/scan/api';
 import { prepareImage, type PreparedImage } from '@/features/scan/image';
 import { MaskEditor } from '@/features/scan/mask-editor';
 import { recognizeWords } from '@/features/scan/ocr';
+import { useChildProfiles } from '@/features/profiles/api';
 import { getSensitiveNames } from '@/features/scan/sensitive-names';
 
 const DOCUMENT_LABELS: Record<DocumentType, string> = {
@@ -30,6 +31,8 @@ interface Detection {
 export default function NewScanScreen() {
   const { childId } = useLocalSearchParams<{ childId: string }>();
   const { data: familyId } = useFamilyId();
+  // Les prénoms des enfants sont toujours masqués, en plus des noms ajoutés par le parent.
+  const profiles = useChildProfiles();
   const [documentType, setDocumentType] = useState<DocumentType>('journal_de_classe');
   const [image, setImage] = useState<PreparedImage | null>(null);
   const [boxes, setBoxes] = useState<Box[]>([]);
@@ -58,7 +61,8 @@ export default function NewScanScreen() {
     setBusy('preparation');
     try {
       const prepared = await prepareImage(asset.uri, asset.width, asset.height);
-      const [words, names] = await Promise.all([recognizeWords(prepared.uri), getSensitiveNames()]);
+      const [words, extraNames] = await Promise.all([recognizeWords(prepared.uri), getSensitiveNames()]);
+      const names = [...new Set([...(profiles.data ?? []).map((c) => c.alias), ...extraNames])];
       const found = words ? findSensitiveBoxes(words, names, prepared.width, prepared.height) : [];
       setImage(prepared);
       setBoxes(found);

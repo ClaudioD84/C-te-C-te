@@ -18,7 +18,7 @@ données nécessaire, nous ne les vendons jamais et nous ne faisons pas de publi
 **Votre compte** : votre adresse e-mail et votre mot de passe (stocké sous une forme illisible), pour vous
 connecter.
 
-**Le profil de vos enfants** : un **pseudonyme** (nous ne demandons jamais le vrai prénom), l'année scolaire, le
+**Le profil de vos enfants** : son **prénom** (jamais son nom de famille ; le prénom n'est jamais transmis à l'IA), l'année scolaire, le
 type d'enseignement et vos préférences (jours de travail, durée des séances). Ils servent à organiser la semaine
 et à adapter les exercices au programme.
 
@@ -61,7 +61,7 @@ propre compte :
 
 - **Supabase** : hébergement, dans l'**Union européenne** (Francfort) ;
 - **Anthropic** : intelligence artificielle (lecture des photos masquées, préparation des fiches). Les demandes ne
-  contiennent ni nom, ni pseudonyme, ni adresse e-mail, ni trouble nommé ;
+  contiennent ni nom, ni prénom, ni adresse e-mail, ni trouble nommé ;
 - **RevenueCat** : gestion des abonnements de l'App Store et de Google Play, avec un identifiant technique ;
 - **Brevo** (France, données dans l'Union européenne) : envoi des e-mails liés au compte.
 
@@ -93,7 +93,7 @@ protection des données**, rue de la Presse 35, 1000 Bruxelles (www.autoriteprot
 ## Les enfants
 
 L'application est destinée aux parents. Les enfants n'ont pas de compte : ils utilisent la console enfant, sous
-leur pseudonyme, sur un appareil confié par leur parent, qui garde le code parent.
+leur prénom, sur un appareil confié par leur parent, qui garde le code parent.
 
 ## Sécurité
 

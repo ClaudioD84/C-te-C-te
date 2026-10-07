@@ -101,14 +101,15 @@ export function ProfileFields({ values, setValues, consent, setConsent, needsCon
   return (
     <>
       <TextField
-        label="Pseudonyme de l'enfant"
-        placeholder="Ex. Petit Lion"
+        label="Prénom de l'enfant"
+        placeholder="Ex. Léa"
         value={values.alias}
         onChangeText={(alias) => setValues((v) => ({ ...v, alias }))}
         maxLength={30}
       />
       <ThemedText type="small" themeColor="textSecondary">
-        N&apos;indiquez pas son vrai prénom : le pseudonyme protège ses données.
+        Il s’affiche sur sa console. Il n’est jamais envoyé à l’IA et il est masqué automatiquement sur les
+        photos du journal de classe.
       </ThemedText>
 
       <ChoiceChips

@@ -34,7 +34,7 @@ Flux principaux :
 | Principe | Mise en œuvre |
 |---|---|
 | Finalités déterminées | Organisation du travail scolaire et préparation de supports d'étude ; aucune publicité, aucune revente |
-| Minimisation | Pseudonyme au lieu du nom ; aucune date de naissance, adresse ni école demandée ; besoins particuliers facultatifs ; trouble jamais transmis à l'IA ; photo masquée avant envoi |
+| Minimisation | Prénom seulement, jamais de nom de famille ; prénom jamais envoyé à l'IA et masqué automatiquement sur les photos ; aucune date de naissance, adresse ni école demandée ; besoins particuliers facultatifs ; trouble jamais transmis à l'IA ; photo masquée avant envoi |
 | Exactitude | Le parent valide chaque tâche extraite et peut signaler une erreur dans un contenu généré |
 | Limitation de la conservation | Photo supprimée dès l'analyse (24 h au plus) ; journal de l'effort effacé après 2 ans ; comptes inactifs depuis 24 mois supprimés après avertissement |
 | Base légale | Contrat pour le service ; consentement explicite, horodaté et facultatif pour les besoins particuliers |
@@ -51,7 +51,7 @@ Flux principaux :
 | Accès illégitime aux données d'une famille (piratage, erreur de cloisonnement) | Attaquant, défaut logiciel | RLS sur toutes les tables et tests de cloisonnement ; clés côté serveur ; HTTPS ; mots de passe hachés ; journalisation de l'hébergeur | 3 (données de santé d'enfants) | 1 |
 | Divulgation de l'identité de l'enfant via les photos | Noms visibles sur le journal | Masquage sur l'appareil avant envoi ; liste des noms jamais envoyée ; photo supprimée après analyse | 3 | 2 (masquage automatique imparfait, contrôlé par le parent) |
 | Réutilisation des données par le fournisseur d'IA | Sous-traitant | Requêtes sans identité ni trouble nommé ; DPA ; vérification de la non-utilisation pour l'entraînement et de la durée de conservation (plan d'action) | 2 | 1 |
-| Accès par des autorités étrangères (transferts vers les États-Unis) | Législation étrangère | Données envoyées minimisées et pseudonymisées ; encadrement des transferts (DPF ou clauses types) ; hébergement principal dans l'UE | 2 | 1 |
+| Accès par des autorités étrangères (transferts vers les États-Unis) | Législation étrangère | Données envoyées minimisées (ni prénom, ni nom, ni e-mail, ni trouble nommé) ; encadrement des transferts (DPF ou clauses types) ; hébergement principal dans l'UE | 2 | 1 |
 | Accès de l'enfant à l'espace parent (et aux données de santé) | Usage partagé de l'appareil | Code parent pour quitter la console enfant ; la console n'affiche ni les besoins ni les réglages | 2 | 1 |
 | Perte de l'appareil | Vol, oubli | Données sensibles en stockage chiffré ; cache limité (7 jours) ; déconnexion à distance possible en changeant le mot de passe [à vérifier] | 2 | 2 |
 | Effet néfaste des contenus ou de la gamification (pression, comparaison) | Conception | Récompenses fondées sur l'effort et non la note ; pas de classement ; contenus ancrés sur le programme ; signalement des erreurs ; validation du parent | 2 | 1 |
