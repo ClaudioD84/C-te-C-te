@@ -1,6 +1,6 @@
 import { expect, test } from '@playwright/test';
 
-import { addChild, button, enterChildMode, signUp, sql } from './helpers';
+import { addChild, button, enterChildMode, signUp, sql, openTools } from './helpers';
 
 test('coin détente : jeux calmes après la mission, limités par jour, sans points d’effort', async ({
   page,
@@ -10,6 +10,7 @@ test('coin détente : jeux calmes après la mission, limités par jour, sans poi
   const { childId, familyId } = await addChild(page, email, 'Loutre');
 
   // Le parent règle la durée (10 minutes par défaut).
+  await openTools(page, 'Loutre');
   await button(page, 'Modifier le profil').click();
   const relax = page.getByRole('radiogroup', { name: /^Coin détente/ });
   await expect(relax.getByRole('radio', { name: '10 min', exact: true })).toHaveAttribute(

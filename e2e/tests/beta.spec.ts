@@ -1,6 +1,6 @@
 import { expect, test } from '@playwright/test';
 
-import { button, familyOf, signUp, sql, uniqueEmail } from './helpers';
+import { addChild, button, familyOf, openTools, signUp, sql, uniqueEmail } from './helpers';
 
 test('donner mon avis : depuis l’en-tête, avec l’écran d’origine', async ({ page }) => {
   const email = await signUp(page, 'avis');
@@ -30,5 +30,23 @@ test('inscription en bêta privée : le code d’invitation est demandé', async
   await expect(button(page, 'Créer mon compte')).toBeDisabled();
   await page.getByLabel('Code d’invitation').fill('famille-01');
   await button(page, 'Créer mon compte').click();
+  await expect(page.getByText('Vos enfants')).toBeVisible();
+});
+
+test('devoir ajouté à la main, sans photo : validé tout de suite', async ({ page }) => {
+  const email = await signUp(page, 'manuel');
+  const { childId } = await addChild(page, email, 'Écureuil');
+  await openTools(page, 'Écureuil');
+  await button(page, 'Ajouter un devoir à la main pour Écureuil').click();
+  await page.getByLabel('Matière').fill('Mathématiques');
+  await page.getByLabel('À faire').fill('Apprendre la table de 7');
+  await button(page, 'Enregistrer').click();
+  await expect(page.getByText('✓ Ajouté : Mathématiques : Apprendre la table de 7')).toBeVisible();
+  // Le formulaire est prêt pour le suivant.
+  await expect(page.getByLabel('Matière')).toHaveValue('');
+  expect(sql(`select status || ' ' || (scan_id is null) from task where child_id = '${childId}'`)).toBe(
+    'validated true',
+  );
+  await button(page, 'Terminé').click();
   await expect(page.getByText('Vos enfants')).toBeVisible();
 });

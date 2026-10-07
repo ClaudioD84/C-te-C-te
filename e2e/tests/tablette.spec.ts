@@ -9,6 +9,7 @@ import {
   signUp,
   sql,
   uniqueEmail,
+  openTools,
 } from './helpers';
 
 import { GATEWAY_URL, supabaseStatus } from '../support/supabase.mjs';
@@ -47,6 +48,7 @@ test('tablette de l’enfant : reliée par code, console seule, retirée par le 
   await page.goBack();
 
   // Le parent demande un code depuis le profil de l'enfant.
+  await openTools(page, 'Loutre');
   await button(page, 'Modifier le profil').click();
   await button(page, 'Tablette de l’enfant').click();
   await expect(page.getByText('Aucune pour l’instant.')).toBeVisible();

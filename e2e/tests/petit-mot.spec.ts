@@ -1,11 +1,12 @@
 import { expect, test } from '@playwright/test';
 
-import { addChild, button, enterChildMode, signUp, sql } from './helpers';
+import { addChild, button, enterChildMode, signUp, sql, openTools } from './helpers';
 
 test('petit mot du parent : affiché sur la console, lu par l’enfant', async ({ page }) => {
   const email = await signUp(page, 'petit-mot');
   const { childId } = await addChild(page, email, 'Panda');
 
+  await openTools(page, 'Panda');
   await button(page, 'Écrire un petit mot à Panda').click();
   await page.getByRole('radio', { name: 'Tu progresses, continue comme ça !' }).click();
   await expect(page.getByLabel('Votre mot')).toHaveValue('Tu progresses, continue comme ça !');

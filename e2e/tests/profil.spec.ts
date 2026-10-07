@@ -1,11 +1,12 @@
 import { expect, test } from '@playwright/test';
 
-import { addChild, button, signUp, sql, childTitle } from './helpers';
+import { addChild, button, signUp, sql, childTitle, openTools } from './helpers';
 
 test('modification du profil, retrait du consentement et suppression', async ({ page }) => {
   const email = await signUp(page, 'profil');
   const { childId } = await addChild(page, email, 'Renard', { needs: ['TDAH'] });
 
+  await openTools(page, 'Renard');
   await button(page, 'Modifier le profil').click();
   await page.getByLabel("Prénom de l'enfant").fill('Grand Renard');
   // Ajouter un besoin demande un nouvel accord.

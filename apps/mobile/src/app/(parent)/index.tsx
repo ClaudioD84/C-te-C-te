@@ -1,5 +1,6 @@
 import { currentHoliday, GRADE_LABELS, NEED_LABELS, schoolLevel, toIsoDate } from '@cote-a-cote/shared';
 import { Link, router } from 'expo-router';
+import { useState } from 'react';
 import { ActivityIndicator, StyleSheet, View } from 'react-native';
 
 import { Button } from '@/components/button';
@@ -27,6 +28,7 @@ function ChildCard({ child }: { child: StoredChildProfile }) {
   const holiday = currentHoliday(daysOff.data ?? [], toIsoDate(new Date()));
   const todaySessions = useSessions(child.id, toIsoDate(new Date()), 1);
   const missionDone = todaySessions.data?.[0]?.status === 'done';
+  const [toolsOpen, setToolsOpen] = useState(false);
 
   async function launchMission() {
     // Le code parent est obligatoire avant de confier l'appareil à l'enfant.
@@ -74,14 +76,8 @@ function ChildCard({ child }: { child: StoredChildProfile }) {
           onPress={() => router.push({ pathname: '/scan/nouveau', params: { childId: child.id } })}
         />
       )}
-      {/* Actions secondaires sur deux colonnes : la carte reste courte. */}
+      {/* L'essentiel sur deux colonnes ; le reste dans « Plus d'outils » : la carte reste courte. */}
       <View style={styles.grid}>
-        <Button
-          style={styles.half}
-          variant="secondary"
-          label={kindergarten ? 'Suivi' : 'Suivi et épreuves'}
-          onPress={() => router.push({ pathname: '/suivi/[childId]', params: { childId: child.id } })}
-        />
         {!kindergarten ? (
           <Button
             style={styles.half}
@@ -99,24 +95,74 @@ function ChildCard({ child }: { child: StoredChildProfile }) {
         <Button
           style={styles.half}
           variant="secondary"
-          label="Écrire un petit mot"
-          accessibilityLabel={`Écrire un petit mot à ${child.alias}`}
-          onPress={() => router.push({ pathname: '/mot/[childId]', params: { childId: child.id } })}
+          label={kindergarten ? 'Suivi' : 'Suivi et épreuves'}
+          onPress={() => router.push({ pathname: '/suivi/[childId]', params: { childId: child.id } })}
         />
         <Button
           style={styles.half}
           variant="secondary"
-          label="🎒 Cartable"
-          accessibilityLabel={`Cartable de ${child.alias}`}
-          onPress={() => router.push({ pathname: '/cartable/[childId]', params: { childId: child.id } })}
-        />
-        <Button
-          style={styles.half}
-          variant="secondary"
-          label="Modifier le profil"
-          onPress={() => router.push({ pathname: '/profils/[childId]', params: { childId: child.id } })}
+          label={toolsOpen ? 'Moins d’outils ▴' : 'Plus d’outils ▾'}
+          accessibilityLabel={`Plus d’outils pour ${child.alias}`}
+          aria-expanded={toolsOpen}
+          onPress={() => setToolsOpen(!toolsOpen)}
         />
       </View>
+      {toolsOpen ? (
+        <View style={styles.grid}>
+          {!kindergarten ? (
+            <>
+              <Button
+                style={styles.half}
+                variant="secondary"
+                label="✏️ Ajouter un devoir"
+                accessibilityLabel={`Ajouter un devoir à la main pour ${child.alias}`}
+                onPress={() => router.push({ pathname: '/devoir/[childId]', params: { childId: child.id } })}
+              />
+              <Button
+                style={styles.half}
+                variant="secondary"
+                label="📷 Vocabulaire"
+                accessibilityLabel={`Photographier une liste de vocabulaire de ${child.alias}`}
+                onPress={() =>
+                  router.push({
+                    pathname: '/scan/nouveau',
+                    params: { childId: child.id, type: 'vocabulaire' },
+                  })
+                }
+              />
+              <Button
+                style={styles.half}
+                variant="secondary"
+                label="📷 Dictée corrigée"
+                accessibilityLabel={`Photographier une dictée corrigée de ${child.alias}`}
+                onPress={() =>
+                  router.push({ pathname: '/scan/nouveau', params: { childId: child.id, type: 'dictee' } })
+                }
+              />
+            </>
+          ) : null}
+          <Button
+            style={styles.half}
+            variant="secondary"
+            label="Écrire un petit mot"
+            accessibilityLabel={`Écrire un petit mot à ${child.alias}`}
+            onPress={() => router.push({ pathname: '/mot/[childId]', params: { childId: child.id } })}
+          />
+          <Button
+            style={styles.half}
+            variant="secondary"
+            label="🎒 Cartable"
+            accessibilityLabel={`Cartable de ${child.alias}`}
+            onPress={() => router.push({ pathname: '/cartable/[childId]', params: { childId: child.id } })}
+          />
+          <Button
+            style={styles.half}
+            variant="secondary"
+            label="Modifier le profil"
+            onPress={() => router.push({ pathname: '/profils/[childId]', params: { childId: child.id } })}
+          />
+        </View>
+      ) : null}
     </ThemedView>
   );
 }

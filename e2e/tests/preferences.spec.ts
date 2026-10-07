@@ -1,6 +1,15 @@
 import { expect, test } from '@playwright/test';
 
-import { addChild, button, childTitle, insertValidatedTasks, publishPlanning, signUp, sql } from './helpers';
+import {
+  addChild,
+  button,
+  childTitle,
+  insertValidatedTasks,
+  publishPlanning,
+  signUp,
+  sql,
+  openTools,
+} from './helpers';
 
 test('préférences du profil : jours, durée, papier, avatar, réseau ; impression de la semaine', async ({
   page,
@@ -8,6 +17,7 @@ test('préférences du profil : jours, durée, papier, avatar, réseau ; impress
   const email = await signUp(page, 'preferences');
   const { childId, familyId } = await addChild(page, email, 'Blaireau');
 
+  await openTools(page, 'Blaireau');
   await button(page, 'Modifier le profil').click();
   await page.getByRole('radio', { name: '1re secondaire' }).click();
   await page.getByRole('radio', { name: '🦊 Renard' }).click();
@@ -54,6 +64,7 @@ test('préférences du profil : jours, durée, papier, avatar, réseau ; impress
 test('au moins un jour de travail est exigé', async ({ page }) => {
   const email = await signUp(page, 'jours');
   await addChild(page, email, 'Hérisson');
+  await openTools(page, 'Hérisson');
   await button(page, 'Modifier le profil').click();
   for (const day of ['Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi']) {
     await page.getByRole('checkbox', { name: day }).click();

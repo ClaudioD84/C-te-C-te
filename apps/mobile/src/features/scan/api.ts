@@ -199,3 +199,21 @@ export function useValidateScan(scanId: string) {
     },
   });
 }
+
+/** Devoir ajouté à la main, sans photo : directement validé (le parent l'a écrit lui-même). */
+export function useAddManualTask(childId: string) {
+  const queryClient = useQueryClient();
+  return useMutation({
+    mutationFn: async (draft: TaskDraft) => {
+      const { error } = await supabase
+        .from('task')
+        .insert({ ...draft, child_id: childId, confidence: 1, status: 'validated' });
+      if (error) throw new Error('L’enregistrement a échoué. Vérifiez votre connexion.');
+    },
+    onSuccess: () => {
+      queryClient.invalidateQueries({ queryKey: ['tasks'] });
+      queryClient.invalidateQueries({ queryKey: ['premiers_pas'] });
+      void syncReminders();
+    },
+  });
+}

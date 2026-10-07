@@ -137,3 +137,8 @@ export async function openTraining(page: Page) {
   }
   throw new Error('Aucune activité avec entraînement dans la mission du jour.');
 }
+
+/** Ouvre « Plus d'outils » sur la carte d'un enfant (petit mot, cartable, profil…). */
+export async function openTools(page: Page, alias: string) {
+  await button(page, `Plus d’outils pour ${alias}`).click();
+}

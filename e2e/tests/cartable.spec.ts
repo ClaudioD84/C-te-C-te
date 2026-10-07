@@ -1,11 +1,12 @@
 import { expect, test } from '@playwright/test';
 
-import { addChild, button, enterChildMode, signUp, sql } from './helpers';
+import { addChild, button, enterChildMode, signUp, sql, openTools } from './helpers';
 
 test('cartable du soir : le parent note les affaires, l’enfant coche sa liste', async ({ page }) => {
   const email = await signUp(page, 'cartable');
   const { childId } = await addChild(page, email, 'Mésange');
 
+  await openTools(page, 'Mésange');
   await button(page, 'Cartable de Mésange').click();
   await page.getByRole('radio', { name: '✏️ Plumier' }).click();
   await expect(page.getByRole('checkbox', { name: 'Vendredi' })).toHaveAttribute('aria-checked', 'true');

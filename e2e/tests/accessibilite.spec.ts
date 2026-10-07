@@ -9,6 +9,7 @@ import {
   publishPlanning,
   signUp,
   openTraining,
+  openTools,
 } from './helpers';
 
 /** Audit WCAG 2.2 AA (exigence 6.2) des écrans principaux, en thème clair et sombre. */
@@ -42,6 +43,7 @@ for (const colorScheme of ['light', 'dark'] as const) {
     await audit(page, 'planning');
     await page.goBack();
 
+    await openTools(page, 'Castor');
     await button(page, 'Modifier le profil').click();
     await audit(page, 'modifier le profil');
     await page.goBack();
