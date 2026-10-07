@@ -6,7 +6,7 @@ const week = { weekStart: '2026-10-05', minutes: 85, activities: 6, cards: 12, q
 
 describe('weeklyReport', () => {
   it('ne liste que ce qui a été fait et félicite la régularité', () => {
-    const report = weeklyReport({ alias: 'Petit Lion', week, subjects: ['Éveil', 'Français'], badges: [] });
+    const report = weeklyReport({ alias: 'Léo', week, subjects: ['Éveil', 'Français'], badges: [] });
     expect(report.highlights).toEqual([
       '4 jours de travail',
       '85 minutes au total',
@@ -16,7 +16,7 @@ describe('weeklyReport', () => {
       'Matières travaillées : Éveil, Français',
     ]);
     expect(report.childMessage).toContain('4 jours');
-    expect(report.shareText.split('\n')[0]).toBe('Semaine de Petit Lion sur Côte à Côte');
+    expect(report.shareText.split('\n')[0]).toBe('Semaine de Léo sur Côte à Côte');
   });
 
   it('semaine sans activité : un encouragement, jamais un reproche', () => {

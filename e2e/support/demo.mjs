@@ -243,7 +243,7 @@ if (existing.length === 0) {
     method: 'POST',
     body: JSON.stringify({
       family_id: familyId,
-      alias: 'Petit Lion',
+      alias: 'Léo',
       grade: 'P5',
       needs: ['dyslexie'],
       needs_consent_at: new Date().toISOString(),
@@ -283,16 +283,27 @@ if (existing.length === 0) {
   }
   await rest('learning_event', { method: 'POST', body: JSON.stringify(events) });
   console.log(
-    '  Compte créé avec l’enfant « Petit Lion » (5e primaire, dyslexie), 5 tâches et deux semaines de suivi.',
+    '  Compte créé avec l’enfant « Léo » (5e primaire, dyslexie), 5 tâches et deux semaines de suivi.',
   );
 } else {
   console.log('  Compte déjà présent : vos essais précédents sont conservés.');
   if (!signup.ok) console.log('  (Pour repartir de zéro : `pnpm exec supabase db reset`, puis `pnpm demo`.)');
 }
 
+// Les profils enregistrent maintenant un prénom : les anciens pseudonymes de la démonstration sont renommés.
+for (const [old, name] of [
+  ['Petit Lion', 'Léo'],
+  ['Petite Chouette', 'Emma'],
+]) {
+  await rest(`child_profile?family_id=eq.${familyId}&alias=eq.${encodeURIComponent(old)}`, {
+    method: 'PATCH',
+    body: JSON.stringify({ alias: name }),
+  });
+}
+
 // Nouveautés montrées dans la démonstration, ajoutées aussi à un compte déjà créé (sans rien écraser).
 const lion = (
-  await rest(`child_profile?family_id=eq.${familyId}&alias=eq.Petit%20Lion&select=id,preferences`)
+  await rest(`child_profile?family_id=eq.${familyId}&alias=eq.L%C3%A9o&select=id,preferences`)
 )[0];
 if (lion) {
   if (!lion.preferences?.interests) {
@@ -313,14 +324,14 @@ if (lion) {
     });
   }
 }
-const chouette = await rest(`child_profile?family_id=eq.${familyId}&alias=eq.Petite%20Chouette&select=id`);
+const chouette = await rest(`child_profile?family_id=eq.${familyId}&alias=eq.Emma&select=id`);
 const allChildren = await rest(`child_profile?family_id=eq.${familyId}&select=id`);
 if (chouette.length === 0 && allChildren.length < 4) {
   await rest('child_profile', {
     method: 'POST',
     body: JSON.stringify({
       family_id: familyId,
-      alias: 'Petite Chouette',
+      alias: 'Emma',
       avatar: 'hibou',
       grade: 'M2',
       preferences: {
@@ -330,7 +341,7 @@ if (chouette.length === 0 && allChildren.length < 4) {
       },
     }),
   }).catch(() => undefined);
-  console.log('  Ajout de « Petite Chouette » (2e maternelle) pour essayer le mode maternelle.');
+  console.log('  Ajout du profil « Emma » (2e maternelle) pour essayer le mode maternelle.');
 }
 
 console.log(`

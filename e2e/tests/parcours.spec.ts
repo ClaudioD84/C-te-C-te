@@ -23,21 +23,21 @@ test('parcours complet : profil, planning, fiches, console enfant, suivi, dossie
 
   await test.step('profil avec besoin particulier : consentement obligatoire', async () => {
     await button(page, 'Ajouter un enfant').click();
-    await page.getByLabel("Prénom de l'enfant").fill('Petit Lion');
+    await page.getByLabel("Prénom de l'enfant").fill('Léo');
     await page.getByRole('radio', { name: '5e primaire' }).click();
     await page.getByRole('checkbox', { name: 'TDAH' }).click();
     await expect(button(page, 'Enregistrer')).toBeDisabled();
     await page.getByRole('checkbox', { name: /J'accepte/ }).click();
     await button(page, 'Enregistrer').click();
-    await expect(childTitle(page, 'Petit Lion')).toBeVisible();
+    await expect(childTitle(page, 'Léo')).toBeVisible();
   });
-  const childId = childOf(email, 'Petit Lion');
+  const childId = childOf(email, 'Léo');
   const familyId = familyOf(email);
   expect(sql(`select needs_consent_at is not null from child_profile where id = '${childId}'`)).toBe('t');
 
   await test.step('planning publié et fiches préparées par l’IA', async () => {
     insertValidatedTasks(familyId, childId);
-    await publishPlanning(page, 'Petit Lion', childId);
+    await publishPlanning(page, 'Léo', childId);
     expect(Number(sql(`select count(*) from study_session where child_id = '${childId}'`))).toBeGreaterThan(
       0,
     );
@@ -61,9 +61,9 @@ test('parcours complet : profil, planning, fiches, console enfant, suivi, dossie
   });
 
   await test.step('console enfant : activité, fiche, quiz, cartes', async () => {
-    await enterChildMode(page, 'Petit Lion');
+    await enterChildMode(page, 'Léo');
     await page.reload();
-    await expect(page.getByText('Bonjour Petit Lion')).toBeVisible();
+    await expect(page.getByText('Bonjour Léo')).toBeVisible();
 
     await openTraining(page);
     await expect(page.getByText('Les fleuves de Belgique', { exact: true })).toBeVisible();

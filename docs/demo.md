@@ -84,8 +84,8 @@ Docker Desktop).
 
 ## 4. Ce que vous pouvez essayer
 
-Le compte de démonstration contient « Petit Lion » (5e primaire, dyslexie, fan de foot et d'espace) avec cinq
-devoirs et deux semaines de suivi, et « Petite Chouette » (2e maternelle).
+Le compte de démonstration contient « Léo » (5e primaire, dyslexie, fan de foot et d'espace) avec cinq
+devoirs et deux semaines de suivi, et « Emma » (2e maternelle).
 
 **Le parcours de base**
 
@@ -98,7 +98,7 @@ devoirs et deux semaines de suivi, et « Petite Chouette » (2e maternelle).
   **Congés et absences** (ajoutez un congé : le planning l'évite, puis « Idées pour les vacances »).
 - **Console enfant** : « Lancer la mission du jour ». Choisissez un code parent de 4 chiffres (évitez 1234).
 
-**Dans la console de Petit Lion**
+**Dans la console de Léo**
 
 - Un **petit mot** du parent l'attend (« Écouter le mot », « Merci ! »).
 - **Comment tu te sens ?** : essayez « Un peu fatigué » : la mission se réduit à l'essentiel, avec une **pause
@@ -144,7 +144,7 @@ devoirs et deux semaines de suivi, et « Petite Chouette » (2e maternelle).
   (l'essentiel seulement) dans la proposition, **congés scolaires 2026-2027** à ajouter en un geste.
 - **Mon abonnement** : **parrainage** (code à partager, un mois offert) ; **Mon compte** : bilan de la semaine
   par e-mail (non envoyé dans la démonstration).
-- **Petite Chouette** : « Activités de la semaine » (jeux à faire ensemble, thème de la classe).
+- **Emma** : « Activités de la semaine » (jeux à faire ensemble, thème de la classe).
 - **Mon compte** : inviter un **autre parent** (code à partager), rappels, abonnement (achat simulé), export
   des données.
 - **Tablette de l'enfant** : ouvrez une **fenêtre de navigation privée**, « Relier la tablette de mon enfant »,

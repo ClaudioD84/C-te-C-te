@@ -29,7 +29,7 @@ test('captures des stores', async ({ page }, testInfo) => {
   };
 
   const email = await signUp(page, `captures-${testInfo.project.name}`);
-  const { childId, familyId } = await addChild(page, email, 'Petit Lion', { needs: ['Dyslexie'] });
+  const { childId, familyId } = await addChild(page, email, 'Léo', { needs: ['Dyslexie'] });
   insertValidatedTasks(familyId, childId);
   sql(`insert into task (family_id, child_id, subject, kind, description, due_date, status) values
     ('${familyId}', '${childId}', 'Néerlandais', 'interro', 'Vocabulaire : les animaux', current_date + 3, 'validated'),
@@ -56,7 +56,7 @@ test('captures des stores', async ({ page }, testInfo) => {
   await shot('02-photo-analysee');
   await page.goto('/');
 
-  await publishPlanning(page, 'Petit Lion', childId);
+  await publishPlanning(page, 'Léo', childId);
   await shot('03-planning');
   await button(page, 'Éveil · Revoir les fleuves de Belgique').click();
   await expect(page.getByText('Les fleuves de Belgique', { exact: true })).toBeVisible();
@@ -69,7 +69,7 @@ test('captures des stores', async ({ page }, testInfo) => {
   await shot('05-suivi');
   await page.goBack();
 
-  await enterChildMode(page, 'Petit Lion');
+  await enterChildMode(page, 'Léo');
   await dismissCelebration(page);
   await shot('06-mission-enfant');
   await openTraining(page);

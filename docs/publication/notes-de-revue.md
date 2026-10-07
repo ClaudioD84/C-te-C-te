@@ -7,7 +7,7 @@ française sert de référence.
 ## Compte de démonstration
 
 Créer, sur le projet Supabase de **production**, un compte réservé à la revue (par exemple
-`revue@<votre-domaine>`), avec un enfant de démonstration (« Petit Lion », 5e primaire), quelques tâches validées
+`revue@<votre-domaine>`), avec un enfant de démonstration (« Léo », 5e primaire), quelques tâches validées
 et un planning publié. Ne pas y mettre de données réelles.
 
 - Adresse : [À COMPLÉTER]
@@ -19,7 +19,7 @@ et un planning publié. Ne pas y mettre de données réelles.
 ```
 Côte à Côte helps parents in the French-speaking part of Belgium organise their children's homework.
 
-Demo account: [email] / [password]. The account already contains a child profile ("Petit Lion") with a published
+Demo account: [email] / [password]. The account already contains a child profile ("Léo") with a published
 weekly plan.
 
 How to test:

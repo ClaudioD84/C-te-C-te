@@ -5,7 +5,7 @@ import { isTrackAllowed, schoolLevel } from './school';
 
 describe('childProfileSchema', () => {
   it('applique les valeurs par défaut', () => {
-    const p = childProfileSchema.parse({ alias: 'Petit Lion', grade: 'P4' });
+    const p = childProfileSchema.parse({ alias: 'Léo', grade: 'P4' });
     expect(p.track).toBe('general');
     expect(p.needs).toEqual([]);
     expect(p.preferences.availableDays).toHaveLength(5);
