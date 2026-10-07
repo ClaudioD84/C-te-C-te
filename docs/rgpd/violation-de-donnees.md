@@ -18,7 +18,7 @@ d'une famille aux données d'une autre).
 
 - Quelles données ? (e-mails, profils, **besoins particuliers = données de santé**, photos, tâches…)
 - Combien de familles et d'enfants ?
-- Les données étaient-elles chiffrées ou pseudonymisées ? (prénoms seulement, sans nom de famille ; zones des photos masquées par le parent)
+- Les données étaient-elles chiffrées ou pseudonymisées ? (prénoms seulement, sans nom de famille ; photos non masquées, mais supprimées dès leur lecture)
 - Conséquences possibles pour les personnes ?
 
 Le risque est en principe **élevé** dès que des données de santé d'enfants sont concernées.

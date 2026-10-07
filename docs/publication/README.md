@@ -104,7 +104,7 @@ de préproduction.
 
 ### 4. Avant d'ouvrir au public
 
-- Faire tourner la bêta (TestFlight et test fermé) avec quelques familles : appareil photo, masquage des noms,
+- Faire tourner la bêta (TestFlight et test fermé) avec quelques familles : appareil photo, lecture des photos,
   notifications, achats en bac à sable, mode hors connexion sur de vrais appareils.
 - Programmer les purges quotidiennes (README principal, points 7 et 8).
 - Vérifier que `EXPO_PUBLIC_PAYMENTS_SIMULATION` vaut `false` en production et que la fonction

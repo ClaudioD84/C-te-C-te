@@ -5,7 +5,6 @@ import * as Sharing from 'expo-sharing';
 import { Platform } from 'react-native';
 
 import { clearParentCode } from '@/features/child-mode/parent-code-store';
-import { setSensitiveNames } from '@/features/scan/sensitive-names';
 import { supabase } from '@/lib/supabase';
 
 /** Tables exportées : toutes les données de la famille visibles par le parent (RLS). */
@@ -74,7 +73,6 @@ export async function exportMyData(): Promise<void> {
 /** Efface ce que l'application garde sur l'appareil. */
 export async function clearDeviceData(): Promise<void> {
   await clearParentCode();
-  await setSensitiveNames([]);
   await AsyncStorage.clear();
 }
 

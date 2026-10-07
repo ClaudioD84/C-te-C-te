@@ -29,10 +29,11 @@ décomposés…). Elles ne sont jamais transmises telles quelles au service d'in
 reçoit que les consignes d'adaptation. Vous pouvez retirer votre accord à tout moment ; les adaptations
 correspondantes cessent alors.
 
-**Les photos du journal de classe** : avant tout envoi, les noms (de votre enfant, de l'école, des enseignants)
-sont masqués **sur votre téléphone**. La photo est lue par notre service d'intelligence artificielle pour en
-extraire les devoirs et évaluations, que vous vérifiez. Elle est **supprimée dès sa lecture**, et au plus tard
-après 24 heures.
+**Les photos du journal de classe** : la photo est envoyée telle quelle (seulement réduite) : elle peut donc
+montrer des noms écrits sur la page, comme celui de votre enfant, de l'école ou des enseignants. Elle est lue par
+notre service d'intelligence artificielle, qui a pour consigne de n'en recopier aucun nom : seuls les devoirs et
+évaluations sont relevés, et vous les vérifiez. La photo est **supprimée dès sa lecture**, et au plus tard après
+24 heures. Si vous le souhaitez, cadrez la photo sur les devoirs ou cachez un nom avant de photographier.
 
 **Les supports d'étude** : fiches, quiz, exercices et cartes de révision préparés à partir des tâches et du
 programme officiel de la Fédération Wallonie-Bruxelles.
@@ -43,8 +44,8 @@ faire grandir l'avatar de votre enfant. Il n'y a ni classement ni comparaison av
 **L'abonnement** : la formule choisie et ses dates. Le paiement est géré par l'App Store ou Google Play : nous
 n'avons jamais accès à vos coordonnées bancaires.
 
-**Sur votre téléphone uniquement** : la liste des noms à masquer, le code parent, une copie temporaire de la
-mission du jour (pour travailler sans connexion) et vos réglages de rappels.
+**Sur votre téléphone uniquement** : le code parent, une copie temporaire de la mission du jour (pour travailler
+sans connexion) et vos réglages de rappels.
 
 ## Sur quelle base ?
 
@@ -60,8 +61,9 @@ Seulement nos prestataires techniques, liés par contrat et qui ne peuvent pas u
 propre compte :
 
 - **Supabase** : hébergement, dans l'**Union européenne** (Francfort) ;
-- **Anthropic** : intelligence artificielle (lecture des photos masquées, préparation des fiches). Les demandes ne
-  contiennent ni nom, ni prénom, ni adresse e-mail, ni trouble nommé ;
+- **Anthropic** : intelligence artificielle (lecture des photos, préparation des fiches). L'application n'ajoute
+  aux demandes ni nom, ni prénom, ni adresse e-mail, ni trouble nommé ; une photo peut toutefois montrer un nom
+  écrit sur la page ;
 - **RevenueCat** : gestion des abonnements de l'App Store et de Google Play, avec un identifiant technique ;
 - **Brevo** (France, données dans l'Union européenne) : envoi des e-mails liés au compte.
 

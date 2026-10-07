@@ -41,9 +41,9 @@ cp apps/mobile/.env.example apps/mobile/.env.local
 pnpm mobile
 ```
 
-La prise de photo avec masquage automatique des noms (ML Kit) et le dessin des masques (Skia) demandent un
-**build de développement** : `npx eas-cli@latest build --profile development` (ou `npx expo run:android` /
-`npx expo run:ios`). Dans Expo Go, le masquage se fait à la main.
+Les achats intégrés réels (RevenueCat) demandent un **build de développement** :
+`npx eas-cli@latest build --profile development` (ou `npx expo run:android` / `npx expo run:ios`). Dans Expo Go,
+l'abonnement passe par le mode simulé.
 
 ## Mettre en ligne le serveur
 
@@ -97,7 +97,7 @@ La CI GitHub Actions exécute ces vérifications et applique les migrations Supa
 
 - comptes parents, profils enfants avec pseudonyme et besoins particuliers (avec consentement) ;
 - code parent et console enfant verrouillée ;
-- photo du journal de classe, masquage des noms sur l'appareil, lecture par Claude, validation par le parent ;
+- photo du journal de classe, lecture par Claude (sans recopier les noms), validation par le parent ;
 - planning de la semaine avec alertes de surcharge, mission du jour, Pomodoro, lecture vocale ;
 - export et suppression du compte (RGPD) ;
 - rappels (mission du jour, évaluations, planning, photos à vérifier), avec heures calmes ;

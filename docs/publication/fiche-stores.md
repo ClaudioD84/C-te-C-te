@@ -28,8 +28,8 @@ secondaire, en suivant le programme officiel de la Fédération Wallonie-Bruxell
 
 JE PHOTOGRAPHIE, L'APPLI ORGANISE
 Prenez en photo le journal de classe ou une feuille d'annonce d'interrogation. Côte à Côte repère les devoirs,
-les leçons et les évaluations ; vous vérifiez la liste en un coup d'œil. Avant tout envoi, les noms (de votre
-enfant, de l'école, des enseignants) sont masqués sur votre téléphone.
+les leçons et les évaluations ; vous vérifiez la liste en un coup d'œil. La photo est supprimée dès sa lecture
+et aucun nom n'en est recopié.
 
 UNE SEMAINE ÉQUILIBRÉE
 L'application répartit le travail sur les jours que vous choisissez, en séances courtes, sans surcharge avant les

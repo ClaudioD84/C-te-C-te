@@ -8,7 +8,7 @@
 ## 1. Principes
 
 1. **Un seul développeur** : privilégier les services gérés et une seule base de code. Pas de serveur à administrer.
-2. **Vie privée par conception** : alias, masquage des noms sur l'appareil, hébergement UE, suppression des photos après traitement.
+2. **Vie privée par conception** : prénom seulement, aucun nom recopié par l'IA, hébergement UE, suppression des photos après traitement.
 3. **L'IA ne parle jamais directement à l'application** : tous les appels passent par le serveur, qui protège la clé API, applique les quotas et journalise les coûts.
 4. **Le parent valide** : chaque sortie de l'IA passe par un état « brouillon » avant d'être publiée.
 
@@ -18,7 +18,7 @@
 flowchart LR
     subgraph Appareil["Téléphone / tablette (Expo)"]
         UI[Cockpit parent<br/>Console enfant]
-        OCR[Détection de texte<br/>et masquage local]
+        CAM[Photo redimensionnée<br/>en JPEG]
         DB[(Cache local<br/>hors connexion)]
     end
 
@@ -35,7 +35,7 @@ flowchart LR
 
     UI --> AUTH
     UI <--> PG
-    OCR --> ST
+    CAM --> ST
     UI --> EF
     EF --> ST
     EF --> AI
@@ -56,8 +56,7 @@ flowchart LR
 | Base de données, authentification, stockage | **Supabase** (région UE) | PostgreSQL géré, sécurité par lignes (RLS), stockage, fonctions serveur |
 | Logique serveur et IA | **Supabase Edge Functions** (Deno, TypeScript) + SDK officiel `@anthropic-ai/sdk` | Même langage que l'application, pas de serveur à gérer |
 | IA | **API Claude** | Lecture de l'écriture manuscrite, qualité du français, sorties structurées |
-| Détection de texte sur l'appareil | **ML Kit** (`@react-native-ml-kit/text-recognition`, iOS et Android) | Masquage des noms **avant** l'envoi, sans réseau ; nécessite un build de développement (absent d'Expo Go) |
-| Masquage des photos | **Skia** (`@shopify/react-native-skia`) | Aplats noirs dessinés dans l'image : irréversibles, contrairement à un flou |
+| Préparation des photos | **expo-image-manipulator** | Redimensionnement (1600 px au plus) et conversion en JPEG avant l'envoi : envoi léger, coût IA maîtrisé |
 | Abonnements | **RevenueCat** | Gère App Store et Google Play, webhooks vers Supabase |
 | Génération PDF | **expo-print** (HTML vers PDF) | Mise en page accessible en HTML/CSS, impression native |
 | Notifications | **Expo Notifications** | Rappels d'échéances, alertes de charge |
@@ -135,16 +134,13 @@ erDiagram
 ```mermaid
 sequenceDiagram
     participant P as Parent (app)
-    participant L as Détection locale
     participant S as Stockage Supabase
     participant F as Edge Function scan
     participant C as API Claude
     participant DB as PostgreSQL
 
-    P->>L: Photo du journal de classe
-    L->>L: Détecte le texte, masque les noms connus<br/>(liste stockée uniquement sur l'appareil)
-    L->>P: Aperçu masqué, le parent ajoute ou retire des zones
-    P->>S: Envoi de l'image masquée et compressée
+    P->>P: Photo du journal de classe, redimensionnée en JPEG<br/>aperçu avant envoi
+    P->>S: Envoi de l'image compressée
     P->>F: Lancer le traitement (scan_id)
     F->>F: Vérifie l'abonnement et le quota
     F->>C: Image + profil (niveau, matières) + consigne d'extraction<br/>réponse au format JSON imposé
@@ -158,9 +154,9 @@ sequenceDiagram
 
 Points clés :
 
-- La **liste des noms à masquer** (nom de famille, nom de l'école, enseignants) est saisie par le parent et **reste sur l'appareil**. Elle ne quitte jamais le téléphone. Le parent y ajoute ce qu'il veut voir masqué (prénom compris).
+- Les photos ne sont **pas masquées** : un nom écrit sur la page (enfant, enseignant, école) peut être lu par l'IA. La consigne d'extraction lui interdit de recopier un nom de personne ou d'école ; seules les tâches (matière, description, échéance) sont enregistrées. La photo est supprimée après l'analyse.
 - L'extraction utilise les **sorties structurées** de l'API Claude (`output_config.format` avec un schéma JSON) pour obtenir une liste de tâches toujours valide.
-- La photo est supprimée du stockage dès la fin du traitement. En cas d'échec, elle est conservée pour permettre de réessayer, et supprimée si le parent abandonne (une tâche de nettoyage planifiée reste à mettre en place pour les photos oubliées).
+- La photo est supprimée du stockage dès la fin du traitement. En cas d'échec, elle est conservée pour permettre de réessayer, et supprimée si le parent abandonne ; la fonction `purge-photos` efface chaque jour celles restées plus de 24 h.
 - La réservation de la photo (`claim_scan`) est atomique : deux analyses de la même photo ne peuvent pas tourner en même temps ; une analyse interrompue peut être relancée après 150 s.
 
 ## 7. Utilisation de l'IA
@@ -287,9 +283,9 @@ Algorithme déterministe (`packages/shared/src/planning.ts`), exécuté dans l'a
 |---|---|
 | Hébergement | Supabase région UE (Francfort) |
 | Accès aux données | RLS sur toutes les tables : un parent ne voit que sa famille |
-| Minimisation | Prénom seulement pour les enfants (jamais de nom de famille, jamais transmis à l'IA par l'application) ; noms choisis par le parent masqués sur les photos avant envoi ; liste des noms à masquer uniquement sur l'appareil |
+| Minimisation | Prénom seulement pour les enfants (jamais de nom de famille, jamais transmis à l'IA par l'application) ; photos redimensionnées, sans masquage : l'IA ne recopie aucun nom de personne ni d'école |
 | Conservation | Fonction `purge-inactive` (tâche quotidienne) : journal de l'effort de plus de 2 ans, comptes inactifs depuis 24 mois (dernière ouverture enregistrée par `touch_family_activity`) avertis par e-mail puis supprimés 30 jours plus tard |
-| Photos | Masquées avant envoi, stockage privé, suppression après traitement ; fonction `purge-photos` (tâche quotidienne) pour celles restées plus de 24 h |
+| Photos | Envoyées sans masquage (elles peuvent montrer des noms), stockage privé, suppression après traitement ; fonction `purge-photos` (tâche quotidienne) pour celles restées plus de 24 h |
 | Données de santé | Consentement explicite et horodaté (renouvelé à chaque besoin ajouté, effacé au retrait) ; les requêtes IA ne contiennent que les consignes d'adaptation, jamais le trouble |
 | Sous-traitants | Supabase, Anthropic, RevenueCat (et Sentry s'il est ajouté) : accords de traitement (DPA) à signer ; vérifier la durée de conservation des données par Anthropic et les options disponibles |
 | Droits des utilisateurs | Export JSON, modification et suppression d'un profil enfant, suppression complète du compte depuis l'application |
@@ -325,7 +321,7 @@ Algorithme déterministe (`packages/shared/src/planning.ts`), exécuté dans l'a
 | D2 | Expo + Supabase + RevenueCat | Un seul développeur, services gérés |
 | D3 | API Claude, appelée uniquement depuis le serveur | Qualité, protection de la clé, maîtrise des coûts |
 | D4 | Fédération Wallonie-Bruxelles, en français | Marché de départ |
-| D5 | Alias + masquage local + hébergement UE | Vie privée des mineurs, données de santé |
+| D5 | Prénom seulement + hébergement UE + photos supprimées après lecture (masquage retiré : simplicité, encadré par l'AIPD) | Vie privée des mineurs, données de santé |
 | D6 | Validation par le parent de toute sortie de l'IA | Fiabilité et confiance |
 | D7 | Abonnement Solo 9,99 €, Famille 14,99 € par mois ; 79 € et 119 € par an, renouvelés automatiquement | Positionnement face à la concurrence et coûts |
 | D8 | Livraison en trois étapes | Tester tôt avec de vraies familles |

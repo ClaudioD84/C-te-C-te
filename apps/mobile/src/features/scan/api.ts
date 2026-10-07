@@ -1,4 +1,4 @@
-import type { Box, DocumentType, TaskKind } from '@cote-a-cote/shared';
+import type { DocumentType, TaskKind } from '@cote-a-cote/shared';
 import { FunctionsHttpError } from '@supabase/supabase-js';
 import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query';
 import { randomUUID } from '@/lib/uuid';
@@ -6,7 +6,7 @@ import { randomUUID } from '@/lib/uuid';
 import { syncReminders } from '@/features/reminders/sync';
 import { supabase } from '@/lib/supabase';
 
-import { renderMaskedJpeg, type PreparedImage } from './image';
+import { jpegBytes, type PreparedImage } from './image';
 
 export type ScanStatus = 'uploaded' | 'processing' | 'draft' | 'validated' | 'failed';
 
@@ -53,20 +53,18 @@ interface SubmitScanInput {
   childId: string;
   documentType: DocumentType;
   image: PreparedImage;
-  boxes: readonly Box[];
 }
 
-/** Applique les masques, envoie la photo dans le dossier privé de la famille et crée la numérisation. */
+/** Envoie la photo dans le dossier privé de la famille et crée la numérisation. */
 export async function submitScan({
   familyId,
   childId,
   documentType,
   image,
-  boxes,
 }: SubmitScanInput): Promise<string> {
   const scanId = randomUUID();
   const path = `${familyId}/${scanId}.jpg`;
-  const body = await renderMaskedJpeg(image, boxes);
+  const body = jpegBytes(image);
 
   const upload = await supabase.storage.from('scans').upload(path, body, { contentType: 'image/jpeg' });
   if (upload.error) throw upload.error;

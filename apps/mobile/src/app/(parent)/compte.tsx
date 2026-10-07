@@ -56,9 +56,6 @@ export default function AccountScreen() {
       <Link href="/rappels" asChild>
         <Button variant="secondary" label="Rappels" />
       </Link>
-      <Link href="/noms-a-masquer" asChild>
-        <Button variant="secondary" label="Noms à masquer sur les photos" />
-      </Link>
       <Link href="/code-parent" asChild>
         <Button variant="secondary" label="Modifier le code parent" />
       </Link>

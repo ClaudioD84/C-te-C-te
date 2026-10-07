@@ -83,7 +83,7 @@ Chaque fonctionnalité porte un identifiant et une **étape de livraison** (voir
 ### F3 — Numérisation intelligente *(étape 1)*
 
 - Prise de photo dans l'application (ou import depuis la galerie) : journal de classe, notes de cours, interrogations corrigées.
-- **Protection de la vie privée** : avant l'envoi, les noms détectés (enfant, enseignants, école) sont floutés automatiquement ; le parent peut ajouter des zones de flou à la main.
+- **Protection de la vie privée** : la photo est réduite puis envoyée sans masquage ; l'IA ne recopie aucun nom (enfant, enseignants, école) et la photo est supprimée après la lecture.
 - L'IA extrait : matière, type (devoir, leçon, interrogation, examen), description, date d'échéance, pages ou exercices concernés.
 - **Écran de validation** : le parent voit la liste extraite, corrige, supprime ou ajoute avant que rien ne soit planifié.
 - Les photos sont **supprimées** après traitement ; seul le contenu validé est conservé.
@@ -155,10 +155,10 @@ Chaque fonctionnalité porte un identifiant et une **étape de livraison** (voir
 
 ### 6.1 Vie privée et RGPD
 
-- Les enfants sont identifiés par leur **prénom**, jamais leur nom de famille ; le prénom n'est jamais transmis à l'IA par l'application ; le parent masque sur les photos les noms qu'il choisit.
+- Les enfants sont identifiés par leur **prénom**, jamais leur nom de famille ; le prénom n'est jamais transmis à l'IA par l'application.
 - Les besoins particuliers sont des **données de santé** : consentement explicite du parent, chiffrement, accès strictement limité.
 - Hébergement des données **dans l'Union européenne**.
-- Floutage des noms sur les photos avant tout envoi à l'IA ; photos supprimées après traitement.
+- Photos envoyées à l'IA sans masquage (aucun nom n'en est recopié) et supprimées après traitement.
 - Le parent peut **exporter** et **supprimer** toutes ses données à tout moment.
 - Une analyse d'impact (AIPD) et une politique de confidentialité relue par un juriste sont nécessaires **avant le lancement public**.
 
@@ -198,7 +198,7 @@ Chaque fonctionnalité porte un identifiant et une **étape de livraison** (voir
 
 - F1 Profils enfants avec alias et besoins particuliers
 - F2 Socle du programme (au minimum : primaire FWB)
-- F3 Numérisation, floutage, extraction par IA, validation par le parent
+- F3 Numérisation, extraction par IA, validation par le parent
 - F4 Planning hebdomadaire (sans contenus générés)
 - F7 Cockpit parent simple et console enfant « mission du jour »
 - F9 Minuteur Pomodoro

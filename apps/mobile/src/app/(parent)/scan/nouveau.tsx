@@ -1,6 +1,7 @@
-import { DOCUMENT_TYPES, findSensitiveBoxes, type Box, type DocumentType } from '@cote-a-cote/shared';
+import { DOCUMENT_TYPES, type DocumentType } from '@cote-a-cote/shared';
+import { Image } from 'expo-image';
 import * as ImagePicker from 'expo-image-picker';
-import { Link, router, useLocalSearchParams } from 'expo-router';
+import { router, useLocalSearchParams } from 'expo-router';
 import { useState } from 'react';
 import { ActivityIndicator, StyleSheet, View } from 'react-native';
 
@@ -11,9 +12,6 @@ import { ThemedText } from '@/components/themed-text';
 import { Spacing } from '@/constants/theme';
 import { submitScan, useFamilyId } from '@/features/scan/api';
 import { prepareImage, type PreparedImage } from '@/features/scan/image';
-import { MaskEditor } from '@/features/scan/mask-editor';
-import { recognizeWords } from '@/features/scan/ocr';
-import { getSensitiveNames } from '@/features/scan/sensitive-names';
 
 const DOCUMENT_LABELS: Record<DocumentType, string> = {
   journal_de_classe: 'Journal de classe',
@@ -21,19 +19,11 @@ const DOCUMENT_LABELS: Record<DocumentType, string> = {
   interrogation: 'Interrogation',
 };
 
-interface Detection {
-  /** null : reconnaissance de texte indisponible sur cet appareil. */
-  found: number | null;
-  namesConfigured: boolean;
-}
-
 export default function NewScanScreen() {
   const { childId } = useLocalSearchParams<{ childId: string }>();
   const { data: familyId } = useFamilyId();
   const [documentType, setDocumentType] = useState<DocumentType>('journal_de_classe');
   const [image, setImage] = useState<PreparedImage | null>(null);
-  const [boxes, setBoxes] = useState<Box[]>([]);
-  const [detection, setDetection] = useState<Detection | null>(null);
   const [busy, setBusy] = useState<'preparation' | 'envoi' | null>(null);
   const [message, setMessage] = useState<string | null>(null);
 
@@ -57,12 +47,7 @@ export default function NewScanScreen() {
 
     setBusy('preparation');
     try {
-      const prepared = await prepareImage(asset.uri, asset.width, asset.height);
-      const [words, names] = await Promise.all([recognizeWords(prepared.uri), getSensitiveNames()]);
-      const found = words ? findSensitiveBoxes(words, names, prepared.width, prepared.height) : [];
-      setImage(prepared);
-      setBoxes(found);
-      setDetection({ found: words ? found.length : null, namesConfigured: names.length > 0 });
+      setImage(await prepareImage(asset.uri, asset.width, asset.height));
     } catch {
       setMessage("La photo n'a pas pu être préparée. Réessayez.");
     } finally {
@@ -75,7 +60,7 @@ export default function NewScanScreen() {
     setBusy('envoi');
     setMessage(null);
     try {
-      const scanId = await submitScan({ familyId, childId, documentType, image, boxes });
+      const scanId = await submitScan({ familyId, childId, documentType, image });
       router.replace({ pathname: '/scan/[scanId]', params: { scanId } });
     } catch {
       setMessage("L'envoi a échoué. Vérifiez votre connexion et réessayez.");
@@ -87,7 +72,7 @@ export default function NewScanScreen() {
     return (
       <Screen>
         <ActivityIndicator />
-        <ThemedText style={styles.center}>Préparation de la photo et recherche des noms…</ThemedText>
+        <ThemedText style={styles.center}>Préparation de la photo…</ThemedText>
       </Screen>
     );
   }
@@ -115,67 +100,25 @@ export default function NewScanScreen() {
 
   return (
     <Screen>
-      <ThemedText type="smallBold">Masquez les informations personnelles</ThemedText>
-      <DetectionNotice detection={detection} />
+      <ThemedText type="smallBold">Vérifiez la photo</ThemedText>
       <ThemedText type="small" themeColor="textSecondary">
-        Glissez le doigt pour masquer une zone. Touchez une zone noire pour l&apos;enlever.
+        La page doit être lisible. Elle est envoyée telle quelle pour l&apos;analyse, puis vous relisez la
+        liste des devoirs.
       </ThemedText>
 
-      <MaskEditor image={image} boxes={boxes} onChange={setBoxes} />
+      <View accessible accessibilityRole="image" accessibilityLabel="Photo à envoyer" style={styles.photo}>
+        <Image source={{ uri: image.uri }} style={StyleSheet.absoluteFill} contentFit="contain" />
+      </View>
 
       {message ? <ThemedText themeColor="danger">{message}</ThemedText> : null}
       <Button label="Envoyer pour analyse" onPress={send} loading={busy === 'envoi'} disabled={!familyId} />
-      <View style={styles.row}>
-        <Button
-          variant="secondary"
-          label="Autre photo"
-          style={styles.flex}
-          onPress={() => {
-            setImage(null);
-            setBoxes([]);
-          }}
-        />
-        <Button
-          variant="secondary"
-          label="Effacer les zones"
-          style={styles.flex}
-          onPress={() => setBoxes([])}
-        />
-      </View>
+      <Button variant="secondary" label="Autre photo" onPress={() => setImage(null)} />
     </Screen>
-  );
-}
-
-function DetectionNotice({ detection }: { detection: Detection | null }) {
-  if (!detection) return null;
-  if (detection.found === null) {
-    return (
-      <ThemedText>
-        Le masquage automatique n&apos;est pas disponible sur cet appareil : tracez les zones à la main.
-      </ThemedText>
-    );
-  }
-  if (!detection.namesConfigured) {
-    return (
-      <ThemedText>
-        Aucun nom à masquer n&apos;est enregistré.{' '}
-        <Link href="/noms-a-masquer">
-          <ThemedText themeColor="primary">Les ajouter</ThemedText>
-        </Link>
-      </ThemedText>
-    );
-  }
-  return (
-    <ThemedText>
-      {detection.found === 0
-        ? 'Aucun nom trouvé automatiquement. Vérifiez la photo.'
-        : `${detection.found} nom${detection.found > 1 ? 's' : ''} masqué${detection.found > 1 ? 's' : ''} automatiquement. Vérifiez qu'il n'en manque pas.`}
-    </ThemedText>
   );
 }
 
 const styles = StyleSheet.create({
   center: { textAlign: 'center' },
-  row: { flexDirection: 'row', gap: Spacing.two },
-  flex: { flex: 1 },
+  // Hauteur limitée : les boutons restent visibles sans faire défiler.
+  photo: { width: '100%', height: 380, borderRadius: Spacing.two, overflow: 'hidden' },
 });

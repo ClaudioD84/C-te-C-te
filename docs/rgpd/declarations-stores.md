@@ -14,7 +14,7 @@ Données collectées (toutes **liées à l'utilisateur**, aucune utilisée pour 
 |---|---|---|
 | Coordonnées > Adresse e-mail | E-mail du parent | Fonctionnalité de l'app |
 | Santé et forme > Santé | Besoins particuliers (facultatif, consentement) | Fonctionnalité de l'app |
-| Contenu utilisateur > Photos | Photo du journal de classe (masquée, supprimée après lecture) | Fonctionnalité de l'app |
+| Contenu utilisateur > Photos | Photo du journal de classe (non masquée, supprimée après lecture) | Fonctionnalité de l'app |
 | Contenu utilisateur > Autre contenu | Tâches scolaires, supports d'étude, signalements d'erreur | Fonctionnalité de l'app |
 | Identifiants > Identifiant de l'utilisateur | Identifiant du compte et de la famille | Fonctionnalité de l'app |
 | Achats > Historique des achats | Abonnement | Fonctionnalité de l'app |

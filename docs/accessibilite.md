@@ -14,7 +14,7 @@ iPhone (VoiceOver) et un Android (TalkBack), avant chaque version publique.
 - [ ] Cartes de révision : la question puis la réponse sont lues ; les boutons de note sont atteignables.
 - [ ] Minuteur Pomodoro : la phase (travail, pause) est annoncée quand elle change ; l'avancement est lu.
 - [ ] Bandeau « Pas de connexion » annoncé quand le réseau tombe.
-- [ ] Photo du journal : les zones masquées sont annoncées (« Photo avec 2 zones masquées »).
+- [ ] Photo du journal : l'aperçu est annoncé (« Photo à envoyer ») avant l'envoi.
 
 ## Texte agrandi et affichage
 

@@ -21,9 +21,9 @@ figure dans le [registre](registre-des-traitements.md).
 
 Flux principaux :
 
-1. **Photo** : prise sur l'appareil → noms masqués sur l'appareil (reconnaissance de texte locale et masques
-   tracés par le parent) → envoi au stockage privé → lecture par l'IA → **suppression de la photo** → tâches
-   proposées au parent, qui les valide.
+1. **Photo** : prise sur l'appareil → redimensionnée en JPEG, **sans masquage** (elle peut montrer le prénom ou
+   le nom de l'enfant, des enseignants, de l'école) → envoi au stockage privé → lecture par l'IA, qui ne recopie
+   aucun nom → **suppression de la photo** → tâches proposées au parent, qui les valide.
 2. **Contenus d'étude** : tâche validée + année + consignes d'adaptation + attendus du programme officiel → IA →
    fiche, quiz, exercices, cartes, enregistrés pour la famille.
 3. **Console enfant** : l'enfant voit sa mission du jour, s'entraîne ; ses efforts sont enregistrés pour les
@@ -34,7 +34,7 @@ Flux principaux :
 | Principe | Mise en œuvre |
 |---|---|
 | Finalités déterminées | Organisation du travail scolaire et préparation de supports d'étude ; aucune publicité, aucune revente |
-| Minimisation | Prénom seulement, jamais de nom de famille ; prénom jamais transmis à l'IA par l'application ; noms choisis par le parent masqués sur les photos ; aucune date de naissance, adresse ni école demandée ; besoins particuliers facultatifs ; trouble jamais transmis à l'IA ; photo masquée avant envoi |
+| Minimisation | Prénom seulement, jamais de nom de famille ; prénom jamais transmis à l'IA par l'application ; aucune date de naissance, adresse ni école demandée ; besoins particuliers facultatifs ; trouble jamais transmis à l'IA ; photo redimensionnée, lue sans qu'aucun nom soit recopié, puis supprimée (les photos ne sont pas masquées : voir le risque « identité via les photos ») |
 | Exactitude | Le parent valide chaque tâche extraite et peut signaler une erreur dans un contenu généré |
 | Limitation de la conservation | Photo supprimée dès l'analyse (24 h au plus) ; journal de l'effort effacé après 2 ans ; comptes inactifs depuis 24 mois supprimés après avertissement |
 | Base légale | Contrat pour le service ; consentement explicite, horodaté et facultatif pour les besoins particuliers |
@@ -49,9 +49,9 @@ Flux principaux :
 | Risque | Sources | Mesures | Gravité | Vraisemblance |
 |---|---|---|---|---|
 | Accès illégitime aux données d'une famille (piratage, erreur de cloisonnement) | Attaquant, défaut logiciel | RLS sur toutes les tables et tests de cloisonnement ; clés côté serveur ; HTTPS ; mots de passe hachés ; journalisation de l'hébergeur | 3 (données de santé d'enfants) | 1 |
-| Divulgation de l'identité de l'enfant via les photos | Noms visibles sur le journal | Masquage sur l'appareil avant envoi ; liste des noms jamais envoyée ; photo supprimée après analyse | 3 | 2 (masquage automatique imparfait, contrôlé par le parent) |
+| Divulgation de l'identité de l'enfant via les photos | Noms visibles sur la page (enfant, enseignants, école), transmis tels quels au fournisseur d'IA : les photos ne sont plus masquées | Photo envoyée au seul fournisseur d'IA, sans autre donnée d'identité dans la requête ; consigne interdisant de recopier un nom de personne ou d'école ; seules les tâches sont enregistrées ; photo supprimée dès l'analyse (24 h au plus) ; stockage privé cloisonné par famille ; information du parent (politique) ; DPA, non-utilisation pour l'entraînement et durée de conservation chez Anthropic à vérifier | 3 | 2 (le nom figure souvent sur la page ; le risque tient surtout au sous-traitant et au transfert) |
 | Réutilisation des données par le fournisseur d'IA | Sous-traitant | Requêtes sans identité ni trouble nommé ; DPA ; vérification de la non-utilisation pour l'entraînement et de la durée de conservation (plan d'action) | 2 | 1 |
-| Accès par des autorités étrangères (transferts vers les États-Unis) | Législation étrangère | Données envoyées minimisées (ni prénom, ni nom, ni e-mail, ni trouble nommé) ; encadrement des transferts (DPF ou clauses types) ; hébergement principal dans l'UE | 2 | 1 |
+| Accès par des autorités étrangères (transferts vers les États-Unis) | Législation étrangère | Données envoyées minimisées (ni e-mail ni trouble nommé ; l'application n'ajoute ni prénom ni nom, mais une photo peut en montrer) ; encadrement des transferts (DPF ou clauses types) ; hébergement principal dans l'UE | 2 | 1 |
 | Accès de l'enfant à l'espace parent (et aux données de santé) | Usage partagé de l'appareil | Code parent pour quitter la console enfant ; la console n'affiche ni les besoins ni les réglages | 2 | 1 |
 | Perte de l'appareil | Vol, oubli | Données sensibles en stockage chiffré ; cache limité (7 jours) ; déconnexion à distance possible en changeant le mot de passe [à vérifier] | 2 | 2 |
 | Effet néfaste des contenus ou de la gamification (pression, comparaison) | Conception | Récompenses fondées sur l'effort et non la note ; pas de classement ; contenus ancrés sur le programme ; signalement des erreurs ; validation du parent | 2 | 1 |
@@ -63,7 +63,9 @@ Flux principaux :
 Avec les mesures déjà en place et celles du **plan d'action** ([README](README.md)), le risque résiduel paraît
 **acceptable**. Points à valider avant le lancement public : DPA et encadrement des transferts (Anthropic,
 RevenueCat, Supabase), conditions de conservation chez Anthropic,
-programmation des tâches de purge.
+programmation des tâches de purge. Le **retrait du masquage des photos** (choix de simplicité) est à faire valider
+explicitement par le juriste : des noms d'enfants et d'enseignants peuvent désormais parvenir au fournisseur d'IA
+aux États-Unis.
 
 Avis du délégué à la protection des données ou du juriste : [À COMPLÉTER]
 

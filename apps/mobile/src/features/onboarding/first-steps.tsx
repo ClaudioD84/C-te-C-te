@@ -63,7 +63,7 @@ export function FirstSteps({ profiles }: { profiles: readonly StoredChildProfile
     {
       done: progress.data.tasks || (first !== undefined && !schoolChild),
       title: 'Photographier le journal de classe',
-      detail: 'Les noms sont masqués avant l’envoi ; vous vérifiez la liste des devoirs.',
+      detail: 'L’IA lit la page ; vous vérifiez la liste des devoirs avant tout planning.',
       action: schoolChild
         ? {
             label: 'Prendre la photo',

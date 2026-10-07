@@ -17,12 +17,13 @@ Version du 5 octobre 2026.
 
 ## Ce qui est déjà en place dans l'application
 
-- Enfants identifiés par leur **prénom** seulement (jamais de nom de famille) ; le prénom n'est jamais transmis à l'IA par l'application ; sur les photos, le parent masque les noms qu'il choisit avant l'envoi.
+- Enfants identifiés par leur **prénom** seulement (jamais de nom de famille) ; le prénom n'est jamais transmis à l'IA par l'application.
 - Besoins particuliers (TDAH, dyslexie, dyscalculie) enregistrés **seulement après consentement explicite et
   horodaté** du parent ; le trouble n'est **jamais nommé** dans les demandes envoyées à l'IA (seules les
   adaptations de rédaction le sont).
-- Photos du journal de classe : noms masqués **sur l'appareil** avant l'envoi, photo **supprimée dès l'analyse**,
-  et au plus tard après 24 heures (purge automatique).
+- Photos du journal de classe : **pas de masquage** (une photo peut montrer des noms) ; l'IA a pour consigne de
+  ne recopier aucun nom de personne ni d'école ; photo **supprimée dès l'analyse**, et au plus tard après
+  24 heures (purge automatique).
 - Hébergement des données dans l'**Union européenne** (Supabase, Francfort).
 - Cloisonnement strict par famille (sécurité au niveau des lignes de la base, testée).
 - **Export** de toutes les données de la famille et **suppression** complète du compte depuis l'application.
@@ -46,7 +47,7 @@ Version du 5 octobre 2026.
 | 7 | Conservation : supprimer les comptes inactifs depuis 24 mois (après avertissement par e-mail) et les événements d'effort de plus de 2 ans (fonction `purge-inactive`, tâche quotidienne) | Développement | Fait (à programmer) |
 | 7 bis | Programmer le bilan de la semaine par e-mail (fonction `weekly-recap`, dimanche vers 19 h, même secret `PURGE_SECRET`) : envoyé seulement aux parents qui l'ont demandé | Développement | Fait (à programmer) |
 | 8 | Ouvrir le compte Brevo (formule gratuite, 300 e-mails par jour), valider l'adresse d'expéditeur et le domaine, accepter son accord de sous-traitance : SMTP pour les e-mails de connexion (Supabase Auth) et clé d'API pour l'avertissement des comptes inactifs | Éditeur | Prestataire choisi |
-| 9 | Faire relire l'AIPD, la politique de confidentialité et les conditions d'utilisation par un juriste | Éditeur | À faire |
+| 9 | Faire relire l'AIPD, la politique de confidentialité et les conditions d'utilisation par un juriste, en particulier l'envoi des photos **sans masquage** (noms possibles) au fournisseur d'IA | Éditeur | À faire |
 | 10 | Publier la politique de confidentialité et les conditions (liens exigés par Apple et Google) | Éditeur | À faire |
 | 11 | Délégué à la protection des données : évaluer l'obligation (données de santé « à grande échelle » ?) avec le juriste | Éditeur + juriste | À faire |
 | 12 | Choisir la catégorie des stores : « Éducation » (application destinée aux parents), pas « Enfants » | Éditeur | Recommandé |

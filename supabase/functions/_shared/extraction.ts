@@ -85,7 +85,7 @@ Règles :
 8. Interrogation corrigée : relève les travaux demandés (correction à faire, matière à revoir) ; « faire signer » n'est pas une tâche.
    Relève aussi, au plus 3, les notions où l'élève s'est trompé (réponses barrées, corrigées, points retirés) : une tâche "lecon" par notion, "description" commençant par « Retravailler : » (ex. « Retravailler : l'accord du participe passé »), "remediation" à true, "dueDate" à null sauf date écrite. Ne recopie jamais la note, les points ni une appréciation.
    Pour toutes les autres tâches, "remediation" vaut false.
-9. Les rectangles noirs cachent des informations personnelles : ignore-les. Ne recopie jamais le nom d'une personne.
+9. Ne recopie jamais le nom d'une personne (élève, enseignant, parent) ni celui de l'école : écris plutôt « l'enseignant », « la classe »… ou omets-le.
 10. "documentType" : le type réel du document photographié.
 11. Si aucune tâche n'est lisible, renvoie une liste vide.
 12. "spellingWords" : seulement si le document contient la liste de mots d'une dictée préparée (ou des mots de vocabulaire à savoir écrire), recopie chaque mot ou groupe de mots tel qu'il est écrit, 40 au plus ; sinon une liste vide. La tâche « préparer la dictée » reste une tâche à part.`;

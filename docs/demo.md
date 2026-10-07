@@ -91,8 +91,8 @@ devoirs et deux semaines de suivi, et « Emma » (2e maternelle).
 
 - **Premiers pas** : la liste en haut du cockpit guide les 4 étapes ; « Voir le planning » pour la suivante.
 - **Photo du journal de classe** : « Photographier le journal de classe » > « Choisir dans la galerie », choisir
-  une image. Masquez un nom en glissant la souris (rectangle noir), puis « Envoyer pour analyse ». *L'IA est
-  simulée : elle propose toujours les deux mêmes tâches.*
+  une image, vérifiez l'aperçu, puis « Envoyer pour analyse ». *L'IA est simulée : elle propose toujours les deux
+  mêmes tâches.*
 - **Planning** : « Planning de la semaine » > « Calculer le planning » > « Publier sur la console de l'enfant ».
   Les fiches et quiz se préparent (contenu d'exemple sur les fleuves de Belgique). Dans le même écran :
   **Congés et absences** (ajoutez un congé : le planning l'évite, puis « Idées pour les vacances »).
@@ -196,9 +196,9 @@ les nouveautés, automatiquement.
 
 ## Ce qui ne peut pas être essayé sur Mac ni dans Safari
 
-Le masquage **automatique** des noms (reconnaissance de texte du téléphone), les notifications de rappel, le
-fonctionnement sans réseau en conditions réelles et les vrais achats (RevenueCat, en bac à sable) ne fonctionnent
-que dans l'application installée sur un téléphone : bêta TestFlight (iPhone) ou test interne Google Play.
+L'appareil photo du téléphone, les notifications de rappel, le fonctionnement sans réseau en conditions réelles
+et les vrais achats (RevenueCat, en bac à sable) ne fonctionnent que dans l'application installée sur un
+téléphone : bêta TestFlight (iPhone) ou test interne Google Play.
 
 ## En cas de problème
 

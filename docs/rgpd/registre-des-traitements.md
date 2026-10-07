@@ -21,7 +21,7 @@
 | Prestataire | Rôle | Données | Lieu de traitement |
 |---|---|---|---|
 | Supabase Inc. | Hébergement de la base, des fichiers, de l'authentification et des fonctions serveur | Toutes les données du compte | Union européenne (Francfort) ; société mère aux États-Unis [vérifier le DPA et les transferts] |
-| Anthropic PBC | IA : lecture des photos, préparation des fiches et quiz, dossiers de révision | Photo (zones masquées par le parent), texte des tâches, année et type d'enseignement, consignes d'adaptation, attendus du programme. **Ni nom, ni prénom, ni e-mail, ni trouble nommé transmis par l'application** ; une photo peut contenir un nom que le parent n'a pas masqué. | États-Unis [transfert à encadrer] |
+| Anthropic PBC | IA : lecture des photos, préparation des fiches et quiz, dossiers de révision | Photo (non masquée), texte des tâches, année et type d'enseignement, consignes d'adaptation, attendus du programme. **Ni nom, ni prénom, ni e-mail, ni trouble nommé ajouté par l'application** ; une photo peut montrer des noms écrits sur la page (enfant, enseignants, école). | États-Unis [transfert à encadrer] |
 | RevenueCat Inc. | Gestion des abonnements App Store et Google Play | Identifiant technique de la famille, achats et dates | États-Unis [transfert à encadrer] |
 | Apple, Google | Paiement des abonnements, distribution de l'application | Données de paiement (traitées par eux, en tant que responsables distincts) | Selon leurs conditions |
 | Brevo (Sendinblue SAS, France) | E-mails de compte (confirmation, mot de passe oublié, avertissement d'inactivité) et bilan de la semaine (sur demande) | Adresse e-mail du parent ; pour le bilan : prénoms des enfants, jours, minutes et matières travaillées | Union européenne |
@@ -48,7 +48,7 @@ Aucune donnée n'est vendue, louée ni utilisée à des fins publicitaires. Aucu
 | Base légale | Exécution du contrat (art. 6.1.b) |
 | Données | Prénom (sans nom de famille), avatar, année, type d'enseignement, réseau, options, préférences (jours, durée de travail, centres d'intérêt choisis dans une liste fermée), congés et absences (dates et type, sans motif détaillé) |
 | Conservation | Durée du compte ; suppression du profil ou du compte à tout moment |
-| Remarque | Le nom de famille de l'enfant n'est jamais demandé ; son prénom n'est jamais transmis à l'IA par l'application. La liste des noms à masquer, saisie par le parent, sert à masquer les photos sur l'appareil avant tout envoi (liste stockée chiffrée sur l'appareil) |
+| Remarque | Le nom de famille de l'enfant n'est jamais demandé ; son prénom n'est jamais transmis à l'IA par l'application |
 
 ### T3 — Besoins particuliers (données de santé, art. 9)
 
@@ -66,7 +66,7 @@ Aucune donnée n'est vendue, louée ni utilisée à des fins publicitaires. Aucu
 |---|---|
 | Finalité | Extraire devoirs, leçons et évaluations pour organiser la semaine |
 | Base légale | Exécution du contrat (art. 6.1.b) |
-| Données | Photo **masquée sur l'appareil** (noms recouverts), texte des tâches extraites (matière, description, échéance) |
+| Données | Photo **non masquée** (redimensionnée ; elle peut montrer des noms), texte des tâches extraites (matière, description, échéance) ; l'IA a pour consigne de ne recopier aucun nom |
 | Conservation | Photo : supprimée dès l'analyse, au plus tard après 24 heures. Tâches : durée du compte |
 | Destinataires | Supabase (stockage privé) ; Anthropic (lecture de la photo) |
 
@@ -114,7 +114,7 @@ Aucune donnée n'est vendue, louée ni utilisée à des fins publicitaires. Aucu
 | | |
 |---|---|
 | Finalité | Console enfant utilisable hors connexion ; code parent ; rappels |
-| Données | Copie temporaire de la mission, des fiches et des cartes (7 jours) ; actions en attente d'envoi ; code parent haché ; noms à masquer (stockage chiffré) ; réglages des rappels |
+| Données | Copie temporaire de la mission, des fiches et des cartes (7 jours) ; actions en attente d'envoi ; code parent haché (stockage chiffré) ; réglages des rappels |
 | Conservation | Effacées à la déconnexion et à la suppression du compte |
 | Remarque | Les rappels sont des notifications locales : aucun identifiant de notification n'est envoyé au serveur |
 
