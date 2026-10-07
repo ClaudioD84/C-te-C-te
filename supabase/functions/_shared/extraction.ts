@@ -5,7 +5,13 @@ import { z } from './deps.ts';
  * Le schéma ci-dessous doit rester aligné avec `scanExtractionSchema` de packages/shared.
  */
 
-export const DOCUMENT_TYPES = ['journal_de_classe', 'notes_de_cours', 'interrogation'] as const;
+export const DOCUMENT_TYPES = [
+  'journal_de_classe',
+  'notes_de_cours',
+  'interrogation',
+  'dictee',
+  'vocabulaire',
+] as const;
 export const TASK_KINDS = ['devoir', 'lecon', 'interro', 'examen'] as const;
 export type DocumentType = (typeof DOCUMENT_TYPES)[number];
 
@@ -13,6 +19,10 @@ export const extractionSchema = z.object({
   documentType: z.enum(DOCUMENT_TYPES),
   /** Mots d'une dictée préparée recopiés sur le document (liste à étudier), sinon vide. */
   spellingWords: z.array(z.string()).default([]),
+  /** Liste de vocabulaire (français ou langue étudiée), sinon vide. */
+  vocabulary: z.array(z.object({ term: z.string(), meaning: z.string().nullable() })).default([]),
+  /** Matière de la liste (« Néerlandais », « Français »…), sinon null. */
+  vocabularySubject: z.string().nullable().default(null),
   tasks: z.array(
     z.object({
       subject: z.string().trim().min(1),
@@ -35,10 +45,23 @@ export type Extraction = z.infer<typeof extractionSchema>;
 export const EXTRACTION_JSON_SCHEMA = {
   type: 'object',
   additionalProperties: false,
-  required: ['documentType', 'spellingWords', 'tasks'],
+  required: ['documentType', 'spellingWords', 'vocabulary', 'vocabularySubject', 'tasks'],
   properties: {
     documentType: { type: 'string', enum: [...DOCUMENT_TYPES] },
     spellingWords: { type: 'array', items: { type: 'string' } },
+    vocabulary: {
+      type: 'array',
+      items: {
+        type: 'object',
+        additionalProperties: false,
+        required: ['term', 'meaning'],
+        properties: {
+          term: { type: 'string' },
+          meaning: { anyOf: [{ type: 'string' }, { type: 'null' }] },
+        },
+      },
+    },
+    vocabularySubject: { anyOf: [{ type: 'string' }, { type: 'null' }] },
     tasks: {
       type: 'array',
       items: {
@@ -61,8 +84,8 @@ export const EXTRACTION_JSON_SCHEMA = {
 
 /** Consigne fixe (placée en tête de requête pour profiter du cache). */
 export const SYSTEM_PROMPT = `Tu aides des parents d'élèves de la Fédération Wallonie-Bruxelles (Belgique) à organiser les devoirs.
-Tu reçois la photo d'un document scolaire : une page de journal de classe, des notes de cours ou une interrogation corrigée.
-Ta tâche : relever chaque travail que l'élève doit faire, et rien d'autre.
+Tu reçois la photo d'un document scolaire : une page de journal de classe, des notes de cours, une interrogation corrigée, une dictée corrigée ou une liste de vocabulaire.
+Ta tâche : relever chaque travail que l'élève doit faire, ainsi que les mots à étudier quand le document en contient.
 
 Types de tâches :
 - "devoir" : travail à faire et à rendre (exercices, rédaction, recherche, matériel à apporter…).
@@ -88,7 +111,11 @@ Règles :
 9. Ne recopie jamais le nom d'une personne (élève, enseignant, parent) ni celui de l'école : écris plutôt « l'enseignant », « la classe »… ou omets-le.
 10. "documentType" : le type réel du document photographié.
 11. Si aucune tâche n'est lisible, renvoie une liste vide.
-12. "spellingWords" : seulement si le document contient la liste de mots d'une dictée préparée (ou des mots de vocabulaire à savoir écrire), recopie chaque mot ou groupe de mots tel qu'il est écrit, 40 au plus ; sinon une liste vide. La tâche « préparer la dictée » reste une tâche à part.`;
+12. "spellingWords" : 40 au plus, sinon une liste vide.
+   - liste de mots d'une dictée préparée : recopie chaque mot ou groupe de mots tel qu'il est écrit ; la tâche « préparer la dictée » reste une tâche à part ;
+   - dictée corrigée : chaque mot où l'élève s'est trompé, écrit dans sa forme CORRECTE (celle de la correction, jamais la faute), sans la note ni les points.
+13. "vocabulary" : seulement pour une liste de vocabulaire (mots d'une langue étudiée avec leur traduction, ou mots français avec leur définition), 60 au plus, sinon une liste vide. "term" : le mot ou l'expression tel qu'il est écrit, avec son article s'il y en a un ; "meaning" : la traduction en français ou la définition écrite sur la page (null si la page n'en donne pas ; n'invente pas). "vocabularySubject" : la matière de la liste (« Néerlandais », « Anglais », « Allemand », « Espagnol », « Italien », « Français »…), sinon null.
+14. Dictée corrigée ou liste de vocabulaire : ne crée une tâche que si un travail est écrit (par ex. « revoir les mots pour vendredi »).`;
 
 export const GRADE_LABELS: Record<string, string> = {
   M1: '1re maternelle',
@@ -127,11 +154,19 @@ export function todayInBrussels(now: Date): { iso: string; label: string } {
   return { iso, label };
 }
 
+const DOCUMENT_LABELS: Record<DocumentType, string> = {
+  journal_de_classe: 'journal de classe',
+  notes_de_cours: 'notes de cours',
+  interrogation: 'interrogation',
+  dictee: 'dictée corrigée',
+  vocabulaire: 'liste de vocabulaire',
+};
+
 /** Contexte variable de la requête (après la partie mise en cache). */
 export function buildContext(grade: string, documentType: DocumentType | null, now: Date): string {
   const today = todayInBrussels(now);
   const lines = [`Élève en ${GRADE_LABELS[grade] ?? grade}.`, `Aujourd'hui : ${today.label} (${today.iso}).`];
-  if (documentType) lines.push(`Selon le parent, il s'agit de : ${documentType.replaceAll('_', ' ')}.`);
+  if (documentType) lines.push(`Selon le parent, il s'agit de : ${DOCUMENT_LABELS[documentType]}.`);
   lines.push('Relève les tâches de ce document.');
   return lines.join('\n');
 }
@@ -155,9 +190,19 @@ export function parseExtraction(text: string, now: Date = new Date()): Extractio
         .filter((w) => w.length > 0 && w.length <= 40),
     ),
   ].slice(0, 40);
+  const vocabulary = parsed.vocabulary
+    .map((v) => ({
+      term: v.term.trim().replace(/\s+/g, ' ').slice(0, 120),
+      meaning: v.meaning?.trim().replace(/\s+/g, ' ').slice(0, 200) || null,
+    }))
+    .filter((v) => v.term.length > 0)
+    .slice(0, 60);
+  const vocabularySubject = parsed.vocabularySubject?.trim().slice(0, 40) || null;
   return {
     ...parsed,
     spellingWords,
+    vocabulary,
+    vocabularySubject: vocabulary.length > 0 ? (vocabularySubject ?? 'Français') : null,
     tasks: parsed.tasks
       .filter((task) => !task.remediation || ++remediations <= MAX_REMEDIATIONS)
       .map((task) => {

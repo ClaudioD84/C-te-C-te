@@ -1,4 +1,5 @@
 import { parseSpellingWords } from '@cote-a-cote/shared';
+import { router } from 'expo-router';
 import { useState } from 'react';
 import { StyleSheet } from 'react-native';
 
@@ -47,6 +48,12 @@ export function SpellingCard({ childId, alias }: { childId: string; alias: strin
         disabled={saved}
         loading={save.isPending}
         onPress={() => save.mutate(words)}
+      />
+      <Button
+        variant="secondary"
+        label="📷 Photographier une dictée corrigée"
+        accessibilityHint="Les mots où il y avait une faute s’ajoutent à cette liste"
+        onPress={() => router.push({ pathname: '/scan/nouveau', params: { childId, type: 'dictee' } })}
       />
       {save.error ? (
         <ThemedText themeColor="danger" accessibilityRole="alert">

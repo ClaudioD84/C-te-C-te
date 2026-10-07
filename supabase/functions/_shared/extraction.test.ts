@@ -73,6 +73,29 @@ Deno.test('mots de dictée : nettoyés, sans doublon ; absents par défaut', () 
   assertEquals(parseExtraction(JSON.stringify(valid)).spellingWords, []);
 });
 
+Deno.test('liste de vocabulaire : nettoyée, matière par défaut ; absente sinon', () => {
+  const result = parseExtraction(
+    JSON.stringify({
+      ...valid,
+      documentType: 'vocabulaire',
+      vocabulary: [
+        { term: '  de  hond ', meaning: ' le chien ' },
+        { term: '', meaning: 'vide' },
+        { term: 'de kat', meaning: '' },
+      ],
+      vocabularySubject: null,
+    }),
+  );
+  assertEquals(result.vocabulary, [
+    { term: 'de hond', meaning: 'le chien' },
+    { term: 'de kat', meaning: null },
+  ]);
+  assertEquals(result.vocabularySubject, 'Français');
+  const none = parseExtraction(JSON.stringify({ ...valid, vocabularySubject: 'Anglais' }));
+  assertEquals(none.vocabulary, []);
+  assertEquals(none.vocabularySubject, null);
+});
+
 Deno.test('réponse invalide : erreur', () => {
   assertThrows(() => parseExtraction('{"documentType":"journal_de_classe","tasks":[{"kind":"autre"}]}'));
   assertThrows(() => parseExtraction('pas du json'));

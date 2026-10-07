@@ -20,6 +20,7 @@ import {
   type TaskRow,
 } from '@/features/scan/api';
 import { TaskForm } from '@/features/scan/task-form';
+import { VocabularyCard } from '@/features/vocabulary/vocabulary-card';
 import { useTheme } from '@/hooks/use-theme';
 
 /** Écran de validation (F3) : rien n'est planifié avant que le parent ait relu la liste. */
@@ -81,7 +82,7 @@ export default function ScanReviewScreen() {
           : 'Vérifiez ce que nous avons lu. Corrigez, supprimez ou ajoutez des tâches, puis validez.'}
       </ThemedText>
 
-      {tasks.data?.length === 0 ? (
+      {tasks.data?.length === 0 && !scan.data.spelling_words && !scan.data.vocabulary ? (
         <ThemedText themeColor="textSecondary">Aucune tâche trouvée sur cette photo.</ThemedText>
       ) : null}
       {tasks.data?.map((task) => (
@@ -89,7 +90,19 @@ export default function ScanReviewScreen() {
       ))}
 
       {scan.data.spelling_words && scan.data.spelling_words.length > 0 ? (
-        <ScanWordsCard childId={childId} words={scan.data.spelling_words} />
+        <ScanWordsCard
+          childId={childId}
+          words={scan.data.spelling_words}
+          corrected={scan.data.document_type === 'dictee'}
+        />
+      ) : null}
+      {scan.data.vocabulary && scan.data.vocabulary.length > 0 ? (
+        <VocabularyCard
+          scanId={scanId}
+          entries={scan.data.vocabulary}
+          subject={scan.data.vocabulary_subject}
+          created={scan.data.vocabulary_task_id !== null}
+        />
       ) : null}
 
       {readOnly ? (

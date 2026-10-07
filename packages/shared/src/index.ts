@@ -39,6 +39,7 @@ export * from './relax';
 export * from './school-bag';
 export * from './blocus';
 export * from './languages';
+export * from './vocabulary';
 export * from './reading-aloud';
 export * from './pride';
 export * from './pro-report';

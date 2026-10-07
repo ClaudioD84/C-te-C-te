@@ -11,9 +11,23 @@ export const TASK_KIND_LABELS: Record<TaskKind, string> = {
   examen: 'Examen',
 };
 
-export const DOCUMENT_TYPES = ['journal_de_classe', 'notes_de_cours', 'interrogation'] as const;
+export const DOCUMENT_TYPES = [
+  'journal_de_classe',
+  'notes_de_cours',
+  'interrogation',
+  'dictee',
+  'vocabulaire',
+] as const;
 export const documentTypeSchema = z.enum(DOCUMENT_TYPES);
 export type DocumentType = z.infer<typeof documentTypeSchema>;
+
+export const DOCUMENT_TYPE_LABELS: Record<DocumentType, string> = {
+  journal_de_classe: 'Journal de classe',
+  notes_de_cours: 'Notes de cours',
+  interrogation: 'Interrogation',
+  dictee: 'Dictée corrigée',
+  vocabulaire: 'Liste de vocabulaire',
+};
 
 const isoDateSchema = z.string().regex(/^\d{4}-\d{2}-\d{2}$/, 'Date au format AAAA-MM-JJ');
 

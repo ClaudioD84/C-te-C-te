@@ -1,3 +1,4 @@
+import { mergeSpellingWords } from '@cote-a-cote/shared';
 import { StyleSheet } from 'react-native';
 
 import { Button } from '@/components/button';
@@ -7,19 +8,49 @@ import { Spacing } from '@/constants/theme';
 
 import { useSaveSpellingList, useSpellingList } from './api';
 
-/** Vérification d'une photo : mots de dictée relevés, à utiliser pour la dictée de la semaine. */
-export function ScanWordsCard({ childId, words }: { childId: string; words: readonly string[] }) {
+/**
+ * Vérification d'une photo : mots de dictée relevés. Liste préparée : elle devient la dictée de la semaine.
+ * Dictée corrigée : les mots à revoir s'ajoutent à la dictée de la semaine.
+ */
+export function ScanWordsCard({
+  childId,
+  words,
+  corrected = false,
+}: {
+  childId: string;
+  words: readonly string[];
+  corrected?: boolean;
+}) {
   const current = useSpellingList(childId);
   const save = useSaveSpellingList(childId);
-  const used = (current.data ?? []).join('\n') === words.join('\n');
+  const list = current.data ?? [];
+  const merged = mergeSpellingWords(list, words);
+  const used = corrected
+    ? merged.length === list.length && list.length > 0
+    : list.join('\n') === words.join('\n');
   return (
     <ThemedView type="backgroundElement" style={styles.card}>
-      <ThemedText type="smallBold">Mots de dictée trouvés ({words.length})</ThemedText>
+      <ThemedText type="smallBold">
+        {corrected ? `Mots à revoir (${words.length})` : `Mots de dictée trouvés (${words.length})`}
+      </ThemedText>
+      {corrected ? (
+        <ThemedText type="small" themeColor="textSecondary">
+          Les mots où il y avait une faute, écrits correctement.
+        </ThemedText>
+      ) : null}
       <ThemedText>{words.join(' · ')}</ThemedText>
       {used ? (
         <ThemedText accessibilityLiveRegion="polite">
-          ✓ C’est la dictée de la semaine : votre enfant peut s’entraîner.
+          ✓ {corrected ? 'Ajoutés à la dictée de la semaine' : 'C’est la dictée de la semaine'} : votre enfant
+          peut s’entraîner.
         </ThemedText>
+      ) : corrected ? (
+        <Button
+          variant="secondary"
+          label="Ajouter à la dictée de la semaine"
+          loading={save.isPending}
+          onPress={() => save.mutate(merged)}
+        />
       ) : (
         <Button
           variant="secondary"

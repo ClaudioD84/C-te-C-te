@@ -97,6 +97,27 @@ const usage = {
   cache_creation_input_tokens: 0,
 };
 
+const dictationAnswer = {
+  documentType: 'dictee',
+  spellingWords: ['la promenade', 'ils marchaient'],
+  vocabulary: [],
+  vocabularySubject: null,
+  tasks: [],
+};
+
+const vocabularyAnswer = {
+  documentType: 'vocabulaire',
+  spellingWords: [],
+  vocabulary: [
+    { term: 'de hond', meaning: 'le chien' },
+    { term: 'de kat', meaning: 'le chat' },
+    { term: 'het huis', meaning: 'la maison' },
+    { term: 'de fiets', meaning: null },
+  ],
+  vocabularySubject: 'Néerlandais',
+  tasks: [],
+};
+
 export function startMocks(port = MOCKS_PORT) {
   return http
     .createServer((req, res) => {
@@ -127,7 +148,13 @@ export function startMocks(port = MOCKS_PORT) {
           );
           return;
         }
-        const text = JSON.stringify(answers[key]);
+        // Photo d'une dictée corrigée ou d'une liste de vocabulaire (type choisi par le parent).
+        let answer = answers[key];
+        if (key === 'documentType' && body.includes("il s'agit de : dictée corrigée"))
+          answer = dictationAnswer;
+        if (key === 'documentType' && body.includes("il s'agit de : liste de vocabulaire"))
+          answer = vocabularyAnswer;
+        const text = JSON.stringify(answer);
         const message = { id: 'msg_e2e', type: 'message', role: 'assistant', model: request.model };
 
         if (!request.stream) {

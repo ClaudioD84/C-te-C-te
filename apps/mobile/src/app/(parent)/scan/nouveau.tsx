@@ -1,4 +1,4 @@
-import { DOCUMENT_TYPES, type DocumentType } from '@cote-a-cote/shared';
+import { DOCUMENT_TYPE_LABELS, DOCUMENT_TYPES, type DocumentType } from '@cote-a-cote/shared';
 import { Image } from 'expo-image';
 import * as ImagePicker from 'expo-image-picker';
 import { router, useLocalSearchParams } from 'expo-router';
@@ -13,16 +13,22 @@ import { Spacing } from '@/constants/theme';
 import { submitScan, useFamilyId } from '@/features/scan/api';
 import { prepareImage, type PreparedImage } from '@/features/scan/image';
 
-const DOCUMENT_LABELS: Record<DocumentType, string> = {
-  journal_de_classe: 'Journal de classe',
-  notes_de_cours: 'Notes de cours',
-  interrogation: 'Interrogation',
+const DOCUMENT_HINTS: Record<DocumentType, string> = {
+  journal_de_classe: 'Une page de journal peut contenir plusieurs jours.',
+  notes_de_cours: 'Seules les consignes de travail deviennent des tâches.',
+  interrogation: 'Les notions à retravailler sont proposées, sans la note.',
+  dictee:
+    'La dictée corrigée : les mots où il y avait une faute, écrits correctement, rejoignent les mots à revoir.',
+  vocabulaire:
+    'Une liste de mots avec leur traduction (langues) ou leur définition (français) : elle devient des cartes de révision.',
 };
 
 export default function NewScanScreen() {
-  const { childId } = useLocalSearchParams<{ childId: string }>();
+  const { childId, type } = useLocalSearchParams<{ childId: string; type?: string }>();
   const { data: familyId } = useFamilyId();
-  const [documentType, setDocumentType] = useState<DocumentType>('journal_de_classe');
+  const [documentType, setDocumentType] = useState<DocumentType>(
+    DOCUMENT_TYPES.find((t) => t === type) ?? 'journal_de_classe',
+  );
   const [image, setImage] = useState<PreparedImage | null>(null);
   const [busy, setBusy] = useState<'preparation' | 'envoi' | null>(null);
   const [message, setMessage] = useState<string | null>(null);
@@ -83,13 +89,12 @@ export default function NewScanScreen() {
         <ChoiceChips
           label="Que photographiez-vous ?"
           options={DOCUMENT_TYPES}
-          labels={DOCUMENT_LABELS}
+          labels={DOCUMENT_TYPE_LABELS}
           selected={[documentType]}
           onToggle={setDocumentType}
         />
         <ThemedText themeColor="textSecondary">
-          Photographiez une page à la fois, à plat et bien éclairée. Une page de journal peut contenir
-          plusieurs jours.
+          Photographiez une page à la fois, à plat et bien éclairée. {DOCUMENT_HINTS[documentType]}
         </ThemedText>
         <Button label="Prendre une photo" onPress={() => pick('camera')} />
         <Button variant="secondary" label="Choisir dans la galerie" onPress={() => pick('galerie')} />

@@ -12,7 +12,7 @@ import { estimateCostUsd } from '../_shared/pricing.ts';
 import { adminClient, authenticate } from '../_shared/supabase.ts';
 
 /**
- * Analyse d'une photo (F3) : vérifie les droits, lit la photo floutée avec Claude,
+ * Analyse d'une photo (F3) : vérifie les droits, lit la photo avec Claude,
  * enregistre les tâches en brouillon pour validation par le parent, puis supprime la photo.
  */
 
@@ -110,6 +110,8 @@ Deno.serve(async (request) => {
         status: 'draft',
         document_type: extraction.documentType,
         spelling_words: extraction.spellingWords.length > 0 ? extraction.spellingWords : null,
+        vocabulary: extraction.vocabulary.length > 0 ? extraction.vocabulary : null,
+        vocabulary_subject: extraction.vocabularySubject,
         storage_path: null,
         processed_at: now.toISOString(),
       })

@@ -1,4 +1,4 @@
-import type { DocumentType, TaskKind } from '@cote-a-cote/shared';
+import type { DocumentType, TaskKind, VocabularyEntry } from '@cote-a-cote/shared';
 import { FunctionsHttpError } from '@supabase/supabase-js';
 import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query';
 import { randomUUID } from '@/lib/uuid';
@@ -16,8 +16,13 @@ export interface Scan {
   document_type: DocumentType | null;
   status: ScanStatus;
   error: string | null;
-  /** Mots d'une dictée préparée relevés sur la photo. */
+  /** Mots d'une dictée préparée (ou mots à revoir d'une dictée corrigée) relevés sur la photo. */
   spelling_words: string[] | null;
+  /** Liste de vocabulaire lue sur la photo. */
+  vocabulary: VocabularyEntry[] | null;
+  vocabulary_subject: string | null;
+  /** Tâche créée avec les cartes de cette liste. */
+  vocabulary_task_id: string | null;
 }
 
 export interface TaskRow {
@@ -105,7 +110,9 @@ export function useScan(scanId: string) {
     queryFn: async () => {
       const { data, error } = await supabase
         .from('scan')
-        .select('id, child_id, document_type, status, error, spelling_words')
+        .select(
+          'id, child_id, document_type, status, error, spelling_words, vocabulary, vocabulary_subject, vocabulary_task_id',
+        )
         .eq('id', scanId)
         .single();
       if (error) throw error;
