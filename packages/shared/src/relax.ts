@@ -1,7 +1,7 @@
 import { ageGroup, type AgeGroup } from './backgrounds';
 import { BELGIAN_ANIMALS } from './collection';
 import type { Interest } from './profile';
-import type { Grade } from './school';
+import { schoolLevel, type Grade } from './school';
 
 /**
  * Coin détente : de petits jeux calmes, après la mission ou pendant une pause. Pas de chrono, pas de score,
@@ -29,8 +29,11 @@ export function relaxMinutesLimit(preferences: { relaxMinutes?: number }): numbe
 
 export function relaxGamesFor(grade: Grade): RelaxGame[] {
   const age = ageGroup(grade);
-  return (Object.keys(RELAX_GAMES) as RelaxGame[]).filter((game) =>
-    (RELAX_GAMES[game].ages as readonly AgeGroup[]).includes(age),
+  return (Object.keys(RELAX_GAMES) as RelaxGame[]).filter(
+    (game) =>
+      (RELAX_GAMES[game].ages as readonly AgeGroup[]).includes(age) &&
+      // Le taquin range des nombres de 1 à 8 : pas avant la 1re primaire.
+      !(game === 'taquin' && schoolLevel(grade) === 'maternelle'),
   );
 }
 

@@ -87,6 +87,8 @@ export function afterQuiet(date: Date, quiet: ReminderSettings['quiet']): Date {
 }
 
 function evaluationLabel(kind: EvaluationKind, subject: string): string {
+  // Examen de fin de période (plan de blocus, bilan) : sa matière quand elle est connue.
+  if (kind === 'bilan' && subject && subject !== 'bilan') return `Examen de ${subject}`;
   if (kind in EXAM_LABELS) return EXAM_LABELS[kind as keyof typeof EXAM_LABELS];
   return `${subject} (${TASK_KIND_LABELS[kind as TaskKind].toLowerCase()})`;
 }

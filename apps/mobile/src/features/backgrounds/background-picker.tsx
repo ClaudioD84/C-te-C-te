@@ -59,7 +59,7 @@ export function BackgroundPicker({ child, summary }: { child: StoredChildProfile
               {/* Aperçu de la scène, avec un cadenas tant que le fond n'est pas débloqué. */}
               <View
                 style={[styles.preview, { backgroundColor: theme.background, borderColor: theme.border }]}>
-                {code !== 'uni' ? <BackgroundScene code={code} /> : null}
+                {code !== 'uni' ? <BackgroundScene code={code} bands={8} /> : null}
                 {!unlocked ? (
                   <ThemedText style={styles.lock} aria-hidden>
                     🔒

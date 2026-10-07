@@ -48,6 +48,7 @@ export default function ReadingAloudScreen() {
   const [seconds, setSeconds] = useState(0);
   const [recorded, setRecorded] = useState<string | null>(null);
   const [recording, setRecording] = useState(false);
+  const [starting, setStarting] = useState(false);
   const [hard, setHard] = useState<number[]>([]);
   // Vitesse de la lecture précédente, figée à l'enregistrement (la liste est ensuite rechargée avec celle-ci).
   const [previousAtSave, setPreviousAtSave] = useState<number | null>(null);
@@ -83,19 +84,25 @@ export default function ReadingAloudScreen() {
 
   async function start(id: string) {
     setTextId(id);
-    setStartedAt(Date.now());
-    setStep('lecture');
-    // L'enregistrement est un plus : sans micro, la lecture continue.
+    setStarting(true);
+    // L'enregistrement est un plus : sans micro, la lecture continue. Le chrono ne démarre qu'après la
+    // question d'autorisation, pour ne pas compter le temps de réponse du parent.
+    let recordingStarted = false;
     try {
       const permission = await requestRecordingPermissionsAsync();
-      if (!permission.granted) return;
-      await setAudioModeAsync({ allowsRecording: true, playsInSilentMode: true });
-      await recorder.prepareToRecordAsync();
-      recorder.record({ forDuration: 300 });
-      setRecording(true);
+      if (permission.granted) {
+        await setAudioModeAsync({ allowsRecording: true, playsInSilentMode: true });
+        await recorder.prepareToRecordAsync();
+        recorder.record({ forDuration: 300 });
+        recordingStarted = true;
+      }
     } catch {
-      setRecording(false);
+      recordingStarted = false;
     }
+    setRecording(recordingStarted);
+    setStartedAt(Date.now());
+    setStarting(false);
+    setStep('lecture');
   }
 
   async function stop() {
@@ -158,7 +165,12 @@ export default function ReadingAloudScreen() {
         </ThemedView>
 
         {step === 'pret' ? (
-          <Button size="large" label="▶️ Je commence à lire" onPress={() => void start(text.id)} />
+          <Button
+            size="large"
+            label="▶️ Je commence à lire"
+            loading={starting}
+            onPress={() => void start(text.id)}
+          />
         ) : null}
         {step === 'lecture' ? (
           <>

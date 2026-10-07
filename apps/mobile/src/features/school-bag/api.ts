@@ -59,7 +59,12 @@ export function useBagChecks(childId: string, date: string) {
     AsyncStorage.getItem(storageKey)
       .then((raw) => setChecked(raw ? (JSON.parse(raw) as string[]) : []))
       .catch(() => setChecked([]));
-  }, [storageKey]);
+    // Les coches des jours passés ne servent plus : on ne garde que celles du jour préparé.
+    const prefix = `cartable:${childId}:`;
+    AsyncStorage.getAllKeys()
+      .then((keys) => AsyncStorage.multiRemove(keys.filter((k) => k.startsWith(prefix) && k < storageKey)))
+      .catch(() => undefined);
+  }, [storageKey, childId]);
   const toggle = useCallback(
     (id: string) =>
       setChecked((current) => {

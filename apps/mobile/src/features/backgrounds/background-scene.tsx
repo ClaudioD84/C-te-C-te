@@ -13,7 +13,16 @@ const BANDS = 32;
  * Scène du fond d'écran (décorative, immobile, cachée aux lecteurs d'écran) : dégradé, formes douces et
  * quelques éléments dessinés. « Discret » (profil TDAH) : formes plus pâles et moitié moins d'éléments.
  */
-export function BackgroundScene({ code, discreet = false }: { code: SceneCode; discreet?: boolean }) {
+export function BackgroundScene({
+  code,
+  discreet = false,
+  bands = BANDS,
+}: {
+  code: SceneCode;
+  discreet?: boolean;
+  /** Bandes du dégradé : moins pour une vignette. */
+  bands?: number;
+}) {
   const mode = useColorScheme() === 'dark' ? 'dark' : 'light';
   const scene: Scene = SCENES[code];
   const [size, setSize] = useState({ width: 0, height: 0 });
@@ -46,16 +55,16 @@ export function BackgroundScene({ code, discreet = false }: { code: SceneCode; d
       importantForAccessibility="no-hide-descendants"
       onLayout={(e: LayoutChangeEvent) => setSize(e.nativeEvent.layout)}
       style={[StyleSheet.absoluteFill, styles.clip, { backgroundColor: top }]}>
-      {Array.from({ length: BANDS }, (_, i) => (
+      {Array.from({ length: bands }, (_, i) => (
         <View
           key={`b${i}`}
           style={{
             position: 'absolute',
             left: 0,
             right: 0,
-            top: `${(i * 100) / BANDS}%`,
-            height: `${100 / BANDS + 0.5}%`,
-            backgroundColor: mixColors(top, bottom, (i + 0.5) / BANDS),
+            top: `${(i * 100) / bands}%`,
+            height: `${100 / bands + 0.5}%`,
+            backgroundColor: mixColors(top, bottom, (i + 0.5) / bands),
           }}
         />
       ))}

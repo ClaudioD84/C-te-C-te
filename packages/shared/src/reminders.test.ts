@@ -83,6 +83,14 @@ describe('planReminders', () => {
     ]);
   });
 
+  it('examen de fin de période (blocus) : la matière dans le rappel de la veille', () => {
+    const r = planReminders(
+      input({ evaluations: [{ childId: 'a', date: '2026-10-08', kind: 'bilan', subject: 'Mathématiques' }] }),
+      settings,
+    );
+    expect(r.find((x) => x.id === 'eval-a-2026-10-08')?.body).toBe('Lion : Examen de Mathématiques demain.');
+  });
+
   it('planning : le prochain dimanche, seulement si une semaine manque', () => {
     expect(planReminders(input(), settings)).toEqual([]);
     const r = planReminders(input({ plannedNextWeek: ['a'] }), settings);

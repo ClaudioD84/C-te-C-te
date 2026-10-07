@@ -1,5 +1,6 @@
 import {
   addDays,
+  isMockExam,
   planReminders,
   toIsoDate,
   weekdayKey,
@@ -35,12 +36,16 @@ async function loadInput(now: Date): Promise<ReminderInput> {
       .lte('scheduled_on', until),
     supabase
       .from('task')
-      .select('child_id, subject, kind, due_date')
+      .select('child_id, subject, kind, due_date, description')
       .eq('status', 'validated')
       .in('kind', ['interro', 'examen'])
       .gt('due_date', today)
       .lte('due_date', until),
-    supabase.from('exam').select('child_id, type, exam_date').gt('exam_date', today).lte('exam_date', until),
+    supabase
+      .from('exam')
+      .select('child_id, type, exam_date, subjects')
+      .gt('exam_date', today)
+      .lte('exam_date', until),
     supabase
       .from('study_session')
       .select('child_id')
@@ -63,17 +68,20 @@ async function loadInput(now: Date): Promise<ReminderInput> {
       };
     }),
     evaluations: [
-      ...tasks.data!.map((t) => ({
-        childId: t.child_id as string,
-        date: t.due_date as IsoDate,
-        kind: t.kind as EvaluationKind,
-        subject: t.subject as string,
-      })),
+      // Un examen blanc n'est pas une évaluation : pas de rappel « examen demain » pour lui.
+      ...tasks
+        .data!.filter((t) => !isMockExam(String(t.description)))
+        .map((t) => ({
+          childId: t.child_id as string,
+          date: t.due_date as IsoDate,
+          kind: t.kind as EvaluationKind,
+          subject: t.subject as string,
+        })),
       ...exams.data!.map((e) => ({
         childId: e.child_id as string,
         date: e.exam_date as IsoDate,
         kind: e.type as EvaluationKind,
-        subject: e.type as string,
+        subject: ((e.subjects as string[] | null) ?? []).join(', ') || (e.type as string),
       })),
     ],
     plannedNextWeek: [...new Set(nextWeek.data!.map((s) => s.child_id as string))],

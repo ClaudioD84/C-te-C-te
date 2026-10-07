@@ -56,7 +56,7 @@ export default function BlocusScreen() {
   const availableDays = child.data.preferences.availableDays;
   const plan = planBlocus({ exams, today, availableDays });
   const byDay = new Map<IsoDate, typeof plan.tasks>();
-  for (const task of plan.tasks) byDay.set(task.dueDate, [...(byDay.get(task.dueDate) ?? []), task]);
+  for (const task of plan.tasks) byDay.set(task.day, [...(byDay.get(task.day) ?? []), task]);
   const canAdd = subject.trim().length >= 2 && date !== null && date > today;
 
   return (
@@ -64,8 +64,8 @@ export default function BlocusScreen() {
       <ThemedText type="subtitle">Plan de blocus de {child.data.alias}</ThemedText>
       <ThemedText themeColor="textSecondary">
         Recopiez l’horaire des examens. Les chapitres sont répartis jusqu’à chaque examen (le plus proche
-        d’abord, deux par jour au plus, un seul le dimanche et les jours d’examen), avec une révision express
-        la veille. Ils suivent les jours de travail du profil.
+        d’abord, deux par jour au plus, un seul le dimanche et les jours d’examen), avec un examen blanc la
+        veille. Ils suivent les jours de travail du profil.
       </ThemedText>
 
       <ThemedView type="backgroundElement" style={styles.card}>
@@ -138,7 +138,7 @@ export default function BlocusScreen() {
               </ThemedText>
               {tasks.map((t, i) => (
                 <ThemedText key={i}>
-                  • {t.subject} : {t.kind === 'examen' ? 'révision express (veille d’examen)' : t.description}
+                  • {t.subject} : {t.kind === 'examen' ? 'examen blanc (veille d’examen)' : t.description}
                 </ThemedText>
               ))}
             </View>

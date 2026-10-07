@@ -1,10 +1,12 @@
 import { addDays, weekdayKey, type IsoDate } from './dates';
+import { mockExamDescription } from './revision';
 import type { Weekday } from './profile';
 
 /**
  * Plan de blocus (examens de décembre et de juin, secondaire surtout) : chaque examen a sa date et ses
  * chapitres. Les chapitres sont répartis du lendemain jusqu'à l'avant-veille de chaque examen, l'examen
- * le plus proche d'abord, en alternant les matières ; la veille, une révision express de la matière.
+ * le plus proche d'abord, en alternant les matières ; la veille, un examen blanc de la matière (une séance
+ * d'environ 40 minutes, posée ce jour-là par le planning).
  * Jours plus légers : le jour d'un examen et le dimanche (un seul chapitre).
  */
 export interface BlocusExam {
@@ -17,7 +19,12 @@ export interface BlocusTask {
   subject: string;
   kind: 'lecon' | 'examen';
   description: string;
-  /** Jour où la révision doit être faite (échéance de la tâche). */
+  /** Jour prévu pour cette révision (aperçu). */
+  day: IsoDate;
+  /**
+   * Échéance donnée au planning : le lendemain du jour prévu pour un chapitre (révisé au plus tard ce
+   * jour-là), le jour même pour l'examen blanc de la veille (séance posée ce jour précis).
+   */
   dueDate: IsoDate;
   /** Examen auquel la tâche se rattache. */
   examDate: IsoDate;
@@ -97,7 +104,8 @@ export function planBlocus(input: {
         subject: pick.exam.subject,
         kind: 'lecon',
         description: `Revoir : ${pick.chapter}`,
-        dueDate: day,
+        day,
+        dueDate: addDays(day, 1),
         examDate: pick.exam.date,
       });
     }
@@ -109,7 +117,8 @@ export function planBlocus(input: {
         subject: late.exam.subject,
         kind: 'lecon',
         description: `Revoir : ${late.chapter}`,
-        dueDate: addDays(late.exam.date, -1),
+        day: addDays(late.exam.date, -1),
+        dueDate: late.exam.date,
         examDate: late.exam.date,
       });
     }
@@ -120,19 +129,24 @@ export function planBlocus(input: {
       subject: late.exam.subject,
       kind: 'lecon',
       description: `Revoir : ${late.chapter}`,
-      dueDate: addDays(late.exam.date, -1),
+      day: addDays(late.exam.date, -1),
+      dueDate: late.exam.date,
       examDate: late.exam.date,
     });
   }
 
   for (const exam of exams) {
+    // Examen blanc la veille (s'il reste au moins un jour avant l'examen).
+    const eve = addDays(exam.date, -1);
+    if (eve <= input.today) continue;
     tasks.push({
       subject: exam.subject,
       kind: 'examen',
-      description: `Veille d’examen de ${exam.subject} : relire ses synthèses et refaire les exercices ratés`,
-      dueDate: addDays(exam.date, -1) > input.today ? addDays(exam.date, -1) : exam.date,
+      description: mockExamDescription(exam.subject, exam.chapters),
+      day: eve,
+      dueDate: eve,
       examDate: exam.date,
     });
   }
-  return { tasks: tasks.sort((a, b) => a.dueDate.localeCompare(b.dueDate)), overloaded };
+  return { tasks: tasks.sort((a, b) => a.day.localeCompare(b.day)), overloaded };
 }

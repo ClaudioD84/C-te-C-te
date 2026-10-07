@@ -14,7 +14,9 @@ import { supabase } from '@/lib/supabase';
 const HIDDEN_KEY = 'premiers_pas_masques';
 
 async function count(table: 'task' | 'study_session' | 'learning_event') {
-  const { count: n, error } = await supabase.from(table).select('*', { count: 'exact', head: true });
+  const query = supabase.from(table).select('*', { count: 'exact', head: true });
+  // Le temps passé au coin détente n'est pas une mission.
+  const { count: n, error } = await (table === 'learning_event' ? query.neq('type', 'detente') : query);
   if (error) throw error;
   return n ?? 0;
 }

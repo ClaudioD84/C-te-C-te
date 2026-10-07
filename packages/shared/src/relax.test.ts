@@ -21,6 +21,8 @@ import {
 describe('coin détente', () => {
   it('propose les jeux de son âge et 10 minutes par défaut', () => {
     expect(relaxGamesFor('M2')).not.toContain('mots_meles');
+    expect(relaxGamesFor('M2')).not.toContain('taquin');
+    expect(relaxGamesFor('P1')).toContain('taquin');
     expect(relaxGamesFor('P5')).toContain('mots_meles');
     expect(relaxMinutesLimit({})).toBe(10);
     expect(relaxMinutesLimit({ relaxMinutes: 0 })).toBe(0);

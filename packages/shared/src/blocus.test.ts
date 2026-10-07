@@ -1,6 +1,8 @@
 import { describe, expect, it } from 'vitest';
 
 import { blocusChapters, planBlocus } from './blocus';
+import { addDays } from './dates';
+import { isMockExam } from './revision';
 
 const ALL_DAYS = ['lun', 'mar', 'mer', 'jeu', 'ven', 'sam', 'dim'] as const;
 
@@ -28,16 +30,16 @@ describe('plan de blocus', () => {
       expect(t.dueDate <= (t.subject === 'Maths' ? '2026-12-13' : '2026-12-15')).toBe(true);
     // Au plus 2 chapitres par jour, 1 le dimanche (13 décembre).
     const perDay = new Map<string, number>();
-    for (const t of lessons) perDay.set(t.dueDate, (perDay.get(t.dueDate) ?? 0) + 1);
+    for (const t of lessons) perDay.set(t.day, (perDay.get(t.day) ?? 0) + 1);
     expect(Math.max(...perDay.values())).toBeLessThanOrEqual(2);
     expect(perDay.get('2026-12-13') ?? 0).toBeLessThanOrEqual(1);
     // Les maths (examen le plus proche) commencent.
     expect(lessons[0]!.subject).toBe('Maths');
-    // La veille de chaque examen : révision express.
-    expect(plan.tasks.filter((t) => t.kind === 'examen').map((t) => t.dueDate)).toEqual([
-      '2026-12-14',
-      '2026-12-16',
-    ]);
+    // La veille de chaque examen : un examen blanc, posé ce jour-là (reconnu par le planning).
+    const mocks = plan.tasks.filter((t) => t.kind === 'examen');
+    expect(mocks.map((t) => t.dueDate)).toEqual(['2026-12-14', '2026-12-16']);
+    expect(mocks.every((t) => isMockExam(t.description))).toBe(true);
+    expect(mocks[0]!.description).toContain('Fractions');
   });
 
   it('signale un plan trop serré sans perdre de chapitre', () => {
@@ -60,7 +62,7 @@ describe('plan de blocus', () => {
       ],
     });
     expect(plan.tasks.some((t) => t.subject === 'Latin')).toBe(false);
-    expect(plan.tasks.filter((t) => t.kind === 'lecon').map((t) => t.dueDate)).toEqual([
+    expect(plan.tasks.filter((t) => t.kind === 'lecon').map((t) => t.day)).toEqual([
       '2026-12-09',
       '2026-12-14',
     ]);
