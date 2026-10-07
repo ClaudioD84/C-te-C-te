@@ -10,7 +10,9 @@ test('lecture à voix haute : texte du niveau, mots difficiles notés, progrès 
 
   await enterChildMode(page, 'Écureuil');
   await button(page, '🗣️ Je lis à voix haute').click();
-  await expect(page.getByText(/^(Le chat de Léa|La pluie|Au parc|Le gâteau)$/)).toBeVisible();
+  const title = page.getByText(/^(Le chat de Léa|La pluie|Au parc|Le gâteau)$/);
+  await expect(title).toBeVisible();
+  const titleText = (await title.textContent())!;
   await button(page, '▶️ Je commence à lire').click();
   await page.waitForTimeout(2_000);
   await button(page, '⏹️ J’ai fini de lire').click();
@@ -30,6 +32,10 @@ test('lecture à voix haute : texte du niveau, mots difficiles notés, progrès 
            where child_id = '${childId}' and meta->>'mode' = 'lecture_voix'`),
     )
     .toBe('{"subject" : "Français", "hard" : 1, "fast" : true}');
+  // La liste des lectures est rechargée après l'enregistrement : le résultat affiché ne change pas.
+  await page.waitForLoadState('networkidle');
+  await expect(page.getByText('Première lecture enregistrée : bravo !')).toBeVisible();
+  await expect(page.getByText(titleText, { exact: true })).toBeVisible();
 
   await button(page, 'Retour à la mission').click();
   await button(page, 'Espace parent (code demandé)').click();

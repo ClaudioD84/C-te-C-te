@@ -1,6 +1,7 @@
 import {
   deriveLearningSettings,
   nextReadingText,
+  READING_TEXTS,
   readingProgressMessage,
   textWords,
   wordsPerMinute,
@@ -48,6 +49,9 @@ export default function ReadingAloudScreen() {
   const [recorded, setRecorded] = useState<string | null>(null);
   const [recording, setRecording] = useState(false);
   const [hard, setHard] = useState<number[]>([]);
+  // Vitesse de la lecture précédente, figée à l'enregistrement (la liste est ensuite rechargée avec celle-ci).
+  const [previousAtSave, setPreviousAtSave] = useState<number | null>(null);
+  const [textId, setTextId] = useState<string | null>(null);
 
   if (!child.data || readings.isLoading) {
     return (
@@ -58,10 +62,13 @@ export default function ReadingAloudScreen() {
   }
   const settings = deriveLearningSettings(child.data);
   const history = readings.data ?? [];
-  const text = nextReadingText(
-    child.data.grade,
-    history.map((r) => r.textId),
-  );
+  // Texte de la séance, figé dès le début de la lecture (la liste des lectures change à l'enregistrement).
+  const text =
+    READING_TEXTS.find((t) => t.id === textId) ??
+    nextReadingText(
+      child.data.grade,
+      history.map((r) => r.textId),
+    );
   if (!text) {
     return (
       <ChildScreen style={[styles.container, styles.center]}>
@@ -74,7 +81,8 @@ export default function ReadingAloudScreen() {
   const wpm = wordsPerMinute(text.text, seconds);
   const previous = history.at(-1)?.wpm ?? null;
 
-  async function start() {
+  async function start(id: string) {
+    setTextId(id);
     setStartedAt(Date.now());
     setStep('lecture');
     // L'enregistrement est un plus : sans micro, la lecture continue.
@@ -150,7 +158,7 @@ export default function ReadingAloudScreen() {
         </ThemedView>
 
         {step === 'pret' ? (
-          <Button size="large" label="▶️ Je commence à lire" onPress={() => void start()} />
+          <Button size="large" label="▶️ Je commence à lire" onPress={() => void start(text.id)} />
         ) : null}
         {step === 'lecture' ? (
           <>
@@ -185,6 +193,7 @@ export default function ReadingAloudScreen() {
                   wpm,
                   hardWords: hard.map((i) => words[i]!.replace(/[^\p{L}\d'’-]/gu, '')),
                 });
+                setPreviousAtSave(previous);
                 setStep('fini');
               }}
             />
@@ -197,7 +206,7 @@ export default function ReadingAloudScreen() {
               Tu as lu {Math.round(seconds)} secondes, à {wpm} mots par minute.
             </ThemedText>
             <ThemedText style={learningTextStyle(settings)}>
-              {readingProgressMessage(wpm, previous)}
+              {readingProgressMessage(wpm, previousAtSave)}
             </ThemedText>
           </ThemedView>
         ) : null}
