@@ -1,0 +1,228 @@
+import { z } from './deps.ts';
+
+/**
+ * Extraction des tâches à partir d'une photo (F3).
+ * Le schéma ci-dessous doit rester aligné avec `scanExtractionSchema` de packages/shared.
+ */
+
+export const DOCUMENT_TYPES = [
+  'journal_de_classe',
+  'notes_de_cours',
+  'interrogation',
+  'dictee',
+  'vocabulaire',
+] as const;
+export const TASK_KINDS = ['devoir', 'lecon', 'interro', 'examen'] as const;
+export type DocumentType = (typeof DOCUMENT_TYPES)[number];
+
+export const extractionSchema = z.object({
+  documentType: z.enum(DOCUMENT_TYPES),
+  /** Mots d'une dictée préparée recopiés sur le document (liste à étudier), sinon vide. */
+  spellingWords: z.array(z.string()).default([]),
+  /** Liste de vocabulaire (français ou langue étudiée), sinon vide. */
+  vocabulary: z.array(z.object({ term: z.string(), meaning: z.string().nullable() })).default([]),
+  /** Matière de la liste (« Néerlandais », « Français »…), sinon null. */
+  vocabularySubject: z.string().nullable().default(null),
+  tasks: z.array(
+    z.object({
+      subject: z.string().trim().min(1),
+      kind: z.enum(TASK_KINDS),
+      description: z.string().trim().min(1),
+      dueDate: z
+        .string()
+        .regex(/^\d{4}-\d{2}-\d{2}$/)
+        .nullable(),
+      reference: z.string().nullable(),
+      confidence: z.number().min(0).max(1),
+      /** Notion à retravailler, relevée sur une interrogation corrigée. */
+      remediation: z.boolean().default(false),
+    }),
+  ),
+});
+export type Extraction = z.infer<typeof extractionSchema>;
+
+/** Schéma JSON imposé à la réponse du modèle (sorties structurées : sans contraintes min/max). */
+export const EXTRACTION_JSON_SCHEMA = {
+  type: 'object',
+  additionalProperties: false,
+  required: ['documentType', 'spellingWords', 'vocabulary', 'vocabularySubject', 'tasks'],
+  properties: {
+    documentType: { type: 'string', enum: [...DOCUMENT_TYPES] },
+    spellingWords: { type: 'array', items: { type: 'string' } },
+    vocabulary: {
+      type: 'array',
+      items: {
+        type: 'object',
+        additionalProperties: false,
+        required: ['term', 'meaning'],
+        properties: {
+          term: { type: 'string' },
+          meaning: { anyOf: [{ type: 'string' }, { type: 'null' }] },
+        },
+      },
+    },
+    vocabularySubject: { anyOf: [{ type: 'string' }, { type: 'null' }] },
+    tasks: {
+      type: 'array',
+      items: {
+        type: 'object',
+        additionalProperties: false,
+        required: ['subject', 'kind', 'description', 'dueDate', 'reference', 'confidence', 'remediation'],
+        properties: {
+          subject: { type: 'string' },
+          kind: { type: 'string', enum: [...TASK_KINDS] },
+          description: { type: 'string' },
+          dueDate: { anyOf: [{ type: 'string', format: 'date' }, { type: 'null' }] },
+          reference: { anyOf: [{ type: 'string' }, { type: 'null' }] },
+          confidence: { type: 'number' },
+          remediation: { type: 'boolean' },
+        },
+      },
+    },
+  },
+} as const;
+
+/** Consigne fixe (placée en tête de requête pour profiter du cache). */
+export const SYSTEM_PROMPT = `Tu aides des parents d'élèves de la Fédération Wallonie-Bruxelles (Belgique) à organiser les devoirs.
+Tu reçois la photo d'un document scolaire : une page de journal de classe, des notes de cours, une interrogation corrigée, une dictée corrigée ou une liste de vocabulaire.
+Ta tâche : relever chaque travail que l'élève doit faire, ainsi que les mots à étudier quand le document en contient.
+
+Types de tâches :
+- "devoir" : travail à faire et à rendre (exercices, rédaction, recherche, matériel à apporter…).
+- "lecon" : matière à étudier, à revoir ou à mémoriser (leçon, vocabulaire, tables, poésie…).
+- "interro" : interrogation, contrôle, test, dictée préparée.
+- "examen" : examen, bilan de fin de période, épreuve externe (CEB, CE1D, CESS).
+
+Règles :
+1. Ne recopie que ce qui est écrit. N'invente jamais une tâche, une page ou une date.
+2. Écriture difficile à lire : donne ta meilleure lecture et baisse "confidence" (de 0 à 1). Mets 0.9 ou plus seulement si la lecture est certaine.
+3. "subject" : nom usuel et complet de la matière en français (ex. « Math » → « Mathématiques », « Néerl » → « Néerlandais », « EDM » → « Éveil »). Si la matière n'est pas indiquée, déduis-la du contenu ; à défaut, écris « Autre ».
+4. "description" : courte et claire pour un enfant, à l'impératif (ex. « Étudier les tables de 7 »).
+5. "reference" : pages, numéros d'exercices ou chapitres (ex. « p. 45, ex. 3 à 6 »), sinon null.
+6. "dueDate" (AAAA-MM-JJ) :
+   - utilise d'abord une date explicite (« pour le 12/10 », « pour jeudi ») ; les dates belges s'écrivent jour/mois ;
+   - sinon, la date de la case ou de la ligne du journal où la tâche est écrite ;
+   - résous les jours de la semaine et les dates sans année par rapport à la date du document si elle est visible, sinon par rapport à la date d'aujourd'hui fournie, en choisissant la prochaine occurrence ;
+   - mets null si aucune date n'est déductible.
+7. Notes de cours : ne relève que les consignes de travail explicites ; la matière du cours elle-même n'est pas une tâche.
+8. Interrogation corrigée : relève les travaux demandés (correction à faire, matière à revoir) ; « faire signer » n'est pas une tâche.
+   Relève aussi, au plus 3, les notions où l'élève s'est trompé (réponses barrées, corrigées, points retirés) : une tâche "lecon" par notion, "description" commençant par « Retravailler : » (ex. « Retravailler : l'accord du participe passé »), "remediation" à true, "dueDate" à null sauf date écrite. Ne recopie jamais la note, les points ni une appréciation.
+   Pour toutes les autres tâches, "remediation" vaut false.
+9. Ne recopie jamais le nom d'une personne (élève, enseignant, parent) ni celui de l'école : écris plutôt « l'enseignant », « la classe »… ou omets-le.
+10. "documentType" : le type réel du document photographié.
+11. Si aucune tâche n'est lisible, renvoie une liste vide.
+12. "spellingWords" : 40 au plus, sinon une liste vide.
+   - liste de mots d'une dictée préparée : recopie chaque mot ou groupe de mots tel qu'il est écrit ; la tâche « préparer la dictée » reste une tâche à part ;
+   - dictée corrigée : chaque mot où l'élève s'est trompé, écrit dans sa forme CORRECTE (celle de la correction, jamais la faute), sans la note ni les points.
+13. "vocabulary" : seulement pour une liste de vocabulaire (mots d'une langue étudiée avec leur traduction, ou mots français avec leur définition), 60 au plus, sinon une liste vide. "term" : le mot ou l'expression tel qu'il est écrit, avec son article s'il y en a un ; "meaning" : la traduction en français ou la définition écrite sur la page (null si la page n'en donne pas ; n'invente pas). "vocabularySubject" : la matière de la liste (« Néerlandais », « Anglais », « Allemand », « Espagnol », « Italien », « Français »…), sinon null.
+14. Dictée corrigée ou liste de vocabulaire : ne crée une tâche que si un travail est écrit (par ex. « revoir les mots pour vendredi »).`;
+
+export const GRADE_LABELS: Record<string, string> = {
+  M1: '1re maternelle',
+  M2: '2e maternelle',
+  M3: '3e maternelle',
+  P1: '1re primaire',
+  P2: '2e primaire',
+  P3: '3e primaire',
+  P4: '4e primaire',
+  P5: '5e primaire',
+  P6: '6e primaire',
+  S1: '1re secondaire',
+  S2: '2e secondaire',
+  S3: '3e secondaire',
+  S4: '4e secondaire',
+  S5: '5e secondaire',
+  S6: '6e secondaire',
+  S7: '7e secondaire',
+};
+
+/** Date du jour à Bruxelles : { iso: "2026-10-08", label: "jeudi 8 octobre 2026" }. */
+export function todayInBrussels(now: Date): { iso: string; label: string } {
+  const iso = new Intl.DateTimeFormat('en-CA', {
+    timeZone: 'Europe/Brussels',
+    year: 'numeric',
+    month: '2-digit',
+    day: '2-digit',
+  }).format(now);
+  const label = new Intl.DateTimeFormat('fr-BE', {
+    timeZone: 'Europe/Brussels',
+    weekday: 'long',
+    day: 'numeric',
+    month: 'long',
+    year: 'numeric',
+  }).format(now);
+  return { iso, label };
+}
+
+const DOCUMENT_LABELS: Record<DocumentType, string> = {
+  journal_de_classe: 'journal de classe',
+  notes_de_cours: 'notes de cours',
+  interrogation: 'interrogation',
+  dictee: 'dictée corrigée',
+  vocabulaire: 'liste de vocabulaire',
+};
+
+/** Contexte variable de la requête (après la partie mise en cache). */
+export function buildContext(grade: string, documentType: DocumentType | null, now: Date): string {
+  const today = todayInBrussels(now);
+  const lines = [`Élève en ${GRADE_LABELS[grade] ?? grade}.`, `Aujourd'hui : ${today.label} (${today.iso}).`];
+  if (documentType) lines.push(`Selon le parent, il s'agit de : ${DOCUMENT_LABELS[documentType]}.`);
+  lines.push('Relève les tâches de ce document.');
+  return lines.join('\n');
+}
+
+/** Au plus 3 notions à retravailler par interrogation, à revoir dans la semaine si aucune date n'est écrite. */
+export const MAX_REMEDIATIONS = 3;
+export const REMEDIATION_DAYS = 7;
+
+/**
+ * Valide la réponse du modèle et écarte les tâches vides ou les dates impossibles. Les notions à retravailler
+ * reçoivent une échéance par défaut (sinon elles ne seraient jamais planifiées) ; le parent peut la changer.
+ */
+export function parseExtraction(text: string, now: Date = new Date()): Extraction {
+  const parsed = extractionSchema.parse(JSON.parse(text));
+  const defaultDue = addDaysIso(todayInBrussels(now).iso, REMEDIATION_DAYS);
+  let remediations = 0;
+  const spellingWords = [
+    ...new Set(
+      parsed.spellingWords
+        .map((w) => w.trim().replace(/\s+/g, ' '))
+        .filter((w) => w.length > 0 && w.length <= 40),
+    ),
+  ].slice(0, 40);
+  const vocabulary = parsed.vocabulary
+    .map((v) => ({
+      term: v.term.trim().replace(/\s+/g, ' ').slice(0, 120),
+      meaning: v.meaning?.trim().replace(/\s+/g, ' ').slice(0, 200) || null,
+    }))
+    .filter((v) => v.term.length > 0)
+    .slice(0, 60);
+  const vocabularySubject = parsed.vocabularySubject?.trim().slice(0, 40) || null;
+  return {
+    ...parsed,
+    spellingWords,
+    vocabulary,
+    vocabularySubject: vocabulary.length > 0 ? (vocabularySubject ?? 'Français') : null,
+    tasks: parsed.tasks
+      .filter((task) => !task.remediation || ++remediations <= MAX_REMEDIATIONS)
+      .map((task) => {
+        const dueDate = task.dueDate && isRealDate(task.dueDate) ? task.dueDate : null;
+        return {
+          ...task,
+          dueDate: dueDate ?? (task.remediation ? defaultDue : null),
+          confidence: Math.round(task.confidence * 100) / 100,
+        };
+      }),
+  };
+}
+
+function addDaysIso(iso: string, days: number): string {
+  const [y, m, d] = iso.split('-').map(Number);
+  return new Date(Date.UTC(y, m - 1, d + days)).toISOString().slice(0, 10);
+}
+
+function isRealDate(iso: string): boolean {
+  const [y, m, d] = iso.split('-').map(Number);
+  const date = new Date(Date.UTC(y, m - 1, d));
+  return date.getUTCFullYear() === y && date.getUTCMonth() === m - 1 && date.getUTCDate() === d;
+}

@@ -54,7 +54,7 @@ Trois principes guident le produit :
 ## 4. Comptes, profils et rôles
 
 - **Compte parent** : créé avec une adresse e-mail. Il porte l'abonnement et donne accès au cockpit parent.
-- **Profils enfants** : un ou plusieurs par compte (selon la formule). Chaque profil est identifié par un **alias** (ex. « Petit Lion »), jamais par le vrai nom.
+- **Profils enfants** : un ou plusieurs par compte (selon la formule). Chaque profil est identifié par le **prénom** de l'enfant (ex. « Léa »), jamais par son nom de famille.
 - **Informations d'un profil enfant** :
   - alias et avatar ;
   - année scolaire (ex. P4, S2) et type d'enseignement ;
@@ -72,7 +72,7 @@ Chaque fonctionnalité porte un identifiant et une **étape de livraison** (voir
 
 - Création et modification des profils décrits en section 4.
 - Les besoins particuliers ajustent automatiquement : la durée des sessions, la mise en forme (police, espacements), le type d'exercices et le volume de travail.
-- **Critères d'acceptation** : un parent crée un profil en moins de 2 minutes ; aucun vrai nom n'est demandé.
+- **Critères d'acceptation** : un parent crée un profil en moins de 2 minutes ; aucun nom de famille n'est demandé.
 
 ### F2 — Synchronisation avec le programme officiel *(étape 1 pour le socle, enrichi ensuite)*
 
@@ -83,7 +83,7 @@ Chaque fonctionnalité porte un identifiant et une **étape de livraison** (voir
 ### F3 — Numérisation intelligente *(étape 1)*
 
 - Prise de photo dans l'application (ou import depuis la galerie) : journal de classe, notes de cours, interrogations corrigées.
-- **Protection de la vie privée** : avant l'envoi, les noms détectés (enfant, enseignants, école) sont floutés automatiquement ; le parent peut ajouter des zones de flou à la main.
+- **Protection de la vie privée** : la photo est réduite puis envoyée sans masquage ; l'IA ne recopie aucun nom (enfant, enseignants, école) et la photo est supprimée après la lecture.
 - L'IA extrait : matière, type (devoir, leçon, interrogation, examen), description, date d'échéance, pages ou exercices concernés.
 - **Écran de validation** : le parent voit la liste extraite, corrige, supprime ou ajoute avant que rien ne soit planifié.
 - Les photos sont **supprimées** après traitement ; seul le contenu validé est conservé.
@@ -147,7 +147,7 @@ Chaque fonctionnalité porte un identifiant et une **étape de livraison** (voir
 ### F13 — Abonnement *(étape 1)*
 
 - Essai gratuit de 14 jours.
-- Formules Solo, Famille et Année scolaire (voir section 7).
+- Formules Solo et Famille, au mois ou à l'année, renouvelées automatiquement (voir section 7).
 - Paiement via l'App Store et Google Play.
 - Limites d'usage raisonnables pour maîtriser les coûts de l'IA.
 
@@ -155,10 +155,10 @@ Chaque fonctionnalité porte un identifiant et une **étape de livraison** (voir
 
 ### 6.1 Vie privée et RGPD
 
-- Les enfants sont identifiés par un **alias** (pseudonymisation).
+- Les enfants sont identifiés par leur **prénom**, jamais leur nom de famille ; le prénom n'est jamais transmis à l'IA par l'application.
 - Les besoins particuliers sont des **données de santé** : consentement explicite du parent, chiffrement, accès strictement limité.
 - Hébergement des données **dans l'Union européenne**.
-- Floutage des noms sur les photos avant tout envoi à l'IA ; photos supprimées après traitement.
+- Photos envoyées à l'IA sans masquage (aucun nom n'en est recopié) et supprimées après traitement.
 - Le parent peut **exporter** et **supprimer** toutes ses données à tout moment.
 - Une analyse d'impact (AIPD) et une politique de confidentialité relue par un juriste sont nécessaires **avant le lancement public**.
 
@@ -186,7 +186,7 @@ Chaque fonctionnalité porte un identifiant et une **étape de livraison** (voir
 | Essai gratuit | 14 jours |
 | Solo (1 enfant) | 9,99 € / mois |
 | Famille (jusqu'à 4 enfants) | 14,99 € / mois |
-| Année scolaire (septembre à juin) | 79 € Solo — 119 € Famille |
+| Annuel (renouvelé automatiquement) | 79 € Solo — 119 € Famille par an |
 
 - Coût IA estimé : 2 à 3 € par enfant actif et par mois (à mesurer sur prototype).
 - Marge estimée : 4 à 5 € par abonné Solo après TVA (21 %), commission des stores (15 %) et IA.
@@ -198,7 +198,7 @@ Chaque fonctionnalité porte un identifiant et une **étape de livraison** (voir
 
 - F1 Profils enfants avec alias et besoins particuliers
 - F2 Socle du programme (au minimum : primaire FWB)
-- F3 Numérisation, floutage, extraction par IA, validation par le parent
+- F3 Numérisation, extraction par IA, validation par le parent
 - F4 Planning hebdomadaire (sans contenus générés)
 - F7 Cockpit parent simple et console enfant « mission du jour »
 - F9 Minuteur Pomodoro
@@ -231,7 +231,7 @@ Chaque fonctionnalité porte un identifiant et une **étape de livraison** (voir
 | Erreurs dans les exercices générés | Perte de confiance | Génération ancrée sur le programme, signalement, relecture humaine plus tard |
 | Structuration des référentiels très longue | Retard | Commencer par le primaire, outillage d'import semi-automatique |
 | Coût de l'IA plus élevé que prévu | Marge réduite | Limites d'usage, mise en cache, traitements groupés, mesure dès la bêta |
-| Données de santé de mineurs | Risque juridique | Pseudonymisation, hébergement UE, AIPD, juriste avant lancement |
+| Données de santé de mineurs | Risque juridique | Minimisation (prénom seulement, rien d'identifiant envoyé à l'IA), hébergement UE, AIPD, juriste avant lancement |
 | Un seul développeur | Délais, maintenance | Services gérés (Supabase, Expo, RevenueCat), périmètre par étapes |
 
 ## 10. Questions ouvertes

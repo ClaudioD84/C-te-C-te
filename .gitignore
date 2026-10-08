@@ -1,0 +1,21 @@
+node_modules/
+.DS_Store
+*.tsbuildinfo
+coverage/
+
+# Variables d'environnement locales
+.env
+.env*.local
+
+# Supabase local
+supabase/.branches
+supabase/.temp
+
+# Python
+__pycache__/
+
+# Tests de bout en bout
+e2e/.web/
+e2e/test-results/
+e2e/playwright-report/
+e2e/.web-reseau/

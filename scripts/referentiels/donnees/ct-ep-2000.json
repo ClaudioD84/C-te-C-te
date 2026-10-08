@@ -1,0 +1,422 @@
+{
+ "source": {
+  "title": "Compétences terminales et savoirs requis en éducation physique (humanités générales, technologiques, professionnelles et techniques)",
+  "url": "https://www.enseignement.be/fileadmin/portail_age/uploads/parcours_apprentissage/secondaire_ordinaire/Organisation/Contenus_apprentissages_Secondaire/competences_terminales/HUM_GEN_et_TECH_2et3_degres/2000_CT_HGT_Edu-Physique.pdf",
+  "version": "2000"
+ },
+ "level": "secondaire",
+ "tracks": [
+  "general",
+  "technique",
+  "professionnel",
+  "specialise"
+ ],
+ "entries": [
+  {
+   "code": "CTEP",
+   "parentCode": null,
+   "kind": "domaine",
+   "subject": "Éducation physique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Compétences terminales et savoirs requis en éducation physique (humanités générales, technologiques, professionnelles et techniques)"
+  },
+  {
+   "code": "CTEP-1",
+   "parentCode": "CTEP",
+   "kind": "competence",
+   "subject": "Éducation physique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Condition physique"
+  },
+  {
+   "code": "CTEP-1-1",
+   "parentCode": "CTEP-1",
+   "kind": "attendu",
+   "subject": "Éducation physique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "fournir des efforts de longue durée à une intensité moyenne."
+  },
+  {
+   "code": "CTEP-1-2",
+   "parentCode": "CTEP-1",
+   "kind": "attendu",
+   "subject": "Éducation physique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "étirer les muscles des grandes articulations."
+  },
+  {
+   "code": "CTEP-1-3",
+   "parentCode": "CTEP-1",
+   "kind": "attendu",
+   "subject": "Éducation physique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "exécuter des mouvements et des déplacements à grande vitesse."
+  },
+  {
+   "code": "CTEP-1-4",
+   "parentCode": "CTEP-1",
+   "kind": "attendu",
+   "subject": "Éducation physique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "soulever des charges adaptées."
+  },
+  {
+   "code": "CTEP-1-5",
+   "parentCode": "CTEP-1",
+   "kind": "attendu",
+   "subject": "Éducation physique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "exécuter des mouvements explosifs."
+  },
+  {
+   "code": "CTEP-2",
+   "parentCode": "CTEP",
+   "kind": "competence",
+   "subject": "Éducation physique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Habiletés gestuelles"
+  },
+  {
+   "code": "CTEP-2-1",
+   "parentCode": "CTEP-2",
+   "kind": "attendu",
+   "subject": "Éducation physique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "adapter sa vitesse d’exécution aux nécessités du mouvement et à la durée de l’action"
+  },
+  {
+   "code": "CTEP-2-2",
+   "parentCode": "CTEP-2",
+   "kind": "attendu",
+   "subject": "Éducation physique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "maintenir la régularité d’une allure et d’un mouvement"
+  },
+  {
+   "code": "CTEP-2-3",
+   "parentCode": "CTEP-2",
+   "kind": "attendu",
+   "subject": "Éducation physique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "maintenir une position"
+  },
+  {
+   "code": "CTEP-2-4",
+   "parentCode": "CTEP-2",
+   "kind": "attendu",
+   "subject": "Éducation physique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "enchainer plusieurs actions successives et/ou simultanées de façon à produire un mouvement fluide, voire harmonieux"
+  },
+  {
+   "code": "CTEP-2-5",
+   "parentCode": "CTEP-2",
+   "kind": "attendu",
+   "subject": "Éducation physique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "exécuter un mouvement en respectant le code d’exécution (conformité)"
+  },
+  {
+   "code": "CTEP-2-6",
+   "parentCode": "CTEP-2",
+   "kind": "attendu",
+   "subject": "Éducation physique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "exécuter un mouvement en respectant des préceptes ergonomiques"
+  },
+  {
+   "code": "CTEP-2-7",
+   "parentCode": "CTEP-2",
+   "kind": "attendu",
+   "subject": "Éducation physique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "exécuter un mouvement en respectant les règles de sécurité"
+  },
+  {
+   "code": "CTEP-2-8",
+   "parentCode": "CTEP-2",
+   "kind": "attendu",
+   "subject": "Éducation physique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "adapter une technique de base, un mouvement en fonction de sa morphologie et du but poursuivi"
+  },
+  {
+   "code": "CTEP-2-9",
+   "parentCode": "CTEP-2",
+   "kind": "attendu",
+   "subject": "Éducation physique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "communiquer ses émotions"
+  },
+  {
+   "code": "CTEP-2-10",
+   "parentCode": "CTEP-2",
+   "kind": "attendu",
+   "subject": "Éducation physique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Gérer l’expression corporelle de ses émotions."
+  },
+  {
+   "code": "CTEP-3",
+   "parentCode": "CTEP",
+   "kind": "competence",
+   "subject": "Éducation physique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Coopération sensori- motrice"
+  },
+  {
+   "code": "CTEP-3-1",
+   "parentCode": "CTEP-3",
+   "kind": "attendu",
+   "subject": "Éducation physique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "valoriser et respecter ses partenaires"
+  },
+  {
+   "code": "CTEP-3-2",
+   "parentCode": "CTEP-3",
+   "kind": "attendu",
+   "subject": "Éducation physique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "capter efficacement les signaux émis par ses partenaires et y réagir de manière interactive"
+  },
+  {
+   "code": "CTEP-3-3",
+   "parentCode": "CTEP-3",
+   "kind": "attendu",
+   "subject": "Éducation physique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "accepter les faiblesses éventuelles de ses partenaires et adapter ses comportements à la situation collective"
+  },
+  {
+   "code": "CTEP-3-4",
+   "parentCode": "CTEP-3",
+   "kind": "attendu",
+   "subject": "Éducation physique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "capter efficacement les signaux émis par les adversaires et y réagir de manière interactive"
+  },
+  {
+   "code": "CTEP-3-5",
+   "parentCode": "CTEP-3",
+   "kind": "attendu",
+   "subject": "Éducation physique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "agir avec fair-play et dans le respect de soi et de l’adversaire"
+  },
+  {
+   "code": "CTEP-3-6",
+   "parentCode": "CTEP-3",
+   "kind": "attendu",
+   "subject": "Éducation physique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "agir en équipe dans un but fixé"
+  },
+  {
+   "code": "CTEP-3-7",
+   "parentCode": "CTEP-3",
+   "kind": "attendu",
+   "subject": "Éducation physique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "assumer des rôles différents dans une équipe"
+  },
+  {
+   "code": "CTEP-3-8",
+   "parentCode": "CTEP-3",
+   "kind": "attendu",
+   "subject": "Éducation physique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "accepter de perdre, savoir gagner"
+  },
+  {
+   "code": "CTEP-3-9",
+   "parentCode": "CTEP-3",
+   "kind": "attendu",
+   "subject": "Éducation physique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "respecter des règles convenues dans l’intérêt du groupe"
+  },
+  {
+   "code": "CTEP-3-10",
+   "parentCode": "CTEP-3",
+   "kind": "attendu",
+   "subject": "Éducation physique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "respecter des règles de sécurité."
+  }
+ ]
+}

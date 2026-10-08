@@ -1,0 +1,1094 @@
+{
+ "source": {
+  "title": "Compétences terminales et savoirs requis en histoire (humanités générales et technologiques)",
+  "url": "https://www.enseignement.be/fileadmin/portail_age/uploads/parcours_apprentissage/secondaire_ordinaire/Organisation/Contenus_apprentissages_Secondaire/competences_terminales/HUM_GEN_et_TECH_2et3_degres/1999_CT_HGT_Histoire.pdf",
+  "version": "1999"
+ },
+ "level": "secondaire",
+ "tracks": [
+  "general",
+  "technique",
+  "specialise"
+ ],
+ "entries": [
+  {
+   "code": "CTHI",
+   "parentCode": null,
+   "kind": "domaine",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Compétences terminales et savoirs requis en histoire (humanités générales et technologiques)"
+  },
+  {
+   "code": "CTHI-1",
+   "parentCode": "CTHI",
+   "kind": "competence",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Moments-clés – L’Antiquité"
+  },
+  {
+   "code": "CTHI-1-1",
+   "parentCode": "CTHI-1",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "L’héritage des civilisations du Moyen-Orient"
+  },
+  {
+   "code": "CTHI-1-2",
+   "parentCode": "CTHI-1",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "La cité des athéniens"
+  },
+  {
+   "code": "CTHI-1-3",
+   "parentCode": "CTHI-1",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "L’Etat Romain : « La Res Publica »"
+  },
+  {
+   "code": "CTHI-2",
+   "parentCode": "CTHI",
+   "kind": "competence",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Moments-clés – L’Antiquité tardive et le haut Moyen Age"
+  },
+  {
+   "code": "CTHI-2-1",
+   "parentCode": "CTHI-2",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Des Gallo-Romains aux Royaumes germaniques"
+  },
+  {
+   "code": "CTHI-3",
+   "parentCode": "CTHI",
+   "kind": "competence",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Moments-clés – Le Moyen Age"
+  },
+  {
+   "code": "CTHI-3-1",
+   "parentCode": "CTHI-3",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "La société féodale"
+  },
+  {
+   "code": "CTHI-3-2",
+   "parentCode": "CTHI-3",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Les sociétés urbaines et rurales"
+  },
+  {
+   "code": "CTHI-3-3",
+   "parentCode": "CTHI-3",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Au carrefour de 3 civilisations : l’Occident chrétien, Byzance et l’Islam"
+  },
+  {
+   "code": "CTHI-4",
+   "parentCode": "CTHI",
+   "kind": "competence",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Moments-clés – La Renaissance"
+  },
+  {
+   "code": "CTHI-4-1",
+   "parentCode": "CTHI-4",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Les grandes découvertes"
+  },
+  {
+   "code": "CTHI-4-2",
+   "parentCode": "CTHI-4",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Le renouveau des savoirs et des mentalités : l’Humanisme"
+  },
+  {
+   "code": "CTHI-4-3",
+   "parentCode": "CTHI-4",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Les réformes religieuses"
+  },
+  {
+   "code": "CTHI-5",
+   "parentCode": "CTHI",
+   "kind": "competence",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Moments-clés – Les Temps Modernes"
+  },
+  {
+   "code": "CTHI-5-1",
+   "parentCode": "CTHI-5",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "La société de l’Ancien Régime"
+  },
+  {
+   "code": "CTHI-5-2",
+   "parentCode": "CTHI-5",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Absolutisme et parlementarisme"
+  },
+  {
+   "code": "CTHI-5-3",
+   "parentCode": "CTHI-5",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Les idées des Lumières"
+  },
+  {
+   "code": "CTHI-6",
+   "parentCode": "CTHI",
+   "kind": "competence",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Moments-clés – Le Temps des Révolutions"
+  },
+  {
+   "code": "CTHI-6-1",
+   "parentCode": "CTHI-6",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Les révolutions démographique, agricole et industrielle"
+  },
+  {
+   "code": "CTHI-6-2",
+   "parentCode": "CTHI-6",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Les révolutions libérales et nationales"
+  },
+  {
+   "code": "CTHI-6-3",
+   "parentCode": "CTHI-6",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "La société au XIXe siècle : contrastes, changements et permanences"
+  },
+  {
+   "code": "CTHI-6-4",
+   "parentCode": "CTHI-6",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Les courants idéologiques"
+  },
+  {
+   "code": "CTHI-6-5",
+   "parentCode": "CTHI-6",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Le Monde et l’impérialisme des pays industrialisés"
+  },
+  {
+   "code": "CTHI-7",
+   "parentCode": "CTHI",
+   "kind": "competence",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Moments-clés – Le XXe siècle"
+  },
+  {
+   "code": "CTHI-7-1",
+   "parentCode": "CTHI-7",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Guerres mondiales, conflit Est-Ouest et efforts de sécurité collective"
+  },
+  {
+   "code": "CTHI-7-2",
+   "parentCode": "CTHI-7",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Totalitarismes, autoritarismes et démocraties"
+  },
+  {
+   "code": "CTHI-7-3",
+   "parentCode": "CTHI-7",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Décolonisation et relations Nord-Sud"
+  },
+  {
+   "code": "CTHI-7-4",
+   "parentCode": "CTHI-7",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Les mutations de la société et des mentalités : aspects et contrastes"
+  },
+  {
+   "code": "CTHI-7-5",
+   "parentCode": "CTHI-7",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Croissance et crises"
+  },
+  {
+   "code": "CTHI-7-6",
+   "parentCode": "CTHI-7",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "La Belgique dans l’Europe et le monde : supranationalité, fédéralisme et identités régionales"
+  },
+  {
+   "code": "CTHI-7-7",
+   "parentCode": "CTHI-7",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Problèmes et enjeux de notre temps"
+  },
+  {
+   "code": "CTHI-8",
+   "parentCode": "CTHI",
+   "kind": "competence",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Compétence n°1"
+  },
+  {
+   "code": "CTHI-8-1",
+   "parentCode": "CTHI-8",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Au départ d’une situation du passé ou du présent, élaborer une problématique de recherche et sélectionner dans divers lieux d’information et de documentation des renseignements utiles."
+  },
+  {
+   "code": "CTHI-9",
+   "parentCode": "CTHI",
+   "kind": "competence",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Compétence n°2"
+  },
+  {
+   "code": "CTHI-9-1",
+   "parentCode": "CTHI-9",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "En fonction d’une question déterminée, remettre dans son contexte historique, analyser et critiquer un ensemble limité de sources."
+  },
+  {
+   "code": "CTHI-10",
+   "parentCode": "CTHI",
+   "kind": "competence",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Compétence n°3"
+  },
+  {
+   "code": "CTHI-10-1",
+   "parentCode": "CTHI-10",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Sur base d’un nombre limité de données, organiser une synthèse mettant en évidence, selon les cas, des permanences, des processus évolutifs, des changements ou des synchronismes et formuler des hypothèses explicatives."
+  },
+  {
+   "code": "CTHI-11",
+   "parentCode": "CTHI",
+   "kind": "competence",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Compétence n° 4"
+  },
+  {
+   "code": "CTHI-11-1",
+   "parentCode": "CTHI-11",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Concevoir, préparer et mener à bien une stratégie de communication d’un savoir historique en ayant recours à différents modes d’expression, écrit, oral, visuel ou audiovisuel."
+  },
+  {
+   "code": "CTHI-12",
+   "parentCode": "CTHI",
+   "kind": "competence",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Attitudes et savoir-faire"
+  },
+  {
+   "code": "CTHI-12-1",
+   "parentCode": "CTHI-12",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "S’interroger : Exprimer ses représentations et se poser des questions."
+  },
+  {
+   "code": "CTHI-12-2",
+   "parentCode": "CTHI-12",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "S’interroger : Sélectionner et organiser les questions qu’il se pose pour mettre à jour des problèmes."
+  },
+  {
+   "code": "CTHI-12-3",
+   "parentCode": "CTHI-12",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "S’interroger : Emettre des pistes de recherche et/ou des hypothèses explicatives."
+  },
+  {
+   "code": "CTHI-12-4",
+   "parentCode": "CTHI-12",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "S’informer : Rechercher, recueillir, collecter des informations (centre de documentation, bibliothèque, musée,...)"
+  },
+  {
+   "code": "CTHI-12-5",
+   "parentCode": "CTHI-12",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "S’informer : Trier les informations recueillies"
+  },
+  {
+   "code": "CTHI-12-6",
+   "parentCode": "CTHI-12",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "S’informer : Consulter efficacement différents supports d’information (écrits, oraux, sonores, visuels)"
+  },
+  {
+   "code": "CTHI-12-7",
+   "parentCode": "CTHI-12",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "S’informer : Identifier le type de données sur lequel il travaille en dressant sa carte d’identité."
+  },
+  {
+   "code": "CTHI-12-8",
+   "parentCode": "CTHI-12",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "S’informer : Noter correctement une référence."
+  },
+  {
+   "code": "CTHI-12-9",
+   "parentCode": "CTHI-12",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Traiter les informations avec esprit critique : Analyser les différentes informations recueillies"
+  },
+  {
+   "code": "CTHI-12-10",
+   "parentCode": "CTHI-12",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Traiter les informations avec esprit critique : Sélectionner les données pertinentes."
+  },
+  {
+   "code": "CTHI-12-11",
+   "parentCode": "CTHI-12",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Traiter les informations avec esprit critique : Prendre note des données utiles contenues dans une information."
+  },
+  {
+   "code": "CTHI-12-12",
+   "parentCode": "CTHI-12",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Traiter les informations avec esprit critique : Etablir des corrélations entre les informations."
+  },
+  {
+   "code": "CTHI-12-13",
+   "parentCode": "CTHI-12",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Traiter les informations avec esprit critique : S’interroger sur la fiabilité d’une information."
+  },
+  {
+   "code": "CTHI-12-14",
+   "parentCode": "CTHI-12",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Traiter les informations avec esprit critique : Confronter plusieurs informations."
+  },
+  {
+   "code": "CTHI-12-15",
+   "parentCode": "CTHI-12",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Synthétiser : Organiser, structurer, articuler les données sous différentes formes."
+  },
+  {
+   "code": "CTHI-12-16",
+   "parentCode": "CTHI-12",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Synthétiser : Dégager l’essentiel de l’accessoire."
+  },
+  {
+   "code": "CTHI-12-17",
+   "parentCode": "CTHI-12",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Synthétiser : Distinguer ses opinions personnelles et les données extraites des informations."
+  },
+  {
+   "code": "CTHI-12-18",
+   "parentCode": "CTHI-12",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Synthétiser : Faire preuve d’impartialité"
+  },
+  {
+   "code": "CTHI-12-19",
+   "parentCode": "CTHI-12",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Intégrer : Mémoriser et intégrer les principaux acquis : démarches (méthodes) et savoirs (concepts, modèles, repères, vocabulaire,...)"
+  },
+  {
+   "code": "CTHI-12-20",
+   "parentCode": "CTHI-12",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Communiquer : Formuler une synthèse orale, écrite, visuelle ou audiovisuelle"
+  },
+  {
+   "code": "CTHI-12-21",
+   "parentCode": "CTHI-12",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Porter un jugement critique et argumenté susceptible de déboucher sur l’action."
+  },
+  {
+   "code": "CTHI-12-22",
+   "parentCode": "CTHI-12",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "S’auto-évaluer"
+  },
+  {
+   "code": "CTHI-13",
+   "parentCode": "CTHI",
+   "kind": "competence",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Outils conceptuels (identifier…)"
+  },
+  {
+   "code": "CTHI-13-1",
+   "parentCode": "CTHI-13",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "les principaux éléments constitutifs d’un processus de colonisation"
+  },
+  {
+   "code": "CTHI-13-2",
+   "parentCode": "CTHI-13",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "les principaux éléments constitutifs d’un processus de décolonisation et d’un processus de type néocolonialiste"
+  },
+  {
+   "code": "CTHI-13-3",
+   "parentCode": "CTHI-13",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "les principaux éléments constitutifs d’une politique impérialiste"
+  },
+  {
+   "code": "CTHI-13-4",
+   "parentCode": "CTHI-13",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "les éléments constitutifs d’un phénomène migratoire"
+  },
+  {
+   "code": "CTHI-13-5",
+   "parentCode": "CTHI-13",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "une opinion ou un système capitaliste ou collectiviste"
+  },
+  {
+   "code": "CTHI-13-6",
+   "parentCode": "CTHI-13",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "les principaux éléments constitutifs d’un processus de croissance ou de développement économique"
+  },
+  {
+   "code": "CTHI-13-7",
+   "parentCode": "CTHI-13",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "les principaux éléments constitutifs d’une situation de sous-développement"
+  },
+  {
+   "code": "CTHI-13-8",
+   "parentCode": "CTHI-13",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "une opinion ou un système libéral, socialiste ou communiste"
+  },
+  {
+   "code": "CTHI-13-9",
+   "parentCode": "CTHI-13",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "les principales stratifications d’une société et les inégalités qu’elles induisent"
+  },
+  {
+   "code": "CTHI-13-10",
+   "parentCode": "CTHI-13",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "les principaux éléments constitutifs d’une situation de crise"
+  },
+  {
+   "code": "CTHI-13-11",
+   "parentCode": "CTHI-13",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "une tendance ou une position conservatrice ou réformiste"
+  },
+  {
+   "code": "CTHI-13-12",
+   "parentCode": "CTHI-13",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "les rapports existant entre un système juridique et les droits et devoirs des gens"
+  },
+  {
+   "code": "CTHI-13-13",
+   "parentCode": "CTHI-13",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "le caractère démocratique ou non d’un système ou d’une tendance politique"
+  },
+  {
+   "code": "CTHI-13-14",
+   "parentCode": "CTHI-13",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "les principales caractéristiques d’une idéologie ou d’un système autoritaire"
+  },
+  {
+   "code": "CTHI-13-15",
+   "parentCode": "CTHI-13",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "une opinion ou un système d’inspiration nationaliste, fédéraliste ou universaliste"
+  },
+  {
+   "code": "CTHI-13-16",
+   "parentCode": "CTHI-13",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "les principales caractéristiques d’une opinion ou d’une philosophie d’inspiration humaniste"
+  },
+  {
+   "code": "CTHI-13-17",
+   "parentCode": "CTHI-13",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "les rapports entre religion et société civile"
+  },
+  {
+   "code": "CTHI-13-18",
+   "parentCode": "CTHI-13",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "les relations existant entre une expression artistique et la société qui l’a vu naître."
+  }
+ ]
+}

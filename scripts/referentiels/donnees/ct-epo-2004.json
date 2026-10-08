@@ -1,0 +1,702 @@
+{
+ "source": {
+  "title": "Compétences terminales et savoirs requis en éducation physique – formation théorique, option de base (technique de transition)",
+  "url": "https://www.enseignement.be/fileadmin/portail_age/uploads/parcours_apprentissage/secondaire_ordinaire/Organisation/Contenus_apprentissages_Secondaire/competences_terminales/HUM_GEN_et_TECH_2et3_degres/2004_CT_HGT_Edu-Physiq-OB.pdf",
+  "version": "2004"
+ },
+ "level": "secondaire",
+ "tracks": [
+  "technique"
+ ],
+ "entries": [
+  {
+   "code": "CTEPO",
+   "parentCode": null,
+   "kind": "domaine",
+   "subject": "Éducation physique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Compétences terminales et savoirs requis en éducation physique – formation théorique, option de base (technique de transition)"
+  },
+  {
+   "code": "CTEPO-1",
+   "parentCode": "CTEPO",
+   "kind": "competence",
+   "subject": "Éducation physique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Principes généraux"
+  },
+  {
+   "code": "CTEPO-1-1",
+   "parentCode": "CTEPO-1",
+   "kind": "attendu",
+   "subject": "Éducation physique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "connaître les concepts de base liés au mouvement en général et aux activités pratiquées dans le cours en particulier et utiliser correctement les termes spécifiques concernant: a) les principaux groupes musculaires, les articulations, b) les méthodes d'entraînement, c) les méthodes d'assouplissement, d) les notions élémentaires de diététique et d'hygiène."
+  },
+  {
+   "code": "CTEPO-1-2",
+   "parentCode": "CTEPO-1",
+   "kind": "attendu",
+   "subject": "Éducation physique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "recueillir les informations utiles en relation avec la pratique"
+  },
+  {
+   "code": "CTEPO-1-3",
+   "parentCode": "CTEPO-1",
+   "kind": "attendu",
+   "subject": "Éducation physique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "appliquer les connaissances dans des situations concrètes du cours"
+  },
+  {
+   "code": "CTEPO-1-4",
+   "parentCode": "CTEPO-1",
+   "kind": "attendu",
+   "subject": "Éducation physique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "résoudre des problèmes par rapport à des savoirs et concepts appris dans des situations enseignées ou des situations similaires"
+  },
+  {
+   "code": "CTEPO-1-5",
+   "parentCode": "CTEPO-1",
+   "kind": "attendu",
+   "subject": "Éducation physique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "synthétiser les informations reçues et les exprimer en langage adéquat"
+  },
+  {
+   "code": "CTEPO-1-6",
+   "parentCode": "CTEPO-1",
+   "kind": "attendu",
+   "subject": "Éducation physique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "confronter la multiplicité des théories relatives à une même pratique identifier la logique de chacune des théories."
+  },
+  {
+   "code": "CTEPO-2",
+   "parentCode": "CTEPO",
+   "kind": "competence",
+   "subject": "Éducation physique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Anatomie et physiologie – compétences"
+  },
+  {
+   "code": "CTEPO-2-1",
+   "parentCode": "CTEPO-2",
+   "kind": "attendu",
+   "subject": "Éducation physique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Situer les principaux groupes musculaires sur l'être humain."
+  },
+  {
+   "code": "CTEPO-2-2",
+   "parentCode": "CTEPO-2",
+   "kind": "attendu",
+   "subject": "Éducation physique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Comprendre les mécanismes des systèmes physiologiques et leur interdépendance."
+  },
+  {
+   "code": "CTEPO-2-3",
+   "parentCode": "CTEPO-2",
+   "kind": "attendu",
+   "subject": "Éducation physique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Vérifier les effets de l'activité physique sur certains paramètres physiologiques. Lire et interpréter un graphique d'évolution d'un phénomène physiologique."
+  },
+  {
+   "code": "CTEPO-3",
+   "parentCode": "CTEPO",
+   "kind": "competence",
+   "subject": "Éducation physique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Analyse du mouvement – compétences"
+  },
+  {
+   "code": "CTEPO-3-1",
+   "parentCode": "CTEPO-3",
+   "kind": "attendu",
+   "subject": "Éducation physique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Appliquer des notions élémentaires de physique pour analyser un geste sportif simple."
+  },
+  {
+   "code": "CTEPO-3-2",
+   "parentCode": "CTEPO-3",
+   "kind": "attendu",
+   "subject": "Éducation physique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Faire l'analyse de mouvements et l'exprimer par des graphiques."
+  },
+  {
+   "code": "CTEPO-3-3",
+   "parentCode": "CTEPO-3",
+   "kind": "attendu",
+   "subject": "Éducation physique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Comprendre ce principe et le replacer dans le cadre de l'activité physique."
+  },
+  {
+   "code": "CTEPO-3-4",
+   "parentCode": "CTEPO-3",
+   "kind": "attendu",
+   "subject": "Éducation physique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Pouvoir justifier les placements corporels et les techniques d'aide par l'analyse mouvement."
+  },
+  {
+   "code": "CTEPO-4",
+   "parentCode": "CTEPO",
+   "kind": "competence",
+   "subject": "Éducation physique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Hygiène – compétences"
+  },
+  {
+   "code": "CTEPO-4-1",
+   "parentCode": "CTEPO-4",
+   "kind": "attendu",
+   "subject": "Éducation physique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Appliquer, dans la vie quotidienne, les notions acquises au cours dans les activités physiques et sportives scolaires."
+  },
+  {
+   "code": "CTEPO-4-2",
+   "parentCode": "CTEPO-4",
+   "kind": "attendu",
+   "subject": "Éducation physique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Adopter la conduite la plus appropriée durant les accidents sportifs courants."
+  },
+  {
+   "code": "CTEPO-4-3",
+   "parentCode": "CTEPO-4",
+   "kind": "attendu",
+   "subject": "Éducation physique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Adopter la position la plus appropriée dans la réalisation des gestes de la vie courante et dans les activités physiques et sportives en fonction des connaissances acquises en analyse du mouvement."
+  },
+  {
+   "code": "CTEPO-4-4",
+   "parentCode": "CTEPO-4",
+   "kind": "attendu",
+   "subject": "Éducation physique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Reconnaître les différents types d'assuétude et leurs effets immédiats et à long terme Prévenir le dopage."
+  },
+  {
+   "code": "CTEPO-5",
+   "parentCode": "CTEPO",
+   "kind": "competence",
+   "subject": "Éducation physique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Méthodologie – compétences"
+  },
+  {
+   "code": "CTEPO-5-1",
+   "parentCode": "CTEPO-5",
+   "kind": "attendu",
+   "subject": "Éducation physique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Comprendre le plan d'entraînement suivi."
+  },
+  {
+   "code": "CTEPO-5-2",
+   "parentCode": "CTEPO-5",
+   "kind": "attendu",
+   "subject": "Éducation physique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Faire la relation entre exercice, test et filière énergétique."
+  },
+  {
+   "code": "CTEPO-5-3",
+   "parentCode": "CTEPO-5",
+   "kind": "attendu",
+   "subject": "Éducation physique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Evaluer ses caractéristiques physiologiques personnelles en vue de l'utilisation des tests."
+  },
+  {
+   "code": "CTEPO-5-4",
+   "parentCode": "CTEPO-5",
+   "kind": "attendu",
+   "subject": "Éducation physique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Interpréter les résultats pour élaborer, sous la guidance de l'enseignant un plan d'entraînement personnel en vue de la gestion de son activité physique à long terme ou pour préparer un événement sportif ponctuel."
+  },
+  {
+   "code": "CTEPO-5-5",
+   "parentCode": "CTEPO-5",
+   "kind": "attendu",
+   "subject": "Éducation physique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Appliquer les notions théoriques à la pratique Vocabulaire spécifique aux différentes"
+  },
+  {
+   "code": "CTEPO-6",
+   "parentCode": "CTEPO",
+   "kind": "competence",
+   "subject": "Éducation physique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Anatomie et physiologie – savoirs"
+  },
+  {
+   "code": "CTEPO-6-1",
+   "parentCode": "CTEPO-6",
+   "kind": "attendu",
+   "subject": "Éducation physique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Principaux groupes musculaires Système osseux Système articulaire"
+  },
+  {
+   "code": "CTEPO-6-2",
+   "parentCode": "CTEPO-6",
+   "kind": "attendu",
+   "subject": "Éducation physique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Physiologie : Système nerveux"
+  },
+  {
+   "code": "CTEPO-6-3",
+   "parentCode": "CTEPO-6",
+   "kind": "attendu",
+   "subject": "Éducation physique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Physiologie : Système cardio-vasculaire"
+  },
+  {
+   "code": "CTEPO-6-4",
+   "parentCode": "CTEPO-6",
+   "kind": "attendu",
+   "subject": "Éducation physique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Physiologie : Système respiratoire"
+  },
+  {
+   "code": "CTEPO-6-5",
+   "parentCode": "CTEPO-6",
+   "kind": "attendu",
+   "subject": "Éducation physique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Physiologie : Système digestif"
+  },
+  {
+   "code": "CTEPO-6-6",
+   "parentCode": "CTEPO-6",
+   "kind": "attendu",
+   "subject": "Éducation physique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Physiologie : Système excrétoire"
+  },
+  {
+   "code": "CTEPO-6-7",
+   "parentCode": "CTEPO-6",
+   "kind": "attendu",
+   "subject": "Éducation physique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Effets de l'activité physique et importance de la récupération."
+  },
+  {
+   "code": "CTEPO-7",
+   "parentCode": "CTEPO",
+   "kind": "competence",
+   "subject": "Éducation physique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Analyse du mouvement – savoirs"
+  },
+  {
+   "code": "CTEPO-7-1",
+   "parentCode": "CTEPO-7",
+   "kind": "attendu",
+   "subject": "Éducation physique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Les forces: effets dynamiques et statiques."
+  },
+  {
+   "code": "CTEPO-7-2",
+   "parentCode": "CTEPO-7",
+   "kind": "attendu",
+   "subject": "Éducation physique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Résolution graphique."
+  },
+  {
+   "code": "CTEPO-7-3",
+   "parentCode": "CTEPO-7",
+   "kind": "attendu",
+   "subject": "Éducation physique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Principe d'action-réaction."
+  },
+  {
+   "code": "CTEPO-8",
+   "parentCode": "CTEPO",
+   "kind": "competence",
+   "subject": "Éducation physique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Hygiène – savoirs"
+  },
+  {
+   "code": "CTEPO-8-1",
+   "parentCode": "CTEPO-8",
+   "kind": "attendu",
+   "subject": "Éducation physique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Règles d'hygiène: corporelle et vestimentaire."
+  },
+  {
+   "code": "CTEPO-8-2",
+   "parentCode": "CTEPO-8",
+   "kind": "attendu",
+   "subject": "Éducation physique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Notions d'hygiène alimentaire et de diététique."
+  },
+  {
+   "code": "CTEPO-8-3",
+   "parentCode": "CTEPO-8",
+   "kind": "attendu",
+   "subject": "Éducation physique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Notions élémentaires de traumatologie sportive."
+  },
+  {
+   "code": "CTEPO-8-4",
+   "parentCode": "CTEPO-8",
+   "kind": "attendu",
+   "subject": "Éducation physique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Notions de vie équilibrée: temps d'activité et de récupération."
+  },
+  {
+   "code": "CTEPO-8-5",
+   "parentCode": "CTEPO-8",
+   "kind": "attendu",
+   "subject": "Éducation physique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Notions d'ergonomie."
+  },
+  {
+   "code": "CTEPO-8-6",
+   "parentCode": "CTEPO-8",
+   "kind": "attendu",
+   "subject": "Éducation physique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Notions d'assuétudes: le tabac, les drogues, les médicaments,… Notions: types de produits dopants: effets à court, moyen, long terme."
+  },
+  {
+   "code": "CTEPO-9",
+   "parentCode": "CTEPO",
+   "kind": "competence",
+   "subject": "Éducation physique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Méthodologie – savoirs"
+  },
+  {
+   "code": "CTEPO-9-1",
+   "parentCode": "CTEPO-9",
+   "kind": "attendu",
+   "subject": "Éducation physique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Connaître le vocabulaire spécifique concernant l'entraînement."
+  },
+  {
+   "code": "CTEPO-9-2",
+   "parentCode": "CTEPO-9",
+   "kind": "attendu",
+   "subject": "Éducation physique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Bases de l'entraînement: filières énergétiques, différents types de travail, principes d'élaboration des séances. Choix des exercices et progressions."
+  },
+  {
+   "code": "CTEPO-9-3",
+   "parentCode": "CTEPO-9",
+   "kind": "attendu",
+   "subject": "Éducation physique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Tests d'entraînement."
+  },
+  {
+   "code": "CTEPO-9-4",
+   "parentCode": "CTEPO-9",
+   "kind": "attendu",
+   "subject": "Éducation physique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Appliquer les notions théoriques à la pratique. activités pratiquées."
+  },
+  {
+   "code": "CTEPO-9-5",
+   "parentCode": "CTEPO-9",
+   "kind": "attendu",
+   "subject": "Éducation physique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Adaptation de la tactique en rapport avec l'évolution des règles du jeu."
+  }
+ ]
+}

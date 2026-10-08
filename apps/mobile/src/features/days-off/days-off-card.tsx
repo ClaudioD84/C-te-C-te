@@ -1,0 +1,153 @@
+import {
+  DAY_OFF_KINDS,
+  DAY_OFF_LABELS,
+  daysBetween,
+  formatShortDate,
+  MAX_DAY_OFF_DAYS,
+  currentSchoolYear,
+  toIsoDate,
+  upcomingBreaks,
+  type DayOffKind,
+  type IsoDate,
+} from '@cote-a-cote/shared';
+import { router } from 'expo-router';
+import { useState } from 'react';
+import { StyleSheet, View } from 'react-native';
+
+import { Button } from '@/components/button';
+import { ChoiceChips } from '@/components/choice-chips';
+import { DatePicker } from '@/components/date-picker';
+import { ThemedText } from '@/components/themed-text';
+import { ThemedView } from '@/components/themed-view';
+import { Spacing } from '@/constants/theme';
+
+import { useAddDayOff, useAddSchoolBreaks, useDaysOff, useRemoveDayOff } from './api';
+
+function periodLabel(start: IsoDate, end: IsoDate): string {
+  return start === end
+    ? `le ${formatShortDate(start)}`
+    : `du ${formatShortDate(start)} au ${formatShortDate(end)}`;
+}
+
+/** Congés et absences : le planning ne prévoit rien ces jours-là. */
+export function DaysOffCard({ childId }: { childId: string }) {
+  const daysOff = useDaysOff(childId);
+  const add = useAddDayOff(childId);
+  const remove = useRemoveDayOff(childId);
+  const addBreaks = useAddSchoolBreaks(childId);
+  const today = toIsoDate(new Date());
+  const schoolYear = currentSchoolYear(today);
+  // Congés officiels pas encore ajoutés (même période déjà présente = déjà ajouté).
+  const missingBreaks = upcomingBreaks(today).filter(
+    (b) => !(daysOff.data ?? []).some((d) => d.start === b.start && d.end === b.end),
+  );
+  const [adding, setAdding] = useState(false);
+  const [start, setStart] = useState<IsoDate | null>(null);
+  const [end, setEnd] = useState<IsoDate | null>(null);
+  const [kind, setKind] = useState<DayOffKind>('conge');
+
+  const length = start && end ? daysBetween(start, end) : -1;
+  const invalid = start !== null && end !== null && (length < 0 || length >= MAX_DAY_OFF_DAYS);
+
+  async function save() {
+    if (!start) return;
+    await add.mutateAsync({ start, end: end ?? start, kind });
+    setAdding(false);
+    setStart(null);
+    setEnd(null);
+  }
+
+  return (
+    <ThemedView type="backgroundElement" style={styles.card}>
+      <ThemedText type="smallBold">Congés et absences</ThemedText>
+      <ThemedText type="small" themeColor="textSecondary">
+        Aucun travail n’est prévu ces jours-là ; la préparation est avancée quand c’est possible.
+      </ThemedText>
+      {daysOff.data?.map((d) => (
+        <View key={d.id} style={styles.row}>
+          <ThemedText style={styles.flex}>
+            {DAY_OFF_LABELS[d.kind]} {periodLabel(d.start, d.end)}
+          </ThemedText>
+          <Button
+            variant="secondary"
+            label="Retirer"
+            accessibilityLabel={`Retirer ${DAY_OFF_LABELS[d.kind]} ${periodLabel(d.start, d.end)}`}
+            onPress={() => remove.mutate(d.id)}
+          />
+        </View>
+      ))}
+      {daysOff.data && schoolYear && missingBreaks.length > 0 ? (
+        <ThemedView type="backgroundSelected" style={styles.card}>
+          <ThemedText type="smallBold">Congés scolaires {schoolYear.name}</ThemedText>
+          {missingBreaks.map((b) => (
+            <ThemedText key={b.start} type="small">
+              {b.label} {periodLabel(b.start, b.end)}
+            </ThemedText>
+          ))}
+          <ThemedText type="small" themeColor="textSecondary">
+            Calendrier de la Fédération Wallonie-Bruxelles, à vérifier sur enseignement.be.
+          </ThemedText>
+          <Button
+            variant="secondary"
+            label={`Ajouter les congés scolaires (${missingBreaks.length})`}
+            loading={addBreaks.isPending}
+            onPress={() => addBreaks.mutate(missingBreaks)}
+          />
+        </ThemedView>
+      ) : null}
+      {daysOff.data?.some((d) => d.kind === 'conge') ? (
+        <Button
+          variant="secondary"
+          label="Idées pour les vacances"
+          onPress={() => router.push({ pathname: '/vacances/[childId]', params: { childId } })}
+        />
+      ) : null}
+      {adding ? (
+        <>
+          <ChoiceChips
+            label="Type"
+            options={DAY_OFF_KINDS}
+            labels={DAY_OFF_LABELS}
+            selected={[kind]}
+            onToggle={setKind}
+          />
+          <DatePicker
+            label="Premier jour"
+            value={start}
+            includeToday
+            onChange={(d) => {
+              setStart(d);
+              if (!end || end < d) setEnd(d);
+            }}
+          />
+          {start ? <DatePicker label="Dernier jour" value={end} onChange={setEnd} includeToday /> : null}
+          {invalid ? (
+            <ThemedText themeColor="danger">
+              Le dernier jour doit suivre le premier, sur {MAX_DAY_OFF_DAYS} jours au plus.
+            </ThemedText>
+          ) : null}
+          {add.error ? (
+            <ThemedText themeColor="danger" accessibilityRole="alert">
+              L’enregistrement a échoué. Vérifiez votre connexion.
+            </ThemedText>
+          ) : null}
+          <Button
+            label={start ? `Enregistrer (${periodLabel(start, end ?? start)})` : 'Enregistrer'}
+            disabled={!start || invalid}
+            loading={add.isPending}
+            onPress={save}
+          />
+          <Button variant="secondary" label="Annuler" onPress={() => setAdding(false)} />
+        </>
+      ) : (
+        <Button variant="secondary" label="Ajouter un congé ou une absence" onPress={() => setAdding(true)} />
+      )}
+    </ThemedView>
+  );
+}
+
+const styles = StyleSheet.create({
+  card: { padding: Spacing.three, borderRadius: Spacing.three, gap: Spacing.two },
+  row: { flexDirection: 'row', alignItems: 'center', gap: Spacing.two },
+  flex: { flex: 1 },
+});

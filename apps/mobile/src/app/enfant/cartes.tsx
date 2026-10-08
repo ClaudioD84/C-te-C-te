@@ -1,0 +1,144 @@
+import { deriveLearningSettings, speechLanguage, type ReviewRating } from '@cote-a-cote/shared';
+import * as Speech from 'expo-speech';
+import { router, useLocalSearchParams } from 'expo-router';
+import { useState } from 'react';
+import { ActivityIndicator, Pressable, StyleSheet, View } from 'react-native';
+
+import { Button } from '@/components/button';
+import { ThemedText } from '@/components/themed-text';
+import { ThemedView } from '@/components/themed-view';
+import { ChildScreen } from '@/features/backgrounds/child-screen';
+import { learningTextStyle } from '@/constants/fonts';
+import { Spacing } from '@/constants/theme';
+import { useChildMode } from '@/features/child-mode/child-mode-provider';
+import { useChildProfile } from '@/features/profiles/api';
+import {
+  reviewCardVariables,
+  useDueFlashcards,
+  useReviewFlashcard,
+  useTaskFlashcards,
+} from '@/features/study/api';
+import { useTheme } from '@/hooks/use-theme';
+
+const RATINGS: { rating: ReviewRating; label: string }[] = [
+  { rating: 'oublie', label: 'Je ne savais pas' },
+  { rating: 'difficile', label: "C'était difficile" },
+  { rating: 'facile', label: 'Facile !' },
+];
+
+/** Révision des cartes du jour (répétition espacée, F9). */
+export default function FlashcardsScreen() {
+  const theme = useTheme();
+  const { activeChildId } = useChildMode();
+  const childId = activeChildId ?? '';
+  const child = useChildProfile(childId);
+  // Révision express (veille d'une évaluation) : toutes les cartes de la tâche, une fois chacune.
+  const { taskId } = useLocalSearchParams<{ taskId?: string }>();
+  const due = useDueFlashcards(childId);
+  const express = useTaskFlashcards(childId, taskId);
+  const review = useReviewFlashcard(childId);
+  const [flipped, setFlipped] = useState(false);
+  const [reviewed, setReviewed] = useState(0);
+  const [seen, setSeen] = useState<string[]>([]);
+  const cards = taskId ? { ...express, data: express.data?.filter((c) => !seen.includes(c.id)) } : due;
+
+  if (!child.data || cards.isLoading) {
+    return (
+      <ThemedView style={[styles.container, styles.center]}>
+        <ActivityIndicator />
+      </ThemedView>
+    );
+  }
+
+  const settings = deriveLearningSettings(child.data);
+  const text = learningTextStyle(settings, 24);
+  const card = cards.data?.[0];
+
+  if (!card) {
+    return (
+      <ThemedView style={[styles.container, styles.center]}>
+        <ThemedText type="subtitle" style={styles.centerText}>
+          {reviewed > 0
+            ? `Bravo, ${reviewed} carte${reviewed > 1 ? 's' : ''} revue${reviewed > 1 ? 's' : ''} !`
+            : taskId
+              ? 'Pas de cartes pour cette évaluation.'
+              : 'Aucune carte à revoir aujourd’hui.'}
+        </ThemedText>
+        <Button label="Retour à la mission" onPress={() => router.back()} />
+      </ThemedView>
+    );
+  }
+
+  return (
+    <ChildScreen style={styles.container}>
+      <ThemedText type="small" themeColor="textSecondary">
+        {card.study_pack.task.subject} · encore {cards.data!.length} carte{cards.data!.length > 1 ? 's' : ''}
+      </ThemedText>
+      <Pressable
+        accessibilityRole="button"
+        accessibilityLabel={
+          flipped ? `Réponse : ${card.back}` : `Question : ${card.front}. Touche pour voir la réponse.`
+        }
+        onPress={() => setFlipped(!flipped)}
+        style={[
+          styles.card,
+          { backgroundColor: flipped ? theme.backgroundSelected : theme.backgroundElement },
+        ]}>
+        <ThemedText type="small" themeColor="textSecondary">
+          {flipped ? 'Réponse' : 'Question'}
+        </ThemedText>
+        <ThemedText style={[text, styles.centerText]}>{flipped ? card.back : card.front}</ThemedText>
+        {!flipped ? (
+          <ThemedText type="small" themeColor="textSecondary">
+            Touche la carte pour voir la réponse
+          </ThemedText>
+        ) : null}
+      </Pressable>
+      {/* Cartes de langue : le verso est lu dans la langue étudiée (accent belge pour le néerlandais). */}
+      <Button
+        variant="secondary"
+        label="🔊 Écouter"
+        accessibilityLabel={flipped ? 'Écouter la réponse' : 'Écouter la question'}
+        onPress={() =>
+          Speech.speak(flipped ? card.back : card.front, {
+            language: flipped ? speechLanguage(card.study_pack.task.subject) : 'fr-BE',
+          })
+        }
+      />
+      {flipped ? (
+        <View style={styles.ratings}>
+          {RATINGS.map(({ rating, label }) => (
+            <Button
+              key={rating}
+              variant={rating === 'facile' ? 'primary' : 'secondary'}
+              label={label}
+              onPress={() => {
+                // La carte quitte la pile tout de suite ; l'envoi suit, ou attend le réseau.
+                review.mutate(reviewCardVariables(childId, card, rating));
+                setFlipped(false);
+                setReviewed((n) => n + 1);
+                setSeen((ids) => [...ids, card.id]);
+              }}
+            />
+          ))}
+        </View>
+      ) : null}
+      <Button variant="secondary" label="Arrêter pour aujourd'hui" onPress={() => router.back()} />
+    </ChildScreen>
+  );
+}
+
+const styles = StyleSheet.create({
+  container: { flex: 1, padding: Spacing.four, paddingTop: Spacing.six, gap: Spacing.three },
+  center: { alignItems: 'center', justifyContent: 'center' },
+  centerText: { textAlign: 'center' },
+  card: {
+    minHeight: 260,
+    borderRadius: Spacing.four,
+    padding: Spacing.four,
+    alignItems: 'center',
+    justifyContent: 'center',
+    gap: Spacing.three,
+  },
+  ratings: { gap: Spacing.two },
+});

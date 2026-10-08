@@ -1,0 +1,6191 @@
+{
+ "source": {
+  "title": "Compétences terminales et savoirs requis en français (humanités générales et technologiques)",
+  "url": "https://www.enseignement.be/fileadmin/portail_age/uploads/parcours_apprentissage/secondaire_ordinaire/Organisation/Contenus_apprentissages_Secondaire/competences_terminales/FORM_COM_2et3_degres_TRANSITION/CT_HGT_Francais.pdf",
+  "version": "2017"
+ },
+ "level": "secondaire",
+ "tracks": [
+  "general",
+  "technique",
+  "specialise"
+ ],
+ "entries": [
+  {
+   "code": "CTFR",
+   "parentCode": null,
+   "kind": "domaine",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Compétences terminales et savoirs requis en français (humanités générales et technologiques)"
+  },
+  {
+   "code": "CTFR-UAA0-D23",
+   "parentCode": "CTFR",
+   "kind": "competence",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "UAA 0 – Justifier une réponse, expliciter une procédure"
+  },
+  {
+   "code": "CTFR-UAA0-D23-C1",
+   "parentCode": "CTFR-UAA0-D23",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Compétence : Justifier une réponse scolaire"
+  },
+  {
+   "code": "CTFR-UAA0-D23-C2",
+   "parentCode": "CTFR-UAA0-D23",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Compétence : Expliciter une procédure à l’intention d’un condisciple et/ou du professeur"
+  },
+  {
+   "code": "CTFR-UAA0-D23-A1",
+   "parentCode": "CTFR-UAA0-D23",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Appliquer : Analyser les spécificités de la situation communication"
+  },
+  {
+   "code": "CTFR-UAA0-D23-A2",
+   "parentCode": "CTFR-UAA0-D23",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Appliquer : Identifier et comprendre les consignes et en particulier la demande de justification ou d’explicitation de procédure"
+  },
+  {
+   "code": "CTFR-UAA0-D23-A3",
+   "parentCode": "CTFR-UAA0-D23",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Appliquer : Énoncer les connaissances sur lesquelles fonder la justification ou l’explicitation de procédure"
+  },
+  {
+   "code": "CTFR-UAA0-D23-A4",
+   "parentCode": "CTFR-UAA0-D23",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Appliquer : Planifier la justification ou l’explicitation sous la forme d’un écrit intermédiaire*(schéma…)"
+  },
+  {
+   "code": "CTFR-UAA0-D23-A5",
+   "parentCode": "CTFR-UAA0-D23",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Appliquer : Évaluer la qualité d’une justification ou d’une explicitation de procédure et l’améliorer"
+  },
+  {
+   "code": "CTFR-UAA0-D23-T1",
+   "parentCode": "CTFR-UAA0-D23",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Transférer : Justifier à l’oral ou par écrit une réponse à une question ou à une consigne."
+  },
+  {
+   "code": "CTFR-UAA0-D23-T2",
+   "parentCode": "CTFR-UAA0-D23",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Transférer : Expliciter une procédure."
+  },
+  {
+   "code": "CTFR-UAA0-D23-T3",
+   "parentCode": "CTFR-UAA0-D23",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Transférer : Discuter entre pairs une (des) procédure(s)."
+  },
+  {
+   "code": "CTFR-UAA0-D23-K1",
+   "parentCode": "CTFR-UAA0-D23",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Connaître : L’explicitation constituant l’objet même de l’UAA, elle n’est pas activée ici."
+  },
+  {
+   "code": "CTFR-UAA0-D23-R1",
+   "parentCode": "CTFR-UAA0-D23",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Pour analyser la spécificité de la situation de communication"
+  },
+  {
+   "code": "CTFR-UAA0-D23-R2",
+   "parentCode": "CTFR-UAA0-D23",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Paramètres de la situation de communication"
+  },
+  {
+   "code": "CTFR-UAA0-D23-R3",
+   "parentCode": "CTFR-UAA0-D23",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Cf. Focus sur les opérations d’écriture et de prise de parole"
+  },
+  {
+   "code": "CTFR-UAA0-D23-R4",
+   "parentCode": "CTFR-UAA0-D23",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Pour identifier et comprendre les consignes, la demande de justification ou d’explication de procédure"
+  },
+  {
+   "code": "CTFR-UAA0-D23-R5",
+   "parentCode": "CTFR-UAA0-D23",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Modalités de lecture/écoute intégrale, relecture ou réécoute avec annotations, traces… Cf. Focus sur les processus et stratégies de réception"
+  },
+  {
+   "code": "CTFR-UAA0-D23-R6",
+   "parentCode": "CTFR-UAA0-D23",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Types de consignes : injonction ou question"
+  },
+  {
+   "code": "CTFR-UAA0-D23-R7",
+   "parentCode": "CTFR-UAA0-D23",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Types de consignes : question ouverte ou fermée"
+  },
+  {
+   "code": "CTFR-UAA0-D23-R8",
+   "parentCode": "CTFR-UAA0-D23",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Types de consignes : impliquant ou non une justification"
+  },
+  {
+   "code": "CTFR-UAA0-D23-R9",
+   "parentCode": "CTFR-UAA0-D23",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Types de consignes : dont la réponse est/n’est pas directement disponible dans le document"
+  },
+  {
+   "code": "CTFR-UAA0-D23-R10",
+   "parentCode": "CTFR-UAA0-D23",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Structure de la consigne : contexte"
+  },
+  {
+   "code": "CTFR-UAA0-D23-R11",
+   "parentCode": "CTFR-UAA0-D23",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Structure de la consigne : verbe, centre de la consigne exprimant l’action demandée"
+  },
+  {
+   "code": "CTFR-UAA0-D23-R12",
+   "parentCode": "CTFR-UAA0-D23",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Structure de la consigne : objet de l’action ou domaine à traiter"
+  },
+  {
+   "code": "CTFR-UAA0-D23-R13",
+   "parentCode": "CTFR-UAA0-D23",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Structure de la consigne : indicateurs (organisateurs, mots de liaison, marques de successivité, gérondif…) précisant les étapes de l’action ou les limites du domaine"
+  },
+  {
+   "code": "CTFR-UAA0-D23-R14",
+   "parentCode": "CTFR-UAA0-D23",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Degré de guidance de la consigne : explicitation ou non de la démarche à mettre en œuvre"
+  },
+  {
+   "code": "CTFR-UAA0-D23-R15",
+   "parentCode": "CTFR-UAA0-D23",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Degré de guidance de la consigne : localisation ou non de l’information à traiter dans le document"
+  },
+  {
+   "code": "CTFR-UAA0-D23-R16",
+   "parentCode": "CTFR-UAA0-D23",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Degré de guidance de la consigne : forme contrainte ou non de la réponse"
+  },
+  {
+   "code": "CTFR-UAA0-D23-R17",
+   "parentCode": "CTFR-UAA0-D23",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Degré de guidance de la consigne : recours autorisé ou non à des outils"
+  },
+  {
+   "code": "CTFR-UAA0-D23-R18",
+   "parentCode": "CTFR-UAA0-D23",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Degré de guidance de la consigne : critères et indicateurs d’ (auto)évaluation éventuels"
+  },
+  {
+   "code": "CTFR-UAA0-D23-R19",
+   "parentCode": "CTFR-UAA0-D23",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Degré de guidance de la consigne : marques linguistiques : mots interrogatifs ou verbes"
+  },
+  {
+   "code": "CTFR-UAA0-D23-R20",
+   "parentCode": "CTFR-UAA0-D23",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Pour énoncer les connaissances sur lesquelles fonder la justification ou l’explicitation de procédure"
+  },
+  {
+   "code": "CTFR-UAA0-D23-R21",
+   "parentCode": "CTFR-UAA0-D23",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Informations explicites à prélever dans la consigne (indicateurs ou degré de guidance)"
+  },
+  {
+   "code": "CTFR-UAA0-D23-R22",
+   "parentCode": "CTFR-UAA0-D23",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Connaissances à inférer de la consigne et/ou du document"
+  },
+  {
+   "code": "CTFR-UAA0-D23-R23",
+   "parentCode": "CTFR-UAA0-D23",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Connaissances à vérifier ou à rechercher (Cf. UAA 1)"
+  },
+  {
+   "code": "CTFR-UAA0-D23-R24",
+   "parentCode": "CTFR-UAA0-D23",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Concepts et savoir-faire disciplinaires : Cf. Ressources communes"
+  },
+  {
+   "code": "CTFR-UAA0-D23-R25",
+   "parentCode": "CTFR-UAA0-D23",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Concepts et savoir-faire disciplinaires : Procédures de résolution des tâches (comparer pour sélectionner, prouver sa réponse par des indices textuels, renvoyer à une règle et l’énoncer…)"
+  },
+  {
+   "code": "CTFR-UAA0-D23-R26",
+   "parentCode": "CTFR-UAA0-D23",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Pour planifier la justification ou l’explicitation"
+  },
+  {
+   "code": "CTFR-UAA0-D23-R27",
+   "parentCode": "CTFR-UAA0-D23",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Articulation question-réponse"
+  },
+  {
+   "code": "CTFR-UAA0-D23-R28",
+   "parentCode": "CTFR-UAA0-D23",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Sélection des connaissances déclaratives et procédurales adéquates à la demande"
+  },
+  {
+   "code": "CTFR-UAA0-D23-R29",
+   "parentCode": "CTFR-UAA0-D23",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Structures discursives* pour justifier ou expliciter : descriptive, explicative, narrative, argumentative"
+  },
+  {
+   "code": "CTFR-UAA0-D23-R30",
+   "parentCode": "CTFR-UAA0-D23",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Pour justifier une réponse et expliciter une procédure"
+  },
+  {
+   "code": "CTFR-UAA0-D23-R31",
+   "parentCode": "CTFR-UAA0-D23",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Cohésion textuelle*"
+  },
+  {
+   "code": "CTFR-UAA0-D23-R32",
+   "parentCode": "CTFR-UAA0-D23",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Ressources linguistiques : pour exprimer la cause, la conséquence, le but, l’opposition, la comparaison…"
+  },
+  {
+   "code": "CTFR-UAA0-D23-R33",
+   "parentCode": "CTFR-UAA0-D23",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Ressources linguistiques : pour (se) situer dans le temps et l’espace"
+  },
+  {
+   "code": "CTFR-UAA0-D23-R34",
+   "parentCode": "CTFR-UAA0-D23",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Ressources linguistiques : pour introduire et développer l’exemple"
+  },
+  {
+   "code": "CTFR-UAA0-D23-R35",
+   "parentCode": "CTFR-UAA0-D23",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Ressources linguistiques et typographiques pour importer le discours d’autrui en le citant"
+  },
+  {
+   "code": "CTFR-UAA0-D23-R36",
+   "parentCode": "CTFR-UAA0-D23",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Pour discuter une (des) procédure(s)"
+  },
+  {
+   "code": "CTFR-UAA0-D23-R37",
+   "parentCode": "CTFR-UAA0-D23",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Cf. UAA 4, Troisième degré"
+  },
+  {
+   "code": "CTFR-UAA0-D23-R38",
+   "parentCode": "CTFR-UAA0-D23",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Pour évaluer et améliorer la justification ou l’explicitation de procédures"
+  },
+  {
+   "code": "CTFR-UAA0-D23-R39",
+   "parentCode": "CTFR-UAA0-D23",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Critère de lisibilité ou d’audibilité*"
+  },
+  {
+   "code": "CTFR-UAA0-D23-R40",
+   "parentCode": "CTFR-UAA0-D23",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Critère d’intelligibilité*"
+  },
+  {
+   "code": "CTFR-UAA0-D23-R41",
+   "parentCode": "CTFR-UAA0-D23",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Critère de recevabilité*"
+  },
+  {
+   "code": "CTFR-UAA0-D23-R42",
+   "parentCode": "CTFR-UAA0-D23",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Critère de pertinence*"
+  },
+  {
+   "code": "CTFR-UAA1-D2",
+   "parentCode": "CTFR",
+   "kind": "competence",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "UAA 1 – Rechercher, collecter l’information et en garder des traces"
+  },
+  {
+   "code": "CTFR-UAA1-D2-C1",
+   "parentCode": "CTFR-UAA1-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Compétence : Pour vérifier une information, répondre à une question, réaliser une tâche… naviguer dans"
+  },
+  {
+   "code": "CTFR-UAA1-D2-C2",
+   "parentCode": "CTFR-UAA1-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Compétence : un document imprimé adapté à une lecture sélective (dictionnaire, ouvrage documentaire, journal, catalogue…), choisir l’information et en garder des traces,"
+  },
+  {
+   "code": "CTFR-UAA1-D2-C3",
+   "parentCode": "CTFR-UAA1-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Compétence : un document sonore, multimédia* ou hypermédia*, sélectionner l’information et en garder des traces,"
+  },
+  {
+   "code": "CTFR-UAA1-D2-C4",
+   "parentCode": "CTFR-UAA1-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Compétence : un corpus de quelques documents transmis par le professeur, sélectionner les informations et en garder des traces."
+  },
+  {
+   "code": "CTFR-UAA1-D2-A1",
+   "parentCode": "CTFR-UAA1-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Identifier et comprendre la consigne de recherche"
+  },
+  {
+   "code": "CTFR-UAA1-D2-A2",
+   "parentCode": "CTFR-UAA1-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Identifier un ou plusieurs document(s) et en référencer la source"
+  },
+  {
+   "code": "CTFR-UAA1-D2-A3",
+   "parentCode": "CTFR-UAA1-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Sélectionner les documents exploitables dans un corpus"
+  },
+  {
+   "code": "CTFR-UAA1-D2-A4",
+   "parentCode": "CTFR-UAA1-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Naviguer dans le(s) document(s) et localiser l’information"
+  },
+  {
+   "code": "CTFR-UAA1-D2-A5",
+   "parentCode": "CTFR-UAA1-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Lire ou écouter l’information"
+  },
+  {
+   "code": "CTFR-UAA1-D2-A6",
+   "parentCode": "CTFR-UAA1-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Sélectionner l’information"
+  },
+  {
+   "code": "CTFR-UAA1-D2-A7",
+   "parentCode": "CTFR-UAA1-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Évaluer et améliorer l’information retenue"
+  },
+  {
+   "code": "CTFR-UAA1-D2-A8",
+   "parentCode": "CTFR-UAA1-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Garder une trace de l’information"
+  },
+  {
+   "code": "CTFR-UAA1-D2-T1",
+   "parentCode": "CTFR-UAA1-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Transférer : Naviguer dans un document imprimé adapté à une lecture sélective (dictionnaire, ouvrage documentaire, journal, catalogue…), choisir l’information et en garder des traces"
+  },
+  {
+   "code": "CTFR-UAA1-D2-T2",
+   "parentCode": "CTFR-UAA1-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Transférer : Naviguer dans un document sonore, multimédia ou hypermédia (encyclopédie en ligne, site de référence…), sélectionner l’information et en garder des traces"
+  },
+  {
+   "code": "CTFR-UAA1-D2-T3",
+   "parentCode": "CTFR-UAA1-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Transférer : Naviguer dans un corpus de quelques documents transmis par le professeur, sélectionner les informations et en garder des traces"
+  },
+  {
+   "code": "CTFR-UAA1-D2-K1",
+   "parentCode": "CTFR-UAA1-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Connaître : Cf. UAA 0"
+  },
+  {
+   "code": "CTFR-UAA1-D2-K2",
+   "parentCode": "CTFR-UAA1-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Connaître : Avant ou après la tâche, expliciter les stratégies de lecture ou d’écoute et procédures de navigation à utiliser ou utilisées en fonction du (des) document(s)"
+  },
+  {
+   "code": "CTFR-UAA1-D2-R1",
+   "parentCode": "CTFR-UAA1-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Pour identifier et comprendre la consigne de recherche"
+  },
+  {
+   "code": "CTFR-UAA1-D2-R2",
+   "parentCode": "CTFR-UAA1-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Cf. UAA 0"
+  },
+  {
+   "code": "CTFR-UAA1-D2-R3",
+   "parentCode": "CTFR-UAA1-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Pour identifier un ou plusieurs document(s) et le(s) référencer"
+  },
+  {
+   "code": "CTFR-UAA1-D2-R4",
+   "parentCode": "CTFR-UAA1-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Modalités de lecture ou d’écoute avec annotations, traces (logiciel de référencement, enregistrement). Cf. Focus sur les processus et stratégies de réception"
+  },
+  {
+   "code": "CTFR-UAA1-D2-R5",
+   "parentCode": "CTFR-UAA1-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Genre*"
+  },
+  {
+   "code": "CTFR-UAA1-D2-R6",
+   "parentCode": "CTFR-UAA1-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Paramètres de la situation de communication. Cf. Focus sur les opérations d’écriture"
+  },
+  {
+   "code": "CTFR-UAA1-D2-R7",
+   "parentCode": "CTFR-UAA1-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Référence biblio/sitographique : auteur(s), éditeur, titre, date d’édition"
+  },
+  {
+   "code": "CTFR-UAA1-D2-R8",
+   "parentCode": "CTFR-UAA1-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Pour sélectionner les documents exploitables dans un corpus"
+  },
+  {
+   "code": "CTFR-UAA1-D2-R9",
+   "parentCode": "CTFR-UAA1-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Adéquation des documents à la question ou à la tâche"
+  },
+  {
+   "code": "CTFR-UAA1-D2-R10",
+   "parentCode": "CTFR-UAA1-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Pour naviguer dans le(s) document(s) et localiser l’information"
+  },
+  {
+   "code": "CTFR-UAA1-D2-R11",
+   "parentCode": "CTFR-UAA1-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Modalités de réception : lecture ou écoute sélective ; lecture survol, linéaire, tabulaire, hypertextuelle, lecture ou écoute avec retours en arrière, avec outils de référence Cf. Focus sur les processus et stratégies de réception"
+  },
+  {
+   "code": "CTFR-UAA1-D2-R12",
+   "parentCode": "CTFR-UAA1-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Outils de recherche et de navigation : titre et intertitres, numérotation, énumération, symbole(s), couleur(s), plages ou chapitres, pauses, gestes structurants, jingle..."
+  },
+  {
+   "code": "CTFR-UAA1-D2-R13",
+   "parentCode": "CTFR-UAA1-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Mode de classement général de l’information : alphabétique, thématique, chronologique, spatial, tableau à double entrée, arborescence, hypertexte…"
+  },
+  {
+   "code": "CTFR-UAA1-D2-R14",
+   "parentCode": "CTFR-UAA1-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Marques d’organisation et de hiérarchisation de l’information : titre et intertitres, numérotation, énumération, symbole(s), couleur(s), plages ou chapitres, pauses, gestes structurants, jingle..."
+  },
+  {
+   "code": "CTFR-UAA1-D2-R15",
+   "parentCode": "CTFR-UAA1-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Pour lire ou écouter l’information"
+  },
+  {
+   "code": "CTFR-UAA1-D2-R16",
+   "parentCode": "CTFR-UAA1-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Modalités de lecture ou écoute : avec retours en arrière, avec outils de référence ; agrandissements, amplification ou ralentis. Cf. Focus sur les processus et stratégies de réception"
+  },
+  {
+   "code": "CTFR-UAA1-D2-R17",
+   "parentCode": "CTFR-UAA1-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Structures discursives*"
+  },
+  {
+   "code": "CTFR-UAA1-D2-R18",
+   "parentCode": "CTFR-UAA1-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Ressources relatives… : au genre* du texte"
+  },
+  {
+   "code": "CTFR-UAA1-D2-R19",
+   "parentCode": "CTFR-UAA1-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Ressources relatives… : à la cohésion textuelle*"
+  },
+  {
+   "code": "CTFR-UAA1-D2-R20",
+   "parentCode": "CTFR-UAA1-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Pour sélectionner l’information"
+  },
+  {
+   "code": "CTFR-UAA1-D2-R21",
+   "parentCode": "CTFR-UAA1-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Progression et hiérarchisation des informations"
+  },
+  {
+   "code": "CTFR-UAA1-D2-R22",
+   "parentCode": "CTFR-UAA1-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Procédures de sélection : suppression des informations de second plan, soulignement des informations de premier plan, mots-clés, schéma…"
+  },
+  {
+   "code": "CTFR-UAA1-D2-R23",
+   "parentCode": "CTFR-UAA1-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Pour évaluer et améliorer la sélection réalisée"
+  },
+  {
+   "code": "CTFR-UAA1-D2-R24",
+   "parentCode": "CTFR-UAA1-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Critère de pertinence* : adéquation de la sélection des informations à l’objet de la recherche"
+  },
+  {
+   "code": "CTFR-UAA1-D2-R25",
+   "parentCode": "CTFR-UAA1-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Pour garder une trace de l’information"
+  },
+  {
+   "code": "CTFR-UAA1-D2-R26",
+   "parentCode": "CTFR-UAA1-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Copier, coller, enregistrer, transcrire et référencer"
+  },
+  {
+   "code": "CTFR-UAA1-D3",
+   "parentCode": "CTFR",
+   "kind": "competence",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "UAA 1 – Rechercher, collecter l’information et en garder des traces"
+  },
+  {
+   "code": "CTFR-UAA1-D3-C1",
+   "parentCode": "CTFR-UAA1-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Compétence : Pour vérifier une information, répondre à une question, réaliser une tâche…"
+  },
+  {
+   "code": "CTFR-UAA1-D3-C2",
+   "parentCode": "CTFR-UAA1-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Compétence : Naviguer dans un corpus de documents qu’on a soi-même collationnés, dont au moins un texte écrit imprimé, un multimédia* et un hypermédia*"
+  },
+  {
+   "code": "CTFR-UAA1-D3-C3",
+   "parentCode": "CTFR-UAA1-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Compétence : Sélectionner des documents et des informations adéquats"
+  },
+  {
+   "code": "CTFR-UAA1-D3-A1",
+   "parentCode": "CTFR-UAA1-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Appliquer : Analyser la situation de communication de la production attendue"
+  },
+  {
+   "code": "CTFR-UAA1-D3-A2",
+   "parentCode": "CTFR-UAA1-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Appliquer : Explorer le sujet et définir ses besoins d’informations"
+  },
+  {
+   "code": "CTFR-UAA1-D3-A3",
+   "parentCode": "CTFR-UAA1-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Appliquer : Accéder à la documentation"
+  },
+  {
+   "code": "CTFR-UAA1-D3-A4",
+   "parentCode": "CTFR-UAA1-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Appliquer : Identifier des documents et les référencer"
+  },
+  {
+   "code": "CTFR-UAA1-D3-A5",
+   "parentCode": "CTFR-UAA1-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Appliquer : Naviguer dans un support multimédia* et hypermédia*"
+  },
+  {
+   "code": "CTFR-UAA1-D3-A6",
+   "parentCode": "CTFR-UAA1-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Appliquer : Sélectionner les documents exploitables"
+  },
+  {
+   "code": "CTFR-UAA1-D3-A7",
+   "parentCode": "CTFR-UAA1-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Appliquer : Développer/relancer la recherche"
+  },
+  {
+   "code": "CTFR-UAA1-D3-A8",
+   "parentCode": "CTFR-UAA1-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Appliquer : Archiver et classer les documents"
+  },
+  {
+   "code": "CTFR-UAA1-D3-A9",
+   "parentCode": "CTFR-UAA1-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Appliquer : Sélectionner l’information"
+  },
+  {
+   "code": "CTFR-UAA1-D3-A10",
+   "parentCode": "CTFR-UAA1-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Appliquer : Rédiger le sommaire ou la table des matières"
+  },
+  {
+   "code": "CTFR-UAA1-D3-A11",
+   "parentCode": "CTFR-UAA1-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Appliquer : Évaluer et améliorer la qualité d’un corpus"
+  },
+  {
+   "code": "CTFR-UAA1-D3-T1",
+   "parentCode": "CTFR-UAA1-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Transférer : Naviguer dans un corpus de documents collationnés par l’élève, dont au moins un texte écrit imprimé, un multimédia* et un hypermédia* ; sélectionner des documents et des informations adéquats"
+  },
+  {
+   "code": "CTFR-UAA1-D3-K1",
+   "parentCode": "CTFR-UAA1-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Connaître : Justifier la sélection ou l’élimination d’un document"
+  },
+  {
+   "code": "CTFR-UAA1-D3-K2",
+   "parentCode": "CTFR-UAA1-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Connaître : Justifier l’organisation du corpus"
+  },
+  {
+   "code": "CTFR-UAA1-D3-K3",
+   "parentCode": "CTFR-UAA1-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Connaître : Échanger après la tâche sur les stratégies de lecture et/ou sur les procédures de navigation utilisées en fonction des documents"
+  },
+  {
+   "code": "CTFR-UAA1-D3-R1",
+   "parentCode": "CTFR-UAA1-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Pour analyser la spécificité de la situation de communication de la production attendue"
+  },
+  {
+   "code": "CTFR-UAA1-D3-R2",
+   "parentCode": "CTFR-UAA1-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Paramètres de la situation de communication. Cf. Focus sur les opérations d’écriture et de prise de parole"
+  },
+  {
+   "code": "CTFR-UAA1-D3-R3",
+   "parentCode": "CTFR-UAA1-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Pour explorer le sujet et définir ses besoins d’informations"
+  },
+  {
+   "code": "CTFR-UAA1-D3-R4",
+   "parentCode": "CTFR-UAA1-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Méthodes de questionnement : brainstorming, schéma euristique, « c’est, ce n’est pas », questions « Qui ? Quand ? Quoi ? Où ? Comment ? Pourquoi ? »…"
+  },
+  {
+   "code": "CTFR-UAA1-D3-R5",
+   "parentCode": "CTFR-UAA1-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Pour accéder à la documentation"
+  },
+  {
+   "code": "CTFR-UAA1-D3-R6",
+   "parentCode": "CTFR-UAA1-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Centres de documentation"
+  },
+  {
+   "code": "CTFR-UAA1-D3-R7",
+   "parentCode": "CTFR-UAA1-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Personnes ressources"
+  },
+  {
+   "code": "CTFR-UAA1-D3-R8",
+   "parentCode": "CTFR-UAA1-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Web"
+  },
+  {
+   "code": "CTFR-UAA1-D3-R9",
+   "parentCode": "CTFR-UAA1-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Pour identifier des documents et les référencer"
+  },
+  {
+   "code": "CTFR-UAA1-D3-R10",
+   "parentCode": "CTFR-UAA1-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Paramètres de la situation de communication"
+  },
+  {
+   "code": "CTFR-UAA1-D3-R11",
+   "parentCode": "CTFR-UAA1-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Législation : droits d’auteurs, copyright, « libre de droit », gratuité…"
+  },
+  {
+   "code": "CTFR-UAA1-D3-R12",
+   "parentCode": "CTFR-UAA1-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Références biblio/sitographiques : en général : auteur(s), titre, éditeur, date d’édition…"
+  },
+  {
+   "code": "CTFR-UAA1-D3-R13",
+   "parentCode": "CTFR-UAA1-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Références biblio/sitographiques : pour le web : distinguer le site hébergeur ou éditeur de l’auteur éventuel de certains documents, date de consultation/mise à jour"
+  },
+  {
+   "code": "CTFR-UAA1-D3-R14",
+   "parentCode": "CTFR-UAA1-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Pour naviguer dans un support multimédia* et/ou hypermédia*"
+  },
+  {
+   "code": "CTFR-UAA1-D3-R15",
+   "parentCode": "CTFR-UAA1-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Outils de recherche et de navigation : requête par des fonctions avancées"
+  },
+  {
+   "code": "CTFR-UAA1-D3-R16",
+   "parentCode": "CTFR-UAA1-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Pour sélectionner des documents exploitables"
+  },
+  {
+   "code": "CTFR-UAA1-D3-R17",
+   "parentCode": "CTFR-UAA1-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Critère de pertinence : adéquation de la sélection des documents et des informations à l’objet de la recherche"
+  },
+  {
+   "code": "CTFR-UAA1-D3-R18",
+   "parentCode": "CTFR-UAA1-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Fiabilité du document : mention ou non des sources : éditeur du site et/ou des auteurs des documents"
+  },
+  {
+   "code": "CTFR-UAA1-D3-R19",
+   "parentCode": "CTFR-UAA1-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Fiabilité du document : degré d’expertise et statut de l’éditeur et de l’auteur"
+  },
+  {
+   "code": "CTFR-UAA1-D3-R20",
+   "parentCode": "CTFR-UAA1-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Fiabilité du document : degré d’actualité/obsolescence de l’information"
+  },
+  {
+   "code": "CTFR-UAA1-D3-R21",
+   "parentCode": "CTFR-UAA1-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Fiabilité du document : contexte de diffusion"
+  },
+  {
+   "code": "CTFR-UAA1-D3-R22",
+   "parentCode": "CTFR-UAA1-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Pour développer ou relancer la recherche"
+  },
+  {
+   "code": "CTFR-UAA1-D3-R23",
+   "parentCode": "CTFR-UAA1-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Modalité de lecture hypertextuelle. Cf. Focus sur les processus et stratégies de réception"
+  },
+  {
+   "code": "CTFR-UAA1-D3-R24",
+   "parentCode": "CTFR-UAA1-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Pour archiver et classer les documents"
+  },
+  {
+   "code": "CTFR-UAA1-D3-R25",
+   "parentCode": "CTFR-UAA1-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Cf. Deuxième degré"
+  },
+  {
+   "code": "CTFR-UAA1-D3-R26",
+   "parentCode": "CTFR-UAA1-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Logiciel(s) de référencement"
+  },
+  {
+   "code": "CTFR-UAA1-D3-R27",
+   "parentCode": "CTFR-UAA1-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Table des matières ou sommaire (voir infra)"
+  },
+  {
+   "code": "CTFR-UAA1-D3-R28",
+   "parentCode": "CTFR-UAA1-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Pour sélectionner l’information dans les documents retenus"
+  },
+  {
+   "code": "CTFR-UAA1-D3-R29",
+   "parentCode": "CTFR-UAA1-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Pour rédiger une table des matières ou un sommaire"
+  },
+  {
+   "code": "CTFR-UAA1-D3-R30",
+   "parentCode": "CTFR-UAA1-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Mécanismes de concision"
+  },
+  {
+   "code": "CTFR-UAA1-D3-R31",
+   "parentCode": "CTFR-UAA1-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Homogénéité de la formulation des titres et sous-titres de même niveau"
+  },
+  {
+   "code": "CTFR-UAA1-D3-R32",
+   "parentCode": "CTFR-UAA1-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Pour évaluer et améliorer le corpus"
+  },
+  {
+   "code": "CTFR-UAA1-D3-R33",
+   "parentCode": "CTFR-UAA1-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Critère de lisibilité ou audibilité*"
+  },
+  {
+   "code": "CTFR-UAA1-D3-R34",
+   "parentCode": "CTFR-UAA1-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Critère d’intelligibilité*"
+  },
+  {
+   "code": "CTFR-UAA1-D3-R35",
+   "parentCode": "CTFR-UAA1-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Critère de recevabilité*"
+  },
+  {
+   "code": "CTFR-UAA1-D3-R36",
+   "parentCode": "CTFR-UAA1-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Critère de pertinence*"
+  },
+  {
+   "code": "CTFR-UAA2-D2",
+   "parentCode": "CTFR",
+   "kind": "competence",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "UAA 2 – Réduire, résumer, comparer et synthétiser"
+  },
+  {
+   "code": "CTFR-UAA2-D2-C1",
+   "parentCode": "CTFR-UAA2-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Compétence : Réduire un texte"
+  },
+  {
+   "code": "CTFR-UAA2-D2-C2",
+   "parentCode": "CTFR-UAA2-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Compétence : Résumer un texte"
+  },
+  {
+   "code": "CTFR-UAA2-D2-C3",
+   "parentCode": "CTFR-UAA2-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Compétence : Construire un tableau comparant deux ou plusieurs objets relevant de domaines auxquels les élèves ont été initiés au cours"
+  },
+  {
+   "code": "CTFR-UAA2-D2-A1",
+   "parentCode": "CTFR-UAA2-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Analyser la spécificité de la situation de communication du texte source et celle du genre à produire"
+  },
+  {
+   "code": "CTFR-UAA2-D2-A2",
+   "parentCode": "CTFR-UAA2-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Lire et manifester sa compréhension du texte source"
+  },
+  {
+   "code": "CTFR-UAA2-D2-A3",
+   "parentCode": "CTFR-UAA2-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Pour la réduction et le résumé"
+  },
+  {
+   "code": "CTFR-UAA2-D2-A4",
+   "parentCode": "CTFR-UAA2-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Sélectionner les informations de premier plan dans un texte source"
+  },
+  {
+   "code": "CTFR-UAA2-D2-A5",
+   "parentCode": "CTFR-UAA2-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Planifier un résumé sous la forme d’un écrit intermédiaire* (schéma, plan…)"
+  },
+  {
+   "code": "CTFR-UAA2-D2-A6",
+   "parentCode": "CTFR-UAA2-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Évaluer et améliorer la qualité d’une réduction ou d’un résumé"
+  },
+  {
+   "code": "CTFR-UAA2-D2-A7",
+   "parentCode": "CTFR-UAA2-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Pour la construction d’un tableau comparatif"
+  },
+  {
+   "code": "CTFR-UAA2-D2-A8",
+   "parentCode": "CTFR-UAA2-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Trouver des critères de comparaison"
+  },
+  {
+   "code": "CTFR-UAA2-D2-A9",
+   "parentCode": "CTFR-UAA2-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Nommer des critères de comparaison"
+  },
+  {
+   "code": "CTFR-UAA2-D2-A10",
+   "parentCode": "CTFR-UAA2-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Intégrer les informations dans le tableau"
+  },
+  {
+   "code": "CTFR-UAA2-D2-A11",
+   "parentCode": "CTFR-UAA2-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Évaluer et améliorer un tableau comparatif"
+  },
+  {
+   "code": "CTFR-UAA2-D2-T1",
+   "parentCode": "CTFR-UAA2-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Transférer : Réduire un texte pour s’en approprier le contenu"
+  },
+  {
+   "code": "CTFR-UAA2-D2-T2",
+   "parentCode": "CTFR-UAA2-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Transférer : Dans une situation de communication précise, résumer un texte dans une longueur imposée pour informer autrui"
+  },
+  {
+   "code": "CTFR-UAA2-D2-T3",
+   "parentCode": "CTFR-UAA2-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Transférer : À partir de plusieurs documents, construire un tableau comparatif"
+  },
+  {
+   "code": "CTFR-UAA2-D2-K1",
+   "parentCode": "CTFR-UAA2-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Connaître : Cf. UAA 0"
+  },
+  {
+   "code": "CTFR-UAA2-D2-K2",
+   "parentCode": "CTFR-UAA2-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Connaître : Après la tâche et en fonction du texte source et du genre* à produire"
+  },
+  {
+   "code": "CTFR-UAA2-D2-K3",
+   "parentCode": "CTFR-UAA2-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Connaître : Justifier la sélection des informations"
+  },
+  {
+   "code": "CTFR-UAA2-D2-K4",
+   "parentCode": "CTFR-UAA2-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Connaître : Justifier la sélection des critères de comparaison"
+  },
+  {
+   "code": "CTFR-UAA2-D2-R1",
+   "parentCode": "CTFR-UAA2-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Pour identifier la consigne"
+  },
+  {
+   "code": "CTFR-UAA2-D2-R2",
+   "parentCode": "CTFR-UAA2-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Cf. UAA 0"
+  },
+  {
+   "code": "CTFR-UAA2-D2-R3",
+   "parentCode": "CTFR-UAA2-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Pour analyser la spécificité de la situation de communication du texte source et celle du texte à produire"
+  },
+  {
+   "code": "CTFR-UAA2-D2-R4",
+   "parentCode": "CTFR-UAA2-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Paramètres de la situation de communication Cf. Focus sur les opérations d’écriture"
+  },
+  {
+   "code": "CTFR-UAA2-D2-R5",
+   "parentCode": "CTFR-UAA2-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Pour lire et manifester sa compréhension du texte source"
+  },
+  {
+   "code": "CTFR-UAA2-D2-R6",
+   "parentCode": "CTFR-UAA2-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Cf. UAA 1"
+  },
+  {
+   "code": "CTFR-UAA2-D2-R7",
+   "parentCode": "CTFR-UAA2-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Modes de lecture : intégrale, avec retours en arrière, avec annotations, traces…, avec outils de référence ; lecture avec agrandissements Cf. Focus sur les processus et stratégies de réception"
+  },
+  {
+   "code": "CTFR-UAA2-D2-R8",
+   "parentCode": "CTFR-UAA2-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Caractéristiques du support et du genre*"
+  },
+  {
+   "code": "CTFR-UAA2-D2-R9",
+   "parentCode": "CTFR-UAA2-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Connaissances (du lexique) de la thématique"
+  },
+  {
+   "code": "CTFR-UAA2-D2-R10",
+   "parentCode": "CTFR-UAA2-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Structure discursive* dominante : explicative, descriptive, argumentative…"
+  },
+  {
+   "code": "CTFR-UAA2-D2-R11",
+   "parentCode": "CTFR-UAA2-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Cohésion textuelle*"
+  },
+  {
+   "code": "CTFR-UAA2-D2-R12",
+   "parentCode": "CTFR-UAA2-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Réduction et résumé"
+  },
+  {
+   "code": "CTFR-UAA2-D2-R13",
+   "parentCode": "CTFR-UAA2-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Pour sélectionner les informations de premier plan dans un texte source"
+  },
+  {
+   "code": "CTFR-UAA2-D2-R14",
+   "parentCode": "CTFR-UAA2-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Progression et hiérarchisation des informations : indices linguistiques et typographiques d’informations jugées de premier plan par l’auteur (titres, division en paragraphes, procédés typographiques de mise en évidence, phrases récapitulatives, lexique indiquant une priorité…)"
+  },
+  {
+   "code": "CTFR-UAA2-D2-R15",
+   "parentCode": "CTFR-UAA2-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Procédures de sélection : suppression des informations de second plan, soulignement des informations de premier plan, mots clés, schéma…"
+  },
+  {
+   "code": "CTFR-UAA2-D2-R16",
+   "parentCode": "CTFR-UAA2-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Pour réduire un texte"
+  },
+  {
+   "code": "CTFR-UAA2-D2-R17",
+   "parentCode": "CTFR-UAA2-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Gestion de la contrainte de longueur du texte à produire (Cf. infra)"
+  },
+  {
+   "code": "CTFR-UAA2-D2-R18",
+   "parentCode": "CTFR-UAA2-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Références du texte source. Cf. UAA 1"
+  },
+  {
+   "code": "CTFR-UAA2-D2-R19",
+   "parentCode": "CTFR-UAA2-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Pour planifier le résumé sous la forme d’un écrit intermédiaire* (schéma, plan…)"
+  },
+  {
+   "code": "CTFR-UAA2-D2-R20",
+   "parentCode": "CTFR-UAA2-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Structure discursive* dominante"
+  },
+  {
+   "code": "CTFR-UAA2-D2-R21",
+   "parentCode": "CTFR-UAA2-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Pour rédiger le résumé"
+  },
+  {
+   "code": "CTFR-UAA2-D2-R22",
+   "parentCode": "CTFR-UAA2-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Caractéristiques du genre* de résumé"
+  },
+  {
+   "code": "CTFR-UAA2-D2-R23",
+   "parentCode": "CTFR-UAA2-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Énonciation non ancrée dans la situation de communication (temps, énonciateur, destinataire)"
+  },
+  {
+   "code": "CTFR-UAA2-D2-R24",
+   "parentCode": "CTFR-UAA2-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Ressources linguistiques et typographiques pour importer le discours d’autrui en l’empruntant (citation) ou en le reformulant (discours indirect, résumé, paraphrase)"
+  },
+  {
+   "code": "CTFR-UAA2-D2-R25",
+   "parentCode": "CTFR-UAA2-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Gestion de la contrainte de longueur : procédés de concision : ponctuation ; mots-clés ; termes génériques ou hyperonymes ; réduction nominale, infinitive…"
+  },
+  {
+   "code": "CTFR-UAA2-D2-R26",
+   "parentCode": "CTFR-UAA2-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Conventions typographiques et de mise en page : titres, énumérations, références biblio/sitographiques, pagination"
+  },
+  {
+   "code": "CTFR-UAA2-D2-R27",
+   "parentCode": "CTFR-UAA2-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Pour évaluer et améliorer le résumé"
+  },
+  {
+   "code": "CTFR-UAA2-D2-R28",
+   "parentCode": "CTFR-UAA2-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Critère de lisibilité*"
+  },
+  {
+   "code": "CTFR-UAA2-D2-R29",
+   "parentCode": "CTFR-UAA2-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Critère d’intelligibilité*"
+  },
+  {
+   "code": "CTFR-UAA2-D2-R30",
+   "parentCode": "CTFR-UAA2-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Critère de recevabilité*"
+  },
+  {
+   "code": "CTFR-UAA2-D2-R31",
+   "parentCode": "CTFR-UAA2-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Critère de pertinence*"
+  },
+  {
+   "code": "CTFR-UAA2-D2-R32",
+   "parentCode": "CTFR-UAA2-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Tableau comparatif"
+  },
+  {
+   "code": "CTFR-UAA2-D2-R33",
+   "parentCode": "CTFR-UAA2-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Pour trouver des critères de comparaison"
+  },
+  {
+   "code": "CTFR-UAA2-D2-R34",
+   "parentCode": "CTFR-UAA2-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Aspects des objets sur lesquels porteront les ressemblances et les différences"
+  },
+  {
+   "code": "CTFR-UAA2-D2-R35",
+   "parentCode": "CTFR-UAA2-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Pour nommer des critères de comparaison"
+  },
+  {
+   "code": "CTFR-UAA2-D2-R36",
+   "parentCode": "CTFR-UAA2-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Lexique abstrait : termes génériques ou hyperonymes, substantivation"
+  },
+  {
+   "code": "CTFR-UAA2-D2-R37",
+   "parentCode": "CTFR-UAA2-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Pour intégrer les informations dans le tableau"
+  },
+  {
+   "code": "CTFR-UAA2-D2-R38",
+   "parentCode": "CTFR-UAA2-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Procédés de concision : mots-clés ; termes génériques ou hyperonymes ; réduction nominale, infinitive…"
+  },
+  {
+   "code": "CTFR-UAA2-D2-R39",
+   "parentCode": "CTFR-UAA2-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Pour évaluer et améliorer un tableau comparatif"
+  },
+  {
+   "code": "CTFR-UAA2-D3",
+   "parentCode": "CTFR",
+   "kind": "competence",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "UAA 2 – Réduire, résumer, comparer et synthétiser"
+  },
+  {
+   "code": "CTFR-UAA2-D3-C1",
+   "parentCode": "CTFR-UAA2-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Compétence : Synthétiser un ensemble de documents portant sur un même sujet"
+  },
+  {
+   "code": "CTFR-UAA2-D3-A1",
+   "parentCode": "CTFR-UAA2-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Appliquer : Analyser la spécificité de la situation de communication de la synthèse ou de l’exposé à produire"
+  },
+  {
+   "code": "CTFR-UAA2-D3-A2",
+   "parentCode": "CTFR-UAA2-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Appliquer : Identifier des documents, analyser leur situation de communication et les référencer"
+  },
+  {
+   "code": "CTFR-UAA2-D3-A3",
+   "parentCode": "CTFR-UAA2-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Appliquer : Lire ou écouter les informations des documents sources et en manifester sa compréhension"
+  },
+  {
+   "code": "CTFR-UAA2-D3-A4",
+   "parentCode": "CTFR-UAA2-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Appliquer : Sélectionner les documents exploitables"
+  },
+  {
+   "code": "CTFR-UAA2-D3-A5",
+   "parentCode": "CTFR-UAA2-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Appliquer : Comparer des informations entre plusieurs documents"
+  },
+  {
+   "code": "CTFR-UAA2-D3-A6",
+   "parentCode": "CTFR-UAA2-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Appliquer : Pour la réponse écrite synthétique"
+  },
+  {
+   "code": "CTFR-UAA2-D3-A7",
+   "parentCode": "CTFR-UAA2-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Appliquer : Planifier la réponse synthétique à l’aide d’un écrit intermédiaire*"
+  },
+  {
+   "code": "CTFR-UAA2-D3-A8",
+   "parentCode": "CTFR-UAA2-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Appliquer : Évaluer et améliorer la qualité d’une réponse écrite synthétique"
+  },
+  {
+   "code": "CTFR-UAA2-D3-A9",
+   "parentCode": "CTFR-UAA2-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Appliquer : Pour l’exposé oral synthétique"
+  },
+  {
+   "code": "CTFR-UAA2-D3-A10",
+   "parentCode": "CTFR-UAA2-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Appliquer : Planifier l’exposé synthétique à l’aide d’un écrit intermédiaire*"
+  },
+  {
+   "code": "CTFR-UAA2-D3-A11",
+   "parentCode": "CTFR-UAA2-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Appliquer : Élaborer un aide-mémoire éventuel et/ou un support multimédia"
+  },
+  {
+   "code": "CTFR-UAA2-D3-A12",
+   "parentCode": "CTFR-UAA2-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Appliquer : S’entrainer à l’oralisation"
+  },
+  {
+   "code": "CTFR-UAA2-D3-A13",
+   "parentCode": "CTFR-UAA2-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Appliquer : Prendre la parole en situation d’exposé"
+  },
+  {
+   "code": "CTFR-UAA2-D3-A14",
+   "parentCode": "CTFR-UAA2-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Appliquer : Observer et évaluer un exposé"
+  },
+  {
+   "code": "CTFR-UAA2-D3-T1",
+   "parentCode": "CTFR-UAA2-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Transférer : Pour répondre à une ou plusieurs question(s), au départ d’un corpus de documents, rédiger une réponse synthétique"
+  },
+  {
+   "code": "CTFR-UAA2-D3-T2",
+   "parentCode": "CTFR-UAA2-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Transférer : Pour informer autrui d’une question dans une situation précise de communication et dans un temps de parole imposé, réaliser au départ d’un corpus de documents, un exposé oral synthétique (avec support de communication)"
+  },
+  {
+   "code": "CTFR-UAA2-D3-K1",
+   "parentCode": "CTFR-UAA2-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Connaître : Cf. UAA 0"
+  },
+  {
+   "code": "CTFR-UAA2-D3-K2",
+   "parentCode": "CTFR-UAA2-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Connaître : Avant ou après la tâche en fonction du corpus de documents,"
+  },
+  {
+   "code": "CTFR-UAA2-D3-K3",
+   "parentCode": "CTFR-UAA2-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Connaître : discuter les stratégies de lecture ou d’écoute"
+  },
+  {
+   "code": "CTFR-UAA2-D3-K4",
+   "parentCode": "CTFR-UAA2-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Connaître : Avant ou après la tâche,"
+  },
+  {
+   "code": "CTFR-UAA2-D3-K5",
+   "parentCode": "CTFR-UAA2-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Connaître : discuter entre pairs les procédures de préparation d’un écrit ou d’un exposé synthétique"
+  },
+  {
+   "code": "CTFR-UAA2-D3-R1",
+   "parentCode": "CTFR-UAA2-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Pour identifier la consigne"
+  },
+  {
+   "code": "CTFR-UAA2-D3-R2",
+   "parentCode": "CTFR-UAA2-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Cf. UAA 0"
+  },
+  {
+   "code": "CTFR-UAA2-D3-R3",
+   "parentCode": "CTFR-UAA2-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Pour analyser la spécificité de la situation de communication de la synthèse ou de l’exposé à produire"
+  },
+  {
+   "code": "CTFR-UAA2-D3-R4",
+   "parentCode": "CTFR-UAA2-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Paramètres de la situation de communication"
+  },
+  {
+   "code": "CTFR-UAA2-D3-R5",
+   "parentCode": "CTFR-UAA2-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Cf. Focus sur les opérations d’écriture"
+  },
+  {
+   "code": "CTFR-UAA2-D3-R6",
+   "parentCode": "CTFR-UAA2-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Pour identifier des documents, analyser leur situation de communication et les référencer"
+  },
+  {
+   "code": "CTFR-UAA2-D3-R7",
+   "parentCode": "CTFR-UAA2-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Cf. UAA 1"
+  },
+  {
+   "code": "CTFR-UAA2-D3-R8",
+   "parentCode": "CTFR-UAA2-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Pour lire ou écouter les informations des documents sources et en manifester sa compréhension"
+  },
+  {
+   "code": "CTFR-UAA2-D3-R9",
+   "parentCode": "CTFR-UAA2-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Cf. Deuxième degré"
+  },
+  {
+   "code": "CTFR-UAA2-D3-R10",
+   "parentCode": "CTFR-UAA2-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Pour sélectionner les documents exploitables"
+  },
+  {
+   "code": "CTFR-UAA2-D3-R11",
+   "parentCode": "CTFR-UAA2-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Pour sélectionner les documents exploitables et comparer les informations entre plusieurs documents"
+  },
+  {
+   "code": "CTFR-UAA2-D3-R12",
+   "parentCode": "CTFR-UAA2-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Cf. Deuxième degré, « Tableau comparatif »"
+  },
+  {
+   "code": "CTFR-UAA2-D3-R13",
+   "parentCode": "CTFR-UAA2-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Notions de redondance, complémentarité, opposition/contradiction"
+  },
+  {
+   "code": "CTFR-UAA2-D3-R14",
+   "parentCode": "CTFR-UAA2-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Réponse synthétique"
+  },
+  {
+   "code": "CTFR-UAA2-D3-R15",
+   "parentCode": "CTFR-UAA2-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Pour planifier la réponse synthétique"
+  },
+  {
+   "code": "CTFR-UAA2-D3-R16",
+   "parentCode": "CTFR-UAA2-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Structure discursive* dominante adéquate à la question"
+  },
+  {
+   "code": "CTFR-UAA2-D3-R17",
+   "parentCode": "CTFR-UAA2-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Cohésion textuelle*"
+  },
+  {
+   "code": "CTFR-UAA2-D3-R18",
+   "parentCode": "CTFR-UAA2-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Pour rédiger la réponse synthétique"
+  },
+  {
+   "code": "CTFR-UAA2-D3-R19",
+   "parentCode": "CTFR-UAA2-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Articulation question-réponse"
+  },
+  {
+   "code": "CTFR-UAA2-D3-R20",
+   "parentCode": "CTFR-UAA2-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Ressources linguistiques pour exprimer la comparaison"
+  },
+  {
+   "code": "CTFR-UAA2-D3-R21",
+   "parentCode": "CTFR-UAA2-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Pour évaluer et améliorer la qualité d’une réponse synthétique"
+  },
+  {
+   "code": "CTFR-UAA2-D3-R22",
+   "parentCode": "CTFR-UAA2-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Exposé oral synthétique"
+  },
+  {
+   "code": "CTFR-UAA2-D3-R23",
+   "parentCode": "CTFR-UAA2-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Pour planifier l’exposé synthétique à l’aide d’un écrit intermédiaire* (schéma…)"
+  },
+  {
+   "code": "CTFR-UAA2-D3-R24",
+   "parentCode": "CTFR-UAA2-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Structure discursive* dominante"
+  },
+  {
+   "code": "CTFR-UAA2-D3-R25",
+   "parentCode": "CTFR-UAA2-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Pour élaborer un aide-mémoire éventuel et/ou un support multimédia"
+  },
+  {
+   "code": "CTFR-UAA2-D3-R26",
+   "parentCode": "CTFR-UAA2-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Aide-mémoire : informations essentielles lisibles avec citations éventuelles et marques du recours aux supports de communication"
+  },
+  {
+   "code": "CTFR-UAA2-D3-R27",
+   "parentCode": "CTFR-UAA2-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Aide-mémoire : mécanismes de concision (ponctuation ; mots-clés ; termes génériques ou hyperonymes ; réduction nominale, infinitive…)"
+  },
+  {
+   "code": "CTFR-UAA2-D3-R28",
+   "parentCode": "CTFR-UAA2-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Support multimédia : informations synthétiques lisibles, hiérarchisées et complémentaires à celles de l’exposé"
+  },
+  {
+   "code": "CTFR-UAA2-D3-R29",
+   "parentCode": "CTFR-UAA2-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Support multimédia : insertion de citations, d’illustrations visuelles ou sonores, d’animations…"
+  },
+  {
+   "code": "CTFR-UAA2-D3-R30",
+   "parentCode": "CTFR-UAA2-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Pour s’entrainer à l’oralisation à partir du support de communication et/ou de l’aide-mémoire et/ou de l’écrit intermédiaire"
+  },
+  {
+   "code": "CTFR-UAA2-D3-R31",
+   "parentCode": "CTFR-UAA2-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Cf. Opérations de prise de parole"
+  },
+  {
+   "code": "CTFR-UAA2-D3-R32",
+   "parentCode": "CTFR-UAA2-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Cf. « Prendre la parole en situation d’exposé » (voir infra) et « Observer et évaluer un exposé » (voir infra)"
+  },
+  {
+   "code": "CTFR-UAA2-D3-R33",
+   "parentCode": "CTFR-UAA2-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Pour prendre la parole en situation d’exposé"
+  },
+  {
+   "code": "CTFR-UAA2-D3-R34",
+   "parentCode": "CTFR-UAA2-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Gestion de la contrainte de durée : procédés de concision : ponctuation ; mots-clés ; termes génériques ou hyperonymes ; réduction nominale, infinitive…"
+  },
+  {
+   "code": "CTFR-UAA2-D3-R35",
+   "parentCode": "CTFR-UAA2-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Gestion de la contrainte de durée : rythme : débit, adaptation du contenu…"
+  },
+  {
+   "code": "CTFR-UAA2-D3-R36",
+   "parentCode": "CTFR-UAA2-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Signes d’ouverture (salutations, introduction) et de clôture (conclusion, remerciements)"
+  },
+  {
+   "code": "CTFR-UAA2-D3-R37",
+   "parentCode": "CTFR-UAA2-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Énonciation ancrée dans la situation de communication (temps, énonciateur, destinataire)"
+  },
+  {
+   "code": "CTFR-UAA2-D3-R38",
+   "parentCode": "CTFR-UAA2-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Ressources linguistiques pour importer dans l’exposé ou dans le support de communication le discours d’autrui en l’empruntant (citation) ou en le reformulant (discours indirect, résumé, paraphrase)"
+  },
+  {
+   "code": "CTFR-UAA2-D3-R39",
+   "parentCode": "CTFR-UAA2-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Gestion du support multimédia : occupation de l’espace, posture de l’orateur ; moyens linguistiques et paralinguistiques assurant la complémentarité des discours oral et écrit…"
+  },
+  {
+   "code": "CTFR-UAA2-D3-R40",
+   "parentCode": "CTFR-UAA2-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Cohésion textuelle* : marques de hiérarchisation et de segmentation verbales et non verbales (pauses, gestes structurant les parties) de l’exposé et du support"
+  },
+  {
+   "code": "CTFR-UAA2-D3-R41",
+   "parentCode": "CTFR-UAA2-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Cohésion textuelle* : outils de reprise de l’information"
+  },
+  {
+   "code": "CTFR-UAA2-D3-R42",
+   "parentCode": "CTFR-UAA2-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Pour observer et évaluer un exposé"
+  },
+  {
+   "code": "CTFR-UAA2-D3-R43",
+   "parentCode": "CTFR-UAA2-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Critère d’audibilité*"
+  },
+  {
+   "code": "CTFR-UAA2-D3-R44",
+   "parentCode": "CTFR-UAA2-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Critère d’intelligibilité*"
+  },
+  {
+   "code": "CTFR-UAA2-D3-R45",
+   "parentCode": "CTFR-UAA2-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Critère de recevabilité*"
+  },
+  {
+   "code": "CTFR-UAA2-D3-R46",
+   "parentCode": "CTFR-UAA2-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Critère de pertinence*"
+  },
+  {
+   "code": "CTFR-UAA3-D2",
+   "parentCode": "CTFR",
+   "kind": "competence",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "UAA 3 – Défendre une opinion par écrit"
+  },
+  {
+   "code": "CTFR-UAA3-D2-C1",
+   "parentCode": "CTFR-UAA3-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Compétence : Prendre position et étayer une opinion ou une demande par écrit"
+  },
+  {
+   "code": "CTFR-UAA3-D2-A1",
+   "parentCode": "CTFR-UAA3-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Analyser la spécificité de la situation de communication du genre* à produire"
+  },
+  {
+   "code": "CTFR-UAA3-D2-A2",
+   "parentCode": "CTFR-UAA3-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Lire et évaluer un discours argumenté"
+  },
+  {
+   "code": "CTFR-UAA3-D2-A3",
+   "parentCode": "CTFR-UAA3-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Rechercher de l’information en vue d’argumenter"
+  },
+  {
+   "code": "CTFR-UAA3-D2-A4",
+   "parentCode": "CTFR-UAA3-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Planifier un avis argumenté ou une demande à l’aide d’un écrit intermédiaire*"
+  },
+  {
+   "code": "CTFR-UAA3-D2-A5",
+   "parentCode": "CTFR-UAA3-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Évaluer et améliorer la qualité d’un avis argumenté ou d’une demande"
+  },
+  {
+   "code": "CTFR-UAA3-D2-T1",
+   "parentCode": "CTFR-UAA3-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Transférer : Rédiger un avis argumenté"
+  },
+  {
+   "code": "CTFR-UAA3-D2-T2",
+   "parentCode": "CTFR-UAA3-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Transférer : Rédiger une demande argumentée dans une relation asymétrique"
+  },
+  {
+   "code": "CTFR-UAA3-D2-K1",
+   "parentCode": "CTFR-UAA3-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Connaître : Cf. UAA 0"
+  },
+  {
+   "code": "CTFR-UAA3-D2-K2",
+   "parentCode": "CTFR-UAA3-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Connaître : Expliciter l’écrit intermédiaire de planification"
+  },
+  {
+   "code": "CTFR-UAA3-D2-R1",
+   "parentCode": "CTFR-UAA3-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Pour analyser la spécificité de la situation de communication"
+  },
+  {
+   "code": "CTFR-UAA3-D2-R2",
+   "parentCode": "CTFR-UAA3-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Paramètres de la situation de communication. Cf. Focus sur les opérations d’écriture"
+  },
+  {
+   "code": "CTFR-UAA3-D2-R3",
+   "parentCode": "CTFR-UAA3-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Pour lire et évaluer un discours argumenté"
+  },
+  {
+   "code": "CTFR-UAA3-D2-R4",
+   "parentCode": "CTFR-UAA3-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Cf. infra « Pour évaluer et améliorer la qualité d’une production écrite argumentée »"
+  },
+  {
+   "code": "CTFR-UAA3-D2-R5",
+   "parentCode": "CTFR-UAA3-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Pour rechercher de l’information en vue d’argumenter"
+  },
+  {
+   "code": "CTFR-UAA3-D2-R6",
+   "parentCode": "CTFR-UAA3-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Cf. UAA 1"
+  },
+  {
+   "code": "CTFR-UAA3-D2-R7",
+   "parentCode": "CTFR-UAA3-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Pour planifier un avis argumenté ou une demande à l’aide d’un écrit intermédiaire"
+  },
+  {
+   "code": "CTFR-UAA3-D2-R8",
+   "parentCode": "CTFR-UAA3-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Structure argumentative*"
+  },
+  {
+   "code": "CTFR-UAA3-D2-R9",
+   "parentCode": "CTFR-UAA3-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Procédés pour développer l’argumentation : illustration, comparaison, relation de cause à conséquence…"
+  },
+  {
+   "code": "CTFR-UAA3-D2-R10",
+   "parentCode": "CTFR-UAA3-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Caractéristiques du genre* à produire"
+  },
+  {
+   "code": "CTFR-UAA3-D2-R11",
+   "parentCode": "CTFR-UAA3-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Pour rédiger un avis argumenté ou une demande"
+  },
+  {
+   "code": "CTFR-UAA3-D2-R12",
+   "parentCode": "CTFR-UAA3-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Énonciation : indices d’une énonciation ancrée dans la situation de communication"
+  },
+  {
+   "code": "CTFR-UAA3-D2-R13",
+   "parentCode": "CTFR-UAA3-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Énonciation : moyens linguistiques et typographiques pour importer le discours d’autrui en le contextualisant, l’empruntant (citation) ou en le reformulant (discours indirect, résumé, paraphrase)"
+  },
+  {
+   "code": "CTFR-UAA3-D2-R14",
+   "parentCode": "CTFR-UAA3-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Procédés pour assurer la cohésion textuelle*"
+  },
+  {
+   "code": "CTFR-UAA3-D2-R15",
+   "parentCode": "CTFR-UAA3-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Vocabulaire inhérent à la thématique"
+  },
+  {
+   "code": "CTFR-UAA3-D2-R16",
+   "parentCode": "CTFR-UAA3-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Moyens linguistiques pour exprimer l’opinion et les relations logiques"
+  },
+  {
+   "code": "CTFR-UAA3-D2-R17",
+   "parentCode": "CTFR-UAA3-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Procédures pour introduire et conclure"
+  },
+  {
+   "code": "CTFR-UAA3-D2-R18",
+   "parentCode": "CTFR-UAA3-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Pour évaluer et améliorer la qualité d’une production écrite argumentée"
+  },
+  {
+   "code": "CTFR-UAA3-D2-R19",
+   "parentCode": "CTFR-UAA3-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Critère de lisibilité*"
+  },
+  {
+   "code": "CTFR-UAA3-D2-R20",
+   "parentCode": "CTFR-UAA3-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Critère d’intelligibilité*"
+  },
+  {
+   "code": "CTFR-UAA3-D2-R21",
+   "parentCode": "CTFR-UAA3-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Critère de recevabilité*"
+  },
+  {
+   "code": "CTFR-UAA3-D2-R22",
+   "parentCode": "CTFR-UAA3-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Critère de pertinence*"
+  },
+  {
+   "code": "CTFR-UAA3-D3",
+   "parentCode": "CTFR",
+   "kind": "competence",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "UAA 3 – Défendre une opinion par écrit"
+  },
+  {
+   "code": "CTFR-UAA3-D3-C1",
+   "parentCode": "CTFR-UAA3-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Compétence : Réagir et prendre position par écrit"
+  },
+  {
+   "code": "CTFR-UAA3-D3-A1",
+   "parentCode": "CTFR-UAA3-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Appliquer : Analyser la spécificité de la situation de communication du genre* à produire"
+  },
+  {
+   "code": "CTFR-UAA3-D3-A2",
+   "parentCode": "CTFR-UAA3-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Appliquer : Lire et évaluer un discours argumenté"
+  },
+  {
+   "code": "CTFR-UAA3-D3-A3",
+   "parentCode": "CTFR-UAA3-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Appliquer : Rechercher de l’information en vue d’argumenter"
+  },
+  {
+   "code": "CTFR-UAA3-D3-A4",
+   "parentCode": "CTFR-UAA3-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Appliquer : Planifier un avis argumenté en réaction à une ou des opinion(s) ou à une réclamation à l’aide d’un écrit intermédiaire"
+  },
+  {
+   "code": "CTFR-UAA3-D3-A5",
+   "parentCode": "CTFR-UAA3-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Appliquer : Évaluer et améliorer la qualité d’un avis argumenté en réaction à une (des) opinion(s)/une réclamation"
+  },
+  {
+   "code": "CTFR-UAA3-D3-T1",
+   "parentCode": "CTFR-UAA3-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Transférer : Rédiger un avis argumenté en réaction à une ou plusieurs opinion(s)"
+  },
+  {
+   "code": "CTFR-UAA3-D3-T2",
+   "parentCode": "CTFR-UAA3-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Transférer : Rédiger une réclamation dans une relation asymétrique"
+  },
+  {
+   "code": "CTFR-UAA3-D3-K1",
+   "parentCode": "CTFR-UAA3-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Connaître : Cf. UAA 0"
+  },
+  {
+   "code": "CTFR-UAA3-D3-K2",
+   "parentCode": "CTFR-UAA3-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Connaître : Après la tâche,"
+  },
+  {
+   "code": "CTFR-UAA3-D3-K3",
+   "parentCode": "CTFR-UAA3-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Connaître : Expliciter les facteurs de réussite et d’échec de l’acte de communication"
+  },
+  {
+   "code": "CTFR-UAA3-D3-K4",
+   "parentCode": "CTFR-UAA3-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Connaître : Discuter les améliorations possibles"
+  },
+  {
+   "code": "CTFR-UAA3-D3-R1",
+   "parentCode": "CTFR-UAA3-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Pour analyser la spécificité de la situation de communication"
+  },
+  {
+   "code": "CTFR-UAA3-D3-R2",
+   "parentCode": "CTFR-UAA3-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Paramètres de la situation de communication. Cf. Focus sur les opérations d’écriture"
+  },
+  {
+   "code": "CTFR-UAA3-D3-R3",
+   "parentCode": "CTFR-UAA3-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Pour lire et évaluer un discours argumenté"
+  },
+  {
+   "code": "CTFR-UAA3-D3-R4",
+   "parentCode": "CTFR-UAA3-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Cf. infra « Pour évaluer et améliorer la qualité d’une production écrite argumentée »"
+  },
+  {
+   "code": "CTFR-UAA3-D3-R5",
+   "parentCode": "CTFR-UAA3-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Pour rechercher de l’information en vue d’argumenter"
+  },
+  {
+   "code": "CTFR-UAA3-D3-R6",
+   "parentCode": "CTFR-UAA3-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Cf. UAA 1"
+  },
+  {
+   "code": "CTFR-UAA3-D3-R7",
+   "parentCode": "CTFR-UAA3-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Pour planifier un avis argumenté en réaction à une ou des opinion(s) ou à une réclamation à l’aide d’un écrit intermédiaire"
+  },
+  {
+   "code": "CTFR-UAA3-D3-R8",
+   "parentCode": "CTFR-UAA3-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Cf. Deuxième degré"
+  },
+  {
+   "code": "CTFR-UAA3-D3-R9",
+   "parentCode": "CTFR-UAA3-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Points d’accord et/ou de désaccord"
+  },
+  {
+   "code": "CTFR-UAA3-D3-R10",
+   "parentCode": "CTFR-UAA3-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Procédés pour développer la contre-argumentation : objection, concession, réfutation"
+  },
+  {
+   "code": "CTFR-UAA3-D3-R11",
+   "parentCode": "CTFR-UAA3-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Caractéristiques du genre*"
+  },
+  {
+   "code": "CTFR-UAA3-D3-R12",
+   "parentCode": "CTFR-UAA3-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Pour rédiger un avis argumenté en réaction à une ou des opinion(s) ou à une réclamation"
+  },
+  {
+   "code": "CTFR-UAA3-D3-R13",
+   "parentCode": "CTFR-UAA3-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Moyens linguistiques pour exprimer : l’accord ou le désaccord"
+  },
+  {
+   "code": "CTFR-UAA3-D3-R14",
+   "parentCode": "CTFR-UAA3-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Moyens linguistiques pour exprimer : la concession"
+  },
+  {
+   "code": "CTFR-UAA3-D3-R15",
+   "parentCode": "CTFR-UAA3-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Moyens linguistiques pour exprimer : la réfutation"
+  },
+  {
+   "code": "CTFR-UAA3-D3-R16",
+   "parentCode": "CTFR-UAA3-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Pour évaluer et améliorer la qualité d’une production écrite argumentée et expliciter les facteurs de réussite ou d’échec"
+  },
+  {
+   "code": "CTFR-UAA3-D3-R17",
+   "parentCode": "CTFR-UAA3-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Critère de lisibilité*"
+  },
+  {
+   "code": "CTFR-UAA3-D3-R18",
+   "parentCode": "CTFR-UAA3-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Critère d’intelligibilité*"
+  },
+  {
+   "code": "CTFR-UAA3-D3-R19",
+   "parentCode": "CTFR-UAA3-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Critère de recevabilité*"
+  },
+  {
+   "code": "CTFR-UAA3-D3-R20",
+   "parentCode": "CTFR-UAA3-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Critère de pertinence*"
+  },
+  {
+   "code": "CTFR-UAA4-D2",
+   "parentCode": "CTFR",
+   "kind": "competence",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "UAA 4 – Défendre oralement une opinion et négocier"
+  },
+  {
+   "code": "CTFR-UAA4-D2-C1",
+   "parentCode": "CTFR-UAA4-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Compétence : Prendre position et étayer oralement une opinion ou une demande"
+  },
+  {
+   "code": "CTFR-UAA4-D2-A1",
+   "parentCode": "CTFR-UAA4-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Analyser la spécificité de la situation de communication"
+  },
+  {
+   "code": "CTFR-UAA4-D2-A2",
+   "parentCode": "CTFR-UAA4-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Écouter et évaluer une prestation orale argumentée"
+  },
+  {
+   "code": "CTFR-UAA4-D2-A3",
+   "parentCode": "CTFR-UAA4-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Rechercher de l’information en vue d’argumenter"
+  },
+  {
+   "code": "CTFR-UAA4-D2-A4",
+   "parentCode": "CTFR-UAA4-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Planifier un avis argumenté ou une demande à l’aide d’un écrit intermédiaire*"
+  },
+  {
+   "code": "CTFR-UAA4-D2-A5",
+   "parentCode": "CTFR-UAA4-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Élaborer un aide-mémoire"
+  },
+  {
+   "code": "CTFR-UAA4-D2-A6",
+   "parentCode": "CTFR-UAA4-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Évaluer et améliorer la qualité d’une prestation orale argumentée"
+  },
+  {
+   "code": "CTFR-UAA4-D2-T1",
+   "parentCode": "CTFR-UAA4-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Transférer : un avis argumenté"
+  },
+  {
+   "code": "CTFR-UAA4-D2-T2",
+   "parentCode": "CTFR-UAA4-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Transférer : une demande dans une relation asymétrique"
+  },
+  {
+   "code": "CTFR-UAA4-D2-K1",
+   "parentCode": "CTFR-UAA4-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Connaître : Cf. UAA 0"
+  },
+  {
+   "code": "CTFR-UAA4-D2-K2",
+   "parentCode": "CTFR-UAA4-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Connaître : Expliciter l’écrit intermédiaire de planification"
+  },
+  {
+   "code": "CTFR-UAA4-D2-R1",
+   "parentCode": "CTFR-UAA4-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Pour analyser la spécificité de la situation de communication"
+  },
+  {
+   "code": "CTFR-UAA4-D2-R2",
+   "parentCode": "CTFR-UAA4-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Paramètres de la situation de communication. Cf. Focus sur les opérations de prise de parole"
+  },
+  {
+   "code": "CTFR-UAA4-D2-R3",
+   "parentCode": "CTFR-UAA4-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Pour écouter et évaluer une prestation orale argumentée"
+  },
+  {
+   "code": "CTFR-UAA4-D2-R4",
+   "parentCode": "CTFR-UAA4-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Cf. infra « Pour évaluer et améliorer la qualité d’une prestation orale argumentée »"
+  },
+  {
+   "code": "CTFR-UAA4-D2-R5",
+   "parentCode": "CTFR-UAA4-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Pour rechercher de l’information en vue d’argumenter"
+  },
+  {
+   "code": "CTFR-UAA4-D2-R6",
+   "parentCode": "CTFR-UAA4-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Cf. UAA 1"
+  },
+  {
+   "code": "CTFR-UAA4-D2-R7",
+   "parentCode": "CTFR-UAA4-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Pour planifier un avis argumenté ou une demande à l’aide d’un écrit intermédiaire"
+  },
+  {
+   "code": "CTFR-UAA4-D2-R8",
+   "parentCode": "CTFR-UAA4-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Caractéristiques du genre* à produire"
+  },
+  {
+   "code": "CTFR-UAA4-D2-R9",
+   "parentCode": "CTFR-UAA4-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Structure argumentative*"
+  },
+  {
+   "code": "CTFR-UAA4-D2-R10",
+   "parentCode": "CTFR-UAA4-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Procédés pour développer l’argumentation : illustration, comparaison, relation de cause à conséquence…"
+  },
+  {
+   "code": "CTFR-UAA4-D2-R11",
+   "parentCode": "CTFR-UAA4-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Pour élaborer un aide-mémoire éventuel"
+  },
+  {
+   "code": "CTFR-UAA4-D2-R12",
+   "parentCode": "CTFR-UAA4-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Informations utiles à l’orateur"
+  },
+  {
+   "code": "CTFR-UAA4-D2-R13",
+   "parentCode": "CTFR-UAA4-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Procédés de concision (schéma, mots-clés…)"
+  },
+  {
+   "code": "CTFR-UAA4-D2-R14",
+   "parentCode": "CTFR-UAA4-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Pour exprimer oralement un avis argumenté ou une demande"
+  },
+  {
+   "code": "CTFR-UAA4-D2-R15",
+   "parentCode": "CTFR-UAA4-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Énonciation. Cf. UAA 3"
+  },
+  {
+   "code": "CTFR-UAA4-D2-R16",
+   "parentCode": "CTFR-UAA4-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Signes d’ouverture et de clôture"
+  },
+  {
+   "code": "CTFR-UAA4-D2-R17",
+   "parentCode": "CTFR-UAA4-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Procédés pour assurer la cohésion textuelle*"
+  },
+  {
+   "code": "CTFR-UAA4-D2-R18",
+   "parentCode": "CTFR-UAA4-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Vocabulaire inhérent à la thématique"
+  },
+  {
+   "code": "CTFR-UAA4-D2-R19",
+   "parentCode": "CTFR-UAA4-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Moyens linguistiques pour exprimer l’opinion et les relations logiques"
+  },
+  {
+   "code": "CTFR-UAA4-D2-R20",
+   "parentCode": "CTFR-UAA4-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Pour évaluer et améliorer la qualité d’une prestation orale argumentée"
+  },
+  {
+   "code": "CTFR-UAA4-D2-R21",
+   "parentCode": "CTFR-UAA4-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Critère d’audibilité*"
+  },
+  {
+   "code": "CTFR-UAA4-D2-R22",
+   "parentCode": "CTFR-UAA4-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Critère d’intelligibilité*"
+  },
+  {
+   "code": "CTFR-UAA4-D2-R23",
+   "parentCode": "CTFR-UAA4-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Critère de recevabilité*"
+  },
+  {
+   "code": "CTFR-UAA4-D2-R24",
+   "parentCode": "CTFR-UAA4-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Critère de pertinence*"
+  },
+  {
+   "code": "CTFR-UAA4-D3",
+   "parentCode": "CTFR",
+   "kind": "competence",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "UAA 4 – Défendre oralement une opinion et négocier"
+  },
+  {
+   "code": "CTFR-UAA4-D3-C1",
+   "parentCode": "CTFR-UAA4-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Compétence : Défendre oralement une position personnelle"
+  },
+  {
+   "code": "CTFR-UAA4-D3-C2",
+   "parentCode": "CTFR-UAA4-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Compétence : Discuter ou négocier en vue d’aboutir à une décision ou à une position commune"
+  },
+  {
+   "code": "CTFR-UAA4-D3-A1",
+   "parentCode": "CTFR-UAA4-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Appliquer : Analyser la spécificité de la situation de communication"
+  },
+  {
+   "code": "CTFR-UAA4-D3-A2",
+   "parentCode": "CTFR-UAA4-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Appliquer : Écouter et évaluer une prestation orale argumentée individuelle ou en discussion"
+  },
+  {
+   "code": "CTFR-UAA4-D3-A3",
+   "parentCode": "CTFR-UAA4-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Appliquer : Rechercher de l’information en vue d’argumenter"
+  },
+  {
+   "code": "CTFR-UAA4-D3-A4",
+   "parentCode": "CTFR-UAA4-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Appliquer : Planifier une prestation orale argumentée individuelle ou en discussion à l’aide d’un écrit intermédiaire"
+  },
+  {
+   "code": "CTFR-UAA4-D3-A5",
+   "parentCode": "CTFR-UAA4-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Appliquer : Élaborer un aide-mémoire"
+  },
+  {
+   "code": "CTFR-UAA4-D3-A6",
+   "parentCode": "CTFR-UAA4-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Appliquer : Évaluer et améliorer une prestation orale argumentée individuelle ou dans le cadre d’une discussion (avec négociation)"
+  },
+  {
+   "code": "CTFR-UAA4-D3-T1",
+   "parentCode": "CTFR-UAA4-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Transférer : Défendre oralement une position personnelle suite à une synthèse ou à une discussion"
+  },
+  {
+   "code": "CTFR-UAA4-D3-T2",
+   "parentCode": "CTFR-UAA4-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Transférer : Prendre la parole dans le cadre d’une discussion (avec négociation)"
+  },
+  {
+   "code": "CTFR-UAA4-D3-K1",
+   "parentCode": "CTFR-UAA4-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Connaître : Cf. UAA 0"
+  },
+  {
+   "code": "CTFR-UAA4-D3-K2",
+   "parentCode": "CTFR-UAA4-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Connaître : Expliciter les facteurs de réussite et/ou d’échec d’une prestation orale argumentée individuelle ou des interventions dans le cadre d’une discussion (avec négociation)"
+  },
+  {
+   "code": "CTFR-UAA4-D3-R1",
+   "parentCode": "CTFR-UAA4-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Pour analyser la spécificité de la situation de communication"
+  },
+  {
+   "code": "CTFR-UAA4-D3-R2",
+   "parentCode": "CTFR-UAA4-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Paramètres de la situation de communication. Cf. Focus sur les opérations de prise de parole"
+  },
+  {
+   "code": "CTFR-UAA4-D3-R3",
+   "parentCode": "CTFR-UAA4-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Pour écouter et évaluer une prestation orale argumentée individuelle ou une discussion"
+  },
+  {
+   "code": "CTFR-UAA4-D3-R4",
+   "parentCode": "CTFR-UAA4-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Cf. infra « Pour évaluer et améliorer la qualité d’une prestation orale argumentée individuelle ou une discussion »"
+  },
+  {
+   "code": "CTFR-UAA4-D3-R5",
+   "parentCode": "CTFR-UAA4-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Pour rechercher de l’information en vue d’argumenter"
+  },
+  {
+   "code": "CTFR-UAA4-D3-R6",
+   "parentCode": "CTFR-UAA4-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Cf. UAA 1"
+  },
+  {
+   "code": "CTFR-UAA4-D3-R7",
+   "parentCode": "CTFR-UAA4-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Pour planifier une prestation orale argumentée à l’aide d’un écrit intermédiaire"
+  },
+  {
+   "code": "CTFR-UAA4-D3-R8",
+   "parentCode": "CTFR-UAA4-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Cf. Deuxième degré"
+  },
+  {
+   "code": "CTFR-UAA4-D3-R9",
+   "parentCode": "CTFR-UAA4-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Pour élaborer un aide-mémoire"
+  },
+  {
+   "code": "CTFR-UAA4-D3-R10",
+   "parentCode": "CTFR-UAA4-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Pour exprimer oralement un avis argumenté"
+  },
+  {
+   "code": "CTFR-UAA4-D3-R11",
+   "parentCode": "CTFR-UAA4-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Pour échanger des points de vue dans le cadre d’une discussion avec négociation"
+  },
+  {
+   "code": "CTFR-UAA4-D3-R12",
+   "parentCode": "CTFR-UAA4-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Rôles et mandats"
+  },
+  {
+   "code": "CTFR-UAA4-D3-R13",
+   "parentCode": "CTFR-UAA4-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Temps et tours de parole"
+  },
+  {
+   "code": "CTFR-UAA4-D3-R14",
+   "parentCode": "CTFR-UAA4-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Énonciation. Cf. Deuxième degré"
+  },
+  {
+   "code": "CTFR-UAA4-D3-R15",
+   "parentCode": "CTFR-UAA4-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Structure dialogale*"
+  },
+  {
+   "code": "CTFR-UAA4-D3-R16",
+   "parentCode": "CTFR-UAA4-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Enchainement entre les interactions. Cf. Focus sur les opérations de prise de parole"
+  },
+  {
+   "code": "CTFR-UAA4-D3-R17",
+   "parentCode": "CTFR-UAA4-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Questions propres à faire avancer la discussion ou la négociation : neutres (et non orientées), ouvertes (et non fermées)"
+  },
+  {
+   "code": "CTFR-UAA4-D3-R18",
+   "parentCode": "CTFR-UAA4-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Modes de réaction à la parole d’autrui (demande d’information supplémentaire, reformulation, approbation, objection, concession-réfutation…)"
+  },
+  {
+   "code": "CTFR-UAA4-D3-R19",
+   "parentCode": "CTFR-UAA4-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Ressources lexicales et linguistiques. Cf. UAA 3, Troisième degré"
+  },
+  {
+   "code": "CTFR-UAA4-D3-R20",
+   "parentCode": "CTFR-UAA4-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Pour évaluer et améliorer la qualité d’une prestation orale argumentée individuelle ou d’une discussion (avec négociation) et expliciter les facteurs de réussite ou d’échec"
+  },
+  {
+   "code": "CTFR-UAA4-D3-R21",
+   "parentCode": "CTFR-UAA4-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Critère d’audibilité*"
+  },
+  {
+   "code": "CTFR-UAA4-D3-R22",
+   "parentCode": "CTFR-UAA4-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Critère d’intelligibilité*"
+  },
+  {
+   "code": "CTFR-UAA4-D3-R23",
+   "parentCode": "CTFR-UAA4-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Critère de recevabilité*"
+  },
+  {
+   "code": "CTFR-UAA4-D3-R24",
+   "parentCode": "CTFR-UAA4-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Critère de pertinence*"
+  },
+  {
+   "code": "CTFR-UAA5-D23",
+   "parentCode": "CTFR",
+   "kind": "competence",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "UAA 5 – S’inscrire dans une œuvre culturelle"
+  },
+  {
+   "code": "CTFR-UAA5-D23-C1",
+   "parentCode": "CTFR-UAA5-D23",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Compétence : S’inscrire dans une œuvre culturelle source en l’amplifiant, la recomposant ou la transposant"
+  },
+  {
+   "code": "CTFR-UAA5-D23-C2",
+   "parentCode": "CTFR-UAA5-D23",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Compétence : Œuvres littéraires (récit de fiction, texte poétique, œuvre théâtrale…)"
+  },
+  {
+   "code": "CTFR-UAA5-D23-C3",
+   "parentCode": "CTFR-UAA5-D23",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Compétence : Autres œuvres artistiques (bande dessinée, peinture, affiche, photo, film, chanson…)"
+  },
+  {
+   "code": "CTFR-UAA5-D23-A1",
+   "parentCode": "CTFR-UAA5-D23",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Appliquer : Manifester sa compréhension, son interprétation de l’œuvre culturelle source"
+  },
+  {
+   "code": "CTFR-UAA5-D23-A2",
+   "parentCode": "CTFR-UAA5-D23",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Appliquer : Planifier l’intervention dans l’œuvre culturelle source"
+  },
+  {
+   "code": "CTFR-UAA5-D23-A3",
+   "parentCode": "CTFR-UAA5-D23",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Appliquer : Évaluer la production finale et la démarche de création"
+  },
+  {
+   "code": "CTFR-UAA5-D23-T1",
+   "parentCode": "CTFR-UAA5-D23",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Transférer : Intervenir dans une œuvre littéraire soit : en l’amplifiant"
+  },
+  {
+   "code": "CTFR-UAA5-D23-T2",
+   "parentCode": "CTFR-UAA5-D23",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Transférer : Intervenir dans une œuvre littéraire soit : en la recomposant"
+  },
+  {
+   "code": "CTFR-UAA5-D23-T3",
+   "parentCode": "CTFR-UAA5-D23",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Transférer : Intervenir dans une œuvre littéraire soit : en la transposant"
+  },
+  {
+   "code": "CTFR-UAA5-D23-T4",
+   "parentCode": "CTFR-UAA5-D23",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Transférer : Intervenir dans une autre œuvre artistique soit : en l’amplifiant"
+  },
+  {
+   "code": "CTFR-UAA5-D23-T5",
+   "parentCode": "CTFR-UAA5-D23",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Transférer : Intervenir dans une autre œuvre artistique soit : en la recomposant"
+  },
+  {
+   "code": "CTFR-UAA5-D23-T6",
+   "parentCode": "CTFR-UAA5-D23",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Transférer : Intervenir dans une autre œuvre artistique soit : en la transposant"
+  },
+  {
+   "code": "CTFR-UAA5-D23-K1",
+   "parentCode": "CTFR-UAA5-D23",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Connaître : Avant, pendant ou après la tâche, expliciter la démarche et les choix adoptés dans la production"
+  },
+  {
+   "code": "CTFR-UAA5-D23-R1",
+   "parentCode": "CTFR-UAA5-D23",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Pour manifester sa compréhension, son interprétation de l’œuvre culturelle source"
+  },
+  {
+   "code": "CTFR-UAA5-D23-R2",
+   "parentCode": "CTFR-UAA5-D23",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Questionnement sur ce qu’on ressent, observe, interprète"
+  },
+  {
+   "code": "CTFR-UAA5-D23-R3",
+   "parentCode": "CTFR-UAA5-D23",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Cf. Focus sur la littérature et les arts et Focus sur la langue"
+  },
+  {
+   "code": "CTFR-UAA5-D23-R4",
+   "parentCode": "CTFR-UAA5-D23",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Œuvre littéraire : récit de fiction : action, personnage(s), cadre spatiotemporel, choix narratifs, caractéristiques du genre de récit, choix stylistiques, portée symbolique, idéologique…"
+  },
+  {
+   "code": "CTFR-UAA5-D23-R5",
+   "parentCode": "CTFR-UAA5-D23",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Œuvre littéraire : texte poétique : vers/strophe/refrain/rimes, figures, écart par rapport aux normes, typographie et mise en page, voix, formes poétiques, portée symbolique, idéologique…"
+  },
+  {
+   "code": "CTFR-UAA5-D23-R6",
+   "parentCode": "CTFR-UAA5-D23",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Œuvre littéraire : œuvre théâtrale : action, personnage(s), cadre spatiotemporel, pièce/acte/scène… dialogue/didascalie et autres indications scénographiques, caractéristiques du genre (comédie, tragédie, one-man-show…), choix stylistiques, portée symbolique, idéologique…"
+  },
+  {
+   "code": "CTFR-UAA5-D23-R7",
+   "parentCode": "CTFR-UAA5-D23",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Œuvre graphique/picturale ou multimédia* ou œuvre artistique : découpage, format, support, matière, cadrage, composition, angle, profondeur de champ, champ/hors champ, couleurs, lumière, texte éventuel et rapport avec l’image, procédés cinématographiques, incrustation, signes iconiques…, figures, représentation figurative/non figurative ; si dimension narrative, Cf. « Récit de fiction »…"
+  },
+  {
+   "code": "CTFR-UAA5-D23-R8",
+   "parentCode": "CTFR-UAA5-D23",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Autres œuvres artistiques : Caractéristiques envisageables : format, support, matière, cadrage, composition, couleurs, lumière, texte éventuel et rapport avec l’image, incrustation, procédés cinématographiques, figures, portée symbolique, idéologique…, voix/bruit/musique, aspect figuratif/non figuratif, rythme…"
+  },
+  {
+   "code": "CTFR-UAA5-D23-R9",
+   "parentCode": "CTFR-UAA5-D23",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Autres œuvres artistiques : la bande dessinée : case, planche, signes iconolinguistiques, bulle…"
+  },
+  {
+   "code": "CTFR-UAA5-D23-R10",
+   "parentCode": "CTFR-UAA5-D23",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Autres œuvres artistiques : la peinture : palette, choix des matériaux…"
+  },
+  {
+   "code": "CTFR-UAA5-D23-R11",
+   "parentCode": "CTFR-UAA5-D23",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Autres œuvres artistiques : l’affiche : localisation, articulation texte-image…"
+  },
+  {
+   "code": "CTFR-UAA5-D23-R12",
+   "parentCode": "CTFR-UAA5-D23",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Autres œuvres artistiques : la photo : grain, contraste, profondeur…"
+  },
+  {
+   "code": "CTFR-UAA5-D23-R13",
+   "parentCode": "CTFR-UAA5-D23",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Autres œuvres artistiques : le film : mouvement sur champ, mixage, montage, performance/interprétation des acteurs…"
+  },
+  {
+   "code": "CTFR-UAA5-D23-R14",
+   "parentCode": "CTFR-UAA5-D23",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Autres œuvres artistiques : la chanson : musique, performance/interprétation du chanteur…"
+  },
+  {
+   "code": "CTFR-UAA5-D23-R15",
+   "parentCode": "CTFR-UAA5-D23",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Références culturelles (intertexte)"
+  },
+  {
+   "code": "CTFR-UAA5-D23-R16",
+   "parentCode": "CTFR-UAA5-D23",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Pour planifier l’intervention et intervenir dans l’œuvre source"
+  },
+  {
+   "code": "CTFR-UAA5-D23-R17",
+   "parentCode": "CTFR-UAA5-D23",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Amplification : choix interprétatifs de l’œuvre source"
+  },
+  {
+   "code": "CTFR-UAA5-D23-R18",
+   "parentCode": "CTFR-UAA5-D23",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Amplification : facteurs de cohérence avec l’œuvre source"
+  },
+  {
+   "code": "CTFR-UAA5-D23-R19",
+   "parentCode": "CTFR-UAA5-D23",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Amplification : caractéristiques de la forme d’expansion choisie (dialogue, strophe supplémentaire, épisode narratif…)"
+  },
+  {
+   "code": "CTFR-UAA5-D23-R20",
+   "parentCode": "CTFR-UAA5-D23",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Recomposition : possibilités de fragmentation de l’œuvre source"
+  },
+  {
+   "code": "CTFR-UAA5-D23-R21",
+   "parentCode": "CTFR-UAA5-D23",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Recomposition : facteurs de cohérence interne à l’œuvre"
+  },
+  {
+   "code": "CTFR-UAA5-D23-R22",
+   "parentCode": "CTFR-UAA5-D23",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Transposition : possibilités de découpage de l’œuvre source en unités significatives"
+  },
+  {
+   "code": "CTFR-UAA5-D23-R23",
+   "parentCode": "CTFR-UAA5-D23",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Transposition : choix interprétatifs de l’œuvre source"
+  },
+  {
+   "code": "CTFR-UAA5-D23-R24",
+   "parentCode": "CTFR-UAA5-D23",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Transposition : facteurs de cohérence avec l’œuvre source et/ou facteurs de cohérence interne à l’œuvre"
+  },
+  {
+   "code": "CTFR-UAA5-D23-R25",
+   "parentCode": "CTFR-UAA5-D23",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Transposition : écrit intermédiaire* éventuel (œuvre source annotée, découpage, scénario, storyboard…)"
+  },
+  {
+   "code": "CTFR-UAA5-D23-R26",
+   "parentCode": "CTFR-UAA5-D23",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Transposition : caractéristiques du langage de transposition³. Cf. « Pour manifester sa compréhension de l’œuvre culturelle source »"
+  },
+  {
+   "code": "CTFR-UAA5-D23-R27",
+   "parentCode": "CTFR-UAA5-D23",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Transposition : langage écrit : signes linguistiques, typographiques et visuels"
+  },
+  {
+   "code": "CTFR-UAA5-D23-R28",
+   "parentCode": "CTFR-UAA5-D23",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Transposition : langage sonore : voix, bruitage, musique, mixage, performance/interprétation…"
+  },
+  {
+   "code": "CTFR-UAA5-D23-R29",
+   "parentCode": "CTFR-UAA5-D23",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Transposition : langage iconique : choix du support (Cf. supra « Caractéristiques spécifiques à l’affiche, la photo… »)"
+  },
+  {
+   "code": "CTFR-UAA5-D23-R30",
+   "parentCode": "CTFR-UAA5-D23",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Transposition : langage théâtral : choix de mise en scène (décor, éclairage, costume, musique et bruitage…) et jeu théâtral…"
+  },
+  {
+   "code": "CTFR-UAA5-D23-R31",
+   "parentCode": "CTFR-UAA5-D23",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Transposition : langage audiovisuel (Cf. supra « Caractéristiques spécifiques au film »)"
+  },
+  {
+   "code": "CTFR-UAA5-D23-R32",
+   "parentCode": "CTFR-UAA5-D23",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Transposition : multimédia* : interactivité (Cf. supra « Langage écrit, iconique, audiovisuel… »)"
+  },
+  {
+   "code": "CTFR-UAA5-D23-R33",
+   "parentCode": "CTFR-UAA5-D23",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : installation : caractère éphémère, choix du lieu et des matériaux (Cf. supra « Langage écrit, iconique, audiovisuel, théâtral… »)"
+  },
+  {
+   "code": "CTFR-UAA5-D23-R34",
+   "parentCode": "CTFR-UAA5-D23",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Pour évaluer la production finale"
+  },
+  {
+   "code": "CTFR-UAA5-D23-R35",
+   "parentCode": "CTFR-UAA5-D23",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Critère de lisibilité/audibilité*"
+  },
+  {
+   "code": "CTFR-UAA5-D23-R36",
+   "parentCode": "CTFR-UAA5-D23",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Critère d’intelligibilité*"
+  },
+  {
+   "code": "CTFR-UAA5-D23-R37",
+   "parentCode": "CTFR-UAA5-D23",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Critère de recevabilité*"
+  },
+  {
+   "code": "CTFR-UAA5-D23-R38",
+   "parentCode": "CTFR-UAA5-D23",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Critère de pertinence* : cohérence avec l’œuvre source et/ou interne à la production"
+  },
+  {
+   "code": "CTFR-UAA6-D2",
+   "parentCode": "CTFR",
+   "kind": "competence",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "UAA 6"
+  },
+  {
+   "code": "CTFR-UAA6-D2-C1",
+   "parentCode": "CTFR-UAA6-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Compétence : Relater une rencontre avec une œuvre culturelle"
+  },
+  {
+   "code": "CTFR-UAA6-D2-C2",
+   "parentCode": "CTFR-UAA6-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Compétence : Œuvres littéraires (récit de fiction, texte poétique, œuvre théâtrale…)"
+  },
+  {
+   "code": "CTFR-UAA6-D2-C3",
+   "parentCode": "CTFR-UAA6-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Compétence : Autres œuvres artistiques (bande dessinée, peinture, affiche, photo, film, chanson…)"
+  },
+  {
+   "code": "CTFR-UAA6-D2-A1",
+   "parentCode": "CTFR-UAA6-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Manifester sa compréhension d’une œuvre"
+  },
+  {
+   "code": "CTFR-UAA6-D2-A2",
+   "parentCode": "CTFR-UAA6-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Manifester son appréciation d’une œuvre"
+  },
+  {
+   "code": "CTFR-UAA6-D2-A3",
+   "parentCode": "CTFR-UAA6-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Analyser la spécificité de la situation de communication de la production visée"
+  },
+  {
+   "code": "CTFR-UAA6-D2-A4",
+   "parentCode": "CTFR-UAA6-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Planifier la relation d’expérience à l’aide d’un écrit intermédiaire"
+  },
+  {
+   "code": "CTFR-UAA6-D2-A5",
+   "parentCode": "CTFR-UAA6-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Évaluer, améliorer la qualité de la relation d’expérience"
+  },
+  {
+   "code": "CTFR-UAA6-D2-T1",
+   "parentCode": "CTFR-UAA6-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Transférer : En autonomie, dans une situation de communication précise, relater, en vue de la partager avec autrui, une rencontre avec…"
+  },
+  {
+   "code": "CTFR-UAA6-D2-T2",
+   "parentCode": "CTFR-UAA6-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Transférer : un récit de fiction"
+  },
+  {
+   "code": "CTFR-UAA6-D2-T3",
+   "parentCode": "CTFR-UAA6-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Transférer : un texte poétique ou une œuvre théâtrale"
+  },
+  {
+   "code": "CTFR-UAA6-D2-T4",
+   "parentCode": "CTFR-UAA6-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Transférer : une autre œuvre artistique non littéraire au choix"
+  },
+  {
+   "code": "CTFR-UAA6-D2-K1",
+   "parentCode": "CTFR-UAA6-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Connaître : Cf. UAA 0"
+  },
+  {
+   "code": "CTFR-UAA6-D2-K2",
+   "parentCode": "CTFR-UAA6-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Connaître : Après la tâche et lors de l’échange des relations d’expérience, soit comparer les expériences et les choix Cf. UAA2, Deuxième degré, « Construire un tableau comparatif »"
+  },
+  {
+   "code": "CTFR-UAA6-D2-K3",
+   "parentCode": "CTFR-UAA6-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Connaître : Après la tâche et lors de l’échange des relations d’expérience, soit expliciter les facteurs d’agrément ou de désagrément de la rencontre avec une œuvre culturelle"
+  },
+  {
+   "code": "CTFR-UAA6-D2-R1",
+   "parentCode": "CTFR-UAA6-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Pour manifester sa compréhension, son interprétation d’une œuvre"
+  },
+  {
+   "code": "CTFR-UAA6-D2-R2",
+   "parentCode": "CTFR-UAA6-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Cf. UAA 5, « Pour manifester sa compréhension de l’œuvre culturelle source »"
+  },
+  {
+   "code": "CTFR-UAA6-D2-R3",
+   "parentCode": "CTFR-UAA6-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Pour manifester son appréciation d’une œuvre"
+  },
+  {
+   "code": "CTFR-UAA6-D2-R4",
+   "parentCode": "CTFR-UAA6-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Effet(s) produit(s) par la rencontre : connaissance des gouts personnels en matière culturelle"
+  },
+  {
+   "code": "CTFR-UAA6-D2-R5",
+   "parentCode": "CTFR-UAA6-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Effet(s) produit(s) par la rencontre : réponses au questionnement sur ce qu’on ressent, observe, interprète"
+  },
+  {
+   "code": "CTFR-UAA6-D2-R6",
+   "parentCode": "CTFR-UAA6-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Effet(s) produit(s) par la rencontre : caractéristiques de l’œuvre culturelle. Cf. UAA 5, « Pour manifester sa compréhension de l’œuvre culturelle source »"
+  },
+  {
+   "code": "CTFR-UAA6-D2-R7",
+   "parentCode": "CTFR-UAA6-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Structure argumentative*"
+  },
+  {
+   "code": "CTFR-UAA6-D2-R8",
+   "parentCode": "CTFR-UAA6-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Pour analyser la spécificité de la situation de communication de la relation d’expérience"
+  },
+  {
+   "code": "CTFR-UAA6-D2-R9",
+   "parentCode": "CTFR-UAA6-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Paramètres de la situation de communication Cf. Focus sur les opérations d’écriture et de prise de parole"
+  },
+  {
+   "code": "CTFR-UAA6-D2-R10",
+   "parentCode": "CTFR-UAA6-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Pour planifier une relation d’expérience culturelle"
+  },
+  {
+   "code": "CTFR-UAA6-D2-R11",
+   "parentCode": "CTFR-UAA6-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Structures narrative, descriptive, argumentative*"
+  },
+  {
+   "code": "CTFR-UAA6-D2-R12",
+   "parentCode": "CTFR-UAA6-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Contexte"
+  },
+  {
+   "code": "CTFR-UAA6-D2-R13",
+   "parentCode": "CTFR-UAA6-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Cf. UAA 3 et 4, Deuxième degré, « Pour planifier une argumentation à l’aide d’un écrit intermédiaire »"
+  },
+  {
+   "code": "CTFR-UAA6-D2-R14",
+   "parentCode": "CTFR-UAA6-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Reproduction intégrale de l’œuvre culturelle (œuvre courte) ou éléments du paratexte de l’œuvre (œuvre longue)"
+  },
+  {
+   "code": "CTFR-UAA6-D2-R15",
+   "parentCode": "CTFR-UAA6-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Pour rédiger la relation d’expérience ou l’exprimer oralement"
+  },
+  {
+   "code": "CTFR-UAA6-D2-R16",
+   "parentCode": "CTFR-UAA6-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Cf. UAA 3 et 4, Deuxième degré"
+  },
+  {
+   "code": "CTFR-UAA6-D2-R17",
+   "parentCode": "CTFR-UAA6-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Système de temps du discours"
+  },
+  {
+   "code": "CTFR-UAA6-D2-R18",
+   "parentCode": "CTFR-UAA6-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Ressources linguistiques pour exprimer l’agrément ou le désagrément"
+  },
+  {
+   "code": "CTFR-UAA6-D2-R19",
+   "parentCode": "CTFR-UAA6-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Ressources linguistiques pour caractériser une production culturelle"
+  },
+  {
+   "code": "CTFR-UAA6-D2-R20",
+   "parentCode": "CTFR-UAA6-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Pour évaluer et améliorer la relation de d’expérience"
+  },
+  {
+   "code": "CTFR-UAA6-D2-R21",
+   "parentCode": "CTFR-UAA6-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Critère de lisibilité ou d’audibilité*"
+  },
+  {
+   "code": "CTFR-UAA6-D2-R22",
+   "parentCode": "CTFR-UAA6-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Critère d’intelligibilité*"
+  },
+  {
+   "code": "CTFR-UAA6-D2-R23",
+   "parentCode": "CTFR-UAA6-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Critères de recevabilité*"
+  },
+  {
+   "code": "CTFR-UAA6-D2-R24",
+   "parentCode": "CTFR-UAA6-D2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Critère de pertinence*"
+  },
+  {
+   "code": "CTFR-UAA6-D3",
+   "parentCode": "CTFR",
+   "kind": "competence",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "UAA 6"
+  },
+  {
+   "code": "CTFR-UAA6-D3-C1",
+   "parentCode": "CTFR-UAA6-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Compétence : Relater une rencontre avec une œuvre culturelle"
+  },
+  {
+   "code": "CTFR-UAA6-D3-C2",
+   "parentCode": "CTFR-UAA6-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Compétence : Faire le bilan de ses expériences culturelles et en faire part à autrui"
+  },
+  {
+   "code": "CTFR-UAA6-D3-C3",
+   "parentCode": "CTFR-UAA6-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Compétence : Œuvres littéraires (récit de fiction, texte poétique, œuvre théâtrale…)"
+  },
+  {
+   "code": "CTFR-UAA6-D3-C4",
+   "parentCode": "CTFR-UAA6-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Compétence : Autres œuvres artistiques (bande dessinée, peinture, affiche, photo, film, chanson…)"
+  },
+  {
+   "code": "CTFR-UAA6-D3-A1",
+   "parentCode": "CTFR-UAA6-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Appliquer : Pour le récit d’expérience"
+  },
+  {
+   "code": "CTFR-UAA6-D3-A2",
+   "parentCode": "CTFR-UAA6-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Appliquer : Cf. Deuxième degré"
+  },
+  {
+   "code": "CTFR-UAA6-D3-A3",
+   "parentCode": "CTFR-UAA6-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Appliquer : Pour le dossier"
+  },
+  {
+   "code": "CTFR-UAA6-D3-A4",
+   "parentCode": "CTFR-UAA6-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Appliquer : Planifier l’organisation du dossier et la motivation de la sélection à l’aide d’un écrit intermédiaire"
+  },
+  {
+   "code": "CTFR-UAA6-D3-A5",
+   "parentCode": "CTFR-UAA6-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Appliquer : Évaluer, améliorer la qualité du dossier"
+  },
+  {
+   "code": "CTFR-UAA6-D3-T1",
+   "parentCode": "CTFR-UAA6-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Transférer : Relater, en vue de la partager avec autrui, une rencontre avec… : un récit de fiction"
+  },
+  {
+   "code": "CTFR-UAA6-D3-T2",
+   "parentCode": "CTFR-UAA6-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Transférer : Relater, en vue de la partager avec autrui, une rencontre avec… : une œuvre culturelle (autre qu’un récit de fiction)"
+  },
+  {
+   "code": "CTFR-UAA6-D3-T3",
+   "parentCode": "CTFR-UAA6-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Transférer : Réaliser un dossier organisé, présentant et motivant une sélection personnelle d’expériences culturelles (interventions personnelles UAA 5 et/ou récits d’expérience UAA 6)"
+  },
+  {
+   "code": "CTFR-UAA6-D3-R1",
+   "parentCode": "CTFR-UAA6-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Récit d’expérience"
+  },
+  {
+   "code": "CTFR-UAA6-D3-R2",
+   "parentCode": "CTFR-UAA6-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Cf. Deuxième degré"
+  },
+  {
+   "code": "CTFR-UAA6-D3-R3",
+   "parentCode": "CTFR-UAA6-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Dossier"
+  },
+  {
+   "code": "CTFR-UAA6-D3-R4",
+   "parentCode": "CTFR-UAA6-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Pour planifier l’organisation du dossier et la motivation de la sélection"
+  },
+  {
+   "code": "CTFR-UAA6-D3-R5",
+   "parentCode": "CTFR-UAA6-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Critères de sélection des expériences culturelles : effets produits par les rencontres Cf. Deuxième degré, « Récit d’expérience »"
+  },
+  {
+   "code": "CTFR-UAA6-D3-R6",
+   "parentCode": "CTFR-UAA6-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Critères de sélection des expériences culturelles : apports des interventions dans l’œuvre (UAA 5)"
+  },
+  {
+   "code": "CTFR-UAA6-D3-R7",
+   "parentCode": "CTFR-UAA6-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Critères d’organisation des expériences sélectionnées (gradation, thème, genre*…)"
+  },
+  {
+   "code": "CTFR-UAA6-D3-R8",
+   "parentCode": "CTFR-UAA6-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Pour réaliser le dossier"
+  },
+  {
+   "code": "CTFR-UAA6-D3-R9",
+   "parentCode": "CTFR-UAA6-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Cf. UAA 1, Troisième degré, « Pour rédiger une table des matières ou un sommaire »"
+  },
+  {
+   "code": "CTFR-UAA6-D3-R10",
+   "parentCode": "CTFR-UAA6-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Pour évaluer et améliorer la qualité du dossier"
+  },
+  {
+   "code": "CTFR-UAA6-D3-R11",
+   "parentCode": "CTFR-UAA6-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Critère de lisibilité*"
+  },
+  {
+   "code": "CTFR-UAA6-D3-R12",
+   "parentCode": "CTFR-UAA6-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Critère d’intelligibilité*"
+  },
+  {
+   "code": "CTFR-UAA6-D3-R13",
+   "parentCode": "CTFR-UAA6-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Critère de recevabilité*"
+  },
+  {
+   "code": "CTFR-UAA6-D3-R14",
+   "parentCode": "CTFR-UAA6-D3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S5",
+    "S6"
+   ],
+   "label": "Ressource : Critères de pertinence*"
+  }
+ ]
+}

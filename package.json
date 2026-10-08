@@ -1,0 +1,30 @@
+{
+  "name": "cote-a-cote",
+  "private": true,
+  "packageManager": "pnpm@10.28.0",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "mobile": "pnpm --filter mobile start",
+    "lint": "pnpm -r --if-present lint",
+    "typecheck": "pnpm -r --if-present typecheck",
+    "test": "pnpm -r --if-present test",
+    "format": "prettier --write \"apps/mobile/src/**/*.{ts,tsx}\" \"packages/*/src/**/*.ts\" \"supabase/functions/**/*.ts\" \"e2e/**/*.{ts,mjs}\"",
+    "format:check": "prettier --check \"apps/mobile/src/**/*.{ts,tsx}\" \"packages/*/src/**/*.ts\" \"supabase/functions/**/*.ts\" \"e2e/**/*.{ts,mjs}\"",
+    "test:functions": "cd supabase/functions && deno test --allow-env",
+    "check:functions": "cd supabase/functions && deno check **/*.ts && cd ../../scripts/referentiels && deno check --config deno.json *.ts ../culture/*.ts",
+    "test:scripts": "cd scripts/referentiels && deno test --config deno.json --allow-read && cd ../culture && deno test --config ../referentiels/deno.json --allow-read importer.test.ts valider.test.ts",
+    "e2e:build": "pnpm --filter e2e build:web",
+    "test:e2e": "pnpm --filter e2e test:e2e",
+    "demo": "node e2e/support/demo.mjs",
+    "demo:iphone": "node e2e/support/demo.mjs --iphone",
+    "beta": "node scripts/beta/beta.mjs",
+    "deploy:web": "cd apps/mobile && npx expo export --platform web && npx eas-cli@latest deploy --prod"
+  },
+  "devDependencies": {
+    "deno": "2.9.6",
+    "prettier": "^3.9.9",
+    "supabase": "^2.119.0"
+  }
+}
