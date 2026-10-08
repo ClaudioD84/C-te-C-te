@@ -3,12 +3,14 @@
     "name": "Côte à Côte",
     "slug": "cote-a-cote",
     "version": "1.0.0",
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
     "orientation": "default",
     "icon": "./assets/images/icon.png",
     "scheme": "coteacote",
     "userInterfaceStyle": "automatic",
     "ios": {
-      "icon": "./assets/expo.icon",
       "supportsTablet": true,
       "bundleIdentifier": "be.coteacote.app",
       "config": {
@@ -42,7 +44,7 @@
     },
     "android": {
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
+        "backgroundColor": "#1A6B60",
         "foregroundImage": "./assets/images/android-icon-foreground.png",
         "backgroundImage": "./assets/images/android-icon-background.png",
         "monochromeImage": "./assets/images/android-icon-monochrome.png"
@@ -65,9 +67,13 @@
       [
         "expo-splash-screen",
         {
-          "backgroundColor": "#208AEF",
+          "backgroundColor": "#FBF8F3",
           "image": "./assets/images/splash-icon.png",
-          "imageWidth": 76
+          "imageWidth": 200,
+          "dark": {
+            "backgroundColor": "#14181E",
+            "image": "./assets/images/splash-icon-dark.png"
+          }
         }
       ],
       [
@@ -81,7 +87,7 @@
         {
           "photosPermission": "Côte à Côte peut importer une photo du journal de classe ou des notes de cours que vous choisissez.",
           "cameraPermission": "Côte à Côte utilise l'appareil photo pour photographier le journal de classe et les notes de cours.",
-          "microphonePermission": false
+          "microphonePermission": "Le micro sert uniquement à « Je récite » et à la lecture à voix haute : votre enfant s'enregistre puis se réécoute. L'enregistrement reste sur l'appareil et n'est jamais envoyé."
         }
       ],
       "expo-sharing",
@@ -90,7 +96,7 @@
       [
         "expo-audio",
         {
-          "microphonePermission": "Le micro sert uniquement à « Je récite » : votre enfant s'enregistre puis se réécoute. L'enregistrement reste sur l'appareil et n'est jamais envoyé.",
+          "microphonePermission": "Le micro sert uniquement à « Je récite » et à la lecture à voix haute : votre enfant s'enregistre puis se réécoute. L'enregistrement reste sur l'appareil et n'est jamais envoyé.",
           "enableBackgroundRecording": false,
           "enableBackgroundPlayback": false
         }

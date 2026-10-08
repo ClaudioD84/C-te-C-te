@@ -9,6 +9,8 @@
 //   stats [jours]                       mesures par famille (30 derniers jours par défaut), sans contenu
 //   avis [jours]                        avis des testeurs (14 derniers jours par défaut)
 //   erreurs [jours]                     erreurs de l'application regroupées par message (7 jours par défaut)
+//   compte-revue <e-mail> <mot de passe> compte de démonstration pour la revue d'Apple et de Google : confirmé,
+//                                       avec « Léo » (5e primaire), quelques devoirs validés et un an d'accès
 //
 // Dès qu'un code existe, l'inscription en demande un. Pour ouvrir l'inscription à tous : supprimer les codes
 // (table invite_code).
@@ -54,7 +56,9 @@ switch (command) {
     break;
   }
   case 'codes': {
-    const codes = await call('invite_code?select=code,note,uses,max_uses,trial_days,expires_at&order=created_at');
+    const codes = await call(
+      'invite_code?select=code,note,uses,max_uses,trial_days,expires_at&order=created_at',
+    );
     console.table(codes);
     break;
   }
@@ -120,6 +124,67 @@ switch (command) {
     );
     break;
   }
+  case 'compte-revue': {
+    const [email, password] = args;
+    if (!email || !password || password.length < 8)
+      throw new Error('Indiquez l’adresse et un mot de passe de 8 caractères au moins.');
+    // Si l'inscription demande un code, un code à usage unique est créé pour ce compte.
+    const codes = await call('invite_code?select=code&limit=1');
+    let inviteCode = null;
+    if (codes.length > 0) {
+      inviteCode = `REVUE-${Math.random().toString(36).slice(2, 8).toUpperCase()}`;
+      await call('invite_code', {
+        method: 'POST',
+        body: JSON.stringify({ code: inviteCode, max_uses: 1, trial_days: 365, note: 'revue des stores' }),
+      });
+    }
+    const created = await fetch(`${url}/auth/v1/admin/users`, {
+      method: 'POST',
+      headers,
+      body: JSON.stringify({
+        email,
+        password,
+        email_confirm: true,
+        user_metadata: inviteCode ? { invite_code: inviteCode } : {},
+      }),
+    });
+    if (!created.ok) throw new Error(`${created.status} ${await created.text()}`);
+    const user = await created.json();
+    const [{ family_id: familyId }] = await call(`parent?select=family_id&user_id=eq.${user.id}`);
+    const until = new Date(Date.now() + 365 * 86_400_000).toISOString();
+    await call(`subscription?family_id=eq.${familyId}`, {
+      method: 'PATCH',
+      body: JSON.stringify({ current_period_end: until }),
+    });
+    const [child] = await call('child_profile', {
+      method: 'POST',
+      headers: { Prefer: 'return=representation' },
+      body: JSON.stringify({ family_id: familyId, alias: 'Léo', grade: 'P5', avatar: 'lion' }),
+    });
+    const inDays = (n) => new Date(Date.now() + n * 86_400_000).toISOString().slice(0, 10);
+    const task = (subject, kind, description, due, reference = null) => ({
+      family_id: familyId,
+      child_id: child.id,
+      subject,
+      kind,
+      description,
+      due_date: due,
+      reference,
+      confidence: 1,
+      status: 'validated',
+    });
+    await call('task', {
+      method: 'POST',
+      body: JSON.stringify([
+        task('Mathématiques', 'devoir', 'Faire les exercices de division', inDays(2), 'p. 34, ex. 1 à 4'),
+        task('Éveil', 'interro', 'Les fleuves de Belgique', inDays(5)),
+        task('Français', 'lecon', 'Étudier les mots de la dictée', inDays(4)),
+      ]),
+    });
+    console.log(`Compte de revue prêt : ${email} (Léo, 3 devoirs, accès jusqu'au ${until.slice(0, 10)}).`);
+    console.log('À reporter dans docs/publication/notes-de-revue.md et dans App Store Connect.');
+    break;
+  }
   default:
-    console.log('Commandes : code, codes, stats, avis, erreurs (voir l’en-tête du script).');
+    console.log('Commandes : code, codes, stats, avis, erreurs, compte-revue (voir l’en-tête du script).');
 }

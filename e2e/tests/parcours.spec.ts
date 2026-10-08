@@ -65,7 +65,7 @@ test('parcours complet : profil, planning, fiches, console enfant, suivi, dossie
     await page.reload();
     await expect(page.getByText('Bonjour Léo')).toBeVisible();
 
-    await openTraining(page);
+    await openTraining(page, 'Fiche');
     await expect(page.getByText('Les fleuves de Belgique', { exact: true })).toBeVisible();
     await page.getByRole('radio', { name: 'Quiz' }).click();
     await button(page, 'La Meuse').click();

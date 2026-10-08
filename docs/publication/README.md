@@ -31,9 +31,10 @@ Tout ce qui est prêt dans le dépôt, et ce qu'il reste à faire de votre côt�
 
 ## Bloquant avant la première soumission
 
-1. **Icône et écran de démarrage** : ce sont encore ceux du modèle Expo. Il faut une icône 1024 × 1024 (sans
-   transparence pour iOS), les calques de l'icône adaptative Android et l'image de l'écran de démarrage
-   (`apps/mobile/assets`). C'est l'identité visuelle à choisir (question ouverte du cahier des charges).
+1. **Icône et écran de démarrage** : une version **provisoire** (deux silhouettes côte à côte, couleurs de
+   l'app) est en place pour TestFlight. Avant l'App Store : icône définitive 1024 × 1024 (sans transparence pour
+   iOS), calques de l'icône adaptative Android et image de démarrage (`apps/mobile/assets/images`), selon
+   l'identité visuelle à choisir (question ouverte du cahier des charges).
 2. **URLs publiques** de la politique de confidentialité et des conditions d'utilisation (exigées par les deux
    stores et affichées dans l'application : `EXPO_PUBLIC_PRIVACY_URL`, `EXPO_PUBLIC_TERMS_URL`), et une adresse
    de support.
@@ -79,8 +80,8 @@ de préproduction.
 5. Confidentialité de l'app : réponses de [declarations-stores.md](../rgpd/declarations-stores.md).
 6. Classification par âge : aucun contenu sensible, pas de navigateur web libre, pas de contenu généré par
    d'autres utilisateurs → **4+**. Ne pas choisir la catégorie « Enfants ».
-7. Compilation et envoi : `npx eas-cli@latest build --platform ios --profile production` puis
-   `npx eas-cli@latest submit --platform ios`. Tester d'abord via **TestFlight**.
+7. Compilation et envoi : `npx eas-cli@latest build --platform ios --profile production --auto-submit`.
+   Tester d'abord via **TestFlight** : [guide pas à pas](../beta/testflight.md).
 8. Revue : coller les [notes de revue](notes-de-revue.md) et le compte de démonstration.
 
 ### 3. Google Play Console

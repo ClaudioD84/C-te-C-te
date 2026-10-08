@@ -60,7 +60,7 @@ for (const colorScheme of ['light', 'dark'] as const) {
 
     await enterChildMode(page, 'Castor');
     await audit(page, 'console enfant');
-    await openTraining(page);
+    await openTraining(page, 'Fiche');
     await expect(page.getByText('Les fleuves de Belgique', { exact: true })).toBeVisible();
     await audit(page, 'fiche');
     await page.getByRole('radio', { name: 'Quiz' }).click();

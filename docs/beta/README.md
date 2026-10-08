@@ -59,8 +59,9 @@ pnpm beta erreurs    # plantages regroupés par message (7 jours)
 Repères utiles pour les partenaires : part des familles actives au moins 3 jours par semaine, missions terminées
 par enfant et par semaine, coût IA moyen par famille et par mois.
 
-## 5. Ensuite : TestFlight et Google Play
+## 5. La vraie app : TestFlight (et Google Play)
 
-Quand les comptes Apple Developer et Google Play sont ouverts : `docs/publication/README.md` (build
-`production`, TestFlight pour les testeurs externes, test interne Google Play). Les mêmes codes d'invitation
-servent ; les notifications de rappel et les achats en bac à sable deviennent testables.
+Pas à pas dans [testflight.md](testflight.md) : compte Apple Developer, première build depuis le Mac, testeurs
+internes puis lien public pour les familles, mises à jour à distance depuis GitHub. Les mêmes codes d'invitation
+servent ; les notifications de rappel deviennent testables. Android : test interne Google Play
+([publication](../publication/README.md)).

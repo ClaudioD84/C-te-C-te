@@ -122,14 +122,17 @@ export async function answerMood(page: Page, mood = '☀️ En forme') {
 /**
  * Ouvre l'entraînement de la première activité qui en propose un. Selon le profil (TDAH), la console n'affiche
  * qu'une activité à la fois et l'ordre du jour varie : les activités « à faire » qui précèdent sont cochées.
+ * L'onglet d'arrivée dépend de l'activité (fiche pour une leçon, quiz pour une révision) et donc du jour où le
+ * test tourne : `section` le choisit explicitement.
  */
-export async function openTraining(page: Page) {
+export async function openTraining(page: Page, section?: 'Fiche' | 'Quiz') {
   for (let i = 0; i < 5; i++) {
     const celebration = button(page, 'Super !');
     if (await celebration.isVisible().catch(() => false)) await celebration.click();
     const training = button(page, "S'entraîner").first();
     if (await training.isVisible().catch(() => false)) {
       await training.click();
+      if (section) await page.getByRole('radio', { name: section }).click();
       return;
     }
     await button(page, "C'est fait !").first().click();

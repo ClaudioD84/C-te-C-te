@@ -34,7 +34,7 @@ test('la mission du jour fonctionne hors connexion et se synchronise sans doublo
 
   await context.setOffline(true);
   await expect(page.getByText(/Pas de connexion\. Tu peux continuer/)).toBeVisible();
-  await openTraining(page);
+  await openTraining(page, 'Fiche');
   await expect(page.getByText('Les fleuves de Belgique', { exact: true })).toBeVisible();
   await page.getByRole('radio', { name: 'Quiz' }).click();
   await button(page, 'La Meuse').click();
