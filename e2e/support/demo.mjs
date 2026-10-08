@@ -144,7 +144,7 @@ function codeFingerprint() {
       else hash.update(path).update(readFileSync(path));
     }
   };
-  for (const dir of ['apps/mobile/src', 'packages/shared/src']) walk(join(ROOT, dir));
+  for (const dir of ['apps/mobile/src', 'apps/mobile/public', 'packages/shared/src']) walk(join(ROOT, dir));
   hash.update(readFileSync(join(ROOT, 'apps/mobile/app.json')));
   return hash.digest('hex');
 }
