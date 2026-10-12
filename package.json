@@ -26,6 +26,6 @@
   "devDependencies": {
     "deno": "2.9.6",
     "prettier": "^3.9.9",
-    "supabase": "^2.119.0"
+    "supabase": "^2.120.0"
   }
 }
