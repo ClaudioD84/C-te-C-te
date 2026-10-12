@@ -62,7 +62,7 @@ Flux principaux :
 
 Avec les mesures déjà en place et celles du **plan d'action** ([README](README.md)), le risque résiduel paraît
 **acceptable**. Points à valider avant le lancement public : DPA et encadrement des transferts (Anthropic,
-RevenueCat, Supabase), conditions de conservation chez Anthropic,
+RevenueCat, Expo, Supabase), conditions de conservation chez Anthropic,
 programmation des tâches de purge. Le **retrait du masquage des photos** (choix de simplicité) est à faire valider
 explicitement par le juriste : des noms d'enfants et d'enseignants peuvent désormais parvenir au fournisseur d'IA
 aux États-Unis.

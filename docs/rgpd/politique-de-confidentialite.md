@@ -49,6 +49,10 @@ avis » (avec le nom de l'écran d'où vous écrivez) et, en cas de plantage, un
 écran, type d'appareil, version de l'application). Ils restent chez notre hébergeur européen, sans outil tiers, et
 ne sont jamais transmis à l'intelligence artificielle.
 
+**Les notifications sur votre téléphone** (si vous les activez dans Rappels) : un identifiant technique du
+téléphone, fourni par Apple ou Google, et vos choix (aide demandée, mission terminée). Le message ne contient que
+le prénom de votre enfant. Il est effacé quand vous les désactivez, vous déconnectez ou supprimez votre compte.
+
 **Sur votre téléphone uniquement** : le code parent, une copie temporaire de la mission du jour (pour travailler
 sans connexion) et vos réglages de rappels.
 
@@ -71,9 +75,12 @@ propre compte :
   aux demandes ni nom, ni prénom, ni adresse e-mail, ni trouble nommé ; une photo peut toutefois montrer un nom
   écrit sur la page ;
 - **RevenueCat** : gestion des abonnements de l'App Store et de Google Play, avec un identifiant technique ;
-- **Brevo** (France, données dans l'Union européenne) : envoi des e-mails liés au compte.
+- **Brevo** (France, données dans l'Union européenne) : envoi des e-mails liés au compte ;
+- **Expo** (650 Industries), puis Apple ou Google : remise des notifications que vous avez demandées (« votre
+  enfant a besoin d'aide », « mission terminée ») sur votre téléphone, avec un identifiant technique du
+  téléphone et le prénom de l'enfant dans le message.
 
-Anthropic et RevenueCat sont situés aux **États-Unis**. Ces transferts sont encadrés par [À COMPLÉTER : le cadre
+Anthropic, RevenueCat et Expo sont situés aux **États-Unis**. Ces transferts sont encadrés par [À COMPLÉTER : le cadre
 de protection des données UE–États-Unis ou les clauses contractuelles types de la Commission européenne].
 
 ## Combien de temps ?

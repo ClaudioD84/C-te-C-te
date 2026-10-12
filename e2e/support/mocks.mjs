@@ -1,10 +1,12 @@
 // Services externes factices pour les tests de bout en bout (aucun appel réel n'est fait) :
 // - API Claude (ANTHROPIC_BASE_URL) : la réponse dépend du schéma de sortie demandé ;
-// - API d'envoi d'e-mails Brevo (BREVO_API_URL) : les e-mails sont gardés en mémoire, lisibles sur /__emails.
+// - API d'envoi d'e-mails Brevo (BREVO_API_URL) : les e-mails sont gardés en mémoire, lisibles sur /__emails ;
+// - service de notifications d'Expo (EXPO_PUSH_URL) : messages lisibles sur /__push.
 import http from 'node:http';
 
 export const MOCKS_PORT = 5300;
 const emails = [];
+const pushes = [];
 
 const answers = {
   explanation: {
@@ -137,6 +139,28 @@ export function startMocks(port = MOCKS_PORT) {
         if (req.url === '/__emails') {
           res.writeHead(200, { 'content-type': 'application/json' });
           res.end(JSON.stringify(emails));
+          return;
+        }
+        // Service de notifications d'Expo : messages gardés en mémoire, lisibles sur /__push. Un jeton qui
+        // contient « perime » répond comme une application désinstallée.
+        if (req.url === '/__push') {
+          res.writeHead(200, { 'content-type': 'application/json' });
+          res.end(JSON.stringify(pushes));
+          return;
+        }
+        if (req.url === '/expo-push') {
+          const messages = JSON.parse(body);
+          pushes.push(...messages);
+          res.writeHead(200, { 'content-type': 'application/json' });
+          res.end(
+            JSON.stringify({
+              data: messages.map((m) =>
+                m.to.includes('perime')
+                  ? { status: 'error', details: { error: 'DeviceNotRegistered' } }
+                  : { status: 'ok', id: 'ticket-e2e' },
+              ),
+            }),
+          );
           return;
         }
         if (req.url === '/brevo') {

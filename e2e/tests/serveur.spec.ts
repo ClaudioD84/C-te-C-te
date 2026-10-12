@@ -228,7 +228,7 @@ test('bêta : avis et journal d’erreurs par compte ; mesures réservées au se
 
 test('tâches programmées : purges et bilan appelés avec le secret du coffre, rien sans secret', () => {
   expect(sql(`select string_agg(jobname || '=' || schedule, ' ' order by jobname) from cron.job`)).toBe(
-    'purge-inactive=30 2 * * * purge-photos=7 * * * * weekly-recap=0 17 * * 0',
+    'notify-parents=*/5 * * * * purge-inactive=30 2 * * * purge-photos=7 * * * * weekly-recap=0 17 * * 0',
   );
   // Sans secrets (développement, CI) : aucune requête.
   expect(sql(`select public.call_scheduled_function('purge-photos') is null`)).toBe('t');
@@ -318,4 +318,63 @@ test('fiches : une demande identique d’une autre famille réutilise la fiche, 
   const third = await familyWithTask();
   expect(third.usage('generate-pack')).toBe('1');
   expect(third.usage('generate-pack-reutilise')).toBe('0');
+});
+
+test('notifications au parent : aide et mission terminée, jamais sur le téléphone d’où vient l’action', async ({
+  request,
+}) => {
+  const { token, familyId } = await createParent(request);
+  const suffix = crypto.randomUUID().slice(0, 8);
+  const phone = `ExponentPushToken[e2e-${suffix}]`;
+  const oldPhone = `ExponentPushToken[perime-${suffix}]`;
+  for (const pushToken of [phone, oldPhone]) {
+    const registered = await request.post(`${GATEWAY_URL}/rest/v1/rpc/register_push_token`, {
+      headers: headers(token),
+      data: { p_token: pushToken, p_platform: 'ios', p_notify_help: true, p_notify_mission: true },
+    });
+    expect(registered.ok()).toBeTruthy();
+  }
+  const child = await request.post(`${GATEWAY_URL}/rest/v1/child_profile`, {
+    headers: { ...headers(token), Prefer: 'return=representation' },
+    data: { alias: 'Hermine', grade: 'P3' },
+  });
+  const [{ id: childId }] = await child.json();
+  const taskId = sql(`insert into task (family_id, child_id, subject, kind, description, status)
+    values ('${familyId}', '${childId}', 'Mathématiques', 'devoir', 'Calculs', 'validated') returning id`).split(
+    '\n',
+  )[0];
+
+  // Le parent a prêté son propre téléphone (console enfant) : il n'y est pas prévenu.
+  const ownHelp = await request.post(`${GATEWAY_URL}/rest/v1/help_request`, {
+    headers: headers(token),
+    data: { child_id: childId, task_id: taskId },
+  });
+  expect(ownHelp.ok()).toBeTruthy();
+  sql(`update help_request set resolved_at = now() where child_id = '${childId}'`);
+  // Depuis la tablette de l'enfant (un autre compte) : demande d'aide, puis mission terminée.
+  sql(
+    `insert into help_request (family_id, child_id, task_id) values ('${familyId}', '${childId}', '${taskId}')`,
+  );
+  const sessionId =
+    sql(`insert into study_session (family_id, child_id, scheduled_on, duration_minutes, status)
+    values ('${familyId}', '${childId}', current_date, 20, 'planned') returning id`).split('\n')[0];
+  sql(`update study_session set status = 'done' where id = '${sessionId}'`);
+  expect(sql(`select count(*) from parent_notification where child_id = '${childId}'`)).toBe('3');
+
+  const send = await request.post(`${GATEWAY_URL}/functions/v1/notify-parents`, {
+    headers: { Authorization: 'Bearer purge-e2e' },
+  });
+  expect(send.ok()).toBeTruthy();
+  const pushes = (await (await request.get(`${MOCKS}/__push`)).json()) as { to: string; title: string }[];
+  expect(pushes.filter((p) => p.to === phone).map((p) => p.title)).toEqual([
+    "🙋 Hermine a besoin d'aide",
+    '✅ Hermine a terminé sa mission du jour',
+  ]);
+  // Application désinstallée : le jeton est retiré ; la file est vidée.
+  expect(sql(`select count(*) from push_token where token = '${oldPhone}'`)).toBe('0');
+  expect(sql(`select count(*) from push_token where token = '${phone}'`)).toBe('1');
+  expect(
+    sql(`select count(*) from parent_notification where child_id = '${childId}' and sent_at is null`),
+  ).toBe('0');
+  expect((await request.post(`${GATEWAY_URL}/functions/v1/notify-parents`)).status()).toBe(401);
 });

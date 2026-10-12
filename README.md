@@ -57,7 +57,7 @@ Version web en ligne (`pnpm deploy:web`), codes d'invitation et suivi des testeu
 3. Ajouter la clé de l'API Claude : `pnpm exec supabase secrets set ANTHROPIC_API_KEY=...`
    (facultatif : `SCAN_MODEL`, `SCAN_EFFORT`, `PACK_MODEL`, `PACK_EFFORT` pour régler le modèle et l'effort
    de la lecture des photos et de la préparation des fiches).
-4. Déployer les fonctions : `pnpm exec supabase functions deploy scan-extract generate-pack explain-again revision-plan delete-account pair-device revenuecat-webhook purge-photos purge-inactive weekly-recap` (jamais `simulate-purchase` en production).
+4. Déployer les fonctions : `pnpm exec supabase functions deploy scan-extract generate-pack explain-again revision-plan delete-account pair-device revenuecat-webhook purge-photos purge-inactive weekly-recap notify-parents` (jamais `simulate-purchase` en production).
 5. Renseigner l'adresse et la clé publique du projet dans `apps/mobile/.env.local`.
 6. Abonnements :
    - créer les produits dans App Store Connect et Google Play Console (`cac_solo_mois`, `cac_famille_mois`,

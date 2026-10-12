@@ -8,6 +8,7 @@ import { Screen } from '@/components/screen';
 import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
 import { Spacing } from '@/constants/theme';
+import { ParentPushCard } from '@/features/parent-push/parent-push-card';
 import { useChildProfiles } from '@/features/profiles/api';
 import { ensureNotificationPermission, remindersSupported } from '@/features/reminders/notifications';
 import {
@@ -86,6 +87,8 @@ export default function RemindersScreen() {
           <Button variant="secondary" label="Ouvrir les réglages" onPress={() => Linking.openSettings()} />
         </ThemedView>
       ) : null}
+
+      <ParentPushCard onDenied={() => setDenied(true)} />
 
       <ThemedView type="backgroundElement" style={styles.card}>
         <ThemedText type="smallBold">Mission du jour</ThemedText>

@@ -39,8 +39,8 @@ Version du 5 octobre 2026.
 | # | Action | Responsable | Statut |
 |---|---|---|---|
 | 1 | Désigner le responsable du traitement (personne physique ou société), compléter les coordonnées | Éditeur | [À COMPLÉTER] |
-| 2 | Signer les accords de sous-traitance (DPA) : Supabase, Anthropic, RevenueCat | Éditeur | À faire |
-| 3 | Transferts hors UE (Anthropic, RevenueCat, maison mère de Supabase) : vérifier l'adhésion au *Data Privacy Framework* UE–États-Unis ou signer les clauses contractuelles types ; documenter l'évaluation des transferts | Éditeur + juriste | À faire |
+| 2 | Signer les accords de sous-traitance (DPA) : Supabase, Anthropic, RevenueCat, Expo (notifications), Brevo | Éditeur | À faire |
+| 3 | Transferts hors UE (Anthropic, RevenueCat, Expo, maison mère de Supabase) : vérifier l'adhésion au *Data Privacy Framework* UE–États-Unis ou signer les clauses contractuelles types ; documenter l'évaluation des transferts | Éditeur + juriste | À faire |
 | 4 | Anthropic : vérifier la durée de conservation des requêtes de l'API et demander, si possible, la conservation zéro (*zero data retention*) ; s'assurer que les données ne servent pas à l'entraînement | Éditeur | À faire |
 | 5 | Purge des photos toutes les heures (fonction `purge-photos`, tâche pg_cron créée par migration) : ranger `project_url` et `purge_secret` dans le coffre (README principal, point 7) | Développement + éditeur | Programmée (secrets à ranger) |
 | 6 | Écran de modification du profil enfant (rectification, retrait du consentement aux besoins particuliers) | Développement | Fait |

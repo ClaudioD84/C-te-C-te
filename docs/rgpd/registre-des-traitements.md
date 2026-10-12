@@ -24,6 +24,7 @@
 | Anthropic PBC | IA : lecture des photos, préparation des fiches et quiz, dossiers de révision | Photo (non masquée), texte des tâches, année et type d'enseignement, consignes d'adaptation, attendus du programme. **Ni nom, ni prénom, ni e-mail, ni trouble nommé ajouté par l'application** ; une photo peut montrer des noms écrits sur la page (enfant, enseignants, école). | États-Unis [transfert à encadrer] |
 | RevenueCat Inc. | Gestion des abonnements App Store et Google Play | Identifiant technique de la famille, achats et dates | États-Unis [transfert à encadrer] |
 | Apple, Google | Paiement des abonnements, distribution de l'application | Données de paiement (traitées par eux, en tant que responsables distincts) | Selon leurs conditions |
+| Expo (650 Industries Inc.) | Relais des notifications au parent vers Apple (APNs) et Google (FCM) | Jeton de notification du téléphone, titre et texte du message (prénom de l'enfant ; ni matière, ni tâche, ni donnée de santé) | États-Unis [transfert à encadrer] |
 | Brevo (Sendinblue SAS, France) | E-mails de compte (confirmation, mot de passe oublié, avertissement d'inactivité) et bilan de la semaine (sur demande) | Adresse e-mail du parent ; pour le bilan : prénoms des enfants, jours, minutes et matières travaillées | Union européenne |
 
 Aucune donnée n'est vendue, louée ni utilisée à des fins publicitaires. Aucun outil d'analyse d'audience.
@@ -109,6 +110,16 @@ Aucune donnée n'est vendue, louée ni utilisée à des fins publicitaires. Aucu
 | Données | Fonction appelée, modèle, nombre de jetons, coût, date (aucun contenu) |
 | Conservation | Durée du compte |
 
+### T13 — Notifications au parent (aide demandée, mission terminée)
+
+| | |
+|---|---|
+| Finalité | Prévenir le parent, s'il l'a demandé, quand son enfant demande de l'aide ou termine sa mission sur un autre appareil |
+| Base légale | Exécution du contrat (fonction choisie par le parent, désactivable à tout moment) |
+| Données | Jeton de notification du téléphone (par appareil), plateforme, choix du parent ; file d'attente des événements (enfant, type, date) |
+| Conservation | Jeton : jusqu'à la désactivation, la déconnexion, la désinstallation (signalée par Expo) ou la suppression du compte. File : supprimée avec le compte |
+| Destinataires | Supabase (UE) ; Expo puis Apple ou Google pour la remise du message (prénom de l'enfant seulement) |
+
 ### T12 — Avis, erreurs de l'application et mesures d'usage (bêta)
 
 | | |
@@ -127,7 +138,7 @@ Aucune donnée n'est vendue, louée ni utilisée à des fins publicitaires. Aucu
 | Finalité | Console enfant utilisable hors connexion ; code parent ; rappels |
 | Données | Copie temporaire de la mission, des fiches et des cartes (7 jours) ; actions en attente d'envoi ; code parent haché (stockage chiffré) ; réglages des rappels |
 | Conservation | Effacées à la déconnexion et à la suppression du compte |
-| Remarque | Les rappels sont des notifications locales : aucun identifiant de notification n'est envoyé au serveur |
+| Remarque | Les rappels sont des notifications locales : aucun identifiant de notification n'est envoyé au serveur pour eux (voir T13 pour les notifications au parent, envoyées par le serveur) |
 
 ### T11 — Échanges parent-enfant dans l'application
 

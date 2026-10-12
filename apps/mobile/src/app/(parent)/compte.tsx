@@ -12,6 +12,7 @@ import { deleteMyAccount, exportMyData } from '@/features/account/api';
 import { FamilyCard } from '@/features/family/family-card';
 import { WeeklyEmailCard } from '@/features/recap/weekly-email-card';
 import { supabase } from '@/lib/supabase';
+import { unregisterParentPush } from '@/features/parent-push/push';
 
 export default function AccountScreen() {
   const { session } = useSession();
@@ -94,7 +95,15 @@ export default function AccountScreen() {
 
       {message ? <ThemedText themeColor="danger">{message}</ThemedText> : null}
 
-      <Button variant="secondary" label="Se déconnecter" onPress={() => supabase.auth.signOut()} />
+      <Button
+        variant="secondary"
+        label="Se déconnecter"
+        onPress={async () => {
+          // Ce téléphone ne doit plus recevoir les notifications de la famille.
+          await unregisterParentPush().catch(() => undefined);
+          await supabase.auth.signOut();
+        }}
+      />
     </Screen>
   );
 }

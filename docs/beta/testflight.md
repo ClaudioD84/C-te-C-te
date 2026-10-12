@@ -92,7 +92,15 @@ Settings > Secrets and variables > Actions). Depuis le Mac, les mêmes actions :
 `npx eas-cli@latest update --channel production --environment production -m "…"` ou la commande de build
 ci-dessus.
 
-## 5. E-mails du compte (confirmation, mot de passe oublié)
+## 5. Notifications au parent (aide demandée, mission terminée)
+
+Le parent les active dans **Rappels > Me prévenir sur ce téléphone**. Côté serveur, rien à faire de plus que les
+secrets du coffre (README principal, point 7) et le déploiement de la fonction `notify-parents`. iOS : EAS crée la
+clé de notifications Apple pendant la build (accepter quand il le propose). Android (plus tard) : ajouter la clé
+Firebase (FCM V1) dans expo.dev > projet > Credentials. Facultatif : `EXPO_ACCESS_TOKEN` (secret de la fonction)
+si vous activez l'envoi sécurisé dans Expo.
+
+## 6. E-mails du compte (confirmation, mot de passe oublié)
 
 Dans Supabase > Authentication > **Email Templates**, recopiez les modèles français du dépôt :
 « Confirm signup » ← `supabase/templates/confirmation.html` (objet : « Confirmez votre adresse e-mail ») et

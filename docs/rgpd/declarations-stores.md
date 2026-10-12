@@ -23,6 +23,9 @@ Données collectées (toutes **liées à l'utilisateur**, aucune utilisée pour 
 | Contenu utilisateur > Service client | Avis envoyés avec « Donner mon avis » | Fonctionnalité de l'app |
 
 Non collectées : localisation, contacts, données financières (gérées par Apple), historique de navigation.
+Jeton de notification (si le parent active « Me prévenir sur ce téléphone ») : sert uniquement à remettre les
+notifications demandées, jamais au suivi ni à la publicité ; à déclarer avec « Identifiants > ID de l'appareil »
+(fonctionnalité de l'app) si Apple le demande.
 Les rapports de plantage sont enregistrés par l'application elle-même chez notre hébergeur (pas d'outil tiers).
 
 **Catégorie de l'app** : Éducation (et non « Enfants » : l'application est utilisée par les parents, l'enfant n'a

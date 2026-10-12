@@ -466,6 +466,9 @@ verify_jwt = false
 [functions.weekly-recap]
 verify_jwt = false
 
+[functions.notify-parents]
+verify_jwt = false
+
 # Liaison d'une tablette enfant : appelée sans être connecté, protégée par un code à usage unique.
 [functions.pair-device]
 verify_jwt = false
