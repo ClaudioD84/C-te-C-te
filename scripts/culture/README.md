@@ -10,7 +10,10 @@ Format d'une entrée : voir `culturalResourceSchema` dans `packages/shared/src/c
 
 `a-relire.csv` (à ouvrir dans Excel ou LibreOffice, séparateur « ; ») liste des candidats repris **uniquement**
 des repères culturels et artistiques du Référentiel d'Éducation culturelle et artistique (2022), de P1 à S3.
-Il est produit par `python3 scripts/culture/candidats.py` (refuse d'écraser un fichier existant sans `--force`).
+Il a été produit par `python3 scripts/culture/candidats.py` (refuse d'écraser un fichier existant sans `--force`),
+puis les descriptions ont été préremplies à la main : une phrase concrète et une idée d'activité en famille, avec
+le lieu quand il manquait (colonne `remarques` : « à vérifier »). **Ne relancez pas `candidats.py --force`** : ces
+descriptions seraient perdues. Deux légendes restent à identifier (la Gadale, la Louve).
 
 Pour chaque ligne :
 

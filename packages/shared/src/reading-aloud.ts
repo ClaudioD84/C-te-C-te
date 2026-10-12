@@ -3,7 +3,7 @@ import { gradeYear, schoolLevel, type Grade } from './school';
 /**
  * Lecture à voix haute (primaire) : un court texte de son niveau, lu à voix haute et chronométré. Le parent
  * touche les mots difficiles. On ne montre que les progrès de l'enfant lui-même, jamais de norme ni de
- * comparaison. Textes originaux, écrits pour l'application.
+ * comparaison. Textes originaux, écrits pour l'application : huit par niveau, de longueur comparable.
  */
 export interface ReadingText {
   id: string;
@@ -39,6 +39,30 @@ export const READING_TEXTS: readonly ReadingText[] = [
     text: 'Aujourd’hui, Sami fait un gâteau avec son frère. Ils cassent trois œufs. Ils ajoutent du sucre et de la farine. Le gâteau cuit dans le four. Quelle bonne odeur ! Ils le partagent avec toute la famille.',
   },
   {
+    id: 'neige',
+    level: 1,
+    title: 'La neige',
+    text: 'Ce matin, tout est blanc dehors. Il a neigé ! Zoé met son bonnet et ses gants. Avec papi, elle fait un gros bonhomme de neige. Il a une carotte pour le nez et deux cailloux pour les yeux.',
+  },
+  {
+    id: 'velo',
+    level: 1,
+    title: 'Le vélo bleu',
+    text: 'Malo a un vélo bleu. Au début, il tombe souvent. Papa tient la selle et court à côté de lui. Un jour, papa lâche le vélo sans rien dire. Malo roule tout seul ! Il est très fier.',
+  },
+  {
+    id: 'ferme',
+    level: 1,
+    title: 'À la ferme',
+    text: 'La classe visite une ferme. Les enfants voient des vaches, des cochons et des moutons. Lina caresse un petit lapin tout doux. La fermière montre les œufs des poules. Elle en donne un à chaque enfant.',
+  },
+  {
+    id: 'piscine',
+    level: 1,
+    title: 'À la piscine',
+    text: 'Le mercredi, Emma va à la piscine. Elle met son maillot et ses lunettes. L’eau est un peu froide. Emma nage comme un petit poisson. À la fin, elle saute du bord en riant.',
+  },
+  {
     id: 'herisson',
     level: 2,
     title: 'Le hérisson du jardin',
@@ -63,6 +87,30 @@ export const READING_TEXTS: readonly ReadingText[] = [
     text: 'Au fond du bois, Lucas et Inès ont découvert de vieilles planches. Ils ont décidé de construire une cabane. Pendant tout l’après-midi, ils ont scié, cloué et porté des branches pour le toit. Quand la pluie s’est mise à tomber, ils se sont abrités à l’intérieur. Pas une goutte n’est passée ! Fiers de leur travail, ils ont gravé leurs initiales sur la porte.',
   },
   {
+    id: 'carnaval',
+    level: 2,
+    title: 'Le carnaval de l’école',
+    text: 'En février, toute l’école fête le carnaval. Ce matin, la cour ressemble à un grand théâtre : il y a des pirates, des princesses, des dinosaures et même un robot en carton. Le robot, c’est Yanis ! Il a passé tout le week-end à le fabriquer avec sa sœur. Au son des tambours, les élèves défilent dans les rues du quartier et lancent des confettis aux passants.',
+  },
+  {
+    id: 'abeilles',
+    level: 2,
+    title: 'Les abeilles de l’école',
+    text: 'Au bout du jardin de l’école, monsieur Pierre a installé deux ruches. Les élèves observent les abeilles derrière une vitre. Elles volent de fleur en fleur pour récolter le nectar et le pollen. De retour à la ruche, elles fabriquent le miel et le rangent dans de petites cases de cire. En juin, la classe a goûté son propre miel : un vrai trésor doré !',
+  },
+  {
+    id: 'bibliotheque',
+    level: 2,
+    title: 'À la bibliothèque',
+    text: 'Tous les quinze jours, notre classe se rend à la bibliothèque communale. La bibliothécaire nous accueille avec le sourire et nous lit d’abord une histoire. Ensuite, chacun peut choisir deux livres à emporter. Moi, j’aime les bandes dessinées, surtout celles de Tintin et de Spirou. Mon ami Noah préfère les livres sur l’espace. Avant de partir, nous rendons les livres de la fois précédente.',
+  },
+  {
+    id: 'potager',
+    level: 2,
+    title: 'Le potager de Mamie',
+    text: 'Au printemps, Mamie et moi préparons le potager. D’abord, nous retournons la terre avec une bêche. Puis nous semons des radis, des carottes et des haricots en lignes bien droites. Chaque soir, je les arrose avec mon petit arrosoir vert. Après quelques semaines, les premières feuilles sortent de terre. En été, nous ramassons nos légumes et nous préparons une soupe délicieuse.',
+  },
+  {
     id: 'ardennes',
     level: 3,
     title: 'Les Ardennes en automne',
@@ -85,6 +133,30 @@ export const READING_TEXTS: readonly ReadingText[] = [
     level: 3,
     title: 'L’homme qui inventa le saxophone',
     text: 'Adolphe Sax est né à Dinant en 1814. Son père fabriquait des instruments de musique et le jeune Adolphe passait des heures dans son atelier. Curieux et inventif, il cherchait un instrument qui aurait la puissance des cuivres et la douceur des bois. Après de nombreux essais, il créa le saxophone, qu’il fit breveter en 1846. Aujourd’hui, on l’entend dans le jazz, dans les fanfares et dans les orchestres du monde entier. À Dinant, une statue de l’inventeur assis sur un banc accueille les visiteurs.',
+  },
+  {
+    id: 'atomium',
+    level: 3,
+    title: 'L’Atomium',
+    text: 'Pour l’Exposition universelle de 1958, Bruxelles voulait un monument spectaculaire. L’ingénieur André Waterkeyn eut une idée étonnante : représenter un cristal de fer agrandi des milliards de fois. L’Atomium était né. Ses neuf grandes boules de métal, reliées par des tubes, symbolisent les atomes. À l’intérieur, des escaliers mécaniques et un ascenseur conduisent les visiteurs jusqu’à la sphère du sommet, d’où l’on découvre tout Bruxelles. Prévu pour ne rester que le temps de l’exposition, il est devenu l’un des symboles les plus connus de la Belgique.',
+  },
+  {
+    id: 'chauves-souris',
+    level: 3,
+    title: 'Les chauves-souris',
+    text: 'Les chauves-souris sont les seuls mammifères capables de voler vraiment. Leurs ailes sont faites d’une fine peau tendue entre les doigts très allongés de leurs mains. Elles chassent la nuit, mais elles ne sont pas aveugles : pour se repérer dans l’obscurité, elles poussent des cris très aigus que nous n’entendons pas. Ces sons rebondissent sur les obstacles et les insectes, puis reviennent à leurs oreilles. En une seule nuit, une petite pipistrelle peut avaler des centaines d’insectes. En Belgique, toutes les espèces sont protégées.',
+  },
+  {
+    id: 'chocolat',
+    level: 3,
+    title: 'Du cacao au chocolat',
+    text: 'Le chocolat vient d’un arbre qui pousse dans les régions chaudes et humides : le cacaoyer. Ses fruits, appelés cabosses, contiennent des fèves entourées d’une pulpe blanche. Après la récolte, les fèves fermentent quelques jours, sèchent au soleil, puis partent en bateau vers l’Europe. Dans les usines, on les torréfie et on les broie pour obtenir une pâte. On y ajoute du sucre, parfois du lait, et on la mélange longtemps. En 1912, le Bruxellois Jean Neuhaus inventa la praline, un chocolat fourré devenu célèbre dans le monde entier.',
+  },
+  {
+    id: 'ascenseur-bateaux',
+    level: 3,
+    title: 'L’ascenseur à bateaux',
+    text: 'Comment un bateau peut-il monter une colline ? Sur le canal du Centre, en Hainaut, les ingénieurs ont trouvé une solution impressionnante : l’ascenseur à bateaux de Strépy-Thieu. Le bateau entre dans un immense bac rempli d’eau, une sorte de baignoire géante. Les portes se ferment, puis le bac s’élève de plus de soixante-dix mètres, porté par des câbles et des contrepoids. Quelques minutes plus tard, le bateau ressort de l’autre côté et poursuit tranquillement sa route. Inauguré en 2002, c’est l’un des plus hauts ascenseurs à bateaux du monde.',
   },
 ];
 

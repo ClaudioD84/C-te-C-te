@@ -185,7 +185,9 @@ PATRIMOINE_MONDE = [
 def slug(text: str) -> str:
     import unicodedata
 
-    t = unicodedata.normalize("NFD", text).encode("ascii", "ignore").decode().lower()
+    # « œ » et « æ » n'ont pas de décomposition : sans ce remplacement, « Œdipe » donnerait « dipe ».
+    t = text.replace("œ", "oe").replace("Œ", "Oe").replace("æ", "ae").replace("Æ", "Ae")
+    t = unicodedata.normalize("NFD", t).encode("ascii", "ignore").decode().lower()
     return re.sub(r"[^a-z0-9]+", "-", t).strip("-")[:48]
 
 

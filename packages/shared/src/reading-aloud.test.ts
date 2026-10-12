@@ -16,8 +16,21 @@ describe('lecture à voix haute', () => {
     expect(readingLevel('P6')).toBe(3);
     expect(readingLevel('S1')).toBeNull();
     expect(readingLevel('M3')).toBeNull();
-    for (const level of [1, 2, 3]) expect(READING_TEXTS.filter((t) => t.level === level).length).toBe(4);
+    for (const level of [1, 2, 3])
+      expect(READING_TEXTS.filter((t) => t.level === level).length).toBeGreaterThanOrEqual(8);
     expect(new Set(READING_TEXTS.map((t) => t.id)).size).toBe(READING_TEXTS.length);
+  });
+
+  it('des textes de longueur comparable dans un même niveau, sans apostrophe droite', () => {
+    // Longueur stable d'un texte à l'autre : les mots par minute restent comparables entre deux lectures.
+    const bounds = { 1: [25, 45], 2: [55, 75], 3: [75, 100] } as const;
+    for (const text of READING_TEXTS) {
+      const words = textWords(text.text).filter((w) => /[\p{L}\d]/u.test(w)).length;
+      const [min, max] = bounds[text.level];
+      expect(words, text.id).toBeGreaterThanOrEqual(min);
+      expect(words, text.id).toBeLessThanOrEqual(max);
+      expect(text.title + text.text, text.id).not.toContain("'");
+    }
   });
 
   it('propose d’abord un texte pas encore lu', () => {
