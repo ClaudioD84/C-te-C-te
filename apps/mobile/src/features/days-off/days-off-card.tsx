@@ -5,7 +5,6 @@ import {
   formatShortDate,
   MAX_DAY_OFF_DAYS,
   currentSchoolYear,
-  toIsoDate,
   upcomingBreaks,
   type DayOffKind,
   type IsoDate,
@@ -22,6 +21,7 @@ import { ThemedView } from '@/components/themed-view';
 import { Spacing } from '@/constants/theme';
 
 import { useAddDayOff, useAddSchoolBreaks, useDaysOff, useRemoveDayOff } from './api';
+import { useToday } from '@/hooks/use-today';
 
 function periodLabel(start: IsoDate, end: IsoDate): string {
   return start === end
@@ -35,7 +35,7 @@ export function DaysOffCard({ childId }: { childId: string }) {
   const add = useAddDayOff(childId);
   const remove = useRemoveDayOff(childId);
   const addBreaks = useAddSchoolBreaks(childId);
-  const today = toIsoDate(new Date());
+  const today = useToday();
   const schoolYear = currentSchoolYear(today);
   // Congés officiels pas encore ajoutés (même période déjà présente = déjà ajouté).
   const missingBreaks = upcomingBreaks(today).filter(

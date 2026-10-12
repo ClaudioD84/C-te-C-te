@@ -3,7 +3,6 @@ import {
   relaxGameOfTheDay,
   relaxGamesFor,
   relaxMinutesLimit,
-  toIsoDate,
   treasureOfTheDay,
   type RelaxGame,
   type Treasure,
@@ -28,6 +27,7 @@ import { SudokuGame } from '@/features/relax/sudoku-game';
 import { TaquinGame } from '@/features/relax/taquin-game';
 import { WordSearchGame } from '@/features/relax/word-search-game';
 import { useSpellingList } from '@/features/spelling/api';
+import { useToday } from '@/hooks/use-today';
 
 /**
  * Coin détente : de petits jeux calmes, limités par jour (réglage du parent). Pas de chrono affiché en
@@ -42,7 +42,7 @@ export default function RelaxScreen() {
   const spelling = useSpellingList(childId);
   const logRelax = useLogRelax(childId);
   const treasures = useTreasures(childId);
-  const today = toIsoDate(new Date());
+  const today = useToday();
 
   const [game, setGame] = useState<RelaxGame | null>(null);
   const [round, setRound] = useState(0);

@@ -1,9 +1,10 @@
-import { computeRewards, toIsoDate, type BadgeCode, type EffortDay, type Weekday } from '@cote-a-cote/shared';
+import { computeRewards, type BadgeCode, type EffortDay, type Weekday } from '@cote-a-cote/shared';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { useQuery } from '@tanstack/react-query';
 import { useCallback, useEffect, useState } from 'react';
 
 import { supabase } from '@/lib/supabase';
+import { useToday } from '@/hooks/use-today';
 
 export type LearningEventType = 'activite' | 'carte' | 'quiz' | 'session' | 'detente';
 
@@ -25,8 +26,8 @@ export function useEffortDays(childId: string) {
 
 export function useRewards(childId: string, availableDays: readonly Weekday[] | undefined) {
   const effort = useEffortDays(childId);
-  const summary =
-    effort.data && availableDays ? computeRewards(effort.data, availableDays, toIsoDate(new Date())) : null;
+  const today = useToday();
+  const summary = effort.data && availableDays ? computeRewards(effort.data, availableDays, today) : null;
   return { ...effort, summary };
 }
 

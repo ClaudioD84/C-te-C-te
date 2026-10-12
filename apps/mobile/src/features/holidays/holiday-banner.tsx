@@ -1,4 +1,4 @@
-import { currentHoliday, formatShortDate, toIsoDate, type LearningSettings } from '@cote-a-cote/shared';
+import { currentHoliday, formatShortDate, type LearningSettings } from '@cote-a-cote/shared';
 import { StyleSheet } from 'react-native';
 
 import { ThemedText } from '@/components/themed-text';
@@ -6,11 +6,12 @@ import { ThemedView } from '@/components/themed-view';
 import { learningTextStyle } from '@/constants/fonts';
 import { Spacing } from '@/constants/theme';
 import { useDaysOff } from '@/features/days-off/api';
+import { useToday } from '@/hooks/use-today';
 
 /** Console enfant : message de vacances pendant un congé scolaire. */
 export function HolidayBanner({ childId, settings }: { childId: string; settings: LearningSettings }) {
   const daysOff = useDaysOff(childId);
-  const holiday = currentHoliday(daysOff.data ?? [], toIsoDate(new Date()));
+  const holiday = currentHoliday(daysOff.data ?? [], useToday());
   if (!holiday) return null;
   return (
     <ThemedView type="backgroundSelected" style={styles.card}>

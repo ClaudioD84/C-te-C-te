@@ -8,14 +8,15 @@ import { Spacing } from '@/constants/theme';
 import { useTheme } from '@/hooks/use-theme';
 
 import { useOpenHelpRequests, useResolveHelp } from './api';
+import { useToday } from '@/hooks/use-today';
 
 /** Cockpit : les activités pour lesquelles l'enfant a demandé de l'aide. */
 export function HelpRequestsCard({ childId, alias }: { childId: string; alias: string }) {
   const theme = useTheme();
   const requests = useOpenHelpRequests(childId);
   const resolve = useResolveHelp(childId);
+  const today = useToday();
   if (!requests.data || requests.data.length === 0) return null;
-  const today = toIsoDate(new Date());
   return (
     <ThemedView style={[styles.card, { borderColor: theme.accent }]}>
       <ThemedText type="smallBold">🙋 {alias} a besoin d’aide</ThemedText>

@@ -18,6 +18,7 @@ import {
   type ReviewCardVariables,
 } from '@/features/offline/mutations';
 import { supabase } from '@/lib/supabase';
+import { useToday } from '@/hooks/use-today';
 
 export interface StoredPack {
   id: string;
@@ -122,7 +123,7 @@ const CARD_DAYS_AHEAD = 3;
 
 /** Cartes à revoir aujourd'hui (ou en retard) pour un enfant. */
 export function useDueFlashcards(childId: string) {
-  const today = toIsoDate(new Date());
+  const today = useToday();
   return useQuery({
     queryKey: ['flashcards', childId, 'due'],
     queryFn: async (): Promise<DueCard[]> => {

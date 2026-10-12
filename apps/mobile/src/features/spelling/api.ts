@@ -1,11 +1,12 @@
-import { mondayOfWeek, toIsoDate } from '@cote-a-cote/shared';
+import { mondayOfWeek } from '@cote-a-cote/shared';
 import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query';
 
 import { supabase } from '@/lib/supabase';
+import { useToday } from '@/hooks/use-today';
 
 /** Mots de la dictée préparée de la semaine en cours (null s'il n'y en a pas). */
 export function useSpellingList(childId: string) {
-  const weekStart = mondayOfWeek(toIsoDate(new Date()));
+  const weekStart = mondayOfWeek(useToday());
   return useQuery({
     queryKey: ['spelling_list', childId, weekStart],
     enabled: childId.length > 0,
@@ -24,7 +25,7 @@ export function useSpellingList(childId: string) {
 
 export function useSaveSpellingList(childId: string) {
   const queryClient = useQueryClient();
-  const weekStart = mondayOfWeek(toIsoDate(new Date()));
+  const weekStart = mondayOfWeek(useToday());
   return useMutation({
     mutationFn: async (words: string[]) => {
       const { error } =

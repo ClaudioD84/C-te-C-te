@@ -1,7 +1,6 @@
 import {
   celebrationPhrase,
   hasChestToday,
-  toIsoDate,
   treasureOfTheDay,
   type LearningSettings,
   type Treasure,
@@ -17,13 +16,14 @@ import { learningTextStyle } from '@/constants/fonts';
 import { Spacing } from '@/constants/theme';
 
 import { useTreasures } from './treasures';
+import { useToday } from '@/hooks/use-today';
 
 /**
  * Mission accomplie : on le fête (phrase du jour, petite animation sauf si « Réduire les animations »),
  * parfois un coffre-surprise, et un défi bonus pour qui veut continuer.
  */
 export function MissionComplete({ childId, settings }: { childId: string; settings: LearningSettings }) {
-  const today = toIsoDate(new Date());
+  const today = useToday();
   const [scale] = useState(() => new Animated.Value(0.6));
   const treasures = useTreasures(childId);
   const [found, setFound] = useState<Treasure | null>(null);

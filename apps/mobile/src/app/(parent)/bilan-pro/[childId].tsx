@@ -11,7 +11,6 @@ import {
   PRO_REPORT_SECTIONS,
   proReportStart,
   schoolLevel,
-  toIsoDate,
   type ProReportSection,
 } from '@cote-a-cote/shared';
 import { useLocalSearchParams } from 'expo-router';
@@ -31,6 +30,7 @@ import { useSubjectProgress } from '@/features/progress/api';
 import { useChildProfile } from '@/features/profiles/api';
 import { useAloudReadings } from '@/features/reading/aloud-api';
 import { useEffortDays } from '@/features/rewards/api';
+import { useToday } from '@/hooks/use-today';
 
 type Period = 'trimestre' | 'annee';
 
@@ -41,7 +41,7 @@ type Period = 'trimestre' | 'annee';
 export default function ProReportScreen() {
   const { childId = '' } = useLocalSearchParams<{ childId: string }>();
   const child = useChildProfile(childId);
-  const [today] = useState(() => toIsoDate(new Date()));
+  const today = useToday();
   const [period, setPeriod] = useState<Period>('trimestre');
   const [sections, setSections] = useState<ProReportSection[]>([...DEFAULT_PRO_REPORT_SECTIONS]);
   const [comment, setComment] = useState('');

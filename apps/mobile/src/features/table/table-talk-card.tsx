@@ -1,4 +1,4 @@
-import { addDays, tableQuestions, toIsoDate } from '@cote-a-cote/shared';
+import { addDays, tableQuestions } from '@cote-a-cote/shared';
 import { useState } from 'react';
 import { StyleSheet, View } from 'react-native';
 
@@ -8,13 +8,14 @@ import { ThemedView } from '@/components/themed-view';
 import { Spacing } from '@/constants/theme';
 import { useSessions } from '@/features/planning/api';
 import { usePacksForTasks } from '@/features/study/api';
+import { useToday } from '@/hooks/use-today';
 
 /**
  * Cockpit : « Ce soir à table », trois questions sur ce que l'enfant a travaillé aujourd'hui (ou hier),
  * tirées de ses quiz, pour en parler en famille. Rien n'est affiché les jours sans travail.
  */
 export function TableTalkCard({ childId, alias }: { childId: string; alias: string }) {
-  const today = toIsoDate(new Date());
+  const today = useToday();
   const sessions = useSessions(childId, addDays(today, -1), 2);
   const [open, setOpen] = useState(false);
   const [answers, setAnswers] = useState(false);

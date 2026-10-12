@@ -5,7 +5,6 @@ import {
   deriveLearningSettings,
   needsStudyPack,
   planWeek,
-  toIsoDate,
   type IsoDate,
   type WeekPlan,
 } from '@cote-a-cote/shared';
@@ -30,11 +29,12 @@ import { useChildProfile } from '@/features/profiles/api';
 import { PaperWeekCard } from '@/features/print/paper-week-card';
 import { preparePacks } from '@/features/study/api';
 import { AlertBox, DayCard } from '@/features/planning/day-card';
+import { useToday } from '@/hooks/use-today';
 
 /** Planning de la semaine (F4) avec régulation de la charge (F8). Le parent valide avant publication. */
 export default function PlanningScreen() {
   const { childId } = useLocalSearchParams<{ childId: string }>();
-  const today = toIsoDate(new Date());
+  const today = useToday();
   const child = useChildProfile(childId);
   const tasks = useUpcomingTasks(childId);
   const sessions = useSessions(childId, today);

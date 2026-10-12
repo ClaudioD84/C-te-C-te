@@ -1,9 +1,9 @@
 import { createAsyncStoragePersister } from '@tanstack/query-async-storage-persister';
-import { onlineManager, QueryClient } from '@tanstack/react-query';
+import { focusManager, onlineManager, QueryClient } from '@tanstack/react-query';
 import type { PersistQueryClientProviderProps } from '@tanstack/react-query-persist-client';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import * as Network from 'expo-network';
-import { Platform } from 'react-native';
+import { AppState, Platform } from 'react-native';
 
 import { registerOfflineMutations } from '@/features/offline/mutations';
 
@@ -56,8 +56,15 @@ export async function clearOfflineCache() {
   await persister.removeClient();
 }
 
-// Sur téléphone, l'état du réseau vient du système ; sur le web, du navigateur (comportement par défaut).
+// Sur téléphone, l'état du réseau et le retour au premier plan viennent du système ; sur le web, du navigateur
+// (comportement par défaut). Sans cela, les données (mission, demandes d'aide, planning publié depuis un autre
+// appareil) ne sont pas rechargées quand on rouvre l'application.
 if (Platform.OS !== 'web') {
+  focusManager.setEventListener((setFocused) => {
+    const subscription = AppState.addEventListener('change', (state) => setFocused(state === 'active'));
+    return () => subscription.remove();
+  });
+
   const isOnline = (state: Network.NetworkState) =>
     state.isConnected !== false && state.isInternetReachable !== false;
   onlineManager.setEventListener((setOnline) => {

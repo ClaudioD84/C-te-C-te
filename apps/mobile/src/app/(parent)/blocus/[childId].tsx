@@ -2,7 +2,6 @@ import {
   blocusChapters,
   formatShortDate,
   planBlocus,
-  toIsoDate,
   type BlocusExam,
   type Weekday,
   type IsoDate,
@@ -21,6 +20,7 @@ import { ThemedView } from '@/components/themed-view';
 import { Spacing } from '@/constants/theme';
 import { useCreateBlocus } from '@/features/exams/api';
 import { useChildProfile } from '@/features/profiles/api';
+import { useToday } from '@/hooks/use-today';
 
 const SUBJECT_IDEAS = [
   'Français',
@@ -47,7 +47,7 @@ export default function BlocusScreen() {
   const [chapters, setChapters] = useState('');
   // Pendant un blocus, on révise souvent aussi le week-end.
   const [weekend, setWeekend] = useState(true);
-  const [today] = useState(() => toIsoDate(new Date()));
+  const today = useToday();
 
   if (!child.data) {
     return (

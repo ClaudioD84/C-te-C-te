@@ -1,4 +1,4 @@
-import { addDays, toIsoDate, TASK_KIND_LABELS, type LearningSettings } from '@cote-a-cote/shared';
+import { addDays, TASK_KIND_LABELS, type LearningSettings } from '@cote-a-cote/shared';
 import { router } from 'expo-router';
 import { StyleSheet } from 'react-native';
 
@@ -9,10 +9,11 @@ import { learningTextStyle } from '@/constants/fonts';
 import { Spacing } from '@/constants/theme';
 import { useUpcomingTasks } from '@/features/planning/api';
 import { useTaskFlashcards } from '@/features/study/api';
+import { useToday } from '@/hooks/use-today';
 
 /** Console enfant, la veille d'une interro ou d'un examen : quelques minutes avec ses cartes. */
 export function ExpressReviewCard({ childId, settings }: { childId: string; settings: LearningSettings }) {
-  const tomorrow = addDays(toIsoDate(new Date()), 1);
+  const tomorrow = addDays(useToday(), 1);
   const tasks = useUpcomingTasks(childId);
   const evaluation = tasks.data?.find(
     (t) => (t.kind === 'interro' || t.kind === 'examen') && !t.mockExam && t.dueDate === tomorrow,

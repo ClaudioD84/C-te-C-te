@@ -1,10 +1,4 @@
-import {
-  BADGES,
-  deriveLearningSettings,
-  relaxMinutesLimit,
-  schoolLevel,
-  toIsoDate,
-} from '@cote-a-cote/shared';
+import { BADGES, deriveLearningSettings, relaxMinutesLimit, schoolLevel } from '@cote-a-cote/shared';
 import { router } from 'expo-router';
 import { ActivityIndicator, Pressable, ScrollView, StyleSheet, View } from 'react-native';
 
@@ -35,12 +29,13 @@ import { avatarWithAccessory } from '@/features/rewards/accessory-picker';
 import { useNewBadges, useRewards } from '@/features/rewards/api';
 import { AvatarProgress } from '@/features/rewards/avatar-progress';
 import { useDueFlashcards } from '@/features/study/api';
+import { useToday } from '@/hooks/use-today';
 
 /** Console enfant : uniquement la mission du jour, sans menu. */
 export default function ChildConsoleScreen() {
   const { activeChildId, isChildDevice } = useChildMode();
   const childId = activeChildId ?? '';
-  const today = toIsoDate(new Date());
+  const today = useToday();
   const child = useChildProfile(childId);
   const sessions = useSessions(childId, today, 1);
   const dueCards = useDueFlashcards(childId);

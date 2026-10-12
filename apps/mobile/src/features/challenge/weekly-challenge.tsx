@@ -1,5 +1,5 @@
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import { mondayOfWeek, toIsoDate, type LearningSettings } from '@cote-a-cote/shared';
+import { mondayOfWeek, type IsoDate, type LearningSettings } from '@cote-a-cote/shared';
 import { useEffect, useState } from 'react';
 import { StyleSheet, View } from 'react-native';
 
@@ -8,9 +8,10 @@ import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
 import { learningTextStyle } from '@/constants/fonts';
 import { Spacing } from '@/constants/theme';
+import { useToday } from '@/hooks/use-today';
 
 const GOALS = [2, 3, 4] as const;
-const key = (childId: string) => `defi:${childId}:${mondayOfWeek(toIsoDate(new Date()))}`;
+const key = (childId: string, today: IsoDate) => `defi:${childId}:${mondayOfWeek(today)}`;
 
 /**
  * Défi de la semaine choisi par l'enfant (jours de travail). Réussi : on le fête ; pas réussi : rien
@@ -25,12 +26,13 @@ export function WeeklyChallenge({
   effortDays: number;
   settings: LearningSettings;
 }) {
+  const today = useToday();
   const [goal, setGoal] = useState<number | null | undefined>(undefined);
   useEffect(() => {
-    AsyncStorage.getItem(key(childId))
+    AsyncStorage.getItem(key(childId, today))
       .then((value) => setGoal(value ? Number(value) : null))
       .catch(() => setGoal(null));
-  }, [childId]);
+  }, [childId, today]);
 
   if (goal === undefined) return null;
   const text = learningTextStyle(settings);
@@ -50,7 +52,7 @@ export function WeeklyChallenge({
               style={styles.flex}
               onPress={() => {
                 setGoal(g);
-                AsyncStorage.setItem(key(childId), String(g)).catch(() => undefined);
+                AsyncStorage.setItem(key(childId, today), String(g)).catch(() => undefined);
               }}
             />
           ))}

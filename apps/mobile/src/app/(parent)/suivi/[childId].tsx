@@ -3,7 +3,6 @@ import {
   EXAM_LABELS,
   formatRelativeDate,
   formatShortDate,
-  toIsoDate,
   addDays,
   compareWithLastWeek,
   mondayOfWeek,
@@ -32,11 +31,12 @@ import { AloudReadingCard } from '@/features/reading/aloud-card';
 import { useRelaxMinutes } from '@/features/relax/api';
 import { AvatarProgress } from '@/features/rewards/avatar-progress';
 import { WeeklyChart } from '@/features/rewards/weekly-chart';
+import { useToday } from '@/hooks/use-today';
 
 /** Cockpit parent avancé (F7) : effort, régularité, épreuves à venir, activités à rattraper. */
 export default function FollowUpScreen() {
   const { childId } = useLocalSearchParams<{ childId: string }>();
-  const today = toIsoDate(new Date());
+  const today = useToday();
   const child = useChildProfile(childId);
   const rewards = useRewards(childId, child.data?.preferences.availableDays);
   const exams = useExams(childId);

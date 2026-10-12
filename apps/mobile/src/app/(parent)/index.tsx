@@ -1,4 +1,4 @@
-import { currentHoliday, GRADE_LABELS, NEED_LABELS, schoolLevel, toIsoDate } from '@cote-a-cote/shared';
+import { currentHoliday, GRADE_LABELS, NEED_LABELS, schoolLevel } from '@cote-a-cote/shared';
 import { Link, router } from 'expo-router';
 import { useState } from 'react';
 import { ActivityIndicator, StyleSheet, View } from 'react-native';
@@ -21,12 +21,14 @@ import { FirstSteps } from '@/features/onboarding/first-steps';
 import { SubscriptionBanner } from '@/features/subscription/subscription-banner';
 import { useChildProfiles, type StoredChildProfile } from '@/features/profiles/api';
 import { useSiblingChallenge } from '@/features/sibling/api';
+import { useToday } from '@/hooks/use-today';
 
 function ChildCard({ child }: { child: StoredChildProfile }) {
   const { enter } = useChildMode();
   const daysOff = useDaysOff(child.id);
-  const holiday = currentHoliday(daysOff.data ?? [], toIsoDate(new Date()));
-  const todaySessions = useSessions(child.id, toIsoDate(new Date()), 1);
+  const today = useToday();
+  const holiday = currentHoliday(daysOff.data ?? [], today);
+  const todaySessions = useSessions(child.id, today, 1);
   const missionDone = todaySessions.data?.[0]?.status === 'done';
   const [toolsOpen, setToolsOpen] = useState(false);
 

@@ -1,4 +1,4 @@
-import { bonusQuestions, deriveLearningSettings, studyPackSchema, toIsoDate } from '@cote-a-cote/shared';
+import { bonusQuestions, deriveLearningSettings, studyPackSchema } from '@cote-a-cote/shared';
 import { useQuery } from '@tanstack/react-query';
 import { router } from 'expo-router';
 import { ActivityIndicator, ScrollView, StyleSheet } from 'react-native';
@@ -13,6 +13,7 @@ import { useChildProfile } from '@/features/profiles/api';
 import { useLogPractice } from '@/features/study/api';
 import { QuizPlayer } from '@/features/study/quiz-player';
 import { supabase } from '@/lib/supabase';
+import { useToday } from '@/hooks/use-today';
 
 /** Défi bonus, après la mission : 3 questions de ses fiches récentes, pour le plaisir (et des points). */
 export default function BonusScreen() {
@@ -20,7 +21,7 @@ export default function BonusScreen() {
   const childId = activeChildId ?? '';
   const child = useChildProfile(childId);
   const logPractice = useLogPractice(childId);
-  const today = toIsoDate(new Date());
+  const today = useToday();
   const questions = useQuery({
     queryKey: ['bonus', childId, today],
     enabled: childId.length > 0,

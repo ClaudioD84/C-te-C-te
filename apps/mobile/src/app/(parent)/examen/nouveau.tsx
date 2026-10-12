@@ -4,7 +4,6 @@ import {
   EXAM_LABELS,
   examTypesForGrade,
   formatShortDate,
-  toIsoDate,
   addDays,
   weekdayKey,
   type ExamType,
@@ -25,9 +24,11 @@ import { ThemedView } from '@/components/themed-view';
 import { Spacing } from '@/constants/theme';
 import { proposeThemes, useCreateExam } from '@/features/exams/api';
 import { useChildProfile } from '@/features/profiles/api';
+import { useToday } from '@/hooks/use-today';
 
 /** Création d'un dossier de révision (F5) : épreuve, date, matières, puis thèmes proposés par Claude. */
 export default function NewExamScreen() {
+  const today = useToday();
   const { childId } = useLocalSearchParams<{ childId: string }>();
   const child = useChildProfile(childId);
   const create = useCreateExam(childId);
@@ -55,7 +56,6 @@ export default function NewExamScreen() {
   }
 
   function revisionDays(date: IsoDate): number {
-    const today = toIsoDate(new Date());
     let count = 0;
     for (let d = addDays(today, 1); d < date; d = addDays(d, 1)) {
       if (profile.preferences.availableDays.includes(weekdayKey(d))) count++;
@@ -134,8 +134,8 @@ export default function NewExamScreen() {
           <DatePicker label="Date de l'épreuve" value={examDate} onChange={setExamDate} />
           {examDate ? (
             <ThemedText themeColor="textSecondary">
-              Dans {daysBetween(toIsoDate(new Date()), examDate)} jours, dont {revisionDays(examDate)} jours
-              de travail prévus.
+              Dans {daysBetween(today, examDate)} jours, dont {revisionDays(examDate)} jours de travail
+              prévus.
             </ThemedText>
           ) : null}
           <ChoiceChips

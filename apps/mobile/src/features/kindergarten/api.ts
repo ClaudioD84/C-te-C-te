@@ -15,6 +15,7 @@ import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query';
 import { OFFLINE_MUTATIONS, type LearningEventVariables } from '@/features/offline/mutations';
 import { supabase } from '@/lib/supabase';
 import { randomUUID } from '@/lib/uuid';
+import { useToday } from '@/hooks/use-today';
 
 /** Fenêtre lue pour éviter de reproposer une activité récente (voir suggestKindergartenWeek). */
 const HISTORY_DAYS = 28;
@@ -32,8 +33,9 @@ export interface KindergartenWeek {
 const weekKey = (childId: string, weekStart: IsoDate) => ['kindergarten_week', childId, weekStart] as const;
 
 /** Activités de la semaine d'un enfant de maternelle : choix du parent, ou proposition stable. */
-export function useKindergartenWeek(childId: string, grade: Grade | undefined, date = toIsoDate(new Date())) {
-  const weekStart = mondayOfWeek(date);
+export function useKindergartenWeek(childId: string, grade: Grade | undefined, date?: IsoDate) {
+  const today = useToday();
+  const weekStart = mondayOfWeek(date ?? today);
   return useQuery({
     queryKey: weekKey(childId, weekStart),
     enabled: childId.length > 0 && Boolean(grade),

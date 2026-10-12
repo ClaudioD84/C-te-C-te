@@ -1,5 +1,5 @@
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import { toIsoDate, type LearningSettings } from '@cote-a-cote/shared';
+import { type IsoDate, type LearningSettings } from '@cote-a-cote/shared';
 import { useCallback, useEffect, useState } from 'react';
 import { StyleSheet, View } from 'react-native';
 
@@ -8,6 +8,7 @@ import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
 import { learningTextStyle } from '@/constants/fonts';
 import { Spacing } from '@/constants/theme';
+import { useToday } from '@/hooks/use-today';
 
 /**
  * Météo de l'enfant : comment il se sent avant la mission. Fatigué ou pas en forme, la mission est
@@ -32,21 +33,24 @@ export const MOODS: Record<Mood, { emoji: string; label: string; message: string
   },
 };
 
-const key = (childId: string) => `meteo:${childId}:${toIsoDate(new Date())}`;
+const key = (childId: string, today: IsoDate) => `meteo:${childId}:${today}`;
 
 export function useTodayMood(childId: string) {
+  const today = useToday();
   const [mood, setMood] = useState<Mood | null | undefined>(undefined);
   useEffect(() => {
-    AsyncStorage.getItem(key(childId))
+    // Nouveau jour : la météo est redemandée.
+    setMood(undefined);
+    AsyncStorage.getItem(key(childId, today))
       .then((value) => setMood(value && value in MOODS ? (value as Mood) : null))
       .catch(() => setMood(null));
-  }, [childId]);
+  }, [childId, today]);
   const choose = useCallback(
     (value: Mood) => {
       setMood(value);
-      AsyncStorage.setItem(key(childId), value).catch(() => undefined);
+      AsyncStorage.setItem(key(childId, today), value).catch(() => undefined);
     },
-    [childId],
+    [childId, today],
   );
   return { mood, choose, loading: mood === undefined };
 }
