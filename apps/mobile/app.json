@@ -4,7 +4,7 @@
     "slug": "cote-a-cote",
     "version": "1.0.0",
     "runtimeVersion": {
-      "policy": "appVersion"
+      "policy": "fingerprint"
     },
     "orientation": "default",
     "icon": "./assets/images/icon.png",

@@ -23,6 +23,7 @@ describe('configuration de l’application (app.json)', () => {
   it('icône et mises à jour à distance', () => {
     expect(config.expo.icon).toBe('./assets/images/icon.png');
     expect(config.expo.ios.icon).toBeUndefined();
-    expect(config.expo.runtimeVersion).toEqual({ policy: 'appVersion' });
+    // Empreinte du code natif : une mise à jour à distance n'atteint jamais une build incompatible.
+    expect(config.expo.runtimeVersion).toEqual({ policy: 'fingerprint' });
   });
 });

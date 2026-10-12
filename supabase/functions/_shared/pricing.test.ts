@@ -13,6 +13,15 @@ Deno.test('coût d’une analyse avec cache', () => {
   assertAlmostEquals(cost, 0.0144);
 });
 
-Deno.test('modèle inconnu : coût nul plutôt qu’une erreur', () => {
-  assertEquals(estimateCostUsd('modele-inconnu', { input_tokens: 10, output_tokens: 10 }), 0);
+Deno.test('modèle de secours (refus) : son propre tarif', () => {
+  // 1000 × 5 + 1000 × 25 = 30 000 → 0,03 $
+  assertAlmostEquals(estimateCostUsd('claude-opus-5', { input_tokens: 1_000, output_tokens: 1_000 }), 0.03);
+  assertAlmostEquals(
+    estimateCostUsd('claude-haiku-5-5', { input_tokens: 10_000, output_tokens: 2_000 }),
+    0.002,
+  );
+});
+
+Deno.test('modèle inconnu : compté au tarif le plus élevé, jamais à zéro', () => {
+  assertEquals(estimateCostUsd('modele-inconnu', { input_tokens: 1_000, output_tokens: 1_000 }), 0.03);
 });

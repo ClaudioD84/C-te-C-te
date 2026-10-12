@@ -182,9 +182,10 @@ Le modèle est **configurable par fonction** (variable d'environnement), pour aj
 
 ### 7.3 Maîtrise des coûts
 
-- **Mise en cache des consignes** : la partie fixe des requêtes (consignes, extrait du référentiel) est placée en tête et mise en cache, ce qui réduit fortement le coût des lectures répétées.
-- **Traitements groupés** : la génération des plannings hebdomadaires passe par l'API Message Batches (environ 50 % moins chère, résultat asynchrone).
-- **Réutilisation** : un exercice généré pour un point du programme et un profil type peut être réutilisé (cache par `curriculum_item` + niveau + adaptations).
+- **Mise en cache des consignes** (en place) : la partie fixe des requêtes (consignes) est placée en tête et marquée pour le cache de l'API ; utile quand plusieurs requêtes se suivent en quelques minutes (fiches préparées à la publication d'un planning).
+- **Coût mesuré** (en place) : chaque appel est journalisé dans `ai_usage` avec son coût estimé, y compris quand l'API bascule vers un modèle de secours ; `pnpm beta stats` donne le coût par famille.
+- **Réutilisation des fiches** (prévu) : une fiche générée pour une tâche identique (même matière, même consigne, même année, mêmes adaptations) pourrait servir à une autre famille, une fiche ne contenant aucune donnée personnelle.
+- **Traitements groupés** (prévu) : l'API Message Batches (environ 50 % moins chère, résultat asynchrone) pour les fiches des tâches à échéance lointaine. Non retenu pour l'instant : la fiche doit souvent être prête le jour même.
 - **Quotas par formule** (photos analysables par mois : essai 40, Solo 80, Famille 200) et journal `ai_usage` pour suivre le coût réel par famille.
 
 ### 7.4 Qualité et sécurité des contenus

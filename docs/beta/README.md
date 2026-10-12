@@ -13,7 +13,8 @@ le test interne Google Play quand les comptes des stores sont ouverts.
 | Compte Brevo | brevo.com | E-mails de confirmation de compte (voir docs/publication) |
 
 Mise en place du serveur : suivre « Mettre en ligne le serveur » du README principal (migrations, fonctions,
-secrets). Puis, dans Supabase > Authentication > URL Configuration : **Site URL** = l'adresse de la version web
+secrets). Dans Supabase > Authentication > Policies (ou Providers > Email) : **longueur minimale du mot de passe
+8 caractères**, comme dans l'application. Puis, dans Supabase > Authentication > URL Configuration : **Site URL** = l'adresse de la version web
 (par exemple `https://cote-a-cote.expo.app`), pour que le lien de confirmation de l'e-mail y ramène.
 
 ## 2. Mettre la version web en ligne
