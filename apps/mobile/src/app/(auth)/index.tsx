@@ -131,6 +131,13 @@ export default function AuthScreen() {
         <ThemedText type="small" themeColor="textSecondary">
           Mot de passe : 8 caractères minimum.
         </ThemedText>
+        {mode === 'connexion' ? (
+          <Button
+            variant="secondary"
+            label="Mot de passe oublié ?"
+            onPress={() => router.push({ pathname: '/mot-de-passe', params: { email: email.trim() } })}
+          />
+        ) : null}
         <Button
           variant="secondary"
           label="Relier la tablette de mon enfant"

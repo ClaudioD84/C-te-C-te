@@ -87,7 +87,7 @@ for (let attempt = 1; !supabaseReady(); attempt++) {
       'supabase',
       'start',
       '-x',
-      'studio,imgproxy,logflare,vector,supavisor,postgres-meta,edge-runtime,mailpit,realtime',
+      'studio,imgproxy,logflare,vector,supavisor,postgres-meta,edge-runtime,realtime',
     ]);
   } catch {
     if (attempt >= 3) {

@@ -92,7 +92,14 @@ Settings > Secrets and variables > Actions). Depuis le Mac, les mêmes actions :
 `npx eas-cli@latest update --channel production --environment production -m "…"` ou la commande de build
 ci-dessus.
 
-## 5. E-mail de confirmation du compte
+## 5. E-mails du compte (confirmation, mot de passe oublié)
+
+Dans Supabase > Authentication > **Email Templates**, recopiez les modèles français du dépôt :
+« Confirm signup » ← `supabase/templates/confirmation.html` (objet : « Confirmez votre adresse e-mail ») et
+« Reset Password » ← `supabase/templates/reinitialisation.html` (objet : « Votre code Côte à Côte »). Ce dernier
+contient le **code à 6 chiffres** que le parent saisit dans l'application (« Mot de passe oublié ? ») : aucun
+lien à ouvrir.
+
 
 Sur iPhone, le lien de l'e-mail de confirmation s'ouvre dans le navigateur. Mettez la version web en ligne
 (`pnpm deploy:web`, voir le [README](README.md)) puis, dans Supabase > Authentication > URL Configuration :
@@ -101,7 +108,5 @@ pour se connecter.
 
 ## Limites connues
 
-- Pas encore de « Mot de passe oublié » dans l'application : en cas d'oubli, réinitialisez le compte depuis
-  Supabase (Authentication > Users) ou ajoutez cette fonction avant d'élargir la bêta.
 - Icône provisoire : à remplacer par l'identité visuelle définitive avant la publication sur l'App Store.
 - Android : même principe avec le test interne de Google Play (voir [publication](../publication/README.md)).

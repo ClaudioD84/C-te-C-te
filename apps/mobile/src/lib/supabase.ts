@@ -26,3 +26,18 @@ if (Platform.OS !== 'web') {
     }
   });
 }
+
+/**
+ * Client éphémère pour « Mot de passe oublié » : la session obtenue avec le code n'est ni gardée ni partagée.
+ * L'application ne bascule vers l'espace parent qu'après la connexion avec le nouveau mot de passe.
+ */
+export function createRecoveryClient() {
+  return createClient(url ?? 'http://127.0.0.1:54321', publishableKey ?? 'non-configure', {
+    auth: {
+      persistSession: false,
+      autoRefreshToken: false,
+      detectSessionInUrl: false,
+      storageKey: 'recuperation',
+    },
+  });
+}

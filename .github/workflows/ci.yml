@@ -58,7 +58,7 @@ jobs:
           cache: pnpm
       - run: pnpm install --frozen-lockfile
       # Vraie pile Supabase locale (base, authentification, stockage) ; les fonctions tournent avec Deno.
-      - run: pnpm exec supabase start -x studio,imgproxy,logflare,vector,supavisor,postgres-meta,edge-runtime,mailpit,realtime
+      - run: pnpm exec supabase start -x studio,imgproxy,logflare,vector,supavisor,postgres-meta,edge-runtime,realtime
       - run: pnpm --filter e2e exec playwright install --with-deps chromium
       - run: pnpm e2e:build
       - run: pnpm test:e2e

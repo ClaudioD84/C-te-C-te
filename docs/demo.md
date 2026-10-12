@@ -200,6 +200,12 @@ L'appareil photo du téléphone, les notifications de rappel, le fonctionnement 
 et les vrais achats (RevenueCat, en bac à sable) ne fonctionnent que dans l'application installée sur un
 téléphone : bêta TestFlight (iPhone) ou test interne Google Play.
 
+## Les e-mails de la démo
+
+Aucun e-mail ne part vraiment : ils arrivent dans la boîte de test **http://127.0.0.1:54324** (sur le Mac). Pour
+essayer « Mot de passe oublié ? », ouvrez-la pour lire le code à 6 chiffres. Si la boîte ne s'ouvre pas, arrêtez
+le serveur (`pnpm exec supabase stop`) puis relancez `pnpm demo`.
+
 ## En cas de problème
 
 | Message | Que faire |
