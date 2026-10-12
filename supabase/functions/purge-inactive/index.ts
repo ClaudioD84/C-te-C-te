@@ -33,7 +33,7 @@ async function deleteFamily(admin: SupabaseClient, familyId: string) {
  * Purge quotidienne de la conservation (RGPD) : journal de l'effort de plus de 2 ans, comptes inactifs
  * depuis 24 mois (avertissement par e-mail, puis suppression 30 jours plus tard sans reconnexion).
  * Sans service d'e-mail configuré, aucun compte n'est averti ni supprimé.
- * Appelée par une tâche planifiée, protégée par le secret PURGE_SECRET.
+ * Appelée par la tâche programmée `purge-inactive` (pg_cron, chaque nuit), protégée par le secret PURGE_SECRET.
  */
 Deno.serve(async (request) => {
   if (!hasBearerSecret(request, Deno.env.get('PURGE_SECRET'))) return json({ error: 'Non autorisé' }, 401);

@@ -107,6 +107,6 @@ de préproduction.
 
 - Faire tourner la bêta (TestFlight et test fermé) avec quelques familles : appareil photo, lecture des photos,
   notifications, achats en bac à sable, mode hors connexion sur de vrais appareils.
-- Programmer les purges quotidiennes (README principal, points 7 et 8).
+- Ranger l'adresse du projet et le secret des tâches programmées dans le coffre (README principal, point 7).
 - Vérifier que `EXPO_PUBLIC_PAYMENTS_SIMULATION` vaut `false` en production et que la fonction
   `simulate-purchase` n'est **pas** déployée (ou que `ALLOW_SIMULATED_PURCHASES` n'est pas défini).

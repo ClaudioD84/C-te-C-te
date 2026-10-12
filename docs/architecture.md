@@ -285,8 +285,8 @@ Algorithme déterministe (`packages/shared/src/planning.ts`), exécuté dans l'a
 | Hébergement | Supabase région UE (Francfort) |
 | Accès aux données | RLS sur toutes les tables : un parent ne voit que sa famille |
 | Minimisation | Prénom seulement pour les enfants (jamais de nom de famille, jamais transmis à l'IA par l'application) ; photos redimensionnées, sans masquage : l'IA ne recopie aucun nom de personne ni d'école |
-| Conservation | Fonction `purge-inactive` (tâche quotidienne) : journal de l'effort de plus de 2 ans, comptes inactifs depuis 24 mois (dernière ouverture enregistrée par `touch_family_activity`) avertis par e-mail puis supprimés 30 jours plus tard |
-| Photos | Envoyées sans masquage (elles peuvent montrer des noms), stockage privé, suppression après traitement ; fonction `purge-photos` (tâche quotidienne) pour celles restées plus de 24 h |
+| Conservation | Fonction `purge-inactive` (tâche programmée chaque nuit, pg_cron) : journal de l'effort de plus de 2 ans, comptes inactifs depuis 24 mois (dernière ouverture enregistrée par `touch_family_activity`) avertis par e-mail puis supprimés 30 jours plus tard |
+| Photos | Envoyées sans masquage (elles peuvent montrer des noms), stockage privé, suppression après traitement ; fonction `purge-photos` (tâche programmée toutes les heures, pg_cron) : aucune photo ne reste plus de 24 h |
 | Données de santé | Consentement explicite et horodaté (renouvelé à chaque besoin ajouté, effacé au retrait) ; les requêtes IA ne contiennent que les consignes d'adaptation, jamais le trouble |
 | Sous-traitants | Supabase, Anthropic, RevenueCat, Brevo : accords de traitement (DPA) à signer ; vérifier la durée de conservation des données par Anthropic et les options disponibles |
 | Droits des utilisateurs | Export JSON, modification et suppression d'un profil enfant, suppression complète du compte depuis l'application |

@@ -17,6 +17,7 @@ import { corsHeaders, json, UserFacingError } from '../_shared/http.ts';
 import { interestLabels, studyPackSchema } from '../_shared/pack.ts';
 import { estimateCostUsd } from '../_shared/pricing.ts';
 import { adminClient, authenticateMember } from '../_shared/supabase.ts';
+import { reportServerError } from '../_shared/monitoring.ts';
 
 const bodySchema = z.object({ packId: z.uuid(), section: z.number().int().min(0).max(50) });
 
@@ -125,7 +126,7 @@ Deno.serve(async (request) => {
     return json({ explanation });
   } catch (error) {
     if (error instanceof UserFacingError) return json({ error: error.message }, error.status);
-    console.error('explain-again', error);
+    await reportServerError('explain-again', error);
     return json({ error: 'L’explication n’a pas pu être préparée. Réessaie dans un instant.' }, 500);
   }
 });

@@ -19,6 +19,7 @@ import {
 } from '../_shared/revision.ts';
 import { curriculumSubjects } from '../_shared/pack.ts';
 import { adminClient, authenticate } from '../_shared/supabase.ts';
+import { reportServerError } from '../_shared/monitoring.ts';
 
 /**
  * Propose les thèmes de révision d'une épreuve. Rien n'est enregistré ici :
@@ -114,7 +115,7 @@ Deno.serve(async (request) => {
     return json({ themes });
   } catch (error) {
     if (error instanceof UserFacingError) return json({ error: error.message }, error.status);
-    console.error('revision-plan', error);
+    await reportServerError('revision-plan', error);
     return json({ error: 'La préparation du dossier a échoué. Réessayez dans un instant.' }, 500);
   }
 });

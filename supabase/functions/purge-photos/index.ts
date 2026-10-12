@@ -2,16 +2,20 @@ import { json } from '../_shared/http.ts';
 import { hasBearerSecret } from '../_shared/secret.ts';
 import { adminClient } from '../_shared/supabase.ts';
 
-/** Durée maximale de conservation d'une photo non traitée (échec, application fermée pendant l'envoi…). */
-const MAX_AGE_HOURS = 24;
+/**
+ * Âge à partir duquel une photo non traitée (échec, application fermée pendant l'envoi…) est effacée. La tâche
+ * passe toutes les heures : avec 23 heures, aucune photo ne reste plus de 24 heures (promesse de la politique).
+ */
+const MAX_AGE_HOURS = 23;
 const BUCKET = 'scans';
 
 /**
- * Purge quotidienne (RGPD, limitation de la conservation) : une photo est normalement supprimée dès son
- * analyse ; celles restées en stockage plus de 24 heures sont effacées ici.
+ * Purge horaire (RGPD, limitation de la conservation) : une photo est normalement supprimée dès son
+ * analyse ; celles restées en stockage sont effacées ici avant 24 heures.
  * Efface aussi les codes de liaison d'appareil expirés et le journal des codes erronés (adresses IP
  * hachées) de plus d'un jour.
- * Appelée par une tâche planifiée (Supabase > Integrations > Cron), protégée par le secret PURGE_SECRET.
+ * Appelée par la tâche programmée `purge-photos` (pg_cron, voir la migration scheduled_jobs), protégée par le
+ * secret PURGE_SECRET.
  */
 Deno.serve(async (request) => {
   if (!hasBearerSecret(request, Deno.env.get('PURGE_SECRET'))) return json({ error: 'Non autorisé' }, 401);
@@ -54,7 +58,7 @@ Deno.serve(async (request) => {
       );
   }
 
-  // Même tâche quotidienne : codes de liaison expirés et essais erronés de plus d'un jour.
+  // Même tâche : codes de liaison expirés et essais erronés de plus d'un jour.
   const yesterday = new Date(Date.now() - 24 * 3600 * 1000).toISOString();
   await admin.from('device_pairing').delete().lt('expires_at', new Date().toISOString());
   await admin.from('device_pairing_failure').delete().lt('created_at', yesterday);

@@ -1,0 +1,41 @@
+# Mises à jour automatiques : une proposition groupée par semaine, vérifiée par la CI avant d'être acceptée.
+version: 2
+updates:
+  - package-ecosystem: npm
+    # Espace de travail pnpm : l'application, les paquets partagés et les tests.
+    directory: /
+    schedule:
+      interval: weekly
+      day: monday
+      time: '06:00'
+      timezone: Europe/Brussels
+    open-pull-requests-limit: 3
+    commit-message:
+      prefix: 'Dépendances'
+    groups:
+      mineures:
+        update-types: [minor, patch]
+    ignore:
+      # Le SDK Expo fixe des versions compatibles entre elles : elles se mettent à jour ensemble, avec
+      # `npx expo install --fix` (ou lors d'un passage au SDK suivant), jamais une par une.
+      - dependency-name: 'expo'
+      - dependency-name: 'expo-*'
+      - dependency-name: '@expo/*'
+      - dependency-name: 'react'
+      - dependency-name: 'react-dom'
+      - dependency-name: 'react-native'
+      - dependency-name: 'react-native-*'
+      - dependency-name: '@react-native/*'
+      - dependency-name: '@react-native-async-storage/async-storage'
+      - dependency-name: '@types/react'
+      - dependency-name: 'typescript'
+      # Changements majeurs : à faire à la main, avec lecture des notes de version.
+      - dependency-name: '*'
+        update-types: ['version-update:semver-major']
+
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: monthly
+    commit-message:
+      prefix: 'CI'

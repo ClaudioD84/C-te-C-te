@@ -8,6 +8,7 @@ import {
 import { json } from '../_shared/http.ts';
 import { hasBearerSecret } from '../_shared/secret.ts';
 import { adminClient } from '../_shared/supabase.ts';
+import { reportServerError } from '../_shared/monitoring.ts';
 
 /**
  * Avis de RevenueCat (achats, renouvellements, résiliations… sur l'App Store et Google Play).
@@ -86,7 +87,7 @@ Deno.serve(async (request) => {
     }
     return json({ received: true });
   } catch (error) {
-    console.error('revenuecat-webhook', error);
+    await reportServerError('revenuecat-webhook', error);
     // L'événement sera renvoyé : on retire la trace pour pouvoir le traiter à nouveau.
     await admin.from('subscription_event').delete().eq('id', event.id);
     return json({ error: 'Traitement impossible' }, 500);

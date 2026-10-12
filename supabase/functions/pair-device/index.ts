@@ -2,6 +2,7 @@ import { z } from '../_shared/deps.ts';
 import { corsHeaders, json, UserFacingError } from '../_shared/http.ts';
 import { normalizePairingCode, randomSecret, sha256Hex } from '../_shared/pairing.ts';
 import { adminClient } from '../_shared/supabase.ts';
+import { reportServerError } from '../_shared/monitoring.ts';
 
 const bodySchema = z.object({
   code: z.string().max(40),
@@ -89,7 +90,7 @@ Deno.serve(async (request) => {
     return json({ email, password, childId: pairing.child_id });
   } catch (error) {
     if (error instanceof UserFacingError) return json({ error: error.message }, error.status);
-    console.error('pair-device', error);
+    await reportServerError('pair-device', error);
     return json({ error: 'Liaison impossible. Réessayez dans un instant.' }, 500);
   }
 });

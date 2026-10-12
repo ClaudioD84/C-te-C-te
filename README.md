@@ -57,7 +57,7 @@ Version web en ligne (`pnpm deploy:web`), codes d'invitation et suivi des testeu
 3. Ajouter la clé de l'API Claude : `pnpm exec supabase secrets set ANTHROPIC_API_KEY=...`
    (facultatif : `SCAN_MODEL`, `SCAN_EFFORT`, `PACK_MODEL`, `PACK_EFFORT` pour régler le modèle et l'effort
    de la lecture des photos et de la préparation des fiches).
-4. Déployer les fonctions : `pnpm exec supabase functions deploy scan-extract generate-pack revision-plan delete-account revenuecat-webhook purge-photos purge-inactive`.
+4. Déployer les fonctions : `pnpm exec supabase functions deploy scan-extract generate-pack explain-again revision-plan delete-account pair-device revenuecat-webhook purge-photos purge-inactive weekly-recap` (jamais `simulate-purchase` en production).
 5. Renseigner l'adresse et la clé publique du projet dans `apps/mobile/.env.local`.
 6. Abonnements :
    - créer les produits dans App Store Connect et Google Play Console (`cac_solo_mois`, `cac_famille_mois`,
@@ -69,18 +69,30 @@ Version web en ligne (`pnpm deploy:web`), codes d'invitation et suivi des testeu
      (et `REVENUECAT_ALLOW_SANDBOX=true` pendant la bêta) ;
    - clés publiques RevenueCat et liens des conditions et de la politique de confidentialité dans
      `apps/mobile/.env.local` (voir `.env.example`).
-7. Purge des photos : `pnpm exec supabase secrets set PURGE_SECRET=...`, puis une tâche quotidienne dans
-   Supabase > Integrations > Cron qui appelle `https://<ref>.supabase.co/functions/v1/purge-photos` (POST) avec
-   l'en-tête `Authorization: Bearer <PURGE_SECRET>`. Elle supprime les photos restées plus de 24 heures.
-8. Conservation des données : une seconde tâche quotidienne, identique, vers `.../functions/v1/purge-inactive`.
-   Elle efface le journal de l'effort de plus de 2 ans et, pour les comptes inactifs depuis 24 mois, envoie un
-   e-mail d'avertissement puis supprime le compte 30 jours plus tard sans reconnexion (jamais pendant un
+7. Tâches programmées (purges et bilan de la semaine) : elles sont créées par les migrations (pg_cron). Il reste
+   à choisir un secret, `pnpm exec supabase secrets set PURGE_SECRET=...`, puis à le ranger avec l'adresse du
+   projet dans le coffre de Supabase (éditeur SQL, une seule fois) :
+   `select vault.create_secret('https://<ref>.supabase.co', 'project_url');` et
+   `select vault.create_secret('<même valeur que PURGE_SECRET>', 'purge_secret');`.
+   Vérification : `select * from cron.job_run_details order by start_time desc limit 5;`.
+   La purge des photos passe toutes les heures (aucune photo ne reste plus de 24 heures).
+8. Conservation des données : la tâche nocturne `purge-inactive` efface le journal de l'effort de plus de 2 ans
+   et, pour les comptes inactifs depuis 24 mois, envoie un e-mail d'avertissement puis supprime le compte 30 jours plus tard sans reconnexion (jamais pendant un
    abonnement payé en cours). Les e-mails passent par Brevo (prestataire européen) :
    `pnpm exec supabase secrets set BREVO_API_KEY=... EMAIL_FROM=...` (adresse d'expéditeur validée chez Brevo).
    Tant que ces secrets manquent, aucun compte n'est averti ni supprimé.
-9. E-mails de connexion (confirmation, mot de passe oublié) : Supabase > Authentication > Emails > SMTP Settings,
-   avec les identifiants SMTP de Brevo (serveur `smtp-relay.brevo.com`, port 587, identifiant et clé SMTP
-   indiqués dans Brevo > SMTP & API), la même adresse d'expéditeur, et relever la limite d'envoi par heure.
+9. E-mails de connexion (confirmation, mot de passe oublié) : modèles français de `supabase/templates` à recopier
+   dans Supabase > Authentication > Email Templates (voir docs/beta/testflight.md). Envoi : Supabase >
+   Authentication > Emails > SMTP Settings, avec les identifiants SMTP de Brevo (serveur
+   `smtp-relay.brevo.com`, port 587, identifiant et clé SMTP indiqués dans Brevo > SMTP & API), la même adresse
+   d'expéditeur, et relever la limite d'envoi par heure.
+
+## Mises à jour des dépendances
+
+Dependabot propose chaque lundi une mise à jour groupée des bibliothèques (versions mineures), vérifiée par la CI.
+Les paquets du SDK Expo (expo, react-native…) se mettent à jour ensemble : `cd apps/mobile && npx expo install
+--fix`, ou lors du passage au SDK suivant. Les fonctions serveur fixent leurs versions dans
+`supabase/functions/_shared/deps.ts`.
 
 ## Vérifications
 

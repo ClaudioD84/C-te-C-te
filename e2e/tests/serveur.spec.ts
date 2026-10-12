@@ -225,3 +225,51 @@ test('bêta : avis et journal d’erreurs par compte ; mesures réservées au se
   );
   expect(mine?.feedbacks).toBe(1);
 });
+
+test('tâches programmées : purges et bilan appelés avec le secret du coffre, rien sans secret', () => {
+  expect(sql(`select string_agg(jobname || '=' || schedule, ' ' order by jobname) from cron.job`)).toBe(
+    'purge-inactive=30 2 * * * purge-photos=7 * * * * weekly-recap=0 17 * * 0',
+  );
+  // Sans secrets (développement, CI) : aucune requête.
+  expect(sql(`select public.call_scheduled_function('purge-photos') is null`)).toBe('t');
+  // Avec les secrets (dans une transaction annulée) : la requête part vers la fonction, avec le secret.
+  const queued = sql(`
+    begin;
+    select vault.create_secret('https://projet.example/', 'project_url');
+    select vault.create_secret('secret-e2e', 'purge_secret');
+    select public.call_scheduled_function('purge-photos');
+    select url || ' ' || (headers ->> 'Authorization') from net.http_request_queue order by id desc limit 1;
+    rollback;`);
+  expect(queued.split('\n').at(-1)).toBe(
+    'https://projet.example/functions/v1/purge-photos Bearer secret-e2e',
+  );
+  expect(() => sql(`select public.call_scheduled_function('delete-account')`)).toThrow();
+});
+
+test('erreur inattendue d’une fonction serveur : journalisée avec les erreurs de l’application', async ({
+  request,
+}) => {
+  const { token, familyId } = await createParent(request);
+  const child = await request.post(`${GATEWAY_URL}/rest/v1/child_profile`, {
+    headers: { ...headers(token), Prefer: 'return=representation' },
+    data: { alias: 'Pic', grade: 'P4' },
+  });
+  const [{ id: childId }] = await child.json();
+  // Numérisation dont la photo n'existe pas dans le stockage : erreur imprévue côté serveur.
+  const scanId = sql(`insert into scan (family_id, child_id, document_type, storage_path)
+    values ('${familyId}', '${childId}', 'journal_de_classe', '${familyId}/absente.jpg') returning id`).split(
+    '\n',
+  )[0];
+  const response = await request.post(`${GATEWAY_URL}/functions/v1/scan-extract`, {
+    headers: headers(token),
+    data: { scanId },
+  });
+  expect(response.status()).toBe(500);
+  expect((await response.json()).error).toBe("L'analyse a échoué. Réessayez dans un instant.");
+  await expect
+    .poll(() =>
+      sql(`select count(*) from app_error where platform = 'serveur' and screen = 'scan-extract'
+           and message = 'Photo ou profil introuvable' and created_at > now() - interval '1 minute'`),
+    )
+    .not.toBe('0');
+});

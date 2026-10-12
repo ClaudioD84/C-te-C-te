@@ -12,7 +12,7 @@ interface Target {
 
 /**
  * Bilan de la semaine par e-mail (dimanche soir), pour les parents qui l'ont demandé dans « Mon compte ».
- * Appelée par une tâche planifiée hebdomadaire, protégée par le secret PURGE_SECRET.
+ * Appelée par la tâche programmée `weekly-recap` (pg_cron, le dimanche), protégée par le secret PURGE_SECRET.
  * Un parent n'est servi qu'une fois tous les 6 jours, même si la tâche est relancée.
  */
 Deno.serve(async (request) => {

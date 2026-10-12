@@ -105,23 +105,34 @@ switch (command) {
     const rows = await call(
       `app_error?select=message,screen,platform,app_version,created_at&created_at=gte.${since(days)}&order=created_at.desc&limit=1000`,
     );
+    // Regroupées par message et par origine (application : ios, android, web ; fonctions : serveur).
     const groups = new Map();
     for (const r of rows) {
-      const g = groups.get(r.message) ?? {
-        message: r.message.slice(0, 80),
+      const origin = r.platform === 'serveur' ? 'serveur' : 'app';
+      const key = `${origin}|${r.message}`;
+      const g = groups.get(key) ?? {
+        origine: origin,
+        message: r.message.slice(0, 70),
         fois: 0,
         écrans: new Set(),
         dernière: r.created_at,
       };
       g.fois += 1;
       if (r.screen) g.écrans.add(r.screen);
-      groups.set(r.message, g);
+      groups.set(key, g);
     }
+    console.log(`Erreurs (${days} derniers jours) : ${rows.length}`);
     console.table(
       [...groups.values()]
         .sort((a, b) => b.fois - a.fois)
         .map((g) => ({ ...g, écrans: [...g.écrans].join(', '), dernière: day(g.dernière) })),
     );
+    // Analyses de photo restées en échec (message montré au parent).
+    const failed = await call(`scan?select=error,created_at&status=eq.failed&created_at=gte.${since(days)}`);
+    const reasons = new Map();
+    for (const f of failed) reasons.set(f.error ?? '—', (reasons.get(f.error ?? '—') ?? 0) + 1);
+    console.log(`Analyses de photo en échec : ${failed.length}`);
+    if (failed.length > 0) console.table([...reasons].map(([raison, fois]) => ({ raison, fois })));
     break;
   }
   case 'compte-revue': {

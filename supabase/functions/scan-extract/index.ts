@@ -10,6 +10,7 @@ import type { DocumentType } from '../_shared/extraction.ts';
 import { corsHeaders, json, UserFacingError } from '../_shared/http.ts';
 import { estimateCostUsd } from '../_shared/pricing.ts';
 import { adminClient, authenticate } from '../_shared/supabase.ts';
+import { reportServerError } from '../_shared/monitoring.ts';
 
 /**
  * Analyse d'une photo (F3) : vérifie les droits, lit la photo avec Claude,
@@ -132,7 +133,7 @@ Deno.serve(async (request) => {
     return json({ status: 'draft', tasks: extraction.tasks.length });
   } catch (error) {
     const userFacing = error instanceof UserFacingError;
-    if (!userFacing) console.error('scan-extract', error);
+    if (!userFacing) await reportServerError('scan-extract', error);
     const message = userFacing ? error.message : "L'analyse a échoué. Réessayez dans un instant.";
 
     // La photo est conservée pour permettre de réessayer ; l'échec est visible dans l'application.

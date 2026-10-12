@@ -42,10 +42,10 @@ Version du 5 octobre 2026.
 | 2 | Signer les accords de sous-traitance (DPA) : Supabase, Anthropic, RevenueCat | Éditeur | À faire |
 | 3 | Transferts hors UE (Anthropic, RevenueCat, maison mère de Supabase) : vérifier l'adhésion au *Data Privacy Framework* UE–États-Unis ou signer les clauses contractuelles types ; documenter l'évaluation des transferts | Éditeur + juriste | À faire |
 | 4 | Anthropic : vérifier la durée de conservation des requêtes de l'API et demander, si possible, la conservation zéro (*zero data retention*) ; s'assurer que les données ne servent pas à l'entraînement | Éditeur | À faire |
-| 5 | Programmer la purge quotidienne des photos (fonction `purge-photos`, secret `PURGE_SECRET`, tâche planifiée Supabase) | Développement | Code prêt |
+| 5 | Purge des photos toutes les heures (fonction `purge-photos`, tâche pg_cron créée par migration) : ranger `project_url` et `purge_secret` dans le coffre (README principal, point 7) | Développement + éditeur | Programmée (secrets à ranger) |
 | 6 | Écran de modification du profil enfant (rectification, retrait du consentement aux besoins particuliers) | Développement | Fait |
-| 7 | Conservation : supprimer les comptes inactifs depuis 24 mois (après avertissement par e-mail) et les événements d'effort de plus de 2 ans (fonction `purge-inactive`, tâche quotidienne) | Développement | Fait (à programmer) |
-| 7 bis | Programmer le bilan de la semaine par e-mail (fonction `weekly-recap`, dimanche vers 19 h, même secret `PURGE_SECRET`) : envoyé seulement aux parents qui l'ont demandé | Développement | Fait (à programmer) |
+| 7 | Conservation : supprimer les comptes inactifs depuis 24 mois (après avertissement par e-mail) et les événements d'effort de plus de 2 ans (fonction `purge-inactive`, tâche pg_cron chaque nuit) | Développement | Programmée (secrets à ranger) |
+| 7 bis | Programmer le bilan de la semaine par e-mail (fonction `weekly-recap`, tâche pg_cron le dimanche vers 19 h, même secret) : envoyé seulement aux parents qui l'ont demandé | Développement | Programmée (secrets à ranger) |
 | 8 | Ouvrir le compte Brevo (formule gratuite, 300 e-mails par jour), valider l'adresse d'expéditeur et le domaine, accepter son accord de sous-traitance : SMTP pour les e-mails de connexion (Supabase Auth) et clé d'API pour l'avertissement des comptes inactifs | Éditeur | Prestataire choisi |
 | 9 | Faire relire l'AIPD, la politique de confidentialité et les conditions d'utilisation par un juriste, en particulier l'envoi des photos **sans masquage** (noms possibles) au fournisseur d'IA | Éditeur | À faire |
 | 10 | Publier la politique de confidentialité et les conditions (liens exigés par Apple et Google) | Éditeur | À faire |

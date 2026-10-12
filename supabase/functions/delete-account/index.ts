@@ -1,5 +1,6 @@
 import { corsHeaders, json, UserFacingError } from '../_shared/http.ts';
 import { adminClient, authenticate } from '../_shared/supabase.ts';
+import { reportServerError } from '../_shared/monitoring.ts';
 
 /**
  * Suppression du compte (RGPD) : photos restantes, utilisateur, puis — par cascade —
@@ -30,7 +31,7 @@ Deno.serve(async (request) => {
     return json({ deleted: true });
   } catch (error) {
     if (error instanceof UserFacingError) return json({ error: error.message }, error.status);
-    console.error('delete-account', error);
+    await reportServerError('delete-account', error);
     return json({ error: 'La suppression a échoué. Réessayez ou contactez-nous.' }, 500);
   }
 });

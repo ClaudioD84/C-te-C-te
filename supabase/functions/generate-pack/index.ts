@@ -18,6 +18,7 @@ import {
 } from '../_shared/pack.ts';
 import { estimateCostUsd } from '../_shared/pricing.ts';
 import { adminClient, authenticateMember } from '../_shared/supabase.ts';
+import { reportServerError } from '../_shared/monitoring.ts';
 
 /**
  * Prépare le paquet d'étude d'une tâche (fiche, quiz, exercices, cartes) avec Claude.
@@ -173,7 +174,7 @@ Deno.serve(async (request) => {
     return json({ pack });
   } catch (error) {
     if (error instanceof UserFacingError) return json({ error: error.message }, error.status);
-    console.error('generate-pack', error);
+    await reportServerError('generate-pack', error);
     return json({ error: 'La préparation a échoué. Réessayez dans un instant.' }, 500);
   }
 });
