@@ -8,6 +8,7 @@ import {
   type Extraction,
 } from './extraction.ts';
 import { UserFacingError } from './http.ts';
+import { PACK_JSON_SCHEMA, PACK_SYSTEM_PROMPT } from './pack.ts';
 import type { Usage } from './pricing.ts';
 
 type Effort = 'low' | 'medium' | 'high';
@@ -70,6 +71,8 @@ export interface ExtractionResult {
   extraction: Extraction;
   model: string;
   usage: Usage;
+  /** Réponse brute (JSON) du modèle, gardée par le banc d'essai. */
+  text: string;
 }
 
 export async function extractTasksFromImage(input: {
@@ -88,5 +91,22 @@ export async function extractTasksFromImage(input: {
       { type: 'text', text: buildContext(input.grade, input.documentType, input.now) },
     ],
   });
-  return { extraction: parseExtraction(result.text, input.now), model: result.model, usage: result.usage };
+  return {
+    extraction: parseExtraction(result.text, input.now),
+    model: result.model,
+    usage: result.usage,
+    text: result.text,
+  };
+}
+
+/** Paquet d'étude d'une demande (texte construit par buildPackRequest) : fonction serveur et banc d'essai. */
+export function generatePackFromRequest(requestText: string): Promise<StructuredResult> {
+  return structuredCall({
+    model: PACK_MODEL,
+    effort: PACK_EFFORT,
+    system: PACK_SYSTEM_PROMPT,
+    schema: PACK_JSON_SCHEMA,
+    maxTokens: 32000,
+    content: [{ type: 'text', text: requestText }],
+  });
 }

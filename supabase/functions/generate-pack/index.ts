@@ -5,15 +5,13 @@ import {
   startOfMonthBrussels,
   type Subscription,
 } from '../_shared/access.ts';
-import { PACK_EFFORT, PACK_MODEL, structuredCall } from '../_shared/claude.ts';
+import { generatePackFromRequest } from '../_shared/claude.ts';
 import { z, type SupabaseClient } from '../_shared/deps.ts';
 import { corsHeaders, json, UserFacingError } from '../_shared/http.ts';
 import {
   buildPackRequest,
   curriculumSubjects,
   interestLabels,
-  PACK_JSON_SCHEMA,
-  PACK_SYSTEM_PROMPT,
   packRequestKey,
   parsePackResponse,
   type StudyPack,
@@ -140,14 +138,7 @@ Deno.serve(async (request) => {
     const problem = checkAccess(subscription as Subscription | null, count ?? 0, MONTHLY_PACK_QUOTA, now);
     if (problem) throw new UserFacingError(PACK_ACCESS_MESSAGES[problem], 402);
 
-    const result = await structuredCall({
-      model: PACK_MODEL,
-      effort: PACK_EFFORT,
-      system: PACK_SYSTEM_PROMPT,
-      schema: PACK_JSON_SCHEMA,
-      maxTokens: 32000,
-      content: [{ type: 'text', text: requestText }],
-    });
+    const result = await generatePackFromRequest(requestText);
     const { content, curriculumIndex } = parsePackResponse(result.text, curriculum?.length ?? 0);
     const curriculumItemId = curriculumIndex !== null ? (curriculum![curriculumIndex]!.id as string) : null;
 

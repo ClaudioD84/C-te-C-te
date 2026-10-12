@@ -178,7 +178,7 @@ Le modèle est **configurable par fonction** (variable d'environnement), pour aj
 - **Bêta : Claude Opus 5.5** (4 $ / 20 $ par million de tokens en entrée / sortie) pour la lecture des photos, avec un effort de réflexion bas (`SCAN_MODEL`, `SCAN_EFFORT`).
 - **Claude Sonnet 5.5** (2 $ / 10 $), deux fois moins cher, sera comparé sur les photos réelles de la bêta : on basculera si la qualité de lecture est équivalente.
 - La vue `ai_cost_monthly` donne le coût réel par famille et par mois pour décider.
-- Le choix définitif se fera **sur mesures** pendant la bêta : un petit jeu de photos et d'exercices de référence servira à comparer qualité et coût.
+- Le choix définitif se fera **sur mesures** : le banc d'essai (`pnpm banc-ia`, [supabase/functions/_banc-ia](../supabase/functions/_banc-ia/README.md)) rejoue des photos et des tâches de référence sur un modèle et un effort donnés, avec le même code que la production, et compare qualité (devoirs retrouvés, dates, notes d'un juge) et coût réel.
 
 ### 7.3 Maîtrise des coûts
 

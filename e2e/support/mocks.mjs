@@ -35,6 +35,16 @@ const answers = {
       },
     ],
   },
+  // Juge du banc d'essai de l'IA (supabase/functions/_banc-ia).
+  exactitude: {
+    exactitude: 5,
+    niveau: 4,
+    couverture: 5,
+    adaptations: null,
+    clarte: 4,
+    erreurs: [],
+    commentaire: 'Fiche claire et juste.',
+  },
   topicUnclear: {
     topicUnclear: false,
     // Premier attendu fourni (ou aucun s'il n'y en a pas : ignoré par le serveur).

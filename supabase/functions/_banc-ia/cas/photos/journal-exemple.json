@@ -1,0 +1,7 @@
+{
+  "id": "journal-exemple",
+  "grade": "P5",
+  "documentType": "journal_de_classe",
+  "today": "2026-10-12",
+  "tasks": [{ "subject": "Mathématiques", "kind": "devoir", "keywords": ["exercices"] }]
+}

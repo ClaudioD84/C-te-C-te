@@ -19,3 +19,7 @@ e2e/.web/
 e2e/test-results/
 e2e/playwright-report/
 e2e/.web-reseau/
+
+# Banc d'essai de l'IA : vos vraies photos et les rapports restent sur votre ordinateur
+supabase/functions/_banc-ia/cas-prives/
+supabase/functions/_banc-ia/resultats/

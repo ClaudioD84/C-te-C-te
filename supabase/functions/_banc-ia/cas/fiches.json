@@ -1,0 +1,33 @@
+[
+  { "id": "p2-sons", "grade": "P2", "subject": "Français", "kind": "lecon", "description": "Étudier les sons « ou » et « on »" },
+  { "id": "p3-tables", "grade": "P3", "subject": "Mathématiques", "kind": "lecon", "description": "Étudier les tables de multiplication par 6 et 7" },
+  { "id": "p4-cycle-eau", "grade": "P4", "subject": "Éveil", "kind": "interro", "description": "Le cycle de l'eau" },
+  {
+    "id": "p5-participe-dys",
+    "grade": "P5",
+    "needs": ["dyslexie"],
+    "subject": "Français",
+    "kind": "interro",
+    "description": "Accord du participe passé employé avec avoir"
+  },
+  {
+    "id": "p6-fractions-dyscalculie",
+    "grade": "P6",
+    "needs": ["dyscalculie"],
+    "subject": "Mathématiques",
+    "kind": "examen",
+    "description": "Fractions : comparer, additionner et simplifier"
+  },
+  { "id": "p6-belgique", "grade": "P6", "subject": "Éveil", "kind": "lecon", "description": "Les régions et les communautés de Belgique" },
+  { "id": "s1-neerlandais", "grade": "S1", "subject": "Néerlandais", "kind": "lecon", "description": "Vocabulaire de la maison (de keuken, de slaapkamer, de badkamer…)" },
+  { "id": "s2-photosynthese-tdah", "grade": "S2", "needs": ["tdah"], "subject": "Sciences", "kind": "interro", "description": "La photosynthèse" },
+  {
+    "id": "s3-revolution-industrielle",
+    "grade": "S3",
+    "interests": ["le football"],
+    "subject": "Histoire",
+    "kind": "lecon",
+    "description": "La révolution industrielle en Belgique"
+  },
+  { "id": "s4-second-degre", "grade": "S4", "subject": "Mathématiques", "kind": "interro", "description": "Équations du second degré : discriminant et solutions" }
+]

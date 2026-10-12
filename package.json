@@ -20,7 +20,8 @@
     "demo": "node e2e/support/demo.mjs",
     "demo:iphone": "node e2e/support/demo.mjs --iphone",
     "beta": "node scripts/beta/beta.mjs",
-    "deploy:web": "cd apps/mobile && npx expo export --platform web && npx eas-cli@latest deploy --prod"
+    "deploy:web": "cd apps/mobile && npx expo export --platform web && npx eas-cli@latest deploy --prod",
+    "banc-ia": "cd supabase/functions && deno run --allow-read --allow-write --allow-env --allow-net _banc-ia/banc.ts"
   },
   "devDependencies": {
     "deno": "2.9.6",
