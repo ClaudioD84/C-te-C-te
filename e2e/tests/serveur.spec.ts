@@ -273,3 +273,49 @@ test('erreur inattendue d’une fonction serveur : journalisée avec les erreurs
     )
     .not.toBe('0');
 });
+
+test('fiches : une demande identique d’une autre famille réutilise la fiche, sans IA ni quota', async ({
+  request,
+}) => {
+  // Texte de tâche propre à ce test (les autres tests tournent en parallèle sur la même base).
+  const description = `Étudier les volcans ${crypto.randomUUID().slice(0, 8)}`;
+  const familyWithTask = async () => {
+    const parent = await createParent(request);
+    const child = await request.post(`${GATEWAY_URL}/rest/v1/child_profile`, {
+      headers: { ...headers(parent.token), Prefer: 'return=representation' },
+      data: { alias: 'Lynx', grade: 'P5' },
+    });
+    const [{ id: childId }] = await child.json();
+    const task = await request.post(`${GATEWAY_URL}/rest/v1/task`, {
+      headers: { ...headers(parent.token), Prefer: 'return=representation' },
+      data: { child_id: childId, subject: 'Éveil', kind: 'lecon', description, status: 'validated' },
+    });
+    const [{ id: taskId }] = await task.json();
+    const pack = await request.post(`${GATEWAY_URL}/functions/v1/generate-pack`, {
+      headers: headers(parent.token),
+      data: { taskId },
+    });
+    expect(pack.ok()).toBeTruthy();
+    const usage = (fn: string) =>
+      sql(`select count(*) from ai_usage where family_id = '${parent.familyId}' and function_name = '${fn}'`);
+    return { ...parent, childId, pack: (await pack.json()).pack, usage };
+  };
+
+  const first = await familyWithTask();
+  expect(first.usage('generate-pack')).toBe('1');
+
+  const second = await familyWithTask();
+  expect(second.usage('generate-pack')).toBe('0');
+  expect(second.usage('generate-pack-reutilise')).toBe('1');
+  expect(second.pack.content).toEqual(first.pack.content);
+  expect(Number(sql(`select count(*) from flashcard where child_id = '${second.childId}'`))).toBeGreaterThan(
+    0,
+  );
+
+  // Une fiche signalée par un parent n'est plus jamais reprise.
+  sql(`update study_pack set reported_at = now(), report_reason = 'Erreur' where family_id in
+       ('${first.familyId}', '${second.familyId}')`);
+  const third = await familyWithTask();
+  expect(third.usage('generate-pack')).toBe('1');
+  expect(third.usage('generate-pack-reutilise')).toBe('0');
+});

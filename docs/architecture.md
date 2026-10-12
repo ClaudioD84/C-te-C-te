@@ -184,7 +184,7 @@ Le modèle est **configurable par fonction** (variable d'environnement), pour aj
 
 - **Mise en cache des consignes** (en place) : la partie fixe des requêtes (consignes) est placée en tête et marquée pour le cache de l'API ; utile quand plusieurs requêtes se suivent en quelques minutes (fiches préparées à la publication d'un planning).
 - **Coût mesuré** (en place) : chaque appel est journalisé dans `ai_usage` avec son coût estimé, y compris quand l'API bascule vers un modèle de secours ; `pnpm beta stats` donne le coût par famille.
-- **Réutilisation des fiches** (prévu) : une fiche générée pour une tâche identique (même matière, même consigne, même année, mêmes adaptations) pourrait servir à une autre famille, une fiche ne contenant aucune donnée personnelle.
+- **Réutilisation des fiches** (en place) : avant d'appeler l'IA, `generate-pack` cherche une fiche déjà préparée pour une demande strictement identique (empreinte SHA-256 de la consigne et du texte complet de la demande : année, section, adaptations, centres d'intérêt, attendus, tâche). Elle est copiée sans appel à l'IA ni quota consommé ; jamais pour une régénération ni à partir d'une fiche signalée. Une famille ne reçoit ainsi rien qu'elle n'ait déjà écrit elle-même. Taux de réutilisation dans `pnpm beta stats`.
 - **Traitements groupés** (prévu) : l'API Message Batches (environ 50 % moins chère, résultat asynchrone) pour les fiches des tâches à échéance lointaine. Non retenu pour l'instant : la fiche doit souvent être prête le jour même.
 - **Quotas par formule** (photos analysables par mois : essai 40, Solo 80, Famille 200) et journal `ai_usage` pour suivre le coût réel par famille.
 

@@ -83,6 +83,15 @@ switch (command) {
         'IA ($)': Number(r.ai_cost_usd).toFixed(2),
       })),
     );
+    // Fiches : préparées par l'IA ou reprises d'une demande identique (sans coût).
+    const packs = await call(
+      `ai_usage?select=function_name&created_at=gte.${since(days)}&function_name=in.(generate-pack,generate-pack-reutilise)`,
+    );
+    const reused = packs.filter((p) => p.function_name === 'generate-pack-reutilise').length;
+    if (packs.length > 0)
+      console.log(
+        `Fiches : ${packs.length} dont ${reused} réutilisées (${Math.round((100 * reused) / packs.length)} %, sans coût IA)`,
+      );
     const active = rows.filter((r) => r.active_days >= 3).length;
     const cost = rows.reduce((sum, r) => sum + Number(r.ai_cost_usd), 0);
     console.log(

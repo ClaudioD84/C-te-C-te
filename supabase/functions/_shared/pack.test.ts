@@ -126,3 +126,15 @@ Deno.test('centres d’intérêt : liste fermée, 3 au plus, glissés dans la de
   });
   assertStringIncludes(request, "Centres d'intérêt de l'élève : les dinosaures.");
 });
+
+Deno.test(
+  'empreinte de demande : stable aux espaces et majuscules, différente si la demande change',
+  async () => {
+    const { packRequestKey } = await import('./pack.ts');
+    const a = await packRequestKey('Élève en 5e primaire.\nTâche : Étudier les tables de 7.');
+    assertEquals(a, await packRequestKey('  élève en 5e primaire.   tâche : étudier les tables de 7. '));
+    assertEquals(a.length, 64);
+    const other = await packRequestKey('Élève en 5e primaire.\nTâche : Étudier les tables de 8.');
+    assertEquals(a === other, false);
+  },
+);

@@ -6,7 +6,7 @@ import {
   type Subscription,
 } from '../_shared/access.ts';
 import { PACK_EFFORT, PACK_MODEL, structuredCall } from '../_shared/claude.ts';
-import { z } from '../_shared/deps.ts';
+import { z, type SupabaseClient } from '../_shared/deps.ts';
 import { corsHeaders, json, UserFacingError } from '../_shared/http.ts';
 import {
   buildPackRequest,
@@ -14,7 +14,9 @@ import {
   interestLabels,
   PACK_JSON_SCHEMA,
   PACK_SYSTEM_PROMPT,
+  packRequestKey,
   parsePackResponse,
+  type StudyPack,
 } from '../_shared/pack.ts';
 import { estimateCostUsd } from '../_shared/pricing.ts';
 import { adminClient, authenticateMember } from '../_shared/supabase.ts';
@@ -59,6 +61,67 @@ Deno.serve(async (request) => {
       .maybeSingle();
     if (existing && !regenerate) return json({ pack: existing });
 
+    const { data: child } = await admin
+      .from('child_profile')
+      .select('grade, track, needs, preferences')
+      .eq('id', task.child_id)
+      .single();
+    if (!child) throw new Error('Profil introuvable');
+
+    const { data: curriculum } = await admin
+      .from('curriculum_item')
+      .select('id, label')
+      .contains('grades', [child.grade])
+      .contains('tracks', [child.track])
+      .in('subject', curriculumSubjects(task.subject))
+      .eq('kind', 'attendu')
+      // Ordre stable : deux demandes identiques donnent le même texte, donc la même empreinte (réutilisation).
+      .order('code', { nullsFirst: false })
+      .order('label')
+      .order('id')
+      .limit(60);
+
+    const requestText = buildPackRequest({
+      grade: child.grade,
+      track: child.track,
+      needs: child.needs ?? [],
+      interests: interestLabels(child.preferences?.interests),
+      task,
+      curriculum: (curriculum ?? []).map((c) => c.label as string),
+    });
+    const requestKey = await packRequestKey(requestText);
+
+    // Demande identique déjà préparée (pour cette famille ou une autre) : la fiche est copiée, sans appel à l'IA
+    // ni quota consommé. Jamais pour une régénération, ni à partir d'une fiche signalée.
+    if (!regenerate) {
+      const { data: reusable } = await admin
+        .from('study_pack')
+        .select('content, model, curriculum_item_id')
+        .eq('request_key', requestKey)
+        .is('reported_at', null)
+        .order('created_at', { ascending: false })
+        .limit(1)
+        .maybeSingle();
+      if (reusable) {
+        const pack = await savePack(admin, {
+          familyId,
+          task,
+          content: reusable.content as StudyPack,
+          model: reusable.model as string,
+          requestKey,
+          curriculumItemId: reusable.curriculum_item_id as string | null,
+          replace: existing?.id ?? null,
+        });
+        await admin.from('ai_usage').insert({
+          family_id: familyId,
+          function_name: 'generate-pack-reutilise',
+          model: reusable.model,
+          cost_usd: 0,
+        });
+        return json({ pack });
+      }
+    }
+
     const now = new Date();
     const [{ data: subscription }, { count }] = await Promise.all([
       admin
@@ -77,89 +140,26 @@ Deno.serve(async (request) => {
     const problem = checkAccess(subscription as Subscription | null, count ?? 0, MONTHLY_PACK_QUOTA, now);
     if (problem) throw new UserFacingError(PACK_ACCESS_MESSAGES[problem], 402);
 
-    const { data: child } = await admin
-      .from('child_profile')
-      .select('grade, track, needs, preferences')
-      .eq('id', task.child_id)
-      .single();
-    if (!child) throw new Error('Profil introuvable');
-
-    const { data: curriculum } = await admin
-      .from('curriculum_item')
-      .select('id, label')
-      .contains('grades', [child.grade])
-      .contains('tracks', [child.track])
-      .in('subject', curriculumSubjects(task.subject))
-      .eq('kind', 'attendu')
-      .limit(60);
-
     const result = await structuredCall({
       model: PACK_MODEL,
       effort: PACK_EFFORT,
       system: PACK_SYSTEM_PROMPT,
       schema: PACK_JSON_SCHEMA,
       maxTokens: 32000,
-      content: [
-        {
-          type: 'text',
-          text: buildPackRequest({
-            grade: child.grade,
-            track: child.track,
-            needs: child.needs ?? [],
-            interests: interestLabels(child.preferences?.interests),
-            task,
-            curriculum: (curriculum ?? []).map((c) => c.label as string),
-          }),
-        },
-      ],
+      content: [{ type: 'text', text: requestText }],
     });
     const { content, curriculumIndex } = parsePackResponse(result.text, curriculum?.length ?? 0);
+    const curriculumItemId = curriculumIndex !== null ? (curriculum![curriculumIndex]!.id as string) : null;
 
-    // Régénération : l'ancien paquet et ses cartes sont remplacés.
-    if (existing) await admin.from('study_pack').delete().eq('id', existing.id);
-    const { data: pack, error } = await admin
-      .from('study_pack')
-      .insert({
-        family_id: familyId,
-        child_id: task.child_id,
-        task_id: task.id,
-        content,
-        model: result.model,
-      })
-      .select(PACK_COLUMNS)
-      .single();
-    if (error) {
-      // Génération simultanée : on renvoie le paquet déjà enregistré.
-      const { data: concurrent } = await admin
-        .from('study_pack')
-        .select(PACK_COLUMNS)
-        .eq('task_id', taskId)
-        .maybeSingle();
-      if (concurrent) return json({ pack: concurrent });
-      throw error;
-    }
-
-    if (content.flashcards.length > 0) {
-      const { error: cardsError } = await admin.from('flashcard').insert(
-        content.flashcards.map((card) => ({
-          family_id: familyId,
-          child_id: task.child_id,
-          pack_id: pack.id,
-          front: card.front,
-          back: card.back,
-        })),
-      );
-      if (cardsError) throw cardsError;
-    }
-
-    // Rattachement au programme (F2), sans jamais remplacer un choix du parent.
-    if (curriculumIndex !== null && !task.curriculum_item_id) {
-      await admin
-        .from('task')
-        .update({ curriculum_item_id: curriculum![curriculumIndex]!.id })
-        .eq('id', task.id)
-        .is('curriculum_item_id', null);
-    }
+    const pack = await savePack(admin, {
+      familyId,
+      task,
+      content,
+      model: result.model,
+      requestKey,
+      curriculumItemId,
+      replace: existing?.id ?? null,
+    });
 
     await admin.from('ai_usage').insert({
       family_id: familyId,
@@ -178,3 +178,75 @@ Deno.serve(async (request) => {
     return json({ error: 'La préparation a échoué. Réessayez dans un instant.' }, 500);
   }
 });
+
+interface PackTask {
+  id: string;
+  child_id: string;
+  curriculum_item_id: string | null;
+}
+
+/**
+ * Enregistre le paquet d'une tâche et ses cartes de révision, et rattache la tâche au programme (F2) sans
+ * jamais remplacer un choix du parent. Régénération : l'ancien paquet et ses cartes sont remplacés.
+ * Génération simultanée : le paquet déjà enregistré est renvoyé.
+ */
+async function savePack(
+  admin: SupabaseClient,
+  input: {
+    familyId: string;
+    task: PackTask;
+    content: StudyPack;
+    model: string;
+    requestKey: string;
+    curriculumItemId: string | null;
+    replace: string | null;
+  },
+) {
+  const { familyId, task, content } = input;
+  if (input.replace) await admin.from('study_pack').delete().eq('id', input.replace);
+  const { data: pack, error } = await admin
+    .from('study_pack')
+    .insert({
+      family_id: familyId,
+      child_id: task.child_id,
+      task_id: task.id,
+      content,
+      model: input.model,
+      request_key: input.requestKey,
+      curriculum_item_id: input.curriculumItemId,
+    })
+    .select(PACK_COLUMNS)
+    .single();
+  if (error) {
+    const { data: concurrent } = await admin
+      .from('study_pack')
+      .select(PACK_COLUMNS)
+      .eq('task_id', task.id)
+      .maybeSingle();
+    if (concurrent) return concurrent;
+    throw error;
+  }
+
+  if (content.flashcards.length > 0) {
+    const { error: cardsError } = await admin.from('flashcard').insert(
+      content.flashcards.map((card) => ({
+        family_id: familyId,
+        child_id: task.child_id,
+        pack_id: pack.id,
+        front: card.front,
+        back: card.back,
+      })),
+    );
+    if (cardsError) throw cardsError;
+  }
+
+  // Rattachement au programme (F2), sans jamais remplacer un choix du parent.
+  if (input.curriculumItemId && !task.curriculum_item_id) {
+    await admin
+      .from('task')
+      .update({ curriculum_item_id: input.curriculumItemId })
+      .eq('id', task.id)
+      .is('curriculum_item_id', null);
+  }
+  return pack;
+}

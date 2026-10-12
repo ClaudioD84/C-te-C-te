@@ -1,5 +1,6 @@
 import { z } from './deps.ts';
 import { GRADE_LABELS } from './extraction.ts';
+import { sha256Hex } from './pairing.ts';
 
 /**
  * Paquet d'étude (fiche, quiz, exercices, cartes) pour une tâche.
@@ -182,6 +183,16 @@ export function buildPackRequest(input: {
   if (input.task.description.startsWith(MOCK_EXAM_PREFIX)) lines.push(...MOCK_EXAM_INSTRUCTIONS);
   lines.push('Prépare le paquet d’étude.');
   return lines.join('\n');
+}
+
+/**
+ * Empreinte d'une demande de fiche : consigne système et texte complet de la demande (année, section,
+ * adaptations, centres d'intérêt, attendus, tâche), espaces et majuscules mis à part. Deux demandes de même
+ * empreinte reçoivent la même fiche : une famille ne reçoit jamais rien qu'elle n'ait déjà écrit elle-même.
+ */
+export function packRequestKey(requestText: string): Promise<string> {
+  const normalize = (text: string) => text.replace(/\s+/g, ' ').trim().toLocaleLowerCase('fr');
+  return sha256Hex(`${normalize(PACK_SYSTEM_PROMPT)}\n---\n${normalize(requestText)}`);
 }
 
 const packResponseSchema = z
