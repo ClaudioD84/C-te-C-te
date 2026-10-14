@@ -53,7 +53,9 @@ Version web en ligne (`pnpm deploy:web`), codes d'invitation et suivi des testeu
 ## Mettre en ligne le serveur
 
 1. Créer un projet sur [supabase.com](https://supabase.com) dans la région **Europe (Frankfurt)**.
-2. Relier le dépôt et appliquer les migrations : `pnpm exec supabase link --project-ref <ref>` puis `pnpm exec supabase db push`.
+2. Relier le dépôt et appliquer les migrations : `pnpm exec supabase link --project-ref <ref>` puis
+   `pnpm exec supabase db push --include-seed` (sans `--include-seed`, les référentiels du programme et les
+   contenus culturels de `supabase/seed` ne sont pas chargés ; relancer est sans risque).
 3. Ajouter la clé de l'API Claude : `pnpm exec supabase secrets set ANTHROPIC_API_KEY=...`
    (facultatif : `SCAN_MODEL`, `SCAN_EFFORT`, `PACK_MODEL`, `PACK_EFFORT` pour régler le modèle et l'effort
    de la lecture des photos et de la préparation des fiches).
