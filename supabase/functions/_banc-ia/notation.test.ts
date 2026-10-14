@@ -66,4 +66,8 @@ Deno.test('fiche : vide ou trop maigre signalée', () => {
     flashcards: [1, 2, 3],
   };
   assertEquals(checkPack(full), { ok: true, problems: [] });
+  const open = { accepted: [] };
+  assertEquals(checkPack({ ...full, exercises: [open, open, open, { accepted: ['8'] }] }).problems, [
+    'exercices sans réponse vérifiable (3 sur 4)',
+  ]);
 });

@@ -39,15 +39,36 @@ test('cartes de langues : lues avec la voix de la langue, « Écoute et choisis 
   await enterChildMode(page, 'Ours');
   const spoken = () => page.evaluate(() => (window as unknown as { __spoken: [string, string][] }).__spoken);
 
-  // Révision des cartes : la question en français, la réponse en néerlandais de Belgique.
+  // Révision des cartes : la question en français, l'enfant tape la traduction (avec l'article), la réponse
+  // est lue en néerlandais de Belgique.
+  const vocabulary: Record<string, string> = {
+    'le chien': 'de hond',
+    'le chat': 'de kat',
+    'la maison': 'het huis',
+    'le livre': 'het boek',
+    'le vélo': 'de fiets',
+  };
   await button(page, 'Cartes à revoir (5)').click();
   await button(page, 'Écouter la question').click();
-  await page.getByRole('button', { name: /^Question : / }).click();
+  const front = (await page.getByTestId('carte-question').innerText()).trim();
+  const back = vocabulary[front]!;
+  await page.getByLabel('Ta réponse', { exact: true }).fill(back.split(' ')[1]!);
+  await button(page, 'Vérifier').click();
+  await expect(page.getByText('Presque ! Vérifie l’article.')).toBeVisible();
+  await page.getByLabel('Ta réponse', { exact: true }).fill(back);
+  await button(page, 'Vérifier').click();
+  await expect(page.getByText('Bravo, c’est juste !')).toBeVisible();
   await button(page, 'Écouter la réponse').click();
   const [question, answer] = await spoken();
-  expect(question![1]).toBe('fr-BE');
-  expect(answer![1]).toBe('nl-BE');
-  expect(['de hond', 'de kat', 'het huis', 'het boek', 'de fiets']).toContain(answer![0]);
+  expect(question).toEqual([front, 'fr-BE']);
+  expect(answer).toEqual([back, 'nl-BE']);
+  // Juste au deuxième essai : la carte reviendra un peu plus tôt.
+  await button(page, 'Carte suivante').click();
+  await expect
+    .poll(() =>
+      sql(`select meta->>'rating' from learning_event where child_id = '${childId}' and type = 'carte'`),
+    )
+    .toBe('difficile');
   await button(page, "Arrêter pour aujourd'hui").click();
 
   // Écoute et choisis : 5 mots, 4 sens proposés à chaque fois.

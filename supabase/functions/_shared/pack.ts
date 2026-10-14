@@ -30,6 +30,8 @@ export const studyPackSchema = z.object({
     z.object({
       instruction: z.string().min(1),
       prompt: z.string().min(1),
+      // Vide pour les paquets enregistrés avant ce champ (fiches réutilisées, « réexpliquer »).
+      accepted: z.array(z.string().min(1)).default([]),
       answer: z.string().min(1),
       hint: z.string().min(1).nullable(),
     }),
@@ -69,7 +71,16 @@ export const PACK_JSON_SCHEMA = obj({
       explanation: str,
     }),
   },
-  exercises: { type: 'array', items: obj({ instruction: str, prompt: str, answer: str, hint: nullableStr }) },
+  exercises: {
+    type: 'array',
+    items: obj({
+      instruction: str,
+      prompt: str,
+      accepted: { type: 'array', items: str },
+      answer: str,
+      hint: nullableStr,
+    }),
+  },
   flashcards: { type: 'array', items: obj({ front: str, back: str }) },
 });
 
@@ -79,8 +90,11 @@ Tu prépares un paquet d'étude pour aider un élève à travailler une tâche d
 Le paquet contient :
 - "fiche" : une fiche de synthèse (titre, 2 à 4 sections de points courts, mots-clés avec définition) ;
 - "quiz" : des questions à choix multiples (2 à 4 choix, une seule bonne réponse, explication courte et bienveillante) ;
-- "exercises" : des exercices d'entraînement avec la réponse attendue, seulement si la matière s'y prête
-  (mathématiques, grammaire, conjugaison, orthographe, langues…) ; sinon une liste vide ;
+- "exercises" : des exercices d'entraînement que l'élève fait dans l'application, seulement si la matière s'y
+  prête (mathématiques, grammaire, conjugaison, orthographe, langues…) ; sinon une liste vide. Pour chacun :
+  "instruction" (la consigne), "prompt" (l'énoncé : une seule question), "accepted" (les réponses courtes que
+  l'élève tape et que l'application vérifie), "answer" (la correction : la réponse et comment la trouver, en
+  une ou deux phrases), "hint" (un indice qui aide sans donner la réponse, ou null) ;
 - "flashcards" : des cartes question / réponse pour mémoriser (vocabulaire, définitions, dates, formules, règles).
 
 Règles :
@@ -96,7 +110,15 @@ Règles :
    aucun ne correspond clairement (ou si aucun attendu n'est fourni).
 8. Langue étrangère (néerlandais, anglais, allemand…) : pour le vocabulaire, au recto de la carte le mot ou
    l'expression en français, au verso seulement sa traduction dans la langue étudiée (avec l'article : de/het,
-   der/die/das…), sans autre texte : l'application la lit à voix haute.`;
+   der/die/das…), sans autre texte : l'application la lit à voix haute.
+9. L'élève répond lui-même avant de voir la correction. Exercices : une question à réponse courte et unique
+   (un nombre, un mot ou un groupe de 3 mots au plus). "accepted" donne toutes les formes correctes de cette
+   réponse, sans phrase autour (par ex. ["8", "huit"], ["ils mangent"], ["12 cm"] si l'unité est demandée,
+   ["3/4"] pour une fraction sous la forme attendue). Une production libre (phrase, paragraphe, dessin) n'est
+   permise que si la tâche l'exige, deux au plus : "accepted" est alors une liste vide et "answer" donne un
+   exemple de bonne réponse.
+10. Cartes : au verso, une réponse courte dès que possible (un mot, un nom, une date, un nombre, une formule :
+   3 mots au plus), que l'élève tape et que l'application vérifie ; sinon une phrase courte.`;
 
 /**
  * Besoins particuliers traduits en consignes de rédaction. Minimisation (RGPD) : le trouble lui-même

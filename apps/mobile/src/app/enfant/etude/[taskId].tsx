@@ -129,9 +129,11 @@ export default function StudyScreen() {
         ) : null}
         {current === 'exercices' ? (
           <ExerciseList
+            key={pack.data?.id}
             exercises={content.exercises}
             settings={settings}
             mathSupport={settings.visualMath && isMathSubject(subject ?? '')}
+            onFinish={(succeeded, total) => logQuiz(taskId, succeeded, total, 'exercices')}
           />
         ) : null}
         {current === 'ecoute' ? (

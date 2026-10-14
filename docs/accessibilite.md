@@ -11,7 +11,9 @@ iPhone (VoiceOver) et un Android (TalkBack), avant chaque version publique.
 - [ ] Les choix (année, matière, besoins, jours) annoncent « bouton radio » ou « case à cocher » et leur état.
 - [ ] Code parent : chaque chiffre est annoncé, l'avancement (« 2 chiffres sur 4 ») aussi, jamais le code saisi.
 - [ ] Quiz : après une réponse, « bonne réponse » ou « ta réponse » est lu avec le choix ; l'explication est annoncée.
-- [ ] Cartes de révision : la question puis la réponse sont lues ; les boutons de note sont atteignables.
+- [ ] Cartes de révision et exercices : la question est lue, le champ « Ta réponse » est annoncé, le verdict
+      (« Bravo », « Presque ! Vérifie… », « Pas encore ») est lu dès qu'il apparaît, puis la réponse ou la correction ;
+      les boutons de note sont atteignables.
 - [ ] Minuteur Pomodoro : la phase (travail, pause) est annoncée quand elle change ; l'avancement est lu.
 - [ ] Bandeau « Pas de connexion » annoncé quand le réseau tombe.
 - [ ] Photo du journal : l'aperçu est annoncé (« Photo à envoyer ») avant l'envoi.

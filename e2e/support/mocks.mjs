@@ -80,6 +80,7 @@ const answers = {
       {
         instruction: 'Complète.',
         prompt: 'Namur est au confluent de la Meuse et de la …',
+        accepted: ['Sambre'],
         answer: 'Sambre',
         hint: 'Une rivière qui passe à Charleroi.',
       },

@@ -19,7 +19,15 @@ const pack: StudyPack = {
       explanation: 'Liège est sur la Meuse.',
     },
   ],
-  exercises: [{ instruction: 'Complète.', prompt: 'Namur : Meuse et …', answer: 'Sambre', hint: null }],
+  exercises: [
+    {
+      instruction: 'Complète.',
+      prompt: 'Namur : Meuse et …',
+      accepted: ['Sambre'],
+      answer: 'Sambre',
+      hint: null,
+    },
+  ],
   flashcards: [],
 };
 const meta = { subject: 'Éveil', description: 'Revoir les fleuves', dueLabel: 'jeudi 8 oct.' };

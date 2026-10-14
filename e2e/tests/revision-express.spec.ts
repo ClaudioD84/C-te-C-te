@@ -6,6 +6,7 @@ import {
   enterChildMode,
   insertValidatedTasks,
   publishPlanning,
+  reviewCard,
   signUp,
   sql,
 } from './helpers';
@@ -31,8 +32,7 @@ test('révision express la veille d’une interro : toutes ses cartes, une fois'
   await expect(page.getByText(/^⚡ Demain : /)).toBeVisible();
   await button(page, `Révision express (${cards} carte${cards > 1 ? 's' : ''})`).click();
   await expect(page.getByText(new RegExp(`encore ${cards} carte`))).toBeVisible();
-  await page.getByRole('button', { name: /^Question : / }).click();
-  await button(page, 'Facile !').click();
+  await reviewCard(page);
   if (cards > 1) await expect(page.getByText(new RegExp(`encore ${cards - 1} carte`))).toBeVisible();
   else await expect(page.getByText('Bravo, 1 carte revue !')).toBeVisible();
 });

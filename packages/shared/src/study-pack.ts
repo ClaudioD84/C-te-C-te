@@ -26,6 +26,12 @@ export const quizQuestionSchema = z
 export const exerciseSchema = z.object({
   instruction: z.string().min(1),
   prompt: z.string().min(1),
+  /**
+   * Réponses courtes acceptées, que l'enfant tape et que l'application vérifie (checkAnswer). Vide : production
+   * libre, l'enfant compare lui-même avec la correction (et pour les paquets préparés avant ce champ).
+   */
+  accepted: z.array(z.string().min(1)).default([]),
+  /** Correction complète : la réponse et comment la trouver. */
   answer: z.string().min(1),
   hint: z.string().min(1).nullable(),
 });

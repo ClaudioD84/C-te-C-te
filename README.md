@@ -134,6 +134,9 @@ secondaire, S3/S4 à S6/S7, selon la filière (9 364 entrées) ; voir `scripts/r
 - fiche de synthèse, quiz, exercices et cartes préparés par Claude pour chaque leçon ou évaluation,
   dès la publication du planning ; signalement d'erreur et régénération par le parent ;
 - cartes de révision à répétition espacée, ramenées avant la date de l'évaluation ;
+- exercices et cartes : l'enfant tape sa réponse avant de voir la correction ; l'application la vérifie
+  (accents, article d'une langue, unité ou petite faute : « presque », il corrige lui-même), ou l'enfant compare
+  lui-même pour une réponse longue ; résultats des exercices dans le suivi ;
 - export « Print & Go » : PDF accessible (Lexend, grands espacements, réponses sur une page séparée) ;
 - police Lexend dans l'application pour les profils dyslexie ;
 - compétences terminales du secondaire supérieur, filtrées selon la filière de l'enfant (transition ou qualification).

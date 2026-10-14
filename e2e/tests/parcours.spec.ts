@@ -11,6 +11,7 @@ import {
   sql,
   openTraining,
   childTitle,
+  reviewCard,
 } from './helpers';
 
 test('parcours complet : profil, planning, fiches, console enfant, suivi, dossier de révision', async ({
@@ -74,6 +75,26 @@ test('parcours complet : profil, planning, fiches, console enfant, suivi, dossie
     await button(page, "L'Escaut").click();
     await button(page, 'Voir le résultat').click();
     await expect(page.getByText('Quiz terminé !')).toBeVisible();
+
+    // Exercices : l'enfant tape sa réponse, l'application la vérifie avant de montrer la correction.
+    await page.getByRole('radio', { name: 'Exercices' }).click();
+    await expect(button(page, 'Voir la correction')).toHaveCount(0);
+    await page.getByLabel('Ta réponse', { exact: true }).fill('Escaut');
+    await button(page, 'Vérifier').click();
+    await expect(page.getByText('Pas encore. Relis l’énoncé et essaie encore !')).toBeVisible();
+    await button(page, 'Un indice').click();
+    await expect(page.getByText('Indice : Une rivière qui passe à Charleroi.')).toBeVisible();
+    await page.getByLabel('Ta réponse', { exact: true }).fill('la sambre');
+    await button(page, 'Vérifier').click();
+    await expect(page.getByText('Bravo, c’est juste !')).toBeVisible();
+    await expect(page.getByText('Exercices terminés !')).toBeVisible();
+    await expect
+      .poll(() =>
+        sql(
+          `select meta->>'score' || '/' || (meta->>'total') from learning_event where child_id = '${childId}' and meta->>'mode' = 'exercices'`,
+        ),
+      )
+      .toBe('1/1');
     await button(page, 'Retour à la mission').click();
     // L'ordre des activités du jour varie : on coche après l'entraînement.
     await button(page, "C'est fait !").first().click();
@@ -86,8 +107,7 @@ test('parcours complet : profil, planning, fiches, console enfant, suivi, dossie
       .not.toBe('0');
 
     await button(page, /Cartes à revoir/).click();
-    await page.getByRole('button', { name: /^Question :/ }).click();
-    await button(page, 'Facile !').click();
+    await reviewCard(page);
     await expect
       .poll(() =>
         sql(`select count(*) from flashcard where child_id = '${childId}' and last_reviewed_at is not null`),

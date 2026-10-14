@@ -145,3 +145,25 @@ export async function openTraining(page: Page, section?: 'Fiche' | 'Quiz') {
 export async function openTools(page: Page, alias: string) {
   await button(page, `Plus d’outils pour ${alias}`).click();
 }
+
+/** Réponses des cartes du paquet simulé (e2e/support/mocks.mjs) ; null : réponse longue, dite à voix haute. */
+const CARD_ANSWERS: Record<string, string | null> = {
+  'Fleuve qui traverse Liège': 'Meuse',
+  'Fleuve qui passe à Anvers': "l'Escaut",
+  'Où se jette la Meuse ?': null,
+};
+
+/** Répond à la carte affichée (tapée et vérifiée, ou dite à voix haute), puis la note « Facile ! ». */
+export async function reviewCard(page: Page) {
+  const question = (await page.getByTestId('carte-question').innerText()).trim();
+  const answer = CARD_ANSWERS[question];
+  if (answer === undefined) throw new Error(`Carte inconnue : ${question}`);
+  if (answer) {
+    await page.getByLabel('Ta réponse', { exact: true }).fill(answer);
+    await button(page, 'Vérifier').click();
+    await expect(page.getByText('Bravo, c’est juste !')).toBeVisible();
+  } else {
+    await button(page, 'Je l’ai dite à voix haute').click();
+  }
+  await button(page, 'Facile !').click();
+}

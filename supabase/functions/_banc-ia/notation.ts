@@ -142,7 +142,7 @@ export function checkPack(pack: {
   topicUnclear: boolean;
   fiche: { sections: unknown[] } | null;
   quiz: unknown[];
-  exercises: unknown[];
+  exercises: { accepted?: unknown[] }[];
   flashcards: unknown[];
 }): { ok: boolean; problems: string[] } {
   const problems: string[] = [];
@@ -150,5 +150,8 @@ export function checkPack(pack: {
   if (!pack.fiche || pack.fiche.sections.length === 0) problems.push('fiche vide');
   if (pack.quiz.length < 3) problems.push(`quiz trop court (${pack.quiz.length})`);
   if (pack.flashcards.length < 3) problems.push(`trop peu de cartes (${pack.flashcards.length})`);
+  // L'élève tape sa réponse : sans réponse acceptée, l'application ne peut pas la vérifier.
+  const open = pack.exercises.filter((e) => (e.accepted ?? []).length === 0).length;
+  if (open > 2) problems.push(`exercices sans réponse vérifiable (${open} sur ${pack.exercises.length})`);
   return { ok: problems.length === 0, problems };
 }

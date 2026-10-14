@@ -35,6 +35,16 @@ Deno.test('bonne réponse hors des choix refusée', () => {
   assertThrows(() => parsePack(JSON.stringify({ ...valid, quiz: [{ ...valid.quiz[0], answerIndex: 3 }] })));
 });
 
+Deno.test('exercices : réponses acceptées gardées, liste vide pour un paquet ancien', () => {
+  const exercise = { instruction: 'Calcule.', prompt: '3 + 5', answer: '8, car 3 + 5 = 8.', hint: null };
+  const withAccepted = parsePack(
+    JSON.stringify({ ...valid, exercises: [{ ...exercise, accepted: ['8', 'huit'] }] }),
+  );
+  assertEquals(withAccepted.exercises[0]!.accepted, ['8', 'huit']);
+  // Paquet enregistré avant ce champ (réutilisé ou relu par « réexpliquer ») : exercice à comparer soi-même.
+  assertEquals(parsePack(JSON.stringify({ ...valid, exercises: [exercise] })).exercises[0]!.accepted, []);
+});
+
 Deno.test('requête : niveau, tâche, adaptations et référentiel, sans données personnelles', () => {
   const text = buildPackRequest({
     grade: 'P5',
