@@ -135,6 +135,18 @@ function ChildCard({ child }: { child: StoredChildProfile }) {
               <Button
                 style={styles.half}
                 variant="secondary"
+                label="📷 Interrogation corrigée"
+                accessibilityLabel={`Photographier une interrogation corrigée de ${child.alias}`}
+                onPress={() =>
+                  router.push({
+                    pathname: '/scan/nouveau',
+                    params: { childId: child.id, type: 'interrogation' },
+                  })
+                }
+              />
+              <Button
+                style={styles.half}
+                variant="secondary"
                 label="📷 Dictée corrigée"
                 accessibilityLabel={`Photographier une dictée corrigée de ${child.alias}`}
                 onPress={() =>

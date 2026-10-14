@@ -135,6 +135,74 @@ const vocabularyAnswer = {
   tasks: [],
 };
 
+// Interrogation corrigée : une notion à retravailler avec les erreurs de la copie (jamais la note).
+const interrogationAnswer = {
+  documentType: 'interrogation',
+  spellingWords: [],
+  vocabulary: [],
+  vocabularySubject: null,
+  tasks: [
+    {
+      subject: 'Français',
+      kind: 'lecon',
+      description: "Retravailler : l'accord du participe passé",
+      dueDate: null,
+      reference: null,
+      confidence: 0.9,
+      remediation: true,
+      errors: [
+        { question: 'Accorde : les fleurs (cueilli) hier', childAnswer: 'cueilli', correction: 'cueillies' },
+        { question: 'Accorde : elles sont (parti) tôt', childAnswer: 'partit', correction: 'parties' },
+      ],
+    },
+  ],
+};
+
+// Fiche de remédiation : demandée seulement quand la requête contient les erreurs de la copie.
+const remediationPack = {
+  topicUnclear: false,
+  curriculumMatch: null,
+  fiche: {
+    title: 'L’accord du participe passé',
+    sections: [
+      { heading: 'La règle', points: ['Avec être, le participe passé s’accorde avec le sujet.'] },
+      {
+        heading: 'Tes erreurs à l’interro',
+        points: ['Tu as écrit « partit » : avec être, on accorde avec « elles », donc « parties ».'],
+      },
+    ],
+    keyTerms: [],
+    tips: ['Repère d’abord l’auxiliaire.', 'Cherche le sujet avant d’accorder.'],
+  },
+  quiz: [
+    {
+      question: 'Avec quel auxiliaire le participe passé s’accorde-t-il avec le sujet ?',
+      choices: ['être', 'avoir'],
+      answerIndex: 0,
+      explanation: 'Avec être, le participe passé s’accorde avec le sujet.',
+    },
+  ],
+  exercises: [
+    {
+      instruction: 'Accorde le participe passé.',
+      prompt: 'Les filles sont (arrivé).',
+      accepted: ['arrivées'],
+      steps: ['Repère l’auxiliaire.', 'Trouve le sujet.', 'Accorde avec le sujet.'],
+      answer: 'arrivées : avec être, on accorde avec « les filles ».',
+      hint: 'Le sujet est féminin pluriel.',
+    },
+    {
+      instruction: 'Accorde le participe passé.',
+      prompt: 'Ils sont (tombé).',
+      accepted: ['tombés'],
+      steps: [],
+      answer: 'tombés : avec être, on accorde avec « ils ».',
+      hint: null,
+    },
+  ],
+  flashcards: [{ front: 'Participe passé avec être', back: 'accord avec le sujet' }],
+};
+
 export function startMocks(port = MOCKS_PORT) {
   return http
     .createServer((req, res) => {
@@ -193,6 +261,9 @@ export function startMocks(port = MOCKS_PORT) {
           answer = dictationAnswer;
         if (key === 'documentType' && body.includes("il s'agit de : liste de vocabulaire"))
           answer = vocabularyAnswer;
+        if (key === 'documentType' && body.includes("il s'agit de : interrogation"))
+          answer = interrogationAnswer;
+        if (key === 'topicUnclear' && body.includes('REMÉDIATION')) answer = remediationPack;
         const text = JSON.stringify(answer);
         const message = { id: 'msg_e2e', type: 'message', role: 'assistant', model: request.model };
 

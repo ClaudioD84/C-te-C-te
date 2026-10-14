@@ -13,13 +13,21 @@ export type TrainingItem =
 /** Réponse de l'enfant : un choix, un texte (vide : « je ne sais pas »), ou un exercice fait sur papier. */
 export type TrainingAnswer = { choice: number } | { text: string } | { paper: true };
 
-/** Questions de la plus simple à la plus exigeante : choix multiples, réponse courte, réponse libre. */
+/** Exercice guidé (remédiation) : des étapes de méthode accompagnent l'enfant. */
+export const isGuided = (exercise: Exercise) => exercise.steps.length > 0;
+
+/**
+ * Questions de la plus simple à la plus exigeante : choix multiples, réponses courtes guidées puis en autonomie,
+ * réponses libres.
+ */
 export function trainingItems(pack: Pick<StudyPack, 'quiz' | 'exercises'>): TrainingItem[] {
+  const short = pack.exercises.filter((exercise) => exercise.accepted.length > 0);
   return [
     ...pack.quiz.map((question) => ({ kind: 'choix' as const, question })),
-    ...pack.exercises
-      .filter((exercise) => exercise.accepted.length > 0)
-      .map((exercise) => ({ kind: 'saisie' as const, exercise })),
+    ...[...short.filter(isGuided), ...short.filter((exercise) => !isGuided(exercise))].map((exercise) => ({
+      kind: 'saisie' as const,
+      exercise,
+    })),
     ...pack.exercises
       .filter((exercise) => exercise.accepted.length === 0)
       .map((exercise) => ({ kind: 'libre' as const, exercise })),

@@ -173,6 +173,22 @@ function TaskCard({
           Lecture incertaine : vérifiez cette tâche.
         </ThemedText>
       ) : null}
+      {task.remediation && task.remediation.errors.length > 0 ? (
+        <ThemedView type="backgroundSelected" style={styles.errors}>
+          <ThemedText type="smallBold">
+            🎯 Remédiation : rappel de la règle, exercices guidés puis en autonomie
+          </ThemedText>
+          <ThemedText type="small" themeColor="textSecondary">
+            Erreurs relevées ({task.remediation.errors.length}) :
+          </ThemedText>
+          {task.remediation.errors.map((error, i) => (
+            <ThemedText key={i} type="small">
+              • {error.question} — écrit : {error.childAnswer ?? 'illisible'}
+              {error.correction ? ` → ${error.correction}` : ''}
+            </ThemedText>
+          ))}
+        </ThemedView>
+      ) : null}
       {readOnly ? null : (
         <View style={styles.row}>
           <Button variant="secondary" label="Modifier" style={styles.flex} onPress={() => setEditing(true)} />
@@ -209,6 +225,7 @@ function NewTask({ scanId, childId }: { scanId: string; childId: string }) {
 const styles = StyleSheet.create({
   center: { textAlign: 'center' },
   card: { padding: Spacing.three, borderRadius: Spacing.three, gap: Spacing.two },
+  errors: { padding: Spacing.two, borderRadius: Spacing.two, gap: Spacing.one },
   row: { flexDirection: 'row', gap: Spacing.two },
   flex: { flex: 1 },
 });

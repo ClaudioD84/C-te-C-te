@@ -36,9 +36,20 @@ export const extractionSchema = z.object({
       confidence: z.number().min(0).max(1),
       /** Notion à retravailler, relevée sur une interrogation corrigée. */
       remediation: z.boolean().default(false),
+      /** Erreurs de cette notion sur la copie, pour la fiche de remédiation (vide pour les autres tâches). */
+      errors: z
+        .array(
+          z.object({
+            question: z.string(),
+            childAnswer: z.string().nullable(),
+            correction: z.string().nullable(),
+          }),
+        )
+        .default([]),
     }),
   ),
 });
+export type RemediationError = Extraction['tasks'][number]['errors'][number];
 export type Extraction = z.infer<typeof extractionSchema>;
 
 /** Schéma JSON imposé à la réponse du modèle (sorties structurées : sans contraintes min/max). */
@@ -67,7 +78,16 @@ export const EXTRACTION_JSON_SCHEMA = {
       items: {
         type: 'object',
         additionalProperties: false,
-        required: ['subject', 'kind', 'description', 'dueDate', 'reference', 'confidence', 'remediation'],
+        required: [
+          'subject',
+          'kind',
+          'description',
+          'dueDate',
+          'reference',
+          'confidence',
+          'remediation',
+          'errors',
+        ],
         properties: {
           subject: { type: 'string' },
           kind: { type: 'string', enum: [...TASK_KINDS] },
@@ -76,6 +96,19 @@ export const EXTRACTION_JSON_SCHEMA = {
           reference: { anyOf: [{ type: 'string' }, { type: 'null' }] },
           confidence: { type: 'number' },
           remediation: { type: 'boolean' },
+          errors: {
+            type: 'array',
+            items: {
+              type: 'object',
+              additionalProperties: false,
+              required: ['question', 'childAnswer', 'correction'],
+              properties: {
+                question: { type: 'string' },
+                childAnswer: { anyOf: [{ type: 'string' }, { type: 'null' }] },
+                correction: { anyOf: [{ type: 'string' }, { type: 'null' }] },
+              },
+            },
+          },
         },
       },
     },
@@ -107,7 +140,8 @@ Règles :
 7. Notes de cours : ne relève que les consignes de travail explicites ; la matière du cours elle-même n'est pas une tâche.
 8. Interrogation corrigée : relève les travaux demandés (correction à faire, matière à revoir) ; « faire signer » n'est pas une tâche.
    Relève aussi, au plus 3, les notions où l'élève s'est trompé (réponses barrées, corrigées, points retirés) : une tâche "lecon" par notion, "description" commençant par « Retravailler : » (ex. « Retravailler : l'accord du participe passé »), "remediation" à true, "dueDate" à null sauf date écrite. Ne recopie jamais la note, les points ni une appréciation.
-   Pour toutes les autres tâches, "remediation" vaut false.
+   Pour chaque notion, "errors" : les erreurs de la copie qui la concernent, 5 au plus : "question" (ce qui était demandé, en quelques mots, ex. « Accorde : les fleurs (cueilli) »), "childAnswer" (ce que l'élève a écrit, null si illisible), "correction" (la bonne réponse indiquée par la correction, null si elle n'est pas écrite : n'invente pas).
+   Pour toutes les autres tâches, "remediation" vaut false et "errors" est une liste vide.
 9. Ne recopie jamais le nom d'une personne (élève, enseignant, parent) ni celui de l'école : écris plutôt « l'enseignant », « la classe »… ou omets-le.
 10. "documentType" : le type réel du document photographié.
 11. Si aucune tâche n'est lisible, renvoie une liste vide.
@@ -173,6 +207,9 @@ export function buildContext(grade: string, documentType: DocumentType | null, n
 
 /** Au plus 3 notions à retravailler par interrogation, à revoir dans la semaine si aucune date n'est écrite. */
 export const MAX_REMEDIATIONS = 3;
+/** Erreurs gardées par notion (texte court : la copie n'est jamais recopiée en entier). */
+export const MAX_REMEDIATION_ERRORS = 5;
+const clip = (text: string | null, max: number) => text?.trim().replace(/\s+/g, ' ').slice(0, max) || null;
 export const REMEDIATION_DAYS = 7;
 
 /**
@@ -211,6 +248,16 @@ export function parseExtraction(text: string, now: Date = new Date()): Extractio
           ...task,
           dueDate: dueDate ?? (task.remediation ? defaultDue : null),
           confidence: Math.round(task.confidence * 100) / 100,
+          errors: task.remediation
+            ? task.errors
+                .map((e) => ({
+                  question: clip(e.question, 200) ?? '',
+                  childAnswer: clip(e.childAnswer, 200),
+                  correction: clip(e.correction, 200),
+                }))
+                .filter((e) => e.question !== '')
+                .slice(0, MAX_REMEDIATION_ERRORS)
+            : [],
         };
       }),
   };

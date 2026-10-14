@@ -1,4 +1,9 @@
-import { deriveLearningSettings, formatShortDate, TASK_KIND_LABELS } from '@cote-a-cote/shared';
+import {
+  deriveLearningSettings,
+  formatShortDate,
+  neutralFeedback,
+  TASK_KIND_LABELS,
+} from '@cote-a-cote/shared';
 import { useQuery } from '@tanstack/react-query';
 import { useLocalSearchParams } from 'expo-router';
 import { useState } from 'react';
@@ -116,7 +121,9 @@ export default function PackScreen() {
             ))}
             {content.exercises.map((ex, i) => (
               <ThemedText key={`e${i}`} type="small">
-                Ex. {i + 1}. {ex.prompt} → {ex.answer}
+                Ex. {i + 1}
+                {ex.steps.length > 0 ? ' (guidé)' : ''}. {ex.prompt} → {neutralFeedback(ex.answer)}
+                {ex.steps.length > 0 ? `\n   Étapes : ${ex.steps.join(' · ')}` : ''}
               </ThemedText>
             ))}
           </ThemedView>

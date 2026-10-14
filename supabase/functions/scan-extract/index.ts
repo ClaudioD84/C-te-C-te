@@ -99,6 +99,7 @@ Deno.serve(async (request) => {
           due_date: task.dueDate,
           reference: task.reference,
           confidence: task.confidence,
+          remediation: task.remediation ? { errors: task.errors } : null,
           status: 'draft',
         })),
       );

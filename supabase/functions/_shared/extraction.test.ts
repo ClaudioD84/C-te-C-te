@@ -112,3 +112,43 @@ Deno.test('contexte : niveau et date, sans données personnelles', () => {
   assertStringIncludes(context, '2026-10-08');
   assertStringIncludes(context, 'journal de classe');
 });
+
+Deno.test(
+  'interrogation corrigée : erreurs de la notion gardées, courtes, 5 au plus ; aucune pour les autres tâches',
+  () => {
+    const error = (n: number) => ({
+      question: `  Accorde   ${n}  `,
+      childAnswer: 'cueilli',
+      correction: 'cueillies',
+    });
+    const result = parseExtraction(
+      JSON.stringify({
+        documentType: 'interrogation',
+        tasks: [
+          {
+            subject: 'Français',
+            kind: 'lecon',
+            description: "Retravailler : l'accord du participe passé",
+            dueDate: null,
+            reference: null,
+            confidence: 0.9,
+            remediation: true,
+            errors: [
+              ...[1, 2, 3, 4, 5, 6].map(error),
+              { question: '  ', childAnswer: null, correction: null },
+            ],
+          },
+          { ...valid.tasks[1], remediation: false, errors: [error(9)] },
+        ],
+      }),
+      new Date('2026-10-08T10:00:00Z'),
+    );
+    assertEquals(result.tasks[0]!.errors.length, 5);
+    assertEquals(result.tasks[0]!.errors[0], {
+      question: 'Accorde 1',
+      childAnswer: 'cueilli',
+      correction: 'cueillies',
+    });
+    assertEquals(result.tasks[1]!.errors, []);
+  },
+);

@@ -139,6 +139,8 @@ secondaire, S3/S4 à S6/S7, selon la filière (9 364 entrées) ; voir `scripts/r
   article d'une langue, unité ou petite faute : « presque », l'enfant corrige une fois avec un indice) ;
   résultat dans le suivi ;
 - cartes : l'enfant tape la réponse (vérifiée) ou la dit à voix haute pour une réponse longue ;
+- interrogation corrigée photographiée : les notions ratées et leurs erreurs (sans la note) deviennent une fiche
+  de remédiation (rappel ciblé sur ses erreurs, exercices guidés pas à pas puis en autonomie) ;
 - export « Print & Go » : PDF accessible (Lexend, grands espacements, réponses sur une page séparée) ;
 - police Lexend dans l'application pour les profils dyslexie ;
 - compétences terminales du secondaire supérieur, filtrées selon la filière de l'enfant (transition ou qualification).

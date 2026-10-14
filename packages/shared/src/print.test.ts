@@ -25,6 +25,7 @@ const pack: StudyPack = {
       instruction: 'Complète.',
       prompt: 'Namur : Meuse et …',
       accepted: ['Sambre'],
+      steps: [],
       answer: 'Sambre',
       hint: null,
     },

@@ -66,6 +66,62 @@ Deno.test('requête : niveau, tâche, adaptations et référentiel, sans donnée
   assertStringIncludes(text, 'Situer les principaux cours');
 });
 
+Deno.test('remédiation : erreurs de la copie et exercices guidés puis en autonomie demandés', () => {
+  const base = {
+    grade: 'P5',
+    track: 'general',
+    needs: [],
+    curriculum: [],
+  };
+  const task = {
+    subject: 'Français',
+    kind: 'lecon',
+    description: "Retravailler : l'accord du participe passé",
+    reference: null,
+  };
+  const text = buildPackRequest({
+    ...base,
+    task: {
+      ...task,
+      remediation: {
+        errors: [
+          { question: 'Accorde : les fleurs (cueilli)', childAnswer: 'cueilli', correction: 'cueillies' },
+          { question: 'Accorde : elles sont (parti)', childAnswer: null, correction: null },
+        ],
+      },
+    },
+  });
+  assertStringIncludes(text, 'REMÉDIATION');
+  assertStringIncludes(text, 'GUIDÉS');
+  assertStringIncludes(text, 'EN AUTONOMIE');
+  assertStringIncludes(
+    text,
+    "1. Question : Accorde : les fleurs (cueilli) — Réponse de l'élève : cueilli — Correction : cueillies",
+  );
+  assertStringIncludes(text, "Réponse de l'élève : illisible — Correction : non écrite");
+  // Une leçon ordinaire ne demande pas d'exercices guidés.
+  const plain = buildPackRequest({ ...base, task: { ...task, remediation: null } });
+  if (plain.includes('REMÉDIATION')) throw new Error('Remédiation demandée sans erreurs');
+});
+
+Deno.test('exercice guidé : étapes gardées, liste vide pour un paquet ancien', () => {
+  const exercise = {
+    instruction: 'Accorde.',
+    prompt: 'Les fleurs (cueilli)',
+    accepted: ['cueillies'],
+    answer: 'cueillies',
+    hint: null,
+  };
+  const guided = parsePack(
+    JSON.stringify({
+      ...valid,
+      exercises: [{ ...exercise, steps: ['Trouve le sujet.', 'Accorde avec lui.'] }],
+    }),
+  );
+  assertEquals(guided.exercises[0]!.steps, ['Trouve le sujet.', 'Accorde avec lui.']);
+  assertEquals(parsePack(JSON.stringify({ ...valid, exercises: [exercise] })).exercises[0]!.steps, []);
+});
+
 Deno.test('correspondance des matières avec le référentiel', () => {
   assertEquals(curriculumSubjects('Éveil'), ['Sciences', 'Formation historique et géographique']);
   assertEquals(curriculumSubjects('Histoire'), ['Formation historique et géographique']);

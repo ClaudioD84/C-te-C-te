@@ -51,3 +51,18 @@ export const scanExtractionSchema = z.object({
 export type ScanExtraction = z.infer<typeof scanExtractionSchema>;
 
 export const LOW_CONFIDENCE_THRESHOLD = 0.6;
+
+/** Erreur relevée sur une interrogation corrigée (jamais la note ni un nom). */
+export interface RemediationError {
+  /** Ce qui était demandé, en quelques mots. */
+  question: string;
+  /** Ce que l'élève a écrit (null si illisible). */
+  childAnswer: string | null;
+  /** La bonne réponse indiquée par la correction (null si elle n'est pas écrite). */
+  correction: string | null;
+}
+
+/** Notion à retravailler après une interrogation corrigée : la fiche de remédiation s'appuie sur ses erreurs. */
+export interface Remediation {
+  errors: RemediationError[];
+}

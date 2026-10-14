@@ -13,6 +13,7 @@ const short = {
   prompt: 'Namur : Meuse et …',
   accepted: ['Sambre'],
   answer: 'Sambre',
+  steps: [],
   hint: null,
 };
 const open = {
@@ -20,6 +21,7 @@ const open = {
   prompt: 'Une phrase avec « fleuve ».',
   accepted: [],
   answer: 'La Meuse est un fleuve.',
+  steps: [],
   hint: null,
 };
 
@@ -29,6 +31,16 @@ describe('entraînement en trois étapes', () => {
       'choix',
       'saisie',
       'libre',
+    ]);
+  });
+
+  it('remédiation : exercices guidés avant les exercices en autonomie', () => {
+    const guided = { ...short, prompt: 'Guidé', steps: ['Trouve le sujet.'] };
+    const items = trainingItems({ quiz: [], exercises: [short, open, guided] });
+    expect(items.map((i) => (i.kind === 'choix' ? i.kind : `${i.kind}:${i.exercise.prompt}`))).toEqual([
+      'saisie:Guidé',
+      'saisie:Namur : Meuse et …',
+      'libre:Une phrase avec « fleuve ».',
     ]);
   });
 

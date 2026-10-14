@@ -67,7 +67,7 @@ Aucune donnée n'est vendue, louée ni utilisée à des fins publicitaires. Aucu
 |---|---|
 | Finalité | Extraire devoirs, leçons et évaluations pour organiser la semaine |
 | Base légale | Exécution du contrat (art. 6.1.b) |
-| Données | Photo **non masquée** (redimensionnée ; elle peut montrer des noms), texte des tâches extraites (matière, description, échéance) ; l'IA a pour consigne de ne recopier aucun nom |
+| Données | Photo **non masquée** (redimensionnée ; elle peut montrer des noms), texte des tâches extraites (matière, description, échéance) ; pour une interrogation corrigée, les erreurs de la notion à retravailler (question, réponse de l'élève, correction), **jamais la note** ; l'IA a pour consigne de ne recopier aucun nom |
 | Conservation | Photo : supprimée dès l'analyse, au plus tard après 24 heures. Tâches : durée du compte |
 | Destinataires | Supabase (stockage privé) ; Anthropic (lecture de la photo) |
 
@@ -77,7 +77,7 @@ Aucune donnée n'est vendue, louée ni utilisée à des fins publicitaires. Aucu
 |---|---|
 | Finalité | Préparer des supports d'étude adaptés à partir des tâches et du programme officiel |
 | Base légale | Exécution du contrat (art. 6.1.b) ; pour les adaptations liées aux besoins : consentement (T3) |
-| Données | Tâches, année, consignes d'adaptation, centres d'intérêt (liste fermée), contenus générés (dont les explications « autrement » d'une partie de fiche), signalements d'erreur |
+| Données | Tâches (dont les erreurs relevées sur une interrogation corrigée, pour la remédiation), année, consignes d'adaptation, centres d'intérêt (liste fermée), contenus générés (dont les explications « autrement » d'une partie de fiche), signalements d'erreur |
 | Conservation | Durée du compte |
 | Destinataires | Supabase ; Anthropic |
 

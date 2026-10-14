@@ -42,7 +42,7 @@ Deno.serve(async (request) => {
 
     const { data: task } = await admin
       .from('task')
-      .select('id, child_id, subject, kind, description, reference, status, curriculum_item_id')
+      .select('id, child_id, subject, kind, description, reference, status, curriculum_item_id, remediation')
       .eq('id', taskId)
       .eq('family_id', familyId)
       .maybeSingle();

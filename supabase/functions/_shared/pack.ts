@@ -1,5 +1,5 @@
 import { z } from './deps.ts';
-import { GRADE_LABELS } from './extraction.ts';
+import { GRADE_LABELS, type RemediationError } from './extraction.ts';
 import { sha256Hex } from './pairing.ts';
 
 /**
@@ -34,6 +34,8 @@ export const studyPackSchema = z.object({
       prompt: z.string().min(1),
       // Vide pour les paquets enregistrés avant ce champ (fiches réutilisées, « réexpliquer »).
       accepted: z.array(z.string().min(1)).default([]),
+      // Exercice guidé : étapes de méthode montrées une à une ; vide pour un exercice en autonomie.
+      steps: z.array(z.string().min(1)).default([]),
       answer: z.string().min(1),
       hint: z.string().min(1).nullable(),
     }),
@@ -80,6 +82,7 @@ export const PACK_JSON_SCHEMA = obj({
       instruction: str,
       prompt: str,
       accepted: { type: 'array', items: str },
+      steps: { type: 'array', items: str },
       answer: str,
       hint: nullableStr,
     }),
@@ -101,8 +104,9 @@ Le paquet contient :
 - "exercises" : des exercices d'entraînement que l'élève fait dans l'application, dans toutes les matières (en
   histoire ou en sciences aussi : une date, un lieu, un mot, un nombre à retrouver). Pour chacun :
   "instruction" (la consigne), "prompt" (l'énoncé : une seule question), "accepted" (les réponses courtes que
-  l'élève tape et que l'application vérifie), "answer" (la correction : la réponse et comment la trouver, en
-  une ou deux phrases), "hint" (un indice qui aide sans donner la réponse, ou null) ;
+  l'élève tape et que l'application vérifie), "steps" (liste vide, sauf pour un exercice guidé demandé : les
+  étapes de la méthode), "answer" (la correction : la réponse et comment la trouver, en une ou deux phrases),
+  "hint" (un indice qui aide sans donner la réponse, ou null) ;
 - "flashcards" : des cartes question / réponse pour mémoriser (vocabulaire, définitions, dates, formules, règles).
 
 Règles :
@@ -183,11 +187,34 @@ const MOCK_EXAM_INSTRUCTIONS = [
   'Dans l’esprit de l’épreuve visée, sans prétendre reproduire une épreuve officielle.',
 ];
 
+/**
+ * Remédiation après une interrogation corrigée : comprendre ses erreurs, revoir la règle, s'exercer avec de
+ * l'aide puis seul. Le ton reste bienveillant : une erreur est une étape normale de l'apprentissage.
+ */
+const REMEDIATION_INSTRUCTIONS = [
+  'Cette tâche est une REMÉDIATION : l’élève retravaille une notion ratée à une interrogation corrigée.',
+  '- "fiche" : le rappel de la règle visée, puis une section « Tes erreurs à l’interro » qui explique chaque ' +
+    'erreur avec bienveillance (ce qu’il fallait faire et pourquoi), sans répéter la note ; "tips" : les clés ' +
+    'pour ne plus refaire ces erreurs.',
+  '- "exercises" : d’abord 3 ou 4 exercices GUIDÉS du même type que les erreurs : "steps" donne 2 à 4 étapes ' +
+    'de méthode dans l’ordre (courtes consignes à l’impératif, sans donner la réponse finale) ; puis 4 à 6 ' +
+    'exercices EN AUTONOMIE, sans étapes ("steps" vide), de difficulté croissante. Jamais les questions exactes ' +
+    'de l’interrogation : des exercices semblables.',
+  '- "quiz" : 3 ou 4 questions au plus ; "flashcards" : 3 à 6 cartes sur la règle.',
+];
+
 export function buildPackRequest(input: {
   grade: string;
   track: string;
   needs: string[];
-  task: { subject: string; kind: string; description: string; reference: string | null };
+  task: {
+    subject: string;
+    kind: string;
+    description: string;
+    reference: string | null;
+    /** Erreurs relevées sur une interrogation corrigée (fiche de remédiation), sinon null. */
+    remediation?: { errors: RemediationError[] } | null;
+  };
   curriculum: string[];
   /** Centres d'intérêt de l'élève, déjà filtrés par interestLabels. */
   interests?: string[];
@@ -214,6 +241,18 @@ export function buildPackRequest(input: {
     );
   }
   if (input.task.description.startsWith(MOCK_EXAM_PREFIX)) lines.push(...MOCK_EXAM_INSTRUCTIONS);
+  const errors = input.task.remediation?.errors ?? [];
+  if (errors.length > 0) {
+    lines.push(
+      ...REMEDIATION_INSTRUCTIONS,
+      'Erreurs relevées sur la copie corrigée :',
+      ...errors.map(
+        (e, i) =>
+          `${i + 1}. Question : ${e.question} — Réponse de l'élève : ${e.childAnswer ?? 'illisible'} — ` +
+          `Correction : ${e.correction ?? 'non écrite (trouve-la toi-même)'}`,
+      ),
+    );
+  }
   lines.push('Prépare le paquet d’étude.');
   return lines.join('\n');
 }

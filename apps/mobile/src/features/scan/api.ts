@@ -1,4 +1,4 @@
-import type { DocumentType, TaskKind, VocabularyEntry } from '@cote-a-cote/shared';
+import type { DocumentType, Remediation, TaskKind, VocabularyEntry } from '@cote-a-cote/shared';
 import { FunctionsHttpError } from '@supabase/supabase-js';
 import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query';
 import { randomUUID } from '@/lib/uuid';
@@ -36,10 +36,12 @@ export interface TaskRow {
   reference: string | null;
   confidence: number | null;
   status: 'draft' | 'validated' | 'done';
+  /** Interrogation corrigée : erreurs relevées pour la remédiation. */
+  remediation: Remediation | null;
 }
 
 const TASK_COLUMNS =
-  'id, child_id, scan_id, subject, kind, description, due_date, reference, confidence, status';
+  'id, child_id, scan_id, subject, kind, description, due_date, reference, confidence, status, remediation';
 
 export function useFamilyId() {
   return useQuery({

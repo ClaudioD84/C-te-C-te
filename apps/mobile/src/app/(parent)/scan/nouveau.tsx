@@ -16,7 +16,8 @@ import { prepareImage, type PreparedImage } from '@/features/scan/image';
 const DOCUMENT_HINTS: Record<DocumentType, string> = {
   journal_de_classe: 'Une page de journal peut contenir plusieurs jours.',
   notes_de_cours: 'Seules les consignes de travail deviennent des tâches.',
-  interrogation: 'Les notions à retravailler sont proposées, sans la note.',
+  interrogation:
+    'L’interrogation corrigée : les notions où il s’est trompé deviennent des exercices de remédiation, guidés puis en autonomie. La note n’est jamais relevée.',
   dictee:
     'La dictée corrigée : les mots où il y avait une faute, écrits correctement, rejoignent les mots à revoir.',
   vocabulaire:

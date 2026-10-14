@@ -1,6 +1,7 @@
 import {
   checkAnswer,
   isAnswered,
+  isGuided,
   NEAR_MISS_MESSAGES,
   neutralFeedback,
   verifyAnswer,
@@ -84,6 +85,8 @@ export function TrainingSession({
   const [offset, setOffset] = useState(0);
   const reported = useRef(false);
   const pageSize = Math.max(1, Math.min(settings.maxItemsPerScreen, 3));
+  // Remédiation : les exercices guidés et en autonomie sont annoncés comme tels.
+  const remediation = items.some((item) => item.kind !== 'choix' && isGuided(item.exercise));
   const indexes = items.map((_, i) => i).slice(offset, offset + pageSize);
   const lastPage = offset + pageSize >= items.length;
 
@@ -158,6 +161,7 @@ export function TrainingSession({
             number={i + 1}
             total={items.length}
             answer={answers[i]}
+            remediation={remediation}
             settings={settings}
             onAnswer={(answer) => setAnswer(i, answer)}
           />
@@ -231,6 +235,7 @@ function AnswerCard({
   number,
   total,
   answer,
+  remediation,
   settings,
   onAnswer,
 }: {
@@ -238,11 +243,16 @@ function AnswerCard({
   number: number;
   total: number;
   answer: TrainingAnswer | undefined;
+  /** Paquet de remédiation : chaque exercice est annoncé guidé ou en autonomie. */
+  remediation: boolean;
   settings: LearningSettings;
   onAnswer: (answer: TrainingAnswer | undefined) => void;
 }) {
   const theme = useTheme();
   const text = learningTextStyle(settings, 18);
+  // Exercice guidé : les étapes de la méthode apparaissent une à une, à la demande.
+  const steps = item.kind === 'choix' ? [] : item.exercise.steps;
+  const [shownSteps, setShownSteps] = useState(steps.length > 0 ? 1 : 0);
 
   return (
     <ThemedView type="backgroundElement" style={styles.card} testID={`question-${number}`}>
@@ -277,7 +287,28 @@ function AnswerCard({
       ) : (
         <>
           <ThemedText style={text}>{item.exercise.instruction}</ThemedText>
+          {remediation ? (
+            <ThemedText type="smallBold" themeColor="primary">
+              {steps.length > 0 ? '🧭 Exercice guidé' : '💪 En autonomie'}
+            </ThemedText>
+          ) : null}
           <ThemedText style={[text, styles.prompt]}>{item.exercise.prompt}</ThemedText>
+          {steps.length > 0 ? (
+            <ThemedView type="backgroundSelected" style={styles.steps}>
+              {steps.slice(0, shownSteps).map((step, i) => (
+                <ThemedText key={i} style={text}>
+                  Étape {i + 1} : {step}
+                </ThemedText>
+              ))}
+              {shownSteps < steps.length ? (
+                <Button
+                  variant="secondary"
+                  label="Étape suivante"
+                  onPress={() => setShownSteps(shownSteps + 1)}
+                />
+              ) : null}
+            </ThemedView>
+          ) : null}
           {answer && 'paper' in answer ? (
             <>
               <ThemedText style={text}>📝 Fait sur ta feuille. Tu compareras avec la correction.</ThemedText>
@@ -524,6 +555,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   prompt: { fontWeight: 600 },
+  steps: { padding: Spacing.three, borderRadius: Spacing.three, gap: Spacing.two },
   correction: { fontStyle: 'italic' },
   row: { flexDirection: 'row', flexWrap: 'wrap', gap: Spacing.two },
   flex: { flexGrow: 1, flexBasis: 140 },

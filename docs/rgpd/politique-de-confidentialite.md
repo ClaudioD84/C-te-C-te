@@ -34,6 +34,8 @@ montrer des noms écrits sur la page, comme celui de votre enfant, de l'école o
 notre service d'intelligence artificielle, qui a pour consigne de n'en recopier aucun nom : seuls les devoirs et
 évaluations sont relevés, et vous les vérifiez. La photo est **supprimée dès sa lecture**, et au plus tard après
 24 heures. Si vous le souhaitez, cadrez la photo sur les devoirs ou cachez un nom avant de photographier.
+Pour une interrogation corrigée, seules les erreurs de la notion à retravailler (la question, la réponse de votre
+enfant et la correction) sont gardées, pour préparer des exercices de remédiation ; la note n'est jamais relevée.
 
 **Les supports d'étude** : fiches, quiz, exercices et cartes de révision préparés à partir des tâches et du
 programme officiel de la Fédération Wallonie-Bruxelles.

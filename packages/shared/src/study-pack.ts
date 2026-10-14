@@ -33,6 +33,8 @@ export const exerciseSchema = z.object({
    * libre, l'enfant compare lui-même avec la correction (et pour les paquets préparés avant ce champ).
    */
   accepted: z.array(z.string().min(1)).default([]),
+  /** Exercice guidé (remédiation) : étapes de méthode montrées une à une ; vide pour un exercice en autonomie. */
+  steps: z.array(z.string().min(1)).default([]),
   /** Correction complète : la réponse et comment la trouver. */
   answer: z.string().min(1),
   hint: z.string().min(1).nullable(),
