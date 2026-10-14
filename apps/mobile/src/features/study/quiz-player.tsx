@@ -1,4 +1,4 @@
-import type { LearningSettings, QuizQuestion } from '@cote-a-cote/shared';
+import { neutralFeedback, type LearningSettings, type QuizQuestion } from '@cote-a-cote/shared';
 import { useState } from 'react';
 import { Pressable, StyleSheet, View } from 'react-native';
 
@@ -92,7 +92,7 @@ export function QuizPlayer({
           <ThemedText type="smallBold">
             {chosen === question.answerIndex ? 'Bonne réponse !' : 'Pas tout à fait.'}
           </ThemedText>
-          <ThemedText style={text}>{question.explanation}</ThemedText>
+          <ThemedText style={text}>{neutralFeedback(question.explanation)}</ThemedText>
           <Button
             label={index + 1 < questions.length ? 'Question suivante' : 'Voir le résultat'}
             onPress={() => {

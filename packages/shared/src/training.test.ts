@@ -50,3 +50,20 @@ describe('entraînement en trois étapes', () => {
     expect(verifyAnswer(free!, { text: 'La Meuse coule.' })).toBeNull();
   });
 });
+
+describe('explications neutres', () => {
+  it('retire les félicitations en tête, pas le contenu', async () => {
+    const { neutralFeedback } = await import('./training');
+    expect(neutralFeedback('Bravo ! 600 + 400 = 1000.')).toBe('600 + 400 = 1000.');
+    expect(neutralFeedback('Exact : Liège est construite sur la Meuse.')).toBe(
+      'Liège est construite sur la Meuse.',
+    );
+    expect(neutralFeedback('Bravo, tu as trouvé ! Super ! il faut 400.')).toBe('Il faut 400.');
+    expect(neutralFeedback('Oui, car six cents plus quatre cents font mille.')).toBe(
+      'Oui, car six cents plus quatre cents font mille.',
+    );
+    expect(neutralFeedback('Liège est construite sur la Meuse.')).toBe('Liège est construite sur la Meuse.');
+    // Jamais vide : une explication faite seulement de félicitations reste telle quelle.
+    expect(neutralFeedback('Bravo !')).toBe('Bravo !');
+  });
+});

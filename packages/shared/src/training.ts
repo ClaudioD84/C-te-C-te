@@ -45,3 +45,18 @@ export function verifyAnswer(item: TrainingItem, answer: TrainingAnswer | undefi
     };
   return checkAnswer(item.exercise.accepted, answer && 'text' in answer ? answer.text : '');
 }
+
+/**
+ * Félicitations en tête d'une explication ou d'une correction (« Bravo ! », « Exact : ») : l'explication
+ * s'affiche aussi quand l'enfant s'est trompé, et le verdict est donné à part. Elles sont retirées, aussi pour
+ * les paquets déjà préparés.
+ */
+const PRAISE =
+  /^\s*(?:bravo|super|génial|parfait|excellent|exact(?:ement)?|correct|oui|bien joué|bien vu|très bien|félicitations|bonne réponse|tu as raison|c['’]est (?:juste|ça|exact|correct|bien))(?:[\s,]+[\p{L}'’-]+){0,4}\s*[.!:…]+\s*/iu;
+
+export function neutralFeedback(text: string): string {
+  let rest = text;
+  for (let match = PRAISE.exec(rest); match && match[0].length < rest.length; match = PRAISE.exec(rest))
+    rest = rest.slice(match[0].length);
+  return rest === text ? text : rest.charAt(0).toLocaleUpperCase('fr') + rest.slice(1);
+}

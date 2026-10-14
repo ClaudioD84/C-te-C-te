@@ -2,6 +2,7 @@ import {
   checkAnswer,
   isAnswered,
   NEAR_MISS_MESSAGES,
+  neutralFeedback,
   verifyAnswer,
   type AnswerVerdict,
   type LearningSettings,
@@ -361,11 +362,13 @@ function CheckCard({
               ? '✓ Juste !'
               : `✗ La bonne réponse : ${item.question.choices[item.question.answerIndex]}`}
           </ThemedText>
-          <ThemedText style={text}>{item.question.explanation}</ThemedText>
+          <ThemedText style={text}>{neutralFeedback(item.question.explanation)}</ThemedText>
         </>
       ) : item.kind === 'libre' ? (
         <>
-          <ThemedText style={[text, styles.correction]}>Correction : {item.exercise.answer}</ThemedText>
+          <ThemedText style={[text, styles.correction]}>
+            Correction : {neutralFeedback(item.exercise.answer)}
+          </ThemedText>
           {check.selfRight === null ? (
             <>
               <ThemedText style={text}>Compare avec ta réponse : avais-tu juste ?</ThemedText>
@@ -423,7 +426,9 @@ function ShortAnswerCheck({
   const expected = (
     <>
       <ThemedText type="smallBold">La réponse attendue : {exercise.accepted[0]}</ThemedText>
-      <ThemedText style={[text, styles.correction]}>Correction : {exercise.answer}</ThemedText>
+      <ThemedText style={[text, styles.correction]}>
+        Correction : {neutralFeedback(exercise.answer)}
+      </ThemedText>
     </>
   );
 
@@ -433,7 +438,9 @@ function ShortAnswerCheck({
         <ThemedText type="smallBold" themeColor="primary">
           ✓ Juste !
         </ThemedText>
-        <ThemedText style={[text, styles.correction]}>Correction : {exercise.answer}</ThemedText>
+        <ThemedText style={[text, styles.correction]}>
+          Correction : {neutralFeedback(exercise.answer)}
+        </ThemedText>
       </>
     );
   if (fixed(check))
@@ -442,7 +449,9 @@ function ShortAnswerCheck({
         <ThemedText type="smallBold" themeColor="primary">
           ✓ Bien corrigé !
         </ThemedText>
-        <ThemedText style={[text, styles.correction]}>Correction : {exercise.answer}</ThemedText>
+        <ThemedText style={[text, styles.correction]}>
+          Correction : {neutralFeedback(exercise.answer)}
+        </ThemedText>
       </>
     );
   if (check.retryVerdict || check.revealed)

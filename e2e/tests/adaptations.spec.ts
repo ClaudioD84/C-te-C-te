@@ -29,18 +29,22 @@ test('adaptations : pictogrammes pour les jeunes lecteurs et supports de calcul 
   const pictograms = page.locator('[aria-hidden="true"]').filter({ hasText: /🔢|🌍/ });
   await expect(pictograms.first()).toBeVisible();
 
-  // Exercices de mathématiques : rappel des supports concrets.
+  // Entraînement en mathématiques (étape 2) : rappel des supports concrets.
   const mathsLesson = sql(
     `select id from task where child_id = '${childId}' and description = 'Les tables de 2'`,
   );
-  await page.goto(`/enfant/etude/${mathsLesson}?mode=exercices&subject=Math%C3%A9matiques`);
-  await expect(page.getByText(/compte avec des objets/)).toBeVisible({ timeout: 30_000 });
+  await page.goto(`/enfant/etude/${mathsLesson}?subject=Math%C3%A9matiques`);
+  await button(page, 'J’ai revu la leçon : je m’entraîne →').click({ timeout: 30_000 });
+  await expect(page.getByText(/compte avec des objets/)).toBeVisible();
 
   // Pas de rappel en Éveil.
   const eveilLesson = sql(
     `select id from task where child_id = '${childId}' and description = 'Étudier la Meuse et l''Escaut'`,
   );
-  await page.goto(`/enfant/etude/${eveilLesson}?mode=exercices&subject=%C3%89veil`);
-  await expect(page.getByText('Complète.').first()).toBeVisible({ timeout: 30_000 });
+  await page.goto(`/enfant/etude/${eveilLesson}?subject=%C3%89veil`);
+  await button(page, 'J’ai revu la leçon : je m’entraîne →').click({ timeout: 30_000 });
+  // Jeune lecteur : une question à la fois.
+  await expect(page.getByText('Question 1 sur 3')).toBeVisible();
+  await expect(page.getByText('Question 2 sur 3')).toHaveCount(0);
   await expect(page.getByText(/compte avec des objets/)).toHaveCount(0);
 });

@@ -97,7 +97,7 @@ Le paquet contient :
 - "fiche" : une fiche de synthèse (titre, 2 à 4 sections de points courts, mots-clés avec définition) et "tips",
   « les clés pour réussir » : 3 à 5 conseils concrets pour réussir les exercices de cette leçon (la méthode pas à
   pas, les pièges fréquents, une astuce pour retenir), à l'impératif, une phrase chacun ;
-- "quiz" : des questions à choix multiples (2 à 4 choix, une seule bonne réponse, explication courte et bienveillante) ;
+- "quiz" : des questions à choix multiples (2 à 4 choix, une seule bonne réponse, explication courte) ;
 - "exercises" : des exercices d'entraînement que l'élève fait dans l'application, dans toutes les matières (en
   histoire ou en sciences aussi : une date, un lieu, un mot, un nombre à retrouver). Pour chacun :
   "instruction" (la consigne), "prompt" (l'énoncé : une seule question), "accepted" (les réponses courtes que
@@ -125,7 +125,10 @@ Règles :
    ["3/4"] pour une fraction sous la forme attendue). Une production libre (phrase, paragraphe, dessin) n'est
    permise que si la tâche l'exige, deux au plus : "accepted" est alors une liste vide et "answer" donne un
    exemple de bonne réponse.
-10. Cartes : au verso, une réponse courte dès que possible (un mot, un nom, une date, un nombre, une formule :
+10. "explanation" (quiz) et "answer" (exercices) s'affichent que l'élève ait juste ou non, après le verdict :
+   explique pourquoi la bonne réponse est juste, sans féliciter ni juger (jamais « Bravo », « Exact »,
+   « Bien joué » ni « Dommage »).
+11. Cartes : au verso, une réponse courte dès que possible (un mot, un nom, une date, un nombre, une formule :
    3 mots au plus), que l'élève tape et que l'application vérifie ; sinon une phrase courte.`;
 
 /**

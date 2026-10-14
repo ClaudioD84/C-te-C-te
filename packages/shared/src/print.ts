@@ -1,5 +1,6 @@
 import type { LearningSettings } from './learning-settings';
 import type { StudyPack } from './study-pack';
+import { neutralFeedback } from './training';
 
 /**
  * Export « Print & Go » (F10) : fiche de travail imprimable, mise en page accessible
@@ -80,10 +81,12 @@ function packBody(pack: StudyPack, settings: LearningSettings, meta: PrintMeta):
   // Les réponses sont regroupées sur une page séparée, pour que l'enfant ne les voie pas en travaillant.
   if (pack.quiz.length > 0 || pack.exercises.length > 0) {
     parts.push('<section class="new-page answers"><h2>Réponses</h2>');
-    pack.exercises.forEach((exercise, i) => parts.push(`<p>Exercice ${i + 1} : ${e(exercise.answer)}</p>`));
+    pack.exercises.forEach((exercise, i) =>
+      parts.push(`<p>Exercice ${i + 1} : ${e(neutralFeedback(exercise.answer))}</p>`),
+    );
     pack.quiz.forEach((question, i) =>
       parts.push(
-        `<p>Question ${i + 1} : ${e(question.choices[question.answerIndex] ?? '')} — ${e(question.explanation)}</p>`,
+        `<p>Question ${i + 1} : ${e(question.choices[question.answerIndex] ?? '')} — ${e(neutralFeedback(question.explanation))}</p>`,
       ),
     );
     parts.push('</section>');
