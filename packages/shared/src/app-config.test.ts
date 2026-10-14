@@ -4,7 +4,14 @@ import appJson from '../../../apps/mobile/app.json?raw';
 
 type Plugin = string | [string, Record<string, unknown>];
 const config = JSON.parse(appJson) as {
-  expo: { plugins: Plugin[]; icon: string; ios: Record<string, unknown>; runtimeVersion?: unknown };
+  expo: {
+    plugins: Plugin[];
+    icon: string;
+    ios: Record<string, unknown>;
+    runtimeVersion?: unknown;
+    updates?: { url?: string };
+    extra?: { eas?: { projectId?: string } };
+  };
 };
 const options = (name: string) =>
   (
@@ -25,5 +32,9 @@ describe('configuration de l’application (app.json)', () => {
     expect(config.expo.ios.icon).toBeUndefined();
     // Empreinte du code natif : une mise à jour à distance n'atteint jamais une build incompatible.
     expect(config.expo.runtimeVersion).toEqual({ policy: 'fingerprint' });
+    // Les mises à jour viennent du projet EAS de l'app (sans identifiant : ni mises à jour ni notifications).
+    const projectId = config.expo.extra?.eas?.projectId;
+    expect(projectId).toMatch(/^[0-9a-f-]{36}$/);
+    expect(config.expo.updates?.url).toBe(`https://u.expo.dev/${projectId}`);
   });
 });

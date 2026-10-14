@@ -59,8 +59,7 @@ Tout ce qui est prêt dans le dépôt, et ce qu'il reste à faire de votre côt�
 
 ```bash
 cd apps/mobile
-npx eas-cli@latest login
-npx eas-cli@latest init          # crée le projet EAS et ajoute son identifiant à app.json
+npx eas-cli@latest login         # le projet EAS @claudiod84/cote-a-cote est déjà relié dans app.json
 ```
 
 Variables de l'environnement `production` (expo.dev > projet > Environment variables) :

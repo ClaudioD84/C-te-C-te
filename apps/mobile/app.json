@@ -2,9 +2,18 @@
   "expo": {
     "name": "Côte à Côte",
     "slug": "cote-a-cote",
+    "owner": "claudiod84",
     "version": "1.0.0",
     "runtimeVersion": {
       "policy": "fingerprint"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/5b2e91b4-8600-442b-9bf8-9a63245e8480"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "5b2e91b4-8600-442b-9bf8-9a63245e8480"
+      }
     },
     "orientation": "default",
     "icon": "./assets/images/icon.png",

@@ -23,16 +23,11 @@ comme n'importe quelle application. Les mises à jour arrivent toutes seules.
 | Serveur de production | [README de la bêta](README.md), étape 1 | Supabase (UE), clé Anthropic, Brevo |
 | Votre Mac | — | Pour la toute première build (connexion à Apple) |
 
-## 1. Relier le projet à Expo (une fois)
+## 1. Relier le projet à Expo (fait)
 
-```bash
-cd apps/mobile
-npx eas-cli@latest login
-npx eas-cli@latest init              # ajoute l'identifiant du projet EAS à app.json
-npx eas-cli@latest update:configure  # ajoute l'adresse des mises à jour à distance à app.json
-```
-
-Commitez les changements d'`app.json` (identifiant du projet et adresse des mises à jour).
+Le projet EAS `@claudiod84/cote-a-cote` existe (créé lors de la première mise en ligne de la version web) : son
+identifiant et l'adresse des mises à jour à distance sont dans `app.json`. Sur un nouveau Mac, il suffit de
+`npx eas-cli@latest login`.
 
 Sur expo.dev > projet > **Environment variables**, environnement `production` :
 
