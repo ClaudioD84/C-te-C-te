@@ -10,6 +10,8 @@ import {
   signUp,
   openTraining,
   openTools,
+  answerTraining,
+  RIGHT_ANSWERS,
 } from './helpers';
 
 /** Audit WCAG 2.2 AA (exigence 6.2) des écrans principaux, en thème clair et sombre. */
@@ -60,11 +62,12 @@ for (const colorScheme of ['light', 'dark'] as const) {
 
     await enterChildMode(page, 'Castor');
     await audit(page, 'console enfant');
-    await openTraining(page, 'Fiche');
+    await openTraining(page);
     await expect(page.getByText('Les fleuves de Belgique', { exact: true })).toBeVisible();
-    await audit(page, 'fiche');
-    await page.getByRole('radio', { name: 'Quiz' }).click();
-    await audit(page, 'quiz');
+    await audit(page, 'leçon');
+    await answerTraining(page, RIGHT_ANSWERS);
+    await expect(page.getByText(/sur 3 du premier coup/)).toBeVisible();
+    await audit(page, 'vérification');
     await context.close();
   });
 }

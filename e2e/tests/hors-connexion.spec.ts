@@ -9,6 +9,8 @@ import {
   signUp,
   sql,
   openTraining,
+  answerTraining,
+  RIGHT_ANSWERS,
 } from './helpers';
 
 test('la mission du jour fonctionne hors connexion et se synchronise sans doublon', async ({
@@ -34,14 +36,10 @@ test('la mission du jour fonctionne hors connexion et se synchronise sans doublo
 
   await context.setOffline(true);
   await expect(page.getByText(/Pas de connexion\. Tu peux continuer/)).toBeVisible();
-  await openTraining(page, 'Fiche');
+  await openTraining(page);
   await expect(page.getByText('Les fleuves de Belgique', { exact: true })).toBeVisible();
-  await page.getByRole('radio', { name: 'Quiz' }).click();
-  await button(page, 'La Meuse').click();
-  await button(page, 'Question suivante').click();
-  await button(page, "L'Escaut").click();
-  await button(page, 'Voir le résultat').click();
-  await expect(page.getByText('Quiz terminé !')).toBeVisible();
+  await answerTraining(page, RIGHT_ANSWERS);
+  await expect(page.getByText('3 sur 3 du premier coup. Bravo pour ton effort !')).toBeVisible();
   await button(page, 'Retour à la mission').click();
   // Une activité cochée hors connexion disparaît tout de suite de l'écran.
   const todo = await button(page, "C'est fait !").count();

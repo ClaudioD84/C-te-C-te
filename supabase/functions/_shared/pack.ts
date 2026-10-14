@@ -14,6 +14,8 @@ export const studyPackSchema = z.object({
       title: z.string().min(1),
       sections: z.array(z.object({ heading: z.string().min(1), points: z.array(z.string().min(1)).min(1) })),
       keyTerms: z.array(z.object({ term: z.string().min(1), definition: z.string().min(1) })),
+      // Vide pour les paquets enregistrés avant ce champ.
+      tips: z.array(z.string().min(1)).default([]),
     })
     .nullable(),
   quiz: z.array(
@@ -58,6 +60,7 @@ export const PACK_JSON_SCHEMA = obj({
         title: str,
         sections: { type: 'array', items: obj({ heading: str, points: { type: 'array', items: str } }) },
         keyTerms: { type: 'array', items: obj({ term: str, definition: str }) },
+        tips: { type: 'array', items: str },
       }),
       { type: 'null' },
     ],
@@ -87,11 +90,16 @@ export const PACK_JSON_SCHEMA = obj({
 export const PACK_SYSTEM_PROMPT = `Tu es un enseignant expérimenté de la Fédération Wallonie-Bruxelles (Belgique).
 Tu prépares un paquet d'étude pour aider un élève à travailler une tâche de son journal de classe, à la maison.
 
+L'élève travaille en trois étapes : il revoit la fiche, il répond à toutes les questions sans correction, puis
+l'application vérifie chaque réponse contre la réponse attendue.
+
 Le paquet contient :
-- "fiche" : une fiche de synthèse (titre, 2 à 4 sections de points courts, mots-clés avec définition) ;
+- "fiche" : une fiche de synthèse (titre, 2 à 4 sections de points courts, mots-clés avec définition) et "tips",
+  « les clés pour réussir » : 3 à 5 conseils concrets pour réussir les exercices de cette leçon (la méthode pas à
+  pas, les pièges fréquents, une astuce pour retenir), à l'impératif, une phrase chacun ;
 - "quiz" : des questions à choix multiples (2 à 4 choix, une seule bonne réponse, explication courte et bienveillante) ;
-- "exercises" : des exercices d'entraînement que l'élève fait dans l'application, seulement si la matière s'y
-  prête (mathématiques, grammaire, conjugaison, orthographe, langues…) ; sinon une liste vide. Pour chacun :
+- "exercises" : des exercices d'entraînement que l'élève fait dans l'application, dans toutes les matières (en
+  histoire ou en sciences aussi : une date, un lieu, un mot, un nombre à retrouver). Pour chacun :
   "instruction" (la consigne), "prompt" (l'énoncé : une seule question), "accepted" (les réponses courtes que
   l'élève tape et que l'application vérifie), "answer" (la correction : la réponse et comment la trouver, en
   une ou deux phrases), "hint" (un indice qui aide sans donner la réponse, ou null) ;
@@ -105,7 +113,7 @@ Règles :
 4. Si la tâche ne permet pas de savoir quoi réviser (ex. « étudier p. 45 » sans sujet), mets "topicUnclear" à true,
    "fiche" à null et des listes vides.
 5. Respecte les adaptations demandées pour cet élève.
-6. Quantités : quiz 5 à 10 questions, cartes 6 à 15, exercices 4 à 8 (moins pour les petits niveaux).
+6. Quantités : quiz 4 à 6 questions, exercices 4 à 8, cartes 6 à 15 (moins pour les petits niveaux).
 7. "curriculumMatch" : le numéro de l'attendu du référentiel qui correspond le mieux à la tâche, ou null si
    aucun ne correspond clairement (ou si aucun attendu n'est fourni).
 8. Langue étrangère (néerlandais, anglais, allemand…) : pour le vocabulaire, au recto de la carte le mot ou

@@ -20,8 +20,9 @@ L'accès est **gratuit pendant tout le test**. Rien à payer, aucune carte deman
 2. **Photographier le journal de classe** (une page, à plat, bien éclairée). Vérifiez la liste des devoirs
    proposée, corrigez si besoin, puis validez.
 3. **Calculer le planning de la semaine** et le publier.
-4. **Confier la mission du jour à votre enfant** : « Lancer la mission du jour ». Il voit sa mission, un minuteur,
-   ses fiches et ses cartes. Pour revenir à votre espace, il faut votre code parent.
+4. **Confier la mission du jour à votre enfant** : « Lancer la mission du jour ». Il voit sa mission, un minuteur
+   et ses cartes. Chaque leçon se travaille en trois étapes : il revoit la fiche et les clés pour réussir, répond
+   à toutes les questions, puis vérifie ses réponses. Pour revenir à votre espace, il faut votre code parent.
 5. Selon l'âge : **photographier une dictée corrigée** (les mots fautifs s'ajoutent à sa dictée de la semaine)
    ou **une liste de vocabulaire** (elle devient des cartes de révision). Ces deux options sont dans
    **« Plus d'outils »**.

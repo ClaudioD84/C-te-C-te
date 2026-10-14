@@ -12,6 +12,8 @@ import {
   openTraining,
   childTitle,
   reviewCard,
+  answerTraining,
+  verification,
 } from './helpers';
 
 test('parcours complet : profil, planning, fiches, console enfant, suivi, dossier de révision', async ({
@@ -66,35 +68,40 @@ test('parcours complet : profil, planning, fiches, console enfant, suivi, dossie
     await page.reload();
     await expect(page.getByText('Bonjour Léo')).toBeVisible();
 
-    await openTraining(page, 'Fiche');
+    await openTraining(page);
+    // Étape 1 : la leçon et les clés pour réussir.
     await expect(page.getByText('Les fleuves de Belgique', { exact: true })).toBeVisible();
-    await page.getByRole('radio', { name: 'Quiz' }).click();
-    await button(page, 'La Meuse').click();
-    await expect(page.getByText('Bonne réponse !')).toBeVisible();
-    await button(page, 'Question suivante').click();
-    await button(page, "L'Escaut").click();
-    await button(page, 'Voir le résultat').click();
-    await expect(page.getByText('Quiz terminé !')).toBeVisible();
+    await expect(page.getByText('🔑 Les clés pour réussir')).toBeVisible();
+    await expect(page.getByText('✓ Repère chaque fleuve et ses villes sur une carte.')).toBeVisible();
 
-    // Exercices : l'enfant tape sa réponse, l'application la vérifie avant de montrer la correction.
-    await page.getByRole('radio', { name: 'Exercices' }).click();
-    await expect(button(page, 'Voir la correction')).toHaveCount(0);
-    await page.getByLabel('Ta réponse', { exact: true }).fill('Escaut');
-    await button(page, 'Vérifier').click();
-    await expect(page.getByText('Pas encore. Relis l’énoncé et essaie encore !')).toBeVisible();
-    await button(page, 'Un indice').click();
-    await expect(page.getByText('Indice : Une rivière qui passe à Charleroi.')).toBeVisible();
-    await page.getByLabel('Ta réponse', { exact: true }).fill('la sambre');
-    await button(page, 'Vérifier').click();
-    await expect(page.getByText('Bravo, c’est juste !')).toBeVisible();
-    await expect(page.getByText('Exercices terminés !')).toBeVisible();
+    // Étape 2 : l'enfant répond à tout, sans correction (une erreur au choix, une à la réponse tapée).
+    await answerTraining(page, {
+      1: { choice: 'La Meuse' },
+      2: { choice: 'La Meuse' },
+      3: { text: 'Escaut' },
+    });
+
+    // Étape 3 : chaque réponse comparée à la réponse attendue ; la réponse tapée peut être corrigée une fois.
+    await expect(page.getByRole('heading', { name: 'Étape 3 sur 3 : je vérifie' })).toBeVisible();
+    await expect((await verification(page, 1)).getByText('✓ Juste !')).toBeVisible();
+    await expect((await verification(page, 2)).getByText("✗ La bonne réponse : L'Escaut")).toBeVisible();
+    const typed = await verification(page, 3);
+    await expect(typed.getByText('Ce n’est pas encore ça. Essaie de corriger !')).toBeVisible();
+    await typed.getByRole('button', { name: 'Un indice', exact: true }).click();
+    await expect(typed.getByText('Indice : Une rivière qui passe à Charleroi.')).toBeVisible();
+    await typed.getByLabel('Corrige ta réponse', { exact: true }).fill('la sambre');
+    await typed.getByRole('button', { name: 'Vérifier', exact: true }).click();
+    await expect(typed.getByText('✓ Bien corrigé !')).toBeVisible();
+    await expect(
+      page.getByText('1 sur 3 du premier coup, et 1 corrigée ensuite. Bravo pour ton effort !'),
+    ).toBeVisible();
     await expect
       .poll(() =>
         sql(
-          `select meta->>'score' || '/' || (meta->>'total') from learning_event where child_id = '${childId}' and meta->>'mode' = 'exercices'`,
+          `select meta->>'score' || '/' || (meta->>'total') from learning_event where child_id = '${childId}' and type = 'quiz'`,
         ),
       )
-      .toBe('1/1');
+      .toBe('1/3');
     await button(page, 'Retour à la mission').click();
     // L'ordre des activités du jour varie : on coche après l'entraînement.
     await button(page, "C'est fait !").first().click();

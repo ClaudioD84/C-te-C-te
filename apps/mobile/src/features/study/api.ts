@@ -267,7 +267,7 @@ export function useLogQuiz(childId: string) {
     mutationKey: OFFLINE_MUTATIONS.learningEvent,
     onSettled: () => queryClient.invalidateQueries({ queryKey: ['effort', childId] }),
   });
-  return (taskId: string, score: number, total: number, mode?: 'ecoute' | 'exercices') =>
+  return (taskId: string, score: number, total: number, mode?: 'ecoute') =>
     mutation.mutate({
       id: randomUUID(),
       childId,

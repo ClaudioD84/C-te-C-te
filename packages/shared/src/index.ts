@@ -1,4 +1,5 @@
 export * from './answer-check';
+export * from './training';
 export * from './curriculum';
 export * from './culture';
 export * from './contrast';

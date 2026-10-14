@@ -29,7 +29,7 @@ test('je récite : s’enregistrer puis se réécouter, sans rien envoyer', asyn
   page.on('request', (r) => {
     if (r.method() === 'POST' && /storage|audio|record/i.test(r.url())) uploads.push(r.url());
   });
-  await page.getByRole('radio', { name: 'Je récite' }).click();
+  await button(page, 'Je récite').click();
   await button(page, '🎤 M’enregistrer').click();
   await expect(page.getByText(/^🔴 J’écoute…/)).toBeVisible();
   await page.waitForTimeout(1500);

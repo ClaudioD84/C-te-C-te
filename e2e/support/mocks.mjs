@@ -61,6 +61,10 @@ const answers = {
         { term: 'Fleuve', definition: "Cours d'eau qui se jette dans la mer." },
         { term: 'Affluent', definition: "Cours d'eau qui se jette dans un autre." },
       ],
+      tips: [
+        'Repère chaque fleuve et ses villes sur une carte.',
+        'Retiens : la Meuse à Liège, l’Escaut à Anvers.',
+      ],
     },
     quiz: [
       {

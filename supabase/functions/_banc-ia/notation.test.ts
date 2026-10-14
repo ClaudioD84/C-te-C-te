@@ -60,12 +60,13 @@ Deno.test('fiche : vide ou trop maigre signalée', () => {
   assertEquals(checkPack(empty).ok, false);
   const full = {
     topicUnclear: false,
-    fiche: { sections: [{}] },
+    fiche: { sections: [{}], tips: ['Relis la consigne'] },
     quiz: [1, 2, 3],
     exercises: [],
     flashcards: [1, 2, 3],
   };
   assertEquals(checkPack(full), { ok: true, problems: [] });
+  assertEquals(checkPack({ ...full, fiche: { sections: [{}] } }).problems, ['fiche sans clés pour réussir']);
   const open = { accepted: [] };
   assertEquals(checkPack({ ...full, exercises: [open, open, open, { accepted: ['8'] }] }).problems, [
     'exercices sans réponse vérifiable (3 sur 4)',

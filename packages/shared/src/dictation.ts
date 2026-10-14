@@ -49,6 +49,7 @@ export function ficheSegments(fiche: {
   title: string;
   sections: readonly { heading: string; points: readonly string[] }[];
   keyTerms: readonly { term: string; definition: string }[];
+  tips?: readonly string[];
 }): string[] {
   const end = (text: string) => (/[.!?…]$/.test(text.trim()) ? text.trim() : `${text.trim()}.`);
   return [
@@ -56,6 +57,9 @@ export function ficheSegments(fiche: {
     ...fiche.sections.map((s) => [end(s.heading), ...s.points.map(end)].join(' ')),
     ...(fiche.keyTerms.length > 0
       ? [['Mots importants.', ...fiche.keyTerms.map((t) => end(`${t.term} : ${t.definition}`))].join(' ')]
+      : []),
+    ...(fiche.tips && fiche.tips.length > 0
+      ? [['Les clés pour réussir.', ...fiche.tips.map(end)].join(' ')]
       : []),
   ];
 }

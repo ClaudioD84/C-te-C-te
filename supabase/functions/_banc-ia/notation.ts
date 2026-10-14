@@ -140,7 +140,7 @@ export function median(values: number[]): number {
 /** Contrôles d'une fiche sans IA : contenu présent et assez fourni pour l'élève. */
 export function checkPack(pack: {
   topicUnclear: boolean;
-  fiche: { sections: unknown[] } | null;
+  fiche: { sections: unknown[]; tips?: unknown[] } | null;
   quiz: unknown[];
   exercises: { accepted?: unknown[] }[];
   flashcards: unknown[];
@@ -148,6 +148,7 @@ export function checkPack(pack: {
   const problems: string[] = [];
   if (pack.topicUnclear) problems.push('sujet jugé trop vague');
   if (!pack.fiche || pack.fiche.sections.length === 0) problems.push('fiche vide');
+  else if ((pack.fiche.tips ?? []).length === 0) problems.push('fiche sans clés pour réussir');
   if (pack.quiz.length < 3) problems.push(`quiz trop court (${pack.quiz.length})`);
   if (pack.flashcards.length < 3) problems.push(`trop peu de cartes (${pack.flashcards.length})`);
   // L'élève tape sa réponse : sans réponse acceptée, l'application ne peut pas la vérifier.

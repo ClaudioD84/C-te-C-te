@@ -134,6 +134,20 @@ export function FicheView({
           ))}
         </ThemedView>
       ) : null}
+      {fiche.tips.length > 0 ? (
+        <ThemedView
+          type="backgroundSelected"
+          style={[styles.card, highlight(fiche.sections.length + 1 + (fiche.keyTerms.length > 0 ? 1 : 0))]}>
+          <ThemedText type="smallBold" themeColor="primary">
+            🔑 Les clés pour réussir
+          </ThemedText>
+          {fiche.tips.map((tip) => (
+            <ThemedText key={tip} style={text}>
+              ✓ {tip}
+            </ThemedText>
+          ))}
+        </ThemedView>
+      ) : null}
     </View>
   );
 }

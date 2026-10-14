@@ -9,6 +9,8 @@ export const ficheSchema = z.object({
   title: z.string().min(1),
   sections: z.array(z.object({ heading: z.string().min(1), points: z.array(z.string().min(1)).min(1) })),
   keyTerms: z.array(z.object({ term: z.string().min(1), definition: z.string().min(1) })),
+  /** « Les clés pour réussir » : méthode, pièges fréquents, astuce pour retenir (vide pour les anciens paquets). */
+  tips: z.array(z.string().min(1)).default([]),
 });
 
 export const quizQuestionSchema = z

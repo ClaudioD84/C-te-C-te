@@ -10,6 +10,7 @@ const pack: StudyPack = {
     title: 'Les <fleuves>',
     sections: [{ heading: 'La Meuse', points: ['Traverse Liège'] }],
     keyTerms: [],
+    tips: ['Repère les villes sur une carte'],
   },
   quiz: [
     {
@@ -45,6 +46,17 @@ describe('export PDF', () => {
     expect(html).toContain("font-family: 'Lexend'");
     expect(html).toContain('line-height: 1.8');
     expect(html).toContain('letter-spacing: 0.12em');
+  });
+
+  it('imprime les clés pour réussir avec la fiche', () => {
+    const html = buildPackHtml(
+      pack,
+      deriveLearningSettings({ grade: 'P5', needs: [], preferences }),
+      meta,
+      options,
+    );
+    expect(html).toContain('<h2>Les clés pour réussir</h2>');
+    expect(html).toContain('<li>Repère les villes sur une carte</li>');
   });
 
   it('garde une police standard sans besoin particulier', () => {

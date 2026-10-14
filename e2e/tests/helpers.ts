@@ -122,17 +122,15 @@ export async function answerMood(page: Page, mood = '☀️ En forme') {
 /**
  * Ouvre l'entraînement de la première activité qui en propose un. Selon le profil (TDAH), la console n'affiche
  * qu'une activité à la fois et l'ordre du jour varie : les activités « à faire » qui précèdent sont cochées.
- * L'onglet d'arrivée dépend de l'activité (fiche pour une leçon, quiz pour une révision) et donc du jour où le
- * test tourne : `section` le choisit explicitement.
+ * On arrive toujours sur la leçon (étape 1 : je revois).
  */
-export async function openTraining(page: Page, section?: 'Fiche' | 'Quiz') {
+export async function openTraining(page: Page) {
   for (let i = 0; i < 5; i++) {
     const celebration = button(page, 'Super !');
     if (await celebration.isVisible().catch(() => false)) await celebration.click();
     const training = button(page, "S'entraîner").first();
     if (await training.isVisible().catch(() => false)) {
       await training.click();
-      if (section) await page.getByRole('radio', { name: section }).click();
       return;
     }
     await button(page, "C'est fait !").first().click();
@@ -167,3 +165,34 @@ export async function reviewCard(page: Page) {
   }
   await button(page, 'Facile !').click();
 }
+
+/** Réponses de l'étape 2, par numéro de question : un choix (par son texte) ou une réponse tapée. */
+export type TrainingAnswers = Record<number, { choice: string } | { text: string }>;
+
+/** Étape 2 : passe de la leçon à l'entraînement, répond à chaque question puis lance la vérification. */
+export async function answerTraining(page: Page, answers: TrainingAnswers) {
+  await button(page, 'J’ai revu la leçon : je m’entraîne →').click();
+  const total = Object.keys(answers).length;
+  for (let n = 1; n <= total; n++) {
+    const card = page.getByTestId(`question-${n}`);
+    if (!(await card.isVisible())) await button(page, 'Suivant →').click();
+    const answer = answers[n]!;
+    if ('choice' in answer) await card.getByRole('radio', { name: answer.choice, exact: true }).click();
+    else await card.getByLabel('Ta réponse', { exact: true }).fill(answer.text);
+  }
+  await button(page, 'J’ai fini : je vérifie').click();
+}
+
+/** Étape 3 : la vérification de la question n (en passant les pages précédentes, déjà vérifiées). */
+export async function verification(page: Page, n: number) {
+  const card = page.getByTestId(`verification-${n}`);
+  while (!(await card.isVisible())) await button(page, 'Suivant →').click();
+  return card;
+}
+
+/** Réponses justes du paquet simulé (e2e/support/mocks.mjs). */
+export const RIGHT_ANSWERS: TrainingAnswers = {
+  1: { choice: 'La Meuse' },
+  2: { choice: "L'Escaut" },
+  3: { text: 'Sambre' },
+};

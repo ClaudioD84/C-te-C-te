@@ -46,6 +46,11 @@ function packBody(pack: StudyPack, settings: LearningSettings, meta: PrintMeta):
         parts.push(`<li><strong>${e(term.term)}</strong> : ${e(term.definition)}</li>`);
       parts.push('</ul></section>');
     }
+    if (pack.fiche.tips.length > 0) {
+      parts.push('<section class="block"><h2>Les clés pour réussir</h2><ul>');
+      for (const tip of pack.fiche.tips) parts.push(`<li>${e(tip)}</li>`);
+      parts.push('</ul></section>');
+    }
   }
 
   if (pack.exercises.length > 0) {

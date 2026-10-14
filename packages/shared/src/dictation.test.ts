@@ -31,18 +31,20 @@ describe('écoute et écris', () => {
 });
 
 describe('lecture de la fiche', () => {
-  it('titre, parties, puis mots importants, avec ponctuation', async () => {
+  it('titre, parties, mots importants puis clés pour réussir, avec ponctuation', async () => {
     const { ficheSegments } = await import('./dictation');
     expect(
       ficheSegments({
         title: 'Les fleuves',
         sections: [{ heading: 'La Meuse', points: ['Traverse Liège', 'Prend sa source en France.'] }],
         keyTerms: [{ term: 'Fleuve', definition: "Cours d'eau qui se jette dans la mer." }],
+        tips: ['Repère les villes sur une carte'],
       }),
     ).toEqual([
       'Les fleuves.',
       'La Meuse. Traverse Liège. Prend sa source en France.',
       "Mots importants. Fleuve : Cours d'eau qui se jette dans la mer.",
+      'Les clés pour réussir. Repère les villes sur une carte.',
     ]);
   });
 });

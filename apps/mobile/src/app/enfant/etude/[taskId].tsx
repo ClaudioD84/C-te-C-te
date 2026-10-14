@@ -1,10 +1,9 @@
-import { deriveLearningSettings, dictationWords, isMathSubject } from '@cote-a-cote/shared';
+import { deriveLearningSettings, dictationWords, isMathSubject, trainingItems } from '@cote-a-cote/shared';
 import { router, useLocalSearchParams } from 'expo-router';
 import { useEffect, useRef, useState } from 'react';
-import { ActivityIndicator, ScrollView, StyleSheet } from 'react-native';
+import { ActivityIndicator, ScrollView, StyleSheet, View } from 'react-native';
 
 import { Button } from '@/components/button';
-import { ChoiceChips } from '@/components/choice-chips';
 import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
 import { ChildScreen } from '@/features/backgrounds/child-screen';
@@ -12,26 +11,24 @@ import { Spacing } from '@/constants/theme';
 import { useChildMode } from '@/features/child-mode/child-mode-provider';
 import { useChildProfile } from '@/features/profiles/api';
 import { DictationPlayer } from '@/features/study/dictation-player';
-import { ExerciseList } from '@/features/study/exercise-list';
 import { RecitationRecorder } from '@/features/study/recitation-recorder';
 import { FicheView } from '@/features/study/fiche-view';
-import { QuizPlayer } from '@/features/study/quiz-player';
+import { StepIndicator } from '@/features/study/step-indicator';
+import { TrainingSession } from '@/features/study/training-session';
 import { useGeneratePack, useLogQuiz, useStudyPack } from '@/features/study/api';
 
-type Section = 'fiche' | 'quiz' | 'exercices' | 'ecoute' | 'reciter';
-const SECTION_LABELS: Record<Section, string> = {
-  fiche: 'Fiche',
-  quiz: 'Quiz',
-  exercices: 'Exercices',
-  ecoute: 'Écoute et écris',
-  reciter: 'Je récite',
-};
+/** Leçon (étape 1), entraînement et vérification (étapes 2 et 3), ou une autre façon de réviser. */
+type Step = 'lecon' | 'entrainement' | 'ecoute' | 'reciter';
 
-/** Entraînement de l'enfant sur une tâche : fiche, quiz et exercices. */
+/**
+ * Travail de l'enfant sur une tâche, en trois étapes : je revois la leçon et les clés pour réussir, je
+ * m'entraîne sans correction, je vérifie mes réponses contre les réponses attendues.
+ */
 export default function StudyScreen() {
   const { taskId, mode, subject } = useLocalSearchParams<{
     taskId: string;
-    mode?: Section;
+    /** « fiche » ou « quiz » depuis la mission : on commence toujours par la leçon. */
+    mode?: string;
     subject?: string;
   }>();
   const { activeChildId } = useChildMode();
@@ -39,7 +36,13 @@ export default function StudyScreen() {
   const pack = useStudyPack(taskId);
   const generate = useGeneratePack(taskId);
   const requested = useRef(false);
-  const [section, setSection] = useState<Section | null>(mode ?? null);
+  const [step, setStep] = useState<Step>(mode === 'ecoute' || mode === 'reciter' ? mode : 'lecon');
+  const scroll = useRef<ScrollView>(null);
+  const toTop = () => scroll.current?.scrollTo({ y: 0, animated: false });
+  const show = (next: Step) => {
+    setStep(next);
+    toTop();
+  };
   const logQuiz = useLogQuiz(activeChildId ?? '');
 
   // Paquet absent : on le prépare à l'arrivée sur l'écran.
@@ -94,57 +97,71 @@ export default function StudyScreen() {
   }
 
   const words = dictationWords(subject ?? '', content.fiche?.keyTerms ?? []);
-  const available = (['fiche', 'quiz', 'exercices', 'ecoute', 'reciter'] as const).filter((s) =>
-    s === 'reciter'
-      ? true
-      : s === 'fiche'
-        ? content.fiche !== null
-        : s === 'quiz'
-          ? content.quiz.length > 0
-          : s === 'exercices'
-            ? content.exercises.length > 0
-            : words.length >= 2,
-  );
-  const current = section && available.includes(section) ? section : available[0];
+  const items = trainingItems(content);
+  // Sans fiche (cas rare), on passe directement à l'entraînement.
+  const current = step === 'lecon' && !content.fiche && items.length > 0 ? 'entrainement' : step;
+  const backToLesson = <Button variant="secondary" label="← Revoir la leçon" onPress={() => show('lecon')} />;
 
   return (
     <ChildScreen style={styles.container}>
-      <ScrollView contentContainerStyle={styles.content}>
-        <ChoiceChips
-          label="Je veux…"
-          options={available}
-          labels={SECTION_LABELS}
-          selected={current ? [current] : []}
-          onToggle={setSection}
-        />
-        {current === 'fiche' && content.fiche ? (
-          <FicheView fiche={content.fiche} settings={settings} packId={pack.data?.id} />
+      <ScrollView ref={scroll} contentContainerStyle={styles.content}>
+        {current === 'lecon' && content.fiche ? (
+          <>
+            <StepIndicator current={1} />
+            <FicheView fiche={content.fiche} settings={settings} packId={pack.data?.id} />
+            {items.length > 0 ? (
+              <Button label="J’ai revu la leçon : je m’entraîne →" onPress={() => show('entrainement')} />
+            ) : null}
+            <ThemedText type="smallBold">Autres façons de réviser</ThemedText>
+            <View style={styles.row}>
+              {words.length >= 2 ? (
+                <Button
+                  variant="secondary"
+                  label="Écoute et écris"
+                  style={styles.flex}
+                  onPress={() => show('ecoute')}
+                />
+              ) : null}
+              <Button
+                variant="secondary"
+                label="Je récite"
+                style={styles.flex}
+                onPress={() => show('reciter')}
+              />
+            </View>
+          </>
         ) : null}
-        {current === 'quiz' ? (
-          <QuizPlayer
-            questions={content.quiz}
-            settings={settings}
-            onFinish={(score, total) => logQuiz(taskId, score, total)}
-          />
-        ) : null}
-        {current === 'exercices' ? (
-          <ExerciseList
-            key={pack.data?.id}
-            exercises={content.exercises}
-            settings={settings}
-            mathSupport={settings.visualMath && isMathSubject(subject ?? '')}
-            onFinish={(succeeded, total) => logQuiz(taskId, succeeded, total, 'exercices')}
-          />
+        {/* Gardé monté (caché) pendant la relecture de la leçon : les réponses déjà données restent. */}
+        {items.length > 0 ? (
+          <View style={current === 'entrainement' ? undefined : styles.hidden}>
+            <TrainingSession
+              key={pack.data?.id}
+              items={items}
+              settings={settings}
+              mathSupport={settings.visualMath && isMathSubject(subject ?? '')}
+              onFinish={(score, total) => logQuiz(taskId, score, total)}
+              onBackToLesson={() => show('lecon')}
+              onNavigate={toTop}
+            />
+          </View>
         ) : null}
         {current === 'ecoute' ? (
-          <DictationPlayer
-            words={words}
-            subject={subject ?? ''}
-            settings={settings}
-            onFinish={(correct, total) => logQuiz(taskId, correct, total, 'ecoute')}
-          />
+          <>
+            <DictationPlayer
+              words={words}
+              subject={subject ?? ''}
+              settings={settings}
+              onFinish={(correct, total) => logQuiz(taskId, correct, total, 'ecoute')}
+            />
+            {backToLesson}
+          </>
         ) : null}
-        {current === 'reciter' ? <RecitationRecorder /> : null}
+        {current === 'reciter' ? (
+          <>
+            <RecitationRecorder />
+            {backToLesson}
+          </>
+        ) : null}
         {back}
       </ScrollView>
     </ChildScreen>
@@ -156,4 +173,7 @@ const styles = StyleSheet.create({
   center: { alignItems: 'center', justifyContent: 'center', gap: Spacing.three, padding: Spacing.four },
   centerText: { textAlign: 'center' },
   content: { padding: Spacing.four, gap: Spacing.three },
+  row: { flexDirection: 'row', flexWrap: 'wrap', gap: Spacing.two },
+  flex: { flexGrow: 1, flexBasis: 140 },
+  hidden: { display: 'none' },
 });

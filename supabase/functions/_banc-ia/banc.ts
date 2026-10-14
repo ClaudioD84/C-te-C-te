@@ -206,7 +206,12 @@ const packRows: {
 
 const SAMPLE_PACK = {
   topicUnclear: false,
-  fiche: { title: 'Exemple', sections: [{ heading: 'Partie', points: ['Point'] }], keyTerms: [] },
+  fiche: {
+    title: 'Exemple',
+    sections: [{ heading: 'Partie', points: ['Point'] }],
+    keyTerms: [],
+    tips: ['Relis la consigne'],
+  },
   quiz: [1, 2, 3],
   exercises: [],
   flashcards: [1, 2, 3],
