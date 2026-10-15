@@ -16,8 +16,9 @@ pnpm banc-ia --simulation nul      # réponses vides : rappel et fiches à 0 %
 
 ```bash
 export ANTHROPIC_API_KEY=...                                  # votre clé (jamais commitée)
-pnpm banc-ia --repetitions 3                                  # modèles actuels (Opus 5.5)
-SCAN_MODEL=claude-sonnet-5-5 PACK_MODEL=claude-sonnet-5-5 pnpm banc-ia --repetitions 3 --nom sonnet
+pnpm banc-ia --repetitions 3                                  # modèles actuels (photos Opus 5.5, fiches Sonnet 5.5)
+SCAN_MODEL=claude-sonnet-5-5 pnpm banc-ia --photos --repetitions 3 --nom sonnet
+PACK_MODEL=claude-opus-5-5 pnpm banc-ia --fiches --juge --nom fiches-opus  # fiches sur Opus, pour comparer
 SCAN_EFFORT=medium pnpm banc-ia --photos --nom opus-medium    # seulement les photos
 pnpm banc-ia --fiches --juge                                   # fiches notées par un juge (Opus 5.5)
 ```
@@ -53,7 +54,12 @@ l'IA pendant le passage, comme en production). Même format que `cas/` :
   "documentType": "journal_de_classe",
   "today": "2026-10-12",
   "tasks": [
-    { "subject": "Mathématiques", "kind": "devoir", "keywords": ["exercices", "34"], "dueDate": "2026-10-13" },
+    {
+      "subject": "Mathématiques",
+      "kind": "devoir",
+      "keywords": ["exercices", "34"],
+      "dueDate": "2026-10-13"
+    },
     { "subject": "Éveil", "kind": "interro", "keywords": ["fleuves"], "dueDate": "2026-10-16" }
   ],
   "spellingWords": ["le château", "une forêt"]

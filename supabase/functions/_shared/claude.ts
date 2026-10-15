@@ -13,10 +13,13 @@ import type { Usage } from './pricing.ts';
 
 type Effort = 'low' | 'medium' | 'high';
 
-/** Modèle et effort réglables sans nouvelle version de l'application (variables d'environnement). */
+/**
+ * Modèle et effort réglables sans nouvelle version de l'application (variables d'environnement). Lecture des photos
+ * (écriture manuscrite) : Opus ; fiches, dossiers de révision et explications : Sonnet, deux fois moins cher.
+ */
 export const SCAN_MODEL = Deno.env.get('SCAN_MODEL') ?? 'claude-opus-5-5';
 export const SCAN_EFFORT = (Deno.env.get('SCAN_EFFORT') ?? 'low') as Effort;
-export const PACK_MODEL = Deno.env.get('PACK_MODEL') ?? 'claude-opus-5-5';
+export const PACK_MODEL = Deno.env.get('PACK_MODEL') ?? 'claude-sonnet-5-5';
 export const PACK_EFFORT = (Deno.env.get('PACK_EFFORT') ?? 'medium') as Effort;
 
 let client: InstanceType<typeof Anthropic> | null = null;
