@@ -1,0 +1,4596 @@
+{
+ "source": {
+  "title": "Compétences terminales et savoirs requis en informatique (technique de transition)",
+  "url": "https://www.enseignement.be/fileadmin/portail_age/uploads/parcours_apprentissage/secondaire_ordinaire/Organisation/Contenus_apprentissages_Secondaire/competences_terminales/FORM_COM_2et3_degres_TRANSITION/CT_HGT_Informatique.pdf",
+  "version": "2023"
+ },
+ "level": "secondaire",
+ "tracks": [
+  "technique"
+ ],
+ "entries": [
+  {
+   "code": "CTINF",
+   "parentCode": null,
+   "kind": "domaine",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Compétences terminales et savoirs requis en informatique (technique de transition)"
+  },
+  {
+   "code": "CTINF-UAA0",
+   "parentCode": "CTINF",
+   "kind": "competence",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3"
+   ],
+   "label": "NUMÉRIQUE"
+  },
+  {
+   "code": "CTINF-UAA0-C1",
+   "parentCode": "CTINF-UAA0",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Compétence : Produire un document à l’aide de logiciels bureautiques, intégrant une recherche fiable en ligne"
+  },
+  {
+   "code": "CTINF-UAA0-C2",
+   "parentCode": "CTINF-UAA0",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Compétence : Gérer ses données personnelles, ses traces de connexion et de navigation*"
+  },
+  {
+   "code": "CTINF-UAA0-A1",
+   "parentCode": "CTINF-UAA0",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Appliquer : Ouvrir/Fermer une session"
+  },
+  {
+   "code": "CTINF-UAA0-A2",
+   "parentCode": "CTINF-UAA0",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Appliquer : Utiliser un outil de recherche en exploitant des options avancées et des opérateurs"
+  },
+  {
+   "code": "CTINF-UAA0-A3",
+   "parentCode": "CTINF-UAA0",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Appliquer : Utiliser des éléments nécessaires au questionnement de la fiabilité d’une source"
+  },
+  {
+   "code": "CTINF-UAA0-A4",
+   "parentCode": "CTINF-UAA0",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Appliquer : Utiliser les fonctions principales d’un outil, d’une application, d’un logiciel bureautique de traitement de texte, de tableur, de présentation assistée par ordinateur"
+  },
+  {
+   "code": "CTINF-UAA0-A5",
+   "parentCode": "CTINF-UAA0",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Appliquer : Utiliser conjointement des applications, des logiciels"
+  },
+  {
+   "code": "CTINF-UAA0-A6",
+   "parentCode": "CTINF-UAA0",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Appliquer : Paramétrer les options de confidentialité d’un compte"
+  },
+  {
+   "code": "CTINF-UAA0-A7",
+   "parentCode": "CTINF-UAA0",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Appliquer : Effacer des traces de navigation* sur un système informatique"
+  },
+  {
+   "code": "CTINF-UAA0-T1",
+   "parentCode": "CTINF-UAA0",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Transférer : Rechercher un contenu en autonomie au moyen d’un moteur de recherche pertinent, en utilisant des opérateurs et/ou des options avancées, en justifiant sa stratégie"
+  },
+  {
+   "code": "CTINF-UAA0-T2",
+   "parentCode": "CTINF-UAA0",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Transférer : Sélectionner un outil, une application, un logiciel adéquat en fonction de l’intention"
+  },
+  {
+   "code": "CTINF-UAA0-T3",
+   "parentCode": "CTINF-UAA0",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Transférer : Produire et traiter des contenus à l’aide des fonctions principales d’un logiciel bureautique de traitement de texte, de tableur, de présentation assistée par ordinateur"
+  },
+  {
+   "code": "CTINF-UAA0-T4",
+   "parentCode": "CTINF-UAA0",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Transférer : Mettre en œuvre et améliorer la protection de ses données et de sa personne"
+  },
+  {
+   "code": "CTINF-UAA0-K1",
+   "parentCode": "CTINF-UAA0",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Connaître : Associer les opérateurs de recherche “ *, +, -, « », et, ou ” à leur fonction"
+  },
+  {
+   "code": "CTINF-UAA0-K2",
+   "parentCode": "CTINF-UAA0",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Connaître : Expliciter en contexte les notions : + : Droit à la vie privée, droit à l’oubli, droit de retrait, droit à la propriété, droit d’usage, droit à l’image, liberté d’expression/censure/modération, licence open source"
+  },
+  {
+   "code": "CTINF-UAA0-K3",
+   "parentCode": "CTINF-UAA0",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Connaître : Expliciter en contexte les notions : + : Systèmes d'exploitation, fenêtre, dossier, fichier, extensions, explorateur de fichiers, “en ligne”, “hors ligne”, logiciel, application, droits d’accès, propriétaire, administrateur, compte utilisateur, session"
+  },
+  {
+   "code": "CTINF-UAA0-K4",
+   "parentCode": "CTINF-UAA0",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Connaître : Expliciter en contexte les notions : + : Internet, Web, navigateurs Web et leurs fonctions dont signet ou marque-page, favori, moteurs de recherche, barre de recherche, extensions (ou plug in ou add on), site Web, adresse email, historique"
+  },
+  {
+   "code": "CTINF-UAA0-K5",
+   "parentCode": "CTINF-UAA0",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Connaître : Décrire les caractéristiques spécifiques à la taille et au format de fichiers"
+  },
+  {
+   "code": "CTINF-UAA0-K6",
+   "parentCode": "CTINF-UAA0",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Connaître : Identifier des éléments nécessaires au questionnement de la fiabilité d’une source"
+  },
+  {
+   "code": "CTINF-UAA0-R1",
+   "parentCode": "CTINF-UAA0",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Ressource : Utilisation du vocabulaire spécifique"
+  },
+  {
+   "code": "CTINF-UAA0-R2",
+   "parentCode": "CTINF-UAA0",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Ressource : Opérateur de recherche"
+  },
+  {
+   "code": "CTINF-UAA0-R3",
+   "parentCode": "CTINF-UAA0",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Ressource : Protection des données et des personnes"
+  },
+  {
+   "code": "CTINF-UAA0-R4",
+   "parentCode": "CTINF-UAA0",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Ressource : Taille et format des fichiers"
+  },
+  {
+   "code": "CTINF-UAA0-R5",
+   "parentCode": "CTINF-UAA0",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Ressource : Fiabilité d’une source"
+  },
+  {
+   "code": "CTINF-UAA0-R6",
+   "parentCode": "CTINF-UAA0",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Ressource : Rechercher des informations issues d’une source fiable"
+  },
+  {
+   "code": "CTINF-UAA0-R7",
+   "parentCode": "CTINF-UAA0",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Ressource : Utiliser un logiciel bureautique adéquat"
+  },
+  {
+   "code": "CTINF-UAA0-R8",
+   "parentCode": "CTINF-UAA0",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Ressource : Protéger des données personnelles"
+  },
+  {
+   "code": "CTINF-UAA1",
+   "parentCode": "CTINF",
+   "kind": "competence",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3"
+   ],
+   "label": "HARDWARE ET PÉRIPHÉRIQUES"
+  },
+  {
+   "code": "CTINF-UAA1-C1",
+   "parentCode": "CTINF-UAA1",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Compétence : Proposer une configuration d’un système informatique* adapté à un usage déterminé"
+  },
+  {
+   "code": "CTINF-UAA1-A1",
+   "parentCode": "CTINF-UAA1",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Appliquer : Trier les périphériques selon leur type: entrée et/ou sortie"
+  },
+  {
+   "code": "CTINF-UAA1-A2",
+   "parentCode": "CTINF-UAA1",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Appliquer : Trier des composants internes de même fonctionnalité sur la base d’un critère, dont la performance, la connectique, la technologie, l’encombrement"
+  },
+  {
+   "code": "CTINF-UAA1-A3",
+   "parentCode": "CTINF-UAA1",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Appliquer : Commenter* la fiche technique d’une configuration"
+  },
+  {
+   "code": "CTINF-UAA1-A4",
+   "parentCode": "CTINF-UAA1",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Appliquer : Connecter les périphériques sur les ports adéquats"
+  },
+  {
+   "code": "CTINF-UAA1-A5",
+   "parentCode": "CTINF-UAA1",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Appliquer : Monter et démonter du matériel informatique en vue de modifier une configuration"
+  },
+  {
+   "code": "CTINF-UAA1-T1",
+   "parentCode": "CTINF-UAA1",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Transférer : À partir de documents iconographiques*, proposer un ou plusieurs matériels informatiques adaptés à un usage donné"
+  },
+  {
+   "code": "CTINF-UAA1-T2",
+   "parentCode": "CTINF-UAA1",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Transférer : À partir de documents, proposer des solutions pour améliorer un système informatique* jugé peu performant"
+  },
+  {
+   "code": "CTINF-UAA1-K1",
+   "parentCode": "CTINF-UAA1",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Connaître : Distinguer hardware* de software*"
+  },
+  {
+   "code": "CTINF-UAA1-K2",
+   "parentCode": "CTINF-UAA1",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Connaître : Reconnaitre des composants internes d'un système informatique* dont carte mère, cartes d'extension, processeur, mémoire, alimentation, stockage, ports"
+  },
+  {
+   "code": "CTINF-UAA1-K3",
+   "parentCode": "CTINF-UAA1",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Connaître : Nommer des composants internes d'un système informatique* dont carte mère, cartes d'extension, processeur, mémoire, alimentation, stockage, ports"
+  },
+  {
+   "code": "CTINF-UAA1-K4",
+   "parentCode": "CTINF-UAA1",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Connaître : Énumérer les caractéristiques principales des composants internes d'un système informatique* dont carte mère, cartes d'extension, processeur, mémoire, alimentation, stockage, ports"
+  },
+  {
+   "code": "CTINF-UAA1-K5",
+   "parentCode": "CTINF-UAA1",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Connaître : Décrire le rôle des composants internes d'un système informatique* dont carte mère, cartes d'extension, processeur, mémoire, alimentation, stockage, ports"
+  },
+  {
+   "code": "CTINF-UAA1-K6",
+   "parentCode": "CTINF-UAA1",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Connaître : Reconnaitre des périphériques informatiques"
+  },
+  {
+   "code": "CTINF-UAA1-K7",
+   "parentCode": "CTINF-UAA1",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Connaître : Nommer des périphériques informatiques"
+  },
+  {
+   "code": "CTINF-UAA1-K8",
+   "parentCode": "CTINF-UAA1",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Connaître : Décrire le rôle des périphériques d'un système informatique*"
+  },
+  {
+   "code": "CTINF-UAA1-R1",
+   "parentCode": "CTINF-UAA1",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Ressource : Composant interne d'un système informatique*"
+  },
+  {
+   "code": "CTINF-UAA1-R2",
+   "parentCode": "CTINF-UAA1",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Ressource : Périphérique informatique"
+  },
+  {
+   "code": "CTINF-UAA1-R3",
+   "parentCode": "CTINF-UAA1",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Ressource : Manipuler du matériel informatique (du transport à l’utilisation)"
+  },
+  {
+   "code": "CTINF-UAA1-R4",
+   "parentCode": "CTINF-UAA1",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Ressource : Assembler du matériel informatique"
+  },
+  {
+   "code": "CTINF-UAA2",
+   "parentCode": "CTINF",
+   "kind": "competence",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3"
+   ],
+   "label": "PROGRAMMATION SÉQUENTIELLE"
+  },
+  {
+   "code": "CTINF-UAA2-C1",
+   "parentCode": "CTINF-UAA2",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Compétence : Programmer une séquence d’instructions pour répondre à un besoin défini"
+  },
+  {
+   "code": "CTINF-UAA2-A1",
+   "parentCode": "CTINF-UAA2",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Appliquer : Appliquer les règles de syntaxe et les conventions spécifiques à un langage de programmation"
+  },
+  {
+   "code": "CTINF-UAA2-A2",
+   "parentCode": "CTINF-UAA2",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Appliquer : Déclarer une variable en appliquant les règles et conventions"
+  },
+  {
+   "code": "CTINF-UAA2-A3",
+   "parentCode": "CTINF-UAA2",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Appliquer : Lire un logigramme* d’actions d’un objet réel ou virtuel intégrant structure répétitive et opérateurs logiques"
+  },
+  {
+   "code": "CTINF-UAA2-A4",
+   "parentCode": "CTINF-UAA2",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Appliquer : Traduire un logigramme* dans un langage de programmation textuel*"
+  },
+  {
+   "code": "CTINF-UAA2-A5",
+   "parentCode": "CTINF-UAA2",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Appliquer : Utiliser des fonctions prédéfinies (bibliothèque) en vue d’animer un objet réel ou virtuel"
+  },
+  {
+   "code": "CTINF-UAA2-A6",
+   "parentCode": "CTINF-UAA2",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Appliquer : Tester la séquence d’instructions conçue"
+  },
+  {
+   "code": "CTINF-UAA2-A7",
+   "parentCode": "CTINF-UAA2",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Appliquer : Commenter* des lignes de codes"
+  },
+  {
+   "code": "CTINF-UAA2-T1",
+   "parentCode": "CTINF-UAA2",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Transférer : Écrire un logigramme* d’actions d’un objet réel ou virtuel intégrant structure répétitive et opérateurs logiques"
+  },
+  {
+   "code": "CTINF-UAA2-T2",
+   "parentCode": "CTINF-UAA2",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Transférer : Améliorer une séquence pour répondre à un besoin défini"
+  },
+  {
+   "code": "CTINF-UAA2-T3",
+   "parentCode": "CTINF-UAA2",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Transférer : Corriger une séquence défaillante proposée pour atteindre un but défini"
+  },
+  {
+   "code": "CTINF-UAA2-K1",
+   "parentCode": "CTINF-UAA2",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Connaître : Associer les opérateurs de recherche “ *, +, -, « », et, ou ” à leur fonction"
+  },
+  {
+   "code": "CTINF-UAA2-K2",
+   "parentCode": "CTINF-UAA2",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Connaître : Expliciter en contexte les notions : + : Droit à la vie privée, droit à l’oubli, droit de retrait, droit à la propriété, droit d’usage, droit à l’image, liberté d’expression/censure/modération, licence open source"
+  },
+  {
+   "code": "CTINF-UAA2-K3",
+   "parentCode": "CTINF-UAA2",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Connaître : Expliciter en contexte les notions : + : Systèmes d'exploitation, fenêtre, dossier, fichier, extensions, explorateur de fichiers, “en ligne”, “hors ligne”, logiciel, application, droits d’accès, propriétaire, administrateur, compte utilisateur, session"
+  },
+  {
+   "code": "CTINF-UAA2-K4",
+   "parentCode": "CTINF-UAA2",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Connaître : Expliciter en contexte les notions : + : Internet, Web, navigateurs Web et leurs fonctions dont signet ou marque-page, favori, moteurs de recherche, barre de recherche, extensions (ou plug in ou add on), site Web, adresse email, historique"
+  },
+  {
+   "code": "CTINF-UAA2-K5",
+   "parentCode": "CTINF-UAA2",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Connaître : Décrire les caractéristiques spécifiques à la taille et au format de fichiers"
+  },
+  {
+   "code": "CTINF-UAA2-K6",
+   "parentCode": "CTINF-UAA2",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Connaître : Identifier des éléments nécessaires au questionnement de la fiabilité d’une source"
+  },
+  {
+   "code": "CTINF-UAA2-R1",
+   "parentCode": "CTINF-UAA2",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Ressource : Logigramme*"
+  },
+  {
+   "code": "CTINF-UAA2-R2",
+   "parentCode": "CTINF-UAA2",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Ressource : Séquence"
+  },
+  {
+   "code": "CTINF-UAA2-R3",
+   "parentCode": "CTINF-UAA2",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Ressource : Variable"
+  },
+  {
+   "code": "CTINF-UAA2-R4",
+   "parentCode": "CTINF-UAA2",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Ressource : Types de donnée : nombre entier"
+  },
+  {
+   "code": "CTINF-UAA2-R5",
+   "parentCode": "CTINF-UAA2",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Ressource : Types de donnée : nombre flottant"
+  },
+  {
+   "code": "CTINF-UAA2-R6",
+   "parentCode": "CTINF-UAA2",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Ressource : Types de donnée : booléen"
+  },
+  {
+   "code": "CTINF-UAA2-R7",
+   "parentCode": "CTINF-UAA2",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Ressource : Types d’opérateur : mathématique"
+  },
+  {
+   "code": "CTINF-UAA2-R8",
+   "parentCode": "CTINF-UAA2",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Ressource : Types d’opérateur : de comparaison"
+  },
+  {
+   "code": "CTINF-UAA2-R9",
+   "parentCode": "CTINF-UAA2",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Ressource : Types d’opérateur : logique"
+  },
+  {
+   "code": "CTINF-UAA2-R10",
+   "parentCode": "CTINF-UAA2",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Ressource : Structure répétitive"
+  },
+  {
+   "code": "CTINF-UAA2-R11",
+   "parentCode": "CTINF-UAA2",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Ressource : Fonction prédéfinie"
+  },
+  {
+   "code": "CTINF-UAA2-R12",
+   "parentCode": "CTINF-UAA2",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Ressource : Décoder un logigramme*"
+  },
+  {
+   "code": "CTINF-UAA2-R13",
+   "parentCode": "CTINF-UAA2",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Ressource : Programmer"
+  },
+  {
+   "code": "CTINF-UAA2-R14",
+   "parentCode": "CTINF-UAA2",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Ressource : Tester"
+  },
+  {
+   "code": "CTINF-UAA3",
+   "parentCode": "CTINF",
+   "kind": "competence",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3"
+   ],
+   "label": "CRÉATION D’UN SITE WEB"
+  },
+  {
+   "code": "CTINF-UAA3-C1",
+   "parentCode": "CTINF-UAA3",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Compétence : Créer un site Web multi pages en utilisant les langages HTML et CSS"
+  },
+  {
+   "code": "CTINF-UAA3-A1",
+   "parentCode": "CTINF-UAA3",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Appliquer : Transcoder une couleur RGB en base hexadécimale"
+  },
+  {
+   "code": "CTINF-UAA3-A2",
+   "parentCode": "CTINF-UAA3",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Appliquer : Dessiner une structure d’un site Web"
+  },
+  {
+   "code": "CTINF-UAA3-A3",
+   "parentCode": "CTINF-UAA3",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Appliquer : Construire un menu sur la base d’une structure donnée"
+  },
+  {
+   "code": "CTINF-UAA3-A4",
+   "parentCode": "CTINF-UAA3",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Appliquer : Construire l’arborescence d’un site Web contenant plusieurs dossiers et fichiers"
+  },
+  {
+   "code": "CTINF-UAA3-A5",
+   "parentCode": "CTINF-UAA3",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Appliquer : En utilisant une version mise à jour du langage HTML, insérer : des titres hiérarchisés"
+  },
+  {
+   "code": "CTINF-UAA3-A6",
+   "parentCode": "CTINF-UAA3",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Appliquer : En utilisant une version mise à jour du langage HTML, insérer : des blocs de texte"
+  },
+  {
+   "code": "CTINF-UAA3-A7",
+   "parentCode": "CTINF-UAA3",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Appliquer : En utilisant une version mise à jour du langage HTML, insérer : des images"
+  },
+  {
+   "code": "CTINF-UAA3-A8",
+   "parentCode": "CTINF-UAA3",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Appliquer : En utilisant une version mise à jour du langage HTML, insérer : des pages"
+  },
+  {
+   "code": "CTINF-UAA3-A9",
+   "parentCode": "CTINF-UAA3",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Appliquer : En utilisant une version mise à jour du langage HTML, insérer : des liens hypertexte"
+  },
+  {
+   "code": "CTINF-UAA3-A10",
+   "parentCode": "CTINF-UAA3",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Appliquer : En utilisant une version mise à jour du langage CSS, habiller des balises du langage HTML"
+  },
+  {
+   "code": "CTINF-UAA3-A11",
+   "parentCode": "CTINF-UAA3",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Appliquer : Convertir des nombres d’une base numérique à une autre (binaire, hexadécimale, décimale)"
+  },
+  {
+   "code": "CTINF-UAA3-A12",
+   "parentCode": "CTINF-UAA3",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Appliquer : Choisir les propriétés d’une image en fonction de l’utilisation attendue"
+  },
+  {
+   "code": "CTINF-UAA3-T1",
+   "parentCode": "CTINF-UAA3",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Transférer : Concevoir la page d’accueil d’un site Web"
+  },
+  {
+   "code": "CTINF-UAA3-T2",
+   "parentCode": "CTINF-UAA3",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Transférer : Ajouter et lier de nouvelles pages à la page d’accueil d’un site Web"
+  },
+  {
+   "code": "CTINF-UAA3-T3",
+   "parentCode": "CTINF-UAA3",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Transférer : Concevoir un site Web sur la base d’une structure donnée"
+  },
+  {
+   "code": "CTINF-UAA3-T4",
+   "parentCode": "CTINF-UAA3",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Transférer : Corriger les erreurs d’affichage liées au code de caractères utilisé"
+  },
+  {
+   "code": "CTINF-UAA3-K1",
+   "parentCode": "CTINF-UAA3",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Connaître : Nommer les différentes structures d’un site Web"
+  },
+  {
+   "code": "CTINF-UAA3-K2",
+   "parentCode": "CTINF-UAA3",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Connaître : Décrire le rôle des différentes structures d’un site Web"
+  },
+  {
+   "code": "CTINF-UAA3-K3",
+   "parentCode": "CTINF-UAA3",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Connaître : Distinguer les liens relatifs des liens absolus"
+  },
+  {
+   "code": "CTINF-UAA3-K4",
+   "parentCode": "CTINF-UAA3",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Connaître : Associer des liens relatifs à une arborescence"
+  },
+  {
+   "code": "CTINF-UAA3-K5",
+   "parentCode": "CTINF-UAA3",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Connaître : Associer les balises HTML de structure de page à leur sémantique"
+  },
+  {
+   "code": "CTINF-UAA3-K6",
+   "parentCode": "CTINF-UAA3",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Connaître : Associer les propriétés CSS à leur fonction d’habillage de balises du langage HTML"
+  },
+  {
+   "code": "CTINF-UAA3-K7",
+   "parentCode": "CTINF-UAA3",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Connaître : Expliquer le fonctionnement des bases 2 et 16"
+  },
+  {
+   "code": "CTINF-UAA3-K8",
+   "parentCode": "CTINF-UAA3",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Connaître : Expliquer la synthèse additive des couleurs (RGB)"
+  },
+  {
+   "code": "CTINF-UAA3-K9",
+   "parentCode": "CTINF-UAA3",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Connaître : Différencier les types de balises"
+  },
+  {
+   "code": "CTINF-UAA3-K10",
+   "parentCode": "CTINF-UAA3",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Connaître : Expliquer les codes de caractères, dont ASCII, ISO8859-1, ISO8859-15 et UTF-8"
+  },
+  {
+   "code": "CTINF-UAA3-K11",
+   "parentCode": "CTINF-UAA3",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Connaître : Citer les propriétés d’une image numérisée, dont la définition, la résolution, le format, le codage"
+  },
+  {
+   "code": "CTINF-UAA3-K12",
+   "parentCode": "CTINF-UAA3",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Connaître : Associer un format d’une image à son utilisation"
+  },
+  {
+   "code": "CTINF-UAA3-R1",
+   "parentCode": "CTINF-UAA3",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Ressource : Arborescence de fichiers"
+  },
+  {
+   "code": "CTINF-UAA3-R2",
+   "parentCode": "CTINF-UAA3",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Ressource : Navigation hypertexte"
+  },
+  {
+   "code": "CTINF-UAA3-R3",
+   "parentCode": "CTINF-UAA3",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Ressource : Bases numériques 2 et 16"
+  },
+  {
+   "code": "CTINF-UAA3-R4",
+   "parentCode": "CTINF-UAA3",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Ressource : Codes de caractères"
+  },
+  {
+   "code": "CTINF-UAA3-R5",
+   "parentCode": "CTINF-UAA3",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Ressource : Langage HTML"
+  },
+  {
+   "code": "CTINF-UAA3-R6",
+   "parentCode": "CTINF-UAA3",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Ressource : Langage CSS"
+  },
+  {
+   "code": "CTINF-UAA3-R7",
+   "parentCode": "CTINF-UAA3",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Ressource : Synthèse additive des couleurs"
+  },
+  {
+   "code": "CTINF-UAA3-R8",
+   "parentCode": "CTINF-UAA3",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Ressource : Propriétés d’une image"
+  },
+  {
+   "code": "CTINF-UAA3-R9",
+   "parentCode": "CTINF-UAA3",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Ressource : Créer une arborescence de dossiers et de fichiers"
+  },
+  {
+   "code": "CTINF-UAA3-R10",
+   "parentCode": "CTINF-UAA3",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Ressource : Naviguer dans une arborescence de dossiers et de fichiers"
+  },
+  {
+   "code": "CTINF-UAA3-R11",
+   "parentCode": "CTINF-UAA3",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Ressource : Utiliser les langages HTML et CSS"
+  },
+  {
+   "code": "CTINF-UAA4",
+   "parentCode": "CTINF",
+   "kind": "competence",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S4"
+   ],
+   "label": "PROJET COLLABORATIF"
+  },
+  {
+   "code": "CTINF-UAA4-C1",
+   "parentCode": "CTINF-UAA4",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Compétence : Construire un projet collaboratif, dont l’objet porte sur la programmation ou sur la technologie Web, sur la base d’un cahier des charges* mis à disposition"
+  },
+  {
+   "code": "CTINF-UAA4-A1",
+   "parentCode": "CTINF-UAA4",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Appliquer : Utiliser un outil informatique collaboratif Sur la base d’un travail collaboratif et d’un cahier des"
+  },
+  {
+   "code": "CTINF-UAA4-A2",
+   "parentCode": "CTINF-UAA4",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Appliquer : Extraire d’un cahier des charges* les charges* mis à disposition : données nécessaires à la préparation d’un projet : l’objectif final"
+  },
+  {
+   "code": "CTINF-UAA4-A3",
+   "parentCode": "CTINF-UAA4",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Appliquer : Extraire d’un cahier des charges* les charges* mis à disposition : données nécessaires à la préparation d’un projet : les objectifs opérationnels"
+  },
+  {
+   "code": "CTINF-UAA4-A4",
+   "parentCode": "CTINF-UAA4",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Appliquer : Extraire d’un cahier des charges* les charges* mis à disposition : données nécessaires à la préparation d’un projet : les ressources humaines"
+  },
+  {
+   "code": "CTINF-UAA4-A5",
+   "parentCode": "CTINF-UAA4",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Appliquer : Extraire d’un cahier des charges* les charges* mis à disposition : données nécessaires à la préparation d’un projet : les ressources matérielles"
+  },
+  {
+   "code": "CTINF-UAA4-A6",
+   "parentCode": "CTINF-UAA4",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Appliquer : Extraire d’un cahier des charges* les charges* mis à disposition : données nécessaires à la préparation d’un projet : la planification"
+  },
+  {
+   "code": "CTINF-UAA4-A7",
+   "parentCode": "CTINF-UAA4",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Appliquer : Extraire d’un cahier des charges* les charges* mis à disposition : données nécessaires à la préparation d’un projet : la distribution des tâches"
+  },
+  {
+   "code": "CTINF-UAA4-A8",
+   "parentCode": "CTINF-UAA4",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Appliquer : Vérifier la mise en œuvre d’un cahier des charges* : l’objectif final"
+  },
+  {
+   "code": "CTINF-UAA4-A9",
+   "parentCode": "CTINF-UAA4",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Appliquer : Vérifier la mise en œuvre d’un cahier des charges* : les objectifs opérationnels"
+  },
+  {
+   "code": "CTINF-UAA4-A10",
+   "parentCode": "CTINF-UAA4",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Appliquer : Vérifier la mise en œuvre d’un cahier des charges* : les ressources humaines"
+  },
+  {
+   "code": "CTINF-UAA4-A11",
+   "parentCode": "CTINF-UAA4",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Appliquer : Vérifier la mise en œuvre d’un cahier des charges* : les ressources matérielles"
+  },
+  {
+   "code": "CTINF-UAA4-A12",
+   "parentCode": "CTINF-UAA4",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Appliquer : Vérifier la mise en œuvre d’un cahier des charges* : la planification"
+  },
+  {
+   "code": "CTINF-UAA4-A13",
+   "parentCode": "CTINF-UAA4",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Appliquer : Vérifier la mise en œuvre d’un cahier des charges* : la répartition équilibrée des tâches"
+  },
+  {
+   "code": "CTINF-UAA4-A14",
+   "parentCode": "CTINF-UAA4",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Appliquer : Vérifier la mise en œuvre d’un cahier des charges* : l’état d’avancement du projet"
+  },
+  {
+   "code": "CTINF-UAA4-A15",
+   "parentCode": "CTINF-UAA4",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Appliquer : Conserver des traces* de la mise en œuvre d’un cahier des charges*"
+  },
+  {
+   "code": "CTINF-UAA4-T1",
+   "parentCode": "CTINF-UAA4",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Transférer : Préparer un projet"
+  },
+  {
+   "code": "CTINF-UAA4-T2",
+   "parentCode": "CTINF-UAA4",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Transférer : Développer un projet"
+  },
+  {
+   "code": "CTINF-UAA4-T3",
+   "parentCode": "CTINF-UAA4",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Transférer : Clôturer un projet : Communiquer sa procédure"
+  },
+  {
+   "code": "CTINF-UAA4-T4",
+   "parentCode": "CTINF-UAA4",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Transférer : Clôturer un projet : Commenter* ses phases"
+  },
+  {
+   "code": "CTINF-UAA4-T5",
+   "parentCode": "CTINF-UAA4",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Transférer : Clôturer un projet : Présenter le produit final"
+  },
+  {
+   "code": "CTINF-UAA4-K1",
+   "parentCode": "CTINF-UAA4",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Connaître : Identifier les phases d’un projet (procédure): préparation - développement - clôture"
+  },
+  {
+   "code": "CTINF-UAA4-K2",
+   "parentCode": "CTINF-UAA4",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Connaître : Identifier les composantes de la phase de préparation d’un projet dont l’objectif final, les objectifs opérationnels, les ressources humaines et matérielles, la planification et la répartition des tâches"
+  },
+  {
+   "code": "CTINF-UAA4-K3",
+   "parentCode": "CTINF-UAA4",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Connaître : Identifier les composantes de la phase de développement d’un projet dont la réalisation, le contrôle de l’état d’avancement et l’amélioration"
+  },
+  {
+   "code": "CTINF-UAA4-K4",
+   "parentCode": "CTINF-UAA4",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Connaître : Identifier les composantes de la phase de clôture d’un projet dont l’analyse de la procédure mise en œuvre et la présentation"
+  },
+  {
+   "code": "CTINF-UAA4-R1",
+   "parentCode": "CTINF-UAA4",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Ressource : Procédure d’un projet"
+  },
+  {
+   "code": "CTINF-UAA4-R2",
+   "parentCode": "CTINF-UAA4",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Ressource : Vérifier et valider la procédure d’un projet"
+  },
+  {
+   "code": "CTINF-UAA5",
+   "parentCode": "CTINF",
+   "kind": "competence",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S4"
+   ],
+   "label": "PROGRAMMATION IMPÉRATIVE"
+  },
+  {
+   "code": "CTINF-UAA5-C1",
+   "parentCode": "CTINF-UAA5",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Compétence : Développer une application non orientée objet sur la base d’un cahier des charges* intégrant des chaines de caractères, des fonctions prédéfinies, des structures alternatives et répétitives"
+  },
+  {
+   "code": "CTINF-UAA5-A1",
+   "parentCode": "CTINF-UAA5",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Appliquer : Lire un algorithme* intégrant des structures alternative et répétitive"
+  },
+  {
+   "code": "CTINF-UAA5-A2",
+   "parentCode": "CTINF-UAA5",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Appliquer : Traduire un algorithme* dans un langage de programmation en respectant sa syntaxe"
+  },
+  {
+   "code": "CTINF-UAA5-A3",
+   "parentCode": "CTINF-UAA5",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Appliquer : Vérifier et valider les données entrantes"
+  },
+  {
+   "code": "CTINF-UAA5-A4",
+   "parentCode": "CTINF-UAA5",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Appliquer : Programmer en utilisant des chaines de caractères et leurs fonctions prédéfinies"
+  },
+  {
+   "code": "CTINF-UAA5-A5",
+   "parentCode": "CTINF-UAA5",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Appliquer : Programmer en utilisant une structure alternative"
+  },
+  {
+   "code": "CTINF-UAA5-A6",
+   "parentCode": "CTINF-UAA5",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Appliquer : Programmer en utilisant conjointement des structures alternatives et répétitives"
+  },
+  {
+   "code": "CTINF-UAA5-A7",
+   "parentCode": "CTINF-UAA5",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Appliquer : Commenter* des lignes de codes"
+  },
+  {
+   "code": "CTINF-UAA5-A8",
+   "parentCode": "CTINF-UAA5",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Appliquer : Tester le programme conçu"
+  },
+  {
+   "code": "CTINF-UAA5-T1",
+   "parentCode": "CTINF-UAA5",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Transférer : Extraire d’un cahier des charges* les informations nécessaires à la programmation"
+  },
+  {
+   "code": "CTINF-UAA5-T2",
+   "parentCode": "CTINF-UAA5",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Transférer : Écrire un algorithme* intégrant des structures alternatives et répétitives"
+  },
+  {
+   "code": "CTINF-UAA5-T3",
+   "parentCode": "CTINF-UAA5",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Transférer : Programmer en recourant aux instructions et types de données nécessaires au développement d’une application"
+  },
+  {
+   "code": "CTINF-UAA5-T4",
+   "parentCode": "CTINF-UAA5",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Transférer : Corriger un programme défaillant"
+  },
+  {
+   "code": "CTINF-UAA5-T5",
+   "parentCode": "CTINF-UAA5",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Transférer : Améliorer un programme pour répondre à un besoin défini"
+  },
+  {
+   "code": "CTINF-UAA5-K1",
+   "parentCode": "CTINF-UAA5",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Connaître : Expliquer la notion d’entrée et de sortie"
+  },
+  {
+   "code": "CTINF-UAA5-K2",
+   "parentCode": "CTINF-UAA5",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Connaître : Expliquer la notion de programmation impérative*"
+  },
+  {
+   "code": "CTINF-UAA5-K3",
+   "parentCode": "CTINF-UAA5",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Connaître : Expliquer la notion de structure alternative"
+  },
+  {
+   "code": "CTINF-UAA5-K4",
+   "parentCode": "CTINF-UAA5",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Connaître : Expliquer la syntaxe d’utilisation des fonctions prédéfinies associées à une bibliothèque"
+  },
+  {
+   "code": "CTINF-UAA5-K5",
+   "parentCode": "CTINF-UAA5",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Connaître : Expliquer la syntaxe d’utilisation des fonctions principales associées à des chaines de caractères dont la longueur de chaine, un caractère à un indice donné"
+  },
+  {
+   "code": "CTINF-UAA5-R1",
+   "parentCode": "CTINF-UAA5",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Ressource : Entrée, sortie"
+  },
+  {
+   "code": "CTINF-UAA5-R2",
+   "parentCode": "CTINF-UAA5",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Ressource : Structure alternative"
+  },
+  {
+   "code": "CTINF-UAA5-R3",
+   "parentCode": "CTINF-UAA5",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Ressource : Chaine de caractères"
+  },
+  {
+   "code": "CTINF-UAA5-R4",
+   "parentCode": "CTINF-UAA5",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Ressource : Langage de programmation"
+  },
+  {
+   "code": "CTINF-UAA5-R5",
+   "parentCode": "CTINF-UAA5",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Ressource : Traduire un algorithme*"
+  },
+  {
+   "code": "CTINF-UAA5-R6",
+   "parentCode": "CTINF-UAA5",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Ressource : Programmer"
+  },
+  {
+   "code": "CTINF-UAA5-R7",
+   "parentCode": "CTINF-UAA5",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Ressource : Exécuter"
+  },
+  {
+   "code": "CTINF-UAA5-R8",
+   "parentCode": "CTINF-UAA5",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Ressource : Vérifier et valider les entrées"
+  },
+  {
+   "code": "CTINF-UAA5-R9",
+   "parentCode": "CTINF-UAA5",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Ressource : Déboguer"
+  },
+  {
+   "code": "CTINF-UAA6",
+   "parentCode": "CTINF",
+   "kind": "competence",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S4"
+   ],
+   "label": "CRÉATION ET MISE EN LIGNE D’UN SITE WEB"
+  },
+  {
+   "code": "CTINF-UAA6-C1",
+   "parentCode": "CTINF-UAA6",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Compétence : Créer et mettre en ligne un site Web intégrant des effets graphiques en utilisant les langages HTML et CSS"
+  },
+  {
+   "code": "CTINF-UAA6-A1",
+   "parentCode": "CTINF-UAA6",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Appliquer : Construire l’arborescence d’un site Web contenant plusieurs dossiers et fichiers"
+  },
+  {
+   "code": "CTINF-UAA6-A2",
+   "parentCode": "CTINF-UAA6",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Appliquer : Créer un fichier CSS distinct du fichier HTML"
+  },
+  {
+   "code": "CTINF-UAA6-A3",
+   "parentCode": "CTINF-UAA6",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Appliquer : Intégrer une police de caractères externe"
+  },
+  {
+   "code": "CTINF-UAA6-A4",
+   "parentCode": "CTINF-UAA6",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Appliquer : Générer des effets graphiques en utilisant le langage CSS"
+  },
+  {
+   "code": "CTINF-UAA6-A5",
+   "parentCode": "CTINF-UAA6",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Appliquer : Paramétrer les propriétés CSS d’un effet graphique"
+  },
+  {
+   "code": "CTINF-UAA6-A6",
+   "parentCode": "CTINF-UAA6",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Appliquer : Se connecter à un serveur FTP"
+  },
+  {
+   "code": "CTINF-UAA6-A7",
+   "parentCode": "CTINF-UAA6",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Appliquer : Transférer des dossiers et des fichiers sur un serveur à distance (FTP)"
+  },
+  {
+   "code": "CTINF-UAA6-T1",
+   "parentCode": "CTINF-UAA6",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Transférer : Concevoir un site Web intégrant des effets graphiques en langage CSS"
+  },
+  {
+   "code": "CTINF-UAA6-T2",
+   "parentCode": "CTINF-UAA6",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Transférer : Mettre en ligne un site Web"
+  },
+  {
+   "code": "CTINF-UAA6-T3",
+   "parentCode": "CTINF-UAA6",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Transférer : Vérifier la conformité et la navigabilité du site mis en ligne"
+  },
+  {
+   "code": "CTINF-UAA6-K1",
+   "parentCode": "CTINF-UAA6",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Connaître : Distinguer la structure HTML de l’habillage CSS"
+  },
+  {
+   "code": "CTINF-UAA6-K2",
+   "parentCode": "CTINF-UAA6",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Connaître : Associer les propriétés CSS des effets graphiques à leur fonction"
+  },
+  {
+   "code": "CTINF-UAA6-K3",
+   "parentCode": "CTINF-UAA6",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Connaître : Expliquer la procédure de mise en ligne (FTP, URL, HTTP)"
+  },
+  {
+   "code": "CTINF-UAA6-K4",
+   "parentCode": "CTINF-UAA6",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Connaître : Différencier HTTP de HTTPS"
+  },
+  {
+   "code": "CTINF-UAA6-R1",
+   "parentCode": "CTINF-UAA6",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Ressource : Éléments et effets graphiques CSS : police de caractères externe"
+  },
+  {
+   "code": "CTINF-UAA6-R2",
+   "parentCode": "CTINF-UAA6",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Ressource : Éléments et effets graphiques CSS : animations CSS"
+  },
+  {
+   "code": "CTINF-UAA6-R3",
+   "parentCode": "CTINF-UAA6",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Ressource : Éléments et effets graphiques CSS : transitions CSS"
+  },
+  {
+   "code": "CTINF-UAA6-R4",
+   "parentCode": "CTINF-UAA6",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Ressource : Procédure de mise en ligne : File Transfer Protocol (FTP)"
+  },
+  {
+   "code": "CTINF-UAA6-R5",
+   "parentCode": "CTINF-UAA6",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Ressource : Procédure de mise en ligne : Uniform Resource Locator (URL)"
+  },
+  {
+   "code": "CTINF-UAA6-R6",
+   "parentCode": "CTINF-UAA6",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Ressource : Procédure de mise en ligne : Hypertext Transfer Protocol (HTTP)"
+  },
+  {
+   "code": "CTINF-UAA6-R7",
+   "parentCode": "CTINF-UAA6",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Ressource : Procédure de mise en ligne : Hypertext Transfer Protocol Secure (HTTPS)"
+  },
+  {
+   "code": "CTINF-UAA6-R8",
+   "parentCode": "CTINF-UAA6",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Ressource : Importer des éléments et des effets graphiques"
+  },
+  {
+   "code": "CTINF-UAA6-R9",
+   "parentCode": "CTINF-UAA6",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Ressource : Transférer un site Web vers un serveur FTP"
+  },
+  {
+   "code": "CTINF-UAA7",
+   "parentCode": "CTINF",
+   "kind": "competence",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S4"
+   ],
+   "label": "BASE DE DONNÉES RELATIONNELLE"
+  },
+  {
+   "code": "CTINF-UAA7-C1",
+   "parentCode": "CTINF-UAA7",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Compétence : Gérer une base de données relationnelle multi tables"
+  },
+  {
+   "code": "CTINF-UAA7-A1",
+   "parentCode": "CTINF-UAA7",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Appliquer : À partir de consignes : Créer une table"
+  },
+  {
+   "code": "CTINF-UAA7-A2",
+   "parentCode": "CTINF-UAA7",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Appliquer : À partir de consignes : Ajouter un champ, un enregistrement"
+  },
+  {
+   "code": "CTINF-UAA7-A3",
+   "parentCode": "CTINF-UAA7",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Appliquer : À partir de consignes : Supprimer un champ, un enregistrement"
+  },
+  {
+   "code": "CTINF-UAA7-A4",
+   "parentCode": "CTINF-UAA7",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Appliquer : À partir de consignes : Modifier un champ, un enregistrement"
+  },
+  {
+   "code": "CTINF-UAA7-A5",
+   "parentCode": "CTINF-UAA7",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Appliquer : À partir de consignes : Créer une requête simple"
+  },
+  {
+   "code": "CTINF-UAA7-A6",
+   "parentCode": "CTINF-UAA7",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Appliquer : À partir de consignes : Créer une base de données relationnelle multi tables"
+  },
+  {
+   "code": "CTINF-UAA7-A7",
+   "parentCode": "CTINF-UAA7",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Appliquer : À partir de consignes : Créer une requête avec jointure"
+  },
+  {
+   "code": "CTINF-UAA7-T1",
+   "parentCode": "CTINF-UAA7",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Transférer : Concevoir une base de données relationnelle multi tables"
+  },
+  {
+   "code": "CTINF-UAA7-T2",
+   "parentCode": "CTINF-UAA7",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Transférer : Extraire des données à l’aide d’une requête"
+  },
+  {
+   "code": "CTINF-UAA7-K1",
+   "parentCode": "CTINF-UAA7",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Connaître : Expliciter en contexte les notions : base de données relationnelle"
+  },
+  {
+   "code": "CTINF-UAA7-K2",
+   "parentCode": "CTINF-UAA7",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Connaître : Expliciter en contexte les notions : table"
+  },
+  {
+   "code": "CTINF-UAA7-K3",
+   "parentCode": "CTINF-UAA7",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Connaître : Expliciter en contexte les notions : enregistrement"
+  },
+  {
+   "code": "CTINF-UAA7-K4",
+   "parentCode": "CTINF-UAA7",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Connaître : Expliciter en contexte les notions : champ"
+  },
+  {
+   "code": "CTINF-UAA7-K5",
+   "parentCode": "CTINF-UAA7",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Connaître : Expliciter en contexte les notions : type de donnée"
+  },
+  {
+   "code": "CTINF-UAA7-K6",
+   "parentCode": "CTINF-UAA7",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Connaître : clé primaire"
+  },
+  {
+   "code": "CTINF-UAA7-K7",
+   "parentCode": "CTINF-UAA7",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Connaître : requête"
+  },
+  {
+   "code": "CTINF-UAA7-K8",
+   "parentCode": "CTINF-UAA7",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Connaître : clé étrangère"
+  },
+  {
+   "code": "CTINF-UAA7-K9",
+   "parentCode": "CTINF-UAA7",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Connaître : cardinalité"
+  },
+  {
+   "code": "CTINF-UAA7-K10",
+   "parentCode": "CTINF-UAA7",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Connaître : jointure"
+  },
+  {
+   "code": "CTINF-UAA7-K11",
+   "parentCode": "CTINF-UAA7",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Connaître : Formuler la syntaxe des fonctions spécifiques aux bases de données relationnelle, dont l’ajout, la suppression et la modification d’un champ et d’un enregistrement"
+  },
+  {
+   "code": "CTINF-UAA7-R1",
+   "parentCode": "CTINF-UAA7",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Ressource : Base de données relationnelle, table, enregistrement, champ, type de donnée, clé primaire, requête, clé étrangère, cardinalité, jointure"
+  },
+  {
+   "code": "CTINF-UAA7-R2",
+   "parentCode": "CTINF-UAA7",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Ressource : Créer une base de données relationnelle multi tables"
+  },
+  {
+   "code": "CTINF-UAA7-R3",
+   "parentCode": "CTINF-UAA7",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Ressource : Utiliser une base de données relationnelle multi tables"
+  },
+  {
+   "code": "CTINF-UAA8",
+   "parentCode": "CTINF",
+   "kind": "competence",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S4"
+   ],
+   "label": "SÉCURITÉ DES DONNÉES"
+  },
+  {
+   "code": "CTINF-UAA8-C1",
+   "parentCode": "CTINF-UAA8",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Compétence : Sécuriser les données d’un système informatique*"
+  },
+  {
+   "code": "CTINF-UAA8-A1",
+   "parentCode": "CTINF-UAA8",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Appliquer : Créer un profil utilisateur dans un système d’exploitation"
+  },
+  {
+   "code": "CTINF-UAA8-A2",
+   "parentCode": "CTINF-UAA8",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Appliquer : Paramétrer un droit d’accès à un dossier, à un fichier d’un système informatique"
+  },
+  {
+   "code": "CTINF-UAA8-A3",
+   "parentCode": "CTINF-UAA8",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Appliquer : Paramétrer un droit d’accès à des fonctionnalités d’un système d’exploitation"
+  },
+  {
+   "code": "CTINF-UAA8-A4",
+   "parentCode": "CTINF-UAA8",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Appliquer : Utiliser un système d’authentification* afin d’assurer la protection des données"
+  },
+  {
+   "code": "CTINF-UAA8-A5",
+   "parentCode": "CTINF-UAA8",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Appliquer : Utiliser une interface en ligne de commande afin de sécuriser les données"
+  },
+  {
+   "code": "CTINF-UAA8-A6",
+   "parentCode": "CTINF-UAA8",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Appliquer : Installer un certificat de sécurité"
+  },
+  {
+   "code": "CTINF-UAA8-A7",
+   "parentCode": "CTINF-UAA8",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Appliquer : Vérifier l’intégrité d’un fichier"
+  },
+  {
+   "code": "CTINF-UAA8-A8",
+   "parentCode": "CTINF-UAA8",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Appliquer : Effectuer une copie de sauvegarde des données"
+  },
+  {
+   "code": "CTINF-UAA8-T1",
+   "parentCode": "CTINF-UAA8",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Transférer : Choisir un système d’authentification* en vue de sécuriser un système informatique*"
+  },
+  {
+   "code": "CTINF-UAA8-T2",
+   "parentCode": "CTINF-UAA8",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Transférer : Établir des profils de droits d’accès différents pour plusieurs utilisateurs d’un même système informatique*"
+  },
+  {
+   "code": "CTINF-UAA8-T3",
+   "parentCode": "CTINF-UAA8",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Transférer : Se protéger des logiciels malveillants"
+  },
+  {
+   "code": "CTINF-UAA8-T4",
+   "parentCode": "CTINF-UAA8",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Transférer : Établir une stratégie de sauvegarde des données"
+  },
+  {
+   "code": "CTINF-UAA8-K1",
+   "parentCode": "CTINF-UAA8",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Connaître : Identifier un profil utilisateur"
+  },
+  {
+   "code": "CTINF-UAA8-K2",
+   "parentCode": "CTINF-UAA8",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Connaître : Décrire le rôle d’un profil utilisateur"
+  },
+  {
+   "code": "CTINF-UAA8-K3",
+   "parentCode": "CTINF-UAA8",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Connaître : Identifier les droits d’accès (lecture, écriture/modification, exécution) d’un système informatique*"
+  },
+  {
+   "code": "CTINF-UAA8-K4",
+   "parentCode": "CTINF-UAA8",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Connaître : Décrire le rôle d’un droit d’accès d’un système informatique*"
+  },
+  {
+   "code": "CTINF-UAA8-K5",
+   "parentCode": "CTINF-UAA8",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Connaître : Identifier un système d’authentification*"
+  },
+  {
+   "code": "CTINF-UAA8-K6",
+   "parentCode": "CTINF-UAA8",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Connaître : Décrire le rôle de systèmes d’authentification*"
+  },
+  {
+   "code": "CTINF-UAA8-K7",
+   "parentCode": "CTINF-UAA8",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Connaître : Formuler la syntaxe des commandes associées à l’interface en ligne de commande d’un système d’exploitation dont la manipulation de fichiers et de dossiers, la gestion de droit d’accès"
+  },
+  {
+   "code": "CTINF-UAA8-K8",
+   "parentCode": "CTINF-UAA8",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Connaître : Identifier des systèmes de chiffrement de données*"
+  },
+  {
+   "code": "CTINF-UAA8-K9",
+   "parentCode": "CTINF-UAA8",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Connaître : Décrire le rôle d’un système de chiffrement de données*"
+  },
+  {
+   "code": "CTINF-UAA8-K10",
+   "parentCode": "CTINF-UAA8",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Connaître : Décrire le rôle d’un certificat de sécurité"
+  },
+  {
+   "code": "CTINF-UAA8-K11",
+   "parentCode": "CTINF-UAA8",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Connaître : Identifier un système d’intégrité"
+  },
+  {
+   "code": "CTINF-UAA8-K12",
+   "parentCode": "CTINF-UAA8",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Connaître : Décrire le rôle d’un système d’intégrité"
+  },
+  {
+   "code": "CTINF-UAA8-K13",
+   "parentCode": "CTINF-UAA8",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Connaître : Identifier les catégories de logiciels malveillants"
+  },
+  {
+   "code": "CTINF-UAA8-K14",
+   "parentCode": "CTINF-UAA8",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Connaître : Décrire les risques associés aux différentes catégories de logiciels malveillants"
+  },
+  {
+   "code": "CTINF-UAA8-K15",
+   "parentCode": "CTINF-UAA8",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Connaître : Identifier les mises à jour nécessaires à la sécurisation d’un système informatique*"
+  },
+  {
+   "code": "CTINF-UAA8-R1",
+   "parentCode": "CTINF-UAA8",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Ressource : Profil utilisateur"
+  },
+  {
+   "code": "CTINF-UAA8-R2",
+   "parentCode": "CTINF-UAA8",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Ressource : Droits d’accès"
+  },
+  {
+   "code": "CTINF-UAA8-R3",
+   "parentCode": "CTINF-UAA8",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Ressource : Système d’authentification*"
+  },
+  {
+   "code": "CTINF-UAA8-R4",
+   "parentCode": "CTINF-UAA8",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Ressource : Système de chiffrement de données*"
+  },
+  {
+   "code": "CTINF-UAA8-R5",
+   "parentCode": "CTINF-UAA8",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Ressource : Système d’intégrité*"
+  },
+  {
+   "code": "CTINF-UAA8-R6",
+   "parentCode": "CTINF-UAA8",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Ressource : Système de sauvegarde"
+  },
+  {
+   "code": "CTINF-UAA8-R7",
+   "parentCode": "CTINF-UAA8",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Ressource : Logiciels malveillants"
+  },
+  {
+   "code": "CTINF-UAA8-R8",
+   "parentCode": "CTINF-UAA8",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Ressource : Gérer les profils utilisateurs d’un système informatique*"
+  },
+  {
+   "code": "CTINF-UAA8-R9",
+   "parentCode": "CTINF-UAA8",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Ressource : Gérer l’accès aux données d’un système informatique*"
+  },
+  {
+   "code": "CTINF-UAA9",
+   "parentCode": "CTINF",
+   "kind": "competence",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S5"
+   ],
+   "label": "PROJET ET CAHIER DES CHARGES"
+  },
+  {
+   "code": "CTINF-UAA9-C1",
+   "parentCode": "CTINF-UAA9",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Compétence : Mener un projet, dont l’objet, choisi par l’(les)élève(s), porte sur la programmation ou sur la technologie Web, sur la base d’un canevas de cahier des charges*"
+  },
+  {
+   "code": "CTINF-UAA9-A1",
+   "parentCode": "CTINF-UAA9",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Appliquer : Vérifier la mise en œuvre d’un cahier des charges* d’un projet : l’objectif final"
+  },
+  {
+   "code": "CTINF-UAA9-A2",
+   "parentCode": "CTINF-UAA9",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Appliquer : Vérifier la mise en œuvre d’un cahier des charges* d’un projet : les objectifs opérationnels"
+  },
+  {
+   "code": "CTINF-UAA9-A3",
+   "parentCode": "CTINF-UAA9",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Appliquer : Vérifier la mise en œuvre d’un cahier des charges* d’un projet : les ressources humaines"
+  },
+  {
+   "code": "CTINF-UAA9-A4",
+   "parentCode": "CTINF-UAA9",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Appliquer : Vérifier la mise en œuvre d’un cahier des charges* d’un projet : les ressources matérielles"
+  },
+  {
+   "code": "CTINF-UAA9-A5",
+   "parentCode": "CTINF-UAA9",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Appliquer : Vérifier la mise en œuvre d’un cahier des charges* d’un projet : la planification"
+  },
+  {
+   "code": "CTINF-UAA9-A6",
+   "parentCode": "CTINF-UAA9",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Appliquer : Vérifier la mise en œuvre d’un cahier des charges* d’un projet : la distribution des tâches"
+  },
+  {
+   "code": "CTINF-UAA9-A7",
+   "parentCode": "CTINF-UAA9",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Appliquer : Vérifier la mise en œuvre d’un cahier des charges* d’un projet : l’état d’avancement du projet"
+  },
+  {
+   "code": "CTINF-UAA9-A8",
+   "parentCode": "CTINF-UAA9",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Appliquer : Conserver des traces* de la mise en œuvre d’un cahier des charges*"
+  },
+  {
+   "code": "CTINF-UAA9-T1",
+   "parentCode": "CTINF-UAA9",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Transférer : Compléter le canevas d’un cahier des charges* sur la base d’un projet à mener"
+  },
+  {
+   "code": "CTINF-UAA9-T2",
+   "parentCode": "CTINF-UAA9",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Transférer : Préparer, développer et clôturer un projet sur la base d’un cahier des charges* complété"
+  },
+  {
+   "code": "CTINF-UAA9-T3",
+   "parentCode": "CTINF-UAA9",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Transférer : Choisir un mode de communication adéquat pour présenter le produit final d’un projet, en mettant en avant ce qui a fonctionné et ce qui serait à améliorer"
+  },
+  {
+   "code": "CTINF-UAA9-K1",
+   "parentCode": "CTINF-UAA9",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Connaître : Décrire les phases et les composantes d’un cahier des charges* d’un projet, dont le contexte, les objectifs, le cadre (public cible, limites, délais), les ressources documentaires, humaines et matérielles"
+  },
+  {
+   "code": "CTINF-UAA9-R1",
+   "parentCode": "CTINF-UAA9",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Ressource : Phases et composantes d’un cahier des charges* d’un projet"
+  },
+  {
+   "code": "CTINF-UAA9-R2",
+   "parentCode": "CTINF-UAA9",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Ressource : Consigner l’état d’avancement d’un projet"
+  },
+  {
+   "code": "CTINF-UAA10",
+   "parentCode": "CTINF",
+   "kind": "competence",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S5"
+   ],
+   "label": "HARDWARE ET ARCHITECTURE"
+  },
+  {
+   "code": "CTINF-UAA10-C1",
+   "parentCode": "CTINF-UAA10",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Compétence : Concevoir et argumenter une configuration d’un système informatique* sur la base d’un cahier des charges*"
+  },
+  {
+   "code": "CTINF-UAA10-A1",
+   "parentCode": "CTINF-UAA10",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Appliquer : (Dés)assembler les éléments d’un système informatique* dont la configuration est adaptée à un usage déterminé"
+  },
+  {
+   "code": "CTINF-UAA10-A2",
+   "parentCode": "CTINF-UAA10",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Appliquer : Comparer des configurations de systèmes informatiques selon des caractéristiques techniques données"
+  },
+  {
+   "code": "CTINF-UAA10-A3",
+   "parentCode": "CTINF-UAA10",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Appliquer : Comparer des configurations de systèmes informatiques selon le rapport qualité/prix"
+  },
+  {
+   "code": "CTINF-UAA10-A4",
+   "parentCode": "CTINF-UAA10",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Appliquer : Connecter différents composants informatiques sur la carte mère"
+  },
+  {
+   "code": "CTINF-UAA10-A5",
+   "parentCode": "CTINF-UAA10",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Appliquer : Paramétrer la configuration de démarrage d’un système informatique*"
+  },
+  {
+   "code": "CTINF-UAA10-T1",
+   "parentCode": "CTINF-UAA10",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Transférer : Comparer des configurations d’un système informatique* sur la base d’un cahier des charges*"
+  },
+  {
+   "code": "CTINF-UAA10-T2",
+   "parentCode": "CTINF-UAA10",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Transférer : Sélectionner une configuration d’un système informatique* sur la base d’un cahier des charges*"
+  },
+  {
+   "code": "CTINF-UAA10-T3",
+   "parentCode": "CTINF-UAA10",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Transférer : Concevoir une configuration d’un système informatique* sur la base d’un cahier des charges*"
+  },
+  {
+   "code": "CTINF-UAA10-T4",
+   "parentCode": "CTINF-UAA10",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Transférer : Argumenter le choix d’une configuration d’un système informatique* sur la base d’un cahier des charges*"
+  },
+  {
+   "code": "CTINF-UAA10-K1",
+   "parentCode": "CTINF-UAA10",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Connaître : Caractériser les composants internes d'une configuration d’un système informatique* dont processeur, mémoire, carte graphique, carte mère, chipset"
+  },
+  {
+   "code": "CTINF-UAA10-K2",
+   "parentCode": "CTINF-UAA10",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Connaître : Décrire le rôle de la carte mère"
+  },
+  {
+   "code": "CTINF-UAA10-K3",
+   "parentCode": "CTINF-UAA10",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Connaître : Décrire les stratégies matérielles de stockage"
+  },
+  {
+   "code": "CTINF-UAA10-K4",
+   "parentCode": "CTINF-UAA10",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Connaître : Énumérer les caractéristiques principales des matériels de stockage"
+  },
+  {
+   "code": "CTINF-UAA10-K5",
+   "parentCode": "CTINF-UAA10",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Connaître : Expliquer l’architecture matérielle* d’un système informatique* donné"
+  },
+  {
+   "code": "CTINF-UAA10-R1",
+   "parentCode": "CTINF-UAA10",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Ressource : Architecture des systèmes informatiques"
+  },
+  {
+   "code": "CTINF-UAA10-R2",
+   "parentCode": "CTINF-UAA10",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Ressource : Configuration d’un système informatique*"
+  },
+  {
+   "code": "CTINF-UAA10-R3",
+   "parentCode": "CTINF-UAA10",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Ressource : Carte mère"
+  },
+  {
+   "code": "CTINF-UAA10-R4",
+   "parentCode": "CTINF-UAA10",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Ressource : Matériel de stockage"
+  },
+  {
+   "code": "CTINF-UAA10-R5",
+   "parentCode": "CTINF-UAA10",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Ressource : Exploiter des informations techniques issues de documents"
+  },
+  {
+   "code": "CTINF-UAA10-R6",
+   "parentCode": "CTINF-UAA10",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Ressource : Manipuler des composants d’un système informatique*"
+  },
+  {
+   "code": "CTINF-UAA11",
+   "parentCode": "CTINF",
+   "kind": "competence",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S5"
+   ],
+   "label": "PROGRAMMATION PROCÉDURALE"
+  },
+  {
+   "code": "CTINF-UAA11-C1",
+   "parentCode": "CTINF-UAA11",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Compétence : Développer une application non orientée objet sur la base d’un cahier des charges* intégrant des fonctions personnalisées, des structures imbriquées* et un tableau à plusieurs dimensions"
+  },
+  {
+   "code": "CTINF-UAA11-A1",
+   "parentCode": "CTINF-UAA11",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Appliquer : Lire un algorithme* intégrant des structures imbriquées*"
+  },
+  {
+   "code": "CTINF-UAA11-A2",
+   "parentCode": "CTINF-UAA11",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Appliquer : Traduire un algorithme* intégrant des structures imbriquées* dans un langage de programmation, en respectant la syntaxe"
+  },
+  {
+   "code": "CTINF-UAA11-A3",
+   "parentCode": "CTINF-UAA11",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Appliquer : Programmer en utilisant un tableau à plusieurs dimensions"
+  },
+  {
+   "code": "CTINF-UAA11-A4",
+   "parentCode": "CTINF-UAA11",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Appliquer : Programmer en recourant à des fonctions personnalisées"
+  },
+  {
+   "code": "CTINF-UAA11-A5",
+   "parentCode": "CTINF-UAA11",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Appliquer : Commenter* les lignes de codes"
+  },
+  {
+   "code": "CTINF-UAA11-A6",
+   "parentCode": "CTINF-UAA11",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Appliquer : Tester le programme conçu"
+  },
+  {
+   "code": "CTINF-UAA11-T1",
+   "parentCode": "CTINF-UAA11",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Transférer : Extraire d’un cahier des charges* les informations nécessaires à la programmation"
+  },
+  {
+   "code": "CTINF-UAA11-T2",
+   "parentCode": "CTINF-UAA11",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Transférer : Écrire un algorithme* intégrant des structures imbriquées*"
+  },
+  {
+   "code": "CTINF-UAA11-T3",
+   "parentCode": "CTINF-UAA11",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Transférer : Programmer en recourant aux fonctions personnalisées, instructions et types de données nécessaires au développement d’une application"
+  },
+  {
+   "code": "CTINF-UAA11-T4",
+   "parentCode": "CTINF-UAA11",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Transférer : Corriger un programme défaillant"
+  },
+  {
+   "code": "CTINF-UAA11-T5",
+   "parentCode": "CTINF-UAA11",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Transférer : Améliorer un programme pour répondre à un besoin défini"
+  },
+  {
+   "code": "CTINF-UAA11-K1",
+   "parentCode": "CTINF-UAA11",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Connaître : Expliquer la notion de portée d’une variable"
+  },
+  {
+   "code": "CTINF-UAA11-K2",
+   "parentCode": "CTINF-UAA11",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Connaître : Différencier un langage interprété d’un langage compilé"
+  },
+  {
+   "code": "CTINF-UAA11-K3",
+   "parentCode": "CTINF-UAA11",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Connaître : Expliquer la structure d’un tableau"
+  },
+  {
+   "code": "CTINF-UAA11-K4",
+   "parentCode": "CTINF-UAA11",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Connaître : Expliquer la syntaxe d’utilisation des fonctions principales d’un tableau, dont le calcul de la taille, l’insertion et la suppression d’un élément"
+  },
+  {
+   "code": "CTINF-UAA11-K5",
+   "parentCode": "CTINF-UAA11",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Connaître : Associer les fonctions principales d’un tableau à leur utilisation"
+  },
+  {
+   "code": "CTINF-UAA11-K6",
+   "parentCode": "CTINF-UAA11",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Connaître : Expliquer la syntaxe d’utilisation de fonctions personnalisées"
+  },
+  {
+   "code": "CTINF-UAA11-R1",
+   "parentCode": "CTINF-UAA11",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Ressource : Portée d’une variable"
+  },
+  {
+   "code": "CTINF-UAA11-R2",
+   "parentCode": "CTINF-UAA11",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Ressource : Interprétation, compilation"
+  },
+  {
+   "code": "CTINF-UAA11-R3",
+   "parentCode": "CTINF-UAA11",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Ressource : Tableaux à une et à plusieurs dimensions"
+  },
+  {
+   "code": "CTINF-UAA11-R4",
+   "parentCode": "CTINF-UAA11",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Ressource : Fonctions personnalisées"
+  },
+  {
+   "code": "CTINF-UAA11-R5",
+   "parentCode": "CTINF-UAA11",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Ressource : Traduire un algorithme*"
+  },
+  {
+   "code": "CTINF-UAA11-R6",
+   "parentCode": "CTINF-UAA11",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Ressource : Programmer"
+  },
+  {
+   "code": "CTINF-UAA11-R7",
+   "parentCode": "CTINF-UAA11",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Ressource : Tester"
+  },
+  {
+   "code": "CTINF-UAA11-R8",
+   "parentCode": "CTINF-UAA11",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Ressource : Déboguer"
+  },
+  {
+   "code": "CTINF-UAA12",
+   "parentCode": "CTINF",
+   "kind": "competence",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S5"
+   ],
+   "label": "DÉVELOPPEMENT D’UN SITE WEB DYNAMIQUE"
+  },
+  {
+   "code": "CTINF-UAA12-C1",
+   "parentCode": "CTINF-UAA12",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Compétence : Développer un site Web dynamique multi pages intégrant base de données relationnelle et formulaire, en recourant à des langages adaptés"
+  },
+  {
+   "code": "CTINF-UAA12-A1",
+   "parentCode": "CTINF-UAA12",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Appliquer : Élaborer un formulaire sur la base d’une structure donnée : créer un formulaire"
+  },
+  {
+   "code": "CTINF-UAA12-A2",
+   "parentCode": "CTINF-UAA12",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Appliquer : Élaborer un formulaire sur la base d’une structure donnée : soumettre un formulaire"
+  },
+  {
+   "code": "CTINF-UAA12-A3",
+   "parentCode": "CTINF-UAA12",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Appliquer : Élaborer un formulaire sur la base d’une structure donnée : valider les données collectées via un formulaire"
+  },
+  {
+   "code": "CTINF-UAA12-A4",
+   "parentCode": "CTINF-UAA12",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Appliquer : Élaborer un formulaire sur la base d’une structure donnée : traiter les données collectées via un formulaire"
+  },
+  {
+   "code": "CTINF-UAA12-A5",
+   "parentCode": "CTINF-UAA12",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Appliquer : Élaborer un formulaire sur la base d’une structure donnée : alerter l’utilisateur en cas d’erreur d’encodage"
+  },
+  {
+   "code": "CTINF-UAA12-A6",
+   "parentCode": "CTINF-UAA12",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Appliquer : Élaborer un formulaire sur la base d’une structure donnée : exploiter les données collectées via un formulaire afin de générer des interactions graphiques sur un site"
+  },
+  {
+   "code": "CTINF-UAA12-A7",
+   "parentCode": "CTINF-UAA12",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Appliquer : Référencer un site"
+  },
+  {
+   "code": "CTINF-UAA12-A8",
+   "parentCode": "CTINF-UAA12",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Appliquer : Intégrer du contenu multimédia"
+  },
+  {
+   "code": "CTINF-UAA12-A9",
+   "parentCode": "CTINF-UAA12",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Appliquer : Construire une page Web dynamique à l’aide du langage Javascript"
+  },
+  {
+   "code": "CTINF-UAA12-A10",
+   "parentCode": "CTINF-UAA12",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Appliquer : Construire une page Web dynamique à l’aide du langage PHP"
+  },
+  {
+   "code": "CTINF-UAA12-A11",
+   "parentCode": "CTINF-UAA12",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Appliquer : Se connecter à une base de données relationnelle à l’aide du langage PHP"
+  },
+  {
+   "code": "CTINF-UAA12-A12",
+   "parentCode": "CTINF-UAA12",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Appliquer : Exécuter des requêtes de lecture et d’écriture à une base de données relationnelle"
+  },
+  {
+   "code": "CTINF-UAA12-T1",
+   "parentCode": "CTINF-UAA12",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Transférer : Concevoir un formulaire répondant aux exigences d’un cahier des charges*"
+  },
+  {
+   "code": "CTINF-UAA12-T2",
+   "parentCode": "CTINF-UAA12",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Transférer : Se protéger des attaques Web les plus courantes"
+  },
+  {
+   "code": "CTINF-UAA12-T3",
+   "parentCode": "CTINF-UAA12",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Transférer : Dynamiser un site Web exclusivement à l’aide du langage Javascript"
+  },
+  {
+   "code": "CTINF-UAA12-T4",
+   "parentCode": "CTINF-UAA12",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Transférer : Dynamiser un site Web intégrant l’utilisation d’une base de données relationnelle"
+  },
+  {
+   "code": "CTINF-UAA12-T5",
+   "parentCode": "CTINF-UAA12",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Transférer : Vérifier la présence de codes malveillants dans les données reçues"
+  },
+  {
+   "code": "CTINF-UAA12-K1",
+   "parentCode": "CTINF-UAA12",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Connaître : Associer des balises HTML de formulaires à leur sémantique"
+  },
+  {
+   "code": "CTINF-UAA12-K2",
+   "parentCode": "CTINF-UAA12",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Connaître : Décrire le rôle d’un cookie"
+  },
+  {
+   "code": "CTINF-UAA12-K3",
+   "parentCode": "CTINF-UAA12",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Connaître : Décrire le rôle du référencement en ligne"
+  },
+  {
+   "code": "CTINF-UAA12-K4",
+   "parentCode": "CTINF-UAA12",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Connaître : Énumérer les fonctionnalités du langage Javascript"
+  },
+  {
+   "code": "CTINF-UAA12-K5",
+   "parentCode": "CTINF-UAA12",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Connaître : Identifier des modèles et des bibliothèques provenant de tierces parties"
+  },
+  {
+   "code": "CTINF-UAA12-K6",
+   "parentCode": "CTINF-UAA12",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Connaître : Formuler la syntaxe des requêtes à une base de données relationnelle (SQL)"
+  },
+  {
+   "code": "CTINF-UAA12-K7",
+   "parentCode": "CTINF-UAA12",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Connaître : Caractériser les attaques Web les plus courantes"
+  },
+  {
+   "code": "CTINF-UAA12-R1",
+   "parentCode": "CTINF-UAA12",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Ressource : Balises HTML de formulaire"
+  },
+  {
+   "code": "CTINF-UAA12-R2",
+   "parentCode": "CTINF-UAA12",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Ressource : Mots clés et référencement"
+  },
+  {
+   "code": "CTINF-UAA12-R3",
+   "parentCode": "CTINF-UAA12",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Ressource : Langage Javascript"
+  },
+  {
+   "code": "CTINF-UAA12-R4",
+   "parentCode": "CTINF-UAA12",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Ressource : Langage PHP"
+  },
+  {
+   "code": "CTINF-UAA12-R5",
+   "parentCode": "CTINF-UAA12",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Ressource : Base de données relationnelle"
+  },
+  {
+   "code": "CTINF-UAA12-R6",
+   "parentCode": "CTINF-UAA12",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Ressource : Protection d’un site"
+  },
+  {
+   "code": "CTINF-UAA12-R7",
+   "parentCode": "CTINF-UAA12",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Ressource : Structurer des balises de formulaires"
+  },
+  {
+   "code": "CTINF-UAA12-R8",
+   "parentCode": "CTINF-UAA12",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Ressource : Programmer en langages Javascript et PHP"
+  },
+  {
+   "code": "CTINF-UAA12-R9",
+   "parentCode": "CTINF-UAA12",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Ressource : Interagir avec une base de données relationnelle"
+  },
+  {
+   "code": "CTINF-UAA13",
+   "parentCode": "CTINF",
+   "kind": "competence",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S6"
+   ],
+   "label": "CONCEPTION ET GESTION DE PROJET"
+  },
+  {
+   "code": "CTINF-UAA13-C1",
+   "parentCode": "CTINF-UAA13",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S6"
+   ],
+   "label": "Compétence : Concevoir et gérer un projet sur la base d’un cahier des charges* conçu par l’élève, intégrant plusieurs UAA du 3e degré"
+  },
+  {
+   "code": "CTINF-UAA13-A1",
+   "parentCode": "CTINF-UAA13",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S6"
+   ],
+   "label": "Appliquer : Vérifier la mise en œuvre d’un cahier des charges* : l’objectif final"
+  },
+  {
+   "code": "CTINF-UAA13-A2",
+   "parentCode": "CTINF-UAA13",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S6"
+   ],
+   "label": "Appliquer : Vérifier la mise en œuvre d’un cahier des charges* : les objectifs opérationnels"
+  },
+  {
+   "code": "CTINF-UAA13-A3",
+   "parentCode": "CTINF-UAA13",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S6"
+   ],
+   "label": "Appliquer : Vérifier la mise en œuvre d’un cahier des charges* : les ressources humaines"
+  },
+  {
+   "code": "CTINF-UAA13-A4",
+   "parentCode": "CTINF-UAA13",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S6"
+   ],
+   "label": "Appliquer : Vérifier la mise en œuvre d’un cahier des charges* : les ressources matérielles"
+  },
+  {
+   "code": "CTINF-UAA13-A5",
+   "parentCode": "CTINF-UAA13",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S6"
+   ],
+   "label": "Appliquer : Vérifier la mise en œuvre d’un cahier des charges* : la planification"
+  },
+  {
+   "code": "CTINF-UAA13-A6",
+   "parentCode": "CTINF-UAA13",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S6"
+   ],
+   "label": "Appliquer : Vérifier la mise en œuvre d’un cahier des charges* : la distribution des tâches"
+  },
+  {
+   "code": "CTINF-UAA13-A7",
+   "parentCode": "CTINF-UAA13",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S6"
+   ],
+   "label": "Appliquer : Vérifier la mise en œuvre d’un cahier des charges* : l’état d’avancement du projet"
+  },
+  {
+   "code": "CTINF-UAA13-A8",
+   "parentCode": "CTINF-UAA13",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S6"
+   ],
+   "label": "Appliquer : Conserver des traces* de la mise en œuvre d’un cahier des charges* d’un projet"
+  },
+  {
+   "code": "CTINF-UAA13-T1",
+   "parentCode": "CTINF-UAA13",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S6"
+   ],
+   "label": "Transférer : Définir le canevas d’un cahier des charges* relatif au projet choisi par l’élève"
+  },
+  {
+   "code": "CTINF-UAA13-T2",
+   "parentCode": "CTINF-UAA13",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S6"
+   ],
+   "label": "Transférer : Compléter le canevas du cahier des charges*"
+  },
+  {
+   "code": "CTINF-UAA13-T3",
+   "parentCode": "CTINF-UAA13",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S6"
+   ],
+   "label": "Transférer : Préparer, développer et clôturer un projet sur la base du cahier des charges*"
+  },
+  {
+   "code": "CTINF-UAA13-T4",
+   "parentCode": "CTINF-UAA13",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S6"
+   ],
+   "label": "Transférer : Choisir un mode et un support de communication adéquats pour présenter le produit final"
+  },
+  {
+   "code": "CTINF-UAA13-T5",
+   "parentCode": "CTINF-UAA13",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S6"
+   ],
+   "label": "Transférer : Présenter un rapport technique* expliquant le fonctionnement du produit final"
+  },
+  {
+   "code": "CTINF-UAA13-T6",
+   "parentCode": "CTINF-UAA13",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S6"
+   ],
+   "label": "Transférer : Au terme du projet, analyser les forces et les faiblesses de sa mise en œuvre"
+  },
+  {
+   "code": "CTINF-UAA13-R1",
+   "parentCode": "CTINF-UAA13",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S6"
+   ],
+   "label": "Ressource : Aucun"
+  },
+  {
+   "code": "CTINF-UAA13-R2",
+   "parentCode": "CTINF-UAA13",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S6"
+   ],
+   "label": "Ressource : Consigner l’état d’avancement d’un projet"
+  },
+  {
+   "code": "CTINF-UAA14",
+   "parentCode": "CTINF",
+   "kind": "competence",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S6"
+   ],
+   "label": "PROGRAMMATION ORIENTÉE OBJET"
+  },
+  {
+   "code": "CTINF-UAA14-C1",
+   "parentCode": "CTINF-UAA14",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S6"
+   ],
+   "label": "Compétence : Concevoir une application sur la base d’un cahier des charges* mettant en œuvre un langage orienté objet"
+  },
+  {
+   "code": "CTINF-UAA14-A1",
+   "parentCode": "CTINF-UAA14",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S6"
+   ],
+   "label": "Appliquer : Modéliser une logique de programmation orientée objet"
+  },
+  {
+   "code": "CTINF-UAA14-A2",
+   "parentCode": "CTINF-UAA14",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S6"
+   ],
+   "label": "Appliquer : Déclarer une classe"
+  },
+  {
+   "code": "CTINF-UAA14-A3",
+   "parentCode": "CTINF-UAA14",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S6"
+   ],
+   "label": "Appliquer : Instancier une classe (objet)"
+  },
+  {
+   "code": "CTINF-UAA14-A4",
+   "parentCode": "CTINF-UAA14",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S6"
+   ],
+   "label": "Appliquer : Utiliser les méthodes de l’objet instancié"
+  },
+  {
+   "code": "CTINF-UAA14-A5",
+   "parentCode": "CTINF-UAA14",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S6"
+   ],
+   "label": "Appliquer : Traduire un algorithme* dans un langage de programmation"
+  },
+  {
+   "code": "CTINF-UAA14-A6",
+   "parentCode": "CTINF-UAA14",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S6"
+   ],
+   "label": "Appliquer : Commenter* des lignes de codes"
+  },
+  {
+   "code": "CTINF-UAA14-A7",
+   "parentCode": "CTINF-UAA14",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S6"
+   ],
+   "label": "Appliquer : Tester le programme conçu"
+  },
+  {
+   "code": "CTINF-UAA14-T1",
+   "parentCode": "CTINF-UAA14",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S6"
+   ],
+   "label": "Transférer : Développer une classe sur la base d’un cahier des charges* en respectant le paradigme de la programmation orientée objet (POO)"
+  },
+  {
+   "code": "CTINF-UAA14-T2",
+   "parentCode": "CTINF-UAA14",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S6"
+   ],
+   "label": "Transférer : Programmer en recourant aux classes nécessaires au développement d’une application orientée objet"
+  },
+  {
+   "code": "CTINF-UAA14-T3",
+   "parentCode": "CTINF-UAA14",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S6"
+   ],
+   "label": "Transférer : Corriger un programme défaillant"
+  },
+  {
+   "code": "CTINF-UAA14-T4",
+   "parentCode": "CTINF-UAA14",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S6"
+   ],
+   "label": "Transférer : Améliorer un programme pour répondre à un besoin défini"
+  },
+  {
+   "code": "CTINF-UAA14-K1",
+   "parentCode": "CTINF-UAA14",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S6"
+   ],
+   "label": "Connaître : Différencier la programmation impérative* de la programmation orientée objet*"
+  },
+  {
+   "code": "CTINF-UAA14-K2",
+   "parentCode": "CTINF-UAA14",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S6"
+   ],
+   "label": "Connaître : Caractériser une classe"
+  },
+  {
+   "code": "CTINF-UAA14-K3",
+   "parentCode": "CTINF-UAA14",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S6"
+   ],
+   "label": "Connaître : Décrire la création d’un objet (instanciation)"
+  },
+  {
+   "code": "CTINF-UAA14-K4",
+   "parentCode": "CTINF-UAA14",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S6"
+   ],
+   "label": "Connaître : Identifier l’instance d’une classe"
+  },
+  {
+   "code": "CTINF-UAA14-K5",
+   "parentCode": "CTINF-UAA14",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S6"
+   ],
+   "label": "Connaître : Caractériser les attributs dans une classe (encapsulation)"
+  },
+  {
+   "code": "CTINF-UAA14-K6",
+   "parentCode": "CTINF-UAA14",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S6"
+   ],
+   "label": "Connaître : Caractériser les méthodes dans une classe (encapsulation)"
+  },
+  {
+   "code": "CTINF-UAA14-K7",
+   "parentCode": "CTINF-UAA14",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S6"
+   ],
+   "label": "Connaître : Décrire la création d’un constructeur"
+  },
+  {
+   "code": "CTINF-UAA14-K8",
+   "parentCode": "CTINF-UAA14",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S6"
+   ],
+   "label": "Connaître : Différencier les types de visibilités"
+  },
+  {
+   "code": "CTINF-UAA14-R1",
+   "parentCode": "CTINF-UAA14",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S6"
+   ],
+   "label": "Ressource : Modèle objet : classe"
+  },
+  {
+   "code": "CTINF-UAA14-R2",
+   "parentCode": "CTINF-UAA14",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S6"
+   ],
+   "label": "Ressource : Modèle objet : attribut"
+  },
+  {
+   "code": "CTINF-UAA14-R3",
+   "parentCode": "CTINF-UAA14",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S6"
+   ],
+   "label": "Ressource : Modèle objet : méthode"
+  },
+  {
+   "code": "CTINF-UAA14-R4",
+   "parentCode": "CTINF-UAA14",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S6"
+   ],
+   "label": "Ressource : Modèle objet : constructeur"
+  },
+  {
+   "code": "CTINF-UAA14-R5",
+   "parentCode": "CTINF-UAA14",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S6"
+   ],
+   "label": "Ressource : Modèle objet : encapsulation"
+  },
+  {
+   "code": "CTINF-UAA14-R6",
+   "parentCode": "CTINF-UAA14",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S6"
+   ],
+   "label": "Ressource : Modèle objet : visibilité"
+  },
+  {
+   "code": "CTINF-UAA14-R7",
+   "parentCode": "CTINF-UAA14",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S6"
+   ],
+   "label": "Ressource : Instanciation de classe"
+  },
+  {
+   "code": "CTINF-UAA14-R8",
+   "parentCode": "CTINF-UAA14",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S6"
+   ],
+   "label": "Ressource : Modéliser une architecture de programmation"
+  },
+  {
+   "code": "CTINF-UAA14-R9",
+   "parentCode": "CTINF-UAA14",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S6"
+   ],
+   "label": "Ressource : Programmer"
+  },
+  {
+   "code": "CTINF-UAA14-R10",
+   "parentCode": "CTINF-UAA14",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S6"
+   ],
+   "label": "Ressource : Tester"
+  },
+  {
+   "code": "CTINF-UAA14-R11",
+   "parentCode": "CTINF-UAA14",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S6"
+   ],
+   "label": "Ressource : Déboguer"
+  },
+  {
+   "code": "CTINF-UAA15",
+   "parentCode": "CTINF",
+   "kind": "competence",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S6"
+   ],
+   "label": "RÉSEAU"
+  },
+  {
+   "code": "CTINF-UAA15-C1",
+   "parentCode": "CTINF-UAA15",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S6"
+   ],
+   "label": "Compétence : Réaliser une mise en réseau local de systèmes informatiques*"
+  },
+  {
+   "code": "CTINF-UAA15-A1",
+   "parentCode": "CTINF-UAA15",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S6"
+   ],
+   "label": "Appliquer : Calculer l’étendue des adresses disponibles d’un réseau local"
+  },
+  {
+   "code": "CTINF-UAA15-A2",
+   "parentCode": "CTINF-UAA15",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S6"
+   ],
+   "label": "Appliquer : Allouer une adresse IP valide à un élément d’un réseau local"
+  },
+  {
+   "code": "CTINF-UAA15-A3",
+   "parentCode": "CTINF-UAA15",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S6"
+   ],
+   "label": "Appliquer : Paramétrer une carte réseau"
+  },
+  {
+   "code": "CTINF-UAA15-A4",
+   "parentCode": "CTINF-UAA15",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S6"
+   ],
+   "label": "Appliquer : Configurer un serveur DHCP (Dynamic Host Configuration Protocol) dont étendue, exclusion, passerelle, DNS"
+  },
+  {
+   "code": "CTINF-UAA15-A5",
+   "parentCode": "CTINF-UAA15",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S6"
+   ],
+   "label": "Appliquer : Connecter des systèmes informatiques* au sein d’un réseau local"
+  },
+  {
+   "code": "CTINF-UAA15-A6",
+   "parentCode": "CTINF-UAA15",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S6"
+   ],
+   "label": "Appliquer : Schématiser un réseau local (LAN) à l’aide d’un outil informatique"
+  },
+  {
+   "code": "CTINF-UAA15-A7",
+   "parentCode": "CTINF-UAA15",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S6"
+   ],
+   "label": "Appliquer : Découper un réseau local en sous-réseaux (VLAN)"
+  },
+  {
+   "code": "CTINF-UAA15-A8",
+   "parentCode": "CTINF-UAA15",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S6"
+   ],
+   "label": "Appliquer : Configurer un commutateur administrable"
+  },
+  {
+   "code": "CTINF-UAA15-T1",
+   "parentCode": "CTINF-UAA15",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S6"
+   ],
+   "label": "Transférer : Simuler le fonctionnement d’un réseau local à l’aide d’un outil informatique"
+  },
+  {
+   "code": "CTINF-UAA15-T2",
+   "parentCode": "CTINF-UAA15",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S6"
+   ],
+   "label": "Transférer : Insérer un système informatique* dans un réseau local existant en lui attribuant une adresse IP"
+  },
+  {
+   "code": "CTINF-UAA15-T3",
+   "parentCode": "CTINF-UAA15",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S6"
+   ],
+   "label": "Transférer : Régler un problème de paramétrage de carte réseau"
+  },
+  {
+   "code": "CTINF-UAA15-T4",
+   "parentCode": "CTINF-UAA15",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S6"
+   ],
+   "label": "Transférer : Améliorer la gestion d’un réseau local à l’aide de VLAN"
+  },
+  {
+   "code": "CTINF-UAA15-K1",
+   "parentCode": "CTINF-UAA15",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S6"
+   ],
+   "label": "Connaître : Identifier les composants d’un réseau informatique local dont routeur, commutateur, point d’accès sans fil, modem"
+  },
+  {
+   "code": "CTINF-UAA15-K2",
+   "parentCode": "CTINF-UAA15",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S6"
+   ],
+   "label": "Connaître : Identifier les paramètres d’une carte réseau"
+  },
+  {
+   "code": "CTINF-UAA15-K3",
+   "parentCode": "CTINF-UAA15",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S6"
+   ],
+   "label": "Connaître : Décrire les paramètres d’une carte réseau"
+  },
+  {
+   "code": "CTINF-UAA15-K4",
+   "parentCode": "CTINF-UAA15",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S6"
+   ],
+   "label": "Connaître : Identifier les moyens physiques de transmission de l’information au sein d’un réseau local"
+  },
+  {
+   "code": "CTINF-UAA15-K5",
+   "parentCode": "CTINF-UAA15",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S6"
+   ],
+   "label": "Connaître : Différencier les adresses IP publiques des adresses IP privées"
+  },
+  {
+   "code": "CTINF-UAA15-K6",
+   "parentCode": "CTINF-UAA15",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S6"
+   ],
+   "label": "Connaître : Différencier les réseaux LAN, VLAN, MAN et WAN"
+  },
+  {
+   "code": "CTINF-UAA15-K7",
+   "parentCode": "CTINF-UAA15",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S6"
+   ],
+   "label": "Connaître : Différencier les topologies physiques entre elles"
+  },
+  {
+   "code": "CTINF-UAA15-K8",
+   "parentCode": "CTINF-UAA15",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S6"
+   ],
+   "label": "Connaître : Différencier les topologies logiques entre elles"
+  },
+  {
+   "code": "CTINF-UAA15-K9",
+   "parentCode": "CTINF-UAA15",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S6"
+   ],
+   "label": "Connaître : Citer les couches des modèles OSI et Internet (TCP/IP)"
+  },
+  {
+   "code": "CTINF-UAA15-K10",
+   "parentCode": "CTINF-UAA15",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S6"
+   ],
+   "label": "Connaître : Énoncer les fonctions des modèles OSI et Internet (TCP/IP)"
+  },
+  {
+   "code": "CTINF-UAA15-K11",
+   "parentCode": "CTINF-UAA15",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S6"
+   ],
+   "label": "Connaître : Associer le matériel réseau à la couche correspondante du modèle OSI"
+  },
+  {
+   "code": "CTINF-UAA15-K12",
+   "parentCode": "CTINF-UAA15",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S6"
+   ],
+   "label": "Connaître : Caractériser les couches matérielles du modèle Internet (TCP/IP)"
+  },
+  {
+   "code": "CTINF-UAA15-K13",
+   "parentCode": "CTINF-UAA15",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S6"
+   ],
+   "label": "Connaître : Énoncer l’utilité d’une table de commutation"
+  },
+  {
+   "code": "CTINF-UAA15-K14",
+   "parentCode": "CTINF-UAA15",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S6"
+   ],
+   "label": "Connaître : Décrire différents protocoles réseau"
+  },
+  {
+   "code": "CTINF-UAA15-R1",
+   "parentCode": "CTINF-UAA15",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S6"
+   ],
+   "label": "Ressource : Matériel réseau : support de transmission"
+  },
+  {
+   "code": "CTINF-UAA15-R2",
+   "parentCode": "CTINF-UAA15",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S6"
+   ],
+   "label": "Ressource : Matériel réseau : carte réseau (netcard) paramètres : IP, MAC et masque"
+  },
+  {
+   "code": "CTINF-UAA15-R3",
+   "parentCode": "CTINF-UAA15",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S6"
+   ],
+   "label": "Ressource : Matériel réseau : composants matériels d’un réseau"
+  },
+  {
+   "code": "CTINF-UAA15-R4",
+   "parentCode": "CTINF-UAA15",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S6"
+   ],
+   "label": "Ressource : Classification des réseaux : LAN, VLAN, MAN, WAN"
+  },
+  {
+   "code": "CTINF-UAA15-R5",
+   "parentCode": "CTINF-UAA15",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S6"
+   ],
+   "label": "Ressource : Topologies : physiques: étoile, maille, bus, anneau..."
+  },
+  {
+   "code": "CTINF-UAA15-R6",
+   "parentCode": "CTINF-UAA15",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S6"
+   ],
+   "label": "Ressource : Topologies : logiques: client/serveur, pair à pair (peer to peer)..."
+  },
+  {
+   "code": "CTINF-UAA15-R7",
+   "parentCode": "CTINF-UAA15",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S6"
+   ],
+   "label": "Ressource : Modèle OSI"
+  },
+  {
+   "code": "CTINF-UAA15-R8",
+   "parentCode": "CTINF-UAA15",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S6"
+   ],
+   "label": "Ressource : Modèle Internet (TCP/IP)"
+  },
+  {
+   "code": "CTINF-UAA15-R9",
+   "parentCode": "CTINF-UAA15",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S6"
+   ],
+   "label": "Ressource : Câbler"
+  },
+  {
+   "code": "CTINF-UAA15-R10",
+   "parentCode": "CTINF-UAA15",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S6"
+   ],
+   "label": "Ressource : Utiliser un logiciel de simulation de réseaux"
+  },
+  {
+   "code": "CTINF-UAA15-R11",
+   "parentCode": "CTINF-UAA15",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S6"
+   ],
+   "label": "Ressource : Calculer sur la base de l’algèbre de Boole"
+  },
+  {
+   "code": "CTINF-UAA15-R12",
+   "parentCode": "CTINF-UAA15",
+   "kind": "attendu",
+   "subject": "Formation manuelle et technique",
+   "grades": [
+    "S6"
+   ],
+   "label": "Ressource : Configurer un réseau VLAN"
+  }
+ ]
+}

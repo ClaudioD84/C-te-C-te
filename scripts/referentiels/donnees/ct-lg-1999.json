@@ -1,0 +1,1055 @@
+{
+ "source": {
+  "title": "Compétences terminales et savoirs requis en latin et grec (humanités générales et technologiques)",
+  "url": "https://www.enseignement.be/fileadmin/portail_age/uploads/parcours_apprentissage/secondaire_ordinaire/Organisation/Contenus_apprentissages_Secondaire/competences_terminales/HUM_GEN_et_TECH_2et3_degres/1999_CT_HGT_Latin-Grec.pdf",
+  "version": "1999"
+ },
+ "level": "secondaire",
+ "tracks": [
+  "general",
+  "technique",
+  "specialise"
+ ],
+ "entries": [
+  {
+   "code": "CTLG",
+   "parentCode": null,
+   "kind": "domaine",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Compétences terminales et savoirs requis en latin et grec (humanités générales et technologiques)"
+  },
+  {
+   "code": "CTLG-1",
+   "parentCode": "CTLG",
+   "kind": "competence",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Latin et grec – 1ère compétence"
+  },
+  {
+   "code": "CTLG-1-1",
+   "parentCode": "CTLG-1",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "En alliant l’analyse et la synthèse, comprendre un extrait d’auteur latin et/ou grec et le traduire en français contemporain correct, en disposant des informations nécessaires et suffisantes. L’exercice de la version rendra les élèves capables de structurer leur pensée et d’organiser leur raisonnement."
+  },
+  {
+   "code": "CTLG-1-2",
+   "parentCode": "CTLG-1",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "la mise en œuvre de connaissances linguistiques, lexicales, morphologiques, syntaxiques et stylistiques"
+  },
+  {
+   "code": "CTLG-1-3",
+   "parentCode": "CTLG-1",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "l’exercice des capacités d’observation et d’analyse"
+  },
+  {
+   "code": "CTLG-1-4",
+   "parentCode": "CTLG-1",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "l’intuition contrôlée par l’analyse"
+  },
+  {
+   "code": "CTLG-1-5",
+   "parentCode": "CTLG-1",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "la rigueur et la finesse dans la perception des constituants des phrases"
+  },
+  {
+   "code": "CTLG-1-6",
+   "parentCode": "CTLG-1",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "la formulation et la vérification d’hypothèses"
+  },
+  {
+   "code": "CTLG-1-7",
+   "parentCode": "CTLG-1",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "un savoir-faire logique"
+  },
+  {
+   "code": "CTLG-1-8",
+   "parentCode": "CTLG-1",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "une réflexion critique"
+  },
+  {
+   "code": "CTLG-1-9",
+   "parentCode": "CTLG-1",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "la cohérence dans la construction du sens en tenant compte des polyvalences sémantiques"
+  },
+  {
+   "code": "CTLG-1-10",
+   "parentCode": "CTLG-1",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "le sens de la nuance dans la compréhension"
+  },
+  {
+   "code": "CTLG-1-11",
+   "parentCode": "CTLG-1",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "la justesse et la clarté dans l’expression"
+  },
+  {
+   "code": "CTLG-1-12",
+   "parentCode": "CTLG-1",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "l’utilisation efficace d’ouvrages de référence chaque fois qu’elle s’avère nécessaire."
+  },
+  {
+   "code": "CTLG-1-13",
+   "parentCode": "CTLG-1",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "La version s’applique à des textes significatifs, révélateurs du monde antique, producteurs de sens pour les élèves et choisis pour être à leur portée, en particulier de leur degré d’acquisition linguistique."
+  },
+  {
+   "code": "CTLG-2",
+   "parentCode": "CTLG",
+   "kind": "competence",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Latin et grec – 2e compétence"
+  },
+  {
+   "code": "CTLG-2-1",
+   "parentCode": "CTLG-2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Retraduire en français des textes d’auteurs latins et/ou grecs, traduits et analysés en classe dans une démarche collective guidée par le professeur, en justifier le fonctionnement linguistique et en commenter le contenu de façon personnelle et critique à partir des commentaires construits au cours."
+  },
+  {
+   "code": "CTLG-2-2",
+   "parentCode": "CTLG-2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "la contextualisation (dans l’œuvre, dans le genre littéraire, par rapport à l’auteur, aux circonstances historiques, aux institutions, à la civilisation, aux composantes idéologiques)"
+  },
+  {
+   "code": "CTLG-2-3",
+   "parentCode": "CTLG-2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "les aspects linguistiques, littéraires et esthétiques"
+  },
+  {
+   "code": "CTLG-2-4",
+   "parentCode": "CTLG-2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "la suite des idées, les sentiments, l’argumentation"
+  },
+  {
+   "code": "CTLG-2-5",
+   "parentCode": "CTLG-2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "les antécédents et les prolongements littéraires du texte"
+  },
+  {
+   "code": "CTLG-2-6",
+   "parentCode": "CTLG-2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "les aspects humains, sociaux, culturels et politiques"
+  },
+  {
+   "code": "CTLG-2-7",
+   "parentCode": "CTLG-2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "les grands mythes et leur fécondité littéraire et artistique"
+  },
+  {
+   "code": "CTLG-2-8",
+   "parentCode": "CTLG-2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "les fondements de la philosophie et son influence sur la pensée occidentale."
+  },
+  {
+   "code": "CTLG-2-9",
+   "parentCode": "CTLG-2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Spécifiquement pour le latin : les aspects juridiques"
+  },
+  {
+   "code": "CTLG-2-10",
+   "parentCode": "CTLG-2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Spécifiquement pour le latin : le pragmatisme."
+  },
+  {
+   "code": "CTLG-2-11",
+   "parentCode": "CTLG-2",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Spécifiquement pour le grec : les premiers développements d’une pensée rationnelle et abstraite qui tende vers l’universel."
+  },
+  {
+   "code": "CTLG-3",
+   "parentCode": "CTLG",
+   "kind": "competence",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Latin et grec – 3e compétence"
+  },
+  {
+   "code": "CTLG-3-1",
+   "parentCode": "CTLG-3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Saisir et analyser tant le fonctionnement de ces deux langues flexionnelles que la constitution de lexiques, à l’origine du lexique français et sources d’emprunts pour lui, comme pour de nombreuses langues modernes."
+  },
+  {
+   "code": "CTLG-3-2",
+   "parentCode": "CTLG-3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "la capacité de se dégager de ses automatismes langagiers pour entrer dans un système linguistique différent"
+  },
+  {
+   "code": "CTLG-3-3",
+   "parentCode": "CTLG-3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "la faculté de transposer dans le système analytique du français les systèmes spécifiques du latin et du grec"
+  },
+  {
+   "code": "CTLG-3-4",
+   "parentCode": "CTLG-3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "l’aptitude à identifier, à comprendre et à exprimer en français des tournures propres à chacune des deux langues"
+  },
+  {
+   "code": "CTLG-3-5",
+   "parentCode": "CTLG-3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "la capacité de repérer les principaux procédés de formation des mots en latin et en grec (racines, préfixes, préverbes, suffixes)."
+  },
+  {
+   "code": "CTLG-3-6",
+   "parentCode": "CTLG-3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Spécifiquement pour le latin : la sensibilisation aux principaux mécanismes de filiation, à partir du latin, du vocabulaire français et de celui d’autres langues modernes"
+  },
+  {
+   "code": "CTLG-3-7",
+   "parentCode": "CTLG-3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Spécifiquement pour le latin : la sensibilisation au rôle que le latin n’a cessé de jouer et joue encore dans la formation de néologismes, notamment dans les domaines culturel, scientifique et technique."
+  },
+  {
+   "code": "CTLG-3-8",
+   "parentCode": "CTLG-3",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Spécifiquement pour le grec : la sensibilisation au rôle que le grec, directement ou via le latin, n’a cessé de jouer et joue encore dans la création lexicale, en particulier dans les vocabulaires philosophique et scientifique."
+  },
+  {
+   "code": "CTLG-4",
+   "parentCode": "CTLG",
+   "kind": "competence",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Latin et grec – 4e compétence"
+  },
+  {
+   "code": "CTLG-4-1",
+   "parentCode": "CTLG-4",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Mettre les aspects les plus importants de la civilisation grecque et de la civilisation romaine en rapport tant avec notre culture contemporaine qu’avec les éléments constitutifs de notre identité individuelle et collective."
+  },
+  {
+   "code": "CTLG-4-2",
+   "parentCode": "CTLG-4",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "comprendre un espace temps et un espace lieu, à évoluer dans la chronologie, à appréhender les évènements postérieurs et actuels à la lumière des faits passés"
+  },
+  {
+   "code": "CTLG-4-3",
+   "parentCode": "CTLG-4",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "réfléchir sur le destin de l’homme à la lumière des textes latins et des textes grecs, sources d’humanisme"
+  },
+  {
+   "code": "CTLG-4-4",
+   "parentCode": "CTLG-4",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "se situer dans sa dimension européenne et universelle"
+  },
+  {
+   "code": "CTLG-4-5",
+   "parentCode": "CTLG-4",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "se décentrer pour comprendre et accepter l’autre dans sa différence"
+  },
+  {
+   "code": "CTLG-4-6",
+   "parentCode": "CTLG-4",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "apprécier des œuvres d’art et des réalisations techniques du monde gréco-romain abordées en fonction des opportunités."
+  },
+  {
+   "code": "CTLG-5",
+   "parentCode": "CTLG",
+   "kind": "competence",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Latin et grec – 5e compétence"
+  },
+  {
+   "code": "CTLG-5-1",
+   "parentCode": "CTLG-5",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Mener de façon autonome, à partir de textes latins et/ou grecs, une recherche personnelle débouchant sur une synthèse orale ou écrite, répondant aux exigences d’une communication de qualité."
+  },
+  {
+   "code": "CTLG-5-2",
+   "parentCode": "CTLG-5",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "la définition et la structuration d’un projet"
+  },
+  {
+   "code": "CTLG-5-3",
+   "parentCode": "CTLG-5",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "la recherche et la confrontation des sources accessibles (bibliothèque, médiathèque, multimédia …)"
+  },
+  {
+   "code": "CTLG-5-4",
+   "parentCode": "CTLG-5",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "le traitement critique des informations, en particulier des traductions disponibles"
+  },
+  {
+   "code": "CTLG-5-5",
+   "parentCode": "CTLG-5",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "la mise en œuvre des techniques et des moyens de présentation d’un travail : élaboration du plan, rédaction claire et structurée, cohérence de l’argumentation"
+  },
+  {
+   "code": "CTLG-5-6",
+   "parentCode": "CTLG-5",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "l’honnêteté intellectuelle dans l’utilisation des sources"
+  },
+  {
+   "code": "CTLG-5-7",
+   "parentCode": "CTLG-5",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "une communication adaptée aux destinataires et qui tienne compte des exigences du mode d’expression choisi."
+  },
+  {
+   "code": "CTLG-6",
+   "parentCode": "CTLG",
+   "kind": "competence",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Latin et grec – Savoirs linguistiques"
+  },
+  {
+   "code": "CTLG-6-1",
+   "parentCode": "CTLG-6",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Spécifiquement pour le latin : la flexion nominale et verbale, à l’exception des particularités"
+  },
+  {
+   "code": "CTLG-6-2",
+   "parentCode": "CTLG-6",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Spécifiquement pour le latin : la valeur fondamentale des cas, ainsi que l’expression du lieu et du temps, limitée aux tournures régulières"
+  },
+  {
+   "code": "CTLG-6-3",
+   "parentCode": "CTLG-6",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Spécifiquement pour le latin : les constituants de base de la phrase complexe : les subordonnants polyvalents : ut, cum, et quod suivis de l’indicatif et du subjonctif"
+  },
+  {
+   "code": "CTLG-6-4",
+   "parentCode": "CTLG-6",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Spécifiquement pour le latin : les formes nominales du verbe et leurs emplois : l’infinitif et la proposition infinitive, les participes et l’ablatif absolu, le gérondif et l’adjectif verbal"
+  },
+  {
+   "code": "CTLG-6-5",
+   "parentCode": "CTLG-6",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Spécifiquement pour le latin : l’emploi du pronom personnel de la 3e personne (se / eum) et du pronom relatif"
+  },
+  {
+   "code": "CTLG-6-6",
+   "parentCode": "CTLG-6",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Spécifiquement pour le latin : les emplois fondamentaux du subjonctif : le subjonctif à valeur modale"
+  },
+  {
+   "code": "CTLG-6-7",
+   "parentCode": "CTLG-6",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Spécifiquement pour le latin : le subjonctif de dépendance syntaxique"
+  },
+  {
+   "code": "CTLG-6-8",
+   "parentCode": "CTLG-6",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Spécifiquement pour le latin : le subjonctif de l’opposition pertinente avec certains subordonnants : ut, cum, quod, si, qui"
+  },
+  {
+   "code": "CTLG-6-9",
+   "parentCode": "CTLG-6",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Spécifiquement pour le latin : un vocabulaire de base sélectionné d’après la fréquence d’apparition des mots dans les textes en latin classique lus dans les classes, sans exclure les mots qui se recommandent par leur intérêt historique ou culturel."
+  },
+  {
+   "code": "CTLG-6-10",
+   "parentCode": "CTLG-6",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Spécifiquement pour le grec : la flexion nominale et verbale, à l’exception des particularités, en recourant à la phonétique lorsqu’elle est éclairante"
+  },
+  {
+   "code": "CTLG-6-11",
+   "parentCode": "CTLG-6",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Spécifiquement pour le grec : l’emploi et la place de l’article, l’emploi de"
+  },
+  {
+   "code": "CTLG-6-12",
+   "parentCode": "CTLG-6",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Spécifiquement pour le grec : la valeur fondamentale des cas, ainsi que l’expression du lieu et du temps, limitée aux tournures régulières"
+  },
+  {
+   "code": "CTLG-6-13",
+   "parentCode": "CTLG-6",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Spécifiquement pour le grec : la valeur et l’emploi des voix et des temps, en particulier leur valeur aspectuelle"
+  },
+  {
+   "code": "CTLG-6-14",
+   "parentCode": "CTLG-6",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Spécifiquement pour le grec : les emplois fondamentaux de l’indicatif, du subjonctif et de l’optatif (avec ou sans"
+  },
+  {
+   "code": "CTLG-6-15",
+   "parentCode": "CTLG-6",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Spécifiquement pour le grec : les constituants de base de la phrase complexe : les différents emplois des subordonnants ? \u0003« ; \u000f\u0003 \u000f\u0003"
+  },
+  {
+   "code": "CTLG-6-16",
+   "parentCode": "CTLG-6",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Spécifiquement pour le grec : l’emploi du pronom relatif"
+  },
+  {
+   "code": "CTLG-6-17",
+   "parentCode": "CTLG-6",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Spécifiquement pour le grec : les formes nominales du verbe et leurs valeurs : les emplois du participe et de l’infinitif"
+  },
+  {
+   "code": "CTLG-6-18",
+   "parentCode": "CTLG-6",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Spécifiquement pour le grec : un vocabulaire de base sélectionné d’après la fréquence d’apparition des mots dans les textes en grec lus dans les classes sans exclure les mots qui se recommandent par leur intérêt historique ou culturel."
+  },
+  {
+   "code": "CTLG-7",
+   "parentCode": "CTLG",
+   "kind": "competence",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Latin et grec – Savoirs littéraires, historiques et culturels"
+  },
+  {
+   "code": "CTLG-7-1",
+   "parentCode": "CTLG-7",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Spécifiquement pour le latin : lecture et traduction de textes choisis parmi les œuvres des auteurs suivants : Apulée, Catulle, César, Cicéron, Horace, Juvénal, Lucrèce, Martial, Ovide, Pétrone, Plaute, Pline le Jeune, Properce, saint Augustin, Salluste, Sénèque, Suétone, Tacite, Térence, Tibulle, Tite-Live, Virgile"
+  },
+  {
+   "code": "CTLG-7-2",
+   "parentCode": "CTLG-7",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Spécifiquement pour le latin : en fonction des textes abordés et dans une démarche interdisciplinaire, exploration de sujets tels que : les grands courants de la pensée romaine, les périodes de l’histoire romaine, les principales institutions, le cadre géographique du monde méditerranéen antique, la société romaine, les genres littéraires, l’art romain …"
+  },
+  {
+   "code": "CTLG-7-3",
+   "parentCode": "CTLG-7",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Spécifiquement pour le latin : confrontation avec d’autres productions (musique, peinture, théâtre, cinéma …)."
+  },
+  {
+   "code": "CTLG-7-4",
+   "parentCode": "CTLG-7",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Spécifiquement pour le latin : complémentairement, lecture d’autres textes des littératures latine, grecque et modernes, éclairant et élargissant l’examen des problèmes traités."
+  },
+  {
+   "code": "CTLG-7-5",
+   "parentCode": "CTLG-7",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Spécifiquement pour le grec : lecture et traduction de textes choisis parmi les œuvres des auteurs suivants : Aristophane, Aristote, Démosthène, Eschyle, Esope, Euripide, les Evangélistes, Hérodote, Hésiode, Hippocrate, Homère, Isocrate, Longos, Lucien, les Lyriques, Lysias, Platon, Polybe, les Présocratiques, Sophocle, Thucydide, Xénophon"
+  },
+  {
+   "code": "CTLG-7-6",
+   "parentCode": "CTLG-7",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Spécifiquement pour le grec : en fonction des textes abordés et dans une démarche interdisciplinaire, sensibilisation à l’héritage de la Grèce : les principaux courants de la pensée grecque, l’origine des genres littéraires, la genèse de la réflexion politique, l’esprit scientifique, les grands mythes"
+  },
+  {
+   "code": "CTLG-7-7",
+   "parentCode": "CTLG-7",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Spécifiquement pour le grec : exploration de sujets tels que : les périodes de l’histoire grecque, la société et les institutions grecques, l’art grec, le cadre géographique du monde méditerranéen antique, l’hellénisme et son influence"
+  },
+  {
+   "code": "CTLG-7-8",
+   "parentCode": "CTLG-7",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Spécifiquement pour le grec : confrontation avec d’autres productions (musique, peinture, théâtre, cinéma …)."
+  },
+  {
+   "code": "CTLG-7-9",
+   "parentCode": "CTLG-7",
+   "kind": "attendu",
+   "subject": "Français",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Spécifiquement pour le grec : complémentairement, lecture d’autres textes des littératures grecque, latine et modernes, éclairant et élargissant l’examen des problèmes traités."
+  }
+ ]
+}

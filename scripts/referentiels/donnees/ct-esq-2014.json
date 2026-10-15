@@ -1,0 +1,1839 @@
+{
+ "source": {
+  "title": "Compétences terminales et savoirs communs en formation économique et sociale (humanités professionnelles et techniques)",
+  "url": "https://www.enseignement.be/fileadmin/portail_age/uploads/parcours_apprentissage/secondaire_ordinaire/Organisation/Contenus_apprentissages_Secondaire/competences_terminales/HUM_PROF_et_TECH_3e_degre_et_7e/2014_CT_HPT_Form-eco-soc.pdf",
+  "version": "2014"
+ },
+ "level": "secondaire",
+ "tracks": [
+  "technique",
+  "professionnel",
+  "specialise"
+ ],
+ "entries": [
+  {
+   "code": "CTESQ",
+   "parentCode": null,
+   "kind": "domaine",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Compétences terminales et savoirs communs en formation économique et sociale (humanités professionnelles et techniques)"
+  },
+  {
+   "code": "CTESQ-UAA-17-NOR",
+   "parentCode": "CTESQ",
+   "kind": "competence",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Normes et Société"
+  },
+  {
+   "code": "CTESQ-UAA-17-NOR-C1",
+   "parentCode": "CTESQ-UAA-17-NOR",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Compétence : Analyser le contexte psychosociologique, en déterminer les conséquences juridiques"
+  },
+  {
+   "code": "CTESQ-UAA-17-NOR-A1",
+   "parentCode": "CTESQ-UAA-17-NOR",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : déterminer le contexte psychosociologique d’un acte"
+  },
+  {
+   "code": "CTESQ-UAA-17-NOR-A2",
+   "parentCode": "CTESQ-UAA-17-NOR",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : déterminer les conséquences juridiques possibles (civiles/pénales) d’un acte"
+  },
+  {
+   "code": "CTESQ-UAA-17-NOR-T1",
+   "parentCode": "CTESQ-UAA-17-NOR",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Transférer : Déterminer le contexte psychosociologique et les conséquences juridiques (civiles/pénales) relatifs à un acte"
+  },
+  {
+   "code": "CTESQ-UAA-17-NOR-K1",
+   "parentCode": "CTESQ-UAA-17-NOR",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : distinguer normes et valeurs"
+  },
+  {
+   "code": "CTESQ-UAA-17-NOR-K2",
+   "parentCode": "CTESQ-UAA-17-NOR",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : illustrer le concept de socialisation"
+  },
+  {
+   "code": "CTESQ-UAA-17-NOR-K3",
+   "parentCode": "CTESQ-UAA-17-NOR",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : identifier les agents de socialisation"
+  },
+  {
+   "code": "CTESQ-UAA-17-NOR-K4",
+   "parentCode": "CTESQ-UAA-17-NOR",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : illustrer la raison d’être des lois"
+  },
+  {
+   "code": "CTESQ-UAA-17-NOR-K5",
+   "parentCode": "CTESQ-UAA-17-NOR",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : distinguer les juridictions civiles et pénales"
+  },
+  {
+   "code": "CTESQ-UAA-17-NOR-K6",
+   "parentCode": "CTESQ-UAA-17-NOR",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : différencier responsabilité civile et responsabilité pénale"
+  },
+  {
+   "code": "CTESQ-UAA-17-NOR-K7",
+   "parentCode": "CTESQ-UAA-17-NOR",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : illustrer différents comportements résultant d’une frustration"
+  },
+  {
+   "code": "CTESQ-UAA-17-NOR-R1",
+   "parentCode": "CTESQ-UAA-17-NOR",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Droit"
+  },
+  {
+   "code": "CTESQ-UAA-17-NOR-R2",
+   "parentCode": "CTESQ-UAA-17-NOR",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : raison d’être des lois"
+  },
+  {
+   "code": "CTESQ-UAA-17-NOR-R3",
+   "parentCode": "CTESQ-UAA-17-NOR",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : droit civil : droits et obligations, litige, dommage"
+  },
+  {
+   "code": "CTESQ-UAA-17-NOR-R4",
+   "parentCode": "CTESQ-UAA-17-NOR",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : droit pénal : infraction (contravention, délit)"
+  },
+  {
+   "code": "CTESQ-UAA-17-NOR-R5",
+   "parentCode": "CTESQ-UAA-17-NOR",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : responsabilité civile et pénale"
+  },
+  {
+   "code": "CTESQ-UAA-17-NOR-R6",
+   "parentCode": "CTESQ-UAA-17-NOR",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : institutions judiciaires et sociales"
+  },
+  {
+   "code": "CTESQ-UAA-17-NOR-R7",
+   "parentCode": "CTESQ-UAA-17-NOR",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Psychologie"
+  },
+  {
+   "code": "CTESQ-UAA-17-NOR-R8",
+   "parentCode": "CTESQ-UAA-17-NOR",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : besoin, comportement, frustration"
+  },
+  {
+   "code": "CTESQ-UAA-17-NOR-R9",
+   "parentCode": "CTESQ-UAA-17-NOR",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Sociologie"
+  },
+  {
+   "code": "CTESQ-UAA-17-NOR-R10",
+   "parentCode": "CTESQ-UAA-17-NOR",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : normes, valeurs, agents de socialisation"
+  },
+  {
+   "code": "CTESQ-UAA-15-BUD",
+   "parentCode": "CTESQ",
+   "kind": "competence",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Budget et Droit"
+  },
+  {
+   "code": "CTESQ-UAA-15-BUD-C1",
+   "parentCode": "CTESQ-UAA-15-BUD",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Compétence : Elaborer le budget d’un ménage"
+  },
+  {
+   "code": "CTESQ-UAA-15-BUD-C2",
+   "parentCode": "CTESQ-UAA-15-BUD",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Compétence : Faire face à une problématique liée à un contrat"
+  },
+  {
+   "code": "CTESQ-UAA-15-BUD-A1",
+   "parentCode": "CTESQ-UAA-15-BUD",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : établir différents budgets et évaluer les conséquences des choix posés"
+  },
+  {
+   "code": "CTESQ-UAA-15-BUD-A2",
+   "parentCode": "CTESQ-UAA-15-BUD",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : comparer différentes offres de crédits lors d’un achat d’un bien ou d’un service"
+  },
+  {
+   "code": "CTESQ-UAA-15-BUD-A3",
+   "parentCode": "CTESQ-UAA-15-BUD",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : mettre en évidence les implications des parties dans un contrat déterminé"
+  },
+  {
+   "code": "CTESQ-UAA-15-BUD-T1",
+   "parentCode": "CTESQ-UAA-15-BUD",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Transférer : faire face à une problématique relative à un contrat"
+  },
+  {
+   "code": "CTESQ-UAA-15-BUD-T2",
+   "parentCode": "CTESQ-UAA-15-BUD",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Transférer : sur base d’une situation financière donnée, élaborer un budget qui prend en compte l’achat d’un bien durable et justifier les choix opérés."
+  },
+  {
+   "code": "CTESQ-UAA-15-BUD-K1",
+   "parentCode": "CTESQ-UAA-15-BUD",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : caractériser l’agent économique ménage"
+  },
+  {
+   "code": "CTESQ-UAA-15-BUD-K2",
+   "parentCode": "CTESQ-UAA-15-BUD",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : expliquer l’utilité d’un budget"
+  },
+  {
+   "code": "CTESQ-UAA-15-BUD-K3",
+   "parentCode": "CTESQ-UAA-15-BUD",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : distinguer les principaux moyens de paiement et de crédit aux particuliers, leurs avantages, leurs risques"
+  },
+  {
+   "code": "CTESQ-UAA-15-BUD-K4",
+   "parentCode": "CTESQ-UAA-15-BUD",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : identifier les mentions légales d’un contrat"
+  },
+  {
+   "code": "CTESQ-UAA-15-BUD-R1",
+   "parentCode": "CTESQ-UAA-15-BUD",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Schéma économique"
+  },
+  {
+   "code": "CTESQ-UAA-15-BUD-R2",
+   "parentCode": "CTESQ-UAA-15-BUD",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Socialisation"
+  },
+  {
+   "code": "CTESQ-UAA-15-BUD-R3",
+   "parentCode": "CTESQ-UAA-15-BUD",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Droit"
+  },
+  {
+   "code": "CTESQ-UAA-15-BUD-R4",
+   "parentCode": "CTESQ-UAA-15-BUD",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : contrats de location/ assurance/ crédit/ vente : intervenants"
+  },
+  {
+   "code": "CTESQ-UAA-15-BUD-R5",
+   "parentCode": "CTESQ-UAA-15-BUD",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : contrats de location/ assurance/ crédit/ vente : consentement"
+  },
+  {
+   "code": "CTESQ-UAA-15-BUD-R6",
+   "parentCode": "CTESQ-UAA-15-BUD",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : contrats de location/ assurance/ crédit/ vente : droits et obligations"
+  },
+  {
+   "code": "CTESQ-UAA-15-BUD-R7",
+   "parentCode": "CTESQ-UAA-15-BUD",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : institutions économiques, sociales et judiciaires"
+  },
+  {
+   "code": "CTESQ-UAA-15-BUD-R8",
+   "parentCode": "CTESQ-UAA-15-BUD",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Economie"
+  },
+  {
+   "code": "CTESQ-UAA-15-BUD-R9",
+   "parentCode": "CTESQ-UAA-15-BUD",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : budget du ménage: recettes/dépenses, épargne/endettement"
+  },
+  {
+   "code": "CTESQ-UAA-15-BUD-R10",
+   "parentCode": "CTESQ-UAA-15-BUD",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : types de revenus"
+  },
+  {
+   "code": "CTESQ-UAA-15-BUD-R11",
+   "parentCode": "CTESQ-UAA-15-BUD",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : types de dépenses"
+  },
+  {
+   "code": "CTESQ-UAA-15-BUD-R12",
+   "parentCode": "CTESQ-UAA-15-BUD",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : moyens de paiement, cartes de crédit, cartes de débit"
+  },
+  {
+   "code": "CTESQ-UAA-15-BUD-R13",
+   "parentCode": "CTESQ-UAA-15-BUD",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : principaux types de crédits aux particuliers"
+  },
+  {
+   "code": "CTESQ-UAA-15-BUD-R14",
+   "parentCode": "CTESQ-UAA-15-BUD",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : seuil de pauvreté, exclusion sociale, surendettement"
+  },
+  {
+   "code": "CTESQ-UAA-15-BUD-R15",
+   "parentCode": "CTESQ-UAA-15-BUD",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Sociologie"
+  },
+  {
+   "code": "CTESQ-UAA-15-LA ",
+   "parentCode": "CTESQ",
+   "kind": "competence",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "La consommation"
+  },
+  {
+   "code": "CTESQ-UAA-15-LA -C1",
+   "parentCode": "CTESQ-UAA-15-LA ",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Compétence : Elaborer un projet de consommation"
+  },
+  {
+   "code": "CTESQ-UAA-15-LA -A1",
+   "parentCode": "CTESQ-UAA-15-LA ",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : déterminer le profil des consommateurs cibles"
+  },
+  {
+   "code": "CTESQ-UAA-15-LA -A2",
+   "parentCode": "CTESQ-UAA-15-LA ",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : analyser un acte de consommation privée/collective"
+  },
+  {
+   "code": "CTESQ-UAA-15-LA -T1",
+   "parentCode": "CTESQ-UAA-15-LA ",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Transférer : Elaborer et justifier un projet de consommation en se fondant sur divers déterminants."
+  },
+  {
+   "code": "CTESQ-UAA-15-LA -K1",
+   "parentCode": "CTESQ-UAA-15-LA ",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : distinguer consommation privée et collective"
+  },
+  {
+   "code": "CTESQ-UAA-15-LA -K2",
+   "parentCode": "CTESQ-UAA-15-LA ",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : caractériser les notions de désir et de besoin"
+  },
+  {
+   "code": "CTESQ-UAA-15-LA -K3",
+   "parentCode": "CTESQ-UAA-15-LA ",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : illustrer des formes de distribution."
+  },
+  {
+   "code": "CTESQ-UAA-15-LA -K4",
+   "parentCode": "CTESQ-UAA-15-LA ",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : illustrer des techniques de marketing"
+  },
+  {
+   "code": "CTESQ-UAA-15-LA -K5",
+   "parentCode": "CTESQ-UAA-15-LA ",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : différencier des structures de marchés d’un produit"
+  },
+  {
+   "code": "CTESQ-UAA-15-LA -R1",
+   "parentCode": "CTESQ-UAA-15-LA ",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Schéma économique"
+  },
+  {
+   "code": "CTESQ-UAA-15-LA -R2",
+   "parentCode": "CTESQ-UAA-15-LA ",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Socialisation"
+  },
+  {
+   "code": "CTESQ-UAA-15-LA -R3",
+   "parentCode": "CTESQ-UAA-15-LA ",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Economie, Sociologie"
+  },
+  {
+   "code": "CTESQ-UAA-15-LA -R4",
+   "parentCode": "CTESQ-UAA-15-LA ",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : besoins, biens et services"
+  },
+  {
+   "code": "CTESQ-UAA-15-LA -R5",
+   "parentCode": "CTESQ-UAA-15-LA ",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : le consommateur : déterminants psychosociologiques"
+  },
+  {
+   "code": "CTESQ-UAA-15-LA -R6",
+   "parentCode": "CTESQ-UAA-15-LA ",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : le consommateur : déterminants économiques"
+  },
+  {
+   "code": "CTESQ-UAA-15-LA -R7",
+   "parentCode": "CTESQ-UAA-15-LA ",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : autres déterminants (éthiques, politiques, culturels, écologiques)"
+  },
+  {
+   "code": "CTESQ-UAA-15-LA -R8",
+   "parentCode": "CTESQ-UAA-15-LA ",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : l’entreprise"
+  },
+  {
+   "code": "CTESQ-UAA-15-LA -R9",
+   "parentCode": "CTESQ-UAA-15-LA ",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : structures des marchés"
+  },
+  {
+   "code": "CTESQ-UAA-15-LA -R10",
+   "parentCode": "CTESQ-UAA-15-LA ",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : techniques de marketing"
+  },
+  {
+   "code": "CTESQ-UAA-24-INT",
+   "parentCode": "CTESQ",
+   "kind": "competence",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Interactions médiatiques"
+  },
+  {
+   "code": "CTESQ-UAA-24-INT-C1",
+   "parentCode": "CTESQ-UAA-24-INT",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Compétence : Adopter un regard critique sur les pratiques médiatiques contemporaines"
+  },
+  {
+   "code": "CTESQ-UAA-24-INT-A1",
+   "parentCode": "CTESQ-UAA-24-INT",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : dégager un lien entre les modes de financement et le comportement individuel et/ou collectif lors de l’usage d’un média"
+  },
+  {
+   "code": "CTESQ-UAA-24-INT-A2",
+   "parentCode": "CTESQ-UAA-24-INT",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : identifier les effets de l’utilisation d’un média en termes d’identité et d’appartenance"
+  },
+  {
+   "code": "CTESQ-UAA-24-INT-A3",
+   "parentCode": "CTESQ-UAA-24-INT",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : identifier des règles juridiques et des normes sociales dans une interaction médiatique"
+  },
+  {
+   "code": "CTESQ-UAA-24-INT-T1",
+   "parentCode": "CTESQ-UAA-24-INT",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Transférer : déterminer les implications juridiques et sociologiques d’un contexte médiatique donné"
+  },
+  {
+   "code": "CTESQ-UAA-24-INT-K1",
+   "parentCode": "CTESQ-UAA-24-INT",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : identifier des modes de financement des médias"
+  },
+  {
+   "code": "CTESQ-UAA-24-INT-K2",
+   "parentCode": "CTESQ-UAA-24-INT",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : identifier les éléments du schéma de communication"
+  },
+  {
+   "code": "CTESQ-UAA-24-INT-K3",
+   "parentCode": "CTESQ-UAA-24-INT",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : connaitre des principes du droit liés à l’utilisation des médias"
+  },
+  {
+   "code": "CTESQ-UAA-24-INT-R1",
+   "parentCode": "CTESQ-UAA-24-INT",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Schéma économique"
+  },
+  {
+   "code": "CTESQ-UAA-24-INT-R2",
+   "parentCode": "CTESQ-UAA-24-INT",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Socialisation"
+  },
+  {
+   "code": "CTESQ-UAA-24-INT-R3",
+   "parentCode": "CTESQ-UAA-24-INT",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Droit"
+  },
+  {
+   "code": "CTESQ-UAA-24-INT-R4",
+   "parentCode": "CTESQ-UAA-24-INT",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : principes du droit en rapport avec les médias"
+  },
+  {
+   "code": "CTESQ-UAA-24-INT-R5",
+   "parentCode": "CTESQ-UAA-24-INT",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Sciences économiques"
+  },
+  {
+   "code": "CTESQ-UAA-24-INT-R6",
+   "parentCode": "CTESQ-UAA-24-INT",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : offre médiatique"
+  },
+  {
+   "code": "CTESQ-UAA-24-INT-R7",
+   "parentCode": "CTESQ-UAA-24-INT",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : principaux modes de financement des médias"
+  },
+  {
+   "code": "CTESQ-UAA-24-INT-R8",
+   "parentCode": "CTESQ-UAA-24-INT",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Sociologie"
+  },
+  {
+   "code": "CTESQ-UAA-24-INT-R9",
+   "parentCode": "CTESQ-UAA-24-INT",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : schéma de communication"
+  },
+  {
+   "code": "CTESQ-UAA-24-INT-R10",
+   "parentCode": "CTESQ-UAA-24-INT",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : identité personnelle, collective, groupe d’appartenance, influence sociale"
+  },
+  {
+   "code": "CTESQ-UAA-20-LE ",
+   "parentCode": "CTESQ",
+   "kind": "competence",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Le marché du travail"
+  },
+  {
+   "code": "CTESQ-UAA-20-LE -C1",
+   "parentCode": "CTESQ-UAA-20-LE ",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Compétence : Faire face à une problématique relative à un contrat de travail"
+  },
+  {
+   "code": "CTESQ-UAA-20-LE -C2",
+   "parentCode": "CTESQ-UAA-20-LE ",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Compétence : Analyser un marché du travail"
+  },
+  {
+   "code": "CTESQ-UAA-20-LE -A1",
+   "parentCode": "CTESQ-UAA-20-LE ",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : lire et expliquer une fiche de paie"
+  },
+  {
+   "code": "CTESQ-UAA-20-LE -A2",
+   "parentCode": "CTESQ-UAA-20-LE ",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : analyser les clauses d’un contrat de travail"
+  },
+  {
+   "code": "CTESQ-UAA-20-LE -A3",
+   "parentCode": "CTESQ-UAA-20-LE ",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : analyser le marché du travail régional en termes d’emploi, de chômage et de formation"
+  },
+  {
+   "code": "CTESQ-UAA-20-LE -T1",
+   "parentCode": "CTESQ-UAA-20-LE ",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Transférer : faire face à une problématique relative à un contrat de travail"
+  },
+  {
+   "code": "CTESQ-UAA-20-LE -T2",
+   "parentCode": "CTESQ-UAA-20-LE ",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Transférer : déterminer les implications sociales et économiques dans un marché du travail"
+  },
+  {
+   "code": "CTESQ-UAA-20-LE -K1",
+   "parentCode": "CTESQ-UAA-20-LE ",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : identifier et distinguer le salaire coût, le salaire brut, salaire net"
+  },
+  {
+   "code": "CTESQ-UAA-20-LE -K2",
+   "parentCode": "CTESQ-UAA-20-LE ",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : identifier les éléments essentiels de différents types de contrat de travail"
+  },
+  {
+   "code": "CTESQ-UAA-20-LE -K3",
+   "parentCode": "CTESQ-UAA-20-LE ",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : identifier les caractéristiques et les implications des différents statuts possibles d’un travailleur"
+  },
+  {
+   "code": "CTESQ-UAA-20-LE -K4",
+   "parentCode": "CTESQ-UAA-20-LE ",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : identifier les organismes de représentation des travailleurs et employeurs et leurs rôles"
+  },
+  {
+   "code": "CTESQ-UAA-20-LE -R1",
+   "parentCode": "CTESQ-UAA-20-LE ",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Le schéma économique"
+  },
+  {
+   "code": "CTESQ-UAA-20-LE -R2",
+   "parentCode": "CTESQ-UAA-20-LE ",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Socialisation"
+  },
+  {
+   "code": "CTESQ-UAA-20-LE -R3",
+   "parentCode": "CTESQ-UAA-20-LE ",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Droit"
+  },
+  {
+   "code": "CTESQ-UAA-20-LE -R4",
+   "parentCode": "CTESQ-UAA-20-LE ",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : statuts du travailleur"
+  },
+  {
+   "code": "CTESQ-UAA-20-LE -R5",
+   "parentCode": "CTESQ-UAA-20-LE ",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : contrats de travail: droits et obligations"
+  },
+  {
+   "code": "CTESQ-UAA-20-LE -R6",
+   "parentCode": "CTESQ-UAA-20-LE ",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : règlement de travail"
+  },
+  {
+   "code": "CTESQ-UAA-20-LE -R7",
+   "parentCode": "CTESQ-UAA-20-LE ",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : conventions collectives"
+  },
+  {
+   "code": "CTESQ-UAA-20-LE -R8",
+   "parentCode": "CTESQ-UAA-20-LE ",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : formes d’entreprises"
+  },
+  {
+   "code": "CTESQ-UAA-20-LE -R9",
+   "parentCode": "CTESQ-UAA-20-LE ",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Economie"
+  },
+  {
+   "code": "CTESQ-UAA-20-LE -R10",
+   "parentCode": "CTESQ-UAA-20-LE ",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : fiche de paie"
+  },
+  {
+   "code": "CTESQ-UAA-20-LE -R11",
+   "parentCode": "CTESQ-UAA-20-LE ",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : indexation et pouvoir d’achat"
+  },
+  {
+   "code": "CTESQ-UAA-20-LE -R12",
+   "parentCode": "CTESQ-UAA-20-LE ",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : organigramme"
+  },
+  {
+   "code": "CTESQ-UAA-20-LE -R13",
+   "parentCode": "CTESQ-UAA-20-LE ",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : marché du travail, statistiques"
+  },
+  {
+   "code": "CTESQ-UAA-20-LE -R14",
+   "parentCode": "CTESQ-UAA-20-LE ",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : mondialisation des marchés des biens et services et du travail"
+  },
+  {
+   "code": "CTESQ-UAA-20-LE -R15",
+   "parentCode": "CTESQ-UAA-20-LE ",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Sociologie"
+  },
+  {
+   "code": "CTESQ-UAA-20-LE -R16",
+   "parentCode": "CTESQ-UAA-20-LE ",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : compétences socioprofessionnelles"
+  },
+  {
+   "code": "CTESQ-UAA-20-LE -R17",
+   "parentCode": "CTESQ-UAA-20-LE ",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : organismes de représentation des travailleurs et employeurs"
+  },
+  {
+   "code": "CTESQ-UAA-20-LE -2",
+   "parentCode": "CTESQ",
+   "kind": "competence",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Le Citoyen et l’Etat"
+  },
+  {
+   "code": "CTESQ-UAA-20-LE -2-C1",
+   "parentCode": "CTESQ-UAA-20-LE -2",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Compétence : Raisonner en contribuable avisé"
+  },
+  {
+   "code": "CTESQ-UAA-20-LE -2-C2",
+   "parentCode": "CTESQ-UAA-20-LE -2",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Compétence : Analyser une décision/proposition d’un pouvoir public"
+  },
+  {
+   "code": "CTESQ-UAA-20-LE -2-A1",
+   "parentCode": "CTESQ-UAA-20-LE -2",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : compléter et commenter le schéma économique sur base d’interventions de l’Etat"
+  },
+  {
+   "code": "CTESQ-UAA-20-LE -2-A2",
+   "parentCode": "CTESQ-UAA-20-LE -2",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : compléter une déclaration fiscale numérique (IPP)"
+  },
+  {
+   "code": "CTESQ-UAA-20-LE -2-T1",
+   "parentCode": "CTESQ-UAA-20-LE -2",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Transférer : montrer l’incidence d’une décision prise par le contribuable sur le montant de l’impôt (IPP)"
+  },
+  {
+   "code": "CTESQ-UAA-20-LE -2-T2",
+   "parentCode": "CTESQ-UAA-20-LE -2",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Transférer : déterminer les enjeux et limites d’une décision/proposition prise par l’Etat/un parti politique"
+  },
+  {
+   "code": "CTESQ-UAA-20-LE -2-K1",
+   "parentCode": "CTESQ-UAA-20-LE -2",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : identifier les différents niveaux de pouvoir pour lesquels on vote"
+  },
+  {
+   "code": "CTESQ-UAA-20-LE -2-K2",
+   "parentCode": "CTESQ-UAA-20-LE -2",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : repérer les principales recettes et dépenses dans le budget de l’Etat"
+  },
+  {
+   "code": "CTESQ-UAA-20-LE -2-K3",
+   "parentCode": "CTESQ-UAA-20-LE -2",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : expliquer la procédure d’imposition à l’IPP"
+  },
+  {
+   "code": "CTESQ-UAA-20-LE -2-K4",
+   "parentCode": "CTESQ-UAA-20-LE -2",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : expliquer le rôle et le fonctionnement de la sécurité sociale en formation économique et sociale"
+  },
+  {
+   "code": "CTESQ-UAA-20-LE -2-K5",
+   "parentCode": "CTESQ-UAA-20-LE -2",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : HUMANITÉS PROFESSIONNELLES ET TECHNIQUES"
+  },
+  {
+   "code": "CTESQ-UAA-20-LE -2-K6",
+   "parentCode": "CTESQ-UAA-20-LE -2",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : En application de l’arrêté du Gouvernement de la Communauté française du 16 janvier 2014 déterminant les compétences terminales et savoirs requis à l'issue de la section de transition des humanités générales et technologiques en mathématiques, en sciences de base et en sciences générales et déterminant les compétences terminales et savoirs communs à l’issue de la section de qualification des humanités techniques et professionnelles en éducation scientifique, en français, en sciences économiques et sociales ainsi qu’en sciences humaines, il peut être dérogé aux compétences visées dans la présente annexe, conformément aux articles 3 à 7 dudit arrêté."
+  },
+  {
+   "code": "CTESQ-UAA-20-LE -2-K7",
+   "parentCode": "CTESQ-UAA-20-LE -2",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : Fait à Bruxelles, le 4 décembre 2014."
+  },
+  {
+   "code": "CTESQ-UAA-20-LE -2-K8",
+   "parentCode": "CTESQ-UAA-20-LE -2",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : Vu pour être annexé au décret du 4 décembre 2014."
+  },
+  {
+   "code": "CTESQ-UAA-20-LE -2-K9",
+   "parentCode": "CTESQ-UAA-20-LE -2",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : Le Ministre-Président,"
+  },
+  {
+   "code": "CTESQ-UAA-20-LE -2-K10",
+   "parentCode": "CTESQ-UAA-20-LE -2",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : Rudy DEMOTTE"
+  },
+  {
+   "code": "CTESQ-UAA-20-LE -2-K11",
+   "parentCode": "CTESQ-UAA-20-LE -2",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : La Vice-Présidente et Ministre de l'Education, de la Culture et de l’Enfance"
+  },
+  {
+   "code": "CTESQ-UAA-20-LE -2-K12",
+   "parentCode": "CTESQ-UAA-20-LE -2",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : Joëlle MILQUET"
+  },
+  {
+   "code": "CTESQ-UAA-20-LE -2-K13",
+   "parentCode": "CTESQ-UAA-20-LE -2",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : La Ministre de l’Enseignement de Promotion sociale, de la Jeunesse, des Droits des femmes : et de l’Egalité des chances"
+  },
+  {
+   "code": "CTESQ-UAA-20-LE -2-K14",
+   "parentCode": "CTESQ-UAA-20-LE -2",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : Isabelle SIMONIS"
+  },
+  {
+   "code": "CTESQ-UAA-20-LE -2-K15",
+   "parentCode": "CTESQ-UAA-20-LE -2",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : Annexe VI"
+  },
+  {
+   "code": "CTESQ-UAA-20-LE -2-R1",
+   "parentCode": "CTESQ-UAA-20-LE -2",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Schéma économique"
+  },
+  {
+   "code": "CTESQ-UAA-20-LE -2-R2",
+   "parentCode": "CTESQ-UAA-20-LE -2",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Socialisation"
+  },
+  {
+   "code": "CTESQ-UAA-20-LE -2-R3",
+   "parentCode": "CTESQ-UAA-20-LE -2",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Organisation de l’Etat"
+  },
+  {
+   "code": "CTESQ-UAA-20-LE -2-R4",
+   "parentCode": "CTESQ-UAA-20-LE -2",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : niveaux de pouvoir"
+  },
+  {
+   "code": "CTESQ-UAA-20-LE -2-R5",
+   "parentCode": "CTESQ-UAA-20-LE -2",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : système électoral et partis politiques"
+  },
+  {
+   "code": "CTESQ-UAA-20-LE -2-R6",
+   "parentCode": "CTESQ-UAA-20-LE -2",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Budget de l'Etat"
+  },
+  {
+   "code": "CTESQ-UAA-20-LE -2-R7",
+   "parentCode": "CTESQ-UAA-20-LE -2",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : recettes impôts (IPP/TVA…) cotisations sociales"
+  },
+  {
+   "code": "CTESQ-UAA-20-LE -2-R8",
+   "parentCode": "CTESQ-UAA-20-LE -2",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : dépenses de fonctionnement d’investissement de sécurité sociale"
+  },
+  {
+   "code": "CTESQ-UAA-20-LE -2-R9",
+   "parentCode": "CTESQ-UAA-20-LE -2",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Politiques de l’Etat"
+  },
+  {
+   "code": "CTESQ-UAA-20-LE -2-R10",
+   "parentCode": "CTESQ-UAA-20-LE -2",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : redistribution"
+  },
+  {
+   "code": "CTESQ-UAA-20-LE -2-R11",
+   "parentCode": "CTESQ-UAA-20-LE -2",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : régulation"
+  },
+  {
+   "code": "CTESQ-UAA-20-LE -2-R12",
+   "parentCode": "CTESQ-UAA-20-LE -2",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : production de biens et services collectifs"
+  }
+ ]
+}

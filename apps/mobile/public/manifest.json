@@ -1,0 +1,13 @@
+{
+  "name": "Côte à Côte",
+  "short_name": "Côte à Côte",
+  "description": "L'assistant qui organise les devoirs avec vous.",
+  "lang": "fr-BE",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#FBF8F3",
+  "theme_color": "#1A6B60",
+  "icons": [{ "src": "/icon.png", "sizes": "1024x1024", "type": "image/png", "purpose": "any" }]
+}

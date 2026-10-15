@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Côte à Côte — Présentation aux partenaires</title>
+<style>
+  @font-face { font-family: 'Lexend'; font-weight: 400; src: url('assets/Lexend_400Regular.ttf'); }
+  @font-face { font-family: 'Lexend'; font-weight: 600; src: url('assets/Lexend_600SemiBold.ttf'); }
+  @font-face { font-family: 'Lexend'; font-weight: 700; src: url('assets/Lexend_700Bold.ttf'); }
+  @page { size: A4; margin: 0; }
+  :root {
+    --teal: #1A6B60; --teal-dark: #0F4A42; --teal-soft: #E3EFEC;
+    --amber: #A85C0C; --amber-soft: #F7E9D7;
+    --ink: #1B2430; --muted: #525B68; --line: #DDD5C8;
+    --paper: #FBF8F3; --card: #F1ECE3;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body { font-family: 'Lexend', Verdana, sans-serif; color: var(--ink); font-size: 10pt; line-height: 1.5;
+         -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  .page { width: 210mm; height: 297mm; padding: 18mm 18mm 16mm; position: relative; overflow: hidden;
+          page-break-after: always; break-after: page; background: #fff; }
+  .page:last-child { page-break-after: auto; break-after: auto; }
+  .footer { position: absolute; left: 18mm; right: 18mm; bottom: 9mm; display: flex; justify-content: space-between;
+            font-size: 7.5pt; color: var(--muted); border-top: 1px solid var(--line); padding-top: 2.5mm; }
+  .kicker { font-size: 8pt; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--amber); margin: 0 0 2mm; }
+  h1 { font-size: 26pt; line-height: 1.15; margin: 0 0 5mm; color: var(--teal-dark); }
+  h2 { font-size: 19pt; line-height: 1.2; margin: 0 0 5mm; color: var(--teal-dark); }
+  h3 { font-size: 11.5pt; margin: 0 0 1.5mm; color: var(--teal-dark); }
+  p { margin: 0 0 3mm; }
+  .lead { font-size: 12pt; line-height: 1.55; color: var(--ink); }
+  .muted { color: var(--muted); }
+  .small { font-size: 8pt; }
+  ul { margin: 0 0 3mm; padding-left: 5mm; }
+  li { margin-bottom: 1.2mm; }
+  .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 5mm; }
+  .grid3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 4mm; }
+  .grid4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 3.5mm; }
+  .card { background: var(--card); border-radius: 4mm; padding: 4.5mm 5mm; }
+  .card.teal { background: var(--teal-soft); }
+  .card.amber { background: var(--amber-soft); }
+  .stat { background: var(--teal-soft); border-radius: 4mm; padding: 4mm; }
+  .stat .n { font-size: 20pt; font-weight: 700; color: var(--teal); line-height: 1.1; }
+  .stat .l { font-size: 8.5pt; color: var(--ink); margin-top: 1.5mm; }
+  .stat .s { font-size: 6.8pt; color: var(--muted); margin-top: 1.5mm; }
+  table { width: 100%; border-collapse: collapse; font-size: 9pt; }
+  th { text-align: left; font-weight: 600; color: var(--teal-dark); border-bottom: 2px solid var(--teal); padding: 2mm 2mm; }
+  td { border-bottom: 1px solid var(--line); padding: 2mm 2mm; vertical-align: top; }
+  td.num, th.num { text-align: right; white-space: nowrap; }
+  tr.total td { font-weight: 700; border-bottom: 2px solid var(--teal); }
+  .yes { color: var(--teal); font-weight: 700; }
+  .part { color: var(--amber); font-weight: 700; }
+  .no { color: #9AA0A8; }
+  .shot { border-radius: 4mm; overflow: hidden; border: 1px solid var(--line); background: var(--paper); }
+  .shot img { display: block; width: 100%; height: auto; }
+  .shot.zoom img { width: 165%; }
+  .caption { font-size: 7.5pt; color: var(--muted); margin-top: 1.5mm; text-align: center; }
+  .step { display: flex; gap: 3.5mm; align-items: flex-start; }
+  .step .num { flex: 0 0 9mm; height: 9mm; border-radius: 50%; background: var(--teal); color: #fff; font-weight: 700;
+               display: flex; align-items: center; justify-content: center; font-size: 11pt; }
+  .tag { display: inline-block; background: var(--teal-soft); color: var(--teal-dark); border-radius: 10mm; padding: .6mm 2.6mm;
+         font-size: 7.5pt; font-weight: 600; margin: 0 1mm 1mm 0; }
+  .quote { border-left: 1.2mm solid var(--amber); padding: 2mm 0 2mm 4mm; font-size: 12pt; color: var(--teal-dark); margin: 0 0 5mm; }
+
+  /* Couverture */
+  .cover { background: var(--teal-dark); color: #fff; padding: 0; }
+  .cover .inner { position: absolute; inset: 0; padding: 26mm 20mm; display: flex; flex-direction: column; }
+  .cover .brand { font-size: 13pt; font-weight: 600; letter-spacing: .02em; display: flex; align-items: center; gap: 3mm; }
+  .cover .logo { width: 13mm; height: 13mm; border-radius: 3.5mm; background: #F3A712; display: flex; align-items: center;
+                 justify-content: center; font-size: 15pt; }
+  .cover h1 { color: #fff; font-size: 34pt; margin-top: 30mm; line-height: 1.08; }
+  .cover .sub { font-size: 14pt; line-height: 1.45; color: #D7ECE7; max-width: 150mm; }
+  .cover .sub.narrow { max-width: 92mm; font-size: 12.5pt; }
+  .cover .meta { margin-top: auto; font-size: 9pt; color: #BFDCD5; display: flex; justify-content: space-between; align-items: flex-end; }
+  .cover .pills span { display: inline-block; border: 1px solid #6FB0A4; color: #E3F2EE; border-radius: 10mm;
+                       padding: 1mm 3.5mm; margin: 0 1.5mm 1.5mm 0; font-size: 8.5pt; }
+  .cover .shotwrap { position: absolute; right: -14mm; top: 128mm; width: 104mm; height: 140mm; transform: rotate(-4deg);
+                     border-radius: 6mm; overflow: hidden; box-shadow: 0 10mm 25mm rgba(0,0,0,.35); border: 2.5mm solid #0B3530; }
+  .cover .shotwrap img { width: 100%; height: 100%; object-fit: cover; object-position: top; display: block; }
+</style>
+</head>
+<body>
+
+<!-- 1. Couverture -->
+<section class="page cover">
+  <div class="inner">
+    <div class="brand"><div class="logo">🦁</div>Côte à Côte</div>
+    <h1>Accompagner chaque enfant,<br>côte à côte.</h1>
+    <p class="sub narrow">L’assistant scolaire des familles de la Fédération Wallonie-Bruxelles : le journal de classe devient un planning, des fiches et une mission du jour adaptée à chaque enfant, y compris avec un TDAH ou un trouble « dys ».</p>
+    <div class="pills" style="margin-top:6mm;max-width:92mm">
+      <span>Maternelle → secondaire</span><span>Programme FWB</span><span>Inclusif</span><span>Le parent garde la main</span><span>Données protégées</span>
+    </div>
+    <div class="meta">
+      <div>Présentation aux partenaires<br>Octobre 2026 · document confidentiel</div>
+    </div>
+  </div>
+  <div class="shotwrap"><img src="assets/console.png" alt="Console de l’enfant sur tablette"></div>
+</section>
+
+<!-- 2. En bref -->
+<section class="page">
+  <p class="kicker">En bref</p>
+  <h2>Moins de charge mentale pour les parents, plus d’autonomie pour l’enfant</h2>
+  <p class="lead">Le parent photographie le journal de classe. Côte à Côte en tire les devoirs et les échéances, les relie au programme officiel, puis prépare un planning de la semaine et une mission du jour courte, adaptée à l’âge et aux besoins de l’enfant.</p>
+
+  <div class="grid4" style="margin:6mm 0">
+    <div class="stat"><div class="n">867 000</div><div class="l">élèves de la maternelle au secondaire en FWB</div><div class="s">bx1, 2025</div></div>
+    <div class="stat"><div class="n">1 sur 6</div><div class="l">parents d’élèves du secondaire paient un soutien scolaire</div><div class="s">jusqu’à 650 € par an · La Libre, 2026</div></div>
+    <div class="stat"><div class="n">3 à 12 %</div><div class="l">des enfants ont un TDAH ; ~4 % une dyslexie</div><div class="s">estimations publiées en Belgique</div></div>
+    <div class="stat"><div class="n">9,99 €</div><div class="l">par mois pour un enfant ; 14,99 € la famille</div><div class="s">essai gratuit de 14 jours</div></div>
+  </div>
+
+  <div class="grid2">
+    <div class="card">
+      <h3>Ce qui nous distingue</h3>
+      <ul>
+        <li><b>Ancré dans la FWB</b> : référentiels du tronc commun, CEB, CE1D, CESS, congés scolaires, vocabulaire belge.</li>
+        <li><b>Inclusif dès la conception</b> : TDAH, dyslexie, dyscalculie changent le rythme, la police, la quantité affichée.</li>
+        <li><b>Le parent valide tout</b> ce que l’IA propose : rien n’arrive à l’enfant sans lui.</li>
+        <li><b>Effort plutôt que notes</b> : récompenses éthiques, jamais de classement.</li>
+        <li><b>Vie privée</b> : prénom seulement, jamais transmis à l’IA, photos supprimées après lecture, hébergement dans l’UE.</li>
+      </ul>
+    </div>
+    <div class="card teal">
+      <h3>Où en est le projet</h3>
+      <ul>
+        <li>Application <b>fonctionnelle et testée</b> : iPhone, Android, tablette et web, une seule base de code.</li>
+        <li>Plus de 40 fonctionnalités, 220 tests unitaires et 55 parcours testés de bout en bout.</li>
+        <li>Revue de sécurité faite ; protection des données conçue pour des mineurs.</li>
+        <li><b>Prochaine étape</b> : bêta privée avec 10 à 20 familles, puis lancement sur les stores.</li>
+      </ul>
+      <h3 style="margin-top:3mm">Ce que nous cherchons</h3>
+      <p style="margin:0">Des partenaires pour <b>tester</b> avec des familles, <b>valider</b> les contenus, <b>diffuser</b> l’application et <b>financer</b> le lancement.</p>
+    </div>
+  </div>
+  <div class="footer"><span>Côte à Côte · Présentation aux partenaires</span><span>2</span></div>
+</section>
+
+<!-- 3. Le problème -->
+<section class="page">
+  <p class="kicker">Le constat</p>
+  <h2>Suivre la scolarité d’un enfant est devenu un deuxième métier</h2>
+  <p class="quote">« Qu’est-ce qu’il a pour demain ? Il a une interro vendredi ? Comment l’aider à réviser sans que ça finisse en dispute ? »</p>
+
+  <div class="grid3" style="margin-bottom:6mm">
+    <div class="card">
+      <h3>Savoir quoi faire</h3>
+      <p>Le journal de classe, les feuilles volantes et les plateformes d’école dispersent l’information. Les échéances sont découvertes trop tard, souvent la veille.</p>
+    </div>
+    <div class="card">
+      <h3>S’organiser</h3>
+      <p>Répartir le travail sur la semaine, préparer une interro, puis un blocus : les parents n’ont ni le temps ni la méthode, surtout avec plusieurs enfants.</p>
+    </div>
+    <div class="card">
+      <h3>Adapter</h3>
+      <p>Pour un enfant avec un TDAH ou un trouble « dys », une consigne trop longue ou une séance mal rythmée suffit à tout bloquer. Les outils grand public n’en tiennent pas compte.</p>
+    </div>
+  </div>
+
+  <div class="grid2">
+    <div>
+      <h3>Un marché réel et déjà payant</h3>
+      <ul>
+        <li><b>867 000 élèves</b> en FWB, de la maternelle au secondaire, soit environ <b>500 000 familles</b> (estimation : 1,7 enfant scolarisé par famille).</li>
+        <li><b>Un parent sur six</b> fait appel à un soutien scolaire payant en secondaire, pour un budget pouvant atteindre <b>650 € par an</b>.</li>
+        <li>Selon l’APEDA, plus de <b>400 000 personnes</b> en Belgique francophone ont un ou plusieurs troubles d’apprentissage.</li>
+      </ul>
+    </div>
+    <div>
+      <h3>Un moment favorable</h3>
+      <ul>
+        <li>La <b>réforme du tronc commun</b> change les repères des parents : ils cherchent à comprendre ce qui est attendu.</li>
+        <li>L’IA permet enfin de <b>lire un journal de classe manuscrit</b> et de préparer des exercices à la demande, pour quelques euros par mois.</li>
+        <li>Les familles se méfient des outils qui captent l’attention : il y a une place pour un produit <b>calme, éthique et transparent</b>.</li>
+      </ul>
+    </div>
+  </div>
+  <p class="small muted" style="margin-top:4mm">Sources : bx1 (« Les écoles de la FWB ont perdu 30 000 élèves en dix ans », 2025) ; La Libre Belgique (« La facture cachée de la rentrée », juin 2026) ; APEDA ; publications belges sur la prévalence du TDAH et de la dyslexie. Le nombre de familles est une estimation à affiner.</p>
+  <div class="footer"><span>Côte à Côte · Présentation aux partenaires</span><span>3</span></div>
+</section>
+
+<!-- 4. La solution -->
+<section class="page">
+  <p class="kicker">La solution</p>
+  <h2>Une photo le soir, une mission claire le lendemain</h2>
+  <div class="grid3" style="margin-bottom:6mm">
+    <div class="step"><div class="num">1</div><div><h3>Le parent photographie</h3><p>Le journal de classe ou une page de cours. L’IA en extrait devoirs, leçons, interros et dates, sans recopier aucun nom. Le parent vérifie et valide.</p></div></div>
+    <div class="step"><div class="num">2</div><div><h3>L’application organise</h3><p>Un planning de la semaine qui respecte les jours de travail, la durée adaptée à l’âge, les congés et les semaines chargées. Fiches, quiz et exercices sont préparés.</p></div></div>
+    <div class="step"><div class="num">3</div><div><h3>L’enfant avance seul</h3><p>Sur sa tablette ou le téléphone du parent : la mission du jour, un minuteur, la fiche lue à voix haute, des cartes de révision, sans menu ni distraction.</p></div></div>
+  </div>
+  <div class="grid3" style="align-items:start">
+    <div><div class="shot" style="height:150mm"><img src="assets/cockpit.png" alt=""></div><div class="caption">Cockpit parent</div></div>
+    <div><div class="shot" style="height:150mm"><img src="assets/planning.png" alt=""></div><div class="caption">Planning de la semaine</div></div>
+    <div><div class="shot zoom" style="height:150mm"><img src="assets/console.png" alt=""></div><div class="caption">Console de l’enfant (tablette)</div></div>
+  </div>
+  <div class="footer"><span>Côte à Côte · Présentation aux partenaires</span><span>4</span></div>
+</section>
+
+<!-- 5. Fonctionnalités -->
+<section class="page">
+  <p class="kicker">Le produit</p>
+  <h2>Tout ce qu’il faut, de la maternelle au blocus</h2>
+  <div class="grid2" style="gap:4mm">
+    <div class="card">
+      <h3>📅 Organiser</h3>
+      <p>Planning hebdomadaire, alertes avant les interros, semaine allégée, congés FWB 2026-2027, cartable du soir, <b>plan de blocus</b> pour les examens, plusieurs parents par famille, tablette de l’enfant reliée par QR code.</p>
+    </div>
+    <div class="card">
+      <h3>📚 Apprendre</h3>
+      <p>Fiche, quiz, exercices et cartes pour chaque tâche, préparés selon le programme. « Explique-moi autrement », dictées, tables, lecture à voix haute qui progresse, langues lues avec la bonne voix, dossiers CEB, CE1D, CESS.</p>
+    </div>
+    <div class="card">
+      <h3>🧩 Inclure</h3>
+      <p>Réglages déduits du profil : séances plus courtes, une consigne à la fois, police adaptée, lecture vocale, pas de chrono. Météo du jour : un enfant fatigué fait l’essentiel. Pause respiration.</p>
+    </div>
+    <div class="card">
+      <h3>🌱 Motiver sans pression</h3>
+      <p>Avatar qui grandit avec l’effort, badges et diplômes, série avec jokers, récompense choisie en famille, défi de la fratrie sans classement, carnet de fierté, fonds d’écran selon l’âge, coin détente limité dans le temps.</p>
+    </div>
+    <div class="card">
+      <h3>👀 Rassurer le parent</h3>
+      <p>Suivi par matière, bilan positif de la semaine à lire à l’enfant, demandes d’aide signalées, « Ce soir à table » pour en parler, <b>bilan PDF pour un logopède, le PMS ou l’enseignant</b>.</p>
+    </div>
+    <div class="card">
+      <h3>🔒 Protéger</h3>
+      <p>Prénom seulement pour l’enfant, jamais transmis à l’IA, aucun nom recopié des photos, photos supprimées sous 24 h, hébergement UE, export et suppression des données, besoins particuliers jamais transmis tels quels à l’IA.</p>
+    </div>
+  </div>
+  <div class="grid3" style="margin-top:5mm;align-items:start">
+    <div><div class="shot zoom" style="height:66mm"><img src="assets/fiche.png" alt=""></div><div class="caption">Fiche lue à voix haute, « Explique-moi autrement »</div></div>
+    <div><div class="shot" style="height:66mm"><img src="assets/suivi.png" alt=""></div><div class="caption">Suivi et bilan de la semaine</div></div>
+    <div><div class="shot zoom" style="height:66mm"><img src="assets/detente.png" alt=""></div><div class="caption">Coin détente (10 min par jour)</div></div>
+  </div>
+  <div class="footer"><span>Côte à Côte · Présentation aux partenaires</span><span>5</span></div>
+</section>
+
+<!-- 6. Positionnement -->
+<section class="page">
+  <p class="kicker">Positionnement</p>
+  <h2>Le seul outil pensé pour le parent, le programme FWB et les enfants à besoins particuliers</h2>
+  <p class="quote">Pour les parents de la Fédération Wallonie-Bruxelles qui veulent accompagner leurs enfants sans y passer leurs soirées, Côte à Côte transforme le journal de classe en un plan de travail adapté à chaque enfant. Contrairement aux applications de révision ou aux assistants IA généralistes, il suit le programme officiel, s’adapte aux troubles d’apprentissage et laisse toujours le dernier mot au parent.</p>
+
+  <table style="margin-bottom:6mm">
+    <thead><tr><th style="width:30%"></th><th>Plateformes d’école</th><th>Apps de révision</th><th>Assistants IA généralistes</th><th>Cours particuliers</th><th>Côte à Côte</th></tr></thead>
+    <tbody>
+      <tr><td>Organise la semaine de l’enfant</td><td class="part">partiel</td><td class="no">—</td><td class="no">—</td><td class="part">partiel</td><td class="yes">✓</td></tr>
+      <tr><td>Aligné sur le programme FWB</td><td class="yes">✓</td><td class="no">—</td><td class="part">partiel</td><td class="yes">✓</td><td class="yes">✓</td></tr>
+      <tr><td>Adapté au TDAH et aux « dys »</td><td class="no">—</td><td class="part">partiel</td><td class="no">—</td><td class="part">partiel</td><td class="yes">✓</td></tr>
+      <tr><td>Exercices sur ce que l’enfant étudie cette semaine</td><td class="no">—</td><td class="part">partiel</td><td class="part">partiel</td><td class="yes">✓</td><td class="yes">✓</td></tr>
+      <tr><td>Le parent valide et suit</td><td class="part">partiel</td><td class="no">—</td><td class="no">—</td><td class="part">partiel</td><td class="yes">✓</td></tr>
+      <tr><td>Conçu pour un mineur (vie privée, sans pub)</td><td class="yes">✓</td><td class="part">partiel</td><td class="no">—</td><td class="yes">✓</td><td class="yes">✓</td></tr>
+      <tr><td>Coût mensuel pour la famille</td><td>gratuit (école)</td><td>0 à 10 €</td><td>0 à 20 €</td><td>80 à 200 €</td><td>10 à 15 €</td></tr>
+    </tbody>
+  </table>
+  <p class="small muted" style="margin-top:-3mm;margin-bottom:5mm">✓ oui · partiel : en partie ou selon l’offre · — non. Comparaison par catégories, à titre indicatif : plateformes numériques d’école (journal de classe, communication), applications de cartes et de quiz, assistants conversationnels, soutien scolaire à domicile.</p>
+
+  <div class="grid3">
+    <div class="card teal"><h3>Complémentaire de l’école</h3><p>Nous ne remplaçons ni l’enseignant ni la plateforme d’école : nous aidons la famille à faire, à la maison, ce que l’école demande.</p></div>
+    <div class="card teal"><h3>Complémentaire du professionnel</h3><p>Logopèdes et centres PMS reçoivent un bilan factuel du travail à la maison ; l’application applique au quotidien les adaptations recommandées.</p></div>
+    <div class="card teal"><h3>Accessible</h3><p>Le prix d’une heure de cours particulier par mois pour un accompagnement quotidien de toute la famille.</p></div>
+  </div>
+  <div class="footer"><span>Côte à Côte · Présentation aux partenaires</span><span>6</span></div>
+</section>
+
+<!-- 7. Partenariats -->
+<section class="page">
+  <p class="kicker">Partenariats</p>
+  <h2>Avancer avec ceux qui accompagnent déjà les familles</h2>
+  <div class="grid2" style="gap:4mm">
+    <div class="card">
+      <h3>Associations de parents et de familles</h3>
+      <p>Ligue des familles, associations de parents d’élèves, associations « dys » et TDAH.</p>
+      <p class="muted" style="margin:0"><b>Ensemble</b> : familles pour la bêta, retours d’usage, tarif réduit pour les membres, ateliers « s’organiser à la maison ».</p>
+    </div>
+    <div class="card">
+      <h3>Logopèdes, centres PMS, neuropsychologues</h3>
+      <p>Ceux qui recommandent des adaptations aux familles.</p>
+      <p class="muted" style="margin:0"><b>Ensemble</b> : validation des adaptations, bilan pour le professionnel co-construit, recommandation aux patients, accès offert aux praticiens.</p>
+    </div>
+    <div class="card">
+      <h3>Mutualités et assureurs</h3>
+      <p>Souvent engagées auprès des familles : avantages pour la logopédie, le soutien scolaire, la prévention.</p>
+      <p class="muted" style="margin:0"><b>Ensemble</b> : avantage membre (abonnement offert ou remboursé), prévention du décrochage, données d’usage anonymes et agrégées.</p>
+    </div>
+    <div class="card">
+      <h3>Éditeurs scolaires et acteurs pédagogiques</h3>
+      <p>Contenus alignés sur les référentiels du tronc commun.</p>
+      <p class="muted" style="margin:0"><b>Ensemble</b> : contenus relus ou fournis par des enseignants, exercices d’éditeur dans les fiches, co-marquage.</p>
+    </div>
+    <div class="card">
+      <h3>Écoles, pouvoirs organisateurs, écoles de devoirs</h3>
+      <p>Pour les familles qui ont le moins de temps et de moyens.</p>
+      <p class="muted" style="margin:0"><b>Ensemble</b> : licences pour des familles accompagnées, projet pilote dans une école ou une école de devoirs, mesure d’impact.</p>
+    </div>
+    <div class="card">
+      <h3>Financement et accompagnement</h3>
+      <p>Fondations, programmes régionaux d’innovation, investisseurs à impact.</p>
+      <p class="muted" style="margin:0"><b>Ensemble</b> : financement de la bêta et des contenus validés, accompagnement au lancement, réseau.</p>
+    </div>
+  </div>
+  <div class="card teal" style="margin-top:5mm">
+    <h3>Nos engagements envers les partenaires</h3>
+    <p style="margin:0">Pas de publicité, pas de revente de données ; seules des statistiques anonymes et agrégées sont partagées. Contenus signalables et corrigés rapidement. Transparence sur l’usage de l’IA. Gouvernance pédagogique ouverte aux professionnels.</p>
+  </div>
+  <div class="footer"><span>Côte à Côte · Présentation aux partenaires</span><span>7</span></div>
+</section>
+
+<!-- 8. Feuille de route -->
+<section class="page">
+  <p class="kicker">Feuille de route</p>
+  <h2>Un produit prêt, un lancement par étapes</h2>
+  <table style="margin-bottom:5mm">
+    <thead><tr><th style="width:24%">Étape</th><th style="width:16%">Objectif</th><th>Contenu</th></tr></thead>
+    <tbody>
+      <tr><td><b>Produit fonctionnel</b><br><span class="tag">fait</span></td><td>octobre 2026</td><td>Numérisation et extraction par l’IA, planning, mission du jour, fiches, quiz, exercices, cartes, dossiers CEB, CE1D et CESS, maternelle, tablette de l’enfant, récompenses, suivi, bilans, abonnement, sécurité et protection des données. Démonstration complète sur ordinateur, iPhone et iPad.</td></tr>
+      <tr><td><b>Mise en conformité</b></td><td>fin 2026</td><td>Analyse d’impact (AIPD) et politique de confidentialité relues par un juriste, mentions légales, comptes Apple, Google et hébergement de production en UE.</td></tr>
+      <tr><td><b>Bêta privée</b></td><td>hiver 2026-2027</td><td>10 à 20 familles (dont des enfants avec TDAH et « dys ») via TestFlight et le test interne Google Play. Mesures : usage quotidien, coût réel de l’IA, qualité des contenus, satisfaction.</td></tr>
+      <tr><td><b>Lancement public</b></td><td>printemps 2027</td><td>Publication sur l’App Store et Google Play, offre partenaires, parrainage. Préparation du CEB et du CE1D de juin comme temps fort.</td></tr>
+      <tr><td><b>Approfondissement</b></td><td>2027-2028</td><td>Contenus relus par des enseignants et logopèdes, programmes des réseaux, version web du cockpit parent, interface parent multilingue.</td></tr>
+    </tbody>
+  </table>
+
+  <h3>Risques et réponses</h3>
+  <table>
+    <thead><tr><th style="width:34%">Risque</th><th>Réponse</th></tr></thead>
+    <tbody>
+      <tr><td>Erreurs dans les contenus générés</td><td>Génération ancrée sur le programme et la page photographiée, validation par le parent, signalement en un geste, relecture humaine progressive.</td></tr>
+      <tr><td>Écriture manuscrite mal lue</td><td>Chaque tâche extraite est vérifiée par le parent avant d’arriver chez l’enfant.</td></tr>
+      <tr><td>Données de santé de mineurs</td><td>Prénom seulement et jamais ajouté aux requêtes IA, photos supprimées dès la lecture, besoins jamais transmis tels quels à l’IA, hébergement UE, AIPD et DPA avant le lancement.</td></tr>
+      <tr><td>Coût de l’IA</td><td>Quotas par formule, fiches réutilisées, suivi du coût réel par famille dès la bêta.</td></tr>
+      <tr><td>Équipe réduite</td><td>Services gérés, 55 parcours testés automatiquement à chaque modification, partenaires pour les contenus et la diffusion.</td></tr>
+    </tbody>
+  </table>
+  <div class="footer"><span>Côte à Côte · Présentation aux partenaires</span><span>8</span></div>
+</section>
+
+<!-- 9. Contact -->
+<section class="page cover" style="page-break-after:auto">
+  <div class="inner">
+    <div class="brand"><div class="logo">🦁</div>Côte à Côte</div>
+    <h1 style="margin-top:40mm;font-size:30pt">Construisons-le ensemble.</h1>
+    <p class="sub">Nous cherchons des partenaires pour la bêta, la validation des contenus, la diffusion auprès des familles et le financement du lancement.</p>
+    <div class="grid2" style="margin-top:10mm;max-width:170mm;color:#E3F2EE">
+      <div>
+        <p style="font-weight:600;color:#fff;margin-bottom:1.5mm">Une démonstration en 20 minutes</p>
+        <p>L’application tourne sur ordinateur, iPhone et iPad, avec un compte de démonstration : cockpit parent, console de l’enfant, tablette reliée.</p>
+      </div>
+      <div>
+        <p style="font-weight:600;color:#fff;margin-bottom:1.5mm">Contact</p>
+        <p>Claudio Dellutri, fondateur</p>
+      </div>
+    </div>
+    <div class="meta"><div>Côte à Côte · octobre 2026 · document confidentiel<br>Chiffres de marché : sources publiques citées.</div></div>
+  </div>
+</section>
+
+</body>
+</html>

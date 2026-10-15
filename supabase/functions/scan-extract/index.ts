@@ -1,0 +1,162 @@
+import {
+  ACCESS_MESSAGES,
+  checkScanAccess,
+  startOfMonthBrussels,
+  type Subscription,
+} from '../_shared/access.ts';
+import { extractTasksFromImages, SCAN_MODEL } from '../_shared/claude.ts';
+import { z } from '../_shared/deps.ts';
+import type { DocumentType } from '../_shared/extraction.ts';
+import { corsHeaders, json, UserFacingError } from '../_shared/http.ts';
+import { estimateCostUsd } from '../_shared/pricing.ts';
+import { adminClient, authenticate } from '../_shared/supabase.ts';
+import { reportServerError } from '../_shared/monitoring.ts';
+
+/**
+ * Analyse d'un document photographié (F3) : vérifie les droits, lit ses pages avec Claude (une seule analyse,
+ * comptée une fois dans le quota), enregistre les tâches en brouillon pour validation par le parent, puis
+ * supprime les photos.
+ */
+
+const bodySchema = z.object({ scanId: z.uuid() });
+const BUCKET = 'scans';
+
+interface ClaimedScan {
+  id: string;
+  child_id: string;
+  document_type: DocumentType | null;
+  storage_path: string | null;
+  /** Pages 2 et suivantes, dans l'ordre. */
+  extra_storage_paths: string[];
+}
+
+Deno.serve(async (request) => {
+  if (request.method === 'OPTIONS') return new Response('ok', { headers: corsHeaders });
+  if (request.method !== 'POST') return json({ error: 'Méthode non autorisée' }, 405);
+
+  const admin = adminClient();
+  let scanId: string | null = null;
+
+  try {
+    const { familyId } = await authenticate(request, admin);
+    const body = bodySchema.safeParse(await request.json().catch(() => null));
+    if (!body.success) throw new UserFacingError('Requête invalide.');
+    scanId = body.data.scanId;
+
+    // Réservation atomique de la photo : empêche deux analyses simultanées (voir claim_scan).
+    const { data: claimed, error: claimError } = await admin.rpc('claim_scan', {
+      p_scan_id: scanId,
+      p_family_id: familyId,
+    });
+    if (claimError) throw claimError;
+    const scan = (claimed as ClaimedScan[] | null)?.[0];
+    if (!scan) {
+      scanId = null; // rien à remettre en échec
+      throw new UserFacingError('Cette photo est déjà en cours d’analyse ou a déjà été analysée.', 409);
+    }
+    if (!scan.storage_path) throw new UserFacingError('La photo a expiré. Reprenez-la.', 410);
+    const paths = [scan.storage_path, ...(scan.extra_storage_paths ?? [])];
+    // Défense en profondeur (voir les contraintes de la table scan) : jamais hors du dossier de la famille.
+    if (!paths.every((path) => path.startsWith(`${familyId}/`)))
+      throw new UserFacingError('Photo introuvable.', 404);
+
+    const now = new Date();
+    const [{ data: subscription }, { count }] = await Promise.all([
+      admin
+        .from('subscription')
+        .select('plan, status, current_period_end')
+        .eq('family_id', familyId)
+        .maybeSingle(),
+      // Quota compté sur le journal de consommation, que seul le serveur écrit.
+      admin
+        .from('ai_usage')
+        .select('id', { count: 'exact', head: true })
+        .eq('family_id', familyId)
+        .eq('function_name', 'scan-extract')
+        .gte('created_at', startOfMonthBrussels(now)),
+    ]);
+    const problem = checkScanAccess(subscription as Subscription | null, count ?? 0, now);
+    if (problem) throw new UserFacingError(ACCESS_MESSAGES[problem], 402);
+
+    const [{ data: child }, ...files] = await Promise.all([
+      admin.from('child_profile').select('grade').eq('id', scan.child_id).single(),
+      ...paths.map((path) => admin.storage.from(BUCKET).download(path)),
+    ]);
+    if (!child || files.some((f) => f.error || !f.data)) throw new Error('Photo ou profil introuvable');
+
+    const imagesBase64 = await Promise.all(
+      files.map(async (f) => encodeBase64(new Uint8Array(await f.data!.arrayBuffer()))),
+    );
+    const { extraction, model, usage } = await extractTasksFromImages({
+      imagesBase64,
+      grade: child.grade,
+      documentType: scan.document_type,
+      now,
+    });
+
+    if (extraction.tasks.length > 0) {
+      const { error } = await admin.from('task').insert(
+        extraction.tasks.map((task) => ({
+          family_id: familyId,
+          child_id: scan.child_id,
+          scan_id: scan.id,
+          subject: task.subject,
+          kind: task.kind,
+          description: task.description,
+          due_date: task.dueDate,
+          reference: task.reference,
+          confidence: task.confidence,
+          remediation: task.remediation ? { errors: task.errors } : null,
+          examples: task.examples,
+          status: 'draft',
+        })),
+      );
+      if (error) throw error;
+    }
+
+    await admin
+      .from('scan')
+      .update({
+        status: 'draft',
+        document_type: extraction.documentType,
+        spelling_words: extraction.spellingWords.length > 0 ? extraction.spellingWords : null,
+        vocabulary: extraction.vocabulary.length > 0 ? extraction.vocabulary : null,
+        vocabulary_subject: extraction.vocabularySubject,
+        storage_path: null,
+        extra_storage_paths: [],
+        processed_at: now.toISOString(),
+      })
+      .eq('id', scan.id);
+    // Les photos ne sont plus nécessaires : on les supprime immédiatement.
+    await admin.storage.from(BUCKET).remove(paths);
+
+    await admin.from('ai_usage').insert({
+      family_id: familyId,
+      function_name: 'scan-extract',
+      model: model || SCAN_MODEL,
+      input_tokens: usage.input_tokens,
+      output_tokens: usage.output_tokens,
+      cache_read_tokens: usage.cache_read_input_tokens ?? 0,
+      cost_usd: estimateCostUsd(model || SCAN_MODEL, usage),
+    });
+
+    return json({ status: 'draft', tasks: extraction.tasks.length, pages: paths.length });
+  } catch (error) {
+    const userFacing = error instanceof UserFacingError;
+    if (!userFacing) await reportServerError('scan-extract', error);
+    const message = userFacing ? error.message : "L'analyse a échoué. Réessayez dans un instant.";
+
+    // Les photos sont conservées pour permettre de réessayer ; l'échec est visible dans l'application.
+    if (scanId) await admin.from('scan').update({ status: 'failed', error: message }).eq('id', scanId);
+    return json({ error: message }, userFacing ? error.status : 500);
+  }
+});
+
+function encodeBase64(bytes: Uint8Array): string {
+  let binary = '';
+  const chunk = 0x8000;
+  for (let i = 0; i < bytes.length; i += chunk) {
+    binary += String.fromCharCode(...bytes.subarray(i, i + chunk));
+  }
+  return btoa(binary);
+}

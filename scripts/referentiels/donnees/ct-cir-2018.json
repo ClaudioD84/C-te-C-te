@@ -1,0 +1,2508 @@
+{
+ "source": {
+  "title": "Compétences terminales et savoirs requis en arts du cirque et arts circassiens",
+  "url": "https://www.enseignement.be/fileadmin/portail_age/uploads/parcours_apprentissage/secondaire_ordinaire/Organisation/Contenus_apprentissages_Secondaire/competences_terminales/FORM_COM_2et3_degres_TRANSITION/CT_HGT_Arts-cirque.pdf",
+  "version": "2018"
+ },
+ "level": "secondaire",
+ "tracks": [
+  "general",
+  "technique",
+  "specialise"
+ ],
+ "entries": [
+  {
+   "code": "CTCIR",
+   "parentCode": null,
+   "kind": "domaine",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "label": "Compétences terminales et savoirs requis en arts du cirque et arts circassiens"
+  },
+  {
+   "code": "CTCIR-UAA1",
+   "parentCode": "CTCIR",
+   "kind": "competence",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Thème 1 – Qui suis-je ?"
+  },
+  {
+   "code": "CTCIR-UAA1-C1",
+   "parentCode": "CTCIR-UAA1",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Compétence : Occuper l’espace scénique avec agrès en démontrant une qualité de présence"
+  },
+  {
+   "code": "CTCIR-UAA1-A1",
+   "parentCode": "CTCIR-UAA1",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Appliquer : Réaliser un parcours aérien de base (montée, circulation et descente) sur différents engins (par exemple sur trapèze fixe, corde lisse, tissus…)"
+  },
+  {
+   "code": "CTCIR-UAA1-A2",
+   "parentCode": "CTCIR-UAA1",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Appliquer : Réaliser un parcours d’équilibre de base (circulation) sur différents engins fixes et mobiles dont obligatoirement tonneau, rolla-bolla, boule, échasses, monocycle, fil dur et/ou fil mou"
+  },
+  {
+   "code": "CTCIR-UAA1-A3",
+   "parentCode": "CTCIR-UAA1",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Appliquer : Exécuter les figures de base en jonglerie avec foulards et/ou balles (cascade, piston, la douche et arrêt)"
+  },
+  {
+   "code": "CTCIR-UAA1-A4",
+   "parentCode": "CTCIR-UAA1",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Appliquer : Exécuter les figures de base en jonglerie avec bâtons, cerceaux/anneaux et massues"
+  },
+  {
+   "code": "CTCIR-UAA1-A5",
+   "parentCode": "CTCIR-UAA1",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Appliquer : Manipuler des objets du quotidien (par exemple cannes, bouteilles, parapluie…)"
+  },
+  {
+   "code": "CTCIR-UAA1-A6",
+   "parentCode": "CTCIR-UAA1",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Appliquer : Maintenir différents équilibres au sol (abordés en « acrobatie et dérivés »)"
+  },
+  {
+   "code": "CTCIR-UAA1-A7",
+   "parentCode": "CTCIR-UAA1",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Appliquer : Dans chacune des familles : appliquer les procédures de sécurité dans l’utilisation des différents agrès"
+  },
+  {
+   "code": "CTCIR-UAA1-A8",
+   "parentCode": "CTCIR-UAA1",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Appliquer : Dans chacune des familles : reproduire les enchainements*, routines*, séquences*"
+  },
+  {
+   "code": "CTCIR-UAA1-A9",
+   "parentCode": "CTCIR-UAA1",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Appliquer : Dans chacune des familles : présenter des enchainements, routines, séquences"
+  },
+  {
+   "code": "CTCIR-UAA1-A10",
+   "parentCode": "CTCIR-UAA1",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Appliquer : Initier son « carnet de création »* (de forme libre)"
+  },
+  {
+   "code": "CTCIR-UAA1-K1",
+   "parentCode": "CTCIR-UAA1",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Connaître : Identifier les procédures d’utilisation des différents agrès en toute sécurité"
+  },
+  {
+   "code": "CTCIR-UAA1-K2",
+   "parentCode": "CTCIR-UAA1",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Connaître : Identifier les quatre familles suivantes : aérien, équilibre, jonglerie et manipulation, acrobatie et dérivés"
+  },
+  {
+   "code": "CTCIR-UAA1-K3",
+   "parentCode": "CTCIR-UAA1",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Connaître : Identifier et connaitre les activités de base suivantes : au trapèze fixe et/ou au cerceau : entrée (montée en jarret), renversement à la barre, une figure dans la ou les corde(s), sortie"
+  },
+  {
+   "code": "CTCIR-UAA1-K4",
+   "parentCode": "CTCIR-UAA1",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Connaître : Identifier et connaitre les activités de base suivantes : à la corde et/ou au tissu : entrée (montée au choix), renversement, position de repos, chute basique, descente (sortie)"
+  },
+  {
+   "code": "CTCIR-UAA1-K5",
+   "parentCode": "CTCIR-UAA1",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Connaître : Identifier et connaitre les activités de base suivantes : fil dur et/ou fil mou : montée un pied, un équilibre statique, variation de niveaux du centre de gravité sur une position statique, décomposition de la marche avant (glissade pieds fermés)"
+  },
+  {
+   "code": "CTCIR-UAA1-K6",
+   "parentCode": "CTCIR-UAA1",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Connaître : Identifier et connaitre les activités de base suivantes : tonneau, rolla-bolla, boule : monter en sautant à deux pieds sans aide, équilibre statique, mise en mouvement, saut sur l’agrès, rotation sur l’agrès, descendre en sautant"
+  },
+  {
+   "code": "CTCIR-UAA1-K7",
+   "parentCode": "CTCIR-UAA1",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Connaître : Identifier et connaitre les activités de base suivantes : échasses : fixer ses échasses et se placer en position debout, faire du sur place, marche avant, marche arrière, déplacement latéral et rotation"
+  },
+  {
+   "code": "CTCIR-UAA1-K8",
+   "parentCode": "CTCIR-UAA1",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Connaître : Identifier et connaitre les activités de base suivantes : monocycle (avec aides) : monter, rouler en marche avant et descendre"
+  },
+  {
+   "code": "CTCIR-UAA1-K9",
+   "parentCode": "CTCIR-UAA1",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Connaître : Identifier et connaitre les activités de base suivantes : balles, foulards, cerceaux/anneaux : cascade, piston, la douche et arrêt"
+  },
+  {
+   "code": "CTCIR-UAA1-K10",
+   "parentCode": "CTCIR-UAA1",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Connaître : Identifier et connaitre les activités de base suivantes : bâton et/ou massue(s) : manipulation d’objets dans différents plans"
+  },
+  {
+   "code": "CTCIR-UAA1-K11",
+   "parentCode": "CTCIR-UAA1",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Connaître : Identifier et connaitre les activités de base suivantes : équilibre sur la tête, sur les avant-bras, sur les mains et « planches »"
+  },
+  {
+   "code": "CTCIR-UAA1-R1",
+   "parentCode": "CTCIR-UAA1",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Ressource : Cf. processus"
+  },
+  {
+   "code": "CTCIR-UAA2",
+   "parentCode": "CTCIR",
+   "kind": "competence",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Thème 2 – Je me découvre"
+  },
+  {
+   "code": "CTCIR-UAA2-C1",
+   "parentCode": "CTCIR-UAA2",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Compétence : Se situer pour s’engager dans un processus de progression physique et acrobatique"
+  },
+  {
+   "code": "CTCIR-UAA2-A1",
+   "parentCode": "CTCIR-UAA2",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Appliquer : Découvrir : ses aptitudes physiques : gainage, souplesse/flexibilité, force, équilibre et explosivité"
+  },
+  {
+   "code": "CTCIR-UAA2-A2",
+   "parentCode": "CTCIR-UAA2",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Appliquer : Découvrir : les fondamentaux gymniques : antépulsion, rétropulsion, répulsion, impulsions, rotations, ouverture, fermeture"
+  },
+  {
+   "code": "CTCIR-UAA2-A3",
+   "parentCode": "CTCIR-UAA2",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Appliquer : Découvrir : sa faculté à se repérer dans l’espace"
+  },
+  {
+   "code": "CTCIR-UAA2-A4",
+   "parentCode": "CTCIR-UAA2",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Appliquer : Découvrir : les apports énergétiques liés à son alimentation quotidienne"
+  },
+  {
+   "code": "CTCIR-UAA2-A5",
+   "parentCode": "CTCIR-UAA2",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Appliquer : S’engager dans un contrat personnel de progression* pour : maintenir un gainage dans différentes positions : renversée, en appui sur les mains…"
+  },
+  {
+   "code": "CTCIR-UAA2-A6",
+   "parentCode": "CTCIR-UAA2",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Appliquer : S’engager dans un contrat personnel de progression* pour : améliorer sa souplesse/flexibilité"
+  },
+  {
+   "code": "CTCIR-UAA2-A7",
+   "parentCode": "CTCIR-UAA2",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Appliquer : S’engager dans un contrat personnel de progression* pour : appliquer les préceptes ergonomiques"
+  },
+  {
+   "code": "CTCIR-UAA2-A8",
+   "parentCode": "CTCIR-UAA2",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Appliquer : S’engager dans un contrat personnel de progression* pour : renforcer les groupes musculaires"
+  },
+  {
+   "code": "CTCIR-UAA2-A9",
+   "parentCode": "CTCIR-UAA2",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Appliquer : S’engager dans un contrat personnel de progression* pour : percevoir les similitudes entre les fondamentaux gymniques et les disciplines circassiennes"
+  },
+  {
+   "code": "CTCIR-UAA2-A10",
+   "parentCode": "CTCIR-UAA2",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Appliquer : S’engager dans un contrat personnel de progression* pour : s’orienter dans l’espace"
+  },
+  {
+   "code": "CTCIR-UAA2-A11",
+   "parentCode": "CTCIR-UAA2",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Appliquer : Initier son « carnet de préparation physique »* (de forme libre) relatif aux aptitudes physiques et au niveau de maitrise des fondamentaux gymniques"
+  },
+  {
+   "code": "CTCIR-UAA2-A12",
+   "parentCode": "CTCIR-UAA2",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Appliquer : Exécuter un parcours acrobatique (comprenant par exemple des rotations avant, arrière, latérales, sauts, passages sur les mains avec ou sans partenaire(s)…)"
+  },
+  {
+   "code": "CTCIR-UAA2-A13",
+   "parentCode": "CTCIR-UAA2",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Appliquer : Utiliser des techniques de chute et de réception"
+  },
+  {
+   "code": "CTCIR-UAA2-A14",
+   "parentCode": "CTCIR-UAA2",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Appliquer : Adopter des règles d’hygiène corporelle et vestimentaire"
+  },
+  {
+   "code": "CTCIR-UAA2-K1",
+   "parentCode": "CTCIR-UAA2",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Connaître : Identifier les facteurs d’exécution en matière de gainage, souplesse/flexibilité, force, équilibre et explosivité"
+  },
+  {
+   "code": "CTCIR-UAA2-K2",
+   "parentCode": "CTCIR-UAA2",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Connaître : Identifier les fondamentaux gymniques et leurs facteurs d’exécution : antépulsion, rétropulsion, répulsion, impulsions, rotations, ouverture, fermeture"
+  },
+  {
+   "code": "CTCIR-UAA2-K3",
+   "parentCode": "CTCIR-UAA2",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Connaître : S’approprier les concepts de dimensions de l’espace"
+  },
+  {
+   "code": "CTCIR-UAA2-K4",
+   "parentCode": "CTCIR-UAA2",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Connaître : Identifier et connaitre les activités de base en acrobatie en solo : prises d’élan, franchissements d’obstacles avec ou sans appui(s), suspension, renversement, rotations"
+  },
+  {
+   "code": "CTCIR-UAA2-K5",
+   "parentCode": "CTCIR-UAA2",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Connaître : Maitriser des techniques de chute et de réception"
+  },
+  {
+   "code": "CTCIR-UAA2-K6",
+   "parentCode": "CTCIR-UAA2",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Connaître : Identifier les notions d’hygiène alimentaire et diététique en lien avec l’activité physique"
+  },
+  {
+   "code": "CTCIR-UAA2-K7",
+   "parentCode": "CTCIR-UAA2",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Connaître : Identifier les règles d’hygiène corporelle et vestimentaire"
+  },
+  {
+   "code": "CTCIR-UAA2-R1",
+   "parentCode": "CTCIR-UAA2",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Ressource : Cf. processus"
+  },
+  {
+   "code": "CTCIR-UAA3",
+   "parentCode": "CTCIR",
+   "kind": "competence",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Thème 3 – Quelles expressions pour mon corps ?"
+  },
+  {
+   "code": "CTCIR-UAA3-C1",
+   "parentCode": "CTCIR-UAA3",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Compétence : Utiliser son corps comme outil de communication et d’expression"
+  },
+  {
+   "code": "CTCIR-UAA3-A1",
+   "parentCode": "CTCIR-UAA3",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Appliquer : Découvrir le potentiel expressif du corps"
+  },
+  {
+   "code": "CTCIR-UAA3-A2",
+   "parentCode": "CTCIR-UAA3",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Appliquer : Explorer le lien corps-espace"
+  },
+  {
+   "code": "CTCIR-UAA3-A3",
+   "parentCode": "CTCIR-UAA3",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Appliquer : Découvrir plusieurs notions de jeu théâtral/théâtre physique"
+  },
+  {
+   "code": "CTCIR-UAA3-A4",
+   "parentCode": "CTCIR-UAA3",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Appliquer : Lier mouvement et émotion"
+  },
+  {
+   "code": "CTCIR-UAA3-A5",
+   "parentCode": "CTCIR-UAA3",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Appliquer : Pratiquer différentes approches rythmiques, corporelles, avec objet(s)…"
+  },
+  {
+   "code": "CTCIR-UAA3-K1",
+   "parentCode": "CTCIR-UAA3",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Connaître : Identifier différentes émotions"
+  },
+  {
+   "code": "CTCIR-UAA3-K2",
+   "parentCode": "CTCIR-UAA3",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Connaître : Identifier des moyens d’exprimer physiquement des émotions"
+  },
+  {
+   "code": "CTCIR-UAA3-K3",
+   "parentCode": "CTCIR-UAA3",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Connaître : Appréhender plusieurs notions de jeu théâtral/théâtre physique"
+  },
+  {
+   "code": "CTCIR-UAA3-K4",
+   "parentCode": "CTCIR-UAA3",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Connaître : Appréhender des notions rythmiques : périodicité, mouvement, structure et variabilité"
+  },
+  {
+   "code": "CTCIR-UAA3-R1",
+   "parentCode": "CTCIR-UAA3",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S3"
+   ],
+   "label": "Ressource : Cf. processus"
+  },
+  {
+   "code": "CTCIR-UAA4",
+   "parentCode": "CTCIR",
+   "kind": "competence",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Thème 1 – Collectif dirigé"
+  },
+  {
+   "code": "CTCIR-UAA4-C1",
+   "parentCode": "CTCIR-UAA4",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Compétence : Présenter une création circassienne collective en adaptant ses maitrises techniques"
+  },
+  {
+   "code": "CTCIR-UAA4-A1",
+   "parentCode": "CTCIR-UAA4",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Appliquer : Partager deux agrès aériens entre partenaire(s)"
+  },
+  {
+   "code": "CTCIR-UAA4-A2",
+   "parentCode": "CTCIR-UAA4",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Appliquer : Combiner une technique au choix avec un agrès d’équilibre"
+  },
+  {
+   "code": "CTCIR-UAA4-A3",
+   "parentCode": "CTCIR-UAA4",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Appliquer : Exécuter des figures collectives en jonglerie (passing avec un(e) ou plusieurs balle(s), cerceau [x]/anneau [x] ou bâton(s))"
+  },
+  {
+   "code": "CTCIR-UAA4-A4",
+   "parentCode": "CTCIR-UAA4",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Appliquer : Manipuler et faire circuler des objets à plusieurs"
+  },
+  {
+   "code": "CTCIR-UAA4-A5",
+   "parentCode": "CTCIR-UAA4",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Appliquer : Réaliser des acrobaties collectives, statiques et dynamiques (acrostaff* et banquine*)"
+  },
+  {
+   "code": "CTCIR-UAA4-A6",
+   "parentCode": "CTCIR-UAA4",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Appliquer : utiliser les techniques de mouvement apprises pour développer une gestuelle personnelle"
+  },
+  {
+   "code": "CTCIR-UAA4-A7",
+   "parentCode": "CTCIR-UAA4",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Appliquer : écrire et exécuter des enchainements*, routines*, séquences*"
+  },
+  {
+   "code": "CTCIR-UAA4-A8",
+   "parentCode": "CTCIR-UAA4",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Appliquer : adapter ses maitrises techniques aux propos collectifs"
+  },
+  {
+   "code": "CTCIR-UAA4-A9",
+   "parentCode": "CTCIR-UAA4",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Appliquer : explorer les différentes dimensions de l’espace"
+  },
+  {
+   "code": "CTCIR-UAA4-A10",
+   "parentCode": "CTCIR-UAA4",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Appliquer : rechercher les tempos* adéquats en fonction de la technique exploitée"
+  },
+  {
+   "code": "CTCIR-UAA4-A11",
+   "parentCode": "CTCIR-UAA4",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Appliquer : prévenir les risques de l’activité pratiquée collectivement"
+  },
+  {
+   "code": "CTCIR-UAA4-A12",
+   "parentCode": "CTCIR-UAA4",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Appliquer : appliquer les procédures de parade* (sécuriser l’activité de partenaire (s))"
+  },
+  {
+   "code": "CTCIR-UAA4-A13",
+   "parentCode": "CTCIR-UAA4",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Appliquer : Alimenter son « carnet de création »*"
+  },
+  {
+   "code": "CTCIR-UAA4-K1",
+   "parentCode": "CTCIR-UAA4",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Connaître : Connaitre les procédures de parade"
+  },
+  {
+   "code": "CTCIR-UAA4-K2",
+   "parentCode": "CTCIR-UAA4",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Connaître : Identifier et connaitre les techniques concernant les activités suivantes : en aérien : partage de deux agrès entre partenaires"
+  },
+  {
+   "code": "CTCIR-UAA4-K3",
+   "parentCode": "CTCIR-UAA4",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Connaître : Identifier et connaitre les techniques concernant les activités suivantes : en équilibre : combinaison d’une technique et d’un agrès d’équilibre"
+  },
+  {
+   "code": "CTCIR-UAA4-K4",
+   "parentCode": "CTCIR-UAA4",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Connaître : Identifier et connaitre les techniques concernant les activités suivantes : jonglerie collective (passing avec un(e) ou plusieurs balle(s), cerceau [x]/anneau [x] ou bâton(s))"
+  },
+  {
+   "code": "CTCIR-UAA4-K5",
+   "parentCode": "CTCIR-UAA4",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Connaître : Identifier et connaitre les techniques concernant les activités suivantes : manipulation d’objets : circulation dans le groupe"
+  },
+  {
+   "code": "CTCIR-UAA4-K6",
+   "parentCode": "CTCIR-UAA4",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Connaître : Identifier et connaitre les techniques concernant les activités suivantes : en acrobatie et dérivés : acrobatie collective dynamique (acrostaff, banquine)"
+  },
+  {
+   "code": "CTCIR-UAA4-K7",
+   "parentCode": "CTCIR-UAA4",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Connaître : Connaitre les risques de l’activité pratiquée collectivement"
+  },
+  {
+   "code": "CTCIR-UAA4-K8",
+   "parentCode": "CTCIR-UAA4",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Connaître : Appréhender les différentes dimensions de l’espace"
+  },
+  {
+   "code": "CTCIR-UAA4-K9",
+   "parentCode": "CTCIR-UAA4",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Connaître : Appréhender l’importance du tempo dans tout acte circassien"
+  },
+  {
+   "code": "CTCIR-UAA4-K10",
+   "parentCode": "CTCIR-UAA4",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Connaître : Connaitre la typologie des présentations circassiennes (Numéro*, Petite forme*, Spectacle, Performance*)"
+  },
+  {
+   "code": "CTCIR-UAA4-R1",
+   "parentCode": "CTCIR-UAA4",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Ressource : Cf. processus"
+  },
+  {
+   "code": "CTCIR-UAA5",
+   "parentCode": "CTCIR",
+   "kind": "competence",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Thème 2 – J’évolue"
+  },
+  {
+   "code": "CTCIR-UAA5-C1",
+   "parentCode": "CTCIR-UAA5",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Compétence : Développer ses aptitudes pour être capable de s’intégrer dans un collectif acrobatique"
+  },
+  {
+   "code": "CTCIR-UAA5-A1",
+   "parentCode": "CTCIR-UAA5",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Appliquer : Respecter son contrat personnel de progression* pour : maintenir un gainage dans différentes positions : renversée, en appui sur les mains…"
+  },
+  {
+   "code": "CTCIR-UAA5-A2",
+   "parentCode": "CTCIR-UAA5",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Appliquer : Respecter son contrat personnel de progression* pour : améliorer sa souplesse/flexibilité"
+  },
+  {
+   "code": "CTCIR-UAA5-A3",
+   "parentCode": "CTCIR-UAA5",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Appliquer : Respecter son contrat personnel de progression* pour : appliquer les préceptes ergonomiques"
+  },
+  {
+   "code": "CTCIR-UAA5-A4",
+   "parentCode": "CTCIR-UAA5",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Appliquer : Respecter son contrat personnel de progression* pour : renforcer les groupes musculaires"
+  },
+  {
+   "code": "CTCIR-UAA5-A5",
+   "parentCode": "CTCIR-UAA5",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Appliquer : Respecter son contrat personnel de progression* pour : percevoir les similitudes entre les fondamentaux gymniques et les disciplines circassiennes"
+  },
+  {
+   "code": "CTCIR-UAA5-A6",
+   "parentCode": "CTCIR-UAA5",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Appliquer : Respecter son contrat personnel de progression* pour : s’orienter dans l’espace"
+  },
+  {
+   "code": "CTCIR-UAA5-A7",
+   "parentCode": "CTCIR-UAA5",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Appliquer : Tenir à jour son « carnet de préparation physique »* relatif aux aptitudes physiques et au niveau de maitrise des fondamentaux gymniques"
+  },
+  {
+   "code": "CTCIR-UAA5-A8",
+   "parentCode": "CTCIR-UAA5",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Appliquer : Exécuter un Parkour* balisé par le professeur"
+  },
+  {
+   "code": "CTCIR-UAA5-A9",
+   "parentCode": "CTCIR-UAA5",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Appliquer : Réaliser des acrobaties individuelles et collectives, statiques et dynamiques"
+  },
+  {
+   "code": "CTCIR-UAA5-A10",
+   "parentCode": "CTCIR-UAA5",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Appliquer : Jouer les rôles de porteur/voltigeur/garant dans des portés acrobatiques (acrosport*)"
+  },
+  {
+   "code": "CTCIR-UAA5-A11",
+   "parentCode": "CTCIR-UAA5",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Appliquer : Mobiliser les techniques de chute et de réception apprises"
+  },
+  {
+   "code": "CTCIR-UAA5-A12",
+   "parentCode": "CTCIR-UAA5",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Appliquer : Adopter des règles d’hygiène corporelle et vestimentaire"
+  },
+  {
+   "code": "CTCIR-UAA5-K1",
+   "parentCode": "CTCIR-UAA5",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Connaître : Identifier les facteurs d’exécution en matière d’acrosport pour : le contre équilibre (balance – proue) à deux ou à plusieurs"
+  },
+  {
+   "code": "CTCIR-UAA5-K2",
+   "parentCode": "CTCIR-UAA5",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Connaître : Identifier les facteurs d’exécution en matière d’acrosport pour : les pyramides collectives"
+  },
+  {
+   "code": "CTCIR-UAA5-K3",
+   "parentCode": "CTCIR-UAA5",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Connaître : Identifier les fondamentaux du Parkour"
+  },
+  {
+   "code": "CTCIR-UAA5-K4",
+   "parentCode": "CTCIR-UAA5",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Connaître : Identifier et connaitre les activités de base en acrobatie : en solo : appui tendu renversé, roue, rondade, saut de main, saut plongé…"
+  },
+  {
+   "code": "CTCIR-UAA5-K5",
+   "parentCode": "CTCIR-UAA5",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Connaître : Identifier et connaitre les activités de base en acrobatie : en duo : roulades avant, passage dos avant/arrière (départ debout ou renversé), équilibres…"
+  },
+  {
+   "code": "CTCIR-UAA5-K6",
+   "parentCode": "CTCIR-UAA5",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Connaître : Maitriser les techniques de chute et de réception apprises"
+  },
+  {
+   "code": "CTCIR-UAA5-K7",
+   "parentCode": "CTCIR-UAA5",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Connaître : Maitriser les principes de sécurité appris en acrosport (biomécanique)"
+  },
+  {
+   "code": "CTCIR-UAA5-R1",
+   "parentCode": "CTCIR-UAA5",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Ressource : Cf. processus"
+  },
+  {
+   "code": "CTCIR-UAA6",
+   "parentCode": "CTCIR",
+   "kind": "competence",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Thème 3 – Corps expressifs, expressions collectives"
+  },
+  {
+   "code": "CTCIR-UAA6-C1",
+   "parentCode": "CTCIR-UAA6",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Compétence : Ajuster l’expression corporelle aux contraintes de l’espace, du groupe et des intentions de communication"
+  },
+  {
+   "code": "CTCIR-UAA6-A1",
+   "parentCode": "CTCIR-UAA6",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Appliquer : Pratiquer les fondamentaux du mouvement expressif : le corps à corps (appuis, équilibres et déséquilibres, contacts et portés, relation à l’autre)"
+  },
+  {
+   "code": "CTCIR-UAA6-A2",
+   "parentCode": "CTCIR-UAA6",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Appliquer : Pratiquer les fondamentaux du mouvement expressif : le corps dans l’espace (orientations, plans, trajectoires et volumes)"
+  },
+  {
+   "code": "CTCIR-UAA6-A3",
+   "parentCode": "CTCIR-UAA6",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Appliquer : Pratiquer les fondamentaux du mouvement expressif : le corps en jeu (voix, regard, geste, énergie)"
+  },
+  {
+   "code": "CTCIR-UAA6-A4",
+   "parentCode": "CTCIR-UAA6",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Appliquer : Pratiquer les fondamentaux du mouvement expressif : le corps dans la durée (dissociation, coordination, vitesse, dynamique, rythme)"
+  },
+  {
+   "code": "CTCIR-UAA6-A5",
+   "parentCode": "CTCIR-UAA6",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Appliquer : Interagir avec d’autres dans la création d’un imaginaire et de règles communes"
+  },
+  {
+   "code": "CTCIR-UAA6-A6",
+   "parentCode": "CTCIR-UAA6",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Appliquer : Interagir avec d’autres dans l’espace en mesurant sa juste place au sein du collectif expressif"
+  },
+  {
+   "code": "CTCIR-UAA6-A7",
+   "parentCode": "CTCIR-UAA6",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Appliquer : Prendre conscience du public"
+  },
+  {
+   "code": "CTCIR-UAA6-K1",
+   "parentCode": "CTCIR-UAA6",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Connaître : Identifier les fondamentaux du mouvement expressif : le corps à corps (appuis, équilibres et déséquilibres, contacts et portés, relation à l’autre)"
+  },
+  {
+   "code": "CTCIR-UAA6-K2",
+   "parentCode": "CTCIR-UAA6",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Connaître : Identifier les fondamentaux du mouvement expressif : le corps dans l’espace (orientations, plans, trajectoires et volumes)"
+  },
+  {
+   "code": "CTCIR-UAA6-K3",
+   "parentCode": "CTCIR-UAA6",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Connaître : Identifier les fondamentaux du mouvement expressif : le corps en jeu (voix, regard, geste, énergie)"
+  },
+  {
+   "code": "CTCIR-UAA6-K4",
+   "parentCode": "CTCIR-UAA6",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Connaître : Identifier les fondamentaux du mouvement expressif : le corps dans la durée (dissociation, coordination, vitesse, dynamique, rythme)"
+  },
+  {
+   "code": "CTCIR-UAA6-K5",
+   "parentCode": "CTCIR-UAA6",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Connaître : Appréhender des notions de mise en scène et de chorégraphie"
+  },
+  {
+   "code": "CTCIR-UAA6-K6",
+   "parentCode": "CTCIR-UAA6",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Connaître : Identifier différentes fonctions dans l’organisation et la réalisation d’un collectif (dramaturge du geste, interprète, leader, metteur en piste, regard extérieur, spect-Acteur*…)"
+  },
+  {
+   "code": "CTCIR-UAA6-K7",
+   "parentCode": "CTCIR-UAA6",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Connaître : Identifier sa juste place dans le collectif expressif (rôle(s) majeur(s), mineur(s) et travail de chœur)"
+  },
+  {
+   "code": "CTCIR-UAA6-R1",
+   "parentCode": "CTCIR-UAA6",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S4"
+   ],
+   "label": "Ressource : Cf. processus"
+  },
+  {
+   "code": "CTCIR-UAA7",
+   "parentCode": "CTCIR",
+   "kind": "competence",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Thème 1 – Création en partenariat"
+  },
+  {
+   "code": "CTCIR-UAA7-C1",
+   "parentCode": "CTCIR-UAA7",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Compétence : Présenter une séquence* circassienne en développant un langage scénique original en concertation avec un ou deux partenaire(s)"
+  },
+  {
+   "code": "CTCIR-UAA7-A1",
+   "parentCode": "CTCIR-UAA7",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Appliquer : Choisir une spécialisation et : développer des routines* individuelles"
+  },
+  {
+   "code": "CTCIR-UAA7-A2",
+   "parentCode": "CTCIR-UAA7",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Appliquer : Choisir une spécialisation et : développer une gestuelle personnelle"
+  },
+  {
+   "code": "CTCIR-UAA7-A3",
+   "parentCode": "CTCIR-UAA7",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Appliquer : Choisir une spécialisation et : exploiter les différentes dimensions : espace, temps, rythme…"
+  },
+  {
+   "code": "CTCIR-UAA7-A4",
+   "parentCode": "CTCIR-UAA7",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Appliquer : Créer une séquence circassienne avec un ou deux partenaires en partant de routines"
+  },
+  {
+   "code": "CTCIR-UAA7-A5",
+   "parentCode": "CTCIR-UAA7",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Appliquer : Partager un espace scénique avec un ou deux partenaires"
+  },
+  {
+   "code": "CTCIR-UAA7-A6",
+   "parentCode": "CTCIR-UAA7",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Appliquer : Interagir avec au moins un partenaire d’une spécialisation différente"
+  },
+  {
+   "code": "CTCIR-UAA7-A7",
+   "parentCode": "CTCIR-UAA7",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Appliquer : En duo ou en trio : créer et exécuter des enchainements acrobatiques"
+  },
+  {
+   "code": "CTCIR-UAA7-A8",
+   "parentCode": "CTCIR-UAA7",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Appliquer : En duo ou en trio : intégrer la manipulation d’un objet du quotidien dans une réalisation"
+  },
+  {
+   "code": "CTCIR-UAA7-A9",
+   "parentCode": "CTCIR-UAA7",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Appliquer : En duo ou en trio : prévenir les risques spécifiques de l’activité pratiquée"
+  },
+  {
+   "code": "CTCIR-UAA7-A10",
+   "parentCode": "CTCIR-UAA7",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Appliquer : Appliquer les procédures de parade* spécifique à l’activité"
+  },
+  {
+   "code": "CTCIR-UAA7-A11",
+   "parentCode": "CTCIR-UAA7",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Appliquer : Réaliser son « carnet de création »* (de forme libre)"
+  },
+  {
+   "code": "CTCIR-UAA7-K1",
+   "parentCode": "CTCIR-UAA7",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Connaître : Identifier et connaitre les enchainements* ou routines de l’agrès choisi"
+  },
+  {
+   "code": "CTCIR-UAA7-K2",
+   "parentCode": "CTCIR-UAA7",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Connaître : Maitriser les notions d’acrobaties statiques et dynamiques en duo et en trio"
+  },
+  {
+   "code": "CTCIR-UAA7-K3",
+   "parentCode": "CTCIR-UAA7",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Connaître : Identifier les caractéristiques de la spécialisation choisie par son/ses partenaire(s)"
+  },
+  {
+   "code": "CTCIR-UAA7-K4",
+   "parentCode": "CTCIR-UAA7",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Connaître : Connaitre les procédures de parade spécifique à l’activité"
+  },
+  {
+   "code": "CTCIR-UAA7-K5",
+   "parentCode": "CTCIR-UAA7",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Connaître : Identifier et connaitre les techniques concernant les activités suivantes : en manipulation d’objets du quotidien en duo ou en trio : circulation dans les différentes dimensions de l’espace"
+  },
+  {
+   "code": "CTCIR-UAA7-K6",
+   "parentCode": "CTCIR-UAA7",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Connaître : Identifier et connaitre les techniques concernant les activités suivantes : en acrobatie et dérivés : acrobaties collectives, statiques sur objets et dynamiques (bascule*, jeux icariens*)"
+  },
+  {
+   "code": "CTCIR-UAA7-K7",
+   "parentCode": "CTCIR-UAA7",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Connaître : Connaitre les risques de l’activité pratiquée en duo ou en trio"
+  },
+  {
+   "code": "CTCIR-UAA7-K8",
+   "parentCode": "CTCIR-UAA7",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Connaître : Maitriser les différentes dimensions : espace, temps, rythme de l’activité pratiquée en duo ou en trio"
+  },
+  {
+   "code": "CTCIR-UAA7-R1",
+   "parentCode": "CTCIR-UAA7",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Ressource : service d’une création circassienne en duo : Cf. processus ou en trio"
+  },
+  {
+   "code": "CTCIR-UAA7-R2",
+   "parentCode": "CTCIR-UAA7",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Ressource : partenaire(s) : Cf. processus"
+  },
+  {
+   "code": "CTCIR-UAA8",
+   "parentCode": "CTCIR",
+   "kind": "competence",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Thème 2 – Je me consolide"
+  },
+  {
+   "code": "CTCIR-UAA8-C1",
+   "parentCode": "CTCIR-UAA8",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Compétence : Renforcer ses aptitudes pour mener un travail acrobatique en partenariat"
+  },
+  {
+   "code": "CTCIR-UAA8-A1",
+   "parentCode": "CTCIR-UAA8",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Appliquer : Construire et formaliser un contrat personnel de progression* supervisé par l’enseignant sur base de son « carnet de préparation physique »*"
+  },
+  {
+   "code": "CTCIR-UAA8-A2",
+   "parentCode": "CTCIR-UAA8",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Appliquer : Respecter son contrat personnel de progression* pour : maintenir un gainage dans différentes positions : renversée, en appui sur les mains…"
+  },
+  {
+   "code": "CTCIR-UAA8-A3",
+   "parentCode": "CTCIR-UAA8",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Appliquer : Respecter son contrat personnel de progression* pour : améliorer sa souplesse/flexibilité"
+  },
+  {
+   "code": "CTCIR-UAA8-A4",
+   "parentCode": "CTCIR-UAA8",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Appliquer : Respecter son contrat personnel de progression* pour : appliquer les préceptes ergonomiques"
+  },
+  {
+   "code": "CTCIR-UAA8-A5",
+   "parentCode": "CTCIR-UAA8",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Appliquer : Respecter son contrat personnel de progression* pour : renforcer les groupes musculaires"
+  },
+  {
+   "code": "CTCIR-UAA8-A6",
+   "parentCode": "CTCIR-UAA8",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Appliquer : Respecter son contrat personnel de progression* pour : percevoir les similitudes entre les fondamentaux gymniques et les disciplines circassiennes"
+  },
+  {
+   "code": "CTCIR-UAA8-A7",
+   "parentCode": "CTCIR-UAA8",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Appliquer : Respecter son contrat personnel de progression* pour : s’orienter dans l’espace"
+  },
+  {
+   "code": "CTCIR-UAA8-A8",
+   "parentCode": "CTCIR-UAA8",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Appliquer : Respecter son contrat personnel de progression* pour : exécuter des éléments gymniques et acrobatiques de difficulté supérieure"
+  },
+  {
+   "code": "CTCIR-UAA8-A9",
+   "parentCode": "CTCIR-UAA8",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Appliquer : Enchainer des éléments gymniques et acrobatiques"
+  },
+  {
+   "code": "CTCIR-UAA8-A10",
+   "parentCode": "CTCIR-UAA8",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Appliquer : Mobiliser les techniques de chute et de réception apprises"
+  },
+  {
+   "code": "CTCIR-UAA8-K1",
+   "parentCode": "CTCIR-UAA8",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Connaître : Identifier les facteurs d’exécution en matière d’acrosport* pour les pyramides dynamiques"
+  },
+  {
+   "code": "CTCIR-UAA8-K2",
+   "parentCode": "CTCIR-UAA8",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Connaître : Identifier les : types de contractions musculaires"
+  },
+  {
+   "code": "CTCIR-UAA8-K3",
+   "parentCode": "CTCIR-UAA8",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Connaître : Identifier les : méthodes d’assouplissement"
+  },
+  {
+   "code": "CTCIR-UAA8-K4",
+   "parentCode": "CTCIR-UAA8",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Connaître : Maitriser des éléments gymniques et acrobatiques en solo et en partenariat"
+  },
+  {
+   "code": "CTCIR-UAA8-K5",
+   "parentCode": "CTCIR-UAA8",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Connaître : Maitriser les techniques de chute et de réception"
+  },
+  {
+   "code": "CTCIR-UAA8-K6",
+   "parentCode": "CTCIR-UAA8",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Connaître : Maitriser les principes de sécurité appris en acrosport (biomécanique)"
+  },
+  {
+   "code": "CTCIR-UAA8-R1",
+   "parentCode": "CTCIR-UAA8",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Ressource : Cf. processus"
+  },
+  {
+   "code": "CTCIR-UAA9",
+   "parentCode": "CTCIR",
+   "kind": "competence",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Thème 3 – Duo ou trio : (en) jeux expressifs"
+  },
+  {
+   "code": "CTCIR-UAA9-C1",
+   "parentCode": "CTCIR-UAA9",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Compétence : S’intégrer dans une démarche expressive en duo ou en trio"
+  },
+  {
+   "code": "CTCIR-UAA9-A1",
+   "parentCode": "CTCIR-UAA9",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Appliquer : Exploiter les fondamentaux du mouvement expressif en vue d’un travail en duo ou en trio : le corps à corps (appuis, équilibres et déséquilibres, contacts et portés, relation au [x] partenaire(s))"
+  },
+  {
+   "code": "CTCIR-UAA9-A2",
+   "parentCode": "CTCIR-UAA9",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Appliquer : Exploiter les fondamentaux du mouvement expressif en vue d’un travail en duo ou en trio : le corps dans l’espace (orientations, plans, trajectoires et volumes)"
+  },
+  {
+   "code": "CTCIR-UAA9-A3",
+   "parentCode": "CTCIR-UAA9",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Appliquer : Exploiter les fondamentaux du mouvement expressif en vue d’un travail en duo ou en trio : le corps en jeu (voix, regard, geste, énergie)"
+  },
+  {
+   "code": "CTCIR-UAA9-A4",
+   "parentCode": "CTCIR-UAA9",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Appliquer : Exploiter les fondamentaux du mouvement expressif en vue d’un travail en duo ou en trio : le corps dans la durée (dissociation, coordination, vitesse, dynamique, rythme)"
+  },
+  {
+   "code": "CTCIR-UAA9-A5",
+   "parentCode": "CTCIR-UAA9",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Appliquer : Choisir ou créer un support sonore approprié"
+  },
+  {
+   "code": "CTCIR-UAA9-A6",
+   "parentCode": "CTCIR-UAA9",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Appliquer : Pratiquer différentes techniques de création spontanée"
+  },
+  {
+   "code": "CTCIR-UAA9-A7",
+   "parentCode": "CTCIR-UAA9",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Appliquer : Exercer son esprit critique en posant un regard constructif sur diverses productions artistiques"
+  },
+  {
+   "code": "CTCIR-UAA9-K1",
+   "parentCode": "CTCIR-UAA9",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Connaître : Maitriser les fondamentaux du mouvement expressif : le corps à corps (appuis, équilibres et déséquilibres, contacts et portés, relation au [x] partenaire(s))"
+  },
+  {
+   "code": "CTCIR-UAA9-K2",
+   "parentCode": "CTCIR-UAA9",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Connaître : Maitriser les fondamentaux du mouvement expressif : le corps dans l’espace (orientations, plans, trajectoires et volumes)"
+  },
+  {
+   "code": "CTCIR-UAA9-K3",
+   "parentCode": "CTCIR-UAA9",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Connaître : Maitriser les fondamentaux du mouvement expressif : le corps en jeu (voix, regard, geste, énergie)"
+  },
+  {
+   "code": "CTCIR-UAA9-K4",
+   "parentCode": "CTCIR-UAA9",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Connaître : Maitriser les fondamentaux du mouvement expressif : le corps dans la durée (dissociation, coordination, vitesse, dynamique, rythme)"
+  },
+  {
+   "code": "CTCIR-UAA9-K5",
+   "parentCode": "CTCIR-UAA9",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Connaître : Appréhender des notions de dramaturgie : le quoi, le pourquoi, le comment ?"
+  },
+  {
+   "code": "CTCIR-UAA9-K6",
+   "parentCode": "CTCIR-UAA9",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Connaître : Identifier des techniques de création spontanée et d’improvisation (par exemple : improvisation théâtrale, battle, jam session…)"
+  },
+  {
+   "code": "CTCIR-UAA9-R1",
+   "parentCode": "CTCIR-UAA9",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Ressource : Cf. processus"
+  },
+  {
+   "code": "CTCIR-UAA10",
+   "parentCode": "CTCIR",
+   "kind": "competence",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Thème 4 – Anatomie et physiologie humaine"
+  },
+  {
+   "code": "CTCIR-UAA10-C1",
+   "parentCode": "CTCIR-UAA10",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Compétence : Appréhender les notions d’anatomie et physiologie au service de son intégrité physique et de celle des autres dans la pratique circassienne"
+  },
+  {
+   "code": "CTCIR-UAA10-A1",
+   "parentCode": "CTCIR-UAA10",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Appliquer : Différencier les types d’os et d’articulations"
+  },
+  {
+   "code": "CTCIR-UAA10-A2",
+   "parentCode": "CTCIR-UAA10",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Appliquer : Situer les principaux groupes musculaires"
+  },
+  {
+   "code": "CTCIR-UAA10-A3",
+   "parentCode": "CTCIR-UAA10",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Appliquer : Vérifier les effets de l’activité physique sur certains paramètres physiologiques"
+  },
+  {
+   "code": "CTCIR-UAA10-A4",
+   "parentCode": "CTCIR-UAA10",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Appliquer : Analyser une séance d’entrainement sur le plan anatomique et physiologique"
+  },
+  {
+   "code": "CTCIR-UAA10-A5",
+   "parentCode": "CTCIR-UAA10",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Appliquer : Construire une séance d’entrainement en fonction d’une spécialisation circassienne"
+  },
+  {
+   "code": "CTCIR-UAA10-A6",
+   "parentCode": "CTCIR-UAA10",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Appliquer : Déterminer les conséquences des pratiques de dopage sur la santé"
+  },
+  {
+   "code": "CTCIR-UAA10-K1",
+   "parentCode": "CTCIR-UAA10",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Connaître : Identifier le système osseux, le système articulaire, les principaux groupes musculaires, le système cardiovasculaire et respiratoire"
+  },
+  {
+   "code": "CTCIR-UAA10-K2",
+   "parentCode": "CTCIR-UAA10",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Connaître : Identifier les effets de l’activité physique et l’importance de la récupération (filières énergétiques)"
+  },
+  {
+   "code": "CTCIR-UAA10-K3",
+   "parentCode": "CTCIR-UAA10",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Connaître : Identifier les principes de base d’une séance d’entrainement : échauffement, retour au calme"
+  },
+  {
+   "code": "CTCIR-UAA10-K4",
+   "parentCode": "CTCIR-UAA10",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Connaître : Identifier les principes de base d’une séance d’entrainement : quantité de travail, surcharge"
+  },
+  {
+   "code": "CTCIR-UAA10-K5",
+   "parentCode": "CTCIR-UAA10",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Connaître : Identifier les principes de base d’une séance d’entrainement : progressivité"
+  },
+  {
+   "code": "CTCIR-UAA10-K6",
+   "parentCode": "CTCIR-UAA10",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Connaître : Identifier les principes de base d’une séance d’entrainement : alternance travail/repos"
+  },
+  {
+   "code": "CTCIR-UAA10-K7",
+   "parentCode": "CTCIR-UAA10",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Connaître : Identifier les principes de base d’une séance d’entrainement : spécificité"
+  },
+  {
+   "code": "CTCIR-UAA10-K8",
+   "parentCode": "CTCIR-UAA10",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Connaître : Identifier les risques et les effets des produits dopants et des compléments alimentaires"
+  },
+  {
+   "code": "CTCIR-UAA10-R1",
+   "parentCode": "CTCIR-UAA10",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S5"
+   ],
+   "label": "Ressource : Cf. processus"
+  },
+  {
+   "code": "CTCIR-UAA11",
+   "parentCode": "CTCIR",
+   "kind": "competence",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S6"
+   ],
+   "label": "Thème 1 – Solo"
+  },
+  {
+   "code": "CTCIR-UAA11-C1",
+   "parentCode": "CTCIR-UAA11",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S6"
+   ],
+   "label": "Compétence : Présenter un solo (format Numéro*) écrit et composé de manière autonome"
+  },
+  {
+   "code": "CTCIR-UAA11-A1",
+   "parentCode": "CTCIR-UAA11",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S6"
+   ],
+   "label": "Appliquer : Dans une spécialisation : perfectionner les routines* connues et en créer de nouvelles"
+  },
+  {
+   "code": "CTCIR-UAA11-A2",
+   "parentCode": "CTCIR-UAA11",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S6"
+   ],
+   "label": "Appliquer : Dans une spécialisation : perfectionner sa gestuelle"
+  },
+  {
+   "code": "CTCIR-UAA11-A3",
+   "parentCode": "CTCIR-UAA11",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S6"
+   ],
+   "label": "Appliquer : Dans une spécialisation : personnaliser son langage artistique"
+  },
+  {
+   "code": "CTCIR-UAA11-A4",
+   "parentCode": "CTCIR-UAA11",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S6"
+   ],
+   "label": "Appliquer : Dans une spécialisation : jouer avec les dimensions : espace, temps, rythme"
+  },
+  {
+   "code": "CTCIR-UAA11-A5",
+   "parentCode": "CTCIR-UAA11",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S6"
+   ],
+   "label": "Appliquer : Réaliser une recherche d’écriture et de composition en approchant les focus suivants : la technique"
+  },
+  {
+   "code": "CTCIR-UAA11-A6",
+   "parentCode": "CTCIR-UAA11",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S6"
+   ],
+   "label": "Appliquer : Réaliser une recherche d’écriture et de composition en approchant les focus suivants : la chorégraphie"
+  },
+  {
+   "code": "CTCIR-UAA11-A7",
+   "parentCode": "CTCIR-UAA11",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S6"
+   ],
+   "label": "Appliquer : Réaliser une recherche d’écriture et de composition en approchant les focus suivants : la dramaturgie"
+  },
+  {
+   "code": "CTCIR-UAA11-A8",
+   "parentCode": "CTCIR-UAA11",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S6"
+   ],
+   "label": "Appliquer : Réaliser une recherche d’écriture et de composition en approchant les focus suivants : le rythme"
+  },
+  {
+   "code": "CTCIR-UAA11-A9",
+   "parentCode": "CTCIR-UAA11",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S6"
+   ],
+   "label": "Appliquer : Réaliser une recherche d’écriture et de composition en approchant les focus suivants : la musique"
+  },
+  {
+   "code": "CTCIR-UAA11-A10",
+   "parentCode": "CTCIR-UAA11",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S6"
+   ],
+   "label": "Appliquer : Exploiter son « carnet de création »* en lien avec sa recherche d’écriture et de composition"
+  },
+  {
+   "code": "CTCIR-UAA11-K1",
+   "parentCode": "CTCIR-UAA11",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S6"
+   ],
+   "label": "Connaître : Identifier le visuel en rapport avec la scénographie (décor, costume, accessoire, maquillage…)"
+  },
+  {
+   "code": "CTCIR-UAA11-R1",
+   "parentCode": "CTCIR-UAA11",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S6"
+   ],
+   "label": "Ressource : circassienne : Cf. processus service d’une création circassienne en solo"
+  },
+  {
+   "code": "CTCIR-UAA11-R2",
+   "parentCode": "CTCIR-UAA11",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S6"
+   ],
+   "label": "Ressource : circassienne : Cf. processus"
+  },
+  {
+   "code": "CTCIR-UAA12",
+   "parentCode": "CTCIR",
+   "kind": "competence",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S6"
+   ],
+   "label": "Thème 2 – Je me spécialise"
+  },
+  {
+   "code": "CTCIR-UAA12-C1",
+   "parentCode": "CTCIR-UAA12",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S6"
+   ],
+   "label": "Compétence : Maitriser les aptitudes physiques et acrobatiques nécessaires à ses projets en fonction de ses singularités artistiques"
+  },
+  {
+   "code": "CTCIR-UAA12-A1",
+   "parentCode": "CTCIR-UAA12",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S6"
+   ],
+   "label": "Appliquer : Poursuivre son contrat personnel de progression* relatif aux aptitudes physiques générales"
+  },
+  {
+   "code": "CTCIR-UAA12-A2",
+   "parentCode": "CTCIR-UAA12",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S6"
+   ],
+   "label": "Appliquer : Développer les aptitudes physiques liées à la spécialisation circassienne choisie dans l’UAA11"
+  },
+  {
+   "code": "CTCIR-UAA12-A3",
+   "parentCode": "CTCIR-UAA12",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S6"
+   ],
+   "label": "Appliquer : Mobiliser les techniques de chute et de réception apprises"
+  },
+  {
+   "code": "CTCIR-UAA12-A4",
+   "parentCode": "CTCIR-UAA12",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S6"
+   ],
+   "label": "Appliquer : Elargir son répertoire d’éléments gymniques et acrobatiques"
+  },
+  {
+   "code": "CTCIR-UAA12-A5",
+   "parentCode": "CTCIR-UAA12",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S6"
+   ],
+   "label": "Appliquer : Personnaliser des éléments gymniques et acrobatiques"
+  },
+  {
+   "code": "CTCIR-UAA12-A6",
+   "parentCode": "CTCIR-UAA12",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S6"
+   ],
+   "label": "Appliquer : Perfectionner les éléments gymniques et acrobatiques utiles à son projet circassien"
+  },
+  {
+   "code": "CTCIR-UAA12-K1",
+   "parentCode": "CTCIR-UAA12",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S6"
+   ],
+   "label": "Connaître : Identifier et maitriser les aptitudes physiques spécifiques à son projet circassien"
+  },
+  {
+   "code": "CTCIR-UAA12-K2",
+   "parentCode": "CTCIR-UAA12",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S6"
+   ],
+   "label": "Connaître : Maitriser des éléments gymniques et acrobatiques utiles à son projet circassien"
+  },
+  {
+   "code": "CTCIR-UAA12-K3",
+   "parentCode": "CTCIR-UAA12",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S6"
+   ],
+   "label": "Connaître : Maitriser les techniques de chute et de réception"
+  },
+  {
+   "code": "CTCIR-UAA12-K4",
+   "parentCode": "CTCIR-UAA12",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S6"
+   ],
+   "label": "Connaître : Maitriser les principes de sécurité appris"
+  },
+  {
+   "code": "CTCIR-UAA12-R1",
+   "parentCode": "CTCIR-UAA12",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S6"
+   ],
+   "label": "Ressource : Cf. processus"
+  },
+  {
+   "code": "CTCIR-UAA13",
+   "parentCode": "CTCIR",
+   "kind": "competence",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S6"
+   ],
+   "label": "Thème 3 – Moi et mon jeu"
+  },
+  {
+   "code": "CTCIR-UAA13-C1",
+   "parentCode": "CTCIR-UAA13",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S6"
+   ],
+   "label": "Compétence : S’exprimer dans une démarche corporelle et rythmique en solo"
+  },
+  {
+   "code": "CTCIR-UAA13-A1",
+   "parentCode": "CTCIR-UAA13",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S6"
+   ],
+   "label": "Appliquer : Se poser des questions de dramaturgie pour composer sa présentation en solo : « moi, ici et maintenant, qui suis-je, qu’ai-je envie de dire/de raconter ? »"
+  },
+  {
+   "code": "CTCIR-UAA13-A2",
+   "parentCode": "CTCIR-UAA13",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S6"
+   ],
+   "label": "Appliquer : Explorer des techniques d’expression dans situations"
+  },
+  {
+   "code": "CTCIR-UAA13-A3",
+   "parentCode": "CTCIR-UAA13",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S6"
+   ],
+   "label": "Appliquer : Choisir des techniques d’expression pour développer sa singularité"
+  },
+  {
+   "code": "CTCIR-UAA13-A4",
+   "parentCode": "CTCIR-UAA13",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S6"
+   ],
+   "label": "Appliquer : Affiner son esprit critique en posant un regard constructif sur diverses productions artistiques intra et extra-muros"
+  },
+  {
+   "code": "CTCIR-UAA13-K1",
+   "parentCode": "CTCIR-UAA13",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S6"
+   ],
+   "label": "Connaître : Appréhender l’évolution des arts circassiens à travers le temps et les cultures"
+  },
+  {
+   "code": "CTCIR-UAA13-K2",
+   "parentCode": "CTCIR-UAA13",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S6"
+   ],
+   "label": "Connaître : Appréhender des éléments d’analyse de spectacles circassiens, chorégraphiques et de théâtre physique"
+  },
+  {
+   "code": "CTCIR-UAA13-R1",
+   "parentCode": "CTCIR-UAA13",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S6"
+   ],
+   "label": "Ressource : Cf. processus"
+  },
+  {
+   "code": "CTCIR-UAA14",
+   "parentCode": "CTCIR",
+   "kind": "competence",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S6"
+   ],
+   "label": "Thème 4 – Analyse du mouvement"
+  },
+  {
+   "code": "CTCIR-UAA14-C1",
+   "parentCode": "CTCIR-UAA14",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S6"
+   ],
+   "label": "Compétence : Lier les principes de base de la biomécanique à la pratique circassienne en vue de préserver son intégrité physique"
+  },
+  {
+   "code": "CTCIR-UAA14-A1",
+   "parentCode": "CTCIR-UAA14",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S6"
+   ],
+   "label": "Appliquer : Analyser un mouvement circassien en mobilisant les principes de base de la biomécanique : préceptes ergonomiques"
+  },
+  {
+   "code": "CTCIR-UAA14-A2",
+   "parentCode": "CTCIR-UAA14",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S6"
+   ],
+   "label": "Appliquer : Analyser un mouvement circassien en mobilisant les principes de base de la biomécanique : lois de Newton"
+  },
+  {
+   "code": "CTCIR-UAA14-A3",
+   "parentCode": "CTCIR-UAA14",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S6"
+   ],
+   "label": "Appliquer : Analyser un mouvement circassien en mobilisant les principes de base de la biomécanique : conditions d’équilibre, centre de gravité"
+  },
+  {
+   "code": "CTCIR-UAA14-A4",
+   "parentCode": "CTCIR-UAA14",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S6"
+   ],
+   "label": "Appliquer : Analyser un mouvement circassien en mobilisant les principes de base de la biomécanique : axes de rotation"
+  },
+  {
+   "code": "CTCIR-UAA14-K1",
+   "parentCode": "CTCIR-UAA14",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S6"
+   ],
+   "label": "Connaître : Identifier et s’approprier les principes de base de la biomécanique : préceptes ergonomiques"
+  },
+  {
+   "code": "CTCIR-UAA14-K2",
+   "parentCode": "CTCIR-UAA14",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S6"
+   ],
+   "label": "Connaître : Identifier et s’approprier les principes de base de la biomécanique : lois de Newton"
+  },
+  {
+   "code": "CTCIR-UAA14-K3",
+   "parentCode": "CTCIR-UAA14",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S6"
+   ],
+   "label": "Connaître : Identifier et s’approprier les principes de base de la biomécanique : conditions d’équilibre, centre de gravité"
+  },
+  {
+   "code": "CTCIR-UAA14-K4",
+   "parentCode": "CTCIR-UAA14",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S6"
+   ],
+   "label": "Connaître : Identifier et s’approprier les principes de base de la biomécanique : axes de rotation dans leur(s) aspect(s) associé(s) à la mobilité corporelle (tonus musculaire, transfert du poids du corps, coordination, isolation, latéralité, équilibre et déséquilibre) et dans leur(s) aspect(s) associé(s) à l’organisation posturale (alignement, respiration, stabilisation du centre de gravité)"
+  },
+  {
+   "code": "CTCIR-UAA14-R1",
+   "parentCode": "CTCIR-UAA14",
+   "kind": "attendu",
+   "subject": "Éducation culturelle et artistique",
+   "grades": [
+    "S6"
+   ],
+   "label": "Ressource : Cf. processus"
+  }
+ ]
+}

@@ -1,0 +1,57 @@
+name: TestFlight
+
+# Lancement manuel (onglet Actions > TestFlight > Run workflow) :
+# - « mise-a-jour » : envoie le JavaScript aux apps déjà installées (quelques minutes, sans revue d'Apple) ;
+# - « build » : nouvelle version compilée sur EAS puis envoyée sur TestFlight (après un changement natif :
+#   nouvelle bibliothèque, autorisation, icône, version de l'app).
+# Prérequis : secret EXPO_TOKEN (expo.dev > Account settings > Access tokens) et une première build faite à la
+# main depuis le Mac (certificats et clé App Store Connect enregistrés sur EAS) : voir docs/beta/testflight.md.
+on:
+  workflow_dispatch:
+    inputs:
+      action:
+        description: Que faire ?
+        type: choice
+        options: [mise-a-jour, build]
+        default: mise-a-jour
+      message:
+        description: Ce qui change (affiché aux testeurs dans TestFlight, ou noté avec la mise à jour)
+        required: false
+        default: Corrections et améliorations
+
+concurrency:
+  group: testflight
+  cancel-in-progress: false
+
+jobs:
+  eas:
+    name: EAS (${{ inputs.action }})
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - uses: expo/expo-github-action@v8
+        with:
+          eas-version: latest
+          token: ${{ secrets.EXPO_TOKEN }}
+
+      - name: Build iOS et envoi sur TestFlight
+        if: inputs.action == 'build'
+        working-directory: apps/mobile
+        env:
+          WHAT_TO_TEST: ${{ inputs.message }}
+        run: >
+          eas build --platform ios --profile production --non-interactive --no-wait
+          --auto-submit --what-to-test "$WHAT_TO_TEST"
+
+      - name: Mise à jour à distance
+        if: inputs.action == 'mise-a-jour'
+        working-directory: apps/mobile
+        env:
+          MESSAGE: ${{ inputs.message }}
+        run: eas update --channel production --environment production --non-interactive --message "$MESSAGE"

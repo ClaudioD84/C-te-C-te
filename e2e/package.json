@@ -1,0 +1,18 @@
+{
+  "name": "e2e",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build:web": "node support/build-web.mjs",
+    "test:e2e": "playwright test",
+    "typecheck": "tsc --noEmit",
+    "captures": "playwright test --config playwright.captures.config.ts"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.13.0",
+    "@playwright/test": "1.56.1",
+    "@types/node": "^22.20.5",
+    "qrcode-terminal": "0.12.0",
+    "typescript": "~6.0.3"
+  }
+}

@@ -1,0 +1,4193 @@
+{
+ "source": {
+  "title": "Compétences terminales et savoirs communs en formation historique et géographique (humanités professionnelles et techniques)",
+  "url": "https://www.enseignement.be/fileadmin/portail_age/uploads/parcours_apprentissage/secondaire_ordinaire/Organisation/Contenus_apprentissages_Secondaire/competences_terminales/FORM_COM_2et3_degres_et_7e_PROF_et_techni_de_qualif/2014_CT_HPT_Form-Hist-Geo.pdf",
+  "version": "2014"
+ },
+ "level": "secondaire",
+ "tracks": [
+  "technique",
+  "professionnel",
+  "specialise"
+ ],
+ "entries": [
+  {
+   "code": "CTHGQ",
+   "parentCode": null,
+   "kind": "domaine",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Compétences terminales et savoirs communs en formation historique et géographique (humanités professionnelles et techniques)"
+  },
+  {
+   "code": "CTHGQ-HIST2-1",
+   "parentCode": "CTHGQ",
+   "kind": "competence",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Histoire – UAA 1 – SITUER DANS LE TEMPS"
+  },
+  {
+   "code": "CTHGQ-HIST2-1-C1",
+   "parentCode": "CTHGQ-HIST2-1",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Compétence : SITUER DANS LE TEMPS"
+  },
+  {
+   "code": "CTHGQ-HIST2-1-A1",
+   "parentCode": "CTHGQ-HIST2-1",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Identifier dans un document inédit, mais d’un genre familier, relatif à une situation vue en classe, une caractéristique du concept abordé."
+  },
+  {
+   "code": "CTHGQ-HIST2-1-A2",
+   "parentCode": "CTHGQ-HIST2-1",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Compléter une représentation du temps donnée par une information puisée dans un document inédit (information relative à une situation vue en classe et à une caractéristique du concept abordé)."
+  },
+  {
+   "code": "CTHGQ-HIST2-1-A3",
+   "parentCode": "CTHGQ-HIST2-1",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Ordonner dans une représentation du temps donnée des informations et des repères temporels pertinents."
+  },
+  {
+   "code": "CTHGQ-HIST2-1-T1",
+   "parentCode": "CTHGQ-HIST2-1",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Transférer : Compléter une représentation du temps : en y intégrant les informations puisées dans un nombre limité de documents inédits, relatives à une situation vue en classe et au concept abordé"
+  },
+  {
+   "code": "CTHGQ-HIST2-1-T2",
+   "parentCode": "CTHGQ-HIST2-1",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Transférer : Compléter une représentation du temps : et en mettant ces informations en relation avec des repères temporels pertinents."
+  },
+  {
+   "code": "CTHGQ-HIST2-1-K1",
+   "parentCode": "CTHGQ-HIST2-1",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Connaître : Expliciter les principes organisateurs d’une représentation du temps (chronologie, ordre)."
+  },
+  {
+   "code": "CTHGQ-HIST2-1-K2",
+   "parentCode": "CTHGQ-HIST2-1",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Connaître : Énoncer les repères temporels pertinents pour situer dans leur contexte des faits ou des phénomènes historiques vus en classe et relatifs au thème abordé."
+  },
+  {
+   "code": "CTHGQ-HIST2-1-K3",
+   "parentCode": "CTHGQ-HIST2-1",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Connaître : Énoncer des caractéristiques du concept abordé et les expliciter à partir d’un exemple vu en classe."
+  },
+  {
+   "code": "CTHGQ-HIST2-1-R1",
+   "parentCode": "CTHGQ-HIST2-1",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : IDENTITÉS ET MIGRATIONS"
+  },
+  {
+   "code": "CTHGQ-HIST2-1-R2",
+   "parentCode": "CTHGQ-HIST2-1",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Moment clé privilégié Mouvements migratoires en Belgique du XIXe à nos jours"
+  },
+  {
+   "code": "CTHGQ-HIST2-1-R3",
+   "parentCode": "CTHGQ-HIST2-1",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Concepts Identité culturelle : langue, habitudes de vie, religion/pensée, origines"
+  },
+  {
+   "code": "CTHGQ-HIST2-1-R4",
+   "parentCode": "CTHGQ-HIST2-1",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Migration : acteurs, lieux, facteurs, ampleur, insertion"
+  },
+  {
+   "code": "CTHGQ-HIST2-1-R5",
+   "parentCode": "CTHGQ-HIST2-1",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Repères temporels : révolutions agricole et industrielles, guerres mondiales, chute du Mur de Berlin, Accords de Schengen"
+  },
+  {
+   "code": "CTHGQ-HIST2-1-R6",
+   "parentCode": "CTHGQ-HIST2-1",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : HÉRITAGES CULTURELS"
+  },
+  {
+   "code": "CTHGQ-HIST2-1-R7",
+   "parentCode": "CTHGQ-HIST2-1",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Moment clé privilégié Au choix"
+  },
+  {
+   "code": "CTHGQ-HIST2-1-R8",
+   "parentCode": "CTHGQ-HIST2-1",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Concept Identité culturelle : arts"
+  },
+  {
+   "code": "CTHGQ-HIST2-1-R9",
+   "parentCode": "CTHGQ-HIST2-1",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Repères temporels : en fonction du choix opéré"
+  },
+  {
+   "code": "CTHGQ-HIST2-1-R10",
+   "parentCode": "CTHGQ-HIST2-1",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : DROITS ET LIBERTÉS"
+  },
+  {
+   "code": "CTHGQ-HIST2-1-R11",
+   "parentCode": "CTHGQ-HIST2-1",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Moments clés privilégiés Ancien Régime"
+  },
+  {
+   "code": "CTHGQ-HIST2-1-R12",
+   "parentCode": "CTHGQ-HIST2-1",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Révolutions libérales et nationales"
+  },
+  {
+   "code": "CTHGQ-HIST2-1-R13",
+   "parentCode": "CTHGQ-HIST2-1",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Concepts Démocratie et autoritarisme : détenteurs du pouvoir, droits/libertés"
+  },
+  {
+   "code": "CTHGQ-HIST2-1-R14",
+   "parentCode": "CTHGQ-HIST2-1",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Stratification sociale : groupes sociaux, traits distinctifs, rapports entre les groupes"
+  },
+  {
+   "code": "CTHGQ-HIST2-1-R15",
+   "parentCode": "CTHGQ-HIST2-1",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Repères temporels : Révolution française et Déclaration des Droits de l’Homme et du citoyen, Révolution et Constitution belges, Déclaration Universelle des Droits de l’Homme"
+  },
+  {
+   "code": "CTHGQ-HIST2-1-R16",
+   "parentCode": "CTHGQ-HIST2-1",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : TECHNOLOGIES ET MODES DE VIE"
+  },
+  {
+   "code": "CTHGQ-HIST2-1-R17",
+   "parentCode": "CTHGQ-HIST2-1",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Moment clé privilégié Révolutions industrielles aux XIXe et XXe s."
+  },
+  {
+   "code": "CTHGQ-HIST2-1-R18",
+   "parentCode": "CTHGQ-HIST2-1",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Concept Développement : nature, facteurs, conséquences"
+  },
+  {
+   "code": "CTHGQ-HIST2-1-R19",
+   "parentCode": "CTHGQ-HIST2-1",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Repères temporels : révolutions agricole et industrielles, généralisation dans nos régions de quelques inventions technologiques majeures : la machine à vapeur, le chemin de fer, l’électricité, l’automobile, l’avion, le nucléaire, l’ordinateur personnel, Internet"
+  },
+  {
+   "code": "CTHGQ-HIST2-1-R20",
+   "parentCode": "CTHGQ-HIST2-1",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : DISPARITÉS NORD SUD"
+  },
+  {
+   "code": "CTHGQ-HIST2-1-R21",
+   "parentCode": "CTHGQ-HIST2-1",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Moments clés privilégiés Colonisation européenne au XIXe s."
+  },
+  {
+   "code": "CTHGQ-HIST2-1-R22",
+   "parentCode": "CTHGQ-HIST2-1",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Décolonisation"
+  },
+  {
+   "code": "CTHGQ-HIST2-1-R23",
+   "parentCode": "CTHGQ-HIST2-1",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Repères temporels : révolutions industrielles, colonisation du Congo, guerres mondiales, indépendance du Congo"
+  },
+  {
+   "code": "CTHGQ-HIST2-1-R24",
+   "parentCode": "CTHGQ-HIST2-1",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Construction d’un lien entre une information et un repère de temps pertinent"
+  },
+  {
+   "code": "CTHGQ-HIST2-2",
+   "parentCode": "CTHGQ",
+   "kind": "competence",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Histoire – UAA 2 – CRITIQUER"
+  },
+  {
+   "code": "CTHGQ-HIST2-2-C1",
+   "parentCode": "CTHGQ-HIST2-2",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Compétence : CRITIQUER"
+  },
+  {
+   "code": "CTHGQ-HIST2-2-A1",
+   "parentCode": "CTHGQ-HIST2-2",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Au départ d’un témoignage ou d’un point de vue inédit, mais d’un genre familier, relatif à une situation vue en classe, répondre à quelques questions clés qui permettent de l’apprécier de manière critique."
+  },
+  {
+   "code": "CTHGQ-HIST2-2-A2",
+   "parentCode": "CTHGQ-HIST2-2",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Au départ de réponses à ces questions clés à propos d’un témoignage ou d’un point de vue inédit, mais d’un genre familier, relatif à une situation vue en classe, formuler une raison de se fier et/ou de se méfier."
+  },
+  {
+   "code": "CTHGQ-HIST2-2-A3",
+   "parentCode": "CTHGQ-HIST2-2",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Identifier dans un document inédit, mais d’un genre familier, relatif à une situation vue en classe, une caractéristique du concept abordé."
+  },
+  {
+   "code": "CTHGQ-HIST2-2-T1",
+   "parentCode": "CTHGQ-HIST2-2",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Transférer : Apprécier de manière critique un témoignage ou un point de vue inédit, mais d’un genre familier relatif à une situation vue en classe en énonçant une ou plusieurs raisons de s’y fier et/ou de s’en méfier."
+  },
+  {
+   "code": "CTHGQ-HIST2-2-K1",
+   "parentCode": "CTHGQ-HIST2-2",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Connaître : Énoncer quelques questions clés à se poser pour apprécier de manière critique un témoignage ou un point de vue d’hier ou d’aujourd’hui."
+  },
+  {
+   "code": "CTHGQ-HIST2-2-K2",
+   "parentCode": "CTHGQ-HIST2-2",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Connaître : À partir d’exemples vus en classe, expliciter en quoi les réponses à ces questions invitent tantôt à se fier, tantôt à se méfier d’un témoignage ou d’un point de vue d’hier ou d’aujourd’hui."
+  },
+  {
+   "code": "CTHGQ-HIST2-2-K3",
+   "parentCode": "CTHGQ-HIST2-2",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Connaître : Énoncer des caractéristiques du concept abordé et les expliciter à partir d’un exemple vu en classe."
+  },
+  {
+   "code": "CTHGQ-HIST2-2-R1",
+   "parentCode": "CTHGQ-HIST2-2",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : IDENTITÉS ET MIGRATIONS"
+  },
+  {
+   "code": "CTHGQ-HIST2-2-R2",
+   "parentCode": "CTHGQ-HIST2-2",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Moment clé privilégié Mouvements migratoires en Belgique du XIXe à nos jours"
+  },
+  {
+   "code": "CTHGQ-HIST2-2-R3",
+   "parentCode": "CTHGQ-HIST2-2",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Concepts Identité culturelle : langue, habitudes de vie, religion/pensée, origines"
+  },
+  {
+   "code": "CTHGQ-HIST2-2-R4",
+   "parentCode": "CTHGQ-HIST2-2",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Migration : acteurs, lieux, facteurs, ampleur, insertion"
+  },
+  {
+   "code": "CTHGQ-HIST2-2-R5",
+   "parentCode": "CTHGQ-HIST2-2",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Repères temporels : révolutions agricole et industrielles, guerres mondiales, chute du Mur de Berlin, Accords de Schengen"
+  },
+  {
+   "code": "CTHGQ-HIST2-2-R6",
+   "parentCode": "CTHGQ-HIST2-2",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : HÉRITAGES CULTURELS"
+  },
+  {
+   "code": "CTHGQ-HIST2-2-R7",
+   "parentCode": "CTHGQ-HIST2-2",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Moment clé privilégié Au choix"
+  },
+  {
+   "code": "CTHGQ-HIST2-2-R8",
+   "parentCode": "CTHGQ-HIST2-2",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Concept Identité culturelle : arts"
+  },
+  {
+   "code": "CTHGQ-HIST2-2-R9",
+   "parentCode": "CTHGQ-HIST2-2",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Repères temporels : en fonction du choix opéré"
+  },
+  {
+   "code": "CTHGQ-HIST2-2-R10",
+   "parentCode": "CTHGQ-HIST2-2",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : DROITS ET LIBERTÉS"
+  },
+  {
+   "code": "CTHGQ-HIST2-2-R11",
+   "parentCode": "CTHGQ-HIST2-2",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Moments clés privilégiés Ancien Régime"
+  },
+  {
+   "code": "CTHGQ-HIST2-2-R12",
+   "parentCode": "CTHGQ-HIST2-2",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Révolutions libérales et nationales"
+  },
+  {
+   "code": "CTHGQ-HIST2-2-R13",
+   "parentCode": "CTHGQ-HIST2-2",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Concepts Démocratie et autoritarisme : détenteurs du pouvoir, droits/libertés"
+  },
+  {
+   "code": "CTHGQ-HIST2-2-R14",
+   "parentCode": "CTHGQ-HIST2-2",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Stratification sociale : groupes sociaux, traits distinctifs, rapports entre les groupes"
+  },
+  {
+   "code": "CTHGQ-HIST2-2-R15",
+   "parentCode": "CTHGQ-HIST2-2",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Repères temporels : Révolution française et Déclaration des Droits de l’Homme et du citoyen, Révolution et Constitution belges, Déclaration Universelle des Droits de l’Homme"
+  },
+  {
+   "code": "CTHGQ-HIST2-2-R16",
+   "parentCode": "CTHGQ-HIST2-2",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : TECHNOLOGIES ET MODES DE VIE"
+  },
+  {
+   "code": "CTHGQ-HIST2-2-R17",
+   "parentCode": "CTHGQ-HIST2-2",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Moment clé privilégié Révolutions industrielles aux XIXe et XXe s."
+  },
+  {
+   "code": "CTHGQ-HIST2-2-R18",
+   "parentCode": "CTHGQ-HIST2-2",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Concept Développement : nature, facteurs, conséquences"
+  },
+  {
+   "code": "CTHGQ-HIST2-2-R19",
+   "parentCode": "CTHGQ-HIST2-2",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Repères temporels : révolutions agricole et industrielles, généralisation dans nos régions de quelques inventions technologiques majeures: la machine à vapeur, le chemin de fer, l’électricité, l’automobile, l’avion, le nucléaire, l’ordinateur personnel, Internet"
+  },
+  {
+   "code": "CTHGQ-HIST2-2-R20",
+   "parentCode": "CTHGQ-HIST2-2",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : DISPARITÉS NORD SUD"
+  },
+  {
+   "code": "CTHGQ-HIST2-2-R21",
+   "parentCode": "CTHGQ-HIST2-2",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Moments clés privilégiés Colonisation européenne au XIXe s."
+  },
+  {
+   "code": "CTHGQ-HIST2-2-R22",
+   "parentCode": "CTHGQ-HIST2-2",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Décolonisation"
+  },
+  {
+   "code": "CTHGQ-HIST2-2-R23",
+   "parentCode": "CTHGQ-HIST2-2",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Repères temporels : révolutions industrielles, colonisation du Congo, guerres mondiales, indépendance du Congo"
+  },
+  {
+   "code": "CTHGQ-HIST2-2-R24",
+   "parentCode": "CTHGQ-HIST2-2",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Utilisation de questions-clés pour la critique de fiabilité"
+  },
+  {
+   "code": "CTHGQ-HIST2-2-R25",
+   "parentCode": "CTHGQ-HIST2-2",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Recherche d’informations sur un témoignage ou un point de vue dans une brève notice fournie par le professeur ou dans un dictionnaire"
+  },
+  {
+   "code": "CTHGQ-HIST2-3",
+   "parentCode": "CTHGQ",
+   "kind": "competence",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Histoire – UAA 3 – COMPARER"
+  },
+  {
+   "code": "CTHGQ-HIST2-3-C1",
+   "parentCode": "CTHGQ-HIST2-3",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Compétence : COMPARER"
+  },
+  {
+   "code": "CTHGQ-HIST2-3-A1",
+   "parentCode": "CTHGQ-HIST2-3",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Identifier dans un document inédit, mais d’un genre familier, relatif à une situation vue en classe, une caractéristique du concept abordé."
+  },
+  {
+   "code": "CTHGQ-HIST2-3-A2",
+   "parentCode": "CTHGQ-HIST2-3",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Identifier des ressemblances ou des différences concernant une caractéristique du concept abordé dans deux documents inédits, mais d’un genre familier, relatifs à deux situations vues en classe."
+  },
+  {
+   "code": "CTHGQ-HIST2-3-T1",
+   "parentCode": "CTHGQ-HIST2-3",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Transférer : À partir de documents inédits relatifs à deux situations étudiées en classe, compléter un tableau de comparaison qui met en évidence des ressemblances et des différences en lien avec le concept abordé."
+  },
+  {
+   "code": "CTHGQ-HIST2-3-K1",
+   "parentCode": "CTHGQ-HIST2-3",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Connaître : Expliciter les principes organisateurs d’un tableau de comparaison."
+  },
+  {
+   "code": "CTHGQ-HIST2-3-K2",
+   "parentCode": "CTHGQ-HIST2-3",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Connaître : Énoncer des caractéristiques du concept abordé et les expliciter à partir d’un exemple vu en classe."
+  },
+  {
+   "code": "CTHGQ-HIST2-3-R1",
+   "parentCode": "CTHGQ-HIST2-3",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : IDENTITÉS ET MIGRATIONS"
+  },
+  {
+   "code": "CTHGQ-HIST2-3-R2",
+   "parentCode": "CTHGQ-HIST2-3",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Moment clé privilégié Mouvements migratoires en Belgique du XIXe à nos jours"
+  },
+  {
+   "code": "CTHGQ-HIST2-3-R3",
+   "parentCode": "CTHGQ-HIST2-3",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Concepts Identité culturelle : langue, habitudes de vie, religion/pensée, origines"
+  },
+  {
+   "code": "CTHGQ-HIST2-3-R4",
+   "parentCode": "CTHGQ-HIST2-3",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Migration : acteurs, lieux, facteurs, ampleur, insertion"
+  },
+  {
+   "code": "CTHGQ-HIST2-3-R5",
+   "parentCode": "CTHGQ-HIST2-3",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Repères temporels : révolutions agricole et industrielles, guerres mondiales, chute du Mur de Berlin, Accords de Schengen"
+  },
+  {
+   "code": "CTHGQ-HIST2-3-R6",
+   "parentCode": "CTHGQ-HIST2-3",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : HÉRITAGES CULTURELS"
+  },
+  {
+   "code": "CTHGQ-HIST2-3-R7",
+   "parentCode": "CTHGQ-HIST2-3",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Moment clé privilégié Au choix"
+  },
+  {
+   "code": "CTHGQ-HIST2-3-R8",
+   "parentCode": "CTHGQ-HIST2-3",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Concept Identité culturelle : arts"
+  },
+  {
+   "code": "CTHGQ-HIST2-3-R9",
+   "parentCode": "CTHGQ-HIST2-3",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Repères temporels : en fonction du choix opéré"
+  },
+  {
+   "code": "CTHGQ-HIST2-3-R10",
+   "parentCode": "CTHGQ-HIST2-3",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : DROITS ET LIBERTÉS"
+  },
+  {
+   "code": "CTHGQ-HIST2-3-R11",
+   "parentCode": "CTHGQ-HIST2-3",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Moments clés privilégiés Ancien Régime"
+  },
+  {
+   "code": "CTHGQ-HIST2-3-R12",
+   "parentCode": "CTHGQ-HIST2-3",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Révolutions libérales et nationales"
+  },
+  {
+   "code": "CTHGQ-HIST2-3-R13",
+   "parentCode": "CTHGQ-HIST2-3",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Concepts Démocratie et autoritarisme : détenteurs du pouvoir, droits/libertés"
+  },
+  {
+   "code": "CTHGQ-HIST2-3-R14",
+   "parentCode": "CTHGQ-HIST2-3",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Stratification sociale : groupes sociaux, traits distinctifs, rapports entre les groupes"
+  },
+  {
+   "code": "CTHGQ-HIST2-3-R15",
+   "parentCode": "CTHGQ-HIST2-3",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Repères temporels : Révolution française et Déclaration des Droits de l’Homme et du citoyen, Révolution et Constitution belges, Déclaration Universelle des Droits de l’Homme"
+  },
+  {
+   "code": "CTHGQ-HIST2-3-R16",
+   "parentCode": "CTHGQ-HIST2-3",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : TECHNOLOGIES ET MODES DE VIE"
+  },
+  {
+   "code": "CTHGQ-HIST2-3-R17",
+   "parentCode": "CTHGQ-HIST2-3",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Moment clé privilégié Révolutions industrielles aux XIXe et XXe s."
+  },
+  {
+   "code": "CTHGQ-HIST2-3-R18",
+   "parentCode": "CTHGQ-HIST2-3",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Concept Développement : nature, facteurs, conséquences"
+  },
+  {
+   "code": "CTHGQ-HIST2-3-R19",
+   "parentCode": "CTHGQ-HIST2-3",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Repères temporels : révolutions agricole et industrielles, généralisation dans nos régions de quelques inventions technologiques majeures: la machine à vapeur, le chemin de fer, l’électricité, l’automobile, l’avion, le nucléaire, l’ordinateur personnel, Internet"
+  },
+  {
+   "code": "CTHGQ-HIST2-3-R20",
+   "parentCode": "CTHGQ-HIST2-3",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : DISPARITÉS NORD SUD"
+  },
+  {
+   "code": "CTHGQ-HIST2-3-R21",
+   "parentCode": "CTHGQ-HIST2-3",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Moments clés privilégiés Colonisation européenne au XIXe s."
+  },
+  {
+   "code": "CTHGQ-HIST2-3-R22",
+   "parentCode": "CTHGQ-HIST2-3",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Décolonisation"
+  },
+  {
+   "code": "CTHGQ-HIST2-3-R23",
+   "parentCode": "CTHGQ-HIST2-3",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Repères temporels : révolutions industrielles, colonisation du Congo, guerres mondiales, indépendance du Congo"
+  },
+  {
+   "code": "CTHGQ-HIST2-3-R24",
+   "parentCode": "CTHGQ-HIST2-3",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Utilisation d’un tableau permettant de comparer des informations"
+  },
+  {
+   "code": "CTHGQ-HIST2-3-R25",
+   "parentCode": "CTHGQ-HIST2-3",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Identification de ressemblances et des différences en vue de comparer des informations"
+  },
+  {
+   "code": "CTHGQ-HIST3-1",
+   "parentCode": "CTHGQ",
+   "kind": "competence",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Histoire – UAA 1 – SITUER DANS LE TEMPS"
+  },
+  {
+   "code": "CTHGQ-HIST3-1-C1",
+   "parentCode": "CTHGQ-HIST3-1",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Compétence : SITUER DANS LE TEMPS"
+  },
+  {
+   "code": "CTHGQ-HIST3-1-A1",
+   "parentCode": "CTHGQ-HIST3-1",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Identifier dans un document inédit, mais d’un genre familier, relatif à une situation non vue en classe une ou des caractéristiques du concept abordé."
+  },
+  {
+   "code": "CTHGQ-HIST3-1-A2",
+   "parentCode": "CTHGQ-HIST3-1",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Compléter un support au choix (tableau, schéma, représentation du temps) en replaçant dans son contexte temporel une information puisée dans un document inédit relative à une situation non vue et à une ou des caractéristiques du concept abordé."
+  },
+  {
+   "code": "CTHGQ-HIST3-1-A3",
+   "parentCode": "CTHGQ-HIST3-1",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Rédiger un court texte expliquant la relation entre une information puisée dans un document et un repère temporel pertinent vu en classe."
+  },
+  {
+   "code": "CTHGQ-HIST3-1-T1",
+   "parentCode": "CTHGQ-HIST3-1",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Transférer : À l’aide d’un support de communication au choix (tableau, schéma, court texte, représentation du temps), situer dans leur contexte historique les informations puisées dans un nombre limité de documents inédits relatifs au thème : en les mettant en relation avec des repères temporels pertinents"
+  },
+  {
+   "code": "CTHGQ-HIST3-1-T2",
+   "parentCode": "CTHGQ-HIST3-1",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Transférer : À l’aide d’un support de communication au choix (tableau, schéma, court texte, représentation du temps), situer dans leur contexte historique les informations puisées dans un nombre limité de documents inédits relatifs au thème : et en mobilisant les caractéristiques du concept abordé."
+  },
+  {
+   "code": "CTHGQ-HIST3-1-K1",
+   "parentCode": "CTHGQ-HIST3-1",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : Expliciter les principes organisateurs d’un support permettant de situer des informations dans leur contexte historique (tableau, schéma, court texte, représentation du temps)."
+  },
+  {
+   "code": "CTHGQ-HIST3-1-K2",
+   "parentCode": "CTHGQ-HIST3-1",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : Énoncer et expliciter les repères temporels pertinents pour situer dans leur contexte des faits ou des phénomènes historiques vus en classe et relatifs au thème abordé."
+  },
+  {
+   "code": "CTHGQ-HIST3-1-K3",
+   "parentCode": "CTHGQ-HIST3-1",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : Énoncer des caractéristiques du concept abordé et les expliciter à partir d’un exemple vu en classe."
+  },
+  {
+   "code": "CTHGQ-HIST3-1-R1",
+   "parentCode": "CTHGQ-HIST3-1",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : ACQUIS SOCIAUX ET POLITIQUES"
+  },
+  {
+   "code": "CTHGQ-HIST3-1-R2",
+   "parentCode": "CTHGQ-HIST3-1",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Moments clés privilégiés Question sociale - Évolution du suffrage en Belgique"
+  },
+  {
+   "code": "CTHGQ-HIST3-1-R3",
+   "parentCode": "CTHGQ-HIST3-1",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Concepts Démocratie et autoritarisme : détenteurs du pouvoir, droits/libertés"
+  },
+  {
+   "code": "CTHGQ-HIST3-1-R4",
+   "parentCode": "CTHGQ-HIST3-1",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Stratification sociale : groupes sociaux, traits distinctifs, rapports entre les groupes"
+  },
+  {
+   "code": "CTHGQ-HIST3-1-R5",
+   "parentCode": "CTHGQ-HIST3-1",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Repères temporels : Révolution et Constitution belges, révolutions industrielles, guerres mondiales, sécurité sociale, suffrage universel (masculin, mixte)"
+  },
+  {
+   "code": "CTHGQ-HIST3-1-R6",
+   "parentCode": "CTHGQ-HIST3-1",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : BELGIQUE FÉDÉRALE"
+  },
+  {
+   "code": "CTHGQ-HIST3-1-R7",
+   "parentCode": "CTHGQ-HIST3-1",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Moment clé privilégié Belgique, de 1830 à nos jours"
+  },
+  {
+   "code": "CTHGQ-HIST3-1-R8",
+   "parentCode": "CTHGQ-HIST3-1",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Concepts Identité culturelle : langue, habitudes de vie, religion/pensée, origines"
+  },
+  {
+   "code": "CTHGQ-HIST3-1-R9",
+   "parentCode": "CTHGQ-HIST3-1",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Démocratie autoritarisme : détenteurs du pouvoir, droits/libertés, institutions"
+  },
+  {
+   "code": "CTHGQ-HIST3-1-R10",
+   "parentCode": "CTHGQ-HIST3-1",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Repères temporels : Révolution et Constitution belges, révolutions industrielles, suffrage universel, guerres mondiales, frontière linguistique, régionalisation, état fédéral"
+  },
+  {
+   "code": "CTHGQ-HIST3-1-R11",
+   "parentCode": "CTHGQ-HIST3-1",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : EXTRÉMISMES"
+  },
+  {
+   "code": "CTHGQ-HIST3-1-R12",
+   "parentCode": "CTHGQ-HIST3-1",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Moments clés privilégiés Guerres mondiales, montée des totalitarismes, génocides"
+  },
+  {
+   "code": "CTHGQ-HIST3-1-R13",
+   "parentCode": "CTHGQ-HIST3-1",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Concepts Démocratie et autoritarisme : détenteurs du pouvoir, droits/libertés, institutions"
+  },
+  {
+   "code": "CTHGQ-HIST3-1-R14",
+   "parentCode": "CTHGQ-HIST3-1",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Repères temporels : guerres mondiales, révolution soviétique, Traité de Versailles, accession au pouvoir d’Hitler, Shoah, Déclaration Universelle des Droits de l’Homme, chute du Mur de Berlin"
+  },
+  {
+   "code": "CTHGQ-HIST3-1-R15",
+   "parentCode": "CTHGQ-HIST3-1",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : MONDIALISATION DES ÉCHANGES"
+  },
+  {
+   "code": "CTHGQ-HIST3-1-R16",
+   "parentCode": "CTHGQ-HIST3-1",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Moment clé privilégié Économie et société à partir de la seconde moitié du XXe s."
+  },
+  {
+   "code": "CTHGQ-HIST3-1-R17",
+   "parentCode": "CTHGQ-HIST3-1",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Concepts Développement : nature, facteurs, processus, conséquences"
+  },
+  {
+   "code": "CTHGQ-HIST3-1-R18",
+   "parentCode": "CTHGQ-HIST3-1",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Identité culturelle : langue, habitudes de vie"
+  },
+  {
+   "code": "CTHGQ-HIST3-1-R19",
+   "parentCode": "CTHGQ-HIST3-1",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Repères temporels : GATT, décolonisation et émergence des pays en voie de développement, OMC, crise financière du XXIe s."
+  },
+  {
+   "code": "CTHGQ-HIST3-1-R20",
+   "parentCode": "CTHGQ-HIST3-1",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : UNION EUROPÉENNE"
+  },
+  {
+   "code": "CTHGQ-HIST3-1-R21",
+   "parentCode": "CTHGQ-HIST3-1",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Moments clés privilégiés Construction européenne"
+  },
+  {
+   "code": "CTHGQ-HIST3-1-R22",
+   "parentCode": "CTHGQ-HIST3-1",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Concepts Démocratie/autoritarisme : détenteurs du pouvoir, droits/libertés, institutions : Identité culturelle : langue, habitudes de vie, religion/pensée"
+  },
+  {
+   "code": "CTHGQ-HIST3-1-R23",
+   "parentCode": "CTHGQ-HIST3-1",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Repères temporels : 2e guerre mondiale, guerre froide, Traité de Rome, chute du Mur de Berlin, Traité de Maastricht, passage à l’Euro, Accords de Schengen"
+  },
+  {
+   "code": "CTHGQ-HIST3-1-R24",
+   "parentCode": "CTHGQ-HIST3-1",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Choix d’un support de communication approprié pour situer des informations dans leur contexte historique"
+  },
+  {
+   "code": "CTHGQ-HIST3-1-R25",
+   "parentCode": "CTHGQ-HIST3-1",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Production d’une représentation du temps, d’un tableau, d’un schéma, d’un court texte permettant de situer des informations dans leur contexte historique"
+  },
+  {
+   "code": "CTHGQ-HIST3-2",
+   "parentCode": "CTHGQ",
+   "kind": "competence",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Histoire – UAA 2 – CRITIQUER"
+  },
+  {
+   "code": "CTHGQ-HIST3-2-C1",
+   "parentCode": "CTHGQ-HIST3-2",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Compétence : CRITIQUER"
+  },
+  {
+   "code": "CTHGQ-HIST3-2-A1",
+   "parentCode": "CTHGQ-HIST3-2",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Au départ d’un ensemble limité de témoignages ou de points de vue inédits, mais d’un genre familier, relatif à une situation vue en classe, répondre à quelques questions clés qui permettent de les apprécier de manière critique."
+  },
+  {
+   "code": "CTHGQ-HIST3-2-A2",
+   "parentCode": "CTHGQ-HIST3-2",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Au départ des réponses à ces questions clés, formuler une ou plusieurs raisons de se fier et/ou de se méfier."
+  },
+  {
+   "code": "CTHGQ-HIST3-2-A3",
+   "parentCode": "CTHGQ-HIST3-2",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Au départ de témoignages ou de points de vue inédits relatifs à une même situation, vue en classe, repérer des concordances, des divergences."
+  },
+  {
+   "code": "CTHGQ-HIST3-2-A4",
+   "parentCode": "CTHGQ-HIST3-2",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Identifier dans un ensemble limité de témoignages ou de points de vue, mais d’un genre familier, relatif à une situation vue en classe, une ou des caractéristiques du concept abordé."
+  },
+  {
+   "code": "CTHGQ-HIST3-2-T1",
+   "parentCode": "CTHGQ-HIST3-2",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Transférer : Apprécier de manière critique un ensemble de témoignages ou de points de vue inédits, mais d’un genre familier relatif à une situation non vue en classe, en énonçant une ou plusieurs raisons de s’y fier et/ou de s’en méfier et en repérant des concordances, des divergences en lien avec le concept abordé."
+  },
+  {
+   "code": "CTHGQ-HIST3-2-K1",
+   "parentCode": "CTHGQ-HIST3-2",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : Énoncer quelques questions clés à se poser pour apprécier de manière critique un témoignage ou un point de vue d’hier ou d’aujourd’hui."
+  },
+  {
+   "code": "CTHGQ-HIST3-2-K2",
+   "parentCode": "CTHGQ-HIST3-2",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : À partir d’exemples vus en classe, expliciter en quoi les réponses à ces questions invitent tantôt à se fier, tantôt à se méfier d’un témoignage ou d’un point de vue d’hier ou d’aujourd’hui."
+  },
+  {
+   "code": "CTHGQ-HIST3-2-K3",
+   "parentCode": "CTHGQ-HIST3-2",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : Énoncer des caractéristiques du concept abordé et les expliciter à partir d’un exemple vu en classe."
+  },
+  {
+   "code": "CTHGQ-HIST3-2-R1",
+   "parentCode": "CTHGQ-HIST3-2",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : ACQUIS SOCIAUX ET POLITIQUES"
+  },
+  {
+   "code": "CTHGQ-HIST3-2-R2",
+   "parentCode": "CTHGQ-HIST3-2",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Moments clés privilégiés Question sociale - Évolution du suffrage en Belgique"
+  },
+  {
+   "code": "CTHGQ-HIST3-2-R3",
+   "parentCode": "CTHGQ-HIST3-2",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Concepts Démocratie et autoritarisme : détenteurs du pouvoir, droits/libertés"
+  },
+  {
+   "code": "CTHGQ-HIST3-2-R4",
+   "parentCode": "CTHGQ-HIST3-2",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Stratification sociale : groupes sociaux, traits distinctifs, rapports entre les groupes"
+  },
+  {
+   "code": "CTHGQ-HIST3-2-R5",
+   "parentCode": "CTHGQ-HIST3-2",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Repères temporels : Révolution et Constitution belges, révolutions industrielles, guerres mondiales, sécurité sociale, suffrage universel (masculin, mixte)"
+  },
+  {
+   "code": "CTHGQ-HIST3-2-R6",
+   "parentCode": "CTHGQ-HIST3-2",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : BELGIQUE FÉDÉRALE"
+  },
+  {
+   "code": "CTHGQ-HIST3-2-R7",
+   "parentCode": "CTHGQ-HIST3-2",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Moment clé privilégié Belgique, de 1830 à nos jours"
+  },
+  {
+   "code": "CTHGQ-HIST3-2-R8",
+   "parentCode": "CTHGQ-HIST3-2",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Concepts Identité culturelle : langue, habitudes de vie, religion/pensée, origines"
+  },
+  {
+   "code": "CTHGQ-HIST3-2-R9",
+   "parentCode": "CTHGQ-HIST3-2",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Démocratie autoritarisme : détenteurs du pouvoir, droits/libertés, institutions"
+  },
+  {
+   "code": "CTHGQ-HIST3-2-R10",
+   "parentCode": "CTHGQ-HIST3-2",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Repères temporels : Révolution et Constitution belges, révolutions industrielles, suffrage universel, guerres mondiales, frontière linguistique, régionalisation, état fédéral"
+  },
+  {
+   "code": "CTHGQ-HIST3-2-R11",
+   "parentCode": "CTHGQ-HIST3-2",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : EXTRÉMISMES"
+  },
+  {
+   "code": "CTHGQ-HIST3-2-R12",
+   "parentCode": "CTHGQ-HIST3-2",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Moments clés privilégiés Guerres mondiales, montée des totalitarismes, génocides"
+  },
+  {
+   "code": "CTHGQ-HIST3-2-R13",
+   "parentCode": "CTHGQ-HIST3-2",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Concepts Démocratie et autoritarisme : détenteurs du pouvoir, droits/libertés, institutions"
+  },
+  {
+   "code": "CTHGQ-HIST3-2-R14",
+   "parentCode": "CTHGQ-HIST3-2",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Repères temporels : guerres mondiales, révolution soviétique, Traité de Versailles, accession au pouvoir d’Hitler, Shoah, Déclaration Universelle des Droits de l’Homme, chute du Mur de Berlin"
+  },
+  {
+   "code": "CTHGQ-HIST3-2-R15",
+   "parentCode": "CTHGQ-HIST3-2",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : MONDIALISATION DES ÉCHANGES"
+  },
+  {
+   "code": "CTHGQ-HIST3-2-R16",
+   "parentCode": "CTHGQ-HIST3-2",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Moment clé privilégié Économie et société à partir de la seconde moitié du XXe s."
+  },
+  {
+   "code": "CTHGQ-HIST3-2-R17",
+   "parentCode": "CTHGQ-HIST3-2",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Concepts Développement : nature, facteurs, processus, conséquences"
+  },
+  {
+   "code": "CTHGQ-HIST3-2-R18",
+   "parentCode": "CTHGQ-HIST3-2",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Identité culturelle : langue, habitudes de vie"
+  },
+  {
+   "code": "CTHGQ-HIST3-2-R19",
+   "parentCode": "CTHGQ-HIST3-2",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Repères temporels : GATT, décolonisation et émergence des pays en voie de développement, OMC, crise financière du XXIe s."
+  },
+  {
+   "code": "CTHGQ-HIST3-2-R20",
+   "parentCode": "CTHGQ-HIST3-2",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : UNION EUROPÉENNE"
+  },
+  {
+   "code": "CTHGQ-HIST3-2-R21",
+   "parentCode": "CTHGQ-HIST3-2",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Moments clés privilégiés Construction européenne"
+  },
+  {
+   "code": "CTHGQ-HIST3-2-R22",
+   "parentCode": "CTHGQ-HIST3-2",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Concepts Démocratie/autoritarisme : détenteurs du pouvoir, droits/libertés, institutions : Identité culturelle : langue, habitudes de vie, religion/pensée"
+  },
+  {
+   "code": "CTHGQ-HIST3-2-R23",
+   "parentCode": "CTHGQ-HIST3-2",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Repères temporels : 2e guerre mondiale, guerre froide, Traité de Rome, chute du Mur de Berlin, Traité de Maastricht, passage à l’Euro, Accords de Schengen"
+  },
+  {
+   "code": "CTHGQ-HIST3-2-R24",
+   "parentCode": "CTHGQ-HIST3-2",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Utilisation de questions-clés pour la critique de fiabilité"
+  },
+  {
+   "code": "CTHGQ-HIST3-2-R25",
+   "parentCode": "CTHGQ-HIST3-2",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Recherche d’informations sur un témoignage ou un point de vue en utilisant les NTIC"
+  },
+  {
+   "code": "CTHGQ-HIST3-3",
+   "parentCode": "CTHGQ",
+   "kind": "competence",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Histoire – UAA 3 – COMPARER"
+  },
+  {
+   "code": "CTHGQ-HIST3-3-C1",
+   "parentCode": "CTHGQ-HIST3-3",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Compétence : COMPARER"
+  },
+  {
+   "code": "CTHGQ-HIST3-3-C2",
+   "parentCode": "CTHGQ-HIST3-3",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Compétence : Accès à l’eau"
+  },
+  {
+   "code": "CTHGQ-HIST3-3-C3",
+   "parentCode": "CTHGQ-HIST3-3",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Compétence : Flux migratoires"
+  },
+  {
+   "code": "CTHGQ-HIST3-3-C4",
+   "parentCode": "CTHGQ-HIST3-3",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Compétence : Risques naturels (séismes et inondations)"
+  },
+  {
+   "code": "CTHGQ-HIST3-3-C5",
+   "parentCode": "CTHGQ-HIST3-3",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Compétence : Étalement urbain"
+  },
+  {
+   "code": "CTHGQ-HIST3-3-C6",
+   "parentCode": "CTHGQ-HIST3-3",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Compétence : Inscrire dans un contexte : Thèmes spatial des ; 3e degré thèmes"
+  },
+  {
+   "code": "CTHGQ-HIST3-3-C7",
+   "parentCode": "CTHGQ-HIST3-3",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Compétence : Bassins d’emplois"
+  },
+  {
+   "code": "CTHGQ-HIST3-3-C8",
+   "parentCode": "CTHGQ-HIST3-3",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Compétence : Aménagement du territoire"
+  },
+  {
+   "code": "CTHGQ-HIST3-3-C9",
+   "parentCode": "CTHGQ-HIST3-3",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Compétence : Dépendance énergétique"
+  },
+  {
+   "code": "CTHGQ-HIST3-3-C10",
+   "parentCode": "CTHGQ-HIST3-3",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Compétence : Déforestation"
+  },
+  {
+   "code": "CTHGQ-HIST3-3-C11",
+   "parentCode": "CTHGQ-HIST3-3",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Compétence : UAA 1"
+  },
+  {
+   "code": "CTHGQ-HIST3-3-C12",
+   "parentCode": "CTHGQ-HIST3-3",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Compétence : C1 Positionner et situer des objets dans l’espace"
+  },
+  {
+   "code": "CTHGQ-HIST3-3-C13",
+   "parentCode": "CTHGQ-HIST3-3",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Compétence : UAA 2"
+  },
+  {
+   "code": "CTHGQ-HIST3-3-C14",
+   "parentCode": "CTHGQ-HIST3-3",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Compétence : C2 Établir l’existence de liens entre des composantes du territoire"
+  },
+  {
+   "code": "CTHGQ-HIST3-3-C15",
+   "parentCode": "CTHGQ-HIST3-3",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Compétence : UAA 3"
+  },
+  {
+   "code": "CTHGQ-HIST3-3-C16",
+   "parentCode": "CTHGQ-HIST3-3",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Compétence : C3 Utiliser des représentations cartographiques pour décrire / expliquer une répartition spatiale / une dynamique spatiale"
+  },
+  {
+   "code": "CTHGQ-HIST3-3-C17",
+   "parentCode": "CTHGQ-HIST3-3",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Compétence : VUE D’ENSEMBLE DES UAA EN GÉOGRAPHIE"
+  },
+  {
+   "code": "CTHGQ-HIST3-3-A1",
+   "parentCode": "CTHGQ-HIST3-3",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Identifier dans un document inédit, mais d’un genre familier, relatif à une situation vue en classe, une ou des caractéristiques du concept abordé."
+  },
+  {
+   "code": "CTHGQ-HIST3-3-A2",
+   "parentCode": "CTHGQ-HIST3-3",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Identifier des permanences ou des changements concernant une caractéristique du concept abordé dans des documents inédits, mais d’un genre familier, relatifs à deux situations dont une non vue en classe."
+  },
+  {
+   "code": "CTHGQ-HIST3-3-A3",
+   "parentCode": "CTHGQ-HIST3-3",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Expliquer des permanences ou des changements vus en classe en utilisant des repères temporels pertinents."
+  },
+  {
+   "code": "CTHGQ-HIST3-3-T1",
+   "parentCode": "CTHGQ-HIST3-3",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Transférer : À partir d’un nombre limité de documents inédits relatifs à deux situations dont une non vue en classe : construire un support de communication (tableau, schéma, poster, court texte, représentation du temps) qui met en évidence, selon les cas, des permanences ou des changements en lien avec le concept abordé"
+  },
+  {
+   "code": "CTHGQ-HIST3-3-T2",
+   "parentCode": "CTHGQ-HIST3-3",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Transférer : À partir d’un nombre limité de documents inédits relatifs à deux situations dont une non vue en classe : énoncer un ou plusieurs facteurs explicatifs de ces permanences et de ces changements"
+  },
+  {
+   "code": "CTHGQ-HIST3-3-K1",
+   "parentCode": "CTHGQ-HIST3-3",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : Expliciter les principes organisateurs d’un support permettant de comparer des informations (tableau, schéma, poster, court texte, représentation du temps)."
+  },
+  {
+   "code": "CTHGQ-HIST3-3-K2",
+   "parentCode": "CTHGQ-HIST3-3",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : Énoncer des caractéristiques du concept abordé et les expliciter à partir d’un exemple vu en classe."
+  },
+  {
+   "code": "CTHGQ-HIST3-3-R1",
+   "parentCode": "CTHGQ-HIST3-3",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : ACQUIS SOCIAUX ET POLITIQUES"
+  },
+  {
+   "code": "CTHGQ-HIST3-3-R2",
+   "parentCode": "CTHGQ-HIST3-3",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Moments clés privilégiés Question sociale - Évolution du suffrage en Belgique"
+  },
+  {
+   "code": "CTHGQ-HIST3-3-R3",
+   "parentCode": "CTHGQ-HIST3-3",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Concepts Démocratie et autoritarisme : détenteurs du pouvoir, droits/libertés"
+  },
+  {
+   "code": "CTHGQ-HIST3-3-R4",
+   "parentCode": "CTHGQ-HIST3-3",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Stratification sociale : groupes sociaux, traits distinctifs, rapports entre les groupes"
+  },
+  {
+   "code": "CTHGQ-HIST3-3-R5",
+   "parentCode": "CTHGQ-HIST3-3",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Repères temporels : Révolution et Constitution belges, révolutions industrielles, guerres mondiales, sécurité sociale, suffrage universel (masculin, mixte)"
+  },
+  {
+   "code": "CTHGQ-HIST3-3-R6",
+   "parentCode": "CTHGQ-HIST3-3",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : BELGIQUE FÉDÉRALE"
+  },
+  {
+   "code": "CTHGQ-HIST3-3-R7",
+   "parentCode": "CTHGQ-HIST3-3",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Moment clé privilégié Belgique, de 1830 à nos jours"
+  },
+  {
+   "code": "CTHGQ-HIST3-3-R8",
+   "parentCode": "CTHGQ-HIST3-3",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Concepts Identité culturelle : langue, habitudes de vie, religion/pensée, origines"
+  },
+  {
+   "code": "CTHGQ-HIST3-3-R9",
+   "parentCode": "CTHGQ-HIST3-3",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Démocratie autoritarisme : détenteurs du pouvoir, droits/libertés, institutions"
+  },
+  {
+   "code": "CTHGQ-HIST3-3-R10",
+   "parentCode": "CTHGQ-HIST3-3",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Repères temporels : Révolution et Constitution belges, révolution industrielle, suffrage universel, guerres mondiales, frontière linguistique, régionalisation, état fédéral"
+  },
+  {
+   "code": "CTHGQ-HIST3-3-R11",
+   "parentCode": "CTHGQ-HIST3-3",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : EXTRÉMISMES"
+  },
+  {
+   "code": "CTHGQ-HIST3-3-R12",
+   "parentCode": "CTHGQ-HIST3-3",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Moments clés privilégiés Guerres mondiales, montée des totalitarismes, génocides"
+  },
+  {
+   "code": "CTHGQ-HIST3-3-R13",
+   "parentCode": "CTHGQ-HIST3-3",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Concepts Démocratie et autoritarisme : détenteurs du pouvoir, droits/libertés, institutions"
+  },
+  {
+   "code": "CTHGQ-HIST3-3-R14",
+   "parentCode": "CTHGQ-HIST3-3",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Repères temporels : guerres mondiales, révolution soviétique, Traité de Versailles, accession au pouvoir d’Hitler, Shoah, Déclaration Universelle des Droits de l’Homme, chute du Mur de Berlin"
+  },
+  {
+   "code": "CTHGQ-HIST3-3-R15",
+   "parentCode": "CTHGQ-HIST3-3",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : MONDIALISATION DES ÉCHANGES"
+  },
+  {
+   "code": "CTHGQ-HIST3-3-R16",
+   "parentCode": "CTHGQ-HIST3-3",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Moment clé privilégié Économie et société à partir de la seconde moitié du XXe s."
+  },
+  {
+   "code": "CTHGQ-HIST3-3-R17",
+   "parentCode": "CTHGQ-HIST3-3",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Concepts Développement : nature, facteurs, processus, conséquences"
+  },
+  {
+   "code": "CTHGQ-HIST3-3-R18",
+   "parentCode": "CTHGQ-HIST3-3",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Identité culturelle : langue, habitudes de vie"
+  },
+  {
+   "code": "CTHGQ-HIST3-3-R19",
+   "parentCode": "CTHGQ-HIST3-3",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Repères temporels : GATT, décolonisation et émergence des pays en voie de développement, OMC, crise financière du XXIe s."
+  },
+  {
+   "code": "CTHGQ-HIST3-3-R20",
+   "parentCode": "CTHGQ-HIST3-3",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : UNION EUROPÉENNE"
+  },
+  {
+   "code": "CTHGQ-HIST3-3-R21",
+   "parentCode": "CTHGQ-HIST3-3",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Moments clés privilégiés Construction européenne"
+  },
+  {
+   "code": "CTHGQ-HIST3-3-R22",
+   "parentCode": "CTHGQ-HIST3-3",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Concepts Démocratie/autoritarisme : détenteurs du pouvoir, droits/libertés, institutions : Identité culturelle : langue, habitudes de vie, religion/pensée"
+  },
+  {
+   "code": "CTHGQ-HIST3-3-R23",
+   "parentCode": "CTHGQ-HIST3-3",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Repères temporels : 2e guerre mondiale, guerre froide, Traité de Rome, chute du Mur de Berlin, Traité de Maastricht, passage à l’Euro, Accords de Schengen"
+  },
+  {
+   "code": "CTHGQ-HIST3-3-R24",
+   "parentCode": "CTHGQ-HIST3-3",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Identification des permanences et des changements"
+  },
+  {
+   "code": "CTHGQ-HIST3-3-R25",
+   "parentCode": "CTHGQ-HIST3-3",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Choix d’un support de communication approprié pour comparer des informations"
+  },
+  {
+   "code": "CTHGQ-HIST3-3-R26",
+   "parentCode": "CTHGQ-HIST3-3",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Production d’une représentation du temps, d’un tableau, d’un schéma, d’un poster, d’un court texte permettant de comparer des informations"
+  },
+  {
+   "code": "CTHGQ-HIST3-3-R27",
+   "parentCode": "CTHGQ-HIST3-3",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Migration"
+  },
+  {
+   "code": "CTHGQ-HIST3-3-R28",
+   "parentCode": "CTHGQ-HIST3-3",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Dépendance au : milieu"
+  },
+  {
+   "code": "CTHGQ-HIST3-3-R29",
+   "parentCode": "CTHGQ-HIST3-3",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Aménagement"
+  },
+  {
+   "code": "CTHGQ-HIST3-3-R30",
+   "parentCode": "CTHGQ-HIST3-3",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : du territoire"
+  },
+  {
+   "code": "CTHGQ-HIST3-3-R31",
+   "parentCode": "CTHGQ-HIST3-3",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Développement : D3"
+  },
+  {
+   "code": "CTHGQ-HIST3-3-R32",
+   "parentCode": "CTHGQ-HIST3-3",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Espaces : Enjeux 2e degré"
+  },
+  {
+   "code": "CTHGQ-HIST3-3-R33",
+   "parentCode": "CTHGQ-HIST3-3",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Zones climatiques méditerranéennes à : Dépendance au l'échelle locale et ; milieu régionale"
+  },
+  {
+   "code": "CTHGQ-HIST3-3-R34",
+   "parentCode": "CTHGQ-HIST3-3",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Belgique de l'échelle locale : Migration à l'échelle mondiale ; la diversité"
+  },
+  {
+   "code": "CTHGQ-HIST3-3-R35",
+   "parentCode": "CTHGQ-HIST3-3",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Monde à échelle locale, Aménagement régionale et mondiale ; du territoire"
+  },
+  {
+   "code": "CTHGQ-HIST3-3-R36",
+   "parentCode": "CTHGQ-HIST3-3",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Europe et Amérique du : Développement"
+  },
+  {
+   "code": "CTHGQ-HIST3-3-R37",
+   "parentCode": "CTHGQ-HIST3-3",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Nord à l'échelle de leur : la citoyenneté zone d'influence ; active ; en vue ; Espaces ; d’éclairer ; 3e degré ; des enjeux sociétaux"
+  },
+  {
+   "code": "CTHGQ-HIST3-3-R38",
+   "parentCode": "CTHGQ-HIST3-3",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Belgique à l’échelle locale, liés à ; l’environnement régionale, nationale et transnationale"
+  },
+  {
+   "code": "CTHGQ-HIST3-3-R39",
+   "parentCode": "CTHGQ-HIST3-3",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Dépendance au milieu"
+  },
+  {
+   "code": "CTHGQ-HIST3-3-R40",
+   "parentCode": "CTHGQ-HIST3-3",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Belgique à l’échelle locale : Aménagement du territoire"
+  },
+  {
+   "code": "CTHGQ-HIST3-3-R41",
+   "parentCode": "CTHGQ-HIST3-3",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Union Européenne à : l’insertion socio- ; Développement l’échelle régionale, professionnelle continentale et mondiale"
+  },
+  {
+   "code": "CTHGQ-HIST3-3-R42",
+   "parentCode": "CTHGQ-HIST3-3",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Zone intertropicale à l’échelle locale et régionale en lien avec la mondialisation"
+  },
+  {
+   "code": "CTHGQ-GEO2-1",
+   "parentCode": "CTHGQ",
+   "kind": "competence",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Géographie – UAA 1 – positionner et situer des objets dans l’espace"
+  },
+  {
+   "code": "CTHGQ-GEO2-1-C1",
+   "parentCode": "CTHGQ-GEO2-1",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Compétence : positionner et situer des objets dans l’espace"
+  },
+  {
+   "code": "CTHGQ-GEO2-1-A1",
+   "parentCode": "CTHGQ-GEO2-1",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : À partir de documents variés, décrire la répartition spatiale des objets étudiés pour mettre en évidence des disparités spatiales, en utilisant les repères et le vocabulaire adéquats, sous différentes formes"
+  },
+  {
+   "code": "CTHGQ-GEO2-1-A2",
+   "parentCode": "CTHGQ-GEO2-1",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : À partir de documents variés, décrire la répartition spatiale des objets étudiés à deux moments pour situer leur dynamique, en utilisant les repères et le vocabulaire adéquats, sous différentes formes."
+  },
+  {
+   "code": "CTHGQ-GEO2-1-K1",
+   "parentCode": "CTHGQ-GEO2-1",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Connaître : Énoncer les principales caractéristiques des concepts liés au thème étudié et les expliciter à partir d’exemples vus en classe."
+  },
+  {
+   "code": "CTHGQ-GEO2-1-K2",
+   "parentCode": "CTHGQ-GEO2-1",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Connaître : Énoncer des références spatiales en lien avec le thème étudié et les positionner sur une carte."
+  },
+  {
+   "code": "CTHGQ-GEO2-1-R1",
+   "parentCode": "CTHGQ-GEO2-1",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Thèmes : Accès à l’eau dans la zone climatique méditerranéenne à l'échelle locale et régionale"
+  },
+  {
+   "code": "CTHGQ-GEO2-1-R2",
+   "parentCode": "CTHGQ-GEO2-1",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Thèmes : Migrations en Belgique de l'échelle locale à l'échelle mondiale"
+  },
+  {
+   "code": "CTHGQ-GEO2-1-R3",
+   "parentCode": "CTHGQ-GEO2-1",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Thèmes : Risques naturels (séismes et inondations) dans le monde à échelle locale, régionale et mondiale"
+  },
+  {
+   "code": "CTHGQ-GEO2-1-R4",
+   "parentCode": "CTHGQ-GEO2-1",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Thèmes : Étalement urbain en Europe et en Amérique du Nord à l'échelle de leur zone d'influence"
+  },
+  {
+   "code": "CTHGQ-GEO2-1-R5",
+   "parentCode": "CTHGQ-GEO2-1",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Références spatiales"
+  },
+  {
+   "code": "CTHGQ-GEO2-1-R6",
+   "parentCode": "CTHGQ-GEO2-1",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Orientations cardinales – Équateur – Tropiques — Mers/Océans – zones climatiques intertropicale et tempérée - les continents - les limites politiques de la Belgique + Méridiens — Niveau de la mer — Latitude/longitude de la Belgique"
+  },
+  {
+   "code": "CTHGQ-GEO2-1-R7",
+   "parentCode": "CTHGQ-GEO2-1",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Zone de référence pour l’aridité : Sahara"
+  },
+  {
+   "code": "CTHGQ-GEO2-1-R8",
+   "parentCode": "CTHGQ-GEO2-1",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Pôles migratoires de référence : Europe et États-Unis Limites politiques de l’UE"
+  },
+  {
+   "code": "CTHGQ-GEO2-1-R9",
+   "parentCode": "CTHGQ-GEO2-1",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Himalaya, Rocheuses, Andes, Ceinture de feu du Pacifique, principales plaques tectoniques, réseau hydrographique, amont/aval, pente, site"
+  },
+  {
+   "code": "CTHGQ-GEO2-1-R10",
+   "parentCode": "CTHGQ-GEO2-1",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Bruxelles, Anvers, Gand, Charleroi, Liège, Namur, Moscou, Berlin, Madrid, Rome, Londres, Paris, Milan, New York, Los Angeles"
+  },
+  {
+   "code": "CTHGQ-GEO2-1-R11",
+   "parentCode": "CTHGQ-GEO2-1",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Dépendance au milieu. Caractéristiques liées à la localisation, aux besoins (densité de population), aux contraintes naturelles (ressources disponibles, nature du risque), techniques et économiques"
+  },
+  {
+   "code": "CTHGQ-GEO2-1-R12",
+   "parentCode": "CTHGQ-GEO2-1",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Migration Caractéristiques liées à l’identité, l’origine, la destination et l’importance du flux"
+  },
+  {
+   "code": "CTHGQ-GEO2-1-R13",
+   "parentCode": "CTHGQ-GEO2-1",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Aménagement du territoire Caractéristiques liées à la localisation et à la dynamique de l’espace urbain et de la dynamique démographique compte tenu de l’environnement naturel"
+  },
+  {
+   "code": "CTHGQ-GEO2-2",
+   "parentCode": "CTHGQ",
+   "kind": "competence",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Géographie – UAA 2 – établir l’existence de liens entre des composantes du territoire"
+  },
+  {
+   "code": "CTHGQ-GEO2-2-C1",
+   "parentCode": "CTHGQ-GEO2-2",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Compétence : établir l’existence de liens entre des composantes du territoire"
+  },
+  {
+   "code": "CTHGQ-GEO2-2-A1",
+   "parentCode": "CTHGQ-GEO2-2",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : À partir de documents variés, identifier des liens entre des composantes du territoire et la répartition spatiale des objets étudiés pour mettre en évidence des facteurs de localisation. Expliquer cette répartition spatiale sous différentes formes"
+  },
+  {
+   "code": "CTHGQ-GEO2-2-A2",
+   "parentCode": "CTHGQ-GEO2-2",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : À partir de documents variés, identifier des liens entre des composantes du territoire et la dynamique spatiale des objets étudiés pour mettre en évidence des facteurs de localisation. Expliquer cette dynamique spatiale sous différentes formes."
+  },
+  {
+   "code": "CTHGQ-GEO2-2-K1",
+   "parentCode": "CTHGQ-GEO2-2",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Connaître : Énoncer les principales caractéristiques des concepts liés au thème étudié et les expliciter à partir d’exemples vus en classe."
+  },
+  {
+   "code": "CTHGQ-GEO2-2-R1",
+   "parentCode": "CTHGQ-GEO2-2",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Thèmes : Accès à l’eau dans la zone climatique méditerranéenne à l'échelle locale et régionale"
+  },
+  {
+   "code": "CTHGQ-GEO2-2-R2",
+   "parentCode": "CTHGQ-GEO2-2",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Thèmes : Migrations en Belgique de l'échelle locale à l'échelle mondiale"
+  },
+  {
+   "code": "CTHGQ-GEO2-2-R3",
+   "parentCode": "CTHGQ-GEO2-2",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Thèmes : Risques naturels (séismes et inondations) dans le monde à échelle locale, régionale et mondiale"
+  },
+  {
+   "code": "CTHGQ-GEO2-2-R4",
+   "parentCode": "CTHGQ-GEO2-2",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Thèmes : Étalement urbain en Europe et en Amérique du Nord à l'échelle de leur zone d'influence"
+  },
+  {
+   "code": "CTHGQ-GEO2-2-R5",
+   "parentCode": "CTHGQ-GEO2-2",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Migration Présence de liens entre le déplacement des populations et d’une part les foyers de population, et d’autre part les conditions de vie"
+  },
+  {
+   "code": "CTHGQ-GEO2-2-R6",
+   "parentCode": "CTHGQ-GEO2-2",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Aménagement du territoire Présence de liens entre l’étalement urbain et la densité de population, le site, les conditions de vie"
+  },
+  {
+   "code": "CTHGQ-GEO2-2-R7",
+   "parentCode": "CTHGQ-GEO2-2",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Dépendance au milieu Présence de liens entre la répartition des ressources naturelles et leur consommation, entre la répartition des risques naturels et celle de la population, présence de liens entre les activités humaines et la pression exercée sur l’environnement"
+  },
+  {
+   "code": "CTHGQ-GEO2-3",
+   "parentCode": "CTHGQ",
+   "kind": "competence",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Géographie – UAA 3"
+  },
+  {
+   "code": "CTHGQ-GEO2-3-A1",
+   "parentCode": "CTHGQ-GEO2-3",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : À partir d’un portefeuille donné de représentations cartographiques familières et diversifiées, sélectionner la ou les représentations cartographiques pertinentes pour décrire une répartition/une dynamique spatiale d’objets en lien avec le thème étudié"
+  },
+  {
+   "code": "CTHGQ-GEO2-3-A2",
+   "parentCode": "CTHGQ-GEO2-3",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : À partir d’un portefeuille donné de représentations cartographiques familières et diversifiées, représenter sur une carte, à l’aide de figurés cartographiques, les zones de faible ou de forte valeur pour décrire des disparités spatiales en lien avec le thème étudié."
+  },
+  {
+   "code": "CTHGQ-GEO2-3-A3",
+   "parentCode": "CTHGQ-GEO2-3",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : À partir d’un portefeuille donné de représentations cartographiques familières, diversifiées et utilisant le même type de figuré que celui utilisé pour l’objet traité, sélectionner des représentations cartographiques qui sont en lien avec une disparité spatiale observée."
+  },
+  {
+   "code": "CTHGQ-GEO2-3-T1",
+   "parentCode": "CTHGQ-GEO2-3",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Transférer : À partir de documents variés concernant une situation nouvelle en lien avec les thèmes, sur base d’un fond de carte donné, compléter une représentation cartographique pour décrire la répartition spatiale d’objets dans l’espace."
+  },
+  {
+   "code": "CTHGQ-GEO2-3-K1",
+   "parentCode": "CTHGQ-GEO2-3",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Connaître : Identifier les principaux types de représentations cartographiques."
+  },
+  {
+   "code": "CTHGQ-GEO2-3-K2",
+   "parentCode": "CTHGQ-GEO2-3",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Connaître : Énoncer les éléments constitutifs d’une représentation cartographique."
+  },
+  {
+   "code": "CTHGQ-GEO2-3-K3",
+   "parentCode": "CTHGQ-GEO2-3",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Connaître : Énoncer les caractéristiques des figurés cartographiques."
+  },
+  {
+   "code": "CTHGQ-GEO2-3-R1",
+   "parentCode": "CTHGQ-GEO2-3",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Thèmes : Accès à l’eau dans la zone climatique méditerranéenne à l'échelle locale et régionale"
+  },
+  {
+   "code": "CTHGQ-GEO2-3-R2",
+   "parentCode": "CTHGQ-GEO2-3",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Thèmes : Migrations en Belgique de l'échelle locale à l'échelle mondiale"
+  },
+  {
+   "code": "CTHGQ-GEO2-3-R3",
+   "parentCode": "CTHGQ-GEO2-3",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Thèmes : Risques naturels (séismes et inondations) dans le monde à échelle locale, régionale et mondiale"
+  },
+  {
+   "code": "CTHGQ-GEO2-3-R4",
+   "parentCode": "CTHGQ-GEO2-3",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Thèmes : Étalement urbain en Europe et en Amérique du Nord à l'échelle de leur zone d'influence"
+  },
+  {
+   "code": "CTHGQ-GEO2-3-R5",
+   "parentCode": "CTHGQ-GEO2-3",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Références spatiales"
+  },
+  {
+   "code": "CTHGQ-GEO2-3-R6",
+   "parentCode": "CTHGQ-GEO2-3",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Voir UAA1"
+  },
+  {
+   "code": "CTHGQ-GEO2-3-R7",
+   "parentCode": "CTHGQ-GEO2-3",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Les types de représentations cartographiques : carte thématique, carte schématique, croquis cartographique, plan"
+  },
+  {
+   "code": "CTHGQ-GEO2-3-R8",
+   "parentCode": "CTHGQ-GEO2-3",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Les types de figurés : des points, des lignes, des surfaces"
+  },
+  {
+   "code": "CTHGQ-GEO2-3-R9",
+   "parentCode": "CTHGQ-GEO2-3",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : La hiérarchie des figurés : la taille, la couleur, l’intensité"
+  },
+  {
+   "code": "CTHGQ-GEO2-3-R10",
+   "parentCode": "CTHGQ-GEO2-3",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Les éléments constitutifs d’une représentation cartographique : titre, échelle, orientation, légende, sources"
+  },
+  {
+   "code": "CTHGQ-GEO2-3-R11",
+   "parentCode": "CTHGQ-GEO2-3",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Lire l’orientation d’une représentation cartographique"
+  },
+  {
+   "code": "CTHGQ-GEO2-3-R12",
+   "parentCode": "CTHGQ-GEO2-3",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Orienter une représentation cartographique"
+  },
+  {
+   "code": "CTHGQ-GEO2-3-R13",
+   "parentCode": "CTHGQ-GEO2-3",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Lire et construire une légende"
+  },
+  {
+   "code": "CTHGQ-GEO2-3-R14",
+   "parentCode": "CTHGQ-GEO2-3",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Compléter une carte muette pour positionner et situer"
+  },
+  {
+   "code": "CTHGQ-GEO2-3-R15",
+   "parentCode": "CTHGQ-GEO2-3",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Lire des cartes thématiques pour mettre en évidence des liens"
+  },
+  {
+   "code": "CTHGQ-GEO2-3-R16",
+   "parentCode": "CTHGQ-GEO2-3",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Évaluer une distance à l’aide d’une échelle cartographique pour situer et comparer"
+  },
+  {
+   "code": "CTHGQ-GEO2-3-R17",
+   "parentCode": "CTHGQ-GEO2-3",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Compléter une représentation cartographique : carte schématique, croquis cartographique"
+  },
+  {
+   "code": "CTHGQ-GEO3-1",
+   "parentCode": "CTHGQ",
+   "kind": "competence",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Géographie – UAA 1 – positionner et situer des objets dans l’espace"
+  },
+  {
+   "code": "CTHGQ-GEO3-1-C1",
+   "parentCode": "CTHGQ-GEO3-1",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Compétence : positionner et situer des objets dans l’espace"
+  },
+  {
+   "code": "CTHGQ-GEO3-1-A1",
+   "parentCode": "CTHGQ-GEO3-1",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : À partir de documents variés, décrire la répartition spatiale des objets étudiés pour mettre en évidence des disparités spatiales, en utilisant les repères et le vocabulaire adéquats, sous différentes formes"
+  },
+  {
+   "code": "CTHGQ-GEO3-1-A2",
+   "parentCode": "CTHGQ-GEO3-1",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : À partir de documents variés, décrire la répartition spatiale des objets étudiés à au moins deux moments pour situer leur dynamique, en utilisant les repères et le vocabulaire adéquats sous différentes formes"
+  },
+  {
+   "code": "CTHGQ-GEO3-1-A3",
+   "parentCode": "CTHGQ-GEO3-1",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : À partir de documents variés, comparer ces disparités spatiales ou ces dynamiques spatiales en les plaçant dans un cadre spatial plus large pour relativiser leur importance, en utilisant les repères et le vocabulaire adéquats."
+  },
+  {
+   "code": "CTHGQ-GEO3-1-T1",
+   "parentCode": "CTHGQ-GEO3-1",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Transférer : Sur base d’un dossier documentaire nouveau et pour un espace donné, décrire, sous une forme au choix, la répartition et/ou la dynamique spatiale d’objets liés à un thème pour mettre en évidence des disparités spatiales, en utilisant les repères et le vocabulaire adéquats."
+  },
+  {
+   "code": "CTHGQ-GEO3-1-K1",
+   "parentCode": "CTHGQ-GEO3-1",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : Énoncer les principales caractéristiques des concepts liés au thème étudié et les expliciter à partir d’exemples vus en classe."
+  },
+  {
+   "code": "CTHGQ-GEO3-1-K2",
+   "parentCode": "CTHGQ-GEO3-1",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : Énoncer des références spatiales en lien avec le thème étudié et les positionner sur une carte."
+  },
+  {
+   "code": "CTHGQ-GEO3-1-R1",
+   "parentCode": "CTHGQ-GEO3-1",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Thèmes : Bassins d’emplois en Belgique à l’échelle locale, régionale, nationale et transnationale"
+  },
+  {
+   "code": "CTHGQ-GEO3-1-R2",
+   "parentCode": "CTHGQ-GEO3-1",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Thèmes : Aménagement du territoire en Belgique à l’échelle locale"
+  },
+  {
+   "code": "CTHGQ-GEO3-1-R3",
+   "parentCode": "CTHGQ-GEO3-1",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Thèmes : Dépendance énergétique de l’UE à l’échelle régionale, continentale et mondiale"
+  },
+  {
+   "code": "CTHGQ-GEO3-1-R4",
+   "parentCode": "CTHGQ-GEO3-1",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Thèmes : Déforestation dans la zone intertropicale à l’échelle locale et régionale en lien avec la mondialisation"
+  },
+  {
+   "code": "CTHGQ-GEO3-1-R5",
+   "parentCode": "CTHGQ-GEO3-1",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Références spatiales"
+  },
+  {
+   "code": "CTHGQ-GEO3-1-R6",
+   "parentCode": "CTHGQ-GEO3-1",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Zone climatique intertropicale - les continents - les limites politiques de la Belgique"
+  },
+  {
+   "code": "CTHGQ-GEO3-1-R7",
+   "parentCode": "CTHGQ-GEO3-1",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Principaux bassins d’emplois en Belgique (industries et services)"
+  },
+  {
+   "code": "CTHGQ-GEO3-1-R8",
+   "parentCode": "CTHGQ-GEO3-1",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Principaux axes de communication en Belgique et en Europe"
+  },
+  {
+   "code": "CTHGQ-GEO3-1-R9",
+   "parentCode": "CTHGQ-GEO3-1",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Pays de l’UE et limites politiques de l’UE"
+  },
+  {
+   "code": "CTHGQ-GEO3-1-R10",
+   "parentCode": "CTHGQ-GEO3-1",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Fournisseurs énergétiques de référence pour l’UE : Moyen-Orient, Russie, Europe"
+  },
+  {
+   "code": "CTHGQ-GEO3-1-R11",
+   "parentCode": "CTHGQ-GEO3-1",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Forêts équatoriales amazonienne et congolaise, l’Amazone, le fleuve Congo"
+  },
+  {
+   "code": "CTHGQ-GEO3-1-R12",
+   "parentCode": "CTHGQ-GEO3-1",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Développement Caractéristiques liées à l’évolution de la répartition spatiale du niveau de vie de la population, de la valeur ajoutée des secteurs (industrie et services), aux disparités des modes de production et aux flux qu’elles génèrent"
+  },
+  {
+   "code": "CTHGQ-GEO3-1-R13",
+   "parentCode": "CTHGQ-GEO3-1",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Dépendance au milieu Caractéristiques liées à la localisation, aux besoins, aux ressources disponibles, aux modes de transport et au caractère « durable » des activités humaines"
+  },
+  {
+   "code": "CTHGQ-GEO3-1-R14",
+   "parentCode": "CTHGQ-GEO3-1",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Aménagement du territoire Caractéristiques liées à la localisation, à la dynamique spatiale et aux acteurs spatiaux"
+  },
+  {
+   "code": "CTHGQ-GEO3-2",
+   "parentCode": "CTHGQ",
+   "kind": "competence",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Géographie – UAA 2 – établir l’existence de liens entre des composantes du territoire"
+  },
+  {
+   "code": "CTHGQ-GEO3-2-C1",
+   "parentCode": "CTHGQ-GEO3-2",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Compétence : établir l’existence de liens entre des composantes du territoire"
+  },
+  {
+   "code": "CTHGQ-GEO3-2-A1",
+   "parentCode": "CTHGQ-GEO3-2",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : À partir de documents variés, Identifier des liens entre des composantes du territoire et la répartition spatiale des objets étudiés pour mettre en évidence des facteurs de localisation. Expliquer cette répartition spatiale sous différentes formes."
+  },
+  {
+   "code": "CTHGQ-GEO3-2-A2",
+   "parentCode": "CTHGQ-GEO3-2",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : À partir de documents variés, Identifier des liens entre des composantes du territoire et la dynamique spatiale des objets étudiés pour mettre en évidence des facteurs de localisation. Expliquer cette dynamique spatiale sous différentes formes."
+  },
+  {
+   "code": "CTHGQ-GEO3-2-T1",
+   "parentCode": "CTHGQ-GEO3-2",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Transférer : Sur base d’un dossier documentaire nouveau et pour un espace donné, expliquer, sous une forme au choix, la répartition ou la dynamique spatiale d’objets liés à un thème."
+  },
+  {
+   "code": "CTHGQ-GEO3-2-K1",
+   "parentCode": "CTHGQ-GEO3-2",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : Énoncer les principales caractéristiques des concepts liés au thème étudié et les expliciter à partir d’exemples vus en classe."
+  },
+  {
+   "code": "CTHGQ-GEO3-2-K2",
+   "parentCode": "CTHGQ-GEO3-2",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : Expliciter la notion de facteur de localisation et l’illustrer à travers des exemples vus en classe."
+  },
+  {
+   "code": "CTHGQ-GEO3-2-R1",
+   "parentCode": "CTHGQ-GEO3-2",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Thèmes : Bassins d’emplois en Belgique à l’échelle locale, régionale, nationale et transnationale"
+  },
+  {
+   "code": "CTHGQ-GEO3-2-R2",
+   "parentCode": "CTHGQ-GEO3-2",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Thèmes : Aménagement du territoire en Belgique à l’échelle locale"
+  },
+  {
+   "code": "CTHGQ-GEO3-2-R3",
+   "parentCode": "CTHGQ-GEO3-2",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Thèmes : Dépendance énergétique de l’UE à l’échelle régionale, continentale et mondiale"
+  },
+  {
+   "code": "CTHGQ-GEO3-2-R4",
+   "parentCode": "CTHGQ-GEO3-2",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Thèmes : Déforestation dans la zone intertropicale à l’échelle locale et régionale en lien avec la mondialisation"
+  },
+  {
+   "code": "CTHGQ-GEO3-2-R5",
+   "parentCode": "CTHGQ-GEO3-2",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Développement Présence de liens entre les bassins d’emploi et : les foyers de population"
+  },
+  {
+   "code": "CTHGQ-GEO3-2-R6",
+   "parentCode": "CTHGQ-GEO3-2",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Développement Présence de liens entre les bassins d’emploi et : les réseaux de communication"
+  },
+  {
+   "code": "CTHGQ-GEO3-2-R7",
+   "parentCode": "CTHGQ-GEO3-2",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Développement Présence de liens entre les bassins d’emploi et : les découpages administratifs"
+  },
+  {
+   "code": "CTHGQ-GEO3-2-R8",
+   "parentCode": "CTHGQ-GEO3-2",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Présence de liens entre le niveau de développement et"
+  },
+  {
+   "code": "CTHGQ-GEO3-2-R9",
+   "parentCode": "CTHGQ-GEO3-2",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : les conditions d’exploitation d’une ressource naturelle"
+  },
+  {
+   "code": "CTHGQ-GEO3-2-R10",
+   "parentCode": "CTHGQ-GEO3-2",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : la nature des produits échangés"
+  },
+  {
+   "code": "CTHGQ-GEO3-2-R11",
+   "parentCode": "CTHGQ-GEO3-2",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Aménagement du territoire Présence de liens entre le territoire concerné, l’affectation du sol et les acteurs spatiaux"
+  },
+  {
+   "code": "CTHGQ-GEO3-2-R12",
+   "parentCode": "CTHGQ-GEO3-2",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Dépendance au milieu Présence de liens entre la répartition des ressources naturelles et leur consommation, entre la nature de la ressource et le mode de transport"
+  },
+  {
+   "code": "CTHGQ-GEO3-3",
+   "parentCode": "CTHGQ",
+   "kind": "competence",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Géographie – UAA 3"
+  },
+  {
+   "code": "CTHGQ-GEO3-3-A1",
+   "parentCode": "CTHGQ-GEO3-3",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : À partir d’un portefeuille donné de représentations cartographiques familières et diversifiées, sélectionner la ou les représentations cartographiques pertinentes pour décrire une répartition/une dynamique spatiale d’objets en lien avec le thème étudié"
+  },
+  {
+   "code": "CTHGQ-GEO3-3-A2",
+   "parentCode": "CTHGQ-GEO3-3",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : À partir d’un portefeuille donné de représentations cartographiques familières et diversifiées, représenter sur une carte, à l’aide de figurés cartographiques, les zones de faible ou de forte valeur pour décrire des disparités spatiales en lien avec le thème étudié"
+  },
+  {
+   "code": "CTHGQ-GEO3-3-A3",
+   "parentCode": "CTHGQ-GEO3-3",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : À partir d’un portefeuille donné de représentations cartographiques familières et diversifiées, sélectionner des représentations cartographiques qui sont en lien avec une disparité spatiale observée."
+  },
+  {
+   "code": "CTHGQ-GEO3-3-A4",
+   "parentCode": "CTHGQ-GEO3-3",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : À partir d’une carte, identifier le respect ou non des règles de base de la cartographie pour justifier des raisons de se fier ou non à cette représentation."
+  },
+  {
+   "code": "CTHGQ-GEO3-3-T1",
+   "parentCode": "CTHGQ-GEO3-3",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Transférer : À partir de documents variés concernant une situation nouvelle en lien avec les thèmes, compléter une carte schématique/croquis cartographique pour décrire la répartition spatiale/ la dynamique spatiale/ d’objets dans l’espace."
+  },
+  {
+   "code": "CTHGQ-GEO3-3-T2",
+   "parentCode": "CTHGQ-GEO3-3",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Transférer : Au départ d’un dossier composé de quelques cartes, sélectionner les représentations fiables (qui respectent les règles de base de la cartographie) et justifier son choix."
+  },
+  {
+   "code": "CTHGQ-GEO3-3-K1",
+   "parentCode": "CTHGQ-GEO3-3",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : Énoncer les éléments constitutifs d’une représentation cartographique."
+  },
+  {
+   "code": "CTHGQ-GEO3-3-K2",
+   "parentCode": "CTHGQ-GEO3-3",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : Expliciter l’utilisation des figurés cartographiques."
+  },
+  {
+   "code": "CTHGQ-GEO3-3-R1",
+   "parentCode": "CTHGQ-GEO3-3",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Thèmes : Bassins d’emplois en Belgique à l’échelle locale, régionale, nationale et transnationale"
+  },
+  {
+   "code": "CTHGQ-GEO3-3-R2",
+   "parentCode": "CTHGQ-GEO3-3",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Thèmes : Aménagement du territoire en Belgique à l’échelle locale"
+  },
+  {
+   "code": "CTHGQ-GEO3-3-R3",
+   "parentCode": "CTHGQ-GEO3-3",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Thèmes : Dépendance énergétique de l’UE à l’échelle régionale, continentale et mondiale"
+  },
+  {
+   "code": "CTHGQ-GEO3-3-R4",
+   "parentCode": "CTHGQ-GEO3-3",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Thèmes : Déforestation dans la zone intertropicale à l’échelle locale et régionale en lien avec la mondialisation"
+  },
+  {
+   "code": "CTHGQ-GEO3-3-R5",
+   "parentCode": "CTHGQ-GEO3-3",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Références spatiales"
+  },
+  {
+   "code": "CTHGQ-GEO3-3-R6",
+   "parentCode": "CTHGQ-GEO3-3",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Voir UAA1"
+  },
+  {
+   "code": "CTHGQ-GEO3-3-R7",
+   "parentCode": "CTHGQ-GEO3-3",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Les types de représentations cartographiques : carte thématique, carte schématique, croquis cartographique, plan"
+  },
+  {
+   "code": "CTHGQ-GEO3-3-R8",
+   "parentCode": "CTHGQ-GEO3-3",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Les types de figurés : des points, des lignes, des surfaces"
+  },
+  {
+   "code": "CTHGQ-GEO3-3-R9",
+   "parentCode": "CTHGQ-GEO3-3",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : La hiérarchie des figurés : la taille, la couleur, l’intensité"
+  },
+  {
+   "code": "CTHGQ-GEO3-3-R10",
+   "parentCode": "CTHGQ-GEO3-3",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Les éléments constitutifs d’une représentation cartographique : titre, échelle, orientation, légende, sources"
+  },
+  {
+   "code": "CTHGQ-GEO3-3-R11",
+   "parentCode": "CTHGQ-GEO3-3",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Lire l’orientation d’une représentation cartographique"
+  },
+  {
+   "code": "CTHGQ-GEO3-3-R12",
+   "parentCode": "CTHGQ-GEO3-3",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Orienter une représentation cartographique"
+  },
+  {
+   "code": "CTHGQ-GEO3-3-R13",
+   "parentCode": "CTHGQ-GEO3-3",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Lire et construire une légende"
+  },
+  {
+   "code": "CTHGQ-GEO3-3-R14",
+   "parentCode": "CTHGQ-GEO3-3",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Compléter une carte muette pour positionner et situer"
+  },
+  {
+   "code": "CTHGQ-GEO3-3-R15",
+   "parentCode": "CTHGQ-GEO3-3",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Compléter une carte thématique pour mettre en évidence des liens"
+  },
+  {
+   "code": "CTHGQ-GEO3-3-R16",
+   "parentCode": "CTHGQ-GEO3-3",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Évaluer une distance à l’aide d’une échelle cartographique pour situer et comparer"
+  },
+  {
+   "code": "CTHGQ-GEO3-3-R17",
+   "parentCode": "CTHGQ-GEO3-3",
+   "kind": "attendu",
+   "subject": "Formation historique et géographique",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Compléter une représentation cartographique : carte schématique, croquis cartographique"
+  }
+ ]
+}

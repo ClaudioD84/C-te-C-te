@@ -1,0 +1,57 @@
+# Côte à Côte : guide du testeur
+
+Merci de tester Côte à Côte ! Pendant quelques semaines, votre avis va façonner l'application.
+Comptez 5 minutes pour démarrer.
+
+## 1. Ouvrir l'application
+
+- Sur votre **téléphone** ou votre **tablette**, ouvrez le lien reçu : **[LIEN]**
+- Ajoutez-la à l'écran d'accueil, elle s'ouvrira ensuite comme une application :
+  - iPhone / iPad (Safari) : bouton **Partager** ⬆️ puis **« Sur l'écran d'accueil »** ;
+  - Android (Chrome) : menu **⋮** puis **« Ajouter à l'écran d'accueil »**.
+- Créez votre compte avec votre adresse e-mail et le **code d'invitation : [CODE]**.
+  Confirmez votre adresse avec le lien reçu par e-mail.
+
+L'accès est **gratuit pendant tout le test**. Rien à payer, aucune carte demandée.
+
+## 2. Les 5 choses à essayer
+
+1. **Ajouter votre enfant** : son prénom et son année suffisent.
+2. **Photographier le journal de classe** (une photo par page, à plat, bien éclairée). Un document de plusieurs
+   pages est lu en une fois, et plusieurs documents (journal, interrogation, dictée…) partent ensemble : choisissez
+   plusieurs photos dans la galerie, ou « Ajouter un autre document ». Vérifiez la liste des devoirs proposée pour
+   chaque document, corrigez si besoin, puis validez.
+3. **Calculer le planning de la semaine** : choisissez quand travailler (régulièrement dès aujourd'hui, ou juste
+   avant l'échéance), le temps par jour et la période (1 ou 2 semaines). Retouchez chaque jour si besoin (déplacer,
+   raccourcir, retirer, ajouter une tâche), puis publiez. Dans « Priorités et échéances », une tâche peut devenir
+   « Prioritaire » ou « Peut attendre », une tâche sans date en reçoit une, et « Retirer… » enlève une tâche
+   déjà faite ou en trop. Sur une fiche, chaque question, exercice ou carte peut être retiré.
+4. **Confier la mission du jour à votre enfant** : « Lancer la mission du jour ». Il voit sa mission, un minuteur
+   et ses cartes. Chaque leçon se travaille en trois étapes : il revoit la fiche et les clés pour réussir, répond
+   à toutes les questions, puis vérifie ses réponses. Pour revenir à votre espace, il faut votre code parent.
+5. Selon l'âge : **photographier une dictée corrigée** (les mots fautifs s'ajoutent à sa dictée de la semaine),
+   **une liste de vocabulaire** (elle devient des cartes de révision) ou **une interrogation corrigée** (les
+   notions ratées deviennent des exercices de remédiation, guidés puis en autonomie ; la note n'est jamais
+   relevée). Ces options sont dans **« Plus d'outils »**.
+
+Pas de journal sous la main ? « Plus d'outils » > **Ajouter un devoir**.
+
+## 3. Nous dire ce que vous en pensez
+
+Touchez **💬** en haut de n'importe quel écran : quelques mots suffisent (« je n'ai pas compris… »,
+« mon enfant a adoré… », « ça ne marche pas quand… »). Nous savons depuis quel écran vous écrivez.
+Les plantages nous sont signalés automatiquement.
+
+Nous vous recontacterons une ou deux fois pendant le test pour un court échange.
+
+## 4. Vos données
+
+- Seul le **prénom** de votre enfant est demandé, jamais son nom de famille.
+- Les photos sont lues par notre service d'intelligence artificielle puis **supprimées** (24 heures au plus).
+  Elles peuvent montrer des noms écrits sur la page : cadrez sur les devoirs si vous préférez.
+- Données hébergées dans l'Union européenne. Vous pouvez tout exporter ou supprimer depuis **Mon compte**.
+- Détails : politique de confidentialité **[LIEN]**.
+
+## Un souci ?
+
+Écrivez-nous avec 💬 ou à **[ADRESSE E-MAIL]**.

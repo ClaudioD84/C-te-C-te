@@ -1,0 +1,6609 @@
+{
+ "source": {
+  "title": "Compétences minimales en mathématiques (section de qualification)",
+  "url": "https://www.enseignement.be/fileadmin/portail_age/uploads/parcours_apprentissage/secondaire_ordinaire/Organisation/Contenus_apprentissages_Secondaire/competences_terminales/FORM_COM_2et3_degres_et_7e_PROF_et_techni_de_qualif/2014_CM_Mathematiq_qualif.pdf",
+  "version": "2014"
+ },
+ "level": "secondaire",
+ "tracks": [
+  "technique",
+  "professionnel",
+  "specialise"
+ ],
+ "entries": [
+  {
+   "code": "CTMAQ",
+   "parentCode": null,
+   "kind": "domaine",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4",
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Compétences minimales en mathématiques (section de qualification)"
+  },
+  {
+   "code": "CTMAQ-MB22-1",
+   "parentCode": "CTMAQ",
+   "kind": "competence",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Mathématiques de base – Tableaux, graphiques, formules"
+  },
+  {
+   "code": "CTMAQ-MB22-1-A1",
+   "parentCode": "CTMAQ-MB22-1",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Calculer un élément d'un tableau de proportionnalité"
+  },
+  {
+   "code": "CTMAQ-MB22-1-A2",
+   "parentCode": "CTMAQ-MB22-1",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Construire un graphique à partir d'un tableau de nombres ou d’une formule"
+  },
+  {
+   "code": "CTMAQ-MB22-1-A3",
+   "parentCode": "CTMAQ-MB22-1",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Construire un tableau de nombres à partir d'un graphique ou d’une formule"
+  },
+  {
+   "code": "CTMAQ-MB22-1-A4",
+   "parentCode": "CTMAQ-MB22-1",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Établir la formule qui relie deux variables à partir d’un tableau de nombres"
+  },
+  {
+   "code": "CTMAQ-MB22-1-A5",
+   "parentCode": "CTMAQ-MB22-1",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Résoudre une équation du premier degré à une inconnue"
+  },
+  {
+   "code": "CTMAQ-MB22-1-T1",
+   "parentCode": "CTMAQ-MB22-1",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Transférer : Associer graphiques, tableaux de nombres, formules"
+  },
+  {
+   "code": "CTMAQ-MB22-1-T2",
+   "parentCode": "CTMAQ-MB22-1",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Transférer : Choisir et utiliser les unités de mesure pertinentes dans une situation contextualisé"
+  },
+  {
+   "code": "CTMAQ-MB22-1-T3",
+   "parentCode": "CTMAQ-MB22-1",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Transférer : Résoudre un problème qui mobilise les quatre opérations de base, les puissances à exposant 2 ou 3 et les puissances de 10 à exposant naturel"
+  },
+  {
+   "code": "CTMAQ-MB22-1-T4",
+   "parentCode": "CTMAQ-MB22-1",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Transférer : Choisir l’outil approprié (graphique, tableau de nombres, formule) pour répondre à des questions inhérentes à une situation"
+  },
+  {
+   "code": "CTMAQ-MB22-1-K1",
+   "parentCode": "CTMAQ-MB22-1",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Connaître : Identifier les unités de mesure pertinentes"
+  },
+  {
+   "code": "CTMAQ-MB22-1-K2",
+   "parentCode": "CTMAQ-MB22-1",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Connaître : Justifier la proportionnalité d’une relation à partir de tableaux de nombres, de graphiques ou de formules issus de contextes variés"
+  },
+  {
+   "code": "CTMAQ-MB22-1-K3",
+   "parentCode": "CTMAQ-MB22-1",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Connaître : Justifier la proportionnalité des accroissements à partir de tableaux de nombres, de graphiques ou de formules issus de contextes variés"
+  },
+  {
+   "code": "CTMAQ-MB22-1-R1",
+   "parentCode": "CTMAQ-MB22-1",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Priorités des opérations"
+  },
+  {
+   "code": "CTMAQ-MB22-1-R2",
+   "parentCode": "CTMAQ-MB22-1",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Unités de mesure (longueur, aire, volume, capacité, masse, temps, vitesse)"
+  },
+  {
+   "code": "CTMAQ-MB22-1-R3",
+   "parentCode": "CTMAQ-MB22-1",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Puissance de 10 à exposant naturel"
+  },
+  {
+   "code": "CTMAQ-MB22-1-R4",
+   "parentCode": "CTMAQ-MB22-1",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Système d’axes"
+  },
+  {
+   "code": "CTMAQ-MB22-1-R5",
+   "parentCode": "CTMAQ-MB22-1",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Proportionnalité entre deux grandeurs"
+  },
+  {
+   "code": "CTMAQ-MB22-1-R6",
+   "parentCode": "CTMAQ-MB22-1",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Proportionnalité des accroissements"
+  },
+  {
+   "code": "CTMAQ-MB22-1-R7",
+   "parentCode": "CTMAQ-MB22-1",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Équation du premier degré à une inconnue du type ax b c"
+  },
+  {
+   "code": "CTMAQ-MB22-2",
+   "parentCode": "CTMAQ",
+   "kind": "competence",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Mathématiques de base – Géométrie"
+  },
+  {
+   "code": "CTMAQ-MB22-2-A1",
+   "parentCode": "CTMAQ-MB22-2",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Construire une figure ou représenter un solide par un usage raisonné d’instruments tels que règle, équerre, compas, rapporteur ou d’un logiciel"
+  },
+  {
+   "code": "CTMAQ-MB22-2-A2",
+   "parentCode": "CTMAQ-MB22-2",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Construire une figure plane en s’appuyant sur ses propriétés, ses régularités"
+  },
+  {
+   "code": "CTMAQ-MB22-2-A3",
+   "parentCode": "CTMAQ-MB22-2",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Calculer le périmètre, l’aire d’une figure plane"
+  },
+  {
+   "code": "CTMAQ-MB22-2-A4",
+   "parentCode": "CTMAQ-MB22-2",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Calculer une aire et le volume d’un solide"
+  },
+  {
+   "code": "CTMAQ-MB22-2-A5",
+   "parentCode": "CTMAQ-MB22-2",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Calculer une vraie grandeur à partir d’un schéma à l’échelle"
+  },
+  {
+   "code": "CTMAQ-MB22-2-A6",
+   "parentCode": "CTMAQ-MB22-2",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Calculer une longueur en utilisant le théorème de Pythagore"
+  },
+  {
+   "code": "CTMAQ-MB22-2-A7",
+   "parentCode": "CTMAQ-MB22-2",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Vérifier si un triangle est rectangle en utilisant la réciproque du théorème de Pythagore"
+  },
+  {
+   "code": "CTMAQ-MB22-2-T1",
+   "parentCode": "CTMAQ-MB22-2",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Transférer : Choisir et utiliser les unités de mesure pertinentes dans une situation contextualisée"
+  },
+  {
+   "code": "CTMAQ-MB22-2-T2",
+   "parentCode": "CTMAQ-MB22-2",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Transférer : Exploiter des propriétés élémentaires des familles de figures planes dans une situation contextualisée"
+  },
+  {
+   "code": "CTMAQ-MB22-2-T3",
+   "parentCode": "CTMAQ-MB22-2",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Transférer : Associer différentes représentations d’un même objet"
+  },
+  {
+   "code": "CTMAQ-MB22-2-T4",
+   "parentCode": "CTMAQ-MB22-2",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Transférer : Interpréter des données, des coordonnées ou la légende d’un plan ou d’une carte."
+  },
+  {
+   "code": "CTMAQ-MB22-2-T5",
+   "parentCode": "CTMAQ-MB22-2",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Transférer : Choisir une échelle et réaliser un plan (agrandissement ou réduction)"
+  },
+  {
+   "code": "CTMAQ-MB22-2-K1",
+   "parentCode": "CTMAQ-MB22-2",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Connaître : Identifier les unités de mesure pertinentes"
+  },
+  {
+   "code": "CTMAQ-MB22-2-K2",
+   "parentCode": "CTMAQ-MB22-2",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Connaître : Relever une régularité dans une figure plane, dans un motif à caractère répétitif"
+  },
+  {
+   "code": "CTMAQ-MB22-2-K3",
+   "parentCode": "CTMAQ-MB22-2",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Connaître : Reconnaitre et décrire des caractéristiques d’une figure plane en utilisant le vocabulaire propre à la géométrie"
+  },
+  {
+   "code": "CTMAQ-MB22-2-K4",
+   "parentCode": "CTMAQ-MB22-2",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Connaître : Reconnaitre et décrire des caractéristiques d’un solide en utilisant le vocabulaire propre à la géométrie"
+  },
+  {
+   "code": "CTMAQ-MB22-2-K5",
+   "parentCode": "CTMAQ-MB22-2",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Connaître : Associer un solide à sa représentation dans le plan et/ou à son développement"
+  },
+  {
+   "code": "CTMAQ-MB22-2-K6",
+   "parentCode": "CTMAQ-MB22-2",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Connaître : Connaitre le théorème de Pythagore et sa réciproque"
+  },
+  {
+   "code": "CTMAQ-MB22-2-K7",
+   "parentCode": "CTMAQ-MB22-2",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Connaître : Identifier les étapes de la construction d'une figure"
+  },
+  {
+   "code": "CTMAQ-MB22-2-R1",
+   "parentCode": "CTMAQ-MB22-2",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Unités de mesure (longueur, aire, volume, capacité, angle)"
+  },
+  {
+   "code": "CTMAQ-MB22-2-R2",
+   "parentCode": "CTMAQ-MB22-2",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Figures planes"
+  },
+  {
+   "code": "CTMAQ-MB22-2-R3",
+   "parentCode": "CTMAQ-MB22-2",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Triangle"
+  },
+  {
+   "code": "CTMAQ-MB22-2-R4",
+   "parentCode": "CTMAQ-MB22-2",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Quadrilatère"
+  },
+  {
+   "code": "CTMAQ-MB22-2-R5",
+   "parentCode": "CTMAQ-MB22-2",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Cercle"
+  },
+  {
+   "code": "CTMAQ-MB22-2-R6",
+   "parentCode": "CTMAQ-MB22-2",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Polygone régulier"
+  },
+  {
+   "code": "CTMAQ-MB22-2-R7",
+   "parentCode": "CTMAQ-MB22-2",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Symétrie centrale, symétrie orthogonale, translation, rotation dans le plan"
+  },
+  {
+   "code": "CTMAQ-MB22-2-R8",
+   "parentCode": "CTMAQ-MB22-2",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Parallélépipède rectangle et cylindre,"
+  },
+  {
+   "code": "CTMAQ-MB22-2-R9",
+   "parentCode": "CTMAQ-MB22-2",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Perspective cavalière"
+  },
+  {
+   "code": "CTMAQ-MB22-2-R10",
+   "parentCode": "CTMAQ-MB22-2",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Développement de solides"
+  },
+  {
+   "code": "CTMAQ-MB22-2-R11",
+   "parentCode": "CTMAQ-MB22-2",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Théorème de Pythagore et sa réciproque"
+  },
+  {
+   "code": "CTMAQ-MB22-3",
+   "parentCode": "CTMAQ",
+   "kind": "competence",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Mathématiques de base – Statistique"
+  },
+  {
+   "code": "CTMAQ-MB22-3-A1",
+   "parentCode": "CTMAQ-MB22-3",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Calculer des pourcentages"
+  },
+  {
+   "code": "CTMAQ-MB22-3-A2",
+   "parentCode": "CTMAQ-MB22-3",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Comparer des rapports en termes des pourcentages"
+  },
+  {
+   "code": "CTMAQ-MB22-3-A3",
+   "parentCode": "CTMAQ-MB22-3",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Calculer des pourcentages successifs"
+  },
+  {
+   "code": "CTMAQ-MB22-3-A4",
+   "parentCode": "CTMAQ-MB22-3",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Calculer des valeurs caractéristiques d'un ensemble de données statistiques"
+  },
+  {
+   "code": "CTMAQ-MB22-3-A5",
+   "parentCode": "CTMAQ-MB22-3",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Construire un tableau à partir de données brutes ou recensées"
+  },
+  {
+   "code": "CTMAQ-MB22-3-A6",
+   "parentCode": "CTMAQ-MB22-3",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Construire une représentation graphique liée à un ensemble de données statistiques"
+  },
+  {
+   "code": "CTMAQ-MB22-3-T1",
+   "parentCode": "CTMAQ-MB22-3",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Transférer : Interpréter en contexte les valeurs caractéristiques d’un ensemble de données statistiques"
+  },
+  {
+   "code": "CTMAQ-MB22-3-T2",
+   "parentCode": "CTMAQ-MB22-3",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Transférer : Extraire des informations d’une représentation graphique de données statistiques"
+  },
+  {
+   "code": "CTMAQ-MB22-3-K1",
+   "parentCode": "CTMAQ-MB22-3",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Connaître : Expliquer en situation le vocabulaire caractérisant un ensemble de données statistiques"
+  },
+  {
+   "code": "CTMAQ-MB22-3-K2",
+   "parentCode": "CTMAQ-MB22-3",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Connaître : Lire les informations fournies par une représentation graphique liée à un ensemble de données statistiques"
+  },
+  {
+   "code": "CTMAQ-MB22-3-R1",
+   "parentCode": "CTMAQ-MB22-3",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Pourcentages"
+  },
+  {
+   "code": "CTMAQ-MB22-3-R2",
+   "parentCode": "CTMAQ-MB22-3",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Effectif, fréquence"
+  },
+  {
+   "code": "CTMAQ-MB22-3-R3",
+   "parentCode": "CTMAQ-MB22-3",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Valeurs centrales mode, médiane, moyenne"
+  },
+  {
+   "code": "CTMAQ-MB22-3-R4",
+   "parentCode": "CTMAQ-MB22-3",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Valeurs extrêmes, étendue"
+  },
+  {
+   "code": "CTMAQ-MB22-3-R5",
+   "parentCode": "CTMAQ-MB22-3",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Polygone des effectifs"
+  },
+  {
+   "code": "CTMAQ-MB22-3-R6",
+   "parentCode": "CTMAQ-MB22-3",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Diagramme circulaire"
+  },
+  {
+   "code": "CTMAQ-MB22-3-R7",
+   "parentCode": "CTMAQ-MB22-3",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Diagramme en bâtonnets"
+  },
+  {
+   "code": "CTMAQ-MB22-3-R8",
+   "parentCode": "CTMAQ-MB22-3",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Remarque: on n’envisagera pas les effectifs et fréquences cumulées"
+  },
+  {
+   "code": "CTMAQ-MB32-1",
+   "parentCode": "CTMAQ",
+   "kind": "competence",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Mathématiques de base – Tableaux, graphiques, formules"
+  },
+  {
+   "code": "CTMAQ-MB32-1-A1",
+   "parentCode": "CTMAQ-MB32-1",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Calculer un élément d'un tableau de proportionnalité inverse"
+  },
+  {
+   "code": "CTMAQ-MB32-1-A2",
+   "parentCode": "CTMAQ-MB32-1",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Construire un graphique à partir d'un tableau de nombres ou d’une formule"
+  },
+  {
+   "code": "CTMAQ-MB32-1-A3",
+   "parentCode": "CTMAQ-MB32-1",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Construire un tableau de nombres à partir d'un graphique ou d’une formule"
+  },
+  {
+   "code": "CTMAQ-MB32-1-A4",
+   "parentCode": "CTMAQ-MB32-1",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Calculer et comparer intérêt simple et intérêt composé"
+  },
+  {
+   "code": "CTMAQ-MB32-1-A5",
+   "parentCode": "CTMAQ-MB32-1",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Déterminer graphiquement et algébriquement l’intersection de deux fonctions du premier degré et/ou constantes"
+  },
+  {
+   "code": "CTMAQ-MB32-1-T1",
+   "parentCode": "CTMAQ-MB32-1",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Transférer : Associer graphiques, tableaux de nombres, formules"
+  },
+  {
+   "code": "CTMAQ-MB32-1-T2",
+   "parentCode": "CTMAQ-MB32-1",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Transférer : Choisir et utiliser les unités de mesure pertinentes dans une situation contextualisée"
+  },
+  {
+   "code": "CTMAQ-MB32-1-T3",
+   "parentCode": "CTMAQ-MB32-1",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Transférer : Résoudre un problème en mobilisant les puissances de 10 à exposant entier"
+  },
+  {
+   "code": "CTMAQ-MB32-1-T4",
+   "parentCode": "CTMAQ-MB32-1",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Transférer : Répondre à des questions inhérentes à une situation en se servant de l’outil approprié (graphique, tableau de nombres, formule)"
+  },
+  {
+   "code": "CTMAQ-MB32-1-K1",
+   "parentCode": "CTMAQ-MB32-1",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : Identifier les unités de mesure pertinentes"
+  },
+  {
+   "code": "CTMAQ-MB32-1-K2",
+   "parentCode": "CTMAQ-MB32-1",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : Justifier la proportionnalité inverse d’une relation à partir de tableaux de nombres, de graphiques ou de formules issus de contextes variés"
+  },
+  {
+   "code": "CTMAQ-MB32-1-K3",
+   "parentCode": "CTMAQ-MB32-1",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : Identifier une croissance exponentielle à partir de graphiques ou de formules issus de contextes variés"
+  },
+  {
+   "code": "CTMAQ-MB32-1-K4",
+   "parentCode": "CTMAQ-MB32-1",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : Expliquer en situation le vocabulaire lié au calcul d’intérêt"
+  },
+  {
+   "code": "CTMAQ-MB32-1-R1",
+   "parentCode": "CTMAQ-MB32-1",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : MB22 UAA1"
+  },
+  {
+   "code": "CTMAQ-MB32-1-R2",
+   "parentCode": "CTMAQ-MB32-1",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Unités de mesure spécifiques à l’OBG"
+  },
+  {
+   "code": "CTMAQ-MB32-1-R3",
+   "parentCode": "CTMAQ-MB32-1",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Fonction constante x : p"
+  },
+  {
+   "code": "CTMAQ-MB32-1-R4",
+   "parentCode": "CTMAQ-MB32-1",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Fonction du premier degré : x : mx p (m 0)"
+  },
+  {
+   "code": "CTMAQ-MB32-1-R5",
+   "parentCode": "CTMAQ-MB32-1",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Intersection de deux fonctions du premier degré et/ou constantes"
+  },
+  {
+   "code": "CTMAQ-MB32-1-R6",
+   "parentCode": "CTMAQ-MB32-1",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Puissance à exposant entier"
+  },
+  {
+   "code": "CTMAQ-MB32-1-R7",
+   "parentCode": "CTMAQ-MB32-1",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Proportionnalité inverse"
+  },
+  {
+   "code": "CTMAQ-MB32-1-R8",
+   "parentCode": "CTMAQ-MB32-1",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Croissance exponentielle"
+  },
+  {
+   "code": "CTMAQ-MB32-1-R9",
+   "parentCode": "CTMAQ-MB32-1",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Intérêt simple et intérêt composé"
+  },
+  {
+   "code": "CTMAQ-MB32-2",
+   "parentCode": "CTMAQ",
+   "kind": "competence",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Mathématiques de base – Géométrie"
+  },
+  {
+   "code": "CTMAQ-MB32-2-A1",
+   "parentCode": "CTMAQ-MB32-2",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Représenter un solide en utilisant des instruments ou des logiciels"
+  },
+  {
+   "code": "CTMAQ-MB32-2-A2",
+   "parentCode": "CTMAQ-MB32-2",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Calculer une aire et le volume d’un solide"
+  },
+  {
+   "code": "CTMAQ-MB32-2-T1",
+   "parentCode": "CTMAQ-MB32-2",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Transférer : Choisir et utiliser les unités de mesure pertinentes dans une situation contextualisée"
+  },
+  {
+   "code": "CTMAQ-MB32-2-T2",
+   "parentCode": "CTMAQ-MB32-2",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Transférer : Interpréter, décoder une représentation plane d’un solide"
+  },
+  {
+   "code": "CTMAQ-MB32-2-T3",
+   "parentCode": "CTMAQ-MB32-2",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Transférer : Associer différentes représentations d’un même objet"
+  },
+  {
+   "code": "CTMAQ-MB32-2-T4",
+   "parentCode": "CTMAQ-MB32-2",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Transférer : Exploiter des propriétés élémentaires de solides dans une situation contextualisée"
+  },
+  {
+   "code": "CTMAQ-MB32-2-K1",
+   "parentCode": "CTMAQ-MB32-2",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : Identifier les unités de mesure pertinentes"
+  },
+  {
+   "code": "CTMAQ-MB32-2-K2",
+   "parentCode": "CTMAQ-MB32-2",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : Reconnaitre et décrire des caractéristiques de solides en utilisant le vocabulaire propre à la géométrie"
+  },
+  {
+   "code": "CTMAQ-MB32-2-K3",
+   "parentCode": "CTMAQ-MB32-2",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : Associer un solide à sa représentation dans le plan et/ou à son développement"
+  },
+  {
+   "code": "CTMAQ-MB32-2-R1",
+   "parentCode": "CTMAQ-MB32-2",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : MB22 UAA2"
+  },
+  {
+   "code": "CTMAQ-MB32-2-R2",
+   "parentCode": "CTMAQ-MB32-2",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Unités de mesure spécifiques à l’OBG"
+  },
+  {
+   "code": "CTMAQ-MB32-2-R3",
+   "parentCode": "CTMAQ-MB32-2",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Cône, sphère, prisme, pyramide"
+  },
+  {
+   "code": "CTMAQ-MB32-2-R4",
+   "parentCode": "CTMAQ-MB32-2",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Perspective cavalière"
+  },
+  {
+   "code": "CTMAQ-MB32-2-R5",
+   "parentCode": "CTMAQ-MB32-2",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Développement"
+  },
+  {
+   "code": "CTMAQ-MB32-2-R6",
+   "parentCode": "CTMAQ-MB32-2",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Vues coordonnées (parallélépipède rectangle, cylindre)"
+  },
+  {
+   "code": "CTMAQ-MB32-3",
+   "parentCode": "CTMAQ",
+   "kind": "competence",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Mathématiques de base – Statistique et probabilité"
+  },
+  {
+   "code": "CTMAQ-MB32-3-A1",
+   "parentCode": "CTMAQ-MB32-3",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Conjecturer une probabilité à partir d’une simulation"
+  },
+  {
+   "code": "CTMAQ-MB32-3-A2",
+   "parentCode": "CTMAQ-MB32-3",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Calculer une probabilité dans une situation d’équiprobabilité"
+  },
+  {
+   "code": "CTMAQ-MB32-3-T1",
+   "parentCode": "CTMAQ-MB32-3",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Transférer : Interpréter en contexte les valeurs caractéristiques d’un ensemble de données statistiques"
+  },
+  {
+   "code": "CTMAQ-MB32-3-T2",
+   "parentCode": "CTMAQ-MB32-3",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Transférer : Critiquer une représentation graphique liée à un ensemble de données statistiques"
+  },
+  {
+   "code": "CTMAQ-MB32-3-T3",
+   "parentCode": "CTMAQ-MB32-3",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Transférer : Commenter l'intérêt et les limites d'une étude statistique"
+  },
+  {
+   "code": "CTMAQ-MB32-3-T4",
+   "parentCode": "CTMAQ-MB32-3",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Transférer : Résoudre un problème à caractère probabiliste"
+  },
+  {
+   "code": "CTMAQ-MB32-3-K1",
+   "parentCode": "CTMAQ-MB32-3",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : Expliquer en situation le vocabulaire caractérisant un ensemble de données statistiques"
+  },
+  {
+   "code": "CTMAQ-MB32-3-K2",
+   "parentCode": "CTMAQ-MB32-3",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : Lire les informations fournies par une représentation graphique liée à un ensemble de données statistiques"
+  },
+  {
+   "code": "CTMAQ-MB32-3-K3",
+   "parentCode": "CTMAQ-MB32-3",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : Interpréter une probabilité en termes de résultats d’une statistique"
+  },
+  {
+   "code": "CTMAQ-MB32-3-R1",
+   "parentCode": "CTMAQ-MB32-3",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : MB22 UAA3"
+  },
+  {
+   "code": "CTMAQ-MB32-3-R2",
+   "parentCode": "CTMAQ-MB32-3",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Échantillon, population"
+  },
+  {
+   "code": "CTMAQ-MB32-3-R3",
+   "parentCode": "CTMAQ-MB32-3",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Approche empirique de la probabilité à partir de fréquences statistiques"
+  },
+  {
+   "code": "CTMAQ-MB32-3-R4",
+   "parentCode": "CTMAQ-MB32-3",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Catégorie d’épreuves, événement"
+  },
+  {
+   "code": "CTMAQ-MB32-3-R5",
+   "parentCode": "CTMAQ-MB32-3",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Événements équiprobables"
+  },
+  {
+   "code": "CTMAQ-MB32-3-R6",
+   "parentCode": "CTMAQ-MB32-3",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Probabilité d’un événement"
+  },
+  {
+   "code": "CTMAQ-MB32-3-R7",
+   "parentCode": "CTMAQ-MB32-3",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Outils d’appropriation et de calcul de probabilité (p. ex. arbre, diagramme de Venn, simulation, tableau …)"
+  },
+  {
+   "code": "CTMAQ-MQ22-1",
+   "parentCode": "CTMAQ",
+   "kind": "competence",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Mathématiques actives dans la formation qualifiante – Le premier degré"
+  },
+  {
+   "code": "CTMAQ-MQ22-1-A1",
+   "parentCode": "CTMAQ-MQ22-1",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Construire un graphique à partir d'un tableau de nombres ou d’une formule"
+  },
+  {
+   "code": "CTMAQ-MQ22-1-A2",
+   "parentCode": "CTMAQ-MQ22-1",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Construire un tableau de nombres à partir d'un graphique ou d’une formule"
+  },
+  {
+   "code": "CTMAQ-MQ22-1-A3",
+   "parentCode": "CTMAQ-MQ22-1",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Etablir la formule qui relie deux variables à partir d’un tableau de nombres"
+  },
+  {
+   "code": "CTMAQ-MQ22-1-A4",
+   "parentCode": "CTMAQ-MQ22-1",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Etablir des correspondances entre des graphiques, des tableaux de nombres, des formules"
+  },
+  {
+   "code": "CTMAQ-MQ22-1-A5",
+   "parentCode": "CTMAQ-MQ22-1",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Rechercher des caractéristiques d'une fonction du premier degré"
+  },
+  {
+   "code": "CTMAQ-MQ22-1-A6",
+   "parentCode": "CTMAQ-MQ22-1",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Résoudre une inéquation du premier degré à une inconnue"
+  },
+  {
+   "code": "CTMAQ-MQ22-1-A7",
+   "parentCode": "CTMAQ-MQ22-1",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Déterminer algébriquement et graphiquement l’intersection de deux fonctions du premier degré et/ou constantes"
+  },
+  {
+   "code": "CTMAQ-MQ22-1-T1",
+   "parentCode": "CTMAQ-MQ22-1",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Transférer : Se servir de l’expression appropriée (tableau de nombres, graphique, formule) pour répondre à des questions inhérentes à une situation."
+  },
+  {
+   "code": "CTMAQ-MQ22-1-K1",
+   "parentCode": "CTMAQ-MQ22-1",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Connaître : Reconnaitre différents types de fonctions à partir de tableaux de nombres, de graphiques ou de formules issus de contextes variés"
+  },
+  {
+   "code": "CTMAQ-MQ22-1-R1",
+   "parentCode": "CTMAQ-MQ22-1",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Fonction constante x : p"
+  },
+  {
+   "code": "CTMAQ-MQ22-1-R2",
+   "parentCode": "CTMAQ-MQ22-1",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Fonction du premier degré : x : mx p m (0)"
+  },
+  {
+   "code": "CTMAQ-MQ22-1-R3",
+   "parentCode": "CTMAQ-MQ22-1",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Représentation graphique"
+  },
+  {
+   "code": "CTMAQ-MQ22-1-R4",
+   "parentCode": "CTMAQ-MQ22-1",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Rôle des paramètres m et p"
+  },
+  {
+   "code": "CTMAQ-MQ22-1-R5",
+   "parentCode": "CTMAQ-MQ22-1",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Caractéristiques"
+  },
+  {
+   "code": "CTMAQ-MQ22-1-R6",
+   "parentCode": "CTMAQ-MQ22-1",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Zéro"
+  },
+  {
+   "code": "CTMAQ-MQ22-1-R7",
+   "parentCode": "CTMAQ-MQ22-1",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Signe"
+  },
+  {
+   "code": "CTMAQ-MQ22-1-R8",
+   "parentCode": "CTMAQ-MQ22-1",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Croissance/décroissance"
+  },
+  {
+   "code": "CTMAQ-MQ22-1-R9",
+   "parentCode": "CTMAQ-MQ22-1",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Représentation graphique des fonctions de"
+  },
+  {
+   "code": "CTMAQ-MQ22-1-R10",
+   "parentCode": "CTMAQ-MQ22-1",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : référence: x : et x"
+  },
+  {
+   "code": "CTMAQ-MQ22-1-R11",
+   "parentCode": "CTMAQ-MQ22-1",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : référence: x : x x"
+  },
+  {
+   "code": "CTMAQ-MQ22-1-R12",
+   "parentCode": "CTMAQ-MQ22-1",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Équation et inéquation du premier degré à une inconnue"
+  },
+  {
+   "code": "CTMAQ-MQ22-1-R13",
+   "parentCode": "CTMAQ-MQ22-1",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Intersection de deux fonctions du premier degré et/ou constantes"
+  },
+  {
+   "code": "CTMAQ-MQ22-2",
+   "parentCode": "CTMAQ",
+   "kind": "competence",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Mathématiques actives dans la formation qualifiante – Géométrie"
+  },
+  {
+   "code": "CTMAQ-MQ22-2-A1",
+   "parentCode": "CTMAQ-MQ22-2",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Construire une figure ou représenter un solide par un usage raisonné d’instruments tels que règle, équerre, compas, rapporteur ou d’un logiciel"
+  },
+  {
+   "code": "CTMAQ-MQ22-2-A2",
+   "parentCode": "CTMAQ-MQ22-2",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Calculer le périmètre, l’aire d’une figure plane"
+  },
+  {
+   "code": "CTMAQ-MQ22-2-A3",
+   "parentCode": "CTMAQ-MQ22-2",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Calculer une aire et le volume d’un solide"
+  },
+  {
+   "code": "CTMAQ-MQ22-2-A4",
+   "parentCode": "CTMAQ-MQ22-2",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Déterminer l’échelle d’un plan"
+  },
+  {
+   "code": "CTMAQ-MQ22-2-A5",
+   "parentCode": "CTMAQ-MQ22-2",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Calculer une vraie grandeur à partir d’un schéma à l’échelle."
+  },
+  {
+   "code": "CTMAQ-MQ22-2-A6",
+   "parentCode": "CTMAQ-MQ22-2",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Calculer une longueur en utilisant le théorème de Pythagore"
+  },
+  {
+   "code": "CTMAQ-MQ22-2-A7",
+   "parentCode": "CTMAQ-MQ22-2",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Vérifier si un triangle est rectangle en utilisant la réciproque du théorème de Pythagore"
+  },
+  {
+   "code": "CTMAQ-MQ22-2-T1",
+   "parentCode": "CTMAQ-MQ22-2",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Transférer : Résoudre un problème de périmètre, d’aire ou de volume"
+  },
+  {
+   "code": "CTMAQ-MQ22-2-T2",
+   "parentCode": "CTMAQ-MQ22-2",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Transférer : Exploiter des caractéristiques des familles de figures planes dans une situation contextualisée"
+  },
+  {
+   "code": "CTMAQ-MQ22-2-T3",
+   "parentCode": "CTMAQ-MQ22-2",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Transférer : Exploiter des caractéristiques de solides dans une situation contextualisée"
+  },
+  {
+   "code": "CTMAQ-MQ22-2-T4",
+   "parentCode": "CTMAQ-MQ22-2",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Transférer : Interpréter des données, des coordonnées ou la légende d’un plan ou d’une carte"
+  },
+  {
+   "code": "CTMAQ-MQ22-2-T5",
+   "parentCode": "CTMAQ-MQ22-2",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Transférer : Choisir une échelle et réaliser un plan"
+  },
+  {
+   "code": "CTMAQ-MQ22-2-K1",
+   "parentCode": "CTMAQ-MQ22-2",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Connaître : Reconnaitre et décrire des caractéristiques de figures planes en utilisant le vocabulaire propre à la géométrie"
+  },
+  {
+   "code": "CTMAQ-MQ22-2-K2",
+   "parentCode": "CTMAQ-MQ22-2",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Connaître : Reconnaitre et décrire des caractéristiques de solides en utilisant le vocabulaire propre à la géométrie"
+  },
+  {
+   "code": "CTMAQ-MQ22-2-K3",
+   "parentCode": "CTMAQ-MQ22-2",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Connaître : Connaitre le théorème de Pythagore et sa réciproque"
+  },
+  {
+   "code": "CTMAQ-MQ22-2-K4",
+   "parentCode": "CTMAQ-MQ22-2",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Connaître : Identifier les étapes de la construction d'une figure"
+  },
+  {
+   "code": "CTMAQ-MQ22-2-R1",
+   "parentCode": "CTMAQ-MQ22-2",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Figures planes"
+  },
+  {
+   "code": "CTMAQ-MQ22-2-R2",
+   "parentCode": "CTMAQ-MQ22-2",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Triangle"
+  },
+  {
+   "code": "CTMAQ-MQ22-2-R3",
+   "parentCode": "CTMAQ-MQ22-2",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Quadrilatère"
+  },
+  {
+   "code": "CTMAQ-MQ22-2-R4",
+   "parentCode": "CTMAQ-MQ22-2",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Cercle"
+  },
+  {
+   "code": "CTMAQ-MQ22-2-R5",
+   "parentCode": "CTMAQ-MQ22-2",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Polygone régulier"
+  },
+  {
+   "code": "CTMAQ-MQ22-2-R6",
+   "parentCode": "CTMAQ-MQ22-2",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Solides"
+  },
+  {
+   "code": "CTMAQ-MQ22-2-R7",
+   "parentCode": "CTMAQ-MQ22-2",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Parallélépipède rectangle"
+  },
+  {
+   "code": "CTMAQ-MQ22-2-R8",
+   "parentCode": "CTMAQ-MQ22-2",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Cylindre"
+  },
+  {
+   "code": "CTMAQ-MQ22-2-R9",
+   "parentCode": "CTMAQ-MQ22-2",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Cône"
+  },
+  {
+   "code": "CTMAQ-MQ22-2-R10",
+   "parentCode": "CTMAQ-MQ22-2",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Sphère, Prisme droit"
+  },
+  {
+   "code": "CTMAQ-MQ22-2-R11",
+   "parentCode": "CTMAQ-MQ22-2",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Pyramide"
+  },
+  {
+   "code": "CTMAQ-MQ22-2-R12",
+   "parentCode": "CTMAQ-MQ22-2",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Théorème de Pythagore et sa réciproque"
+  },
+  {
+   "code": "CTMAQ-MQ22-3",
+   "parentCode": "CTMAQ",
+   "kind": "competence",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Mathématiques actives dans la formation qualifiante – Statistique à une variable"
+  },
+  {
+   "code": "CTMAQ-MQ22-3-A1",
+   "parentCode": "CTMAQ-MQ22-3",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Calculer des valeurs caractéristiques d'un ensemble de données statistiques"
+  },
+  {
+   "code": "CTMAQ-MQ22-3-A2",
+   "parentCode": "CTMAQ-MQ22-3",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Construire un tableau à partir de données brutes ou recensées"
+  },
+  {
+   "code": "CTMAQ-MQ22-3-A3",
+   "parentCode": "CTMAQ-MQ22-3",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Construire une représentation graphique liée à un ensemble de données statistiques"
+  },
+  {
+   "code": "CTMAQ-MQ22-3-A4",
+   "parentCode": "CTMAQ-MQ22-3",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Extraire des informations d’une représentation graphique de données statistiques"
+  },
+  {
+   "code": "CTMAQ-MQ22-3-T1",
+   "parentCode": "CTMAQ-MQ22-3",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Transférer : Interpréter en contexte les valeurs caractéristiques d’un ensemble de données statistiques"
+  },
+  {
+   "code": "CTMAQ-MQ22-3-T2",
+   "parentCode": "CTMAQ-MQ22-3",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Transférer : Commenter des représentations graphiques liées à un ensemble de données statistiques"
+  },
+  {
+   "code": "CTMAQ-MQ22-3-T3",
+   "parentCode": "CTMAQ-MQ22-3",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Transférer : Commenter l'intérêt et les limites d'une étude statistique"
+  },
+  {
+   "code": "CTMAQ-MQ22-3-T4",
+   "parentCode": "CTMAQ-MQ22-3",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Transférer : Traiter des données statistiques en utilisant l’outil informatique (tableur)"
+  },
+  {
+   "code": "CTMAQ-MQ22-3-K1",
+   "parentCode": "CTMAQ-MQ22-3",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Connaître : Expliquer en situation le vocabulaire caractérisant un ensemble de données statistiques"
+  },
+  {
+   "code": "CTMAQ-MQ22-3-K2",
+   "parentCode": "CTMAQ-MQ22-3",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Connaître : Lire les informations fournies par une représentation graphique liée à un ensemble de données statistiques"
+  },
+  {
+   "code": "CTMAQ-MQ22-3-K3",
+   "parentCode": "CTMAQ-MQ22-3",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Connaître : Identifier les différents types de variables statistiques et décrire les informations graphiques et numériques qui peuvent y être associées"
+  },
+  {
+   "code": "CTMAQ-MQ22-3-R1",
+   "parentCode": "CTMAQ-MQ22-3",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Variables statistiques"
+  },
+  {
+   "code": "CTMAQ-MQ22-3-R2",
+   "parentCode": "CTMAQ-MQ22-3",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Effectif, fréquence, effectif et fréquence cumulés"
+  },
+  {
+   "code": "CTMAQ-MQ22-3-R3",
+   "parentCode": "CTMAQ-MQ22-3",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Mode"
+  },
+  {
+   "code": "CTMAQ-MQ22-3-R4",
+   "parentCode": "CTMAQ-MQ22-3",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Médiane"
+  },
+  {
+   "code": "CTMAQ-MQ22-3-R5",
+   "parentCode": "CTMAQ-MQ22-3",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Moyenne"
+  },
+  {
+   "code": "CTMAQ-MQ22-3-R6",
+   "parentCode": "CTMAQ-MQ22-3",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Valeurs extrêmes - Étendue"
+  },
+  {
+   "code": "CTMAQ-MQ22-3-R7",
+   "parentCode": "CTMAQ-MQ22-3",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Polygone des effectifs"
+  },
+  {
+   "code": "CTMAQ-MQ22-3-R8",
+   "parentCode": "CTMAQ-MQ22-3",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Diagramme circulaire"
+  },
+  {
+   "code": "CTMAQ-MQ22-3-R9",
+   "parentCode": "CTMAQ-MQ22-3",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Diagramme en bâtonnets"
+  },
+  {
+   "code": "CTMAQ-MQ22-3-R10",
+   "parentCode": "CTMAQ-MQ22-3",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Remarque: on se limitera à des variables statistiques discrètes qui ne nécessitent pas un regroupement en classes"
+  },
+  {
+   "code": "CTMAQ-MQ24-1",
+   "parentCode": "CTMAQ",
+   "kind": "competence",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Mathématiques liées aux spécificités des options – Approche graphique d’une fonction"
+  },
+  {
+   "code": "CTMAQ-MQ24-1-T1",
+   "parentCode": "CTMAQ-MQ24-1",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Transférer : Répondre à une question dans un contexte qui nécessite la recherche d'éléments caractéristiques du graphique d'une fonction"
+  },
+  {
+   "code": "CTMAQ-MQ24-1-T2",
+   "parentCode": "CTMAQ-MQ24-1",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Transférer : Répondre à une question dans un contexte qui nécessite la comparaison des graphiques de fonctions"
+  },
+  {
+   "code": "CTMAQ-MQ24-1-T3",
+   "parentCode": "CTMAQ-MQ24-1",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Transférer : Esquisser le graphique d’une fonction qui répond à des conditions données"
+  },
+  {
+   "code": "CTMAQ-MQ24-1-K1",
+   "parentCode": "CTMAQ-MQ24-1",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Connaître : Verbaliser la dépendance entre les variables, à partir d’un graphique contextualisé"
+  },
+  {
+   "code": "CTMAQ-MQ24-1-K2",
+   "parentCode": "CTMAQ-MQ24-1",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Connaître : Reconnaitre parmi un ensemble de courbes celles qui représentent une fonction"
+  },
+  {
+   "code": "CTMAQ-MQ24-2",
+   "parentCode": "CTMAQ",
+   "kind": "competence",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Mathématiques liées aux spécificités des options – Le premier degré"
+  },
+  {
+   "code": "CTMAQ-MQ24-2-A1",
+   "parentCode": "CTMAQ-MQ24-2",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Construire un graphique à partir d'un tableau de nombres ou d’une formule"
+  },
+  {
+   "code": "CTMAQ-MQ24-2-A2",
+   "parentCode": "CTMAQ-MQ24-2",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Construire un tableau de nombres à partir d'un graphique ou d’une formule"
+  },
+  {
+   "code": "CTMAQ-MQ24-2-A3",
+   "parentCode": "CTMAQ-MQ24-2",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Calculer les paramètres m et p à partir d’un tableau de nombres"
+  },
+  {
+   "code": "CTMAQ-MQ24-2-A4",
+   "parentCode": "CTMAQ-MQ24-2",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Etablir la formule qui relie deux variables à partir d’un tableau de nombres"
+  },
+  {
+   "code": "CTMAQ-MQ24-2-A5",
+   "parentCode": "CTMAQ-MQ24-2",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Associer des graphiques, des tableaux de nombres, des formules"
+  },
+  {
+   "code": "CTMAQ-MQ24-2-A6",
+   "parentCode": "CTMAQ-MQ24-2",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Rechercher des caractéristiques d'une fonction du premier degré"
+  },
+  {
+   "code": "CTMAQ-MQ24-2-A7",
+   "parentCode": "CTMAQ-MQ24-2",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Résoudre une inéquation du premier degré à une inconnue"
+  },
+  {
+   "code": "CTMAQ-MQ24-2-A8",
+   "parentCode": "CTMAQ-MQ24-2",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Déterminer algébriquement et graphiquement l’intersection des graphiques de deux fonctions du premier degré et/ou constantes"
+  },
+  {
+   "code": "CTMAQ-MQ24-2-T1",
+   "parentCode": "CTMAQ-MQ24-2",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Transférer : MQ24 UAA1"
+  },
+  {
+   "code": "CTMAQ-MQ24-2-T2",
+   "parentCode": "CTMAQ-MQ24-2",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Transférer : Résoudre un problème en utilisant un tableau de nombres, un graphique et/ou une formule"
+  },
+  {
+   "code": "CTMAQ-MQ24-2-T3",
+   "parentCode": "CTMAQ-MQ24-2",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Transférer : Résoudre un problème qui nécessite l’utilisation de fonctions, d’équations ou d’inéquations du premier degré"
+  },
+  {
+   "code": "CTMAQ-MQ24-2-K1",
+   "parentCode": "CTMAQ-MQ24-2",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Connaître : Reconnaitre différents types de fonctions à partir de tableaux de nombres de graphiques ou de formules issus de contextes variés"
+  },
+  {
+   "code": "CTMAQ-MQ24-2-K2",
+   "parentCode": "CTMAQ-MQ24-2",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Connaître : Identifier les paramètres m et p sur un graphique ou dans une formule"
+  },
+  {
+   "code": "CTMAQ-MQ24-2-R1",
+   "parentCode": "CTMAQ-MQ24-2",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Fonction constante x : p"
+  },
+  {
+   "code": "CTMAQ-MQ24-2-R2",
+   "parentCode": "CTMAQ-MQ24-2",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Fonction du premier degré : x : mx p m (0)"
+  },
+  {
+   "code": "CTMAQ-MQ24-2-R3",
+   "parentCode": "CTMAQ-MQ24-2",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Représentation graphique"
+  },
+  {
+   "code": "CTMAQ-MQ24-2-R4",
+   "parentCode": "CTMAQ-MQ24-2",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Rôle des paramètres m et p"
+  },
+  {
+   "code": "CTMAQ-MQ24-2-R5",
+   "parentCode": "CTMAQ-MQ24-2",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Caractéristiques (Zéro – signe – croissance/décroissance)"
+  },
+  {
+   "code": "CTMAQ-MQ24-2-R6",
+   "parentCode": "CTMAQ-MQ24-2",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Représentation graphique de la fonction : a ; x : (a 0) x"
+  },
+  {
+   "code": "CTMAQ-MQ24-2-R7",
+   "parentCode": "CTMAQ-MQ24-2",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Équation et inéquation du premier degré à une inconnue"
+  },
+  {
+   "code": "CTMAQ-MQ24-2-R8",
+   "parentCode": "CTMAQ-MQ24-2",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Intersection de deux fonctions du premier degré et/ou constantes"
+  },
+  {
+   "code": "CTMAQ-MQ24-2-R9",
+   "parentCode": "CTMAQ-MQ24-2",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Nuage de points, ajustement linéaire"
+  },
+  {
+   "code": "CTMAQ-MQ24-3",
+   "parentCode": "CTMAQ",
+   "kind": "competence",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Mathématiques liées aux spécificités des options – Le deuxième degré"
+  },
+  {
+   "code": "CTMAQ-MQ24-3-A1",
+   "parentCode": "CTMAQ-MQ24-3",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Construire un graphique à partir d'un tableau de nombres ou d’une formule"
+  },
+  {
+   "code": "CTMAQ-MQ24-3-A2",
+   "parentCode": "CTMAQ-MQ24-3",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Associer l’expression analytique d’une fonction du deuxième degré à son graphique et réciproquement"
+  },
+  {
+   "code": "CTMAQ-MQ24-3-A3",
+   "parentCode": "CTMAQ-MQ24-3",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Rechercher des caractéristiques d'une fonction du deuxième degré"
+  },
+  {
+   "code": "CTMAQ-MQ24-3-A4",
+   "parentCode": "CTMAQ-MQ24-3",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Rechercher des caractéristiques d’une parabole d’axe vertical"
+  },
+  {
+   "code": "CTMAQ-MQ24-3-A5",
+   "parentCode": "CTMAQ-MQ24-3",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Résoudre une équation du deuxième degré"
+  },
+  {
+   "code": "CTMAQ-MQ24-3-A6",
+   "parentCode": "CTMAQ-MQ24-3",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Établir le tableau de signe d’une fonction du second degré"
+  },
+  {
+   "code": "CTMAQ-MQ24-3-A7",
+   "parentCode": "CTMAQ-MQ24-3",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Résoudre une inéquation du deuxième degré"
+  },
+  {
+   "code": "CTMAQ-MQ24-3-T1",
+   "parentCode": "CTMAQ-MQ24-3",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Transférer : Modéliser et résoudre des problèmes issus de situations diverses"
+  },
+  {
+   "code": "CTMAQ-MQ24-3-K1",
+   "parentCode": "CTMAQ-MQ24-3",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Connaître : Lier les diverses écritures de la fonction du deuxième degré avec certaines caractéristiques de la fonction ou de son graphique"
+  },
+  {
+   "code": "CTMAQ-MQ24-3-K2",
+   "parentCode": "CTMAQ-MQ24-3",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Connaître : Interpréter graphiquement les solutions d’une équation ou d’une inéquation du deuxième degré x : x et x"
+  },
+  {
+   "code": "CTMAQ-MQ24-3-K3",
+   "parentCode": "CTMAQ-MQ24-3",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Connaître : Interpréter graphiquement les solutions d’une équation ou d’une inéquation du deuxième degré x : x"
+  },
+  {
+   "code": "CTMAQ-MQ24-3-K4",
+   "parentCode": "CTMAQ-MQ24-3",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Connaître : Expliquer le lien entre les fonctions"
+  },
+  {
+   "code": "CTMAQ-MQ24-3-R1",
+   "parentCode": "CTMAQ-MQ24-3",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : MQ24 UAA1"
+  },
+  {
+   "code": "CTMAQ-MQ24-3-R2",
+   "parentCode": "CTMAQ-MQ24-3",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Fonction du deuxième degré : x : ax bx c x"
+  },
+  {
+   "code": "CTMAQ-MQ24-3-R3",
+   "parentCode": "CTMAQ-MQ24-3",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Fonction du deuxième degré : x : a x ("
+  },
+  {
+   "code": "CTMAQ-MQ24-3-R4",
+   "parentCode": "CTMAQ-MQ24-3",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Fonction du deuxième degré : x : ) x"
+  },
+  {
+   "code": "CTMAQ-MQ24-3-R5",
+   "parentCode": "CTMAQ-MQ24-3",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Fonction du deuxième degré : x : x)(x"
+  },
+  {
+   "code": "CTMAQ-MQ24-3-R6",
+   "parentCode": "CTMAQ-MQ24-3",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Fonction du deuxième degré : x : x)"
+  },
+  {
+   "code": "CTMAQ-MQ24-3-R7",
+   "parentCode": "CTMAQ-MQ24-3",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Rôle des paramètres (, a c,,, x, x)"
+  },
+  {
+   "code": "CTMAQ-MQ24-3-R8",
+   "parentCode": "CTMAQ-MQ24-3",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Caractéristiques de la fonction du deuxième degré : Zéro ; Signe ; Croissance/décroissance ; Extrémum"
+  },
+  {
+   "code": "CTMAQ-MQ24-3-R9",
+   "parentCode": "CTMAQ-MQ24-3",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Caractéristiques d’une parabole d’axe vertical"
+  },
+  {
+   "code": "CTMAQ-MQ24-3-R10",
+   "parentCode": "CTMAQ-MQ24-3",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Sommet : Axe de symétrie ; Concavité"
+  },
+  {
+   "code": "CTMAQ-MQ24-3-R11",
+   "parentCode": "CTMAQ-MQ24-3",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Equations et inéquations du second degré"
+  },
+  {
+   "code": "CTMAQ-MQ24-3-R12",
+   "parentCode": "CTMAQ-MQ24-3",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Représentation graphique de la fonction : x : x"
+  },
+  {
+   "code": "CTMAQ-MQ24-4",
+   "parentCode": "CTMAQ",
+   "kind": "competence",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Mathématiques liées aux spécificités des options – Géométrie"
+  },
+  {
+   "code": "CTMAQ-MQ24-4-A1",
+   "parentCode": "CTMAQ-MQ24-4",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Construire une figure ou représenter un solide par un usage raisonné d’instruments tels que règle, équerre, compas, rapporteur ou d’un logiciel"
+  },
+  {
+   "code": "CTMAQ-MQ24-4-A2",
+   "parentCode": "CTMAQ-MQ24-4",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Calculer le périmètre et l’aire d’une figure plane"
+  },
+  {
+   "code": "CTMAQ-MQ24-4-A3",
+   "parentCode": "CTMAQ-MQ24-4",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Calculer une aire et le volume d’un solide"
+  },
+  {
+   "code": "CTMAQ-MQ24-4-A4",
+   "parentCode": "CTMAQ-MQ24-4",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Déterminer l’échelle d’un plan"
+  },
+  {
+   "code": "CTMAQ-MQ24-4-A5",
+   "parentCode": "CTMAQ-MQ24-4",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Calculer une vraie grandeur à partir d’un schéma à l’échelle"
+  },
+  {
+   "code": "CTMAQ-MQ24-4-A6",
+   "parentCode": "CTMAQ-MQ24-4",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Calculer une longueur ou l’amplitude d’un angle dans un triangle rectangle"
+  },
+  {
+   "code": "CTMAQ-MQ24-4-A7",
+   "parentCode": "CTMAQ-MQ24-4",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Vérifier si un triangle est rectangle en utilisant la réciproque du théorème de Pythagore"
+  },
+  {
+   "code": "CTMAQ-MQ24-4-T1",
+   "parentCode": "CTMAQ-MQ24-4",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Transférer : Résoudre un problème de distance, de périmètre, d’aire ou de volume"
+  },
+  {
+   "code": "CTMAQ-MQ24-4-T2",
+   "parentCode": "CTMAQ-MQ24-4",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Transférer : Calculer une longueur dans un solide en utilisant le théorème de Pythagore"
+  },
+  {
+   "code": "CTMAQ-MQ24-4-T3",
+   "parentCode": "CTMAQ-MQ24-4",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Transférer : Exploiter des caractéristiques des familles de figures planes dans une situation contextualisée"
+  },
+  {
+   "code": "CTMAQ-MQ24-4-T4",
+   "parentCode": "CTMAQ-MQ24-4",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Transférer : Exploiter des caractéristiques de solides dans une situation contextualisée"
+  },
+  {
+   "code": "CTMAQ-MQ24-4-T5",
+   "parentCode": "CTMAQ-MQ24-4",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Transférer : Interpréter des données, des coordonnées ou des légendes d’un plan ou d’une carte."
+  },
+  {
+   "code": "CTMAQ-MQ24-4-T6",
+   "parentCode": "CTMAQ-MQ24-4",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Transférer : Choisir une échelle et réaliser un plan."
+  },
+  {
+   "code": "CTMAQ-MQ24-4-K1",
+   "parentCode": "CTMAQ-MQ24-4",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Connaître : Reconnaitre et décrire des caractéristiques de figures planes en utilisant le vocabulaire propre à la géométrie"
+  },
+  {
+   "code": "CTMAQ-MQ24-4-K2",
+   "parentCode": "CTMAQ-MQ24-4",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Connaître : Reconnaitre et décrire des caractéristiques de solides en utilisant le vocabulaire propre à la géométrie"
+  },
+  {
+   "code": "CTMAQ-MQ24-4-K3",
+   "parentCode": "CTMAQ-MQ24-4",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Connaître : Connaitre le théorème de Pythagore et sa réciproque"
+  },
+  {
+   "code": "CTMAQ-MQ24-4-K4",
+   "parentCode": "CTMAQ-MQ24-4",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Connaître : Ecrire les liens entre côtés et angles dans un triangle rectangle"
+  },
+  {
+   "code": "CTMAQ-MQ24-4-K5",
+   "parentCode": "CTMAQ-MQ24-4",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Connaître : Identifier les étapes de la construction d'une figure"
+  },
+  {
+   "code": "CTMAQ-MQ24-4-R1",
+   "parentCode": "CTMAQ-MQ24-4",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Figures planes"
+  },
+  {
+   "code": "CTMAQ-MQ24-4-R2",
+   "parentCode": "CTMAQ-MQ24-4",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Triangle"
+  },
+  {
+   "code": "CTMAQ-MQ24-4-R3",
+   "parentCode": "CTMAQ-MQ24-4",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Quadrilatère"
+  },
+  {
+   "code": "CTMAQ-MQ24-4-R4",
+   "parentCode": "CTMAQ-MQ24-4",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Cercle"
+  },
+  {
+   "code": "CTMAQ-MQ24-4-R5",
+   "parentCode": "CTMAQ-MQ24-4",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Polygone régulier"
+  },
+  {
+   "code": "CTMAQ-MQ24-4-R6",
+   "parentCode": "CTMAQ-MQ24-4",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Solides"
+  },
+  {
+   "code": "CTMAQ-MQ24-4-R7",
+   "parentCode": "CTMAQ-MQ24-4",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Parallélépipède rectangle"
+  },
+  {
+   "code": "CTMAQ-MQ24-4-R8",
+   "parentCode": "CTMAQ-MQ24-4",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Cylindre"
+  },
+  {
+   "code": "CTMAQ-MQ24-4-R9",
+   "parentCode": "CTMAQ-MQ24-4",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Cône"
+  },
+  {
+   "code": "CTMAQ-MQ24-4-R10",
+   "parentCode": "CTMAQ-MQ24-4",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Sphère, Prisme droit"
+  },
+  {
+   "code": "CTMAQ-MQ24-4-R11",
+   "parentCode": "CTMAQ-MQ24-4",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Pyramide"
+  },
+  {
+   "code": "CTMAQ-MQ24-4-R12",
+   "parentCode": "CTMAQ-MQ24-4",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Théorème de Pythagore et sa réciproque"
+  },
+  {
+   "code": "CTMAQ-MQ24-4-R13",
+   "parentCode": "CTMAQ-MQ24-4",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Sinus, cosinus et tangente d’un angle dans le triangle rectangle"
+  },
+  {
+   "code": "CTMAQ-MQ24-5",
+   "parentCode": "CTMAQ",
+   "kind": "competence",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Mathématiques liées aux spécificités des options – Statistique à une variable"
+  },
+  {
+   "code": "CTMAQ-MQ24-5-A1",
+   "parentCode": "CTMAQ-MQ24-5",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Calculer des valeurs caractéristiques d'un ensemble de données statistiques"
+  },
+  {
+   "code": "CTMAQ-MQ24-5-A2",
+   "parentCode": "CTMAQ-MQ24-5",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Construire un tableau à partir de données brutes ou recensées."
+  },
+  {
+   "code": "CTMAQ-MQ24-5-A3",
+   "parentCode": "CTMAQ-MQ24-5",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Construire des représentations graphiques liées à un ensemble de données statistiques"
+  },
+  {
+   "code": "CTMAQ-MQ24-5-A4",
+   "parentCode": "CTMAQ-MQ24-5",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Appliquer : Extraire des informations d’une représentation graphique de données statistiques"
+  },
+  {
+   "code": "CTMAQ-MQ24-5-T1",
+   "parentCode": "CTMAQ-MQ24-5",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Transférer : Interpréter en contexte les valeurs caractéristiques d’un ensemble de données statistiques"
+  },
+  {
+   "code": "CTMAQ-MQ24-5-T2",
+   "parentCode": "CTMAQ-MQ24-5",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Transférer : Commenter des représentations graphiques liées à un ensemble de données statistiques"
+  },
+  {
+   "code": "CTMAQ-MQ24-5-T3",
+   "parentCode": "CTMAQ-MQ24-5",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Transférer : Commenter l'intérêt et les limites d'une étude statistique de vulgarisation Série statistique répartie en classe"
+  },
+  {
+   "code": "CTMAQ-MQ24-5-T4",
+   "parentCode": "CTMAQ-MQ24-5",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Transférer : Traiter des données statistiques en utilisant l’outil informatique (tableur)"
+  },
+  {
+   "code": "CTMAQ-MQ24-5-K1",
+   "parentCode": "CTMAQ-MQ24-5",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Connaître : Expliquer en situation le vocabulaire caractérisant un ensemble de données statistiques"
+  },
+  {
+   "code": "CTMAQ-MQ24-5-K2",
+   "parentCode": "CTMAQ-MQ24-5",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Connaître : Lire les informations fournies par une représentation graphique liée à un ensemble de données statistiques"
+  },
+  {
+   "code": "CTMAQ-MQ24-5-K3",
+   "parentCode": "CTMAQ-MQ24-5",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Connaître : Identifier les différents types de variables statistiques et décrire les informations graphiques et numériques qui peuvent y être associées"
+  },
+  {
+   "code": "CTMAQ-MQ24-5-R1",
+   "parentCode": "CTMAQ-MQ24-5",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Echantillon, population"
+  },
+  {
+   "code": "CTMAQ-MQ24-5-R2",
+   "parentCode": "CTMAQ-MQ24-5",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Variables statistiques"
+  },
+  {
+   "code": "CTMAQ-MQ24-5-R3",
+   "parentCode": "CTMAQ-MQ24-5",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Effectif, fréquence, effectif et fréquence cumulés"
+  },
+  {
+   "code": "CTMAQ-MQ24-5-R4",
+   "parentCode": "CTMAQ-MQ24-5",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Valeurs centrales"
+  },
+  {
+   "code": "CTMAQ-MQ24-5-R5",
+   "parentCode": "CTMAQ-MQ24-5",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Mode"
+  },
+  {
+   "code": "CTMAQ-MQ24-5-R6",
+   "parentCode": "CTMAQ-MQ24-5",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Moyenne"
+  },
+  {
+   "code": "CTMAQ-MQ24-5-R7",
+   "parentCode": "CTMAQ-MQ24-5",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Médiane"
+  },
+  {
+   "code": "CTMAQ-MQ24-5-R8",
+   "parentCode": "CTMAQ-MQ24-5",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Valeurs extrêmes - Étendue"
+  },
+  {
+   "code": "CTMAQ-MQ24-5-R9",
+   "parentCode": "CTMAQ-MQ24-5",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Quartile"
+  },
+  {
+   "code": "CTMAQ-MQ24-5-R10",
+   "parentCode": "CTMAQ-MQ24-5",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Indices de dispersion"
+  },
+  {
+   "code": "CTMAQ-MQ24-5-R11",
+   "parentCode": "CTMAQ-MQ24-5",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Écart-type"
+  },
+  {
+   "code": "CTMAQ-MQ24-5-R12",
+   "parentCode": "CTMAQ-MQ24-5",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Intervalle interquartile"
+  },
+  {
+   "code": "CTMAQ-MQ24-5-R13",
+   "parentCode": "CTMAQ-MQ24-5",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Représentations graphiques"
+  },
+  {
+   "code": "CTMAQ-MQ24-5-R14",
+   "parentCode": "CTMAQ-MQ24-5",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Polygone des effectifs"
+  },
+  {
+   "code": "CTMAQ-MQ24-5-R15",
+   "parentCode": "CTMAQ-MQ24-5",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Diagramme circulaire"
+  },
+  {
+   "code": "CTMAQ-MQ24-5-R16",
+   "parentCode": "CTMAQ-MQ24-5",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Diagramme en bâtonnets"
+  },
+  {
+   "code": "CTMAQ-MQ24-5-R17",
+   "parentCode": "CTMAQ-MQ24-5",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Histogramme"
+  },
+  {
+   "code": "CTMAQ-MQ24-5-R18",
+   "parentCode": "CTMAQ-MQ24-5",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S3",
+    "S4"
+   ],
+   "label": "Ressource : Boite à moustaches"
+  },
+  {
+   "code": "CTMAQ-MQ32-1",
+   "parentCode": "CTMAQ",
+   "kind": "competence",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Mathématiques actives dans la formation qualifiante – Approche graphique d’une fonction"
+  },
+  {
+   "code": "CTMAQ-MQ32-1-T1",
+   "parentCode": "CTMAQ-MQ32-1",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Transférer : Répondre à une question dans un contexte qui nécessite la recherche d'éléments caractéristiques du graphique d'une fonction"
+  },
+  {
+   "code": "CTMAQ-MQ32-1-T2",
+   "parentCode": "CTMAQ-MQ32-1",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Transférer : Répondre à une question dans un contexte qui nécessite la comparaison des graphiques de fonctions"
+  },
+  {
+   "code": "CTMAQ-MQ32-1-K1",
+   "parentCode": "CTMAQ-MQ32-1",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : Identifier l’image d’un réel par une fonction"
+  },
+  {
+   "code": "CTMAQ-MQ32-1-K2",
+   "parentCode": "CTMAQ-MQ32-1",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : Identifier l’antécédent d’un réel par une fonction"
+  },
+  {
+   "code": "CTMAQ-MQ32-1-R1",
+   "parentCode": "CTMAQ-MQ32-1",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : MQ22 UAA1"
+  },
+  {
+   "code": "CTMAQ-MQ32-1-R2",
+   "parentCode": "CTMAQ-MQ32-1",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Variable dépendante, variable indépendante"
+  },
+  {
+   "code": "CTMAQ-MQ32-1-R3",
+   "parentCode": "CTMAQ-MQ32-1",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Intervalle"
+  },
+  {
+   "code": "CTMAQ-MQ32-1-R4",
+   "parentCode": "CTMAQ-MQ32-1",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Éléments caractéristiques d’une fonction exclusivement à partir de son graphique"
+  },
+  {
+   "code": "CTMAQ-MQ32-1-R5",
+   "parentCode": "CTMAQ-MQ32-1",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Domaine et ensemble-image"
+  },
+  {
+   "code": "CTMAQ-MQ32-1-R6",
+   "parentCode": "CTMAQ-MQ32-1",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Image d'un réel"
+  },
+  {
+   "code": "CTMAQ-MQ32-1-R7",
+   "parentCode": "CTMAQ-MQ32-1",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Zéro(s)"
+  },
+  {
+   "code": "CTMAQ-MQ32-1-R8",
+   "parentCode": "CTMAQ-MQ32-1",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Signe"
+  },
+  {
+   "code": "CTMAQ-MQ32-1-R9",
+   "parentCode": "CTMAQ-MQ32-1",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Croissance-décroissance"
+  },
+  {
+   "code": "CTMAQ-MQ32-1-R10",
+   "parentCode": "CTMAQ-MQ32-1",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Maximum - minimum"
+  },
+  {
+   "code": "CTMAQ-MQ32-2",
+   "parentCode": "CTMAQ",
+   "kind": "competence",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Mathématiques actives dans la formation qualifiante – Modèles de croissance"
+  },
+  {
+   "code": "CTMAQ-MQ32-2-A1",
+   "parentCode": "CTMAQ-MQ32-2",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Construire un graphique à partir d'un tableau de nombres ou d’une formule"
+  },
+  {
+   "code": "CTMAQ-MQ32-2-A2",
+   "parentCode": "CTMAQ-MQ32-2",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Construire un tableau de nombres à partir d'un graphique ou d’une formule"
+  },
+  {
+   "code": "CTMAQ-MQ32-2-A3",
+   "parentCode": "CTMAQ-MQ32-2",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Calculer un terme, la raison, la somme des termes d'une suite arithmétique et géométrique"
+  },
+  {
+   "code": "CTMAQ-MQ32-2-A4",
+   "parentCode": "CTMAQ-MQ32-2",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Prévoir l'évolution d'un capital"
+  },
+  {
+   "code": "CTMAQ-MQ32-2-T1",
+   "parentCode": "CTMAQ-MQ32-2",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Transférer : Établir la formule qui relie deux variables dans une situation simple"
+  },
+  {
+   "code": "CTMAQ-MQ32-2-T2",
+   "parentCode": "CTMAQ-MQ32-2",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Transférer : Répondre à des questions inhérentes à une situation en utilisant un graphique, un tableau de nombres ou une formule"
+  },
+  {
+   "code": "CTMAQ-MQ32-2-T3",
+   "parentCode": "CTMAQ-MQ32-2",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Transférer : Résoudre un problème qui nécessite la résolution d’une équation exponentielle"
+  },
+  {
+   "code": "CTMAQ-MQ32-2-K1",
+   "parentCode": "CTMAQ-MQ32-2",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : Reconnaitre différents types de variation de fonctions à partir de graphiques ou de formules issus de contextes variés"
+  },
+  {
+   "code": "CTMAQ-MQ32-2-K2",
+   "parentCode": "CTMAQ-MQ32-2",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : Reconnaitre les caractéristiques des fonctions de référence"
+  },
+  {
+   "code": "CTMAQ-MQ32-2-K3",
+   "parentCode": "CTMAQ-MQ32-2",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : Expliquer en situation le vocabulaire lié au calcul d’intérêt"
+  },
+  {
+   "code": "CTMAQ-MQ32-2-K4",
+   "parentCode": "CTMAQ-MQ32-2",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : Identifier une suite arithmétique"
+  },
+  {
+   "code": "CTMAQ-MQ32-2-K5",
+   "parentCode": "CTMAQ-MQ32-2",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : Identifier une suite géométrique"
+  },
+  {
+   "code": "CTMAQ-MQ32-2-R1",
+   "parentCode": "CTMAQ-MQ32-2",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : MQ22 UAA1"
+  },
+  {
+   "code": "CTMAQ-MQ32-2-R2",
+   "parentCode": "CTMAQ-MQ32-2",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Fonctions de référence : x : kx"
+  },
+  {
+   "code": "CTMAQ-MQ32-2-R3",
+   "parentCode": "CTMAQ-MQ32-2",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : x : kx"
+  },
+  {
+   "code": "CTMAQ-MQ32-2-R4",
+   "parentCode": "CTMAQ-MQ32-2",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : x : a"
+  },
+  {
+   "code": "CTMAQ-MQ32-2-R5",
+   "parentCode": "CTMAQ-MQ32-2",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Caractéristiques de ces fonctions"
+  },
+  {
+   "code": "CTMAQ-MQ32-2-R6",
+   "parentCode": "CTMAQ-MQ32-2",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Suite arithmétique et suite géométrique"
+  },
+  {
+   "code": "CTMAQ-MQ32-2-R7",
+   "parentCode": "CTMAQ-MQ32-2",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Logarithme en base 10 en tant que nombre"
+  },
+  {
+   "code": "CTMAQ-MQ32-2-R8",
+   "parentCode": "CTMAQ-MQ32-2",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Intérêt simple et intérêt composé"
+  },
+  {
+   "code": "CTMAQ-MQ32-3",
+   "parentCode": "CTMAQ",
+   "kind": "competence",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Mathématiques actives dans la formation qualifiante – Statistique"
+  },
+  {
+   "code": "CTMAQ-MQ32-3-A1",
+   "parentCode": "CTMAQ-MQ32-3",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Calculer des valeurs caractéristiques d'un ensemble de données statistiques"
+  },
+  {
+   "code": "CTMAQ-MQ32-3-A2",
+   "parentCode": "CTMAQ-MQ32-3",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Construire une représentation graphique liée à un ensemble de données statistiques"
+  },
+  {
+   "code": "CTMAQ-MQ32-3-A3",
+   "parentCode": "CTMAQ-MQ32-3",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Extraire des informations d’une représentation graphique de données statistiques"
+  },
+  {
+   "code": "CTMAQ-MQ32-3-T1",
+   "parentCode": "CTMAQ-MQ32-3",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Transférer : Interpréter en contexte les valeurs caractéristiques d’un ensemble de données statistiques"
+  },
+  {
+   "code": "CTMAQ-MQ32-3-T2",
+   "parentCode": "CTMAQ-MQ32-3",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Transférer : Commenter et critiquer des représentations graphiques liées à un ensemble de données statistiques"
+  },
+  {
+   "code": "CTMAQ-MQ32-3-T3",
+   "parentCode": "CTMAQ-MQ32-3",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Transférer : Commenter l'intérêt et les limites d'une étude statistique"
+  },
+  {
+   "code": "CTMAQ-MQ32-3-T4",
+   "parentCode": "CTMAQ-MQ32-3",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Transférer : Réaliser une étude statistique et traiter les données en utilisant l’outil informatique (tableur)"
+  },
+  {
+   "code": "CTMAQ-MQ32-3-K1",
+   "parentCode": "CTMAQ-MQ32-3",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : Expliquer en situation le vocabulaire caractérisant un ensemble de données statistiques"
+  },
+  {
+   "code": "CTMAQ-MQ32-3-K2",
+   "parentCode": "CTMAQ-MQ32-3",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : Lire les informations fournies par une représentation graphique liée à un ensemble de données statistiques"
+  },
+  {
+   "code": "CTMAQ-MQ32-3-R1",
+   "parentCode": "CTMAQ-MQ32-3",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : MQ22 UAA3"
+  },
+  {
+   "code": "CTMAQ-MQ32-3-R2",
+   "parentCode": "CTMAQ-MQ32-3",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Statistique à une variable : Échantillon, population ; Quartiles ; Indices de dispersion (écart-type, intervalle interquartile) ; Boite à moustaches"
+  },
+  {
+   "code": "CTMAQ-MQ32-3-R3",
+   "parentCode": "CTMAQ-MQ32-3",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Statistique à deux variables : Représentation graphique ; Ajustement linéaire ; Méthode de Mayer"
+  },
+  {
+   "code": "CTMAQ-MQ32-4",
+   "parentCode": "CTMAQ",
+   "kind": "competence",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Mathématiques actives dans la formation qualifiante – Probabilité"
+  },
+  {
+   "code": "CTMAQ-MQ32-4-A1",
+   "parentCode": "CTMAQ-MQ32-4",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Conjecturer une probabilité à partir d’une expérience aléatoire ou d’une simulation"
+  },
+  {
+   "code": "CTMAQ-MQ32-4-A2",
+   "parentCode": "CTMAQ-MQ32-4",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Calculer une probabilité dans une situation d’équiprobabilité"
+  },
+  {
+   "code": "CTMAQ-MQ32-4-T1",
+   "parentCode": "CTMAQ-MQ32-4",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Transférer : Résoudre un problème à caractère probabiliste"
+  },
+  {
+   "code": "CTMAQ-MQ32-4-K1",
+   "parentCode": "CTMAQ-MQ32-4",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : Interpréter une probabilité en termes de résultats d’une statistique"
+  },
+  {
+   "code": "CTMAQ-MQ32-4-R1",
+   "parentCode": "CTMAQ-MQ32-4",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Approche empirique de la probabilité à partir de fréquences statistiques"
+  },
+  {
+   "code": "CTMAQ-MQ32-4-R2",
+   "parentCode": "CTMAQ-MQ32-4",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Catégorie d’épreuves, événement"
+  },
+  {
+   "code": "CTMAQ-MQ32-4-R3",
+   "parentCode": "CTMAQ-MQ32-4",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Événements équiprobables"
+  },
+  {
+   "code": "CTMAQ-MQ32-4-R4",
+   "parentCode": "CTMAQ-MQ32-4",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Probabilité d’un événement"
+  },
+  {
+   "code": "CTMAQ-MQ32-4-R5",
+   "parentCode": "CTMAQ-MQ32-4",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Outils d’appropriation et de calcul de probabilités (arbre, diagramme de Venn, simulation, tableau)"
+  },
+  {
+   "code": "CTMAQ-MQ32-4-R6",
+   "parentCode": "CTMAQ-MQ32-4",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Probabilité conditionnelle"
+  },
+  {
+   "code": "CTMAQ-MQ34-1",
+   "parentCode": "CTMAQ",
+   "kind": "competence",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Mathématiques liées aux spécificités des options – Modèles de croissance"
+  },
+  {
+   "code": "CTMAQ-MQ34-1-A1",
+   "parentCode": "CTMAQ-MQ34-1",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Calculer un terme, la raison, la somme des termes d'une suite arithmétique et d’une suite géométrique"
+  },
+  {
+   "code": "CTMAQ-MQ34-1-A2",
+   "parentCode": "CTMAQ-MQ34-1",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Associer tableaux de nombres, graphiques, expressions analytiques d’une fonction issus de contextes variés"
+  },
+  {
+   "code": "CTMAQ-MQ34-1-A3",
+   "parentCode": "CTMAQ-MQ34-1",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Résoudre une équation"
+  },
+  {
+   "code": "CTMAQ-MQ34-1-A4",
+   "parentCode": "CTMAQ-MQ34-1",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Prévoir l'évolution d'un capital"
+  },
+  {
+   "code": "CTMAQ-MQ34-1-A5",
+   "parentCode": "CTMAQ-MQ34-1",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Extraire des informations d’un graphique en coordonnées logarithmique ou semi-logarithmique"
+  },
+  {
+   "code": "CTMAQ-MQ34-1-T1",
+   "parentCode": "CTMAQ-MQ34-1",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Transférer : Établir la formule qui relie deux variables dans une situation simple"
+  },
+  {
+   "code": "CTMAQ-MQ34-1-T2",
+   "parentCode": "CTMAQ-MQ34-1",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Transférer : Choisir une échelle pertinente et représenter les données d’un problème"
+  },
+  {
+   "code": "CTMAQ-MQ34-1-T3",
+   "parentCode": "CTMAQ-MQ34-1",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Transférer : Répondre à des questions inhérentes à une situation en utilisant un graphique, un tableau de nombres ou une formule"
+  },
+  {
+   "code": "CTMAQ-MQ34-1-T4",
+   "parentCode": "CTMAQ-MQ34-1",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Transférer : Résoudre un problème qui nécessite la résolution d’une équation exponentielle"
+  },
+  {
+   "code": "CTMAQ-MQ34-1-T5",
+   "parentCode": "CTMAQ-MQ34-1",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Transférer : Résoudre un problème à l’aide d’une fonction logarithme ou exponentielle"
+  },
+  {
+   "code": "CTMAQ-MQ34-1-K1",
+   "parentCode": "CTMAQ-MQ34-1",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : Identifier, parmi un ensemble de suites données, celles qui sont arithmétiques et celles qui sont géométriques"
+  },
+  {
+   "code": "CTMAQ-MQ34-1-K2",
+   "parentCode": "CTMAQ-MQ34-1",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : Associer à une situation donnée le modèle de croissance correspondant"
+  },
+  {
+   "code": "CTMAQ-MQ34-1-K3",
+   "parentCode": "CTMAQ-MQ34-1",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : Expliquer en situation le vocabulaire lié au calcul d'intérêt"
+  },
+  {
+   "code": "CTMAQ-MQ34-1-K4",
+   "parentCode": "CTMAQ-MQ34-1",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : Comparer les croissances des fonctions exponentielles, logarithmes et puissances sur"
+  },
+  {
+   "code": "CTMAQ-MQ34-1-K5",
+   "parentCode": "CTMAQ-MQ34-1",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : Associer tableaux de nombres, graphiques"
+  },
+  {
+   "code": "CTMAQ-MQ34-2",
+   "parentCode": "CTMAQ",
+   "kind": "competence",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Mathématiques liées aux spécificités des options – Statistique à deux variables"
+  },
+  {
+   "code": "CTMAQ-MQ34-2-A1",
+   "parentCode": "CTMAQ-MQ34-2",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Déterminer l’équation d’une droite de Mayer et la tracer"
+  },
+  {
+   "code": "CTMAQ-MQ34-2-A2",
+   "parentCode": "CTMAQ-MQ34-2",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Représenter une série statistique à deux variables et tracer une droite d’ajustement"
+  },
+  {
+   "code": "CTMAQ-MQ34-2-A3",
+   "parentCode": "CTMAQ-MQ34-2",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Extraire des informations d’un ajustement (interpolation, extrapolation)"
+  },
+  {
+   "code": "CTMAQ-MQ34-2-A4",
+   "parentCode": "CTMAQ-MQ34-2",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Déterminer l’équation d’une droite de régression et son coefficient de corrélation en utilisant l’outil informatique"
+  },
+  {
+   "code": "CTMAQ-MQ34-2-T1",
+   "parentCode": "CTMAQ-MQ34-2",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Transférer : Commenter la pertinence et les limites d’un ajustement linéaire"
+  },
+  {
+   "code": "CTMAQ-MQ34-2-K1",
+   "parentCode": "CTMAQ-MQ34-2",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : Expliquer l’intérêt d’un ajustement linéaire"
+  },
+  {
+   "code": "CTMAQ-MQ34-2-K2",
+   "parentCode": "CTMAQ-MQ34-2",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : Expliquer à l’aide d’un exemple la différence entre causalité et corrélation"
+  },
+  {
+   "code": "CTMAQ-MQ34-2-R1",
+   "parentCode": "CTMAQ-MQ34-2",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Représentation d’une série statistique à deux variables"
+  },
+  {
+   "code": "CTMAQ-MQ34-2-R2",
+   "parentCode": "CTMAQ-MQ34-2",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Ajustement linéaire : Méthode de Mayer ; Méthode des moindres carrés (sans démonstration)"
+  },
+  {
+   "code": "CTMAQ-MQ34-2-R3",
+   "parentCode": "CTMAQ-MQ34-2",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Coefficient de corrélation linéaire"
+  },
+  {
+   "code": "CTMAQ-MQ34-2-R4",
+   "parentCode": "CTMAQ-MQ34-2",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Distinction entre causalité et corrélation"
+  },
+  {
+   "code": "CTMAQ-MQ34-3",
+   "parentCode": "CTMAQ",
+   "kind": "competence",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Mathématiques liées aux spécificités des options – Probabilité"
+  },
+  {
+   "code": "CTMAQ-MQ34-3-A1",
+   "parentCode": "CTMAQ-MQ34-3",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Conjecturer une probabilité à partir d’une expérience aléatoire ou d’une simulation"
+  },
+  {
+   "code": "CTMAQ-MQ34-3-A2",
+   "parentCode": "CTMAQ-MQ34-3",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Calculer une probabilité dans une situation d’équiprobabilité"
+  },
+  {
+   "code": "CTMAQ-MQ34-3-T1",
+   "parentCode": "CTMAQ-MQ34-3",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Transférer : Résoudre un problème à caractère probabiliste"
+  },
+  {
+   "code": "CTMAQ-MQ34-3-K1",
+   "parentCode": "CTMAQ-MQ34-3",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : Interpréter une probabilité en termes de résultats d’une statistique"
+  },
+  {
+   "code": "CTMAQ-MQ34-3-R1",
+   "parentCode": "CTMAQ-MQ34-3",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Approche empirique de la probabilité à partir de fréquences statistiques"
+  },
+  {
+   "code": "CTMAQ-MQ34-3-R2",
+   "parentCode": "CTMAQ-MQ34-3",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Catégorie d’épreuves, événement"
+  },
+  {
+   "code": "CTMAQ-MQ34-3-R3",
+   "parentCode": "CTMAQ-MQ34-3",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Événements équiprobables"
+  },
+  {
+   "code": "CTMAQ-MQ34-3-R4",
+   "parentCode": "CTMAQ-MQ34-3",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Probabilité d’un événement"
+  },
+  {
+   "code": "CTMAQ-MQ34-3-R5",
+   "parentCode": "CTMAQ-MQ34-3",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Outils d’appropriation et de calcul de probabilités (p.ex. arbre, diagramme de Venn, simulation, tableau…)"
+  },
+  {
+   "code": "CTMAQ-MQ34-3-R6",
+   "parentCode": "CTMAQ-MQ34-3",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Probabilité conditionnelle"
+  },
+  {
+   "code": "CTMAQ-MQ34-4",
+   "parentCode": "CTMAQ",
+   "kind": "competence",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Mathématiques liées aux spécificités des options – Lois de probabilité"
+  },
+  {
+   "code": "CTMAQ-MQ34-4-A1",
+   "parentCode": "CTMAQ-MQ34-4",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Calculer une probabilité dans un contexte qui requiert l’usage d’une loi de probabilité"
+  },
+  {
+   "code": "CTMAQ-MQ34-4-A2",
+   "parentCode": "CTMAQ-MQ34-4",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Déterminer un ensemble de valeurs en utilisant la lecture inverse de la loi normale"
+  },
+  {
+   "code": "CTMAQ-MQ34-4-T1",
+   "parentCode": "CTMAQ-MQ34-4",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Transférer : Variable aléatoire suivant une loi uniforme"
+  },
+  {
+   "code": "CTMAQ-MQ34-4-T2",
+   "parentCode": "CTMAQ-MQ34-4",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Transférer : Résoudre un problème qui requiert l’utilisation d’une loi de probabilité Variable aléatoire suivant une loi binomiale"
+  },
+  {
+   "code": "CTMAQ-MQ34-4-T3",
+   "parentCode": "CTMAQ-MQ34-4",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Transférer : Variable aléatoire suivant une loi normale"
+  },
+  {
+   "code": "CTMAQ-MQ34-4-K1",
+   "parentCode": "CTMAQ-MQ34-4",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : Associer une loi de probabilité à un contexte donné et identifier ses paramètres"
+  },
+  {
+   "code": "CTMAQ-MQ34-4-K2",
+   "parentCode": "CTMAQ-MQ34-4",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : Interpréter graphiquement une probabilité dans le cadre de la loi normale"
+  },
+  {
+   "code": "CTMAQ-MQ34-4-K3",
+   "parentCode": "CTMAQ-MQ34-4",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : Variable aléatoire suivant une loi de Poisson"
+  },
+  {
+   "code": "CTMAQ-MQ34-4-K4",
+   "parentCode": "CTMAQ-MQ34-4",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : Graphique de la distribution de probabilité"
+  },
+  {
+   "code": "CTMAQ-MQ34-4-K5",
+   "parentCode": "CTMAQ-MQ34-4",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : Tables et/ou outil informatique"
+  },
+  {
+   "code": "CTMAQ-MQ34-4-R1",
+   "parentCode": "CTMAQ-MQ34-4",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Espérance mathématique et écart-type"
+  },
+  {
+   "code": "CTMAQ-MQ34-4-R2",
+   "parentCode": "CTMAQ-MQ34-4",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Épreuve et schéma de Bernoulli"
+  },
+  {
+   "code": "CTMAQ-MQ34-4-R3",
+   "parentCode": "CTMAQ-MQ34-4",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Coefficients binomiaux"
+  },
+  {
+   "code": "CTMAQ-MQ34-4-R4",
+   "parentCode": "CTMAQ-MQ34-4",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Probabilité de k succès dans un schéma de Bernoulli"
+  },
+  {
+   "code": "CTMAQ-MQ34-4-R5",
+   "parentCode": "CTMAQ-MQ34-4",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Graphique de la distribution de probabilité"
+  },
+  {
+   "code": "CTMAQ-MQ34-5",
+   "parentCode": "CTMAQ",
+   "kind": "competence",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Mathématiques liées aux spécificités des options – Comportement asymptotique"
+  },
+  {
+   "code": "CTMAQ-MQ34-5-A1",
+   "parentCode": "CTMAQ-MQ34-5",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Écrire, à partir de l’expression analytique d’une fonction, les limites qui apportent des informations sur son graphique"
+  },
+  {
+   "code": "CTMAQ-MQ34-5-A2",
+   "parentCode": "CTMAQ-MQ34-5",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Calculer des limites et les traduire graphiquement"
+  },
+  {
+   "code": "CTMAQ-MQ34-5-A3",
+   "parentCode": "CTMAQ-MQ34-5",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Traduire en termes de limites les comportements asymptotiques d’une fonction, à partir de son graphique"
+  },
+  {
+   "code": "CTMAQ-MQ34-5-A4",
+   "parentCode": "CTMAQ-MQ34-5",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Rechercher les équations des asymptotes au graphique d’une fonction donnée"
+  },
+  {
+   "code": "CTMAQ-MQ34-5-A5",
+   "parentCode": "CTMAQ-MQ34-5",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Approcher la valeur d’une fonction en un point à l’aide de son comportement asymptotique"
+  },
+  {
+   "code": "CTMAQ-MQ34-5-T1",
+   "parentCode": "CTMAQ-MQ34-5",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Transférer : Esquisser le graphique d’une fonction vérifiant certaines conditions sur les limites et les asymptotes"
+  },
+  {
+   "code": "CTMAQ-MQ34-5-T2",
+   "parentCode": "CTMAQ-MQ34-5",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Transférer : Apparier des graphiques et des informations sur les limites et les asymptotes d’une fonction"
+  },
+  {
+   "code": "CTMAQ-MQ34-5-T3",
+   "parentCode": "CTMAQ-MQ34-5",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Transférer : Établir l’expression analytique d’une fonction qui admet une ou plusieurs asymptotes données"
+  },
+  {
+   "code": "CTMAQ-MQ34-5-K1",
+   "parentCode": "CTMAQ-MQ34-5",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : Écrire l’équation d’une asymptote à partir de sa représentation graphique"
+  },
+  {
+   "code": "CTMAQ-MQ34-5-K2",
+   "parentCode": "CTMAQ-MQ34-5",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : Écrire la limite qui traduit un comportement asymptotique d’une fonction à partir de sa représentation graphique"
+  },
+  {
+   "code": "CTMAQ-MQ34-5-R1",
+   "parentCode": "CTMAQ-MQ34-5",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : MQ24 UAA1"
+  },
+  {
+   "code": "CTMAQ-MQ34-5-R2",
+   "parentCode": "CTMAQ-MQ34-5",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Limite à l’infini"
+  },
+  {
+   "code": "CTMAQ-MQ34-5-R3",
+   "parentCode": "CTMAQ-MQ34-5",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Asymptote horizontale et asymptote oblique"
+  },
+  {
+   "code": "CTMAQ-MQ34-5-R4",
+   "parentCode": "CTMAQ-MQ34-5",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Limite infinie en un réel"
+  },
+  {
+   "code": "CTMAQ-MQ34-5-R5",
+   "parentCode": "CTMAQ-MQ34-5",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Asymptote verticale"
+  },
+  {
+   "code": "CTMAQ-MQ34-5-R6",
+   "parentCode": "CTMAQ-MQ34-5",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Calculs de limites utiles à la recherche d’asymptote."
+  },
+  {
+   "code": "CTMAQ-MQ34-5-R7",
+   "parentCode": "CTMAQ-MQ34-5",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Remarque: dans cette UAA, on se limitera, pour les calculs, aux fonctions rationnelles"
+  },
+  {
+   "code": "CTMAQ-MQ34-6",
+   "parentCode": "CTMAQ",
+   "kind": "competence",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Mathématiques liées aux spécificités des options – Dérivée"
+  },
+  {
+   "code": "CTMAQ-MQ34-6-A1",
+   "parentCode": "CTMAQ-MQ34-6",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Calculer la dérivée d’une fonction"
+  },
+  {
+   "code": "CTMAQ-MQ34-6-A2",
+   "parentCode": "CTMAQ-MQ34-6",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Tracer la tangente en un point du graphique d’une fonction"
+  },
+  {
+   "code": "CTMAQ-MQ34-6-A3",
+   "parentCode": "CTMAQ-MQ34-6",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Rechercher les extremums d’une fonction"
+  },
+  {
+   "code": "CTMAQ-MQ34-6-T1",
+   "parentCode": "CTMAQ-MQ34-6",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Transférer : Distinguer, entre deux graphiques donnés, celui de la fonction et celui de sa dérivée première"
+  },
+  {
+   "code": "CTMAQ-MQ34-6-T2",
+   "parentCode": "CTMAQ-MQ34-6",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Transférer : Apparier des graphiques de fonctions et ceux de leur dérivée première"
+  },
+  {
+   "code": "CTMAQ-MQ34-6-T3",
+   "parentCode": "CTMAQ-MQ34-6",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Transférer : Esquisser localement l’allure du graphique d’une fonction à partir d’informations sur sa dérivée première"
+  },
+  {
+   "code": "CTMAQ-MQ34-6-T4",
+   "parentCode": "CTMAQ-MQ34-6",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Transférer : Résoudre un problème relatif au comportement local d’une fonction"
+  },
+  {
+   "code": "CTMAQ-MQ34-6-T5",
+   "parentCode": "CTMAQ-MQ34-6",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Transférer : Résoudre un problème d’optimisation"
+  },
+  {
+   "code": "CTMAQ-MQ34-6-K1",
+   "parentCode": "CTMAQ-MQ34-6",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : Interpréter graphiquement la définition du nombre dérivé"
+  },
+  {
+   "code": "CTMAQ-MQ34-6-K2",
+   "parentCode": "CTMAQ-MQ34-6",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : Associer le comportement d’une fonction au signe de sa dérivée première"
+  },
+  {
+   "code": "CTMAQ-MQ34-7",
+   "parentCode": "CTMAQ",
+   "kind": "competence",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Mathématiques liées aux spécificités des options – Trigonométrie"
+  },
+  {
+   "code": "CTMAQ-MQ34-7-A1",
+   "parentCode": "CTMAQ-MQ34-7",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Calculer l’amplitude d’un angle d’un triangle avec une calculatrice"
+  },
+  {
+   "code": "CTMAQ-MQ34-7-A2",
+   "parentCode": "CTMAQ-MQ34-7",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Calculer la longueur d’un côté d’un triangle avec une calculatrice"
+  },
+  {
+   "code": "CTMAQ-MQ34-7-T1",
+   "parentCode": "CTMAQ-MQ34-7",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Transférer : Utiliser les relations trigonométriques dans une application concrète"
+  },
+  {
+   "code": "CTMAQ-MQ34-7-T2",
+   "parentCode": "CTMAQ-MQ34-7",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Transférer : Calculer une distance inaccessible dans le plan ou dans l’espace"
+  },
+  {
+   "code": "CTMAQ-MQ34-7-K1",
+   "parentCode": "CTMAQ-MQ34-7",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : Représenter sur le cercle trigonométrique le point correspondant à un angle donné, ainsi que ses nombres trigonométriques"
+  },
+  {
+   "code": "CTMAQ-MQ34-7-K2",
+   "parentCode": "CTMAQ-MQ34-7",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : Interpréter géométriquement les relations principales"
+  },
+  {
+   "code": "CTMAQ-MQ34-7-R1",
+   "parentCode": "CTMAQ-MQ34-7",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Eléments de trigonométrie de MQ24UAA4"
+  },
+  {
+   "code": "CTMAQ-MQ34-7-R2",
+   "parentCode": "CTMAQ-MQ34-7",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Définition des sinus, cosinus et tangente d’un angle dans le cercle trigonométrique"
+  },
+  {
+   "code": "CTMAQ-MQ34-7-R3",
+   "parentCode": "CTMAQ-MQ34-7",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Relations principales : sin () ; x cos () ; x ; sin() ; x ; tan() ; x ; cos() ; x"
+  },
+  {
+   "code": "CTMAQ-MQ34-7-R4",
+   "parentCode": "CTMAQ-MQ34-7",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Relation des sinus"
+  },
+  {
+   "code": "CTMAQ-MQ34-7-R5",
+   "parentCode": "CTMAQ-MQ34-7",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Théorème d’Al Kashi"
+  },
+  {
+   "code": "CTMAQ-MQ34-8",
+   "parentCode": "CTMAQ",
+   "kind": "competence",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Mathématiques liées aux spécificités des options – Fonctions trigonométriques"
+  },
+  {
+   "code": "CTMAQ-MQ34-8-A1",
+   "parentCode": "CTMAQ-MQ34-8",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Calculer une amplitude d’angle, une longueur d’arc de cercle et une aire de secteur circulaire"
+  },
+  {
+   "code": "CTMAQ-MQ34-8-A2",
+   "parentCode": "CTMAQ-MQ34-8",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Trouver l’expression analytique d’une transformée simple d’une fonction trigonométrique de référence à partir de son graphique"
+  },
+  {
+   "code": "CTMAQ-MQ34-8-A3",
+   "parentCode": "CTMAQ-MQ34-8",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Résoudre des équations du type sin() x a, cos() x a, tan() x a en utilisant la calculatrice, le cercle trigonométrique et les fonctions trigonométriques"
+  },
+  {
+   "code": "CTMAQ-MQ34-8-A4",
+   "parentCode": "CTMAQ-MQ34-8",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Résoudre graphiquement et/ou algébriquement une a sin(bx c) k équation trigonométrique du type"
+  },
+  {
+   "code": "CTMAQ-MQ34-8-A5",
+   "parentCode": "CTMAQ-MQ34-8",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Déterminer l’amplitude, la période, le déphasage et les extremums d’une fonction trigonométrique"
+  },
+  {
+   "code": "CTMAQ-MQ34-8-T1",
+   "parentCode": "CTMAQ-MQ34-8",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Transférer : Résoudre un problème qui requiert l’utilisation d’une fonction trigonométrique"
+  },
+  {
+   "code": "CTMAQ-MQ34-8-K1",
+   "parentCode": "CTMAQ-MQ34-8",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : Associer graphiquement les nombres trigonométriques d’un angle et les images d’un réel par une fonction trigonométrique"
+  },
+  {
+   "code": "CTMAQ-MQ34-8-K2",
+   "parentCode": "CTMAQ-MQ34-8",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : Représenter graphiquement les fonctions trigonométriques"
+  },
+  {
+   "code": "CTMAQ-MQ34-8-K3",
+   "parentCode": "CTMAQ-MQ34-8",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : Interpréter le rôle des paramètres, a b et c de la fonction"
+  },
+  {
+   "code": "CTMAQ-MQ34-8-K4",
+   "parentCode": "CTMAQ-MQ34-8",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : a sin(bx c)"
+  },
+  {
+   "code": "CTMAQ-MQ34-8-R1",
+   "parentCode": "CTMAQ-MQ34-8",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Nombre"
+  },
+  {
+   "code": "CTMAQ-MQ34-8-R2",
+   "parentCode": "CTMAQ-MQ34-8",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Angle, arc de cercle, secteur circulaire"
+  },
+  {
+   "code": "CTMAQ-MQ34-8-R3",
+   "parentCode": "CTMAQ-MQ34-8",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Radian"
+  },
+  {
+   "code": "CTMAQ-MQ34-8-R4",
+   "parentCode": "CTMAQ-MQ34-8",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Angle orienté"
+  },
+  {
+   "code": "CTMAQ-MQ34-8-R5",
+   "parentCode": "CTMAQ-MQ34-8",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Fonctions trigonométriques de référence : x : sin() x x"
+  },
+  {
+   "code": "CTMAQ-MQ34-8-R6",
+   "parentCode": "CTMAQ-MQ34-8",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Fonctions trigonométriques de référence : x : cos() x x"
+  },
+  {
+   "code": "CTMAQ-MQ34-8-R7",
+   "parentCode": "CTMAQ-MQ34-8",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Fonctions trigonométriques de référence : x : tan() x"
+  },
+  {
+   "code": "CTMAQ-MQ34-8-R8",
+   "parentCode": "CTMAQ-MQ34-8",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Transformée d’une fonction trigonométrique de référence en lien avec une symétrie orthogonale, une translation, une affinité"
+  },
+  {
+   "code": "CTMAQ-MQ34-8-R9",
+   "parentCode": "CTMAQ-MQ34-8",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Fonction trigonométrique x : a sin(bx c)"
+  },
+  {
+   "code": "CTMAQ-MQ34-8-R10",
+   "parentCode": "CTMAQ-MQ34-8",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Amplitude, période, déphasage"
+  },
+  {
+   "code": "CTMAQ-MQ34-9",
+   "parentCode": "CTMAQ",
+   "kind": "competence",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Mathématiques liées aux spécificités des options – Intégrale"
+  },
+  {
+   "code": "CTMAQ-MQ34-9-A1",
+   "parentCode": "CTMAQ-MQ34-9",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Approximer une aire par une somme d’aires élémentaires à l’aide d’un outil informatique"
+  },
+  {
+   "code": "CTMAQ-MQ34-9-A2",
+   "parentCode": "CTMAQ-MQ34-9",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Vérifier qu’une fonction donnée est la primitive d’une autre"
+  },
+  {
+   "code": "CTMAQ-MQ34-9-A3",
+   "parentCode": "CTMAQ-MQ34-9",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Déterminer une primitive"
+  },
+  {
+   "code": "CTMAQ-MQ34-9-A4",
+   "parentCode": "CTMAQ-MQ34-9",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Calculer une intégrale définie"
+  },
+  {
+   "code": "CTMAQ-MQ34-9-A5",
+   "parentCode": "CTMAQ-MQ34-9",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Calculer une aire, un volume de solide de révolution"
+  },
+  {
+   "code": "CTMAQ-MQ34-9-T1",
+   "parentCode": "CTMAQ-MQ34-9",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Transférer : Résoudre un problème en utilisant le calcul intégral"
+  },
+  {
+   "code": "CTMAQ-MQ34-9-K1",
+   "parentCode": "CTMAQ-MQ34-9",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : Illustrer graphiquement et justifier la formule du calcul d’une aire"
+  },
+  {
+   "code": "CTMAQ-MQ34-9-K2",
+   "parentCode": "CTMAQ-MQ34-9",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : Illustrer graphiquement et justifier la formule du calcul d’un volume de révolution"
+  },
+  {
+   "code": "CTMAQ-MQ34-9-K3",
+   "parentCode": "CTMAQ-MQ34-9",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : Ecrire les intégrales qui permettent de calculer l’aire d’une zone sélectionnée sur un graphique"
+  },
+  {
+   "code": "CTMAQ-MQ34-9-R1",
+   "parentCode": "CTMAQ-MQ34-9",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Encadrement d’une aire, d’un volume"
+  },
+  {
+   "code": "CTMAQ-MQ34-9-R2",
+   "parentCode": "CTMAQ-MQ34-9",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Intégrale définie"
+  },
+  {
+   "code": "CTMAQ-MQ34-9-R3",
+   "parentCode": "CTMAQ-MQ34-9",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Théorème fondamental"
+  },
+  {
+   "code": "CTMAQ-MQ34-9-R4",
+   "parentCode": "CTMAQ-MQ34-9",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Primitives"
+  },
+  {
+   "code": "CTMAQ-MQ34-9-R5",
+   "parentCode": "CTMAQ-MQ34-9",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Primitivation de fonctions du type x : f ax (b)"
+  },
+  {
+   "code": "CTMAQ-MQ34-9-R6",
+   "parentCode": "CTMAQ-MQ34-9",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Primitivation par décomposition"
+  },
+  {
+   "code": "CTMAQ-MQ34-9-R7",
+   "parentCode": "CTMAQ-MQ34-9",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Aire d’une surface plane"
+  },
+  {
+   "code": "CTMAQ-MQ34-9-R8",
+   "parentCode": "CTMAQ-MQ34-9",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Volume d’un solide de révolution"
+  },
+  {
+   "code": "CTMAQ-MQ34-10",
+   "parentCode": "CTMAQ",
+   "kind": "competence",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Mathématiques liées aux spécificités des options – Algèbre financière"
+  },
+  {
+   "code": "CTMAQ-MQ34-10-A1",
+   "parentCode": "CTMAQ-MQ34-10",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Construire un tableau d’amortissement"
+  },
+  {
+   "code": "CTMAQ-MQ34-10-A2",
+   "parentCode": "CTMAQ-MQ34-10",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Construire un tableau décrivant l’évolution d’un capital"
+  },
+  {
+   "code": "CTMAQ-MQ34-10-T1",
+   "parentCode": "CTMAQ-MQ34-10",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Transférer : Résoudre un problème nécessitant le calcul d’annuités"
+  },
+  {
+   "code": "CTMAQ-MQ34-10-K1",
+   "parentCode": "CTMAQ-MQ34-10",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : Illustrer en contexte les formules d’algèbre financière"
+  },
+  {
+   "code": "CTMAQ-MQ34-10-R1",
+   "parentCode": "CTMAQ-MQ34-10",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : MQ34UAA1"
+  },
+  {
+   "code": "CTMAQ-MQ34-10-R2",
+   "parentCode": "CTMAQ-MQ34-10",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Valeur acquise et actualisation"
+  },
+  {
+   "code": "CTMAQ-MQ34-10-R3",
+   "parentCode": "CTMAQ-MQ34-10",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Annuité, amortissement"
+  },
+  {
+   "code": "CTMAQ-MQ34-11",
+   "parentCode": "CTMAQ",
+   "kind": "competence",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Mathématiques liées aux spécificités des options – Système d’équations linéaires"
+  },
+  {
+   "code": "CTMAQ-MQ34-11-A1",
+   "parentCode": "CTMAQ-MQ34-11",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Résoudre un système"
+  },
+  {
+   "code": "CTMAQ-MQ34-11-T1",
+   "parentCode": "CTMAQ-MQ34-11",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Transférer : Résoudre un problème se ramenant à la résolution d’un système"
+  },
+  {
+   "code": "CTMAQ-MQ34-11-K1",
+   "parentCode": "CTMAQ-MQ34-11",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : Reconnaitre un système impossible, un système indéterminé"
+  },
+  {
+   "code": "CTMAQ-MQ34-11-R1",
+   "parentCode": "CTMAQ-MQ34-11",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Système de 2 équations du premier degré à 2 inconnues"
+  },
+  {
+   "code": "CTMAQ-MQ34-11-R2",
+   "parentCode": "CTMAQ-MQ34-11",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Système de 3 équations du premier degré à 3 inconnues"
+  },
+  {
+   "code": "CTMAQ-MQ34-11-R3",
+   "parentCode": "CTMAQ-MQ34-11",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Méthode de Gauss"
+  },
+  {
+   "code": "CTMAQ-MQ34-12",
+   "parentCode": "CTMAQ",
+   "kind": "competence",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Mathématiques liées aux spécificités des options – Programmation linéaire"
+  },
+  {
+   "code": "CTMAQ-MQ34-12-A1",
+   "parentCode": "CTMAQ-MQ34-12",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Résoudre graphiquement une inéquation linéaire à deux inconnues"
+  },
+  {
+   "code": "CTMAQ-MQ34-12-A2",
+   "parentCode": "CTMAQ-MQ34-12",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Résoudre graphiquement un système d’inéquations linéaires à deux inconnues"
+  },
+  {
+   "code": "CTMAQ-MQ34-12-T1",
+   "parentCode": "CTMAQ-MQ34-12",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Transférer : Résoudre un problème économique d’optimisation"
+  },
+  {
+   "code": "CTMAQ-MQ34-12-K1",
+   "parentCode": "CTMAQ-MQ34-12",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : Identifier dans un énoncé les données qui concernent les contraintes de celles qui concernent la fonction à optimaliser"
+  },
+  {
+   "code": "CTMAQ-MQ34-12-R1",
+   "parentCode": "CTMAQ-MQ34-12",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Inéquation linéaire à deux inconnues"
+  },
+  {
+   "code": "CTMAQ-MQ34-12-R2",
+   "parentCode": "CTMAQ-MQ34-12",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Système d’inéquations linéaires à deux inconnues"
+  },
+  {
+   "code": "CTMAQ-MQ34-13",
+   "parentCode": "CTMAQ",
+   "kind": "competence",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Mathématiques liées aux spécificités des options – Géométrie vectorielle"
+  },
+  {
+   "code": "CTMAQ-MQ34-13-A1",
+   "parentCode": "CTMAQ-MQ34-13",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Calculer les coordonnées de la somme de deux vecteurs dans un repère, du produit d’un vecteur par un réel"
+  },
+  {
+   "code": "CTMAQ-MQ34-13-A2",
+   "parentCode": "CTMAQ-MQ34-13",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Construire la somme de deux vecteurs, le produit d’un vecteur par un réel"
+  },
+  {
+   "code": "CTMAQ-MQ34-13-A3",
+   "parentCode": "CTMAQ-MQ34-13",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Déterminer les coordonnées de l'image d'un point par une translation"
+  },
+  {
+   "code": "CTMAQ-MQ34-13-A4",
+   "parentCode": "CTMAQ-MQ34-13",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Déterminer les coordonnées de l'image d'un point par une rotation d'un quart de tour autour de l'origine"
+  },
+  {
+   "code": "CTMAQ-MQ34-13-T1",
+   "parentCode": "CTMAQ-MQ34-13",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Transférer : Résoudre un problème géométrique en utilisant l’outil vectoriel"
+  },
+  {
+   "code": "CTMAQ-MQ34-13-K1",
+   "parentCode": "CTMAQ-MQ34-13",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : Reconnaitre, en situation, des vecteurs égaux, des vecteurs colinéaires"
+  },
+  {
+   "code": "CTMAQ-MQ34-13-K2",
+   "parentCode": "CTMAQ-MQ34-13",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : Expliquer un procédé de construction de la somme de deux vecteurs"
+  },
+  {
+   "code": "CTMAQ-MQ34-13-R1",
+   "parentCode": "CTMAQ-MQ34-13",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Vecteur"
+  },
+  {
+   "code": "CTMAQ-MQ34-13-R2",
+   "parentCode": "CTMAQ-MQ34-13",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Coordonnées d’un vecteur"
+  },
+  {
+   "code": "CTMAQ-MQ34-13-R3",
+   "parentCode": "CTMAQ-MQ34-13",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Norme d’un vecteur"
+  },
+  {
+   "code": "CTMAQ-MQ34-13-R4",
+   "parentCode": "CTMAQ-MQ34-13",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Opérations sur les vecteurs"
+  },
+  {
+   "code": "CTMAQ-MQ34-13-R5",
+   "parentCode": "CTMAQ-MQ34-13",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Addition"
+  },
+  {
+   "code": "CTMAQ-MQ34-13-R6",
+   "parentCode": "CTMAQ-MQ34-13",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Multiplication par un réel"
+  },
+  {
+   "code": "CTMAQ-MQ34-14",
+   "parentCode": "CTMAQ",
+   "kind": "competence",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Mathématiques liées aux spécificités des options – Géométrie dans l’espace"
+  },
+  {
+   "code": "CTMAQ-MQ34-14-A1",
+   "parentCode": "CTMAQ-MQ34-14",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Représenter un solide à l’aide d’instruments ou d’un logiciel"
+  },
+  {
+   "code": "CTMAQ-MQ34-14-A2",
+   "parentCode": "CTMAQ-MQ34-14",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Conjecturer la nature de la section d’un solide et justifier"
+  },
+  {
+   "code": "CTMAQ-MQ34-14-T1",
+   "parentCode": "CTMAQ-MQ34-14",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Transférer : Position relative de droites et de plans"
+  },
+  {
+   "code": "CTMAQ-MQ34-14-T2",
+   "parentCode": "CTMAQ-MQ34-14",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Transférer : Établir la coplanarité de points, de droites"
+  },
+  {
+   "code": "CTMAQ-MQ34-14-T3",
+   "parentCode": "CTMAQ-MQ34-14",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Transférer : Déterminer le plan de section d’un solide donné pour obtenir une figure plane imposée"
+  },
+  {
+   "code": "CTMAQ-MQ34-14-T4",
+   "parentCode": "CTMAQ-MQ34-14",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Transférer : Section plane d’un solide"
+  },
+  {
+   "code": "CTMAQ-MQ34-14-T5",
+   "parentCode": "CTMAQ-MQ34-14",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Transférer : Remarque: on se limitera au parallélépipède rectangle et au tétraèdre"
+  },
+  {
+   "code": "CTMAQ-MQ34-14-K1",
+   "parentCode": "CTMAQ-MQ34-14",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : Identifier, sur un solide, les positions relatives d’arêtes, de faces"
+  },
+  {
+   "code": "CTMAQ-MQ34-14-R1",
+   "parentCode": "CTMAQ-MQ34-14",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Incidence"
+  },
+  {
+   "code": "CTMAQ-MQ34-14-R2",
+   "parentCode": "CTMAQ-MQ34-14",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Parallélisme"
+  },
+  {
+   "code": "CTMAQ-MQ34-14-R3",
+   "parentCode": "CTMAQ-MQ34-14",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Orthogonalité"
+  },
+  {
+   "code": "CTMAQ-MQ34-15",
+   "parentCode": "CTMAQ",
+   "kind": "competence",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Mathématiques liées aux spécificités des options – Nombres complexes"
+  },
+  {
+   "code": "CTMAQ-MQ34-15-A1",
+   "parentCode": "CTMAQ-MQ34-15",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Convertir un nombre complexe d’une forme à l’autre"
+  },
+  {
+   "code": "CTMAQ-MQ34-15-A2",
+   "parentCode": "CTMAQ-MQ34-15",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Appliquer : Effectuer un calcul en utilisant la forme la plus adéquate d’un nombre complexe"
+  },
+  {
+   "code": "CTMAQ-MQ34-15-T1",
+   "parentCode": "CTMAQ-MQ34-15",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Transférer : Utiliser la forme adéquate d’un nombre complexe pour résoudre un problème lié à l’OBG"
+  },
+  {
+   "code": "CTMAQ-MQ34-15-K1",
+   "parentCode": "CTMAQ-MQ34-15",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Connaître : Illustrer graphiquement les formes algébrique et trigonométrique d’un nombre complexe"
+  },
+  {
+   "code": "CTMAQ-MQ34-15-R1",
+   "parentCode": "CTMAQ-MQ34-15",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Formes algébrique et trigonométrique d’un nombre complexe"
+  },
+  {
+   "code": "CTMAQ-MQ34-15-R2",
+   "parentCode": "CTMAQ-MQ34-15",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Point image d’un nombre complexe"
+  },
+  {
+   "code": "CTMAQ-MQ34-15-R3",
+   "parentCode": "CTMAQ-MQ34-15",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Affixe d’un point du plan de Gauss"
+  },
+  {
+   "code": "CTMAQ-MQ34-15-R4",
+   "parentCode": "CTMAQ-MQ34-15",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Somme de deux nombres complexes"
+  },
+  {
+   "code": "CTMAQ-MQ34-15-R5",
+   "parentCode": "CTMAQ-MQ34-15",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Produit de deux nombres complexes"
+  },
+  {
+   "code": "CTMAQ-MQ34-15-R6",
+   "parentCode": "CTMAQ-MQ34-15",
+   "kind": "attendu",
+   "subject": "Mathématiques",
+   "grades": [
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "label": "Ressource : Inverse d’un nombre complexe"
+  }
+ ]
+}
