@@ -108,6 +108,22 @@ export default function PackScreen() {
             />
           </View>
           {printError ? <ThemedText themeColor="danger">{printError}</ThemedText> : null}
+          {content.quiz.length === 0 && content.exercises.length === 0 && content.flashcards.length > 0 ? (
+            // Liste de vocabulaire photographiée : des cartes de mots seulement.
+            <>
+              <ThemedText themeColor="textSecondary">
+                Liste de vocabulaire : des cartes de mots seulement. L&apos;IA peut la compléter d&apos;un
+                quiz, d&apos;exercices et de cartes de phrases avec ces mots ; les cartes et la progression
+                restent.
+              </ThemedText>
+              {generate.error ? <ThemedText themeColor="danger">{generate.error.message}</ThemedText> : null}
+              <Button
+                label="Compléter avec un quiz et des exercices"
+                loading={generate.isPending}
+                onPress={() => generate.mutate(false)}
+              />
+            </>
+          ) : null}
           {content.fiche ? <FicheView fiche={content.fiche} settings={settings} /> : null}
           <ThemedView type="backgroundElement" style={styles.card}>
             <ThemedText type="smallBold">

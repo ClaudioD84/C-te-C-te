@@ -222,6 +222,29 @@ function languageGuidance(grade: string, subject: string): string[] {
     'Langue moderne : consignes en français, mais exercices et quiz surtout DANS la langue étudiée : phrases à ' +
       'compléter, traduction dans les deux sens, conjugaison (verbes irréguliers, temps du passé), ordre des mots, ' +
       `compréhension de phrases ou d'un court texte. Niveau visé (cadre européen, indicatif) : ${target}.`,
+    'Cartes : pas seulement des mots isolés. La moitié au moins sont des expressions, des formes de verbes ' +
+      '(infinitif, passé, participe) ou de courtes phrases à traduire, au recto en français et au verso dans la ' +
+      'langue étudiée.',
+  ];
+}
+
+/** Mots d'une liste photographiée envoyés au plus (la liste elle-même en compte 60 au plus). */
+export const MAX_LIST_WORDS = 60;
+/** Exemples de l'enseignant envoyés au plus. */
+export const MAX_TEACHER_EXAMPLES = 8;
+
+/**
+ * Liste de vocabulaire photographiée : ses cartes de mots existent déjà (et gardent la progression de l'élève) ;
+ * l'IA la complète d'une fiche, d'un quiz, d'exercices et de cartes de phrases qui réemploient ces mots.
+ */
+function vocabularyInstructions(cards: { front: string; back: string }[]): string[] {
+  return [
+    `Liste de vocabulaire du cours, photographiée par le parent (${cards.length} mots, recto → verso) :`,
+    ...cards.slice(0, MAX_LIST_WORDS).map((c) => `- ${c.front} → ${c.back}`),
+    'Les cartes de ces mots existent déjà : "flashcards" ne contient que de NOUVELLES cartes (6 à 12) qui ' +
+      'réemploient ces mots dans des expressions ou de courtes phrases. Le quiz et les exercices portent sur ces ' +
+      'mots, au niveau de l’élève ; la fiche les regroupe par thème avec les points utiles (article, pluriel, ' +
+      'formes de verbes, faux amis).',
   ];
 }
 
@@ -296,6 +319,10 @@ export function buildPackRequest(input: {
   curriculum: string[];
   /** Centres d'intérêt de l'élève, déjà filtrés par interestLabels. */
   interests?: string[];
+  /** Cartes d'une liste de vocabulaire photographiée pour cette tâche. */
+  vocabulary?: { front: string; back: string }[];
+  /** Questions ou consignes relevées sur les documents de l'enseignant pour ce cours (interrogations, notes). */
+  teacherExamples?: string[];
 }): string {
   const lines = [
     `Élève en ${GRADE_LABELS[input.grade] ?? input.grade} (enseignement ${input.track}).`,
@@ -323,6 +350,16 @@ export function buildPackRequest(input: {
       ...input.curriculum.map((c, i) => `${i + 1}. ${c}`),
     );
   }
+  const examples = [...new Set(input.teacherExamples ?? [])].slice(0, MAX_TEACHER_EXAMPLES);
+  if (examples.length > 0) {
+    lines.push(
+      'Questions posées par l’enseignant dans ce cours (interrogations ou notes récentes). Reprends leur niveau ' +
+        'et leurs types d’exercices, sans les recopier :',
+      ...examples.map((e) => `- ${e}`),
+    );
+  }
+  if (input.vocabulary && input.vocabulary.length > 0)
+    lines.push(...vocabularyInstructions(input.vocabulary));
   if (input.task.description.startsWith(MOCK_EXAM_PREFIX)) lines.push(...MOCK_EXAM_INSTRUCTIONS);
   const errors = input.task.remediation?.errors ?? [];
   if (errors.length > 0) {

@@ -107,6 +107,7 @@ Deno.serve(async (request) => {
           reference: task.reference,
           confidence: task.confidence,
           remediation: task.remediation ? { errors: task.errors } : null,
+          examples: task.examples,
           status: 'draft',
         })),
       );

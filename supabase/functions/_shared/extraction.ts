@@ -46,6 +46,8 @@ export const extractionSchema = z.object({
           }),
         )
         .default([]),
+      /** Questions ou consignes représentatives du document (interrogation, notes de cours), sinon vide. */
+      examples: z.array(z.string()).default([]),
     }),
   ),
 });
@@ -87,6 +89,7 @@ export const EXTRACTION_JSON_SCHEMA = {
           'confidence',
           'remediation',
           'errors',
+          'examples',
         ],
         properties: {
           subject: { type: 'string' },
@@ -96,6 +99,7 @@ export const EXTRACTION_JSON_SCHEMA = {
           reference: { anyOf: [{ type: 'string' }, { type: 'null' }] },
           confidence: { type: 'number' },
           remediation: { type: 'boolean' },
+          examples: { type: 'array', items: { type: 'string' } },
           errors: {
             type: 'array',
             items: {
@@ -150,7 +154,11 @@ Règles :
    - liste de mots d'une dictée préparée : recopie chaque mot ou groupe de mots tel qu'il est écrit ; la tâche « préparer la dictée » reste une tâche à part ;
    - dictée corrigée : chaque mot où l'élève s'est trompé, écrit dans sa forme CORRECTE (celle de la correction, jamais la faute), sans la note ni les points.
 13. "vocabulary" : seulement pour une liste de vocabulaire (mots d'une langue étudiée avec leur traduction, ou mots français avec leur définition), 60 au plus, sinon une liste vide. "term" : le mot ou l'expression tel qu'il est écrit, avec son article s'il y en a un ; "meaning" : la traduction en français ou la définition écrite sur la page (null si la page n'en donne pas ; n'invente pas). "vocabularySubject" : la matière de la liste (« Néerlandais », « Anglais », « Allemand », « Espagnol », « Italien », « Français »…), sinon null.
-14. Dictée corrigée ou liste de vocabulaire : ne crée une tâche que si un travail est écrit (par ex. « revoir les mots pour vendredi »).`;
+14. Dictée corrigée ou liste de vocabulaire : ne crée une tâche que si un travail est écrit (par ex. « revoir les mots pour vendredi »).
+15. "examples" : pour une interrogation, des notes de cours ou une fiche d'exercices, recopie jusqu'à 5 questions ou
+    consignes représentatives de la tâche, telles qu'elles sont écrites (ex. « Vertaal : Ik heb gisteren gezwommen »,
+    « Conjugue zwemmen au passé composé ») : elles montrent le niveau et le type d'exercices de l'enseignant. Jamais
+    de nom, de note, de points ni de réponse de l'élève. Liste vide pour un journal de classe ou si rien ne s'y prête.`;
 
 export const GRADE_LABELS: Record<string, string> = {
   M1: '1re maternelle',
@@ -211,6 +219,9 @@ export function buildContext(grade: string, documentType: DocumentType | null, n
 export const MAX_REMEDIATIONS = 3;
 /** Erreurs gardées par notion (texte court : la copie n'est jamais recopiée en entier). */
 export const MAX_REMEDIATION_ERRORS = 5;
+/** Exemples de l'enseignant gardés par tâche (voir task.examples). */
+export const MAX_EXAMPLES = 5;
+export const MAX_EXAMPLE_LENGTH = 200;
 const clip = (text: string | null, max: number) => text?.trim().replace(/\s+/g, ' ').slice(0, max) || null;
 export const REMEDIATION_DAYS = 7;
 
@@ -250,6 +261,9 @@ export function parseExtraction(text: string, now: Date = new Date()): Extractio
           ...task,
           dueDate: dueDate ?? (task.remediation ? defaultDue : null),
           confidence: Math.round(task.confidence * 100) / 100,
+          examples: [
+            ...new Set(task.examples.map((e) => clip(e, MAX_EXAMPLE_LENGTH)).filter((e): e is string => !!e)),
+          ].slice(0, MAX_EXAMPLES),
           errors: task.remediation
             ? task.errors
                 .map((e) => ({

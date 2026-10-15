@@ -1,5 +1,6 @@
 import {
   foreignLanguage,
+  needsStudyPack,
   type LanguageCard,
   addDays,
   reviewCard,
@@ -307,10 +308,42 @@ export function useLogPractice(childId: string) {
  */
 export async function prefetchForOffline(
   queryClient: ReturnType<typeof useQueryClient>,
-  sessions: { study_session_task: { task_id: string }[] }[],
+  sessions: {
+    study_session_task: {
+      task_id: string;
+      activity: string;
+      done_at: string | null;
+      task: { subject: string; description: string };
+    }[];
+  }[],
 ) {
-  const taskIds = [...new Set(sessions.flatMap((s) => s.study_session_task.map((i) => i.task_id)))];
-  await Promise.all(taskIds.map((id) => queryClient.prefetchQuery(studyPackQuery(id))));
+  const items = sessions.flatMap((s) => s.study_session_task);
+  const taskIds = [...new Set(items.map((i) => i.task_id))];
+  const packs = new Map(
+    await Promise.all(
+      taskIds.map(
+        async (id) => [id, await queryClient.fetchQuery(studyPackQuery(id)).catch(() => undefined)] as const,
+      ),
+    ),
+  );
+  // Fiches à la demande : celles des prochains jours qui manquent sont préparées maintenant, l'une après l'autre
+  // (rien pour un devoir à faire, une activité déjà faite ni un chapitre de blocus sans nom).
+  const missing = [
+    ...new Set(
+      items
+        .filter((i) => i.activity !== 'faire' && i.done_at === null && needsStudyPack(i.task))
+        .map((i) => i.task_id)
+        .filter((id) => packs.get(id) === null),
+    ),
+  ];
+  for (const taskId of missing) {
+    try {
+      queryClient.setQueryData(['study_pack', taskId], await invokeGenerate(taskId));
+      void queryClient.invalidateQueries({ queryKey: ['flashcards'] });
+    } catch {
+      // Quota atteint ou réseau coupé : la fiche sera préparée à l'ouverture de la leçon.
+    }
+  }
 }
 
 /** Fiches déjà préparées pour une liste de tâches (impression de la semaine). */

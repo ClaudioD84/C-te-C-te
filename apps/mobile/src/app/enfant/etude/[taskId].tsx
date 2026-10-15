@@ -45,8 +45,16 @@ export default function StudyScreen() {
   };
   const logQuiz = useLogQuiz(activeChildId ?? '');
 
-  // Paquet absent : on le prépare à l'arrivée sur l'écran.
-  const missing = pack.isSuccess && pack.data === null;
+  // Paquet absent : on le prépare à l'arrivée sur l'écran. Liste de vocabulaire photographiée (des cartes
+  // seulement) : elle est complétée d'une fiche, d'un quiz et d'exercices ; en cas d'échec, la liste reste.
+  const stored = pack.data?.content;
+  const bareList =
+    !!stored &&
+    !stored.topicUnclear &&
+    stored.quiz.length === 0 &&
+    stored.exercises.length === 0 &&
+    stored.flashcards.length > 0;
+  const missing = pack.isSuccess && (pack.data === null || bareList);
   useEffect(() => {
     if (missing && !requested.current) {
       requested.current = true;
@@ -69,7 +77,7 @@ export default function StudyScreen() {
     );
   }
 
-  if (!child.data || pack.isLoading || generate.isPending || (missing && !generate.isError)) {
+  if (!child.data || pack.isLoading || generate.isPending || (missing && !generate.isError && !bareList)) {
     return (
       <ThemedView style={[styles.container, styles.center]}>
         <ActivityIndicator size="large" />

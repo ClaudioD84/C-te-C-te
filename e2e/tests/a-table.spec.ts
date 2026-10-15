@@ -1,12 +1,21 @@
 import { expect, test } from '@playwright/test';
 
-import { addChild, button, insertValidatedTasks, publishPlanning, signUp, sql } from './helpers';
+import {
+  addChild,
+  button,
+  insertValidatedTasks,
+  prepareWeekPacks,
+  publishPlanning,
+  signUp,
+  sql,
+} from './helpers';
 
 test('ce soir à table : questions sur ce qui a été travaillé aujourd’hui', async ({ page }) => {
   const email = await signUp(page, 'a-table');
   const { childId, familyId } = await addChild(page, email, 'Hérisson');
   insertValidatedTasks(familyId, childId);
   await publishPlanning(page, 'Hérisson', childId);
+  await prepareWeekPacks(page);
   await page.goBack();
   await expect(page.getByText('🍽️ Ce soir à table')).toHaveCount(0);
 

@@ -35,7 +35,7 @@ test('dictée corrigée : les mots à revoir rejoignent la dictée de la semaine
   );
 });
 
-test('liste de vocabulaire : des cartes de révision, le français au recto', async ({ page }) => {
+test('liste de vocabulaire : des cartes de révision, le français au recto', async ({ page, request }) => {
   const email = await signUp(page, 'vocabulaire');
   const { childId } = await addChild(page, email, 'Loutre', { grade: '1re secondaire' });
 
@@ -65,4 +65,26 @@ test('liste de vocabulaire : des cartes de révision, le français au recto', as
       `select status from task where child_id = '${childId}' and description like 'Étudier le vocabulaire%'`,
     ),
   ).toBe('validated');
+
+  // À la demande, l'IA complète la liste (quiz, exercices, cartes de phrases) à partir des vrais mots ; les cartes
+  // de mots restent, avec leur progression.
+  const taskId = sql(
+    `select id from task where child_id = '${childId}' and description like 'Étudier le vocabulaire%'`,
+  );
+  const listCards = () =>
+    sql(
+      `select string_agg(id::text, ',' order by front) from flashcard where child_id = '${childId}' and from_list`,
+    );
+  const before = listCards();
+  await page.goto(`/paquet/${taskId}`);
+  await button(page, 'Compléter avec un quiz et des exercices').click();
+  await expect(page.getByText(/^Quiz \([1-9]\d*\) · exercices/)).toBeVisible();
+  expect(listCards()).toBe(before);
+  expect(
+    Number(sql(`select count(*) from flashcard where child_id = '${childId}' and not from_list`)),
+  ).toBeGreaterThan(0);
+  const requests = (await (await request.get('http://127.0.0.1:5300/__packs')).json()) as string[];
+  expect(
+    requests.some((text) => text.includes('- la maison → het huis') && text.includes('NOUVELLES cartes')),
+  ).toBe(true);
 });

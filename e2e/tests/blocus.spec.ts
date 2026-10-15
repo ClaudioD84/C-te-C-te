@@ -47,7 +47,7 @@ test('plan de blocus : horaire des examens, révisions réparties, avancement da
            and t.description like 'Examen blanc de %'`),
   ).toBe('2');
 
-  // À la publication du planning, pas de fiche IA pour les chapitres sans nom (Histoire, partie 1…).
+  // Pas de fiche IA pour les chapitres sans nom (Histoire, partie 1…).
   await page.goBack();
   await publishPlanning(page, 'Faucon', childId);
   expect(

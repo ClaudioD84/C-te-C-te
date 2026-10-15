@@ -1,6 +1,14 @@
 import { expect, test } from '@playwright/test';
 
-import { addChild, button, insertValidatedTasks, publishPlanning, signUp, sql } from './helpers';
+import {
+  addChild,
+  button,
+  insertValidatedTasks,
+  prepareWeekPacks,
+  publishPlanning,
+  signUp,
+  sql,
+} from './helpers';
 
 test('rattachement au programme : proposé par l’IA, corrigé par le parent, visible dans le programme', async ({
   page,
@@ -9,6 +17,7 @@ test('rattachement au programme : proposé par l’IA, corrigé par le parent, v
   const { childId, familyId } = await addChild(page, email, 'Castor');
   insertValidatedTasks(familyId, childId);
   await publishPlanning(page, 'Castor', childId);
+  await prepareWeekPacks(page);
 
   // L'IA (simulée) choisit le premier attendu proposé : la leçon d'Éveil est rattachée.
   const taskId = sql(

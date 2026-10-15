@@ -81,8 +81,8 @@ export function insertValidatedTasks(familyId: string, childId: string) {
 }
 
 /**
- * Calcule et publie le planning de la semaine, puis attend que les fiches des leçons et interrogations
- * (préparées en arrière-plan par l'IA) soient enregistrées.
+ * Calcule et publie le planning de la semaine. Les fiches ne sont pas préparées à la publication (sauf pour un
+ * enfant qui préfère le papier) : la console de l'enfant les prépare à la demande, ou `prepareWeekPacks`.
  */
 export async function publishPlanning(page: Page, alias: string, childId: string) {
   await button(page, 'Planning de la semaine').click();
@@ -90,12 +90,14 @@ export async function publishPlanning(page: Page, alias: string, childId: string
   await expect(page.getByText('Proposition')).toBeVisible();
   await button(page, "Publier sur la console de l'enfant").click();
   await expect(page.getByText(`Semaine de ${alias}`)).toBeVisible();
-  await expect
-    .poll(() => Number(sql(`select count(*) from study_pack where child_id = '${childId}'`)), {
-      timeout: 60_000,
-    })
-    .toBeGreaterThanOrEqual(2);
-  await expect(page.getByText(/Préparation des fiches/)).toHaveCount(0, { timeout: 60_000 });
+  expect(Number(sql(`select count(*) from study_session where child_id = '${childId}'`))).toBeGreaterThan(0);
+}
+
+/** Depuis le planning publié : prépare toutes les fiches de la semaine (« Version papier »). */
+export async function prepareWeekPacks(page: Page) {
+  await button(page, /^Préparer les fiches à imprimer \(\d+\)$/).click();
+  await expect(button(page, /^Préparer les fiches à imprimer/)).toHaveCount(0, { timeout: 60_000 });
+  await expect(button(page, /^Imprimer les fiches de la semaine \(\d+\)$/)).toBeVisible();
 }
 
 /**

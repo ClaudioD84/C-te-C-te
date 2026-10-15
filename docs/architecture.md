@@ -168,7 +168,7 @@ Points clés :
 |---|---|---|
 | `scan-extract` | Lire un document photographié (une ou plusieurs pages) et extraire les tâches | À la demande |
 | `plan-week` | Construire le planning de la semaine | Chaque semaine (traitement groupé le dimanche) + à la demande |
-| `generate-pack` | Fiche, quiz, exercices et cartes d'une tâche (un seul appel) | À la publication du planning, puis réutilisé ; quota mensuel provisoire : essai 60, Solo 150, Famille 400 |
+| `generate-pack` | Fiche, quiz, exercices et cartes d'une tâche (un seul appel) | À la demande : console de l'enfant (3 jours d'avance), ouverture d'une leçon, ou parent (fiche, impression de la semaine ; à la publication seulement si l'enfant préfère le papier), puis réutilisé ; quota mensuel provisoire : essai 60, Solo 150, Famille 400 |
 | `revision-plan` | Thèmes de révision d'une épreuve (CEB, CE1D, CESS, bilan), étalés ensuite par l'application | À la demande ; quota mensuel provisoire : essai 3, Solo 10, Famille 25 |
 | `revenuecat-webhook` | Mettre à jour l'abonnement | Événements RevenueCat |
 
@@ -183,7 +183,9 @@ Le modèle est **configurable par fonction** (variable d'environnement), pour aj
 
 ### 7.3 Maîtrise des coûts
 
-- **Mise en cache des consignes** (en place) : la partie fixe des requêtes (consignes) est placée en tête et marquée pour le cache de l'API ; utile quand plusieurs requêtes se suivent en quelques minutes (fiches préparées à la publication d'un planning).
+- **Mise en cache des consignes** (en place) : la partie fixe des requêtes (consignes) est placée en tête et marquée pour le cache de l'API ; utile quand plusieurs requêtes se suivent en quelques minutes (fiches des prochains jours préparées par la console).
+- **Fiches à la demande** (en place) : aucune fiche n'est préparée pour une tâche qui ne sera peut-être jamais travaillée (déplacée, retirée, planifiée dans deux semaines).
+- **Au niveau du cours** (en place) : à la lecture d'une interrogation ou de notes, jusqu'à 5 questions représentatives sont gardées (`task.examples`) ; les fiches du même cours les reçoivent, avec les questions ratées des interrogations corrigées, pour reprendre le niveau et les types d'exercices de l'enseignant. Une liste de vocabulaire photographiée est complétée par l'IA à partir des vrais mots ; ses cartes de mots (`flashcard.from_list`) gardent la progression de l'enfant.
 - **Coût mesuré** (en place) : chaque appel est journalisé dans `ai_usage` avec son coût estimé, y compris quand l'API bascule vers un modèle de secours ; `pnpm beta stats` donne le coût par famille.
 - **Adaptation à l'année et à la filière** : la demande à l'IA précise le registre (jamais enfantin dès le secondaire), les types de questions (application, analyse, justification, transfert au fil des degrés) et les quantités (de 3 questions en 1re-2e primaire à 12 au 3e degré) ; au secondaire, la filière (général, technique, professionnel, spécialisé) et, en langue moderne, un travail dans la langue étudiée au niveau visé du cadre européen (`levelGuidance` dans `supabase/functions/_shared/pack.ts`). La console de l'enfant est ludique ou sobre (`presentation` dans les préférences, sobre par défaut au secondaire : sans avatar, badges ni « Bravo »).
 - **Réutilisation des fiches** (en place) : avant d'appeler l'IA, `generate-pack` cherche une fiche déjà préparée pour une demande strictement identique (empreinte SHA-256 de la consigne et du texte complet de la demande : année, section, adaptations, centres d'intérêt, attendus, tâche). Elle est copiée sans appel à l'IA ni quota consommé ; jamais pour une régénération ni à partir d'une fiche signalée. Une famille ne reçoit ainsi rien qu'elle n'ait déjà écrit elle-même. Taux de réutilisation dans `pnpm beta stats`.

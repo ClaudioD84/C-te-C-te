@@ -249,7 +249,11 @@ export default function PlanningScreen() {
               { from: today, days: preview.days },
               {
                 onSuccess: () => {
-                  // Fiches et quiz préparés à l'avance pour les leçons et évaluations de la semaine.
+                  setPreview(null);
+                  setEditingPublished(false);
+                  // Fiches préparées à la demande (console de l'enfant, 3 jours d'avance) ; seulement pour
+                  // l'impression d'avance quand l'enfant préfère le papier.
+                  if (!profile.preferences.prefersPaper) return;
                   const toStudy = [
                     ...new Set(
                       preview.days.flatMap((d) =>
@@ -264,8 +268,6 @@ export default function PlanningScreen() {
                       ),
                     ),
                   ];
-                  setPreview(null);
-                  setEditingPublished(false);
                   if (toStudy.length > 0) {
                     setPreparing({ done: 0, total: toStudy.length });
                     preparePacks(toStudy, (done) => setPreparing({ done, total: toStudy.length })).finally(

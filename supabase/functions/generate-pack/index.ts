@@ -21,12 +21,18 @@ import { adminClient, authenticateMember } from '../_shared/supabase.ts';
 import { reportServerError } from '../_shared/monitoring.ts';
 
 /**
- * Prépare le paquet d'étude d'une tâche (fiche, quiz, exercices, cartes) avec Claude.
- * Idempotent : si le paquet existe, il est renvoyé tel quel, sauf demande de régénération.
+ * Prépare le paquet d'étude d'une tâche (fiche, quiz, exercices, cartes) avec Claude, à la demande : quand l'enfant
+ * en a besoin (console, 3 jours d'avance) ou que le parent le demande.
+ * Idempotent : si le paquet existe, il est renvoyé tel quel, sauf demande de régénération ; une liste de vocabulaire
+ * photographiée (cartes seules) est complétée la première fois.
  */
 
 const bodySchema = z.object({ taskId: z.uuid(), regenerate: z.boolean().optional() });
 const PACK_COLUMNS = 'id, task_id, content, created_at, reported_at';
+/** Paquet d'une liste de vocabulaire photographiée, sans IA (voir create_vocabulary_cards). */
+const LIST_MODEL = 'liste-photographiee';
+/** Fenêtre des documents de l'enseignant pris en exemple pour un même cours. */
+const COURSE_EXAMPLES_DAYS = 180;
 
 Deno.serve(async (request) => {
   if (request.method === 'OPTIONS') return new Response('ok', { headers: corsHeaders });
@@ -42,7 +48,9 @@ Deno.serve(async (request) => {
 
     const { data: task } = await admin
       .from('task')
-      .select('id, child_id, subject, kind, description, reference, status, curriculum_item_id, remediation')
+      .select(
+        'id, child_id, subject, kind, description, reference, status, curriculum_item_id, remediation, examples',
+      )
       .eq('id', taskId)
       .eq('family_id', familyId)
       .maybeSingle();
@@ -54,10 +62,17 @@ Deno.serve(async (request) => {
 
     const { data: existing } = await admin
       .from('study_pack')
-      .select(PACK_COLUMNS)
+      .select(`${PACK_COLUMNS}, model`)
       .eq('task_id', taskId)
       .maybeSingle();
-    if (existing && !regenerate) return json({ pack: existing });
+    const { model: existingModel, ...existingPack } = existing ?? { model: null };
+    if (existing && !regenerate && existingModel !== LIST_MODEL) return json({ pack: existingPack });
+
+    // Liste de vocabulaire photographiée : ses cartes de mots sont gardées, l'IA complète autour.
+    const { data: listCards } = existing
+      ? await admin.from('flashcard').select('front, back').eq('pack_id', existing.id).eq('from_list', true)
+      : { data: [] };
+    const vocabulary = (listCards ?? []) as { front: string; back: string }[];
 
     const { data: child } = await admin
       .from('child_profile')
@@ -86,12 +101,14 @@ Deno.serve(async (request) => {
       interests: interestLabels(child.preferences?.interests),
       task,
       curriculum: (curriculum ?? []).map((c) => c.label as string),
+      vocabulary,
+      teacherExamples: [...(task.examples ?? []), ...(await courseExamples(admin, task))],
     });
     const requestKey = await packRequestKey(requestText);
 
     // Demande identique déjà préparée (pour cette famille ou une autre) : la fiche est copiée, sans appel à l'IA
-    // ni quota consommé. Jamais pour une régénération, ni à partir d'une fiche signalée.
-    if (!regenerate) {
+    // ni quota consommé. Jamais pour une régénération, ni à partir d'une fiche signalée, ni pour une liste.
+    if (!regenerate && vocabulary.length === 0) {
       const { data: reusable } = await admin
         .from('study_pack')
         .select('content, model, curriculum_item_id')
@@ -142,15 +159,27 @@ Deno.serve(async (request) => {
     const { content, curriculumIndex } = parsePackResponse(result.text, curriculum?.length ?? 0);
     const curriculumItemId = curriculumIndex !== null ? (curriculum![curriculumIndex]!.id as string) : null;
 
-    const pack = await savePack(admin, {
-      familyId,
-      task,
-      content,
-      model: result.model,
-      requestKey,
-      curriculumItemId,
-      replace: existing?.id ?? null,
-    });
+    const pack =
+      existing && vocabulary.length > 0
+        ? await completeListPack(admin, {
+            familyId,
+            task,
+            packId: existing.id,
+            listCards: vocabulary,
+            content,
+            model: result.model,
+            requestKey,
+            curriculumItemId,
+          })
+        : await savePack(admin, {
+            familyId,
+            task,
+            content,
+            model: result.model,
+            requestKey,
+            curriculumItemId,
+            replace: existing?.id ?? null,
+          });
 
     await admin.from('ai_usage').insert({
       family_id: familyId,
@@ -231,13 +260,99 @@ async function savePack(
     if (cardsError) throw cardsError;
   }
 
-  // Rattachement au programme (F2), sans jamais remplacer un choix du parent.
-  if (input.curriculumItemId && !task.curriculum_item_id) {
+  await attachCurriculum(admin, task, input.curriculumItemId);
+  return pack;
+}
+
+/** Rattachement au programme (F2), sans jamais remplacer un choix du parent. */
+async function attachCurriculum(admin: SupabaseClient, task: PackTask, curriculumItemId: string | null) {
+  if (curriculumItemId && !task.curriculum_item_id) {
     await admin
       .from('task')
-      .update({ curriculum_item_id: input.curriculumItemId })
+      .update({ curriculum_item_id: curriculumItemId })
       .eq('id', task.id)
       .is('curriculum_item_id', null);
   }
+}
+
+/**
+ * Liste de vocabulaire complétée (ou régénérée) : le paquet est mis à jour sur place ; les cartes de mots de la liste
+ * restent, avec la progression de l'enfant ; les autres cartes sont remplacées par les nouvelles.
+ */
+async function completeListPack(
+  admin: SupabaseClient,
+  input: {
+    familyId: string;
+    task: PackTask;
+    packId: string;
+    listCards: { front: string; back: string }[];
+    content: StudyPack;
+    model: string;
+    requestKey: string;
+    curriculumItemId: string | null;
+  },
+) {
+  const key = (card: { front: string; back: string }) =>
+    `${card.front.trim().toLocaleLowerCase('fr')}→${card.back.trim().toLocaleLowerCase('fr')}`;
+  const listed = new Set(input.listCards.map(key));
+  const fresh = input.content.flashcards.filter((card) => !listed.has(key(card)));
+  const content = { ...input.content, flashcards: [...input.listCards, ...fresh] };
+
+  const { data: pack, error } = await admin
+    .from('study_pack')
+    .update({
+      content,
+      model: input.model,
+      request_key: input.requestKey,
+      curriculum_item_id: input.curriculumItemId,
+    })
+    .eq('id', input.packId)
+    .select(PACK_COLUMNS)
+    .single();
+  if (error) throw error;
+
+  const { error: deleteError } = await admin
+    .from('flashcard')
+    .delete()
+    .eq('pack_id', input.packId)
+    .eq('from_list', false);
+  if (deleteError) throw deleteError;
+  if (fresh.length > 0) {
+    const { error: cardsError } = await admin.from('flashcard').insert(
+      fresh.map((card) => ({
+        family_id: input.familyId,
+        child_id: input.task.child_id,
+        pack_id: input.packId,
+        front: card.front,
+        back: card.back,
+      })),
+    );
+    if (cardsError) throw cardsError;
+  }
+  await attachCurriculum(admin, input.task, input.curriculumItemId);
   return pack;
+}
+
+/**
+ * Questions de l'enseignant relevées sur les autres documents du même cours (exemples d'une interrogation ou de
+ * notes, questions ratées d'une interrogation corrigée), les plus récentes d'abord.
+ */
+async function courseExamples(
+  admin: SupabaseClient,
+  task: { id: string; child_id: string; subject: string },
+): Promise<string[]> {
+  const since = new Date(Date.now() - COURSE_EXAMPLES_DAYS * 86_400_000).toISOString();
+  const { data } = await admin
+    .from('task')
+    .select('examples, remediation')
+    .eq('child_id', task.child_id)
+    .ilike('subject', task.subject.replace(/[\\%_]/g, '\\$&'))
+    .neq('id', task.id)
+    .gte('created_at', since)
+    .order('created_at', { ascending: false })
+    .limit(20);
+  return (data ?? []).flatMap((row) => [
+    ...((row.examples as string[] | null) ?? []),
+    ...((row.remediation as { errors?: { question: string }[] } | null)?.errors ?? []).map((e) => e.question),
+  ]);
 }

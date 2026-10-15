@@ -1,18 +1,19 @@
 import { expect, test } from '@playwright/test';
 
 import {
+  answerTraining,
   button,
   childOf,
+  childTitle,
   enterChildMode,
   familyOf,
   insertValidatedTasks,
+  openTraining,
+  prepareWeekPacks,
   publishPlanning,
+  reviewCard,
   signUp,
   sql,
-  openTraining,
-  childTitle,
-  reviewCard,
-  answerTraining,
   verification,
 } from './helpers';
 
@@ -41,6 +42,9 @@ test('parcours complet : profil, planning, fiches, console enfant, suivi, dossie
   await test.step('planning publié et fiches préparées par l’IA', async () => {
     insertValidatedTasks(familyId, childId);
     await publishPlanning(page, 'Léo', childId);
+    // Fiches à la demande : rien n'est préparé à la publication ; le parent les prépare pour la semaine.
+    expect(sql(`select count(*) from study_pack where child_id = '${childId}'`)).toBe('0');
+    await prepareWeekPacks(page);
     expect(Number(sql(`select count(*) from study_session where child_id = '${childId}'`))).toBeGreaterThan(
       0,
     );

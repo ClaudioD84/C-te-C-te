@@ -5,6 +5,7 @@ import {
   button,
   enterChildMode,
   insertValidatedTasks,
+  prepareWeekPacks,
   publishPlanning,
   reviewCard,
   signUp,
@@ -16,6 +17,7 @@ test('révision express la veille d’une interro : toutes ses cartes, une fois'
   const { childId, familyId } = await addChild(page, email, 'Colibri');
   insertValidatedTasks(familyId, childId);
   await publishPlanning(page, 'Colibri', childId);
+  await prepareWeekPacks(page);
   await page.goBack();
   // L'interrogation d'Éveil a lieu demain.
   sql(`update task set due_date = current_date + 1

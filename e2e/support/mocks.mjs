@@ -9,6 +9,8 @@ const emails = [];
 const pushes = [];
 // Lectures de photos reçues : nombre de pages (images) et consigne, lisibles sur /__scans.
 const scanReads = [];
+// Demandes de fiches reçues (texte de la demande), lisibles sur /__packs.
+const packRequests = [];
 
 const answers = {
   explanation: {
@@ -218,6 +220,11 @@ export function startMocks(port = MOCKS_PORT) {
         }
         // Service de notifications d'Expo : messages gardés en mémoire, lisibles sur /__push. Un jeton qui
         // contient « perime » répond comme une application désinstallée.
+        if (req.url === '/__packs') {
+          res.writeHead(200, { 'content-type': 'application/json' });
+          res.end(JSON.stringify(packRequests));
+          return;
+        }
         if (req.url === '/__scans') {
           res.writeHead(200, { 'content-type': 'application/json' });
           res.end(JSON.stringify(scanReads));
@@ -268,6 +275,14 @@ export function startMocks(port = MOCKS_PORT) {
             pages: content.filter((block) => block.type === 'image').length,
             context: content.at(-1)?.text ?? '',
           });
+        }
+        if (key === 'topicUnclear') {
+          const content = request.messages?.[0]?.content;
+          packRequests.push(
+            typeof content === 'string'
+              ? content
+              : (content ?? []).map((block) => block.text ?? '').join('\n'),
+          );
         }
         // Photo d'une dictée corrigée ou d'une liste de vocabulaire (type choisi par le parent).
         let answer = answers[key];

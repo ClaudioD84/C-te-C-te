@@ -238,3 +238,43 @@ Deno.test('niveau et filière : registre, types de questions et quantités adapt
   if (young.includes('Enseignement général') || young.includes('langue étudiée'))
     throw new Error('Consigne du secondaire envoyée en primaire');
 });
+
+Deno.test('liste de vocabulaire et questions de l’enseignant : la fiche part du vrai cours', () => {
+  const text = buildPackRequest({
+    grade: 'S3',
+    track: 'general',
+    needs: [],
+    task: {
+      subject: 'Néerlandais',
+      kind: 'lecon',
+      description: 'Étudier le vocabulaire (2 mots)',
+      reference: null,
+    },
+    curriculum: [],
+    vocabulary: [
+      { front: 'le chien', back: 'de hond' },
+      { front: 'la maison', back: 'het huis' },
+    ],
+    teacherExamples: [
+      'Vertaal : Ik heb gisteren gezwommen.',
+      'Vertaal : Ik heb gisteren gezwommen.',
+      'Vul in : de/het … huis',
+    ],
+  });
+  assertStringIncludes(text, '- le chien → de hond');
+  assertStringIncludes(text, 'NOUVELLES cartes');
+  assertStringIncludes(text, 'Questions posées par l’enseignant');
+  // Exemple répété : envoyé une seule fois.
+  assertEquals(text.split('Vertaal : Ik heb gisteren gezwommen.').length, 2);
+  assertStringIncludes(text, 'pas seulement des mots isolés');
+
+  const plain = buildPackRequest({
+    grade: 'S3',
+    track: 'general',
+    needs: [],
+    task: { subject: 'Histoire', kind: 'lecon', description: 'La révolution belge', reference: null },
+    curriculum: [],
+  });
+  if (plain.includes('Liste de vocabulaire') || plain.includes('Questions posées'))
+    throw new Error('Contexte de cours envoyé sans document');
+});

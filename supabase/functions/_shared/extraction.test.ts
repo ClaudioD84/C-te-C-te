@@ -158,3 +158,43 @@ Deno.test(
     assertEquals(result.tasks[1]!.errors, []);
   },
 );
+
+Deno.test('exemples de l’enseignant : 5 au plus, courts, sans doublon', () => {
+  const long = 'x'.repeat(300);
+  const result = parseExtraction(
+    JSON.stringify({
+      documentType: 'interrogation',
+      tasks: [
+        {
+          subject: 'Néerlandais',
+          kind: 'interro',
+          description: 'Interrogation sur les verbes forts',
+          dueDate: null,
+          reference: null,
+          confidence: 0.9,
+          examples: ['Vertaal : ik zwom', ' Vertaal :  ik zwom ', 'a', 'b', 'c', 'd', long],
+        },
+      ],
+    }),
+  );
+  const examples = result.tasks[0]!.examples;
+  assertEquals(examples.slice(0, 2), ['Vertaal : ik zwom', 'a']);
+  assertEquals(examples.length, 5);
+  // Ancienne réponse sans le champ : liste vide.
+  const old = parseExtraction(
+    JSON.stringify({
+      documentType: 'journal_de_classe',
+      tasks: [
+        {
+          subject: 'Maths',
+          kind: 'devoir',
+          description: 'Ex. 3',
+          dueDate: null,
+          reference: null,
+          confidence: 1,
+        },
+      ],
+    }),
+  );
+  assertEquals(old.tasks[0]!.examples, []);
+});
