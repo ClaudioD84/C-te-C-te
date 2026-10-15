@@ -4,7 +4,7 @@ import {
   startOfMonthBrussels,
   type Subscription,
 } from '../_shared/access.ts';
-import { extractTasksFromImage, SCAN_MODEL } from '../_shared/claude.ts';
+import { extractTasksFromImages, SCAN_MODEL } from '../_shared/claude.ts';
 import { z } from '../_shared/deps.ts';
 import type { DocumentType } from '../_shared/extraction.ts';
 import { corsHeaders, json, UserFacingError } from '../_shared/http.ts';
@@ -13,8 +13,9 @@ import { adminClient, authenticate } from '../_shared/supabase.ts';
 import { reportServerError } from '../_shared/monitoring.ts';
 
 /**
- * Analyse d'une photo (F3) : vérifie les droits, lit la photo avec Claude,
- * enregistre les tâches en brouillon pour validation par le parent, puis supprime la photo.
+ * Analyse d'un document photographié (F3) : vérifie les droits, lit ses pages avec Claude (une seule analyse,
+ * comptée une fois dans le quota), enregistre les tâches en brouillon pour validation par le parent, puis
+ * supprime les photos.
  */
 
 const bodySchema = z.object({ scanId: z.uuid() });
@@ -25,6 +26,8 @@ interface ClaimedScan {
   child_id: string;
   document_type: DocumentType | null;
   storage_path: string | null;
+  /** Pages 2 et suivantes, dans l'ordre. */
+  extra_storage_paths: string[];
 }
 
 Deno.serve(async (request) => {
@@ -52,8 +55,10 @@ Deno.serve(async (request) => {
       throw new UserFacingError('Cette photo est déjà en cours d’analyse ou a déjà été analysée.', 409);
     }
     if (!scan.storage_path) throw new UserFacingError('La photo a expiré. Reprenez-la.', 410);
-    // Défense en profondeur (voir la contrainte scan_storage_path_family) : jamais hors du dossier de la famille.
-    if (!scan.storage_path.startsWith(`${familyId}/`)) throw new UserFacingError('Photo introuvable.', 404);
+    const paths = [scan.storage_path, ...(scan.extra_storage_paths ?? [])];
+    // Défense en profondeur (voir les contraintes de la table scan) : jamais hors du dossier de la famille.
+    if (!paths.every((path) => path.startsWith(`${familyId}/`)))
+      throw new UserFacingError('Photo introuvable.', 404);
 
     const now = new Date();
     const [{ data: subscription }, { count }] = await Promise.all([
@@ -73,15 +78,17 @@ Deno.serve(async (request) => {
     const problem = checkScanAccess(subscription as Subscription | null, count ?? 0, now);
     if (problem) throw new UserFacingError(ACCESS_MESSAGES[problem], 402);
 
-    const [{ data: child }, { data: file, error: downloadError }] = await Promise.all([
+    const [{ data: child }, ...files] = await Promise.all([
       admin.from('child_profile').select('grade').eq('id', scan.child_id).single(),
-      admin.storage.from(BUCKET).download(scan.storage_path),
+      ...paths.map((path) => admin.storage.from(BUCKET).download(path)),
     ]);
-    if (!child || downloadError || !file) throw new Error('Photo ou profil introuvable');
+    if (!child || files.some((f) => f.error || !f.data)) throw new Error('Photo ou profil introuvable');
 
-    const imageBase64 = encodeBase64(new Uint8Array(await file.arrayBuffer()));
-    const { extraction, model, usage } = await extractTasksFromImage({
-      imageBase64,
+    const imagesBase64 = await Promise.all(
+      files.map(async (f) => encodeBase64(new Uint8Array(await f.data!.arrayBuffer()))),
+    );
+    const { extraction, model, usage } = await extractTasksFromImages({
+      imagesBase64,
       grade: child.grade,
       documentType: scan.document_type,
       now,
@@ -115,11 +122,12 @@ Deno.serve(async (request) => {
         vocabulary: extraction.vocabulary.length > 0 ? extraction.vocabulary : null,
         vocabulary_subject: extraction.vocabularySubject,
         storage_path: null,
+        extra_storage_paths: [],
         processed_at: now.toISOString(),
       })
       .eq('id', scan.id);
-    // La photo n'est plus nécessaire : on la supprime immédiatement.
-    await admin.storage.from(BUCKET).remove([scan.storage_path]);
+    // Les photos ne sont plus nécessaires : on les supprime immédiatement.
+    await admin.storage.from(BUCKET).remove(paths);
 
     await admin.from('ai_usage').insert({
       family_id: familyId,
@@ -131,13 +139,13 @@ Deno.serve(async (request) => {
       cost_usd: estimateCostUsd(model || SCAN_MODEL, usage),
     });
 
-    return json({ status: 'draft', tasks: extraction.tasks.length });
+    return json({ status: 'draft', tasks: extraction.tasks.length, pages: paths.length });
   } catch (error) {
     const userFacing = error instanceof UserFacingError;
     if (!userFacing) await reportServerError('scan-extract', error);
     const message = userFacing ? error.message : "L'analyse a échoué. Réessayez dans un instant.";
 
-    // La photo est conservée pour permettre de réessayer ; l'échec est visible dans l'application.
+    // Les photos sont conservées pour permettre de réessayer ; l'échec est visible dans l'application.
     if (scanId) await admin.from('scan').update({ status: 'failed', error: message }).eq('id', scanId);
     return json({ error: message }, userFacing ? error.status : 500);
   }

@@ -25,7 +25,8 @@ import { useTheme } from '@/hooks/use-theme';
 
 /** Écran de validation (F3) : rien n'est planifié avant que le parent ait relu la liste. */
 export default function ScanReviewScreen() {
-  const { scanId } = useLocalSearchParams<{ scanId: string }>();
+  // « lot » : ouvert depuis la liste des documents à relire, on y revient après validation.
+  const { scanId, lot } = useLocalSearchParams<{ scanId: string; lot?: string }>();
   const scan = useScan(scanId);
   const tasks = useScanTasks(scanId);
   const process = useProcessScan(scanId);
@@ -47,7 +48,7 @@ export default function ScanReviewScreen() {
     return (
       <Screen>
         <ActivityIndicator size="large" />
-        <ThemedText style={styles.center}>Lecture de la photo en cours…</ThemedText>
+        <ThemedText style={styles.center}>Lecture du document en cours…</ThemedText>
         <ThemedText type="small" themeColor="textSecondary" style={styles.center}>
           Cela prend généralement moins de 20 secondes.
         </ThemedText>
@@ -106,7 +107,10 @@ export default function ScanReviewScreen() {
       ) : null}
 
       {readOnly ? (
-        <Button label="Retour au cockpit" onPress={() => router.dismissTo('/')} />
+        <Button
+          label={lot ? 'Retour aux documents' : 'Retour au cockpit'}
+          onPress={() => (lot ? router.back() : router.dismissTo('/'))}
+        />
       ) : (
         <>
           <NewTask scanId={scanId} childId={childId} />
@@ -116,7 +120,9 @@ export default function ScanReviewScreen() {
           <Button
             label="Valider la liste"
             loading={validate.isPending}
-            onPress={() => validate.mutate(undefined, { onSuccess: () => router.dismissTo('/') })}
+            onPress={() =>
+              validate.mutate(undefined, { onSuccess: () => (lot ? router.back() : router.dismissTo('/')) })
+            }
           />
         </>
       )}

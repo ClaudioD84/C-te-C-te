@@ -132,6 +132,17 @@ test('sécurité : chemin de photo d’une autre famille et contournement des qu
     },
   });
   expect(foreign.ok()).toBeFalsy();
+  // De même pour une page suivante d'un document de plusieurs pages.
+  const foreignPage = await request.post(`${GATEWAY_URL}/rest/v1/scan`, {
+    headers: headers(attacker.token),
+    data: {
+      child_id: childId,
+      document_type: 'interrogation',
+      storage_path: `${attacker.familyId}/page-1.jpg`,
+      extra_storage_paths: [`${attacker.familyId}/page-2.jpg`, `${victim.familyId}/photo.jpg`],
+    },
+  });
+  expect(foreignPage.ok()).toBeFalsy();
 
   // Numérisation légitime, déjà analysée.
   const scanId = crypto.randomUUID();
@@ -152,6 +163,7 @@ test('sécurité : chemin de photo d’une autre famille et contournement des qu
   // Ni la date de traitement (quota), ni le chemin du fichier, ni un retour en arrière du statut.
   expect((await patch({ processed_at: '2020-01-01T00:00:00Z' })).ok()).toBeFalsy();
   expect((await patch({ storage_path: `${victim.familyId}/photo.jpg` })).ok()).toBeFalsy();
+  expect((await patch({ extra_storage_paths: [`${victim.familyId}/photo.jpg`] })).ok()).toBeFalsy();
   expect((await patch({ status: 'uploaded' })).ok()).toBeFalsy();
   // La validation par le parent reste possible.
   expect((await patch({ status: 'validated' })).ok()).toBeTruthy();

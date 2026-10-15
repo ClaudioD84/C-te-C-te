@@ -93,6 +93,9 @@ devoirs et deux semaines de suivi, et « Emma » (2e maternelle).
 - **Photo du journal de classe** : « Photographier le journal de classe » > « Choisir dans la galerie », choisir
   une image, vérifiez l'aperçu, puis « Envoyer pour analyse ». *L'IA est simulée : elle propose toujours les deux
   mêmes tâches.*
+- **Plusieurs documents d'un coup** : choisir plusieurs images dans la galerie, puis « Les pages d'un même
+  document » ou « … documents différents » (ou « ＋ Ajouter un autre document ») ; après l'envoi, « Documents à
+  relire » liste chaque document, lu puis relu et validé un par un.
 - **Planning** : « Planning de la semaine » > « Calculer le planning » > « Publier sur la console de l'enfant ».
   Les fiches et quiz se préparent (contenu d'exemple sur les fleuves de Belgique). Dans le même écran :
   **Congés et absences** (ajoutez un congé : le planning l'évite, puis « Idées pour les vacances »).

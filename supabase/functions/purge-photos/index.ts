@@ -24,13 +24,17 @@ Deno.serve(async (request) => {
   const limit = new Date(Date.now() - MAX_AGE_HOURS * 3600 * 1000).toISOString();
   const { data: scans, error } = await admin
     .from('scan')
-    .select('id, status, storage_path')
+    .select('id, status, storage_path, extra_storage_paths')
     .not('storage_path', 'is', null)
     .lt('created_at', limit)
     .limit(500);
   if (error) return json({ error: error.message }, 500);
 
-  const paths = scans.map((s) => s.storage_path as string);
+  // Toutes les pages d'un document : la première et les suivantes.
+  const paths = scans.flatMap((s) => [
+    s.storage_path as string,
+    ...((s.extra_storage_paths as string[]) ?? []),
+  ]);
   if (paths.length > 0) {
     const removed = await admin.storage.from(BUCKET).remove(paths);
     if (removed.error) return json({ error: removed.error.message }, 500);
@@ -38,6 +42,7 @@ Deno.serve(async (request) => {
       .from('scan')
       .update({
         storage_path: null,
+        extra_storage_paths: [],
         status: 'failed',
         error: 'Photo supprimée : non analysée dans les 24 heures.',
       })
@@ -51,7 +56,7 @@ Deno.serve(async (request) => {
     // Analyse terminée mais photo restée (cas exceptionnel) : on garde le statut.
     await admin
       .from('scan')
-      .update({ storage_path: null })
+      .update({ storage_path: null, extra_storage_paths: [] })
       .in(
         'id',
         scans.map((s) => s.id),

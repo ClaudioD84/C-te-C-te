@@ -7,7 +7,7 @@
  * Voir README.md (même dossier) pour ajouter des cas et lire le rapport.
  */
 import {
-  extractTasksFromImage,
+  extractTasksFromImages,
   generatePackFromRequest,
   PACK_EFFORT,
   PACK_MODEL,
@@ -140,8 +140,8 @@ if (runPhotos) {
           read = { tasks: [] };
         } else {
           const result = await withTimeout(
-            extractTasksFromImage({
-              imageBase64: encodeBase64(await Deno.readFile(imagePath)),
+            extractTasksFromImages({
+              imagesBase64: [encodeBase64(await Deno.readFile(imagePath))],
               grade: expected.grade,
               documentType: expected.documentType as DocumentType | null,
               now: new Date(`${expected.today}T10:00:00+02:00`),

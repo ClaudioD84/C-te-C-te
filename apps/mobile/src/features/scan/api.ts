@@ -59,50 +59,111 @@ interface SubmitScanInput {
   familyId: string;
   childId: string;
   documentType: DocumentType;
-  image: PreparedImage;
+  /** Pages du document, dans l'ordre. */
+  pages: PreparedImage[];
 }
 
-/** Envoie la photo dans le dossier privé de la famille et crée la numérisation. */
+/** Envoie les pages d'un document dans le dossier privé de la famille et crée la numérisation. */
 export async function submitScan({
   familyId,
   childId,
   documentType,
-  image,
+  pages,
 }: SubmitScanInput): Promise<string> {
   const scanId = randomUUID();
-  const path = `${familyId}/${scanId}.jpg`;
-  const body = jpegBytes(image);
+  // Première page : <famille>/<numérisation>.jpg ; les suivantes : <numérisation>-2.jpg, -3.jpg…
+  const paths = pages.map((_, i) => `${familyId}/${scanId}${i === 0 ? '' : `-${i + 1}`}.jpg`);
+  const removeAll = () => supabase.storage.from('scans').remove(paths);
 
-  const upload = await supabase.storage.from('scans').upload(path, body, { contentType: 'image/jpeg' });
-  if (upload.error) throw upload.error;
+  const uploads = await Promise.all(
+    pages.map((page, i) =>
+      supabase.storage.from('scans').upload(paths[i]!, jpegBytes(page), { contentType: 'image/jpeg' }),
+    ),
+  );
+  const failed = uploads.find((upload) => upload.error);
+  if (failed) {
+    await removeAll();
+    throw failed.error;
+  }
 
-  const { error } = await supabase
-    .from('scan')
-    .insert({ id: scanId, child_id: childId, document_type: documentType, storage_path: path });
+  const { error } = await supabase.from('scan').insert({
+    id: scanId,
+    child_id: childId,
+    document_type: documentType,
+    storage_path: paths[0],
+    extra_storage_paths: paths.slice(1),
+  });
   if (error) {
-    await supabase.storage.from('scans').remove([path]);
+    await removeAll();
     throw error;
   }
   return scanId;
+}
+
+/** Analyse d'un document par l'IA (fonction serveur) ; l'erreur porte un message lisible par le parent. */
+export async function processScan(scanId: string): Promise<void> {
+  const { error } = await supabase.functions.invoke('scan-extract', { body: { scanId } });
+  if (error instanceof FunctionsHttpError) {
+    const body = (await error.context.json().catch(() => null)) as { error?: string } | null;
+    throw new Error(body?.error ?? "L'analyse a échoué. Réessayez dans un instant.");
+  }
+  if (error) throw new Error('Connexion impossible. Vérifiez votre réseau et réessayez.');
 }
 
 /** Lance l'analyse par l'IA (fonction serveur). */
 export function useProcessScan(scanId: string) {
   const queryClient = useQueryClient();
   return useMutation({
-    mutationFn: async () => {
-      const { error } = await supabase.functions.invoke('scan-extract', { body: { scanId } });
-      if (error instanceof FunctionsHttpError) {
-        // Le serveur renvoie un message lisible par le parent.
-        const body = (await error.context.json().catch(() => null)) as { error?: string } | null;
-        throw new Error(body?.error ?? "L'analyse a échoué. Réessayez dans un instant.");
-      }
-      if (error) throw new Error('Connexion impossible. Vérifiez votre réseau et réessayez.');
-    },
+    mutationFn: () => processScan(scanId),
     onSettled: () => {
       queryClient.invalidateQueries({ queryKey: ['scan', scanId] });
       queryClient.invalidateQueries({ queryKey: ['scan_tasks', scanId] });
+      queryClient.invalidateQueries({ queryKey: ['pending_scans'] });
     },
+  });
+}
+
+export interface PendingScan {
+  id: string;
+  document_type: DocumentType | null;
+  status: Exclude<ScanStatus, 'validated'>;
+  error: string | null;
+  created_at: string;
+  /** Pages encore à lire (photos pas encore analysées). */
+  pages: number;
+  /** Tâches lues sur le document. */
+  tasks: number;
+}
+
+/** Documents d'un enfant pas encore validés : en attente, en cours de lecture, à relire ou en échec. */
+export function usePendingScans(childId: string) {
+  return useQuery({
+    queryKey: ['pending_scans', childId],
+    queryFn: async () => {
+      const { data, error } = await supabase
+        .from('scan')
+        .select(
+          'id, document_type, status, error, created_at, storage_path, extra_storage_paths, task!task_scan_id_family_id_fkey(count)',
+        )
+        .eq('child_id', childId)
+        .neq('status', 'validated')
+        .order('created_at');
+      if (error) throw error;
+      return data.map((scan) => ({
+        id: scan.id as string,
+        document_type: scan.document_type as DocumentType | null,
+        status: scan.status as PendingScan['status'],
+        error: scan.error as string | null,
+        created_at: scan.created_at as string,
+        pages: scan.storage_path ? 1 + (scan.extra_storage_paths as string[]).length : 0,
+        tasks: (scan.task as { count: number }[])[0]?.count ?? 0,
+      }));
+    },
+    // Tant qu'un document est en attente ou en cours de lecture, on vérifie régulièrement son état.
+    refetchInterval: (query) =>
+      query.state.data?.some((scan) => scan.status === 'uploaded' || scan.status === 'processing')
+        ? 3000
+        : false,
   });
 }
 
@@ -167,16 +228,25 @@ export function useDeleteTask(scanId: string) {
   });
 }
 
-/** Abandon : supprime la numérisation, ses tâches en brouillon et la photo si elle existe encore. */
+/** Abandon : supprime la numérisation, ses tâches en brouillon et les photos si elles existent encore. */
 export function useAbandonScan(scanId: string) {
+  const queryClient = useQueryClient();
   return useMutation({
     mutationFn: async () => {
-      const { data } = await supabase.from('scan').select('storage_path').eq('id', scanId).maybeSingle();
-      if (data?.storage_path) await supabase.storage.from('scans').remove([data.storage_path]);
+      const { data } = await supabase
+        .from('scan')
+        .select('storage_path, extra_storage_paths')
+        .eq('id', scanId)
+        .maybeSingle();
+      if (data?.storage_path)
+        await supabase.storage
+          .from('scans')
+          .remove([data.storage_path, ...((data.extra_storage_paths as string[]) ?? [])]);
       await supabase.from('task').delete().eq('scan_id', scanId).eq('status', 'draft');
       const { error } = await supabase.from('scan').delete().eq('id', scanId);
       if (error) throw error;
     },
+    onSettled: () => queryClient.invalidateQueries({ queryKey: ['pending_scans'] }),
   });
 }
 
@@ -197,6 +267,7 @@ export function useValidateScan(scanId: string) {
     onSuccess: () => {
       queryClient.invalidateQueries({ queryKey: ['scan', scanId] });
       queryClient.invalidateQueries({ queryKey: ['tasks'] });
+      queryClient.invalidateQueries({ queryKey: ['pending_scans'] });
       void syncReminders();
     },
   });

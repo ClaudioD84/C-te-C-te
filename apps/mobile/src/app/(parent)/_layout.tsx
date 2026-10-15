@@ -10,7 +10,8 @@ export default function ParentLayout() {
       <Stack.Screen name="profils/nouveau" options={{ title: 'Nouvel enfant', presentation: 'modal' }} />
       <Stack.Screen name="profils/[childId]" options={{ title: 'Modifier le profil' }} />
       <Stack.Screen name="code-parent" options={{ title: 'Code parent', presentation: 'modal' }} />
-      <Stack.Screen name="scan/nouveau" options={{ title: 'Nouvelle photo' }} />
+      <Stack.Screen name="scan/nouveau" options={{ title: 'Photos à analyser' }} />
+      <Stack.Screen name="scan/a-relire" options={{ title: 'Documents à relire' }} />
       <Stack.Screen name="scan/[scanId]" options={{ title: 'Vérification' }} />
       <Stack.Screen name="planning/[childId]" options={{ title: 'Planning' }} />
       <Stack.Screen name="compte" options={{ title: 'Mon compte' }} />

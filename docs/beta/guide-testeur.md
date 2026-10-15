@@ -17,8 +17,10 @@ L'accès est **gratuit pendant tout le test**. Rien à payer, aucune carte deman
 ## 2. Les 5 choses à essayer
 
 1. **Ajouter votre enfant** : son prénom et son année suffisent.
-2. **Photographier le journal de classe** (une page, à plat, bien éclairée). Vérifiez la liste des devoirs
-   proposée, corrigez si besoin, puis validez.
+2. **Photographier le journal de classe** (une photo par page, à plat, bien éclairée). Un document de plusieurs
+   pages est lu en une fois, et plusieurs documents (journal, interrogation, dictée…) partent ensemble : choisissez
+   plusieurs photos dans la galerie, ou « Ajouter un autre document ». Vérifiez la liste des devoirs proposée pour
+   chaque document, corrigez si besoin, puis validez.
 3. **Calculer le planning de la semaine** et le publier.
 4. **Confier la mission du jour à votre enfant** : « Lancer la mission du jour ». Il voit sa mission, un minuteur
    et ses cartes. Chaque leçon se travaille en trois étapes : il revoit la fiche et les clés pour réussir, répond

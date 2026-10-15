@@ -16,7 +16,7 @@ test('photo depuis l’ordinateur : aperçu, envoi en JPEG, puis relecture', asy
   const chooser = page.waitForEvent('filechooser');
   await button(page, 'Choisir dans la galerie').click();
   await (await chooser).setFiles(new URL('../fixtures/journal.jpg', import.meta.url).pathname);
-  await expect(page.getByLabel('Photo à envoyer')).toBeVisible();
+  await expect(page.getByLabel('Document 1, page 1')).toBeVisible();
   // Plus de masquage : ni zones à tracer, ni liste de noms.
   await expect(button(page, 'Effacer les zones')).toHaveCount(0);
 

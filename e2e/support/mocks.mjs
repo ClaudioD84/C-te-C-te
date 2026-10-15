@@ -7,6 +7,8 @@ import http from 'node:http';
 export const MOCKS_PORT = 5300;
 const emails = [];
 const pushes = [];
+// Lectures de photos reçues : nombre de pages (images) et consigne, lisibles sur /__scans.
+const scanReads = [];
 
 const answers = {
   explanation: {
@@ -216,6 +218,11 @@ export function startMocks(port = MOCKS_PORT) {
         }
         // Service de notifications d'Expo : messages gardés en mémoire, lisibles sur /__push. Un jeton qui
         // contient « perime » répond comme une application désinstallée.
+        if (req.url === '/__scans') {
+          res.writeHead(200, { 'content-type': 'application/json' });
+          res.end(JSON.stringify(scanReads));
+          return;
+        }
         if (req.url === '/__push') {
           res.writeHead(200, { 'content-type': 'application/json' });
           res.end(JSON.stringify(pushes));
@@ -254,6 +261,13 @@ export function startMocks(port = MOCKS_PORT) {
             }),
           );
           return;
+        }
+        if (key === 'documentType') {
+          const content = request.messages?.[0]?.content ?? [];
+          scanReads.push({
+            pages: content.filter((block) => block.type === 'image').length,
+            context: content.at(-1)?.text ?? '',
+          });
         }
         // Photo d'une dictée corrigée ou d'une liste de vocabulaire (type choisi par le parent).
         let answer = answers[key];

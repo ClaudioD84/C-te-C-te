@@ -156,7 +156,8 @@ Points clés :
 
 - Les photos ne sont **pas masquées** : un nom écrit sur la page (enfant, enseignant, école) peut être lu par l'IA. La consigne d'extraction lui interdit de recopier un nom de personne ou d'école ; seules les tâches (matière, description, échéance) sont enregistrées. La photo est supprimée après l'analyse.
 - L'extraction utilise les **sorties structurées** de l'API Claude (`output_config.format` avec un schéma JSON) pour obtenir une liste de tâches toujours valide.
-- La photo est supprimée du stockage dès la fin du traitement. En cas d'échec, elle est conservée pour permettre de réessayer, et supprimée si le parent abandonne ; la fonction `purge-photos` efface chaque jour celles restées plus de 24 h.
+- Un document peut compter jusqu'à 5 pages (`storage_path` pour la première, `extra_storage_paths` pour les suivantes, toujours dans le dossier de la famille) : elles sont lues par une seule analyse, comptée une fois dans le quota. Plusieurs documents peuvent partir en un envoi ; l'écran « Documents à relire » lance leur lecture (deux à la fois) et le parent valide chacun.
+- Les photos sont supprimées du stockage dès la fin du traitement. En cas d'échec, elle est conservée pour permettre de réessayer, et supprimée si le parent abandonne ; la fonction `purge-photos` efface chaque jour celles restées plus de 24 h.
 - La réservation de la photo (`claim_scan`) est atomique : deux analyses de la même photo ne peuvent pas tourner en même temps ; une analyse interrompue peut être relancée après 150 s.
 
 ## 7. Utilisation de l'IA
@@ -165,7 +166,7 @@ Points clés :
 
 | Fonction | Rôle | Fréquence |
 |---|---|---|
-| `scan-extract` | Lire une photo et extraire les tâches | À la demande |
+| `scan-extract` | Lire un document photographié (une ou plusieurs pages) et extraire les tâches | À la demande |
 | `plan-week` | Construire le planning de la semaine | Chaque semaine (traitement groupé le dimanche) + à la demande |
 | `generate-pack` | Fiche, quiz, exercices et cartes d'une tâche (un seul appel) | À la publication du planning, puis réutilisé ; quota mensuel provisoire : essai 60, Solo 150, Famille 400 |
 | `revision-plan` | Thèmes de révision d'une épreuve (CEB, CE1D, CESS, bilan), étalés ensuite par l'application | À la demande ; quota mensuel provisoire : essai 3, Solo 10, Famille 25 |
@@ -186,7 +187,7 @@ Le modèle est **configurable par fonction** (variable d'environnement), pour aj
 - **Coût mesuré** (en place) : chaque appel est journalisé dans `ai_usage` avec son coût estimé, y compris quand l'API bascule vers un modèle de secours ; `pnpm beta stats` donne le coût par famille.
 - **Réutilisation des fiches** (en place) : avant d'appeler l'IA, `generate-pack` cherche une fiche déjà préparée pour une demande strictement identique (empreinte SHA-256 de la consigne et du texte complet de la demande : année, section, adaptations, centres d'intérêt, attendus, tâche). Elle est copiée sans appel à l'IA ni quota consommé ; jamais pour une régénération ni à partir d'une fiche signalée. Une famille ne reçoit ainsi rien qu'elle n'ait déjà écrit elle-même. Taux de réutilisation dans `pnpm beta stats`.
 - **Traitements groupés** (prévu) : l'API Message Batches (environ 50 % moins chère, résultat asynchrone) pour les fiches des tâches à échéance lointaine. Non retenu pour l'instant : la fiche doit souvent être prête le jour même.
-- **Quotas par formule** (photos analysables par mois : essai 40, Solo 80, Famille 200) et journal `ai_usage` pour suivre le coût réel par famille.
+- **Quotas par formule** (documents analysés par mois, 5 pages au plus chacun : essai 40, Solo 80, Famille 200) et journal `ai_usage` pour suivre le coût réel par famille.
 
 ### 7.4 Qualité et sécurité des contenus
 

@@ -116,7 +116,8 @@ La CI GitHub Actions exécute ces vérifications et applique les migrations Supa
 
 - comptes parents, profils enfants avec pseudonyme et besoins particuliers (avec consentement) ;
 - code parent et console enfant verrouillée ;
-- photo du journal de classe, lecture par Claude (sans recopier les noms), validation par le parent ;
+- photo du journal de classe, lecture par Claude (sans recopier les noms), validation par le parent ; plusieurs
+  pages par document (5 au plus, lues ensemble) et plusieurs documents par envoi (6 au plus), relus un par un ;
 - planning de la semaine avec alertes de surcharge, mission du jour, Pomodoro, lecture vocale ;
 - export et suppression du compte (RGPD) ;
 - rappels (mission du jour, évaluations, planning, photos à vérifier), avec heures calmes ;

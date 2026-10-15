@@ -111,6 +111,12 @@ Deno.test('contexte : niveau et date, sans données personnelles', () => {
   assertStringIncludes(context, '4e primaire');
   assertStringIncludes(context, '2026-10-08');
   assertStringIncludes(context, 'journal de classe');
+  assertEquals(context.includes('pages'), false);
+});
+
+Deno.test('contexte : un document de plusieurs pages est annoncé comme tel', () => {
+  const context = buildContext('S1', 'interrogation', new Date('2026-10-08T10:00:00Z'), 3);
+  assertStringIncludes(context, "Le document compte 3 pages, photographiées dans l'ordre.");
 });
 
 Deno.test(

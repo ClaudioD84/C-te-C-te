@@ -75,20 +75,29 @@ export interface ExtractionResult {
   text: string;
 }
 
-export async function extractTasksFromImage(input: {
-  imageBase64: string;
+/** Lecture d'un document photographié : une image par page, dans l'ordre. */
+export async function extractTasksFromImages(input: {
+  imagesBase64: string[];
   grade: string;
   documentType: DocumentType | null;
   now: Date;
 }): Promise<ExtractionResult> {
+  const pages = input.imagesBase64.length;
   const result = await structuredCall({
     model: SCAN_MODEL,
     effort: SCAN_EFFORT,
     system: SYSTEM_PROMPT,
     schema: EXTRACTION_JSON_SCHEMA,
     content: [
-      { type: 'image', source: { type: 'base64', media_type: 'image/jpeg', data: input.imageBase64 } },
-      { type: 'text', text: buildContext(input.grade, input.documentType, input.now) },
+      // Plusieurs pages : chacune est annoncée avant son image.
+      ...input.imagesBase64.flatMap((data, i) => [
+        ...(pages > 1 ? [{ type: 'text' as const, text: `Page ${i + 1} sur ${pages} :` }] : []),
+        {
+          type: 'image' as const,
+          source: { type: 'base64' as const, media_type: 'image/jpeg' as const, data },
+        },
+      ]),
+      { type: 'text', text: buildContext(input.grade, input.documentType, input.now, pages) },
     ],
   });
   return {

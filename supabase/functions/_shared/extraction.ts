@@ -117,7 +117,7 @@ export const EXTRACTION_JSON_SCHEMA = {
 
 /** Consigne fixe (placée en tête de requête pour profiter du cache). */
 export const SYSTEM_PROMPT = `Tu aides des parents d'élèves de la Fédération Wallonie-Bruxelles (Belgique) à organiser les devoirs.
-Tu reçois la photo d'un document scolaire : une page de journal de classe, des notes de cours, une interrogation corrigée, une dictée corrigée ou une liste de vocabulaire.
+Tu reçois la photo d'un document scolaire (une photo par page quand il en a plusieurs, dans l'ordre) : une page de journal de classe, des notes de cours, une interrogation corrigée, une dictée corrigée ou une liste de vocabulaire.
 Ta tâche : relever chaque travail que l'élève doit faire, ainsi que les mots à étudier quand le document en contient.
 
 Types de tâches :
@@ -145,6 +145,7 @@ Règles :
 9. Ne recopie jamais le nom d'une personne (élève, enseignant, parent) ni celui de l'école : écris plutôt « l'enseignant », « la classe »… ou omets-le.
 10. "documentType" : le type réel du document photographié.
 11. Si aucune tâche n'est lisible, renvoie une liste vide.
+    Document de plusieurs pages : lis-les comme un seul document ; une tâche, une notion ou un mot présent sur deux pages n'est relevé qu'une fois.
 12. "spellingWords" : 40 au plus, sinon une liste vide.
    - liste de mots d'une dictée préparée : recopie chaque mot ou groupe de mots tel qu'il est écrit ; la tâche « préparer la dictée » reste une tâche à part ;
    - dictée corrigée : chaque mot où l'élève s'est trompé, écrit dans sa forme CORRECTE (celle de la correction, jamais la faute), sans la note ni les points.
@@ -197,10 +198,11 @@ const DOCUMENT_LABELS: Record<DocumentType, string> = {
 };
 
 /** Contexte variable de la requête (après la partie mise en cache). */
-export function buildContext(grade: string, documentType: DocumentType | null, now: Date): string {
+export function buildContext(grade: string, documentType: DocumentType | null, now: Date, pages = 1): string {
   const today = todayInBrussels(now);
   const lines = [`Élève en ${GRADE_LABELS[grade] ?? grade}.`, `Aujourd'hui : ${today.label} (${today.iso}).`];
   if (documentType) lines.push(`Selon le parent, il s'agit de : ${DOCUMENT_LABELS[documentType]}.`);
+  if (pages > 1) lines.push(`Le document compte ${pages} pages, photographiées dans l'ordre.`);
   lines.push('Relève les tâches de ce document.');
   return lines.join('\n');
 }

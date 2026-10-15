@@ -12,7 +12,7 @@ export interface Subscription {
   current_period_end: string;
 }
 
-/** Photos analysables par mois civil. */
+/** Documents analysés par mois civil : un document compte une fois, quel que soit son nombre de pages. */
 export const MONTHLY_SCAN_QUOTA: Record<Plan, number> = {
   essai: 40,
   solo: 80,
@@ -63,7 +63,7 @@ export const ACCESS_MESSAGES: Record<AccessProblem, string> = {
   abonnement_expire:
     "Votre essai ou votre abonnement est terminé. Abonnez-vous pour continuer l'analyse des photos.",
   quota_atteint:
-    'Vous avez atteint le nombre de photos analysables ce mois-ci. Le compteur repart à zéro le 1er du mois.',
+    'Vous avez atteint le nombre de documents analysables ce mois-ci. Le compteur repart à zéro le 1er du mois.',
 };
 
 export const PACK_ACCESS_MESSAGES: Record<AccessProblem, string> = {

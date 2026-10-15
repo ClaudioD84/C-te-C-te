@@ -167,13 +167,16 @@ export function useDeleteChildProfile(id: string) {
   const queryClient = useQueryClient();
   return useMutation({
     mutationFn: async () => {
-      // Les photos encore présentes sont effacées du stockage ; le reste suit par cascade.
+      // Les photos encore présentes (toutes les pages) sont effacées du stockage ; le reste suit par cascade.
       const { data: scans } = await supabase
         .from('scan')
-        .select('storage_path')
+        .select('storage_path, extra_storage_paths')
         .eq('child_id', id)
         .not('storage_path', 'is', null);
-      const paths = (scans ?? []).map((s) => String(s.storage_path));
+      const paths = (scans ?? []).flatMap((s) => [
+        String(s.storage_path),
+        ...((s.extra_storage_paths as string[]) ?? []),
+      ]);
       if (paths.length > 0) await supabase.storage.from('scans').remove(paths);
       const { error } = await supabase.from('child_profile').delete().eq('id', id);
       if (error) throw error;

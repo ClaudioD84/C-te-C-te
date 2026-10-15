@@ -20,6 +20,7 @@ import { OfflineBanner } from '@/features/offline/offline-banner';
 import { FirstSteps } from '@/features/onboarding/first-steps';
 import { SubscriptionBanner } from '@/features/subscription/subscription-banner';
 import { useChildProfiles, type StoredChildProfile } from '@/features/profiles/api';
+import { usePendingScans } from '@/features/scan/api';
 import { useSiblingChallenge } from '@/features/sibling/api';
 import { useToday } from '@/hooks/use-today';
 
@@ -31,6 +32,8 @@ function ChildCard({ child }: { child: StoredChildProfile }) {
   const todaySessions = useSessions(child.id, today, 1);
   const missionDone = todaySessions.data?.[0]?.status === 'done';
   const [toolsOpen, setToolsOpen] = useState(false);
+  const pendingScans = usePendingScans(child.id);
+  const toReview = pendingScans.data?.length ?? 0;
 
   async function launchMission() {
     // Le code parent est obligatoire avant de confier l'appareil à l'enfant.
@@ -78,6 +81,15 @@ function ChildCard({ child }: { child: StoredChildProfile }) {
           onPress={() => router.push({ pathname: '/scan/nouveau', params: { childId: child.id } })}
         />
       )}
+      {toReview > 0 ? (
+        // Documents envoyés mais pas encore validés : leurs tâches ne sont pas planifiées.
+        <Button
+          variant="secondary"
+          label={`📄 ${toReview} document${toReview > 1 ? 's' : ''} à relire`}
+          accessibilityLabel={`Documents à relire pour ${child.alias}`}
+          onPress={() => router.push({ pathname: '/scan/a-relire', params: { childId: child.id } })}
+        />
+      ) : null}
       {/* L'essentiel sur deux colonnes ; le reste dans « Plus d'outils » : la carte reste courte. */}
       <View style={styles.grid}>
         {!kindergarten ? (
