@@ -1,5 +1,6 @@
 import { z } from 'zod';
 
+import { PLANNING_STRATEGIES } from './planning';
 import { gradeSchema, isTrackAllowed, networkSchema, trackSchema } from './school';
 
 /** Besoins éducatifs particuliers (cumulables). Ce sont des données de santé au sens du RGPD. */
@@ -87,6 +88,12 @@ export const childPreferencesSchema = z.object({
   interests: z.array(interestSchema).max(MAX_INTERESTS).optional(),
   /** Coin détente : minutes de petits jeux par jour (0 : fermé ; 10 par défaut). */
   relaxMinutes: z.number().int().min(0).max(30).optional(),
+  /** Planning : temps de travail par jour choisi par le parent ; sinon calculé selon l'âge. */
+  dailyMinutes: z.number().int().min(10).max(180).optional(),
+  /** Planning : répartition du travail (régulière, dès aujourd'hui, par défaut). */
+  planningStrategy: z.enum(PLANNING_STRATEGIES).optional(),
+  /** Planning : nombre de jours planifiés, une ou deux semaines (une par défaut). */
+  planningDays: z.union([z.literal(7), z.literal(14)]).optional(),
 });
 export type ChildPreferences = z.infer<typeof childPreferencesSchema>;
 

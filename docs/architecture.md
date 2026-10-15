@@ -213,9 +213,12 @@ Ordre de priorité : primaire → secondaire 1er degré → maternelle → 2e et
 Algorithme déterministe (`packages/shared/src/planning.ts`), exécuté dans l'application ; l'IA ne fait que proposer le **contenu** des sessions (étape 2).
 
 1. Chaque tâche reçoit une durée de préparation selon son type (devoir 20 min, leçon 15, interrogation 45, examen 120 pour un élève de fin de primaire), ajustée à l'âge.
-2. Cette durée est découpée en périodes de la taille du Pomodoro du profil (ex. TDAH → périodes plus courtes) et répartie sur les jours disponibles précédant l'échéance (2 jours pour un devoir, 5 pour une interrogation, 10 pour un examen), la dernière séance d'une évaluation étant un auto-test.
-3. Si un jour dépasse le temps quotidien prévu pour l'âge, des périodes sont avancées vers des jours plus légers.
-4. Le parent voit les **alertes** (surcharge, plusieurs évaluations le même jour) et peut ajouter le week-end en un geste.
+2. Cette durée est découpée en périodes de la taille du Pomodoro du profil (ex. TDAH → périodes plus courtes) et répartie selon le choix du parent, la dernière séance d'une évaluation étant un auto-test :
+   - **régulièrement, dès aujourd'hui** (par défaut) : chaque période va sur le jour le plus libre de la semaine qui précède l'échéance ; à charge égale, un devoir ou une leçon se fait au plus tôt, une évaluation se révise au plus près du test ;
+   - **juste avant l'échéance** : sur les jours qui la précèdent (2 jours pour un devoir, 3 pour une leçon, 5 pour une interrogation, 10 pour un examen).
+   Une tâche **prioritaire** (`task.priority = 'haute'`) commence toujours au plus tôt et n'est jamais reportée ; une tâche qui **peut attendre** (`basse`) se fait près de son échéance, bouge en premier et est reportée en semaine chargée.
+3. Si un jour dépasse le temps quotidien (choisi par le parent, sinon selon l'âge), des périodes sont déplacées vers des jours plus légers.
+4. Le parent voit les **alertes** (surcharge, plusieurs évaluations le même jour) et peut ajouter le week-end en un geste. Il règle la répartition, le temps par jour et la période (1 ou 2 semaines), gardés dans `child_profile.preferences`, puis **retouche** chaque jour : déplacer une activité, changer sa durée, la retirer, ajouter une tâche (`packages/shared/src/plan-edit.ts`). Le planning publié se retouche de la même façon, sans nouveau calcul.
 5. La publication (`publish_plan`) remplace les sessions à venir en une transaction et conserve ce que l'enfant a déjà fait.
 
 ### 9.2 Répétition espacée (F9)

@@ -6,6 +6,7 @@ import {
   type BackgroundCode,
   nextNeedsConsentAt,
   schoolLevel,
+  type ChildPreferences,
   type ChildProfile,
   type ChildProfileInput,
 } from '@cote-a-cote/shared';
@@ -58,6 +59,29 @@ export function useSetAccessory(childId: string) {
         p_child_id: childId,
         p_accessory: accessory,
       });
+      if (error) throw error;
+    },
+    onSuccess: () => queryClient.invalidateQueries({ queryKey: profilesKey }),
+  });
+}
+
+/** Réglages du planning (répartition, temps par jour, durée) gardés pour la prochaine fois. */
+export function useSavePlanningPreferences(childId: string) {
+  const queryClient = useQueryClient();
+  return useMutation({
+    mutationFn: async (
+      patch: Partial<Pick<ChildPreferences, 'dailyMinutes' | 'planningStrategy' | 'planningDays'>>,
+    ) => {
+      const { data, error: readError } = await supabase
+        .from('child_profile')
+        .select('preferences')
+        .eq('id', childId)
+        .single();
+      if (readError) throw readError;
+      const preferences: Record<string, unknown> = { ...(data.preferences as object), ...patch };
+      // « Automatique » : la clé disparaît plutôt que de garder une valeur vide.
+      for (const key of Object.keys(patch)) if (preferences[key] === undefined) delete preferences[key];
+      const { error } = await supabase.from('child_profile').update({ preferences }).eq('id', childId);
       if (error) throw error;
     },
     onSuccess: () => queryClient.invalidateQueries({ queryKey: profilesKey }),

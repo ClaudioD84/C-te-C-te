@@ -9,6 +9,26 @@ import type { TaskKind } from './task';
  * sur les jours disponibles avant l'échéance, puis lisse les jours trop chargés.
  */
 
+/** Priorité donnée par le parent : prioritaire (commencée au plus tôt), normale, ou qui peut attendre. */
+export const TASK_PRIORITIES = ['haute', 'normale', 'basse'] as const;
+export type TaskPriority = (typeof TASK_PRIORITIES)[number];
+export const TASK_PRIORITY_LABELS: Record<TaskPriority, string> = {
+  haute: 'Prioritaire',
+  normale: 'Normale',
+  basse: 'Peut attendre',
+};
+
+/**
+ * Répartition du travail : « reguliere » remplit d'abord les jours les plus libres, dès aujourd'hui ;
+ * « echeance » place chaque tâche dans les jours qui précèdent juste son échéance.
+ */
+export const PLANNING_STRATEGIES = ['reguliere', 'echeance'] as const;
+export type PlanningStrategy = (typeof PLANNING_STRATEGIES)[number];
+export const PLANNING_STRATEGY_LABELS: Record<PlanningStrategy, string> = {
+  reguliere: 'Régulièrement, dès aujourd’hui',
+  echeance: 'Juste avant l’échéance',
+};
+
 export interface PlannableTask {
   id: string;
   subject: string;
@@ -18,6 +38,8 @@ export interface PlannableTask {
   doneMinutes?: number;
   /** Examen blanc d'un dossier de révision (F5) : passé en une fois, le jour prévu. */
   mockExam?: boolean;
+  /** « normale » si absente. */
+  priority?: TaskPriority;
 }
 
 export type Activity = 'faire' | 'etudier' | 'reviser' | 'se_tester';
@@ -63,6 +85,9 @@ export interface PlanningInput {
    * avec 60 % du temps quotidien habituel ; le reste est reporté au prochain planning.
    */
   lightWeek?: boolean;
+  /** « echeance » si absente. Une tâche prioritaire commence toujours au plus tôt, une autre qui peut attendre
+   * se fait toujours près de son échéance. */
+  strategy?: PlanningStrategy;
 }
 
 export interface WeekPlan {
@@ -75,6 +100,11 @@ const BASE_MINUTES: Record<TaskKind, number> = { devoir: 20, lecon: 15, interro:
 
 /** Nombre de jours de préparation avant l'échéance. */
 const PREPARATION_DAYS: Record<TaskKind, number> = { devoir: 2, lecon: 3, interro: 5, examen: 10 };
+/** Répartition régulière ou tâche prioritaire : fenêtre plus large, jusqu'à aujourd'hui. */
+const SPREAD_DAYS: Record<TaskKind, number> = { devoir: 7, lecon: 7, interro: 7, examen: 14 };
+
+const PRIORITY_RANK: Record<TaskPriority, number> = { haute: 0, normale: 1, basse: 2 };
+const priorityOf = (task: PlannableTask): TaskPriority => task.priority ?? 'normale';
 
 function levelFactor(grade: Grade): number {
   const level = schoolLevel(grade);
@@ -139,6 +169,9 @@ interface Chunk {
   day: IsoDate;
 }
 
+/** Où placer les morceaux d'une tâche : au plus tôt, sur les jours libres, ou juste avant l'échéance. */
+type Placement = 'tot' | 'reguliere' | 'echeance';
+
 export function planWeek(input: PlanningInput): WeekPlan {
   const horizon = input.horizonDays ?? 7;
   const baseCapacity = input.dailyCapacityMinutes ?? defaultDailyCapacity(input.grade);
@@ -154,9 +187,22 @@ export function planWeek(input: PlanningInput): WeekPlan {
   let duringBreak = 0;
 
   const chunks: Chunk[] = [];
+  // Morceaux à poser sur les jours les plus libres, une fois les autres placés.
+  const toSpread: { task: PlannableTask; parts: number[]; window: IsoDate[] }[] = [];
+  const placementOf = (task: PlannableTask): Placement => {
+    const priority = priorityOf(task);
+    if (priority === 'haute') return 'tot';
+    if (priority === 'basse') return 'echeance';
+    return input.strategy ?? 'echeance';
+  };
   const tasks = [...input.tasks]
     .filter((t) => daysBetween(input.today, t.dueDate) >= 0)
-    .sort((a, b) => a.dueDate.localeCompare(b.dueDate) || BASE_MINUTES[b.kind] - BASE_MINUTES[a.kind]);
+    .sort(
+      (a, b) =>
+        a.dueDate.localeCompare(b.dueDate) ||
+        PRIORITY_RANK[priorityOf(a)] - PRIORITY_RANK[priorityOf(b)] ||
+        BASE_MINUTES[b.kind] - BASE_MINUTES[a.kind],
+    );
 
   for (const task of tasks) {
     if (task.mockExam) {
@@ -170,23 +216,23 @@ export function planWeek(input: PlanningInput): WeekPlan {
     }
     const remaining = estimateTaskMinutes(task.kind, input.grade) - (task.doneMinutes ?? 0);
     if (remaining <= 0) continue;
+    // Semaine chargée : les leçons lointaines et ce qui peut attendre sont reportés, jamais une priorité.
     if (
       input.lightWeek &&
-      task.kind === 'lecon' &&
+      priorityOf(task) !== 'haute' &&
+      (task.kind === 'lecon' || priorityOf(task) === 'basse') &&
       daysBetween(input.today, task.dueDate) > LIGHT_WEEK_LESSON_DAYS
     ) {
       postponed++;
       continue;
     }
 
+    const placement = placementOf(task);
     const dueIn = daysBetween(input.today, task.dueDate);
+    const preparation = placement === 'echeance' ? PREPARATION_DAYS[task.kind] : SPREAD_DAYS[task.kind];
     // Fenêtre de préparation : les jours qui précèdent l'échéance (le jour même si elle est aujourd'hui).
     const allDays: IsoDate[] = [];
-    for (
-      let offset = Math.max(0, dueIn - PREPARATION_DAYS[task.kind]);
-      offset < Math.max(dueIn, 1);
-      offset++
-    ) {
+    for (let offset = Math.max(0, dueIn - preparation); offset < Math.max(dueIn, 1); offset++) {
       allDays.push(addDays(input.today, offset));
     }
     let window = allDays.filter(isAvailable);
@@ -203,20 +249,49 @@ export function planWeek(input: PlanningInput): WeekPlan {
     const share = Math.round((remaining * inHorizon.length) / window.length);
     const parts = splitMinutes(roundTo5(share), chunkSize);
 
-    // Répartition espacée : un morceau par jour, du dernier jour vers le premier.
+    if (placement === 'reguliere') {
+      toSpread.push({ task, parts, window: inHorizon });
+      continue;
+    }
+    // Un morceau par jour : du premier jour vers le dernier (au plus tôt), ou du dernier vers le premier.
     parts.forEach((minutes, i) => {
-      const day = inHorizon[inHorizon.length - 1 - (i % inHorizon.length)]!;
-      chunks.push({ task, minutes, window: inHorizon, day });
+      const index =
+        placement === 'tot' ? i % inHorizon.length : inHorizon.length - 1 - (i % inHorizon.length);
+      chunks.push({ task, minutes, window: inHorizon, day: inHorizon[index]! });
     });
+  }
+
+  // Répartition régulière : chaque morceau va sur le jour le plus libre de sa fenêtre, un jour différent pour
+  // chaque morceau d'une même tâche si possible. À charge égale, un devoir ou une leçon se fait au plus tôt ;
+  // une évaluation se révise au plus près du test.
+  const dayLoad = (date: IsoDate) =>
+    chunks.filter((c) => c.day === date).reduce((sum, c) => sum + c.minutes, 0);
+  for (const { task, parts, window } of toSpread) {
+    const latestFirst = isEvaluation(task.kind);
+    for (const minutes of parts) {
+      const used = new Set(chunks.filter((c) => c.task.id === task.id).map((c) => c.day));
+      const day = [...window].sort(
+        (a, b) =>
+          Number(used.has(a)) - Number(used.has(b)) ||
+          dayLoad(a) - dayLoad(b) ||
+          (latestFirst ? b.localeCompare(a) : a.localeCompare(b)),
+      )[0]!;
+      chunks.push({ task, minutes, window, day });
+    }
   }
 
   // Lissage : on avance les morceaux des jours surchargés vers des jours plus légers de leur fenêtre.
   const load = (date: IsoDate) => chunks.filter((c) => c.day === date).reduce((sum, c) => sum + c.minutes, 0);
   for (let offset = horizon - 1; offset >= 0; offset--) {
     const date = addDays(input.today, offset);
+    // Ce qui peut attendre bouge en premier, une priorité en dernier.
     const movable = chunks
       .filter((c) => c.day === date)
-      .sort((a, b) => b.task.dueDate.localeCompare(a.task.dueDate));
+      .sort(
+        (a, b) =>
+          PRIORITY_RANK[priorityOf(b.task)] - PRIORITY_RANK[priorityOf(a.task)] ||
+          b.task.dueDate.localeCompare(a.task.dueDate),
+      );
     for (const chunk of movable) {
       if (load(date) <= capacity) break;
       const target = chunk.window

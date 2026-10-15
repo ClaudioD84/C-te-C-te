@@ -21,15 +21,16 @@ En cas d'échec, la trace et la capture d'écran sont dans `e2e/test-results`.
 
 ## Ce qui est couvert
 
-| Fichier                       | Parcours                                                                                                                                           |
-| ----------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `parcours.spec.ts`            | Profil avec consentement, planning, fiches générées, signalement, console enfant (activité, quiz, cartes), code parent, suivi, dossier de révision |
-| `hors-connexion.spec.ts`      | Mission du jour hors connexion, fermeture de l'app, synchronisation au retour du réseau sans doublon                                               |
-| `abonnement.spec.ts`          | Essai gratuit, achat simulé, limite d'enfants de la formule Solo                                                                                   |
-| `profil.spec.ts`              | Modification du profil, nouveau consentement, retrait du consentement, suppression                                                                 |
-| `accessibilite.spec.ts`       | Audit WCAG 2.2 AA (axe) des écrans principaux, thèmes clair et sombre                                                                              |
-| `serveur.spec.ts`             | Analyse d'une photo (tâches extraites, photo supprimée), cloisonnement entre familles, purge des comptes inactifs                                  |
-| `plusieurs-documents.spec.ts` | Plusieurs photos en un envoi : pages d'un même document lues ensemble, documents distincts relus un par un, photos effacées                        |
+| Fichier                       | Parcours                                                                                                                                                                   |
+| ----------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `parcours.spec.ts`            | Profil avec consentement, planning, fiches générées, signalement, console enfant (activité, quiz, cartes), code parent, suivi, dossier de révision                         |
+| `hors-connexion.spec.ts`      | Mission du jour hors connexion, fermeture de l'app, synchronisation au retour du réseau sans doublon                                                                       |
+| `abonnement.spec.ts`          | Essai gratuit, achat simulé, limite d'enfants de la formule Solo                                                                                                           |
+| `profil.spec.ts`              | Modification du profil, nouveau consentement, retrait du consentement, suppression                                                                                         |
+| `accessibilite.spec.ts`       | Audit WCAG 2.2 AA (axe) des écrans principaux, thèmes clair et sombre                                                                                                      |
+| `serveur.spec.ts`             | Analyse d'une photo (tâches extraites, photo supprimée), cloisonnement entre familles, purge des comptes inactifs                                                          |
+| `plusieurs-documents.spec.ts` | Plusieurs photos en un envoi : pages d'un même document lues ensemble, documents distincts relus un par un, photos effacées                                                |
+| `planning-modifiable.spec.ts` | Planning réglé par le parent : répartition régulière ou près des échéances, retouches (déplacer, allonger, retirer, ajouter), planning publié retouché, priorités et dates |
 
 ## Architecture
 

@@ -97,6 +97,8 @@ devoirs et deux semaines de suivi, et « Emma » (2e maternelle).
   document » ou « … documents différents » (ou « ＋ Ajouter un autre document ») ; après l'envoi, « Documents à
   relire » liste chaque document, lu puis relu et validé un par un.
 - **Planning** : « Planning de la semaine » > « Calculer le planning » > « Publier sur la console de l'enfant ».
+  Avant de publier : « Quand travailler ? », temps par jour, 1 ou 2 semaines, et « Modifier » sur une activité pour
+  la déplacer, la raccourcir ou la retirer ; « Modifier le planning » retouche ensuite le planning publié.
   Les fiches et quiz se préparent (contenu d'exemple sur les fleuves de Belgique). Dans le même écran :
   **Congés et absences** (ajoutez un congé : le planning l'évite, puis « Idées pour les vacances »).
 - **Console enfant** : « Lancer la mission du jour ». Choisissez un code parent de 4 chiffres (évitez 1234).

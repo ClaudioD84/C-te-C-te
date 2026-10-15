@@ -46,3 +46,4 @@ export * from './reading-aloud';
 export * from './pride';
 export * from './pro-report';
 export * from './scan-documents';
+export * from './plan-edit';

@@ -7,6 +7,7 @@ import {
   type PlannableTask,
   type PlannedDay,
   type TaskKind,
+  type TaskPriority,
 } from '@cote-a-cote/shared';
 import { queryOptions, useMutation, useQuery, useQueryClient } from '@tanstack/react-query';
 import { randomUUID } from '@/lib/uuid';
@@ -27,6 +28,7 @@ interface TaskWithItems {
   description: string;
   reference: string | null;
   due_date: string;
+  priority: TaskPriority;
   study_session_task: { minutes: number; done_at: string | null }[];
 }
 
@@ -38,7 +40,9 @@ export function useUpcomingTasks(childId: string) {
       const today = toIsoDate(new Date());
       const { data, error } = await supabase
         .from('task')
-        .select('id, subject, kind, description, reference, due_date, study_session_task(minutes, done_at)')
+        .select(
+          'id, subject, kind, description, reference, due_date, priority, study_session_task(minutes, done_at)',
+        )
         .eq('child_id', childId)
         .eq('status', 'validated')
         .gte('due_date', today)
@@ -51,12 +55,57 @@ export function useUpcomingTasks(childId: string) {
         description: task.description,
         reference: task.reference,
         dueDate: task.due_date,
+        priority: task.priority,
         mockExam: task.kind === 'examen' && isMockExam(task.description),
         doneMinutes: task.study_session_task
           .filter((item) => item.done_at !== null)
           .reduce((sum, item) => sum + item.minutes, 0),
       }));
     },
+  });
+}
+
+export interface UndatedTask {
+  id: string;
+  subject: string;
+  kind: TaskKind;
+  description: string;
+  priority: TaskPriority;
+}
+
+/** Tâches validées sans date : le parent leur en donne une pour qu'elles entrent dans le planning. */
+export function useUndatedTasks(childId: string) {
+  return useQuery({
+    queryKey: ['tasks', childId, 'undated'],
+    queryFn: async (): Promise<UndatedTask[]> => {
+      const { data, error } = await supabase
+        .from('task')
+        .select('id, subject, kind, description, priority')
+        .eq('child_id', childId)
+        .eq('status', 'validated')
+        .is('due_date', null)
+        .order('created_at');
+      if (error) throw error;
+      return data as UndatedTask[];
+    },
+  });
+}
+
+/** Le parent change la priorité ou l'échéance d'une tâche depuis le planning. */
+export function useUpdateTaskPlanning(childId: string) {
+  const queryClient = useQueryClient();
+  return useMutation({
+    mutationFn: async ({
+      id,
+      patch,
+    }: {
+      id: string;
+      patch: { priority?: TaskPriority; due_date?: IsoDate | null };
+    }) => {
+      const { error } = await supabase.from('task').update(patch).eq('id', id);
+      if (error) throw error;
+    },
+    onSuccess: () => queryClient.invalidateQueries({ queryKey: ['tasks', childId] }),
   });
 }
 

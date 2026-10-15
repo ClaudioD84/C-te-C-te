@@ -27,7 +27,8 @@ test('congés et absences : aucun travail ces jours-là, tâches signalées', as
   await expect(
     page.getByText('2 tâches tombent pendant un congé : prévoyez-les avant ou après'),
   ).toBeVisible();
-  await expect(page.getByText("Aujourd'hui", { exact: false })).toHaveCount(0);
+  // Le jour d'absence reste vide, signalé comme tel.
+  await expect(page.getByText('Congé : pas de travail.')).toBeVisible();
 
   // Retirer l'absence rétablit le planning habituel.
   await button(page, 'Annuler').click();
