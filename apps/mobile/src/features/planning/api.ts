@@ -109,6 +109,27 @@ export function useUpdateTaskPlanning(childId: string) {
   });
 }
 
+/**
+ * Tâche retirée par le parent : « supprimer » (la tâche, sa fiche, ses cartes et ses activités) ou « fait » (déjà
+ * faite : gardée dans l'historique, retirée des séances à venir). Voir remove_task.
+ */
+export function useRemoveTask(childId: string) {
+  const queryClient = useQueryClient();
+  return useMutation({
+    mutationFn: async ({ id, mode }: { id: string; mode: 'supprimer' | 'fait' }) => {
+      const { error } = await supabase.rpc('remove_task', { p_task_id: id, p_mode: mode });
+      if (error) throw new Error(error.code === 'P0001' ? error.message : 'Le retrait a échoué. Réessayez.');
+    },
+    onSuccess: () => {
+      queryClient.invalidateQueries({ queryKey: ['tasks', childId] });
+      queryClient.invalidateQueries({ queryKey: ['sessions', childId] });
+      queryClient.invalidateQueries({ queryKey: ['study_packs'] });
+      queryClient.invalidateQueries({ queryKey: ['flashcards'] });
+      void syncReminders();
+    },
+  });
+}
+
 export interface SessionItem {
   task_id: string;
   minutes: number;

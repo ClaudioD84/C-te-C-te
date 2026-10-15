@@ -24,7 +24,8 @@ L'accès est **gratuit pendant tout le test**. Rien à payer, aucune carte deman
 3. **Calculer le planning de la semaine** : choisissez quand travailler (régulièrement dès aujourd'hui, ou juste
    avant l'échéance), le temps par jour et la période (1 ou 2 semaines). Retouchez chaque jour si besoin (déplacer,
    raccourcir, retirer, ajouter une tâche), puis publiez. Dans « Priorités et échéances », une tâche peut devenir
-   « Prioritaire » ou « Peut attendre », et une tâche sans date en reçoit une.
+   « Prioritaire » ou « Peut attendre », une tâche sans date en reçoit une, et « Retirer… » enlève une tâche
+   déjà faite ou en trop. Sur une fiche, chaque question, exercice ou carte peut être retiré.
 4. **Confier la mission du jour à votre enfant** : « Lancer la mission du jour ». Il voit sa mission, un minuteur
    et ses cartes. Chaque leçon se travaille en trois étapes : il revoit la fiche et les clés pour réussir, répond
    à toutes les questions, puis vérifie ses réponses. Pour revenir à votre espace, il faut votre code parent.

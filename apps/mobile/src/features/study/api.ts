@@ -108,6 +108,45 @@ export function useReportPack(taskId: string) {
   });
 }
 
+export type PackPart = 'quiz' | 'exercises' | 'flashcards';
+
+/** Le parent retire une question, un exercice ou une carte d'une fiche (voir remove_pack_item). */
+export function useRemovePackItem(taskId: string) {
+  const queryClient = useQueryClient();
+  return useMutation({
+    mutationFn: async (input: { packId: string; part: PackPart; index: number; expected: string }) => {
+      const { error } = await supabase.rpc('remove_pack_item', {
+        p_pack_id: input.packId,
+        p_part: input.part,
+        p_index: input.index,
+        p_expected: input.expected,
+      });
+      if (error) throw new Error(error.code === 'P0001' ? error.message : 'Le retrait a échoué. Réessayez.');
+    },
+    onSettled: () => {
+      queryClient.invalidateQueries({ queryKey: ['study_pack', taskId] });
+      queryClient.invalidateQueries({ queryKey: ['study_packs'] });
+      queryClient.invalidateQueries({ queryKey: ['flashcards'] });
+    },
+  });
+}
+
+/** Le parent supprime la fiche, le quiz et les cartes d'une tâche (une nouvelle sera préparée à la demande). */
+export function useDeletePack(taskId: string) {
+  const queryClient = useQueryClient();
+  return useMutation({
+    mutationFn: async (packId: string) => {
+      const { error } = await supabase.from('study_pack').delete().eq('id', packId);
+      if (error) throw new Error('La suppression a échoué. Réessayez.');
+    },
+    onSuccess: () => {
+      queryClient.setQueryData(['study_pack', taskId], null);
+      queryClient.invalidateQueries({ queryKey: ['study_packs'] });
+      queryClient.invalidateQueries({ queryKey: ['flashcards'] });
+    },
+  });
+}
+
 export interface DueCard {
   id: string;
   front: string;

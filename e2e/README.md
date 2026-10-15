@@ -32,6 +32,7 @@ En cas d'échec, la trace et la capture d'écran sont dans `e2e/test-results`.
 | `plusieurs-documents.spec.ts` | Plusieurs photos en un envoi : pages d'un même document lues ensemble, documents distincts relus un par un, photos effacées                                                |
 | `planning-modifiable.spec.ts` | Planning réglé par le parent : répartition régulière ou près des échéances, retouches (déplacer, allonger, retirer, ajouter), planning publié retouché, priorités et dates |
 | `fiches-a-la-demande.spec.ts` | Fiches préparées à la demande (rien à la publication, la console prépare les prochains jours), au niveau des questions de l'enseignant                                     |
+| `retirer.spec.ts`             | Tâches retirées du planning (déjà faite, supprimée), question, carte et fiche retirées                                                                                     |
 
 ## Architecture
 

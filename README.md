@@ -140,7 +140,8 @@ secondaire, S3/S4 à S6/S7, selon la filière (9 364 entrées) ; voir `scripts/r
   demande (console de l'enfant, 3 jours d'avance, ou à l'ouverture ; toute la semaine pour l'impression) et au
   niveau des documents de l'enseignant (questions relevées sur les interrogations et les notes du même cours) ;
   listes de vocabulaire photographiées complétées d'un quiz, d'exercices et de cartes de phrases ; signalement
-  d'erreur et régénération par le parent ;
+  d'erreur, régénération, retrait d'une question, d'un exercice, d'une carte ou de toute la fiche par le parent ;
+- tâches retirées du planning par le parent : « déjà faite » (gardée dans le suivi) ou supprimée ;
 - cartes de révision à répétition espacée, ramenées avant la date de l'évaluation ;
 - chaque leçon en trois étapes : je revois (fiche et « clés pour réussir »), je m'entraîne (questions à choix
   puis réponses à taper, sans correction), je vérifie (chaque réponse comparée à la réponse attendue ; accents,

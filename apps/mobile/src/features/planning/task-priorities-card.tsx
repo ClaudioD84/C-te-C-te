@@ -16,7 +16,12 @@ import { DayPicker } from '@/components/day-picker';
 import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
 import { Spacing } from '@/constants/theme';
-import { useUndatedTasks, useUpdateTaskPlanning, type UpcomingTask } from '@/features/planning/api';
+import {
+  useRemoveTask,
+  useUndatedTasks,
+  useUpdateTaskPlanning,
+  type UpcomingTask,
+} from '@/features/planning/api';
 
 interface TaskSummary {
   id: string;
@@ -34,6 +39,7 @@ interface TaskSummary {
 export function TaskPrioritiesCard({ childId, tasks }: { childId: string; tasks: readonly UpcomingTask[] }) {
   const undated = useUndatedTasks(childId);
   const update = useUpdateTaskPlanning(childId);
+  const remove = useRemoveTask(childId);
   const all: TaskSummary[] = [
     ...tasks
       .filter((task) => !task.mockExam)
@@ -46,11 +52,16 @@ export function TaskPrioritiesCard({ childId, tasks }: { childId: string; tasks:
     <ThemedView type="backgroundElement" style={styles.card}>
       <ThemedText type="smallBold">Priorités et échéances</ThemedText>
       <ThemedText type="small" themeColor="textSecondary">
-        Le planning en tient compte au prochain calcul.
+        Le planning en tient compte au prochain calcul. Une tâche déjà faite ou en trop peut être retirée.
       </ThemedText>
       {update.error ? (
         <ThemedText type="small" themeColor="danger">
           La modification a échoué. Réessayez.
+        </ThemedText>
+      ) : null}
+      {remove.error ? (
+        <ThemedText type="small" themeColor="danger">
+          {remove.error.message}
         </ThemedText>
       ) : null}
       {all.map((task) => (
@@ -59,6 +70,8 @@ export function TaskPrioritiesCard({ childId, tasks }: { childId: string; tasks:
           task={task}
           onPriority={(priority) => update.mutate({ id: task.id, patch: { priority } })}
           onDueDate={(due_date) => update.mutate({ id: task.id, patch: { due_date } })}
+          removing={remove.isPending && remove.variables?.id === task.id}
+          onRemove={(mode) => remove.mutate({ id: task.id, mode })}
         />
       ))}
     </ThemedView>
@@ -69,12 +82,17 @@ function TaskRow({
   task,
   onPriority,
   onDueDate,
+  removing,
+  onRemove,
 }: {
   task: TaskSummary;
   onPriority: (priority: TaskPriority) => void;
   onDueDate: (date: IsoDate | null) => void;
+  removing: boolean;
+  onRemove: (mode: 'supprimer' | 'fait') => void;
 }) {
   const [choosingDate, setChoosingDate] = useState(false);
+  const [confirming, setConfirming] = useState(false);
   const label = `${task.subject} · ${task.description}`;
   return (
     <View style={styles.task}>
@@ -110,6 +128,36 @@ function TaskRow({
           onPress={() => setChoosingDate(true)}
         />
       )}
+      {confirming ? (
+        <View style={styles.confirm}>
+          <ThemedText type="small">
+            « Déjà faite » la garde dans le suivi et la retire des jours à venir. « Supprimer » efface aussi
+            sa fiche, son quiz et ses cartes.
+          </ThemedText>
+          <Button
+            variant="secondary"
+            label="C’est déjà fait"
+            accessibilityLabel={`C’est déjà fait : ${label}`}
+            loading={removing}
+            onPress={() => onRemove('fait')}
+          />
+          <Button
+            variant="secondary"
+            label="Supprimer la tâche"
+            accessibilityLabel={`Supprimer la tâche : ${label}`}
+            loading={removing}
+            onPress={() => onRemove('supprimer')}
+          />
+          <Button variant="secondary" label="Garder la tâche" onPress={() => setConfirming(false)} />
+        </View>
+      ) : (
+        <Button
+          variant="secondary"
+          label="Retirer…"
+          accessibilityLabel={`Retirer : ${label}`}
+          onPress={() => setConfirming(true)}
+        />
+      )}
     </View>
   );
 }
@@ -117,4 +165,5 @@ function TaskRow({
 const styles = StyleSheet.create({
   card: { padding: Spacing.three, borderRadius: Spacing.three, gap: Spacing.three },
   task: { gap: Spacing.two },
+  confirm: { gap: Spacing.two, paddingLeft: Spacing.three },
 });
