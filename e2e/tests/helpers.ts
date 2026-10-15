@@ -159,7 +159,7 @@ export async function reviewCard(page: Page) {
   if (answer) {
     await page.getByLabel('Ta réponse', { exact: true }).fill(answer);
     await button(page, 'Vérifier').click();
-    await expect(page.getByText('Bravo, c’est juste !')).toBeVisible();
+    await expect(page.getByText(/^(Bravo, c’est juste !|Juste\.)$/)).toBeVisible();
   } else {
     await button(page, 'Je l’ai dite à voix haute').click();
   }

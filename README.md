@@ -118,6 +118,8 @@ La CI GitHub Actions exécute ces vérifications et applique les migrations Supa
 - code parent et console enfant verrouillée ;
 - photo du journal de classe, lecture par Claude (sans recopier les noms), validation par le parent ; plusieurs
   pages par document (5 au plus, lues ensemble) et plusieurs documents par envoi (6 au plus), relus un par un ;
+- fiches, quiz et exercices adaptés à l'année et à la filière (registre, types de questions, quantités ; langue étudiée
+  au niveau visé en langue moderne au secondaire) ; console de l'enfant ludique ou sobre (par défaut au secondaire) ;
 - planning de la semaine (ou de deux semaines) avec alertes de surcharge, réglé et retouché par le parent : répartition
   régulière ou près des échéances, temps par jour, priorité et échéance de chaque tâche, activités à déplacer,
   raccourcir, retirer ou ajouter ; mission du jour, Pomodoro, lecture vocale ;

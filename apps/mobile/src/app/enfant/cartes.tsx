@@ -1,4 +1,5 @@
 import {
+  byTone,
   cardAnswers,
   checkAnswer,
   deriveLearningSettings,
@@ -66,7 +67,7 @@ export default function FlashcardsScreen() {
       <ThemedView style={[styles.container, styles.center]}>
         <ThemedText type="subtitle" style={styles.centerText}>
           {reviewed > 0
-            ? `Bravo, ${reviewed} carte${reviewed > 1 ? 's' : ''} revue${reviewed > 1 ? 's' : ''} !`
+            ? `${byTone(settings.tone, 'Bravo, ', '')}${reviewed} carte${reviewed > 1 ? 's' : ''} revue${reviewed > 1 ? 's' : ''}${byTone(settings.tone, ' !', '.')}`
             : taskId
               ? 'Pas de cartes pour cette évaluation.'
               : 'Aucune carte à revoir aujourd’hui.'}
@@ -136,7 +137,7 @@ function CardReview({
   const feedback = !verdict
     ? null
     : verdict.result === 'juste'
-      ? 'Bravo, c’est juste !'
+      ? byTone(settings.tone, 'Bravo, c’est juste !', 'Juste.')
       : verdict.result === 'presque'
         ? NEAR_MISS_MESSAGES[verdict.nearMiss!]
         : revealed

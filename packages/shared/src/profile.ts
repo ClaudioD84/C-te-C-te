@@ -2,6 +2,7 @@ import { z } from 'zod';
 
 import { PLANNING_STRATEGIES } from './planning';
 import { gradeSchema, isTrackAllowed, networkSchema, trackSchema } from './school';
+import { PRESENTATIONS } from './tone';
 
 /** Besoins éducatifs particuliers (cumulables). Ce sont des données de santé au sens du RGPD. */
 export const NEEDS = ['tdah', 'dyslexie', 'dyscalculie'] as const;
@@ -94,6 +95,8 @@ export const childPreferencesSchema = z.object({
   planningStrategy: z.enum(PLANNING_STRATEGIES).optional(),
   /** Planning : nombre de jours planifiés, une ou deux semaines (une par défaut). */
   planningDays: z.union([z.literal(7), z.literal(14)]).optional(),
+  /** Console de l'enfant ludique ou sobre ; sinon selon l'année (sobre au secondaire). */
+  presentation: z.enum(PRESENTATIONS).optional(),
 });
 export type ChildPreferences = z.infer<typeof childPreferencesSchema>;
 

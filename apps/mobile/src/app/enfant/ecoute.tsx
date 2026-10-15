@@ -1,4 +1,5 @@
 import {
+  byTone,
   deriveLearningSettings,
   languageName,
   listeningRound,
@@ -61,7 +62,8 @@ export default function ListeningScreen() {
     return (
       <ChildScreen style={[styles.container, styles.center]}>
         <ThemedText type="subtitle" style={styles.centerText} accessibilityLiveRegion="polite">
-          Bravo, tu as bien écouté ! {score} sur {questions.length}.
+          {byTone(settings.tone, 'Bravo, tu as bien écouté ! ', 'Écoute terminée : ')}
+          {score} sur {questions.length}.
         </ThemedText>
         <Button label="Retour à la mission" onPress={() => router.back()} />
       </ChildScreen>
@@ -106,7 +108,7 @@ export default function ListeningScreen() {
         <>
           <ThemedText accessibilityLiveRegion="polite" style={learningTextStyle(settings)}>
             {answer === question.card.front
-              ? 'Bravo, c’est ça !'
+              ? byTone(settings.tone, 'Bravo, c’est ça !', 'Juste.')
               : `Pas tout à fait : c’était « ${question.card.front} ».`}
           </ThemedText>
           <Button

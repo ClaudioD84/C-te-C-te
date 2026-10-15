@@ -1,4 +1,4 @@
-import { neutralFeedback, type LearningSettings, type QuizQuestion } from '@cote-a-cote/shared';
+import { byTone, neutralFeedback, type LearningSettings, type QuizQuestion } from '@cote-a-cote/shared';
 import { useState } from 'react';
 import { Pressable, StyleSheet, View } from 'react-native';
 
@@ -31,8 +31,8 @@ export function QuizPlayer({
       <ThemedView type="backgroundElement" style={styles.card}>
         <ThemedText type="subtitle">Quiz terminé !</ThemedText>
         <ThemedText style={text}>
-          {score} bonne{score > 1 ? 's' : ''} réponse{score > 1 ? 's' : ''} sur {questions.length}. Bravo pour
-          ton effort !
+          {score} bonne{score > 1 ? 's' : ''} réponse{score > 1 ? 's' : ''} sur {questions.length}.
+          {byTone(settings.tone, ' Bravo pour ton effort !', '')}
         </ThemedText>
         <Button
           variant="secondary"

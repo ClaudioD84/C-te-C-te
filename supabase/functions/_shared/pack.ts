@@ -113,18 +113,20 @@ Règles :
 1. Exactitude avant tout : n'écris que des faits sûrs et conformes à ce qui s'enseigne en FWB à ce niveau.
    Utilise les usages belges (septante, nonante ; noms belges des matières et des épreuves).
 2. Reste strictement sur le sujet de la tâche et au niveau de l'année indiquée.
-3. Écris en français correct, en phrases courtes, en tutoyant l'élève.
+3. Écris en français correct, en tutoyant l'élève, au registre de son âge (voir « Niveau »).
 4. Si la tâche ne permet pas de savoir quoi réviser (ex. « étudier p. 45 » sans sujet), mets "topicUnclear" à true,
    "fiche" à null et des listes vides.
 5. Respecte les adaptations demandées pour cet élève.
-6. Quantités : quiz 4 à 6 questions, exercices 4 à 8, cartes 6 à 15 (moins pour les petits niveaux).
+6. Quantités et difficulté : celles du « Niveau » indiqué ; une consigne particulière (examen blanc, remédiation)
+   prime.
 7. "curriculumMatch" : le numéro de l'attendu du référentiel qui correspond le mieux à la tâche, ou null si
    aucun ne correspond clairement (ou si aucun attendu n'est fourni).
 8. Langue étrangère (néerlandais, anglais, allemand…) : pour le vocabulaire, au recto de la carte le mot ou
    l'expression en français, au verso seulement sa traduction dans la langue étudiée (avec l'article : de/het,
    der/die/das…), sans autre texte : l'application la lit à voix haute.
 9. L'élève répond lui-même avant de voir la correction. Exercices : une question à réponse courte et unique
-   (un nombre, un mot ou un groupe de 3 mots au plus). "accepted" donne toutes les formes correctes de cette
+   (un nombre, un mot ou un groupe de 3 mots au plus ; en langue moderne au secondaire, une courte phrase de 8 mots
+   au plus est permise). "accepted" donne toutes les formes correctes de cette
    réponse, sans phrase autour (par ex. ["8", "huit"], ["ils mangent"], ["12 cm"] si l'unité est demandée,
    ["3/4"] pour une fraction sous la forme attendue). Une production libre (phrase, paragraphe, dessin) n'est
    permise que si la tâche l'exige, deux au plus : "accepted" est alors une liste vide et "answer" donne un
@@ -146,6 +148,82 @@ const NEED_ADAPTATIONS: Record<string, string> = {
   dyscalculie:
     'Étapes de calcul décomposées, petits nombres, appui sur des exemples concrets et visuels décrits en mots.',
 };
+
+/**
+ * Registre, types de questions et quantités selon l'année (degrés de la FWB) : un élève de 3e secondaire ne reçoit
+ * pas une fiche pensée pour un enfant de primaire.
+ */
+const NO_CHILDISHNESS =
+  'jamais enfantin : pas d’histoires pour enfants, de personnages mignons, d’exclamations ni d’emojis, ' +
+  'pas de « petit », « super » ni « bravo »';
+
+export function levelGuidance(grade: string): string[] {
+  const year = Number(grade.slice(1));
+  if (grade.startsWith('P') && year <= 2)
+    return [
+      'Niveau : élève de 6 à 8 ans. Phrases très courtes, mots simples, exemples concrets du quotidien.',
+      'Quantités : quiz 3 à 4 questions, exercices 3 à 5, cartes 4 à 8.',
+    ];
+  if (grade.startsWith('P') && year <= 4)
+    return [
+      "Niveau : élève de 8 à 10 ans. Phrases courtes, exemples concrets ; questions de compréhension et d'application.",
+      'Quantités : quiz 4 à 5 questions, exercices 4 à 6, cartes 6 à 10.',
+    ];
+  if (grade.startsWith('P'))
+    return [
+      'Niveau : fin de primaire (10 à 12 ans, CEB en 6e). Ton direct ; questions de raisonnement et ' +
+        "d'application en plus de la mémorisation.",
+      'Quantités : quiz 5 à 6 questions, exercices 5 à 8, cartes 8 à 12.',
+    ];
+  if (grade.startsWith('S') && year <= 2)
+    return [
+      `Niveau : 1er degré du secondaire (12 à 14 ans, CE1D en 2e). Ton direct et sobre, ${NO_CHILDISHNESS}. ` +
+        "Vocabulaire disciplinaire exact ; questions d'application et de raisonnement ; distracteurs plausibles.",
+      'Quantités : quiz 6 à 8 questions, exercices 6 à 8 de difficulté croissante, cartes 8 à 15.',
+    ];
+  if (grade.startsWith('S') && year <= 4)
+    return [
+      `Niveau : 2e degré du secondaire (14 à 16 ans). Registre d'adolescent, sobre et précis, ${NO_CHILDISHNESS}. ` +
+        "Questions qui demandent d'appliquer, d'analyser, de justifier ou de transférer, pas seulement de " +
+        'restituer ; distracteurs plausibles, tirés des erreurs fréquentes.',
+      'Quantités : quiz 8 à 10 questions, exercices 8 à 10 de difficulté croissante (dont 2 ou 3 exigeants), ' +
+        'cartes 10 à 20.',
+    ];
+  if (grade.startsWith('S'))
+    return [
+      `Niveau : 3e degré du secondaire (16 à 18 ans, CESS en fin de 6e). Registre de jeune adulte, précis et ` +
+        `nuancé, ${NO_CHILDISHNESS}. Questions d'analyse, de synthèse et de transfert ; vocabulaire attendu au CESS.`,
+      'Quantités : quiz 8 à 12 questions, exercices 8 à 12 de difficulté croissante, cartes 12 à 25.',
+    ];
+  return [];
+}
+
+/** Filière du secondaire (et enseignement spécialisé à tout niveau). */
+const TRACK_GUIDANCE: Record<string, string> = {
+  general: 'Enseignement général (transition) : rigueur et abstraction, préparation aux études supérieures.',
+  technique:
+    'Enseignement technique : la théorie s’appuie sur des situations concrètes et des applications pratiques ; ' +
+    'en qualification, des contextes liés au métier.',
+  professionnel:
+    'Enseignement professionnel : contextes concrets de la vie courante et du métier, consignes claires et ' +
+    'directes, phrases simples, sans infantiliser.',
+  specialise:
+    'Enseignement spécialisé : objectifs adaptés, consignes très claires et progressives, sans infantiliser.',
+};
+
+const MODERN_LANGUAGE = /n[ée]erlandais|anglais|allemand|espagnol|italien|langues? modernes?/i;
+
+/** Langue moderne au secondaire : on travaille dans la langue étudiée, au niveau visé par le degré. */
+function languageGuidance(grade: string, subject: string): string[] {
+  if (!grade.startsWith('S') || !MODERN_LANGUAGE.test(subject)) return [];
+  const year = Number(grade.slice(1));
+  const target = year <= 2 ? 'A1 vers A2' : year <= 4 ? 'A2 vers B1' : 'B1 vers B2';
+  return [
+    'Langue moderne : consignes en français, mais exercices et quiz surtout DANS la langue étudiée : phrases à ' +
+      'compléter, traduction dans les deux sens, conjugaison (verbes irréguliers, temps du passé), ordre des mots, ' +
+      `compréhension de phrases ou d'un court texte. Niveau visé (cadre européen, indicatif) : ${target}.`,
+  ];
+}
 
 /** Centres d'intérêt (même liste que INTEREST_PROMPT_LABELS de packages/shared/src/profile.ts). */
 const INTEREST_LABELS: Record<string, string> = {
@@ -225,6 +303,11 @@ export function buildPackRequest(input: {
     `Type de tâche : ${input.task.kind}.`,
     `Tâche : ${input.task.description}${input.task.reference ? ` (${input.task.reference})` : ''}.`,
   ];
+  lines.push(...levelGuidance(input.grade), ...languageGuidance(input.grade, input.task.subject));
+  if (input.grade.startsWith('S') || input.track === 'specialise') {
+    const track = TRACK_GUIDANCE[input.track];
+    if (track) lines.push(track);
+  }
   const adaptations = input.needs.map((n) => NEED_ADAPTATIONS[n]).filter(Boolean);
   if (adaptations.length > 0) lines.push('Adaptations :', ...adaptations.map((a) => `- ${a}`));
   if (input.interests && input.interests.length > 0) {

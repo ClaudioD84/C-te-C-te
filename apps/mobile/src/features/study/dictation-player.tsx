@@ -1,4 +1,5 @@
 import {
+  byTone,
   checkSpelling,
   speechLanguage,
   type LearningSettings,
@@ -52,9 +53,10 @@ export function DictationPlayer({
   if (!word) {
     return (
       <ThemedView type="backgroundElement" style={styles.card}>
-        <ThemedText type="subtitle">Bien joué !</ThemedText>
+        <ThemedText type="subtitle">{byTone(settings.tone, 'Bien joué !', 'Dictée terminée')}</ThemedText>
         <ThemedText style={text}>
-          Tu as écrit {words.length} mot{words.length > 1 ? 's' : ''}. Bravo pour ton effort !
+          Tu as écrit {words.length} mot{words.length > 1 ? 's' : ''}.
+          {byTone(settings.tone, ' Bravo pour ton effort !', '')}
         </ThemedText>
         <Button
           variant="secondary"
@@ -106,7 +108,7 @@ export function DictationPlayer({
       ) : (
         <>
           <ThemedText style={text} accessibilityLiveRegion="polite">
-            {FEEDBACK[result]}
+            {result === 'juste' ? byTone(settings.tone, FEEDBACK.juste, 'Bien écrit.') : FEEDBACK[result]}
           </ThemedText>
           {result !== 'juste' ? (
             <ThemedText

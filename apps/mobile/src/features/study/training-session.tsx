@@ -1,4 +1,5 @@
 import {
+  byTone,
   checkAnswer,
   isAnswered,
   isGuided,
@@ -218,8 +219,8 @@ export function TrainingSession({
           <ThemedText type="subtitle">C’est vérifié !</ThemedText>
           <ThemedText style={learningTextStyle(settings, 18)}>
             {score} sur {items.length} du premier coup
-            {corrected > 0 ? `, et ${corrected} corrigée${corrected > 1 ? 's' : ''} ensuite` : ''}. Bravo pour
-            ton effort !
+            {corrected > 0 ? `, et ${corrected} corrigée${corrected > 1 ? 's' : ''} ensuite` : ''}.
+            {byTone(settings.tone, ' Bravo pour ton effort !', '')}
           </ThemedText>
           <Button label="Recommencer l’entraînement" onPress={restart} />
           <Button variant="secondary" label="Revoir la leçon" onPress={onBackToLesson} />
@@ -420,8 +421,12 @@ function CheckCard({
           ) : (
             <ThemedText type="smallBold" themeColor="primary">
               {check.selfRight
-                ? '✓ Bravo !'
-                : 'Retiens bien la correction : tu y arriveras la prochaine fois.'}
+                ? byTone(settings.tone, '✓ Bravo !', '✓ Juste')
+                : byTone(
+                    settings.tone,
+                    'Retiens bien la correction : tu y arriveras la prochaine fois.',
+                    'Retiens la correction.',
+                  )}
             </ThemedText>
           )}
         </>

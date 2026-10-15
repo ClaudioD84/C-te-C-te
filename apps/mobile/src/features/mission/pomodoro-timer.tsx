@@ -21,7 +21,7 @@ import { TimeDisc } from './time-disc';
 const PHASE_LABELS = {
   travail: 'Au travail !',
   pause: 'Pause : bouge, bois un verre d’eau',
-  termine: 'Bravo, session terminée !',
+  termine: 'Session terminée !',
 } as const;
 
 export function PomodoroTimer({

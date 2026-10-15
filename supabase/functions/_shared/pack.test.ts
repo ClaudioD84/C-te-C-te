@@ -204,3 +204,37 @@ Deno.test(
     assertEquals(a === other, false);
   },
 );
+
+Deno.test('niveau et filière : registre, types de questions et quantités adaptés', () => {
+  const request = (grade: string, track: string, subject: string) =>
+    buildPackRequest({
+      grade,
+      track,
+      needs: [],
+      task: { subject, kind: 'lecon', description: 'Étudier le vocabulaire de la maison', reference: null },
+      curriculum: [],
+    });
+
+  // 3e secondaire, néerlandais : registre d'adolescent, plus de questions, travail dans la langue étudiée.
+  const teen = request('S3', 'general', 'Néerlandais');
+  assertStringIncludes(teen, '2e degré du secondaire');
+  assertStringIncludes(teen, 'jamais enfantin');
+  assertStringIncludes(teen, 'quiz 8 à 10 questions');
+  assertStringIncludes(teen, 'DANS la langue étudiée');
+  assertStringIncludes(teen, 'A2 vers B1');
+  assertStringIncludes(teen, 'Enseignement général');
+
+  const technique = request('S3', 'technique', 'Néerlandais');
+  assertStringIncludes(technique, 'Enseignement technique');
+  const professionnel = request('S5', 'professionnel', 'Mathématiques');
+  assertStringIncludes(professionnel, 'sans infantiliser');
+  assertStringIncludes(professionnel, '3e degré du secondaire');
+  if (professionnel.includes('langue étudiée')) throw new Error('Consigne de langue hors cours de langue');
+
+  // Début de primaire : phrases très courtes, peu de questions, pas de filière.
+  const young = request('P2', 'general', 'Néerlandais');
+  assertStringIncludes(young, '6 à 8 ans');
+  assertStringIncludes(young, 'quiz 3 à 4 questions');
+  if (young.includes('Enseignement général') || young.includes('langue étudiée'))
+    throw new Error('Consigne du secondaire envoyée en primaire');
+});

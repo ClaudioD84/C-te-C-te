@@ -8,7 +8,11 @@ import { ThemedView } from '@/components/themed-view';
 import { Spacing } from '@/constants/theme';
 import { useTheme } from '@/hooks/use-theme';
 
-const LABELS = { inspire: 'Inspire par le nez…', souffle: 'Souffle doucement…', fini: 'Bravo, tu es prêt !' };
+const LABELS = {
+  inspire: 'Inspire par le nez…',
+  souffle: 'Souffle doucement…',
+  fini: 'C’est bon, tu es prêt.',
+};
 const MIN = 70;
 const MAX = 180;
 

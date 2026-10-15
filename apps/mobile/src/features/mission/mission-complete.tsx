@@ -38,17 +38,19 @@ export function MissionComplete({ childId, settings }: { childId: string; settin
   }, [scale]);
 
   const chest = treasures.loaded && hasChestToday(childId, today) && treasures.openedOn !== today;
+  // Console sobre (secondaire) : on constate, sans fête.
+  const sober = settings.tone === 'ado';
 
   return (
     <ThemedView type="backgroundSelected" style={styles.card} accessibilityLiveRegion="polite">
       <Animated.Text style={[styles.party, { transform: [{ scale }] }]} aria-hidden>
-        🎉
+        {sober ? '✓' : '🎉'}
       </Animated.Text>
       <ThemedText type="subtitle" style={styles.center}>
-        Mission accomplie !
+        {sober ? 'Mission du jour terminée' : 'Mission accomplie !'}
       </ThemedText>
       <ThemedText style={[learningTextStyle(settings), styles.center]}>
-        {celebrationPhrase(childId, today)}
+        {celebrationPhrase(childId, today, settings.tone)}
       </ThemedText>
 
       {found ? (
@@ -60,16 +62,20 @@ export function MissionComplete({ childId, settings }: { childId: string; settin
         </ThemedView>
       ) : chest ? (
         <Button
-          label="🎁 Ouvrir le coffre-surprise"
+          label={sober ? '💡 Le savais-tu ?' : '🎁 Ouvrir le coffre-surprise'}
           onPress={() => {
-            const treasure = treasureOfTheDay(childId, today, treasures.ownedIds);
+            const treasure = treasureOfTheDay(childId, today, treasures.ownedIds, settings.tone);
             treasures.keep(treasure, today);
             setFound(treasure);
           }}
         />
       ) : null}
 
-      <Button variant="secondary" label="⭐ Défi bonus" onPress={() => router.push('/enfant/bonus')} />
+      <Button
+        variant="secondary"
+        label={sober ? 'Questions bonus' : '⭐ Défi bonus'}
+        onPress={() => router.push('/enfant/bonus')}
+      />
     </ThemedView>
   );
 }

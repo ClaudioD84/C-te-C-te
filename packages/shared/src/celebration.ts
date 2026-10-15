@@ -1,3 +1,5 @@
+import type { Presentation } from './tone';
+
 /**
  * Fin de mission (F11) : une phrase de fête différente chaque jour, et parfois un coffre-surprise
  * (anecdote ou blague). Tirages stables dans la journée ; jamais rien de payant ni de punitif.
@@ -21,8 +23,18 @@ export const CELEBRATION_PHRASES = [
   'Chapeau ! Tu as été régulier et courageux.',
 ] as const;
 
-export function celebrationPhrase(childId: string, date: string): string {
-  return CELEBRATION_PHRASES[hash(`${childId}|${date}|fete`) % CELEBRATION_PHRASES.length]!;
+/** Console sobre (secondaire) : on constate, sans fête ni surnom. */
+export const ADO_CELEBRATION_PHRASES = [
+  'Le travail prévu aujourd’hui est fait.',
+  'C’est fait pour aujourd’hui. La suite est pour demain.',
+  'Objectif du jour atteint.',
+  'Travail du jour terminé. Bonne fin de journée.',
+  'Fini pour aujourd’hui : régularité tenue.',
+] as const;
+
+export function celebrationPhrase(childId: string, date: string, tone: Presentation = 'enfant'): string {
+  const phrases = tone === 'ado' ? ADO_CELEBRATION_PHRASES : CELEBRATION_PHRASES;
+  return phrases[hash(`${childId}|${date}|fete`) % phrases.length]!;
 }
 
 export interface Treasure {
@@ -105,10 +117,16 @@ export function hasChestToday(childId: string, date: string): boolean {
   return hash(`${childId}|${date}|coffre`) % 3 === 0;
 }
 
-/** Trésor du jour : de préférence un que l'enfant n'a pas encore. */
-export function treasureOfTheDay(childId: string, date: string, owned: readonly string[]): Treasure {
-  const fresh = TREASURES.filter((t) => !owned.includes(t.id));
-  const pool = fresh.length > 0 ? fresh : TREASURES;
+/** Trésor du jour : de préférence un que l'enfant n'a pas encore ; console sobre : anecdotes seulement. */
+export function treasureOfTheDay(
+  childId: string,
+  date: string,
+  owned: readonly string[],
+  tone: Presentation = 'enfant',
+): Treasure {
+  const all = tone === 'ado' ? TREASURES.filter((t) => t.kind === 'anecdote') : TREASURES;
+  const fresh = all.filter((t) => !owned.includes(t.id));
+  const pool = fresh.length > 0 ? fresh : all;
   return pool[hash(`${childId}|${date}|tresor`) % pool.length]!;
 }
 

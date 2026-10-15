@@ -1,4 +1,5 @@
 import {
+  byTone,
   deriveLearningSettings,
   formatShortDate,
   PRIDE_EMOJIS,
@@ -85,7 +86,7 @@ export default function PrideScreen() {
         />
         {saved ? (
           <ThemedText accessibilityLiveRegion="polite" style={learningTextStyle(settings)}>
-            C’est noté dans ton carnet. Bravo !
+            C’est noté dans ton carnet.{byTone(settings.tone, ' Bravo !', '')}
           </ThemedText>
         ) : null}
         {add.error ? (

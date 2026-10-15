@@ -37,6 +37,8 @@ test('cartes de langues : lues avec la voix de la langue, « Écoute et choisis 
                  ('le livre', 'het boek'), ('le vélo', 'de fiets')) as v(front, back)`);
 
   await enterChildMode(page, 'Ours');
+  // Secondaire : console sobre, sans avatar ni point d'exclamation.
+  await expect(page.getByText('Bonjour Ours', { exact: true })).toBeVisible();
   const spoken = () => page.evaluate(() => (window as unknown as { __spoken: [string, string][] }).__spoken);
 
   // Révision des cartes : la question en français, l'enfant tape la traduction (avec l'article), la réponse
@@ -57,7 +59,8 @@ test('cartes de langues : lues avec la voix de la langue, « Écoute et choisis 
   await expect(page.getByText('Presque ! Vérifie l’article.')).toBeVisible();
   await page.getByLabel('Ta réponse', { exact: true }).fill(back);
   await button(page, 'Vérifier').click();
-  await expect(page.getByText('Bravo, c’est juste !')).toBeVisible();
+  // Élève du secondaire : console sobre, sans « Bravo ».
+  await expect(page.getByText('Juste.', { exact: true })).toBeVisible();
   await button(page, 'Écouter la réponse').click();
   const [question, answer] = await spoken();
   expect(question).toEqual([front, 'fr-BE']);
@@ -80,10 +83,10 @@ test('cartes de langues : lues avec la voix de la langue, « Écoute et choisis 
       .getByRole('button', { name: /^(le|la) / })
       .first()
       .click();
-    await expect(page.getByText(/^(Bravo, c’est ça !|Pas tout à fait)/)).toBeVisible();
+    await expect(page.getByText(/^(Juste\.|Pas tout à fait)/)).toBeVisible();
     await button(page, i < 5 ? 'Mot suivant' : 'Terminer').click();
   }
-  await expect(page.getByText(/Bravo, tu as bien écouté ! \d sur 5\./)).toBeVisible();
+  await expect(page.getByText(/^Écoute terminée : \d sur 5\.$/)).toBeVisible();
   expect((await spoken()).slice(2).every(([, lang]) => lang === 'nl-BE')).toBe(true);
   await expect
     .poll(() =>

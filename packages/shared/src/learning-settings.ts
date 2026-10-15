@@ -1,5 +1,6 @@
 import type { ChildProfile } from './profile';
 import { gradeYear, schoolLevel } from './school';
+import { defaultPresentation, type Presentation } from './tone';
 
 export type FontFamilyKey = 'standard' | 'dyslexia';
 
@@ -29,6 +30,8 @@ export interface LearningSettings {
   visualMath: boolean;
   /** Autoriser les exercices chronométrés. */
   timedExercises: boolean;
+  /** Console ludique (« enfant ») ou sobre (« ado »). */
+  tone: Presentation;
 }
 
 function baseWorkMinutes(profile: Pick<ChildProfile, 'grade'>): number {
@@ -68,5 +71,6 @@ export function deriveLearningSettings(
     pictograms: youngReader,
     visualMath: needs.has('dyscalculie') || level === 'maternelle',
     timedExercises: !needs.has('dyscalculie') && !needs.has('tdah'),
+    tone: profile.preferences.presentation ?? defaultPresentation(profile.grade),
   };
 }

@@ -1,5 +1,5 @@
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import { mondayOfWeek, type IsoDate, type LearningSettings } from '@cote-a-cote/shared';
+import { byTone, mondayOfWeek, type IsoDate, type LearningSettings } from '@cote-a-cote/shared';
 import { useEffect, useState } from 'react';
 import { StyleSheet, View } from 'react-native';
 
@@ -66,7 +66,7 @@ export function WeeklyChallenge({
     <ThemedView type={done >= goal ? 'backgroundSelected' : 'backgroundElement'} style={styles.card}>
       <ThemedText style={text} accessibilityLiveRegion="polite">
         {done >= goal
-          ? `🏆 Défi réussi : ${goal} jours de travail cette semaine. Bravo !`
+          ? `🏆 Défi réussi : ${goal} jours de travail cette semaine.${byTone(settings.tone, ' Bravo !', '')}`
           : `🎯 Défi : ${goal} jours cette semaine · ${done} sur ${goal}`}
       </ThemedText>
       <View

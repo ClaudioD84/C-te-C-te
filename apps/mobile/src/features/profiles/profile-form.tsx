@@ -1,6 +1,7 @@
 import {
   AVATAR_CODES,
   AVATARS,
+  defaultPresentation,
   deriveLearningSettings,
   GRADE_LABELS,
   GRADES,
@@ -12,6 +13,8 @@ import {
   NEEDS,
   NETWORK_LABELS,
   NETWORKS,
+  PRESENTATION_LABELS,
+  PRESENTATIONS,
   schoolLevel,
   SESSION_MINUTES_CHOICES,
   RELAX_MINUTE_CHOICES,
@@ -225,6 +228,13 @@ function PreferenceFields({ values, setValues }: Pick<Props, 'values' | 'setValu
         )}
         selected={[String(relaxMinutesLimit(values.preferences))]}
         onToggle={(m) => setPreferences({ relaxMinutes: Number(m) })}
+      />
+      <ChoiceChips
+        label="Console de l'enfant : ludique (avatar, badges, fêtes) ou sobre (pour les ados)"
+        options={PRESENTATIONS}
+        labels={PRESENTATION_LABELS}
+        selected={[values.preferences.presentation ?? defaultPresentation(values.grade)]}
+        onToggle={(presentation) => setPreferences({ presentation })}
       />
       <ChoiceChips
         label={`Centres d'intérêt (${MAX_INTERESTS} au plus) : les exemples des fiches et exercices s'en inspirent`}

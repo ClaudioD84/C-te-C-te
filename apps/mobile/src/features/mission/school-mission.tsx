@@ -1,4 +1,4 @@
-import type { LearningSettings } from '@cote-a-cote/shared';
+import { byTone, type LearningSettings } from '@cote-a-cote/shared';
 import { router } from 'expo-router';
 import { useState } from 'react';
 
@@ -48,7 +48,11 @@ export function SchoolMission({
     return (
       <>
         <MissionText settings={settings}>
-          Bravo, l&apos;essentiel est fait ! Le reste peut attendre.
+          {byTone(
+            settings.tone,
+            "Bravo, l'essentiel est fait ! Le reste peut attendre.",
+            'L’essentiel est fait. Le reste peut attendre.',
+          )}
         </MissionText>
         <Button
           variant="secondary"

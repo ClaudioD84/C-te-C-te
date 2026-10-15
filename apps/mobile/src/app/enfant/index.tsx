@@ -96,12 +96,16 @@ export default function ChildConsoleScreen() {
   const session = sessions.data?.[0];
   const relaxEnabled = relaxMinutesLimit(child.data.preferences) > 0;
   const { allRemaining, remaining } = missionItems(session?.study_session_task ?? [], mood, today);
+  // Console sobre (secondaire) : ni avatar ni badges mis en avant.
+  const sober = settings.tone === 'ado';
 
   return (
     <ChildScreen style={styles.container}>
       <View style={styles.header}>
         <ThemedText type="subtitle">
-          {avatarWithAccessory(child.data)} Bonjour {child.data.alias} !
+          {sober
+            ? `Bonjour ${child.data.alias}`
+            : `${avatarWithAccessory(child.data)} Bonjour ${child.data.alias} !`}
         </ThemedText>
         {parentButton}
       </View>
@@ -112,7 +116,7 @@ export default function ChildConsoleScreen() {
         <HolidayBanner childId={childId} settings={settings} />
         <SchoolBagCard childId={childId} settings={settings} />
         {!kindergarten ? <ExpressReviewCard childId={childId} settings={settings} /> : null}
-        {fresh.length > 0 ? (
+        {fresh.length > 0 && !sober ? (
           <ThemedView type="backgroundSelected" style={styles.card} accessibilityLiveRegion="polite">
             <ThemedText type="subtitle">Nouveau badge !</ThemedText>
             {fresh.map((code) => (
@@ -123,7 +127,15 @@ export default function ChildConsoleScreen() {
             <Button label="Super !" onPress={markSeen} />
           </ThemedView>
         ) : null}
-        {summary ? <AvatarProgress summary={summary} onPress={() => router.push('/enfant/badges')} /> : null}
+        {summary && !sober ? (
+          <AvatarProgress summary={summary} onPress={() => router.push('/enfant/badges')} />
+        ) : null}
+        {summary && sober ? (
+          <ThemedText themeColor="textSecondary">
+            Cette semaine : {summary.effortDaysThisWeek} jour{summary.effortDaysThisWeek > 1 ? 's' : ''} de
+            travail.
+          </ThemedText>
+        ) : null}
         {summary && summary.currentStreak >= 2 ? (
           <ThemedText themeColor="textSecondary">
             🔥 Série : {summary.currentStreak} jours · 🃏 {summary.jokersLeftThisWeek} joker
@@ -163,7 +175,7 @@ export default function ChildConsoleScreen() {
         {remaining.length === 0 && relaxEnabled ? (
           <Button
             variant="secondary"
-            label="🎈 Coin détente"
+            label={sober ? 'Pause détente' : '🎈 Coin détente'}
             onPress={() => router.push('/enfant/detente')}
           />
         ) : null}
